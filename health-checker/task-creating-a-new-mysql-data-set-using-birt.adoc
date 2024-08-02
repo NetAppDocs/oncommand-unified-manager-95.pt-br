@@ -1,0 +1,43 @@
+---
+permalink: health-checker/task-creating-a-new-mysql-data-set-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: Depois de criar a fonte de dados, você deve criar um conjunto de dados MySQL para criar os resultados de saída para o seu relatório. Você também pode editar os tipos de saída depois de criar o conjunto de dados. 
+---
+= Criando um novo conjunto de dados MySQL usando BIRT
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de criar a fonte de dados, você deve criar um conjunto de dados MySQL para criar os resultados de saída para o seu relatório. Você também pode editar os tipos de saída depois de criar o conjunto de dados.
+
+
+
+== Antes de começar
+
+Você deve ter criado uma fonte de dados JDBC usando BIRT.
+
+Você deve ter baixado e instalado MySQL Connector/J.
+
+Você deve ter criado um usuário de banco de dados com a função Report Schema no Unified Manager.
+
+
+
+== Passos
+
+. Em *Eclipse*, selecione uma área de trabalho.
+. Selecione *Data Explorer* > *conjuntos de dados* > *novo conjunto de dados*.
+. Na caixa de diálogo *novo conjunto de dados*, selecione a fonte de dados criada anteriormente, o tipo de conjunto de dados e o nome do conjunto de dados e clique em *seguinte*.
+. Defina um texto de consulta SQL usando os itens disponíveis ou insira manualmente a consulta e clique em *Finish*.
+. Clique em *Visualizar resultados* para confirmar a consulta SQL e, em seguida, clique em *OK*.
+. Na caixa de diálogo *Edit Data Set* (Editar conjunto de dados), defina as colunas de saída conforme necessário e clique em *OK*.
+. Arraste itens para o relatório recém-criado.
+
+
+
+
+== Depois de terminar
+
+Agora você deve importar o relatório recém-criado para o Unified Manager.

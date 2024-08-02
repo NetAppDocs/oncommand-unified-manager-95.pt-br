@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-viewing-the-svm-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Na página de inventário de máquinas virtuais de Saúde/armazenamento, você pode monitorar seu inventário de máquinas virtuais de armazenamento (SVMs). Você pode usar a página de detalhes da Máquina Virtual de Saúde/armazenamento para exibir informações detalhadas sobre SVMs que são monitoradas.' 
+---
+= Visualização da lista SVM e dos detalhes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Na página de inventário de máquinas virtuais de integridade/armazenamento, você pode monitorar seu inventário de máquinas virtuais de armazenamento (SVMs). Você pode usar a página de detalhes da Máquina Virtual de Saúde/armazenamento para exibir informações detalhadas sobre SVMs que são monitoradas.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+É possível visualizar os detalhes do SVM, como capacidade, eficiência e configuração de um SVM. Você também pode exibir informações sobre os dispositivos relacionados e alertas relacionados para esse SVM.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Escolha uma das seguintes maneiras de exibir os detalhes do SVM:
++
+** Para exibir detalhes mínimos, posicione o cursor sobre o nome do SVM.
+** Para exibir os detalhes completos, clique no nome do SVM.
++
+Você também pode visualizar os detalhes completos clicando em *Exibir detalhes* na caixa de diálogo Detalhes mínimos.
+
+
+
+. Visualize os objetos relacionados ao SVM clicando em *Exibir relacionado* na caixa de diálogo Detalhes mínimos.
+

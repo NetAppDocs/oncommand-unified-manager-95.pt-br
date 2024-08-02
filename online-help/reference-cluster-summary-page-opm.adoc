@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-cluster-summary-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Resumo do cluster de desempenho fornece um resumo dos eventos ativos, do desempenho do IOPS e do desempenho de Mbps de um cluster. Esta página também inclui a contagem total dos objetos de armazenamento no cluster. 
+---
+= Página Resumo do cluster de performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Resumo do cluster de desempenho fornece um resumo dos eventos ativos, do desempenho do IOPS e do desempenho de Mbps de um cluster. Esta página também inclui a contagem total dos objetos de armazenamento no cluster.

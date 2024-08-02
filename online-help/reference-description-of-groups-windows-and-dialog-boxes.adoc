@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-groups-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a página Gerenciamento/grupos para exibir e gerenciar todos os grupos. Você também pode configurar regras e ações de grupo para seus objetos de armazenamento na guia regras de grupo e ações de grupo. 
+---
+= Descrição das janelas de grupos e caixas de diálogo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a página Gerenciamento/grupos para exibir e gerenciar todos os grupos. Você também pode configurar regras e ações de grupo para seus objetos de armazenamento na guia regras de grupo e ações de grupo.

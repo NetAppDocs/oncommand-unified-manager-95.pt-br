@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-add-disks-and-reallocate-data.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode adicionar discos a um agregado para aumentar a capacidade de storage e o desempenho desse agregado. Depois de adicionar os discos, você verá uma melhoria no desempenho de leitura somente depois de realocá-los entre os discos adicionados. 
+---
+= Adicionar discos e realocar dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode adicionar discos a um agregado para aumentar a capacidade de storage e o desempenho desse agregado. Depois de adicionar os discos, você verá uma melhoria no desempenho de leitura somente depois de realocá-los entre os discos adicionados.
+
+Use estas instruções quando o Unified Manager receber eventos agregados acionados por limites dinâmicos ou por limites de performance definidos pelo sistema:
+
+* Quando você recebeu um evento de limite dinâmico, na página de detalhes do evento, o ícone do componente do cluster que representa o agregado na contenção é realçado em vermelho.
++
+Abaixo do ícone, entre parênteses, está o nome do agregado, que identifica o agregado ao qual você pode adicionar discos.
+
+* Quando você recebeu um evento de limite definido pelo sistema, na página de detalhes do evento, o texto de descrição do evento lista o nome do agregado que está tendo o problema.
++
+Você pode adicionar discos e realocar dados nesse agregado.
+
+
+
+Os discos adicionados ao agregado já devem existir no cluster. Se o cluster não tiver discos extras disponíveis, talvez seja necessário entrar em Contato com o administrador ou comprar mais discos. Você pode usar os comandos OnCommand System Manager ou ONTAP para adicionar discos a um agregado.
+
+[NOTE]
+====
+Você deve realocar dados somente ao usar agregados HDD e Flash Pool. Não realocar dados em agregados SSD ou FabricPool.
+
+====

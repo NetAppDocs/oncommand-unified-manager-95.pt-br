@@ -1,0 +1,79 @@
+---
+permalink: install/task-configuring-unified-manager-server-using-configuration-scripts-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: Depois de instalar o Unified Manager em ambos os nós de cluster, você pode configurar o Unified Manager com failover Cluster Manager usando scripts de configuração. 
+---
+= Configurando o servidor Unified Manager com MSCS usando scripts de configuração
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de instalar o Unified Manager em ambos os nós de cluster, você pode configurar o Unified Manager com failover Cluster Manager usando scripts de configuração.
+
+
+
+== Antes de começar
+
+Você precisa ter criado um LUN compartilhado de tamanho suficiente para acomodar os dados de origem do Unified Manager.
+
+
+
+== Passos
+
+. Faça login no primeiro nó do cluster.
+. Crie uma função no Windows 2012 ou Windows 2016 usando o Gerenciador de clusters de failover:
++
+.. Inicie o Gerenciador de Cluster de failover.
+.. Crie a função vazia clicando em *funções* > *criar função vazia*.
+.. Adicione o endereço IP global à função clicando com o botão direito do Mouse em *função* > *Adicionar recursos* > *mais recursos* > *endereço IP*.
++
+[NOTE]
+====
+Ambos os nós devem ser capazes de fazer ping nesse endereço IP porque o Unified Manager é iniciado usando esse endereço IP depois que a alta disponibilidade é configurada.
+
+====
+.. Adicione o disco de dados à função clicando com o botão direito do Mouse em *Role* > *Add Storage*.
+
+
+. Execute `ha_setup.pl` o script no primeiro nó: `perl ha_setup.pl --first -t mscs -g group_name -i ip address -n fully_qualified_domain_cluster_name -f shared_location_path -k data_disk -u user_name -p password`
++
+`C:\Program Files\NetApp\ocum\bin>perl .\ha_setup.pl --first -t mscs -g umgroup -i "IP Address" -n spr38457002.eng.company.com -k "Cluster Disk 2" -f E:\ -u admin -p wx17yz`
+
++
+O script está disponível em `Install_Dir\NetApp\ocum\bin`.
+
++
+** Pode obter o valor das `-g` opções , `-k` e , `-i` utilizando o `cluster res` comando .
+** A `-n` opção deve ser o FQDN do endereço IP global que pode ser inserido a partir de ambos os nós.
+
+
+. Verifique se os serviços de servidor do Unified Manager, o disco de dados e o endereço IP do cluster são adicionados ao grupo de clusters usando o console da Web do Gerenciador de Cluster de failover.
+. Pare todos os serviços de servidor do Unified Manager (MySQL, ocie e ocieau) usando o `services.msc` comando.
+. Mude o grupo de serviços para o segundo nó no Gerenciador de Cluster de failover.
+. Execute o comando `perl ha_setup.pl --join -t mscs -f``shared_location_path` no segundo nó do cluster para apontar para os dados do servidor do Unified Manager para o LUN.
++
+`perl ha_setup.pl --join -t mscs -f E:\`
+
+. Coloque todos os serviços do Unified Manager online usando o Gerenciador de Cluster de failover.
+. Alterne manualmente para o outro nó do Microsoft Cluster Server.
+. Verifique se os serviços de servidor do Unified Manager estão sendo iniciados corretamente no outro nó do cluster.
+. Regenere o certificado do Unified Manager após executar scripts de configuração para obter o endereço IP global.
++
+.. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *certificado HTTPS* no menu *Configuração*.
+.. Clique em *Regenerate HTTPS Certificate*.
+
+
++
+O certificado regenerado fornece o endereço IP do cluster, não o nome de domínio totalmente qualificado (FQDN). Você deve usar o endereço IP global para configurar o Unified Manager para alta disponibilidade.
+
+. Acesse a IU do Unified Manager usando o seguinte: `https://<FQDN of Global IP>`
+
+
+
+
+== Depois de terminar
+
+Você deve criar um local de backup compartilhado depois que a alta disponibilidade for configurada. O local compartilhado é necessário para conter os backups antes e depois do failover. Ambos os nós na configuração de alta disponibilidade devem ser capazes de acessar o local compartilhado.

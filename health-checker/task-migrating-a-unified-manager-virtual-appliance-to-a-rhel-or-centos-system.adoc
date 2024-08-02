@@ -1,0 +1,81 @@
+---
+permalink: health-checker/task-migrating-a-unified-manager-virtual-appliance-to-a-rhel-or-centos-system.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: É possível restaurar um backup de banco de dados do Unified Manager de um dispositivo virtual para um sistema Red Hat Enterprise Linux ou CentOS Linux se quiser alterar o sistema operacional de host no qual o Unified Manager está sendo executado. 
+---
+= Migração de um dispositivo virtual do Unified Manager para um sistema Linux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível restaurar um backup de banco de dados do Unified Manager de um dispositivo virtual para um sistema Red Hat Enterprise Linux ou CentOS Linux se quiser alterar o sistema operacional de host no qual o Unified Manager está sendo executado.
+
+
+
+== Antes de começar
+
+* No dispositivo virtual:
++
+** Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento para criar o backup.
+** Você deve saber o nome do usuário de manutenção do Unified Manager para a operação de restauração.
+
+
+* No sistema Linux:
++
+** Você deve ter instalado o Unified Manager em um servidor RHEL ou CentOS seguindo as instruções do Guia de Instalação.
+** A versão do Unified Manager neste servidor deve ser a mesma do dispositivo virtual a partir do qual você está usando o arquivo de backup.
+** Não inicie a IU nem configure clusters, usuários ou configurações de autenticação no sistema Linux após a instalação. O arquivo de backup preenche essas informações durante o processo de restauração.
+** Você deve ter as credenciais de usuário raiz para o host Linux.
+
+
+
+
+
+
+== Sobre esta tarefa
+
+Estas etapas descrevem como criar um arquivo de backup no dispositivo virtual, copiar os arquivos de backup para o sistema Red Hat Enterprise Linux ou CentOS e restaurar o backup do banco de dados para o novo sistema.
+
+
+
+== Passos
+
+. No appliance virtual, na barra de ferramentas, clique em * *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Gerenciamento* > *Backup de banco de dados*.
+. Na página *Backup de gerenciamento/banco de dados*, clique em *ações* > *Configurações de backup de banco de dados*.
+. Altere o caminho do backup para `/jail/support`.
+. Na seção *frequência de programação*, marque a caixa de seleção *Ativar*, selecione *Diário* e insira um tempo depois da hora atual para que o backup seja criado em breve.
+. Clique em *Salvar e fechar*.
+. Aguarde algumas horas para que o backup seja gerado.
++
+Um backup completo pode ter mais de 1 GB e pode levar de três a quatro horas para ser concluído.
+
+. Faça login como usuário raiz no host Linux no qual o Unified Manager está instalado e copie os arquivos de backup `/support` no dispositivo virtual usando SCP.`root@<rhel_server>:/# scp -r admin@<vapp_server_ip_address>:/support/* .`
++
+`root@ocum_rhel-21:/# scp -r admin@10.10.10.10:/support/* .`
+
++
+Certifique-se de que copiou o `.7z` arquivo de backup e todos os `.7z` arquivos do repositório `/database-dumps-repo` no subdiretório.
+
+. No prompt de comando, restaure o backup: `um backup restore -f /<backup_file_path>/<backup_file_name>`
++
+`um backup restore -f /UM_9.4.N151113.1348_backup_unix_02-12-2018-04-16.7z`
+
+. Após a conclusão da operação de restauração, faça login na IU da Web do Unified Manager.
+
+
+
+
+== Depois de terminar
+
+Você deve executar as seguintes tarefas:
+
+* Gere um novo certificado de segurança HTTPS e reinicie o servidor do Unified Manager.
+* Altere o caminho de backup para a configuração padrão do sistema (`/data/ocum-backup`Linux ) ou para um novo caminho de sua escolha, porque não `/jail/support` há caminho no sistema Linux.
+* Reconfigure ambos os lados da conexão do Workflow Automation, se O WFA estiver sendo usado.
+* Reconfigure as configurações de autenticação SAML, se você estiver usando SAML.
+
+
+Depois de verificar se tudo está sendo executado como esperado no sistema Linux, você pode desligar e remover o dispositivo virtual do Unified Manager.

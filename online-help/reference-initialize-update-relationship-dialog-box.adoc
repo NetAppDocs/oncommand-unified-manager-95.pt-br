@@ -1,0 +1,85 @@
+---
+permalink: online-help/reference-initialize-update-relationship-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo Inicializar/Atualizar permite que você execute uma transferência de linha de base pela primeira vez em um novo relacionamento de proteção ou atualize um relacionamento se ele já estiver inicializado e você quiser executar uma atualização incremental manual, não programada. 
+---
+= Caixa de diálogo Inicializar/Atualizar
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Inicializar/Atualizar permite que você execute uma transferência de linha de base pela primeira vez em um novo relacionamento de proteção ou atualize um relacionamento se ele já estiver inicializado e você quiser executar uma atualização incremental manual, não programada.
+
+
+
+== Guia Opções de transferência
+
+A guia Opções de transferência permite alterar a prioridade de inicialização de uma transferência e alterar a largura de banda usada durante as transferências.
+
+* *Prioridade de transferência*
++
+A prioridade na qual a transferência é executada. Pode selecionar normal ou baixo. Relacionamentos com políticas que especificam uma execução normal de prioridade de transferência antes daquelas que especificam uma prioridade de transferência baixa. Normal é selecionado por padrão.
+
+* *Taxa de transferência máxima*
++
+Especifica a taxa máxima na qual os dados são transferidos entre clusters pela rede. Se você optar por não usar uma taxa de transferência máxima, a transferência de linha de base entre relacionamentos é ilimitada. No entanto, se você estiver executando o ONTAP 8,2 e o cluster primário e o cluster secundário forem os mesmos, essa configuração será ignorada. Se selecionar mais de uma relação com diferentes taxas de transferência máximas, pode especificar uma das seguintes definições de taxa de transferência máxima:
+
++
+** Use valores especificados durante a configuração ou edição de relacionamento individual
++
+Quando selecionadas, as operações de inicialização e atualização usam a taxa de transferência máxima especificada no momento da criação ou edição de cada relacionamento. Este campo só está disponível quando várias relações com diferentes taxas de transferência estão sendo inicializadas ou atualizadas.
+
+** Ilimitado
++
+Indica que não há limitação de largura de banda nas transferências entre relacionamentos. Este campo só está disponível quando várias relações com diferentes taxas de transferência estão sendo inicializadas ou atualizadas.
+
+** Limite a largura de banda para
++
+Quando selecionada, a largura de banda da rede é limitada ao valor especificado. Você pode inserir um valor numérico e selecionar kilobytes por segundo (kbps), megabytes por segundo (Mbps), Gigabytes por segundo (Gbps) ou Terabytes por segundo (Tbps). A taxa de transferência máxima especificada deve ser superior a 1 kbps e inferior a 4 Tbps.
+
+
+
+
+
+
+
+== Guia cópias Snapshot de origem
+
+A guia cópias Snapshot de origem exibe as seguintes informações sobre a cópia Snapshot de origem usada para a transferência da linha de base:
+
+* *Volume da fonte*
++
+Exibe os nomes dos volumes de origem correspondentes.
+
+* *Volume de destino*
++
+Apresenta os nomes dos volumes de destino selecionados.
+
+* *Tipo de fonte*
++
+Apresenta o tipo de volume. O tipo pode ser leitura/escrita ou proteção de dados.
+
+* *Cópia Snapshot*
++
+Exibe a cópia Snapshot usada para a transferência de dados. Clicar no valor cópia Instantânea exibe a caixa de diálogo Selecionar cópia Instantânea de origem, na qual você pode selecionar uma cópia Snapshot específica para sua transferência, dependendo do tipo de relação de proteção que você tem e da operação que está executando. A opção de especificar uma cópia Snapshot diferente não está disponível para fontes de tipo de proteção de dados.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Cancelar*
++
+Descarta suas seleções e fecha a caixa de diálogo Inicializar/Atualizar.
+
+* *Submeter*
++
+Guarda as suas seleções e inicia o trabalho de inicialização ou atualização.
+
+

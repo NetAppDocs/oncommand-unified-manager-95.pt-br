@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-the-unified-manager-server-does.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A infraestrutura de servidor do Unified Manager consiste em uma unidade de coleta de dados, um banco de dados e um servidor de aplicativos. Ele fornece serviços de infraestrutura como descoberta, monitoramento, controle de acesso baseado em funções (RBAC), auditoria e logs.' 
+---
+= O que o servidor Unified Manager faz
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A infraestrutura de servidor do Unified Manager consiste em uma unidade de coleta de dados, um banco de dados e um servidor de aplicativos. Ele fornece serviços de infraestrutura como descoberta, monitoramento, controle de acesso baseado em funções (RBAC), auditoria e logs.
+
+O Unified Manager coleta informações de cluster, armazena os dados no banco de dados e analisa os dados para verificar se há problemas de cluster.

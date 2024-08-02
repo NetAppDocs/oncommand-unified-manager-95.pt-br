@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-nfs-exports-report-to-display-a-list-of-volumes-with-default-export-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório exportações NFS para exibir uma lista de volumes com política de exportação padrão. 
+---
+= Personalizar o relatório exportações NFS para exibir uma lista de volumes com política de exportação padrão
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório exportações NFS para exibir uma lista de volumes com política de exportação padrão.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por cluster ou volume, execute as seguintes etapas:
++
+.. Clique nas colunas que precisam ser desagrupadas.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para filtrar volumes com política de exportação padrão, clique na coluna *Política de exportação* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista *condição*, selecione *igual a*.
+. Clique em *Select Values* e selecione *Default*.
+. Clique em *OK*.
+

@@ -1,0 +1,35 @@
+---
+permalink: online-help/concept-what-available-iops-is.html 
+sidebar: sidebar 
+keywords:  
+summary: O contador de IOPS disponível identifica o número restante de IOPS que pode ser adicionado a um nó ou a um agregado antes que o recurso atinja seu limite. O total de IOPS que um nó pode fornecer é baseado nas caraterísticas físicas do nó, por exemplo, o número de CPUs, a velocidade da CPU e a quantidade de RAM. O total de IOPS que um agregado pode fornecer é baseado nas propriedades físicas dos discos, por exemplo, um disco SATA, SAS ou SSD. 
+---
+= O que é IOPS disponível
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O contador de IOPS disponível identifica o número restante de IOPS que pode ser adicionado a um nó ou a um agregado antes que o recurso atinja seu limite. O total de IOPS que um nó pode fornecer é baseado nas caraterísticas físicas do nó - por exemplo, o número de CPUs, a velocidade da CPU e a quantidade de RAM. O total de IOPS que um agregado pode fornecer é baseado nas propriedades físicas dos discos - por exemplo, um disco SATA, SAS ou SSD.
+
+Embora o contador de capacidade de performance forneça a porcentagem de um recurso que ainda está disponível, o contador de IOPS disponível informa o número exato de IOPS (cargas de trabalho) pode ser adicionado a um recurso antes de atingir a capacidade máxima de performance.
+
+Por exemplo, se você estiver usando um par de sistemas de storage FAS2520 e FAS8060, um valor sem capacidade de performance de 30% significa que você tem alguma capacidade de performance gratuita. No entanto, esse valor não fornece visibilidade sobre o número de workloads que você pode implantar nesses nós. O contador de IOPS disponível pode mostrar que você tem 500 IOPS disponíveis no FAS8060, mas apenas 100 IOPS disponíveis no FAS2520.
+
+[NOTE]
+====
+Os dados de IOPS disponíveis estão disponíveis somente quando os nós em um cluster são instalados com o software ONTAP 9.0 ou posterior.
+
+====
+Uma curva de latência de exemplo versus IOPS para um nó é mostrada na figura a seguir.
+
+image::../media/available-iops.gif[iops disponíveis]
+
+O número máximo de IOPS que um recurso pode fornecer é o número de IOPS quando o contador de capacidade de desempenho usado é de 100% (o ponto ideal). O ponto operacional identifica que o nó está operando atualmente em 100K IOPS com latência de 1,0 ms/op. Com base nas estatísticas capturadas a partir do nó, o Unified Manager determina que o máximo de IOPS para o nó é 160K, o que significa que há 60K IOPS livres ou disponíveis. Portanto, você pode adicionar mais workloads a esse nó para que seus sistemas sejam usados com mais eficiência.
+
+[NOTE]
+====
+Quando há uma atividade mínima do usuário no recurso, o valor de IOPS disponível é calculado assumindo uma carga de trabalho genérica com base em aproximadamente 4.500 IOPS por núcleo da CPU. Isso ocorre porque o Unified Manager não tem os dados para estimar com precisão as características da carga de trabalho que está sendo atendida.
+
+====

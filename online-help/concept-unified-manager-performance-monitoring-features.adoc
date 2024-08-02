@@ -1,0 +1,27 @@
+---
+permalink: online-help/concept-unified-manager-performance-monitoring-features.html 
+sidebar: sidebar 
+keywords:  
+summary: O Unified Manager coleta e analisa estatísticas de performance de sistemas que executam o software ONTAP. Ele usa limites de desempenho dinâmicos e limites de desempenho definidos pelo usuário para monitorar uma variedade de contadores de desempenho em vários componentes do cluster. 
+---
+= Recursos de monitoramento de desempenho do Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager coleta e analisa estatísticas de performance de sistemas que executam o software ONTAP. Ele usa limites de desempenho dinâmicos e limites de desempenho definidos pelo usuário para monitorar uma variedade de contadores de desempenho em vários componentes do cluster.
+
+Um alto tempo de resposta (latência) indica que o objeto de armazenamento, por exemplo, um volume, está funcionando mais lento do que o normal. Esse problema também indica que o desempenho diminuiu para aplicativos clientes que estão usando o volume. O Unified Manager identifica o componente de storage em que reside o problema de performance e fornece uma lista das ações sugeridas que você pode tomar para solucionar o problema de performance.
+
+O Unified Manager inclui os seguintes recursos:
+
+* Monitora e analisa as estatísticas de performance de workload a partir de um sistema que executa o software ONTAP.
+* Controla os contadores de performance de clusters, nós, agregados, portas, SVMs, volumes, LUNs, namespaces NVMe e LIFs.
+* Exibe gráficos detalhados que plotam a atividade do workload ao longo do tempo, incluindo IOPS (operações), Mbps (taxa de transferência), latência (tempo de resposta), utilização, capacidade de performance e taxa de cache.
+* Permite criar políticas de limite de performance definidas pelo usuário que acionam eventos e enviam alertas de e-mail quando os limites são violados.
+* Usa limites definidos pelo sistema e limites de performance dinâmicos que aprendem sobre sua atividade de workload para identificar e alertar você sobre problemas de performance.
+* Identifica claramente o componente do cluster que está em disputa.
+* Identifica cargas de trabalho que estão sobreusando componentes do cluster e as cargas de trabalho cujo desempenho é afetado pelo aumento da atividade.
+

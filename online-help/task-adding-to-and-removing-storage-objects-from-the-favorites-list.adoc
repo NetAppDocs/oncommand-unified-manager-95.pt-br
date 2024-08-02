@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-adding-to-and-removing-storage-objects-from-the-favorites-list.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode adicionar objetos de storage a uma lista de Favoritos para monitorar a integridade, a capacidade e a performance dos objetos. Você pode usar o status do objeto na lista Favoritos para determinar problemas e corrigi-los antes que eles se tornem críticos. A lista Favoritos também fornece o status de monitoramento mais recente de um objeto de armazenamento. Você pode remover objetos de armazenamento da lista Favoritos quando não precisar mais que eles sejam marcados como favoritos. 
+---
+= Adicionar e remover objetos de armazenamento da lista Favoritos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode adicionar objetos de storage a uma lista de Favoritos para monitorar a integridade, a capacidade e a performance dos objetos. Você pode usar o status do objeto na lista Favoritos para determinar problemas e corrigi-los antes que eles se tornem críticos. A lista Favoritos também fornece o status de monitoramento mais recente de um objeto de armazenamento. Você pode remover objetos de armazenamento da lista Favoritos quando não precisar mais que eles sejam marcados como favoritos.
+
+
+
+== Sobre esta tarefa
+
+É possível adicionar até 20 clusters, nós, agregados ou volumes à lista Favoritos. Quando você adiciona um nó à lista Favoritos, ele é exibido como um cluster.
+
+
+
+== Passos
+
+. Vá para a página *Detalhes* do objeto de armazenamento que você deseja marcar como favorito.
+. Clique no ícone de estrela (image:../media/favorite-icon.gif[""]) para adicionar o objeto de armazenamento à lista Favoritos.
+
+
+
+
+== Adicionando um agregado à lista Favoritos
+
+. No painel de navegação à esquerda, clique em *Saúde* > *agregados*.
+. Na página de inventário de integridade/agregados, clique no agregado que deseja adicionar à lista Favoritos.
+. Na página Health/Aggregate details (Detalhes de integridade/agregado), clique no ícone de estrela (image:../media/favorite-icon.gif[""] ).
+
+
+
+
+== Depois de terminar
+
+Para remover um objeto de armazenamento da lista Favoritos, vá para a página da lista Favoritos, clique no ícone de estrela (image:../media/favorite-icon.gif[""]) no cartão de objeto que deseja remover e selecione a opção *Remover dos Favoritos*.

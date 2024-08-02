@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-edit-rule-advanced-edit-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo Editar regra para editar as propriedades de uma regra que não é criada usando um modelo. As propriedades da regra que você pode editar incluem os tipos de arquivo, caminhos de diretório, critérios de correspondência ou proprietários. Você pode selecionar uma classe de armazenamento apropriada para a regra. Por exemplo, você pode editar as condições especificadas nos critérios de correspondência de uma regra. 
+---
+= Caixa de diálogo Editar regra (Edição avançada)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo Editar regra para editar as propriedades de uma regra que não é criada usando um modelo. As propriedades da regra que você pode editar incluem os tipos de arquivo, caminhos de diretório, critérios de correspondência ou proprietários. Você pode selecionar uma classe de armazenamento apropriada para a regra. Por exemplo, você pode editar as condições especificadas nos critérios de correspondência de uma regra.
+
+
+
+== Nome da regra
+
+Exibe o nome da regra.
+
+
+
+== Critérios de correspondência
+
+Apresenta uma lista de condições relacionadas com o modelo de regra selecionado. A lista de condições muda com base no modelo de regra selecionado. Você pode expandir as regras e modificar as propriedades da regra, conforme necessário.
+
+
+
+== Área de posicionamento de conteúdo
+
+Exibe a lista de classes de armazenamento. Você pode selecionar uma classe de armazenamento apropriada para a regra selecionada.
+
+
+
+== Botões de comando
+
+* *Atualização*
++
+Atualiza as alterações feitas à regra e fecha a caixa de diálogo Editar regra.
+
+* *Cancelar*
++
+Cancela as alterações recentes feitas à regra e fecha a caixa de diálogo Editar regra.
+
+

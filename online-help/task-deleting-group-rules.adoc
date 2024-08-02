@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-deleting-group-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode excluir uma regra de grupo do Gerenciador Unificado do OnCommand quando a regra de grupo não for mais necessária. 
+---
+= Eliminar regras de grupo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir uma regra de grupo do Gerenciador Unificado do OnCommand quando a regra de grupo não for mais necessária.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Quando uma regra de grupo é excluída, os objetos de armazenamento associados serão removidos do grupo.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Gestão* > *grupos*.
+. Na guia *regras de grupo*, selecione a regra de grupo que deseja excluir e clique em *Excluir*.
+. Na caixa de diálogo *Aviso*, confirme a exclusão clicando em *Sim*.
+

@@ -1,0 +1,16 @@
+---
+permalink: config/concept-overview-of-the-configuration-sequence.html 
+sidebar: sidebar 
+keywords:  
+summary: O fluxo de trabalho de configuração descreve as tarefas que você deve executar antes de usar o Unified Manager. 
+---
+= Descrição geral da sequência de configuração
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O fluxo de trabalho de configuração descreve as tarefas que você deve executar antes de usar o Unified Manager.
+
+image::../media/post-install-flow.gif[fluxo de pós-instalação]

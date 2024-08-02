@@ -1,0 +1,64 @@
+---
+permalink: performance-checker/concept-how-qos-policies-are-displayed-in-the-throughput-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode exibir as configurações de política de qualidade de serviço (QoS) definidas pelo ONTAP que foram aplicadas a um volume ou LUN nos gráficos IOPS, IOPS/TB e Mbps do Performance Explorer. As informações exibidas nos gráficos são diferentes dependendo do tipo de política de QoS que foi aplicada à carga de trabalho.' 
+---
+= Como diferentes tipos de políticas de QoS são exibidos no Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exibir as configurações de política de qualidade do serviço (QoS) definidas pelo ONTAP que foram aplicadas a um volume ou LUN nos gráficos IOPS, IOPS/TB e Mbps do Performance Explorer. As informações exibidas nos gráficos são diferentes dependendo do tipo de política de QoS que foi aplicada à carga de trabalho.
+
+Uma configuração de limite máximo de taxa de transferência define a taxa de transferência máxima que a carga de trabalho pode consumir e, assim, limita o impactos nas cargas de trabalho concorrentes para recursos do sistema. Uma configuração de piso de taxa de transferência define a taxa de transferência mínima que deve estar disponível para a carga de trabalho, de modo que uma carga de trabalho crítica atenda aos destinos mínimos de taxa de transferência, independentemente da demanda por cargas de trabalho concorrentes.
+
+As políticas de QoS compartilhadas e não compartilhadas para IOPS e Mbps usam os termos "Mominimum" e "MMAximum" para definir o piso e o teto. As políticas adaptativas de QoS para IOPS/TB, que foram introduzidas no ONTAP 9.3, usam os termos "esperado" e "pico" para definir o piso e o teto.
+
+Embora o ONTAP permita que você crie esses dois tipos de políticas de QoS, dependendo de como eles são aplicados a workloads, há três maneiras de que a política de QoS será exibida nos gráficos de performance.
+
+|===
+| Tipo de política | Funcionalidade | Indicador na interface do Unified Manager 
+
+
+ a| 
+Política compartilhada de QoS atribuída a um único workload ou política de QoS não compartilhada atribuída a um único workload ou a vários workloads
+ a| 
+Cada workload pode consumir a configuração de taxa de transferência especificada
+ a| 
+Exibe ""(QoS)"
+
+
+
+ a| 
+Política compartilhada de QoS atribuída a vários workloads
+ a| 
+Todos os workloads compartilham a configuração de taxa de transferência especificada
+ a| 
+Exibe ""(QoS compartilhado)"
+
+
+
+ a| 
+Política de QoS adaptável atribuída a um único workload ou vários workloads
+ a| 
+Cada workload pode consumir a configuração de taxa de transferência especificada
+ a| 
+Exibe ""(QoS Adaptive)"
+
+|===
+A figura a seguir mostra um exemplo de como as três opções são mostradas nos gráficos de contador.
+
+image::../media/three-qos-policy-charts.gif[três gráficos de política de qos]
+
+Quando uma política de QoS normal que foi definida em IOPS aparece no gráfico IOPS/TB para um workload, o ONTAP converte o valor de IOPS/TB em um valor de IOPS/TB e o Unified Manager exibe essa política no gráfico IOPS/TB juntamente com o texto "'QoS, definido em IOPS".
+
+Quando uma política de QoS adaptável que foi definida em IOPS/TB aparece no gráfico de IOPS para uma carga de trabalho, o ONTAP converte o valor de IOPS/TB em um valor de IOPS e o Unified Manager exibe essa política no gráfico de IOPS juntamente com o texto "'QoS adaptável, definido em IOPS/TB usado'" ou "'Adaptativo, definido em IOPS/TB alocado", dependendo de como a configuração de alocação de pico é configurada. Quando a configuração de alocação é definida como "espaço alocado", o IOPS de pico é calculado com base no tamanho do volume. Quando a configuração de alocação é definida como "espaço usado", o IOPS de pico é calculado com base na quantidade de dados armazenados no volume, levando em conta as eficiências de armazenamento.
+
+[NOTE]
+====
+O gráfico IOPS/TB exibe dados de desempenho somente quando a capacidade lógica usada pelo volume é maior ou igual a 1 TB. As lacunas são exibidas no gráfico quando a capacidade usada cai abaixo de 1 TB durante o período de tempo selecionado.
+
+====

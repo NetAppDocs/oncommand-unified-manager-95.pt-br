@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-lun-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Use a página informações de desempenho/LUN para exibir uma lista dos atributos físicos e lógicos do LUN. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho. 
+---
+= Página de informações de desempenho/LUN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use a página informações de desempenho/LUN para exibir uma lista dos atributos físicos e lógicos do LUN. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho.
+
+
+
+== Atributos LUN
+
+* * WWN*
++
+A WWN (World Wide Name) do LUN.
+
+* *Caminho*
++
+O caminho completo do LUN, por exemplo, `/vol/vol1/lun1`.
+
+* *Alinhamento*
++
+Indica o estado de alinhamento do LUN. Valores possíveis:
+
++
+** Não mapeado
+** Alinhado
+** Desalinhado
+** Possivelmente desalinhado
+** Indeterminado
+
+
+* *Capacidade (grátis/total)*
++
+O armazenamento total disponível no LUN, em gigabytes e a quantidade de armazenamento atualmente disponível.
+
+* *Volume*
++
+O nome do volume ao qual o LUN pertence. Pode clicar no nome para apresentar os detalhes do volume na página Explorador de desempenho/volume.
+
+* *Storage Virtual Machine*
++
+O nome do SVM ao qual o LUN pertence. Você pode clicar no nome para exibir os detalhes do SVM na página Performance/SVM Explorer.
+
+* *Nó*
++
+O nome do nó no qual o LUN reside. Você pode clicar no nome para exibir os detalhes do nó na página Performance/Node Explorer.
+
+* *Cluster*
++
+O nome do cluster ao qual o LUN pertence. Você pode clicar no nome para exibir os detalhes do cluster na página Performance/Cluster Explorer.
+
+* *Estado*
++
+O estado do LUN. os estados válidos podem estar online, offline, nvfail, space-error e extrangeiro-lun-error.
+
+* *Mapeado*
++
+Se o LUN é mapeado para um grupo de iniciadores (verdadeiro) ou não (falso).
+
+

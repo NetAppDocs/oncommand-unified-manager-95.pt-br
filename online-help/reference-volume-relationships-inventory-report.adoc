@@ -1,0 +1,104 @@
+---
+permalink: online-help/reference-volume-relationships-inventory-report.html 
+sidebar: sidebar 
+keywords:  
+summary: O relatório Inventário de relacionamentos de volume permite analisar os detalhes do inventário de armazenamento em um cluster, entender o grau de proteção necessário para os volumes e filtrar os detalhes do volume com base na origem da falha, padrão e programações. 
+---
+= Relatório de inventário de relacionamentos de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O relatório Inventário de relacionamentos de volume permite analisar os detalhes do inventário de armazenamento em um cluster, entender o grau de proteção necessário para os volumes e filtrar os detalhes do volume com base na origem da falha, padrão e programações.
+
+O relatório Inventário de relacionamentos de volume é exibido em dois formatos:
+
+* Gráfico de pizza de relacionamentos do SnapMirror e gráfico de pizza de relacionamentos do SnapVault
+* Vista tabular do relatório de inventário de relacionamentos de volume
+
+
+
+
+== Gráficos de pizza SnapMirror e SnapVault
+
+Exibe os detalhes de configuração das relações de volume presentes no sistema de armazenamento.
+
+
+
+== Vista tabular do inventário das relações de volume
+
+* *Saúde do relacionamento*
++
+Exibe a faixa de relacionamento do cluster.
+
+* *Estado do relacionamento*
++
+Exibe o estado do espelho da relação SnapMirror.
+
+* *Status da transferência*
++
+Exibe o status da relação SnapMirror.
+
+* *Estado de lag*
++
+Apresenta o estado de atraso do volume.
+
+* *Cluster de origem*
++
+Exibe o nome do cluster de origem para a relação SnapMirror.
+
+* *Fonte SVM*
++
+Exibe o nome da máquina virtual de storage de origem (SVM) para a relação SnapMirror.
+
+* *Volume da fonte*
++
+Exibe o nome do volume de origem para a relação SnapMirror.
+
+* *Cluster de destino*
++
+Exibe o nome do cluster de destino para a relação SnapMirror.
+
+* *SVM de destino*
++
+Exibe o nome da máquina virtual de storage de destino (SVM) para a relação SnapMirror.
+
+* *Volume de destino*
++
+Exibe o nome do volume de destino para a relação SnapMirror.
+
+* *Tipo de relacionamento*
++
+Exibe qualquer tipo de relacionamento, incluindo SnapMirror ou SnapVault.
+
+* *Último tempo de atualização bem-sucedido*
++
+Apresenta a hora da última operação de SnapMirror ou SnapVault bem-sucedida.
+
+* * Duração da última transferência (horas)*
++
+Apresenta o tempo necessário para a última transferência de dados ser concluída.
+
+* * Último tamanho de transferência (MB)*
++
+Exibe o tamanho, em bytes, da última transferência de dados.
+
+* *Hora final da última transferência*
++
+Exibe a hora em que a última operação de SnapMirror ou SnapVault bem-sucedida foi concluída.
+
+* * Motivo não saudável*
++
+A razão pela qual o relacionamento está em um estado insalubre.
+
+* *Duração do atraso (horas)*
++
+Exibe o tempo que os dados no espelho ficam atrás da fonte.
+
+* *Versão replicação flexível*
++
+Exibe Sim, Sim com a opção de backup ou nenhum.
+
+

@@ -1,0 +1,96 @@
+---
+permalink: health-checker/task-generating-and-uploading-a-support-bundle.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode gerar um pacote de suporte, contendo informações completas de diagnóstico, para que você possa recuperá-lo e enviá-lo para o suporte técnico para obter ajuda na solução de problemas. Como alguns tipos de dados podem usar uma grande quantidade de recursos de cluster ou levar muito tempo para serem concluídos, você pode especificar tipos de dados a serem incluídos ou excluídos no pacote de suporte. 
+---
+= Gerando um pacote de suporte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode gerar um pacote de suporte, contendo informações completas de diagnóstico, para que você possa recuperá-lo e enviá-lo para o suporte técnico para obter ajuda na solução de problemas. Como alguns tipos de dados podem usar uma grande quantidade de recursos de cluster ou levar muito tempo para serem concluídos, você pode especificar tipos de dados a serem incluídos ou excluídos no pacote de suporte.
+
+
+
+== Antes de começar
+
+Você deve ter acesso ao console de manutenção como usuário de manutenção.
+
+
+
+== Sobre esta tarefa
+
+O Unified Manager armazena apenas os dois pacotes de suporte gerados mais recentemente. Pacotes de suporte mais antigos são excluídos do sistema.
+
+[NOTE]
+====
+Nos sistemas Windows, o comando `supportbundle.bat` não é mais suportado para gerar um pacote de suporte.
+
+====
+
+
+== Passos
+
+. No console de manutenção *Menu Principal*, selecione *suporte/Diagnóstico*.
+. Selecione *Generate Support Bundle*.
+. Selecione ou desmarque os seguintes tipos de dados para incluir ou excluir no pacote de suporte:
++
+** *despejo de banco de dados*
++
+Um despejo do banco de dados do MySQL Server.
+
+** *despejo de pilha*
++
+Um instantâneo do estado dos principais processos do servidor do Unified Manager. Esta opção está desativada por predefinição e deve ser selecionada apenas quando solicitado pelo apoio ao cliente.
+
+** *gravações de aquisição*
++
+Gravação de todas as comunicações entre o Unified Manager e os clusters monitorados.
+
+
+
++
+[NOTE]
+====
+Se você desmarcar todos os tipos de dados, o pacote de suporte ainda será gerado com outros dados do Unified Manager.
+
+====
+. Digite `g`e pressione Enter para gerar o pacote de suporte.
++
+Como a geração de um pacote de suporte é uma operação com uso intenso de memória, você será solicitado a verificar se você tem certeza de que deseja gerar o pacote de suporte neste momento.
+
+. Digite `y`e pressione Enter para gerar o pacote de suporte.
++
+Se você não quiser gerar o pacote de suporte neste momento, digite `n` e pressione Enter.
+
+. Se você incluiu arquivos de despejo de banco de dados no pacote de suporte, será solicitado que você especifique o período de tempo para o qual deseja incluir estatísticas de desempenho. Incluir estatísticas de desempenho pode levar muito tempo e espaço, para que você também possa despejar o banco de dados sem incluir estatísticas de desempenho:
++
+.. Introduza a data de início no formato YYYYMMDD.
++
+Por exemplo, digite `20170101` para 1 de janeiro de 2017. Insira `n` se você não quiser que as estatísticas de desempenho sejam incluídas.
+
+.. Introduza o número de dias de estatísticas a incluir, a partir das 12 horas da data de início especificada.
++
+Pode introduzir um número de 1 a 10.
+
+
+
++
+Se você estiver incluindo estatísticas de desempenho, o sistema exibirá o período de tempo para o qual as estatísticas de desempenho serão coletadas.
+
+. Selecione *Generate Support Bundle*.
++
+O pacote de suporte gerado reside no `/support` diretório.
+
+
+
+
+
+== Depois de terminar
+
+Depois de gerar o pacote de suporte, você pode recuperá-lo usando um cliente SFTP ou usando comandos CLI UNIX ou Linux. Em instalações do Windows, você pode usar a Área de trabalho Remota (RDP) para recuperar o pacote de suporte.
+
+O pacote de suporte gerado reside no `/support` diretório em sistemas VMware, em `/opt/netapp/data/support/` sistemas Linux e em `ProgramData\NetApp\OnCommandAppData\ocum\support` sistemas Windows.

@@ -1,0 +1,30 @@
+---
+permalink: online-help/concept-authentication-with-active-directory-or-openldap.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode ativar a autenticação remota no servidor de gerenciamento e configurar o servidor de gerenciamento para se comunicar com seus servidores de autenticação para que os usuários dentro dos servidores de autenticação possam acessar você pode habilitar a autenticação remota no servidor de gerenciamento e configurar o servidor de gerenciamento para se comunicar com seus servidores de autenticação para que os usuários dentro dos servidores de autenticação possam acessar o Unified Manager. 
+---
+= Autenticação com ative Directory ou OpenLDAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode ativar a autenticação remota no servidor de gerenciamento e configurar o servidor de gerenciamento para se comunicar com seus servidores de autenticação para que os usuários dentro dos servidores de autenticação possam acessar você pode habilitar a autenticação remota no servidor de gerenciamento e configurar o servidor de gerenciamento para se comunicar com seus servidores de autenticação para que os usuários dentro dos servidores de autenticação possam acessar o Unified Manager.
+
+Você pode usar um dos seguintes serviços de autenticação predefinidos ou especificar seu próprio serviço de autenticação:
+
+* Microsoft ative Directory
++
+[NOTE]
+====
+Você não pode usar o Microsoft Lightweight Directory Services.
+
+====
+* OpenLDAP
+
+
+Você pode selecionar o serviço de autenticação necessário e adicionar os servidores de autenticação apropriados para permitir que os usuários remotos no servidor de autenticação acessem o Unified Manager. As credenciais para usuários remotos ou grupos são mantidas pelo servidor de autenticação. O servidor de gerenciamento usa o LDAP (Lightweight Directory Access Protocol) para autenticar usuários remotos no servidor de autenticação configurado.
+
+Para usuários locais criados no Unified Manager, o servidor de gerenciamento mantém seu próprio banco de dados de nomes de usuário e senhas. O servidor de gerenciamento executa a autenticação e não usa o ative Directory ou o OpenLDAP para autenticação.

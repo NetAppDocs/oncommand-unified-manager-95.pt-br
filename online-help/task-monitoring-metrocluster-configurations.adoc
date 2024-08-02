@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-monitoring-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode monitorar problemas de conetividade na configuração do MetroCluster. Os detalhes incluem o status dos componentes e a conectividade em um cluster e o status de conectividade entre os clusters na configuração do MetroCluster. 
+---
+= Monitoramento de configurações do MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode monitorar problemas de conetividade na configuração do MetroCluster. Os detalhes incluem o status dos componentes e a conectividade em um cluster e o status de conectividade entre os clusters na configuração do MetroCluster.
+
+
+
+== Antes de começar
+
+* Os clusters local e remoto na configuração do MetroCluster devem ser adicionados ao Gerenciador Unificado do OnCommand.
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+
+== Sobre esta tarefa
+
+Pode utilizar as informações apresentadas na página de detalhes do estado/grupo para corrigir quaisquer problemas de conetividade. Por exemplo, se a conetividade entre o nó e o switch em um cluster estiver inativa, o seguinte ícone é exibido:
+
+image::../media/node-switch-connectivity.gif[conectividade do switch de nó]
+
+Se mover o ponteiro sobre o ícone, poderá visualizar informações detalhadas sobre o evento gerado.
+
+O Unified Manager usa alertas de integridade do sistema para monitorar o status dos componentes e a conectividade na configuração do MetroCluster.
+
+A guia conetividade do MetroCluster é exibida somente para clusters em uma configuração do MetroCluster.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *clusters*.
++
+É apresentada uma lista de todos os clusters monitorizados.
+
+. Na página de inventário *Saúde/clusters*, clique no nome do cluster para o qual deseja exibir os detalhes de configuração do MetroCluster.
+. Na página de detalhes *Saúde/Cluster*, clique na guia *conetividade MetroCluster*.
++
+A topologia da configuração do MetroCluster é exibida na área de objeto do cluster correspondente.
+
+
+
+
+
+== Depois de terminar
+
+Se você descobrir problemas de conetividade na configuração do MetroCluster, faça login no Gerenciador de sistema ou acesse a CLI do ONTAP para resolver os problemas.

@@ -1,0 +1,272 @@
+---
+permalink: online-help/reference-supported-unified-manager-cli-commands.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Como administrador de storage, você pode usar os comandos de CLI para executar consultas nos objetos de storage, por exemplo, em clusters, agregados, volumes, qtrees e LUNs. Você pode usar os comandos CLI para consultar o banco de dados interno do Unified Manager e o banco de dados do ONTAP. Você também pode usar comandos CLI em scripts que são executados no início ou no final de uma operação ou que são executados quando um alerta é acionado. 
+---
+= Comandos de CLI do Unified Manager compatíveis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Como administrador de storage, você pode usar os comandos de CLI para executar consultas nos objetos de storage, por exemplo, em clusters, agregados, volumes, qtrees e LUNs. Você pode usar os comandos CLI para consultar o banco de dados interno do Unified Manager e o banco de dados do ONTAP. Você também pode usar comandos CLI em scripts que são executados no início ou no final de uma operação ou que são executados quando um alerta é acionado.
+
+Todos os comandos devem ser precedidos com o comando `um cli login` e um nome de usuário e senha válidos para autenticação.
+
+|===
+| Comando CLI | Descrição | Saída 
+
+
+ a| 
+`um run cmd [ -t <timeout> ] <cluster> <command>`
+ a| 
+A maneira mais simples de executar um comando em um ou mais hosts. Usado principalmente para scripts de alerta para obter ou executar uma operação no ONTAP. O argumento opcional timeout define um limite máximo de tempo (em segundos) para que o comando seja concluído no cliente. O padrão é 0 (espere para sempre).
+ a| 
+Como recebido de ONTAP.
+
+
+
+ a| 
+`um run query <sql command>`
+ a| 
+Executa uma consulta SQL. Somente consultas que leem a partir do banco de dados são permitidas. Qualquer operação de atualização, inserção ou exclusão não é suportada.
+ a| 
+Os resultados são exibidos em uma forma tabular. Se um conjunto vazio for retornado, ou se houver algum erro de sintaxe ou solicitação incorreta, ele exibirá a mensagem de erro apropriada.
+
+
+
+ a| 
+`um datasource add -u <username> -P <password> [ -t <protocol> ] [ -p <port> ] <hostname-or-ip>`
+ a| 
+Adiciona uma fonte de dados à lista de sistemas de armazenamento gerenciados. Uma fonte de dados descreve como as conexões com sistemas de armazenamento são feitas. As opções -u (nome de usuário) e -P (senha) devem ser especificadas ao adicionar uma fonte de dados. A opção -t (protocolo) especifica o protocolo usado para se comunicar com o cluster (http ou https). Se o protocolo não for especificado, ambos os protocolos serão tentados a opção -p (porta) especifica a porta usada para se comunicar com o cluster. Se a porta não for especificada, então o valor padrão do protocolo apropriado será tentado. Este comando só pode ser executado pelo administrador de armazenamento.
+ a| 
+Solicita que o usuário aceite o certificado e imprime a mensagem correspondente.
+
+
+
+ a| 
+`um datasource list [ <datasource-id>]`
+ a| 
+Exibe as fontes de dados para sistemas de armazenamento gerenciados.
+ a| 
+Exibe os seguintes valores em formato tabular: `ID Address Port, Protocol Acquisition Status, Analysis Status, Communication status, Acquisition Message, and Analysis Message`.
+
+
+
+ a| 
+`um datasource modify [ -h <hostname-or-ip> ] [ -u <username> ] [ -P <password> ] [ -t <protocol> ] [ -p <port> ] <datasource-id>`
+ a| 
+Modifica uma ou mais opções de fonte de dados. Só pode ser executado pelo administrador de armazenamento.
+ a| 
+Exibe a mensagem correspondente.
+
+
+
+ a| 
+`um datasource remove <datasource-id>`
+ a| 
+Remove a fonte de dados do Unified Manager.
+ a| 
+Exibe a mensagem correspondente.
+
+
+
+ a| 
+`um option list [ <option> .. ]`
+ a| 
+Lista opções.
+ a| 
+Exibe os seguintes valores em formato tabular: `Name, Value, Default Value, and Requires Restart.`
+
+
+
+ a| 
+`+um option set <option-name>=<option-value> [ <option-name>=<option-value> ... ]+`
+ a| 
+Define uma ou mais opções. O comando só pode ser executado pelo administrador de armazenamento.
+ a| 
+Exibe a mensagem correspondente.
+
+
+
+ a| 
+`um version`
+ a| 
+Exibe a versão do software Unified Manager .
+ a| 
+`Version ("7.0")`
+
+
+
+ a| 
+`um lun list [-q] [ -ObjectType <object-id>]`
+ a| 
+Lista os LUNs após a filtragem no objeto especificado. -q é aplicável para todos os comandos para mostrar nenhum cabeçalho. ObjectType pode ser lun, qtree, cluster, volume, cota, svm. Por exemplo: `um lun list -cluster 1`
+
+Neste exemplo, "-cluster" é o objectType e "1" é o objectId. O comando lista todos os LUNs dentro do cluster com ID 1.
+ a| 
+Exibe os seguintes valores em formato tabular: `ID and LUN path`.
+
+
+
+ a| 
+`um svm list [-q] [ -ObjectType <object-id>]`
+ a| 
+Lista os SVMs após a filtragem no objeto especificado. ObjectType pode ser lun, qtree, cluster, volume, cota, svm. Por exemplo: `um svm list -cluster 1`
+
+Neste exemplo, "-cluster" é o objectType e "1" é o objectId. O comando lista todas as SVMs dentro do cluster com ID 1.
+ a| 
+Exibe os seguintes valores em formato tabular: `Name and Cluster ID`.
+
+
+
+ a| 
+`um qtree list [-q] [ -ObjectType <object-id>]`
+ a| 
+Lista os qtrees após a filtragem no objeto especificado. -q é aplicável para todos os comandos para mostrar nenhum cabeçalho. ObjectType pode ser lun, qtree, cluster, volume, cota, svm. Por exemplo: `um qtree list -cluster 1`
+
+Neste exemplo, "-cluster" é o objectType e "1" é o objectId. O comando lista todos os qtrees dentro do cluster com ID 1.
+ a| 
+Exibe os seguintes valores em formato tabular: `Qtree ID and Qtree Name`.
+
+
+
+ a| 
+`um disk list [-q] [-ObjectType <object-id>]`
+ a| 
+Lista os discos após a filtragem no objeto especificado. ObjectType pode ser disco, aggr, nó, cluster. Por exemplo: `um disk list -cluster 1`
+
+Neste exemplo, "-cluster" é o objectType e "1" é o objectId. O comando lista todos os discos dentro do cluster com ID 1.
+ a| 
+Exibe os seguintes valores em formato tabular `ObjectType and object-id.`
+
+
+
+ a| 
+`um cluster list [-q] [-ObjectType <object-id>]`
+ a| 
+Lista os clusters após a filtragem no objeto especificado. ObjectType pode ser disco, aggr, nó, cluster, lun, qtree, volume, cota, svm. Por exemplo:``um cluster list -aggr 1``
+
+Neste exemplo, "-aggr" é o objectType e "1" é o objectId. O comando lista o cluster ao qual o agregado com ID 1 pertence.
+ a| 
+Exibe os seguintes valores em formato tabular: `Name, Full Name, Serial Number, Datasource Id, Last Refresh Time, and Resource Key.`
+
+
+
+ a| 
+`um cluster node list [-q] [-ObjectType <object-id>]`
+ a| 
+Lista os nós de cluster após a filtragem no objeto especificado. ObjectType pode ser disco, aggr, nó, cluster. Por exemplo: `um cluster node list -cluster 1`
+
+Neste exemplo, "-cluster" é o objectType e "1" é o objectId. O comando lista todos os nós dentro do cluster com ID 1.
+ a| 
+Exibe os seguintes valores em formato tabular `Name and Cluster ID.`
+
+
+
+ a| 
+`um volume list [-q] [-ObjectType <object-id>]`
+ a| 
+Lista os volumes após a filtragem no objeto especificado. ObjectType pode ser lun, qtree, cluster, volume, cota, svm, agregado. Por exemplo: `um volume list -cluster 1`
+
+Neste exemplo, "-cluster" é o objectType e "1" é o objectId. O comando lista todos os volumes dentro do cluster com ID 1.
+ a| 
+Exibe os seguintes valores em formato tabular `Volume ID and Volume Name.`
+
+
+
+ a| 
+`um quota user list [-q] [-ObjectType <object-id>]`
+ a| 
+Lista os usuários de cota após a filtragem no objeto especificado. ObjectType pode ser qtree, cluster, volume, cota, svm. Por exemplo: `um quota user list -cluster 1`
+
+Neste exemplo, "-cluster" é o objectType e "1" é o objectId. O comando lista todos os usuários de cota dentro do cluster com ID 1.
+ a| 
+Exibe os seguintes valores em formato tabular `ID, Name, SID and Email.`
+
+
+
+ a| 
+`um aggr list [-q] [-ObjectType <object-id>]`
+ a| 
+Lista os agregados após a filtragem no objeto especificado. ObjectType pode ser disco, aggr, nó, cluster, volume. Por exemplo: `um aggr list -cluster 1`
+
+Neste exemplo, "-cluster" é o objectType e "1" é o objectId. O comando lista todos os agregados dentro do cluster com ID 1.
+ a| 
+Exibe os seguintes valores em formato tabular `Aggr ID, and Aggr Name.`
+
+
+
+ a| 
+`um event ack <event-ids>`
+ a| 
+Reconhece um ou mais eventos.
+ a| 
+Exibe a mensagem correspondente.
+
+
+
+ a| 
+`um event resolve <event-ids>`
+ a| 
+Resolve um ou mais eventos.
+ a| 
+Exibe a mensagem correspondente.
+
+
+
+ a| 
+`um event assign -u <username> <event-id>`
+ a| 
+Atribui um evento a um usuário.
+ a| 
+Exibe a mensagem correspondente.
+
+
+
+ a| 
+`um event list [ -s <source> ] [ -S <event-state-filter-list>.. ] [ <event-id> .. ]`
+ a| 
+Lista os eventos gerados pelo sistema ou usuário. Filtra eventos com base na origem, estado e IDs.
+ a| 
+Exibe os seguintes valores em formato tabular `Source, Source type, Name, Severity, State, User and Timestamp.`
+
+
+
+ a| 
+`um cli login -u <username> [-p <password>`
+ a| 
+Inicia sessão na CLI. A sessão expira após três horas a partir do momento do login, após o qual o usuário deve fazer login novamente.
+ a| 
+Exibe a mensagem correspondente.
+
+
+
+ a| 
+`um cli logout`
+ a| 
+Faz logout da CLI.
+ a| 
+Exibe a mensagem correspondente.
+
+
+
+ a| 
+`um backup restore -f <backup_file_path_and_name>`
+ a| 
+Restaura um backup de banco de dados usando arquivos .7z.
+ a| 
+Exibe a mensagem correspondente.
+
+
+
+ a| 
+`um help`
+ a| 
+Exibe todos os subcomandos de primeiro nível.
+ a| 
+Exibe todos os subcomandos de primeiro nível.
+
+|===

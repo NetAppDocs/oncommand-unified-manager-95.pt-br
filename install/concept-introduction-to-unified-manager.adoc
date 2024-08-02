@@ -1,0 +1,20 @@
+---
+permalink: install/concept-introduction-to-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: O OnCommand Unified Manager permite que você monitore e gerencie a integridade e a performance dos sistemas de storage da ONTAP com uma única interface. Você pode implantar o Unified Manager em um servidor Linux, em um servidor Windows ou como um dispositivo virtual em um host VMware. 
+---
+= Introdução ao OnCommand Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O OnCommand Unified Manager permite que você monitore e gerencie a integridade e a performance dos sistemas de storage da ONTAP com uma única interface. Você pode implantar o Unified Manager em um servidor Linux, em um servidor Windows ou como um dispositivo virtual em um host VMware.
+
+Após concluir a instalação e adicionar os clusters que você deseja gerenciar, o Unified Manager fornece uma interface gráfica que exibe a capacidade, disponibilidade, proteção e status de performance dos sistemas de storage monitorados.
+
+*Informações relacionadas*
+
+http://mysupport.netapp.com/matrix["Ferramenta de Matriz de interoperabilidade do NetApp"]

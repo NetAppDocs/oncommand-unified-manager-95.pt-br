@@ -1,0 +1,82 @@
+---
+permalink: online-help/reference-metrocluster-switch-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos do switch MetroCluster fornecem informações sobre o status dos switches MetroCluster para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos do switch MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos do switch MetroCluster fornecem informações sobre o status dos switches MetroCluster para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Interrutor de temperatura anormal (ocumEvtSwitchTemperatureAbnormal)
+ a| 
+Incidente
+ a| 
+Interrutor MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Interrutor inalcançável (ocumEvtSwitchUnreachable)
+ a| 
+Incidente
+ a| 
+Interrutor MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Falha dos ventiladores de interrutor(ocumEvtSwitchFansOneOrMoreFailed)
+ a| 
+Incidente
+ a| 
+Interrutor MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Falha nas fontes de alimentação do interrutor (ocumEvtSwitchPowerSuppliesOneOrMoreFailed)
+ a| 
+Incidente
+ a| 
+Interrutor MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Falha dos sensores de temperatura do interrutor (ocumEvtSwitchTemperatureSensorFailed)
+
+[NOTE]
+====
+Este evento é aplicável apenas para switches Cisco.
+
+==== a| 
+Incidente
+ a| 
+Interrutor MetroCluster
+ a| 
+Crítico
+
+|===

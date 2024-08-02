@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-what-happens-when-an-event-is-received.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Quando o Unified Manager recebe um evento, ele é exibido na página Dashboards/Overview, nas guias Summary e Explorer da página Performance/Cluster, na página de inventário de Eventos e na página de inventário específico do objeto (por exemplo, a página de inventário de integridade/volumes).' 
+---
+= O que acontece quando um evento é recebido
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando o Unified Manager recebe um evento, ele é exibido na página Dashboards/Overview, nas guias Summary e Explorer da página Performance/Cluster, na página inventário Eventos e na página inventário específico do objeto (por exemplo, a página de inventário de integridade/volumes).
+
+Quando o Unified Manager deteta várias ocorrências contínuas da mesma condição de evento para o mesmo componente do cluster, ele trata todas as ocorrências como um único evento, não como eventos separados. A duração do evento é incrementada para indicar que o evento ainda está ativo.
+
+Dependendo de como você configura as configurações na página Configuração/alertas, você pode notificar outros usuários sobre esses eventos. O alerta faz com que as seguintes ações sejam iniciadas:
+
+* Um e-mail sobre o evento pode ser enviado a todos os usuários do Unified Manager Administrator.
+* O evento pode ser enviado para destinatários de e-mail adicionais.
+* Um trap SNMP pode ser enviado para o recetor de trap.
+* Um script personalizado pode ser executado para executar uma ação.
+
+
+Este fluxo de trabalho é mostrado no diagrama a seguir.
+
+image::../media/um-perf-threshold-event-flow.gif[fluxo de evento de limite de um perf]

@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-metrocluster-configuration-verification.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode evitar problemas de desempenho de workloads espelhados em uma configuração do MetroCluster garantindo que a configuração do MetroCluster esteja configurada corretamente. Você também pode melhorar a performance do workload alterando a configuração ou atualizando componentes de software ou hardware. 
+---
+= Verificação da configuração do MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode evitar problemas de desempenho de workloads espelhados em uma configuração do MetroCluster garantindo que a configuração do MetroCluster esteja configurada corretamente. Você também pode melhorar a performance do workload alterando a configuração ou atualizando componentes de software ou hardware.
+
+O _Guia de instalação e configuração do MetroCluster_ fornece instruções para configurar os clusters na configuração do MetroCluster, incluindo os switches Fibre Channel (FC), cabos e ISLs (links entre switches). Ele também ajuda a configurar o software MetroCluster para que os clusters locais e remotos possam se comunicar com dados de volume espelhado.
+
+Você pode comparar sua configuração do MetroCluster com os requisitos do _Guia de Instalação e Configuração do MetroCluster_ para determinar se a alteração ou atualização de componentes na configuração do MetroCluster pode melhorar o desempenho da carga de trabalho. Esta comparação pode ajudá-lo a responder às seguintes perguntas:
+
+* Os controladores são apropriados para seus workloads?
+* Você precisa atualizar seus pacotes ISL para uma largura de banda maior para lidar com mais throughput?
+* Você pode ajustar os créditos buffer-to-buffer (BBC) em seus switches para aumentar a largura de banda?
+* Se seus workloads tiverem taxa de transferência de gravação alta no storage de unidade de estado sólido (SSD), você precisará atualizar suas pontes FC para SAS para acomodar a taxa de transferência?
+
+
+Para obter informações sobre como substituir ou atualizar componentes do MetroCluster, consulte o _Guia de Serviço do MetroCluster_.

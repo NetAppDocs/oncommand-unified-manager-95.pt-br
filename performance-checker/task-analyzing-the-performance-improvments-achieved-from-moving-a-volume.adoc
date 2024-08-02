@@ -1,0 +1,63 @@
+---
+permalink: performance-checker/task-analyzing-the-performance-improvments-achieved-from-moving-a-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar o Unified Manager para investigar o impactos de uma operação de movimentação de volume na latência de outros volumes no cluster. Mover um volume de alta performance para um agregado menos ocupado ou um agregado com o storage flash habilitado permite que o volume tenha uma performance mais eficiente. 
+---
+= Analisar as melhorias de desempenho obtidas com a movimentação de um volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar o Unified Manager para investigar o impacto de uma operação de movimentação de volume na latência (tempo de resposta) de outros volumes no cluster. Mover um volume de alta performance para um agregado menos ocupado ou um agregado com o storage flash habilitado permite que o volume tenha uma performance mais eficiente.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Você deve ter identificado o nome do volume ou LUN associado que deseja analisar.
+* O Unified Manager precisa ter coletado e analisado sete dias de dados.
+
+
+
+
+== Sobre esta tarefa
+
+O Unified Manager identifica quando um volume se move entre agregados. Ele pode detetar quando a movimentação de volume está ocorrendo, concluída ou falhou. A página Detalhes de desempenho/volume exibe um ícone de evento de mudança para cada estado da movimentação de volume, que o ajuda a rastrear quando uma operação de movimentação ocorreu e ajuda a determinar se ela pode ter contribuído para um evento de desempenho.
+
+Se estiver a visualizar a página de detalhes do evento, pode clicar no nome de um volume para ir diretamente para a página Detalhes do desempenho/volume.
+
+
+
+== Passos
+
+. Na barra *pesquisar*, digite o nome do volume.
+. Clique no nome do volume.
++
+O volume é apresentado na página Performance/volume Details (Detalhes de desempenho/volume).
+
+. No gráfico *dados históricos*, ajuste os controles deslizantes para mostrar a atividade da semana de trabalho anterior.
+. Analise o gráfico *latência* e o gráfico *IOPS* para ver como o volume foi executado nos últimos dias.
++
+Suponha que você observe um padrão consistente de tempos de resposta médios muito altos de mais de 42 milissegundos por operação (ms/op), com eventos de desempenho, todos os dias da semana e decida mover o volume para um agregado menos ocupado para melhorar o desempenho. Com o OnCommand System Manager, você pode mover o volume para um agregado com o Flash Pool habilitado para aumentar o desempenho. Aproximadamente uma hora após a conclusão da movimentação de volume, é possível retornar ao Unified Manager para confirmar que a operação de movimentação foi concluída com sucesso e que a latência melhorou.
+
+. Se a página *Detalhes de desempenho/volume* não for exibida, procure o volume que deseja exibir.
+. No gráfico *dados históricos*, clique em *1D* para ver a atividade do último dia, algumas horas desde que a movimentação do volume foi concluída.
++
+Na parte inferior da página, na linha Events Time (hora de eventos), é apresentado um ícone de alteração de evento (image:../media/opm-change-icon.gif["Alterar ícone de evento"]) para indicar a hora em que a operação de movimentação de volume foi concluída. Uma linha vertical preta também é exibida do ícone alterar evento para o gráfico de latência.
+
+. Aponte o cursor para o ícone alterar evento para ver detalhes sobre o evento na *Lista de Eventos*.
++
+Como o volume foi movido para um agregado com o Flash Pool habilitado, você pode ver a alteração na e/S de leitura e gravação no cache.
+
+. No menu *Breakdown data by*, em *Mbps*, selecione *Cache hit Ratio*.
++
+O gráfico de taxa de acerto do cache exibe estatísticas sobre as leituras e gravações no cache.
+
++
+O volume movido com êxito para um agregado menos ocupado e o evento de mudança é realçado na Lista de Eventos à direita. A latência média diminuiu significativamente de mais de 42 ms/op para cerca de 24 ms/op. A latência atual é de cerca de 1,5 ms/op. No gráfico de taxa de acerto do cache, a quantidade de acertos de leitura e gravação bem-sucedidos no cache está agora em 100% porque o volume está agora em um agregado com o Flash Pool ativado.
+
+

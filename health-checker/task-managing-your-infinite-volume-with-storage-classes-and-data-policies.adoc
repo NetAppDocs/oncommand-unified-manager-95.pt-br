@@ -1,0 +1,68 @@
+---
+permalink: health-checker/task-managing-your-infinite-volume-with-storage-classes-and-data-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode gerenciar efetivamente seu Infinite volume criando o Infinite volume com o número necessário de classes de armazenamento, configurando limites para cada classe de armazenamento, criando regras e uma política de dados para determinar o posicionamento dos dados gravados no Infinite volume, configurando proteção de dados e, opcionalmente, configurando alertas de notificação. 
+---
+= Gerenciando seu Infinite volume com classes de armazenamento e políticas de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode gerenciar efetivamente seu Infinite volume criando o Infinite volume com o número necessário de classes de armazenamento, configurando limites para cada classe de armazenamento, criando regras e uma política de dados para determinar o posicionamento dos dados gravados no Infinite volume, configurando proteção de dados e, opcionalmente, configurando alertas de notificação.
+
+
+
+== Antes de começar
+
+* O OnCommand Workflow Automation (WFA) deve ser instalado.
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter criado o número necessário de agregados personalizando o fluxo de trabalho predefinido apropriado no WFA.
+* Você deve ter criado o número necessário de classes de armazenamento personalizando o fluxo de trabalho predefinido apropriado no WFA.
+* Você deve ter configurado o servidor do Unified Manager como uma fonte de dados no WFA e, em seguida, você deve ter verificado se os dados estão armazenados em cache com êxito.
+
+
+
+
+== Sobre esta tarefa
+
+Durante a execução desta tarefa, é necessário alternar entre dois aplicativos: O OnCommand Workflow Automation (WFA) e o Gerenciador Unificado do OnCommand.
+
+A tarefa fornece etapas de alto nível. Para obter detalhes sobre como executar as tarefas DO WFA, consulte a documentação _OnCommand Workflow Automation_.
+
+image::../media/cr-workflow-oc-6-0.gif[Fluxo de trabalho para gerenciar SVM com Infinite volume com classes de armazenamento]
+
+
+
+== Passos
+
+. image:../media/wfa-icon.gif["Ícone para o procedimento WFA"] Personalize o fluxo de trabalho predefinido para definir as classes de armazenamento necessárias.
+. image:../media/wfa-icon.gif["Ícone para o procedimento WFA"] Crie um SVM com Infinite volume com o número necessário de classes de storage usando o fluxo de trabalho apropriado.
+. image:../media/um-icon.gif["Ícone do procedimento do Unified Manager"] Adicione o cluster que contém o SVM com Infinite volume ao banco de dados do Unified Manager.
++
+Você pode adicionar o cluster fornecendo o endereço IP ou o FQDN do cluster.
+
+. image:../media/um-icon.gif["Ícone do procedimento do Unified Manager"] xref:task-editing-storage-class-threshold-settings.adoc[Com base nos requisitos da sua organização, modifique os limites para cada classe de armazenamento].
++
+Você deve usar as configurações padrão de limite da classe de armazenamento para monitorar efetivamente o espaço da classe de armazenamento.
+
+. image:../media/um-icon.gif["Ícone do procedimento do Unified Manager"] xref:task-adding-alerts.adoc[Configure alertas de notificação e traps para resolver quaisquer problemas de disponibilidade e capacidade relacionados ao Infinite volume].
+. image:../media/um-icon.gif["Ícone do procedimento do Unified Manager"] xref:task-creating-rules.adoc[Configure regras na política de dados e, em seguida, ative todas as alterações feitas na política de dados]
++
+As regras de uma política de dados determinam o posicionamento do conteúdo gravado no Infinite volume.
+
++
+[NOTE]
+====
+As regras de uma política de dados afetam apenas novos dados gravados no Infinite volume e não afetam os dados existentes no Infinite volume.
+
+====
+. image:../media/wfa-icon.gif["Ícone para o procedimento WFA"] Crie um SVM para recuperação de desastres (DR) com Infinite volume e configure uma proteção de dados (DP) seguindo estas etapas:
++
+.. Crie um volume infinito de proteção de dados (DP) usando o fluxo de trabalho apropriado.
+.. Configure uma relação de espelho DP entre a origem e o destino usando o fluxo de trabalho apropriado.
+
+
+

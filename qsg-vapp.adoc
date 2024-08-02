@@ -1,0 +1,57 @@
+---
+permalink: qsg-vapp.html 
+sidebar: sidebar 
+keywords: quick start guide, getting started, QSG, VMWare QSG, vApp QSG, quick installation 
+summary: Guia de início rápido do Unified Manager na plataforma VMware vSphere. 
+---
+= Instruções de início rápido para instalações VMware
+:allow-uri-read: 
+
+
+
+
+== Requisitos do sistema
+
+* Sistema operacional: VMware ESXi 5,5, 6,0 e 6,5
+* RAM: 12 GB
+* CPU: Total de 9572 MHz
+* Espaço livre em disco: 5 GB (thin Provisioning), 152 GB (thick provisioned)
+
+
+Para obter os requisitos detalhados do sistema, link:install/reference-vmware-software-and-installation-requirements.html["Requisitos de software e instalação da VMware"] consulte e link:http://mysupport.netapp.com/matrix["Matriz de interoperabilidade"].
+
+
+
+== Instalar o OnCommand Unified Manager
+
+
+
+=== Baixe o instalador
+
+. Baixe o `OnCommandUnifiedManager-9.5RC1.ovas` pacote de instalação.
+. Salve o arquivo em um diretório local ou diretório de rede acessível ao cliente vSphere.
+
+
+
+
+=== Instale o Unified Manager
+
+O VMware Tools não está incluído no pacote de instalação do Unified Manager. Você deve montar uma imagem de CD-ROM ou ISO para instalá-la como parte do processo de instalação do Unified Manager.
+
+. No vSphere Client, clique em *File > Deploy OVF Template*.
+. Localize o arquivo OVA e use o assistente para implantar o dispositivo virtual no servidor ESXi.
+. Na página Configuração de rede na guia Propriedades, preencha os campos conforme necessário para o tipo de instalação que você está executando:
++
+** Para uma configuração estática; introduza as informações necessárias em todos os campos (o DNS secundário não é obrigatório).
+** Para DHCP usando IPv4; deixe todos os campos em branco.
+** Para DHCP usando IPv6; marque a caixa "Ativar endereçamento IPv6 automático" e deixe todos os outros campos em branco.
+
+
+. Ligue a VM.
+. Clique na guia Console para exibir o processo de inicialização inicial.
+. Siga o prompt para instalar o VMware Tools na VM.
+. Configure o fuso horário.
+. Introduza um nome de utilizador e uma palavra-passe de manutenção do Unified Manager.
+
+
+No final da instalação, as informações para se conetar à IU da Web do Unified Manager são exibidas.

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-rules-and-data-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: Entender os conceitos sobre regras e política de dados ajuda você a gerenciar seus Infinite volumes de forma eficiente. 
+---
+= Compreender as regras e a política de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Entender os conceitos sobre regras e política de dados ajuda você a gerenciar seus Infinite volumes de forma eficiente.

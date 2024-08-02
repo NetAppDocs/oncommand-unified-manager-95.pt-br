@@ -1,0 +1,23 @@
+---
+permalink: online-help/concept-adding-disk-space-to-the-unified-manager-database-directory.html 
+sidebar: sidebar 
+keywords:  
+summary: O diretório do banco de dados do Unified Manager contém todos os dados de integridade e desempenho coletados dos sistemas ONTAP. Algumas circunstâncias podem exigir que você aumente o tamanho do diretório do banco de dados. 
+---
+= Adicionando espaço em disco ao diretório do banco de dados do Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O diretório do banco de dados do Unified Manager contém todos os dados de integridade e desempenho coletados dos sistemas ONTAP. Algumas circunstâncias podem exigir que você aumente o tamanho do diretório do banco de dados.
+
+Por exemplo, o diretório do banco de dados pode ficar cheio se o Unified Manager estiver coletando dados de um grande número de clusters onde cada cluster tem muitos nós. Você receberá um evento de aviso quando o diretório do banco de dados estiver 90% cheio e um evento crítico quando o diretório estiver 95% cheio.
+
+[NOTE]
+====
+Nenhum dado adicional é coletado de clusters depois que o diretório atinge 95% cheio.
+
+====
+As etapas necessárias para adicionar capacidade ao diretório de dados são diferentes dependendo se o Unified Manager está sendo executado em um servidor VMware ESXi, em um servidor Red Hat ou CentOS Linux ou em um servidor Microsoft Windows.

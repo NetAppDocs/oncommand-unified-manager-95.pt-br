@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-disk-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos do Disks fornecem informações sobre o status dos discos para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de discos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos do Disks fornecem informações sobre o status dos discos para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Discos flash - blocos de reposição quase consumidos(ocumEvtClusterFlashDiskFewerSporeBlockError)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Erro
+
+
+
+ a| 
+Discos flash - sem blocos de reposição(ocumEvtClusterFlashDiskNoSporeBlockCritical)
+ a| 
+Incidente
+ a| 
+Cluster
+ a| 
+Crítico
+
+
+
+ a| 
+Alguns discos não atribuídos (ocumEvtClusterUnassignedDisksNome)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Alguns discos falhados (ocumEvtDisksSomeFailed)
+ a| 
+Incidente
+ a| 
+Cluster
+ a| 
+Crítico
+
+|===

@@ -1,0 +1,65 @@
+---
+permalink: online-help/task-searching-for-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: Para acessar rapidamente um objeto específico, você pode usar o campo pesquisar todos os objetos de armazenamento no canto superior direito da interface. Este método de pesquisa global em todos os objetos permite localizar rapidamente objetos específicos por tipo. Os resultados da pesquisa são classificados por tipo de objeto de armazenamento e você pode filtrá-los ainda mais por objeto usando o menu suspenso tipo. 
+---
+= A procurar objetos de armazenamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para acessar rapidamente um objeto específico, você pode usar o campo *pesquisar todos os objetos de armazenamento* no canto superior direito da interface. Este método de pesquisa global em todos os objetos permite localizar rapidamente objetos específicos por tipo. Os resultados da pesquisa são classificados por tipo de objeto de armazenamento e você pode filtrá-los ainda mais por objeto usando o menu suspenso *tipo*.
+
+
+
+== Antes de começar
+
+* Você deve ter uma das seguintes funções para executar esta tarefa: Operador, Administrador do OnCommand ou Administrador do armazenamento.
+* Uma pesquisa válida deve conter pelo menos três carateres.
+
+
+
+
+== Sobre esta tarefa
+
+Ao usar o valor do menu suspenso tipo "'all'", a pesquisa global exibe o número total de resultados encontrados em todas as categorias de objetos; com um máximo de 25 resultados de pesquisa para cada categoria de objeto. Você pode selecionar um tipo de objeto específico no menu suspenso tipo para refinar a pesquisa dentro de um tipo de objeto específico. Neste caso, a lista retornada não está restrita aos 25 principais objetos.
+
+Os tipos de objeto que você pode pesquisar incluem:
+
+* Clusters
+* Nós
+* SVMs
+* Agregados
+* Volumes
+* Qtrees
+* Compartilhamentos CIFS
+* Quotas de utilizador ou de grupo
+* LUNs
+* Namespaces NVMe
+* Grupos de iniciadores
+* Iniciadores
+
+
+Você pode clicar em qualquer objeto nos resultados da pesquisa para navegar para a página de detalhes de integridade desse objeto. Se não houver uma página de integridade direta para um objeto, a página Saúde do objeto pai será exibida. Por exemplo, ao pesquisar um LUN específico, a página de detalhes do SVM na qual o LUN reside é exibida.
+
+[NOTE]
+====
+As portas não são pesquisáveis na barra de pesquisa global.
+
+====
+
+
+== Passos
+
+. Selecione um tipo de objeto no menu *tipo* para refinar os resultados da pesquisa para apenas um único tipo de objeto.
+. Digite um mínimo de três carateres do nome do objeto no campo *pesquisar todos os objetos de armazenamento*.
++
+Neste exemplo, a caixa suspensa *Type* tem o tipo de objeto volumes selecionado. Digitar "'vol1" no campo *pesquisar todos os objetos de armazenamento* exibe uma lista de todos os volumes cujos nomes contêm esses carateres.
+
++
+image::../media/opm-search-field-jpg.gif[Campo de pesquisa no Unified Manager]
+
+

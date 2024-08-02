@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-maximum-number-of-files-an-infinite-volume-can-store.html 
+sidebar: sidebar 
+keywords:  
+summary: Na maioria dos casos, um Infinite volume pode conter até 2 bilhões de arquivos. Se um Infinite volume for relativamente pequeno, o seu número máximo de ficheiros poderá ser inferior a 2 mil milhões. 
+---
+= Número máximo de ficheiros que um Infinite volume pode armazenar
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Na maioria dos casos, um Infinite volume pode conter até 2 bilhões de arquivos. Se um Infinite volume for relativamente pequeno, o seu número máximo de ficheiros poderá ser inferior a 2 mil milhões.
+
+O número máximo de arquivos que um Infinite volume pode conter é determinado pelo tamanho de seu componente de namespace. Se o componente do namespace for 10 TB, o Infinite volume pode conter 2 bilhões de arquivos. Se o componente do namespace for inferior a 10 TB, o Infinite volume pode conter proporcionalmente menos arquivos.
+
+O tamanho do componente do namespace é aproximadamente proporcional ao tamanho do Infinite volume, dependendo de vários fatores, como o tamanho máximo de 10 TB do componente do namespace, o espaço disponível no agregado que contém o componente do namespace e a configuração SnapDiff.
+
+Para um Infinite volume de dois nós ou um Infinite volume de vários nós sem SnapDiff habilitado, definir o Infinite volume para um tamanho de 80 TB ou superior normalmente cria um namespace constituinte de 10 TB.
+
+A contagem de arquivos não inclui apenas arquivos regulares, mas também outras estruturas de sistema de arquivos, como diretórios e links simbólicos.

@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-reorder-annotation-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo regra de anotação de reordenação para especificar a ordem na qual deseja que as regras de anotação sejam aplicadas a objetos de armazenamento. 
+---
+= Caixa de diálogo Reordenar regra de anotação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo regra de anotação de reordenação para especificar a ordem na qual deseja que as regras de anotação sejam aplicadas a objetos de armazenamento.
+
+
+
+== Botões de comando
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+* *Guardar*
++
+Guarda as alterações efetuadas nas regras de anotação e fecha a caixa de diálogo Reordenar regra de anotação.
+
+* *Cancelar*
++
+Fecha a caixa de diálogo regra de anotação de reordenação sem guardar as alterações efetuadas.
+
+
+
+
+
+== Vista de lista
+
+* *Classificação*
++
+Apresenta a ordem pela qual as regras de anotação serão aplicadas aos objetos de armazenamento.
+
+* *Nome*
++
+Apresenta o nome da regra de anotação.
+
+* * Tipo Objeto alvo*
++
+Apresenta o tipo de objeto de armazenamento ao qual a regra de anotação é aplicada.
+
+* *Anotação associada*
++
+Apresenta o nome da anotação aplicada ao objeto de armazenamento.
+
+* *Valor de anotação associado*
++
+Apresenta o valor da anotação para o objeto de armazenamento.
+
+

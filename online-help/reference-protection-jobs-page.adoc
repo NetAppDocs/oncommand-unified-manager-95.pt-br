@@ -1,0 +1,155 @@
+---
+permalink: online-help/reference-protection-jobs-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página proteção/trabalhos permite visualizar o estado atual e outras informações sobre todos os trabalhos de proteção de aplicativos parceiros que estão sendo executados no momento, bem como os trabalhos que foram concluídos. Pode utilizar estas informações para ver quais trabalhos ainda estão a ser executados e se um trabalho foi bem-sucedido ou falhou. 
+---
+= Página proteção/trabalhos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página proteção/trabalhos permite visualizar o estado atual e outras informações sobre todos os trabalhos de proteção de aplicativos parceiros que estão sendo executados no momento, bem como os trabalhos que foram concluídos. Pode utilizar estas informações para ver quais trabalhos ainda estão a ser executados e se um trabalho foi bem-sucedido ou falhou.
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* * Cancelar*
++
+Aborta o trabalho selecionado. Esta opção só está disponível se o trabalho selecionado estiver em execução.
+
+* *Repetir*
++
+Reinicia um trabalho com falha do tipo Configuração de proteção ou operação de relação de proteção. Você pode tentar novamente apenas um trabalho com falha de cada vez. Se for selecionado mais de um trabalho com falha, o botão *Repetir* é desativado. Não é possível tentar novamente trabalhos de serviço de armazenamento falhados.
+
+* *Atualizar*
++
+Atualiza a lista de trabalhos e as informações associadas a eles.
+
+
+
+
+
+== Lista de trabalhos
+
+A lista trabalhos apresenta, em formato tabular, uma lista dos trabalhos em curso. Por predefinição, a lista apresenta apenas os trabalhos gerados na semana passada. Pode utilizar a ordenação e a filtragem de colunas para personalizar os trabalhos apresentados.
+
+* *Status*
++
+Apresenta o estado atual de um trabalho. O status pode ser erro (image:../media/sev-error.gif[""] ) ou normal (image:../media/sev-normal.gif[""]).
+
+* *ID do trabalho*
++
+Apresenta o número de identificação do trabalho. Por padrão, essa coluna está oculta.
+
++
+O número de identificação do trabalho é único e é atribuído pelo servidor quando inicia o trabalho. Pode procurar um trabalho específico introduzindo o número de identificação do trabalho na caixa de texto fornecida pelo filtro de coluna.
+
+* *Nome*
++
+Apresenta o nome do trabalho.
+
+* *Tipo*
++
+Apresenta o tipo de trabalho. Os tipos de tarefa são os seguintes:
+
++
+** *Aquisição de cluster*
++
+Um trabalho de automação do fluxo de trabalho está redescobrindo um cluster.
+
+** *Configuração de proteção*
++
+Um trabalho de proteção está iniciando fluxos de trabalho de automação do fluxo de trabalho, como cronogramas cron, criação de políticas do SnapMirror e assim por diante.
+
+** * Operação de relacionamento de proteção*
++
+Um trabalho de proteção está executando operações do SnapMirror.
+
+** * Cadeia de fluxo de trabalho de proteção*
++
+Um trabalho de automação do fluxo de trabalho está executando vários fluxos de trabalho.
+
+** *Restaurar*
++
+Um trabalho de restauração está em execução.
+
+** *Limpeza*
++
+O trabalho está limpando artefatos dos membros do serviço de armazenamento que não são mais necessários para fins de restauração.
+
+** *Em conformidade*
++
+O trabalho está verificando a configuração dos membros do serviço de armazenamento para garantir que eles estão em conformidade.
+
+** *Destrua*
++
+O trabalho está destruindo um serviço de armazenamento.
+
+** *Importação*
++
+A tarefa está importando objetos de armazenamento não gerenciados para um serviço de armazenamento existente.
+
+** *Modificar*
++
+A tarefa está modificando atributos de um serviço de armazenamento existente.
+
+** *Subscribe*
++
+O trabalho está assinando membros de um serviço de armazenamento.
+
+** *Cancelar inscrição*
++
+O trabalho está descadastrando membros de um serviço de armazenamento.
+
+** *Atualização*
++
+Um trabalho de atualização de proteção está em execução.
+
+** *Configuração WFA*
++
+Um trabalho do Workflow Automation está enviando credenciais de cluster e sincronizando caches de banco de dados.
+
+
+
+* *Estado*
++
+Apresenta o estado em execução do trabalho. As opções de estado são as seguintes:
+
++
+** *Abortado*
++
+O trabalho foi abortado.
+
+** *Aborting*
++
+O trabalho está em processo de abortar.
+
+** *Concluído*
++
+O trabalho terminou.
+
+** *Running*
++
+O trabalho está em execução.
+
+
+
+* *Tempo de envio*
++
+Exibe a hora em que o trabalho foi enviado.
+
+* *Duração*
++
+Exibe o tempo que o trabalho levou para concluir. Esta coluna é apresentada por predefinição.
+
+* *Tempo completo*
++
+Apresenta a hora em que o trabalho terminou. Por padrão, essa coluna está oculta.
+
+

@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-understanding-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'As associações de máquina virtual de storage (SVM) são mapeamentos de uma SVM de origem para um SVM de destino que são usados por aplicativos parceiros para seleção de recursos e provisionamento de volume secundário.' 
+---
+= Compreensão das associações SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+As associações de máquina virtual de storage (SVM) são mapeamentos de uma SVM de origem para um SVM de destino, usados por aplicativos de parceiros para seleção de recursos e provisionamento de volume secundário.
+
+As associações sempre são criadas entre uma SVM de origem e um SVM de destino, independentemente de o SVM de destino ser um destino secundário ou um destino terciário. Você não pode usar um SVM de destino secundário como fonte para criar uma associação com um SVM de destino terciário.
+
+Você pode associar SVMs de três maneiras:
+
+* Associar qualquer SVM
++
+Você pode criar uma associação entre qualquer SVM de origem primária e um ou mais SVMs de destino. Isso significa que todos os SVMs existentes que atualmente exigem proteção, bem como quaisquer SVMs criadas no futuro, estão associados aos SVMs de destino especificados. Por exemplo, você pode querer que aplicativos de várias fontes diferentes em locais diferentes sejam copiados para um ou mais SVMs de destino em um local.
+
+* Associar um SVM específico
++
+Você pode criar uma associação entre uma fonte específica SVM e um ou mais SVMs de destino específicos. Por exemplo, se você estiver fornecendo serviços de storage para muitos clientes cujos dados precisam estar separados um do outro, poderá escolher essa opção para associar uma SVM de origem específica a um SVM de destino específico atribuído somente a esse cliente.
+
+* Associar-se a uma SVM externa
++
+Você pode criar uma associação entre uma fonte SVM e um volume flexível externo de um SVM de destino.
+
+

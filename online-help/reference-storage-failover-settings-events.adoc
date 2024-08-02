@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-storage-failover-settings-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de configurações de failover de armazenamento fornecem informações sobre se o failover de armazenamento está desativado ou não configurado para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de configurações de failover de storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de configurações de failover de armazenamento (SFO) fornecem informações sobre se o failover de armazenamento está desativado ou não configurado para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Um ou mais links para baixo (ocumEvtSfoInterconnectOneOrMoreLinkDown)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Failover de armazenamento Desativado(ocumEvtSfoSettingsDisabled)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Failover de armazenamento não configurado (ocumEvtSfoSettingsNotConfigured)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Estado de failover de armazenamento - Takeover(ocumEvtSfoStatesTakover)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Estado de failover de armazenamento - reembolso parcial (ocumEvtSfoStatePartialGiveback)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Status do nó de failover de armazenamento para baixo (ocumEvtSfoNodeStatusDown)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Possibilidade de aquisição de failover de armazenamento (ocumEvtSfoTakeoversNotPossible)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+|===

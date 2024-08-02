@@ -1,0 +1,66 @@
+---
+permalink: online-help/concept-types-of-snapmirror-protection.html 
+sidebar: sidebar 
+keywords:  
+summary: Dependendo da implantação da topologia de storage de dados, o Unified Manager permite configurar vários tipos de relacionamentos de proteção SnapMirror. Todas as variações da proteção SnapMirror oferecem proteção contra recuperação de desastres com failover, mas oferecem recursos diferentes em performance, flexibilidade de versão e proteção de várias cópias de backup. 
+---
+= Tipos de proteção SnapMirror
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dependendo da implantação da topologia de storage de dados, o Unified Manager permite configurar vários tipos de relacionamentos de proteção SnapMirror. Todas as variações da proteção SnapMirror oferecem proteção contra recuperação de desastres com failover, mas oferecem recursos diferentes em performance, flexibilidade de versão e proteção de várias cópias de backup.
+
+
+
+== Relações de proteção assíncronas tradicionais da SnapMirror
+
+A proteção assíncrona tradicional da SnapMirror fornece proteção espelhada de replicação de bloco entre volumes de origem e destino.
+
+Nas relações SnapMirror tradicionais, as operações de espelhamento são executadas mais rápido do que em relacionamentos SnapMirror alternativos, porque a operação de espelhamento é baseada na replicação de bloco. No entanto, a proteção SnapMirror tradicional requer que o volume de destino seja executado na mesma ou posterior versão menor do software ONTAP como o volume de origem na mesma versão principal (por exemplo, versão 8.x a 8.x ou 9.x a 9.x).
+
+
+
+== Proteção assíncrona SnapMirror com replicação flexível da versão
+
+A proteção assíncrona do SnapMirror com replicação flexível da versão fornece proteção de espelhamento de replicação lógica entre volumes de origem e destino, mesmo que esses volumes estejam sendo executados em versões diferentes do software ONTAP 8,3 ou posterior (por exemplo, versão 8,3 a 8,3, ou 8,3 a 9,1 ou 9,0 a 8,3).
+
+Nos relacionamentos do SnapMirror com replicação flexível por versão, as operações de espelhamento não são executadas tão rapidamente quanto nas relações SnapMirror tradicionais.
+
+Devido à execução mais lenta, o SnapMirror com proteção de replicação flexível da versão não é adequado para ser implementado em qualquer uma das seguintes circunstâncias:
+
+* O objeto fonte contém mais de 10 milhões de arquivos para proteger.
+* O objetivo do ponto de recuperação para os dados protegidos é de duas horas ou menos. (Ou seja, o destino deve sempre conter dados espelhados e recuperáveis que não são mais de duas horas mais antigos do que os dados na origem.)
+
+
+Em qualquer uma das circunstâncias listadas, é necessária a execução mais rápida baseada na replicação de blocos da proteção padrão do SnapMirror.
+
+
+
+== Proteção assíncrona SnapMirror com replicação flexível da versão e opção de backup
+
+A proteção assíncrona do SnapMirror com a opção de replicação flexível e backup da versão oferece proteção espelhada entre os volumes de origem e destino e a funcionalidade de armazenar várias cópias dos dados espelhados no destino.
+
+O administrador de storage pode especificar quais cópias Snapshot são espelhadas de origem para destino e também especificar por quanto tempo reter essas cópias no destino, mesmo que elas sejam excluídas na origem.
+
+Nos relacionamentos do SnapMirror com a opção de replicação flexível de versão e backup, as operações de espelhamento não são executadas tão rapidamente como nas relações SnapMirror tradicionais.
+
+
+
+== Proteção síncrona SnapMirror com sincronização estrita
+
+A proteção síncrona SnapMirror com sincronização "trict" garante que os volumes primário e secundário sejam sempre uma cópia verdadeira um do outro. Se ocorrer uma falha de replicação ao tentar gravar dados no volume secundário, a e/S do cliente no volume primário será interrompida.
+
+
+
+== Proteção síncrona SnapMirror com sincronização regular
+
+A proteção síncrona do SnapMirror com sincronização "veicular" não exige que o volume primário e secundário sejam sempre uma cópia verdadeira do outro, garantindo assim a disponibilidade do volume primário. Se ocorrer uma falha de replicação ao tentar gravar dados no volume secundário, os volumes primário e secundário ficam fora de sincronia e a e/S do cliente continuará para o volume primário.
+
+[NOTE]
+====
+O botão Restaurar e os botões de operação de relacionamento não estão disponíveis ao monitorar relacionamentos de proteção síncrona na página de inventário de integridade/volumes ou na página de detalhes de integridade/volume.
+
+====

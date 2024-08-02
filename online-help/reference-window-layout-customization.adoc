@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-window-layout-customization.html 
+sidebar: sidebar 
+keywords:  
+summary: O Gerenciador Unificado do OnCommand permite que você personalize o layout das informações nas páginas de objetos de storage. Ao personalizar as janelas, pode controlar quais os dados que podem ser visualizados e como os dados são apresentados. 
+---
+= Personalização do layout da janela
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Gerenciador Unificado do OnCommand permite que você personalize o layout das informações nas páginas de objetos de storage. Ao personalizar as janelas, pode controlar quais os dados que podem ser visualizados e como os dados são apresentados.
+
+* *Classificação*
++
+Você pode clicar no cabeçalho da coluna para alterar a ordem de classificação das entradas da coluna. Quando você clica no cabeçalho da coluna, as setas de classificação (image:../media/sort-asc-um60.gif["Ícone para ordenação de colunas – ascendente"] e image:../media/sort-desc-um60.gif["Ícone para ordenação de colunas – descendente"]) aparecem para essa coluna.
+
+* *Filtragem*
++
+Você pode aplicar filtros para personalizar a exibição de informações nas páginas de objetos de armazenamento para que apenas as entradas que correspondem às condições fornecidas sejam exibidas. Você pode aplicar filtros do painel filtros ou nas colunas.
+
++
+O painel filtros permite filtrar algumas das colunas com base nas opções selecionadas. Por exemplo, na página inventário de integridade/volumes, você pode usar o painel filtros para filtrar apenas as colunas Status e Estado. Para exibir todos os volumes offline, você pode selecionar a opção de filtro apropriada em Estado.
+
++
+Como alternativa, você pode definir filtros em colunas usando o ícone de filtro (image:../media/filtericon-um60.png["Ícone para filtro de coluna"]). Você pode então usar o filtro de carateres curinga (?) ou o filtro de cadeia curinga (*) para restringir sua pesquisa. Por exemplo, na página de inventário Saúde/volumes, você pode procurar um volume, vol234, usando o filtro de cadeia de carateres na coluna volume. Você pode digitar `*vol`, e todos os volumes com nomes contendo "'vol'" são listados. Você pode digitar `vol?` para exibir a lista de todos os volumes com o nome que contém "'vol'" seguido de mais um caractere - por exemplo, vol1 ou vol2. Você pode digitar `vol` para ver a lista de todos os volumes com nomes que começam com "'vol'".
+
++
+Colunas relacionadas à capacidade em qualquer lista sempre exibem dados de capacidade em unidades apropriadas arredondadas para dois pontos decimais. Isso também se aplica ao filtrar colunas de capacidade. Por exemplo, se você usar o filtro na coluna capacidade total de dados na página inventário integridade/agregados para filtrar dados acima de 20,45 GB, a capacidade real de 20,454 GB será exibida como 20,45 GB. Da mesma forma, se você filtrar dados com menos de 20,45 GB, a capacidade real de 20,449 GB será exibida como 20,45 GB.
+
++
+Se você usar o filtro na coluna % de dados disponíveis na página de inventário de integridade/agregados para filtrar dados acima de 20,45%, a capacidade real de 20,454% será exibida como 20,45%. Da mesma forma, se você filtrar dados menos de 20,45%, a capacidade real de 20,449% será exibida como 20,45%. Para colunas que exibem dados de capacidade em porcentagem, você pode visualizar valores de até quatro pontos decimais movendo o ponteiro do Mouse sobre o valor exibido na coluna.
+
+* *Ocultando ou reexibindo as colunas*
++
+Você pode clicar no ícone de exibição de coluna (image:../media/advanced-options.gif[""]) para selecionar as colunas que deseja exibir.
+
+* * Exportação de dados*
++
+Pode clicar no ícone de exportação (image:../media/export-icon.gif["Ícone para exportar dados separados por vírgulas para uso em relatórios."]) para exportar dados para um (`.csv`ficheiro de valores separados por vírgulas ) e utilizar os dados exportados para criar relatórios.
+
+

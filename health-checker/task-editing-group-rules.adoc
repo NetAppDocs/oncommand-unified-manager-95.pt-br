@@ -1,0 +1,36 @@
+---
+permalink: health-checker/task-editing-group-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode editar regras de grupo para modificar os grupos de condição e as condições dentro de um grupo de condições para adicionar ou remover objetos de armazenamento de ou para um grupo específico. 
+---
+= Editando regras de grupo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar regras de grupo para modificar os grupos de condição e as condições dentro de um grupo de condições para adicionar ou remover objetos de armazenamento de ou para um grupo específico.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Gestão* > *grupos*.
+. Na guia *regras de grupo*, selecione a regra de grupo que deseja editar e clique em *Editar*.
+. Na caixa de diálogo *Editar regra de grupo*, altere o nome da regra de grupo, o nome do grupo associado, os grupos de condição e as condições conforme necessário.
++
+[NOTE]
+====
+Não é possível alterar o tipo de objeto de destino para uma regra de grupo.
+
+====
+. Clique em *Salvar*.
+

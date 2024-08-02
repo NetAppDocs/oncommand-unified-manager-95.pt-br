@@ -1,0 +1,37 @@
+---
+permalink: performance-checker/task-identifying-victim-workloads-involved-in-a-performance-event.html 
+sidebar: sidebar 
+keywords:  
+summary: 'No Unified Manager, você pode identificar quais cargas de trabalho de volume têm o maior desvio no tempo de resposta (latência) causado por um componente de storage na contenção. Identificar essas cargas de trabalho ajuda você a entender por que os aplicativos clientes que os acessam têm tido um desempenho mais lento do que o normal.' 
+---
+= Identificação das cargas de trabalho da vítima envolvidas em um evento de desempenho dinâmico
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+No Unified Manager, você pode identificar quais workloads de volume têm o maior desvio no tempo de resposta (latência) causado por um componente de storage na contenção. Identificar essas cargas de trabalho ajuda você a entender por que os aplicativos clientes que os acessam têm tido um desempenho mais lento do que o normal.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Deve haver eventos de desempenho dinâmico novos, reconhecidos ou obsoletos.
+
+
+
+
+== Sobre esta tarefa
+
+A página de detalhes do evento exibe uma lista das cargas de trabalho definidas pelo usuário e definidas pelo sistema, classificadas pelo maior desvio na atividade ou uso no componente ou mais afetadas pelo evento. Os valores são baseados nos picos identificados pelo Unified Manager quando o evento foi detetado e analisado pela última vez.
+
+
+
+== Passos
+
+. Exiba a página *Detalhes do evento* para exibir informações sobre o evento.
+. Nos gráficos de latência de workload e atividade de workload, selecione *cargas de trabalho da vítima*.
+. Passe o cursor sobre os gráficos para ver as principais cargas de trabalho definidas pelo usuário que estão afetando o componente e o nome da carga de trabalho da vítima.
+

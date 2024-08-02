@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-edit-storage-class-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo Editar limites de classe de armazenamento para modificar os valores de limite padrão de várias classes de armazenamento em cada SVM com Infinite volume com base nos requisitos da sua organização. Os valores de limite padrão indicam o nível de atividade que deve ser atingido em uma classe de storage antes que um evento seja acionado. 
+---
+= Caixa de diálogo Editar limites de Classe de armazenamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo Editar limites de classe de armazenamento para modificar os valores de limite padrão de várias classes de armazenamento em cada SVM com Infinite volume com base nos requisitos da sua organização. Os valores de limite padrão indicam o nível de atividade que deve ser atingido em uma classe de storage antes que um evento seja acionado.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Capacidade
+
+A área capacidade permite definir condições de limite de capacidade para a classe de armazenamento selecionada.
+
+* *Espaço quase cheio*
++
+Especifica a porcentagem em que uma classe de storage no SVM com Infinite volume é considerada quase cheia. Ele também exibe o espaço correspondente (em GB, MB ou TB) na classe de armazenamento. Por exemplo, se você tiver uma classe de armazenamento de 10 GB e o limite espaço quase cheio for de 80%, então as seguintes informações serão exibidas: (8 GB de 10 GB).
+
++
+Você também pode usar o controle deslizante para definir o valor de limite.
+
+* *Espaço cheio*
++
+Especifica a porcentagem na qual a classe de storage do SVM com Infinite volume é considerada completa. Ele também exibe o espaço correspondente (em GB, MB ou TB) na classe de armazenamento. Por exemplo, se você tiver uma classe de armazenamento de 10 GB e o limite espaço cheio for de 90%, então as seguintes informações serão exibidas: (9 GB de 10GB).
+
++
+Você também pode usar o controle deslizante para definir o valor de limite.
+
+* *Limite de uso do Snapshot*
++
+Especifica o limite, em porcentagem, do espaço reservado para cópias Snapshot na classe de storage.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar tarefas para um volume selecionado.
+
+* *Restaurar para padrões globais*
++
+Permite restaurar as definições de limite para os valores atuais definidos a nível global.
+
+* *Guardar*
++
+Guarda todas as definições de limite.
+
+* *Salvar e fechar*
++
+Salva todas as configurações de limite e, em seguida, fecha a caixa de diálogo Editar limites de classe de armazenamento.
+
+* *Cancelar*
++
+Cancela as alterações (se houver) nas configurações de limite e fecha a caixa de diálogo Editar limites de classe de armazenamento.
+
+

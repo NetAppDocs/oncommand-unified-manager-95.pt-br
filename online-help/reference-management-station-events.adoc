@@ -1,0 +1,100 @@
+---
+permalink: online-help/reference-management-station-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos da estação de gerenciamento fornecem informações sobre o status do servidor no qual o Unified Manager está instalado para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos da estação de gerenciamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos da estação de gerenciamento fornecem informações sobre o status do servidor no qual o Unified Manager está instalado para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Configuração
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Espaço em disco do Unified Manager Server quase cheio(ocumEvtUnifiedManagerDiskSpaceNearlyFull)
+ a| 
+Risco
+ a| 
+Estação de gerenciamento
+ a| 
+Aviso
+
+
+
+ a| 
+Espaço em disco do Unified Manager Server Full (ocumEvtUnifiedManagerDiskSpaceFull)
+ a| 
+Incidente
+ a| 
+Estação de gerenciamento
+ a| 
+Crítico
+
+
+
+ a| 
+Unified Manager Server com pouca memória (ocumEvtUnifiedManagerMemoryLow)
+ a| 
+Risco
+ a| 
+Estação de gerenciamento
+ a| 
+Aviso
+
+
+
+ a| 
+Unified Manager Server quase sem memória (ocumEvtUnifiedManagerMemoryAlmostOut)
+ a| 
+Incidente
+ a| 
+Estação de gerenciamento
+ a| 
+Crítico
+
+|===
+
+
+== Área de impactos: Desempenho
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+A análise de dados de desempenho é impactada(ocumEvtUnifiedManagerDataMissingAnalyze)
+ a| 
+Risco
+ a| 
+Estação de gerenciamento
+ a| 
+Aviso
+
+
+
+ a| 
+A coleta de dados de desempenho é impactada (ocumEvtUnifiedManagerDataMissCollection)
+ a| 
+Incidente
+ a| 
+Estação de gerenciamento
+ a| 
+Crítico
+
+|===
+[NOTE]
+====
+Esses dois últimos eventos de desempenho estavam disponíveis apenas para o Unified Manager 7,2. Se algum desses eventos existir no estado novo e, em seguida, você atualizar para uma versão mais recente do software Unified Manager, os eventos não serão eliminados automaticamente. Você precisará mover os eventos para o estado resolvido manualmente.
+
+====

@@ -1,0 +1,29 @@
+---
+permalink: performance-checker/concept-collecting-data-and-monitoring-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: O Unified Manager coleta e analisa a atividade do workload a cada 5 minutos para identificar eventos de performance e detecta alterações de configuração a cada 15 minutos. Ele retém um máximo de 30 dias de dados de eventos e performance históricos de 5 minutos e usa esses dados para prever o intervalo esperado para todos os workloads monitorados. 
+---
+= Coleta de dados e monitoramento do desempenho da carga de trabalho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager coleta e analisa a atividade do workload a cada 5 minutos para identificar eventos de performance e detecta alterações de configuração a cada 15 minutos. Ele retém um máximo de 30 dias de dados de eventos e performance históricos de 5 minutos e usa esses dados para prever o intervalo esperado para todos os workloads monitorados.
+
+[NOTE]
+====
+Este capítulo descreve como os limites dinâmicos funcionam e como eles são usados para ajudar a monitorar o desempenho da carga de trabalho. Este capítulo não se aplica a estatísticas ou eventos causados por violações de limites de desempenho definidas pelo usuário ou definidas pelo sistema.
+
+====
+O Unified Manager deve coletar no mínimo 3 dias de atividade do workload antes que ele possa começar a análise e antes que o intervalo esperado para o tempo de resposta e as operações de e/S possa ser exibido na página Detalhes de desempenho/volume e na página de detalhes do evento. Enquanto esta atividade está a ser recolhida, o intervalo esperado não apresenta todas as alterações que ocorrem a partir da atividade da carga de trabalho. Após coletar 3 dias de atividade, o Unified Manager ajusta o intervalo esperado, a cada 24 horas às 12:00 da manhã, para refletir as alterações na atividade do workload e estabelecer um limite de performance mais preciso.
+
+Durante os primeiros 4 dias em que o Unified Manager está monitorando um volume, se passaram mais de 24 horas desde a última coleta de dados, os gráficos na página Detalhes de desempenho/volume não exibirão o intervalo esperado para esse volume. Os eventos detetados antes da última coleção ainda estão disponíveis.
+
+[NOTE]
+====
+O horário de verão (DST) altera a hora do sistema, que altera o intervalo esperado de estatísticas de desempenho para cargas de trabalho monitoradas. O Unified Manager começa imediatamente a corrigir o intervalo esperado, o que leva aproximadamente 15 dias para ser concluído. Durante esse período, você pode continuar usando o Unified Manager, mas, como o Unified Manager usa o intervalo esperado para detetar eventos, alguns eventos podem não ser precisos. Os eventos detetados antes da alteração de hora não são afetados. Alterar manualmente a hora em um cluster ou em um servidor do Unified Manager para uma hora anterior também afetará os resultados da análise de eventos.
+
+====

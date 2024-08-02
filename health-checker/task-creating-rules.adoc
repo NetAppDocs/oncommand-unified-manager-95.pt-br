@@ -1,0 +1,22 @@
+---
+permalink: health-checker/task-creating-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode adicionar novas regras à política de dados para determinar o posicionamento dos dados gravados no Infinite volume. Você pode criar regras usando modelos de regra definidos no Unified Manager ou criando regras personalizadas. 
+---
+= Criando regras
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode adicionar novas regras à política de dados para determinar o posicionamento dos dados gravados no Infinite volume. Você pode criar regras usando modelos de regra definidos no Unified Manager ou criando regras personalizadas.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* O cluster que contém o SVM com Infinite volume com classes de storage deve ser adicionado ao banco de dados do Unified Manager.
+

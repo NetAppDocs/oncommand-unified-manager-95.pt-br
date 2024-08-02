@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-sharing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode enviar e-mails e compartilhar seus relatórios com um ou mais usuários. 
+---
+= Compartilhamento de relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode enviar e-mails e compartilhar seus relatórios com um ou mais usuários.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *relatórios* e, em seguida, clique em *Executar relatório* para o relatório desejado.
++
+É apresentada a página de detalhes do relatório.
+
+. Clique em *ações* > *compartilhar*.
+. Na caixa de diálogo *compartilhar Relatório*, especifique o endereço de e-mail do destinatário com quem deseja compartilhar o relatório.
++
+Você pode especificar um ou mais endereços de e-mail, separados por vírgulas.
+
+. Especifique o assunto do e-mail.
++
+Por padrão, o nome do relatório aparece como o assunto do e-mail.
+
+. Selecione o formato do relatório.
++
+A opção _PDF_ é selecionada como o formato de relatório padrão. Se o formato XHTML estiver selecionado, o destinatário deverá abrir o relatório que é enviado por e-mail usando um navegador da Web compatível.
+
+. Clique em *compartilhar*.
+

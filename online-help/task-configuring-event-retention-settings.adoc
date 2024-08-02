@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-configuring-event-retention-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode especificar o número de dias em que um evento é retido no servidor do Unified Manager antes de ser excluído automaticamente. Somente eventos que são resolvidos, obsoletos ou do tipo informações são excluídos. Você também pode especificar a frequência com que esses eventos são excluídos ou também pode excluir manualmente os eventos. 
+---
+= Configuração das configurações de retenção de eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode especificar o número de dias em que um evento é retido no servidor do Unified Manager antes de ser excluído automaticamente. Somente eventos que são resolvidos, obsoletos ou do tipo informações são excluídos. Você também pode especificar a frequência com que esses eventos são excluídos ou também pode excluir manualmente os eventos.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand para alterar as configurações do evento.
+
+
+
+== Sobre esta tarefa
+
+A retenção de eventos por mais de 180 dias afeta o desempenho do servidor e não é recomendada. O limite inferior para o período de retenção de eventos é de 7 dias; não há limite superior.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Configuração* > *Gerenciar eventos*.
+. Na página *Configuração/Gerenciar eventos*, clique no botão *Configurações de retenção de eventos*.
+. Configure as configurações apropriadas na caixa de diálogo *Configurações de retenção de eventos*.
+. Clique em *Salvar e fechar*.
+

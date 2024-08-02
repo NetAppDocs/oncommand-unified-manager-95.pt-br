@@ -1,0 +1,14 @@
+---
+permalink: install/concept-installing-upgrading-and-removing-unified-manager-software-on-vmware-vsphere.html 
+sidebar: sidebar 
+keywords:  
+summary: Nos sistemas VMware vSphere, você pode instalar o software Unified Manager, atualizar para uma versão mais recente do software ou remover o dispositivo virtual do Unified Manager. 
+---
+= Instalação, atualização e remoção do software Unified Manager no VMware vSphere
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nos sistemas VMware vSphere, você pode instalar o software Unified Manager, atualizar para uma versão mais recente do software ou remover o dispositivo virtual do Unified Manager.

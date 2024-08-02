@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-cluster-object-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível exibir todos os clusters e objetos de cluster na respetiva página de objetos de storage. Você também pode visualizar os detalhes na página de detalhes do objeto de armazenamento correspondente. 
+---
+= Descrição das janelas de objetos de cluster e caixas de diálogo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível exibir todos os clusters e objetos de cluster na respetiva página de objetos de storage. Você também pode visualizar os detalhes na página de detalhes do objeto de armazenamento correspondente.

@@ -1,0 +1,94 @@
+---
+permalink: online-help/reference-manage-report-schedules-dialog-box-um-6-2.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode exibir, modificar ou excluir programações de relatórios existentes e adicionar novas programações para seus relatórios na caixa de diálogo Gerenciar agendas de relatórios. 
+---
+= Caixa de diálogo gerir agendas de relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exibir, modificar ou excluir programações de relatórios existentes e adicionar novas programações para seus relatórios na caixa de diálogo Gerenciar agendas de relatórios.
+
+
+
+== Propriedades
+
+Você pode selecionar uma agenda existente ou criar uma nova agenda para seus relatórios. Você pode exibir, modificar ou excluir suas agendas de relatório.
+
+* *Painel esquerdo*
++
+** *Nome da programação*
++
+Exibe as programações existentes. Ao clicar em qualquer agendamento, você pode visualizar os detalhes do agendamento no painel direito. Para o primeiro login, não há horários existentes.
+
+** *Adicionar horário*
++
+Exibe o novo formulário de agendamento no painel direito. Agora você pode adicionar uma nova programação.
+
+
+
+* *Painel direito*
++
+** *Nome da programação*
++
+Exibe o nome da programação.
+
+** *Endereço de e-mail do destinatário*
++
+Exibe o endereço de e-mail do usuário para quem o relatório deve ser enviado. Você pode inserir mais de um endereço de e-mail separado por vírgulas.
+
+** *Formato do relatório*
++
+Exibe o formato no qual o relatório deve ser apresentado. A opção PDF é selecionada como o formato de relatório padrão. Se o formato XHTML estiver selecionado, abra o relatório que é enviado por e-mail usando um navegador da Web compatível.
+
+** *Frequência*
++
+Apresenta a frequência na qual o relatório está programado.
+
+** *Categoria Relatório*
++
+Exibe os grupos de categoria de relatório. Selecionando uma categoria de relatório na lista, exibe os relatórios que pertencem a essa categoria de relatório na coluna relatórios disponíveis.
+
+** *Relatórios disponíveis*
++
+Exibe apenas os relatórios que pertencem à categoria de relatório selecionada.
+
+** *Relatórios selecionados*
++
+Exibe os relatórios selecionados aos quais você escolhe aplicar a programação. Você pode selecionar os relatórios necessários na coluna relatórios disponíveis. Pelo menos um relatório deve ser selecionado
+
+
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Adicionar horário*
++
+Permite adicionar uma nova agenda.
+
+* *Excluir horário*
++
+Permite-lhe eliminar a agenda que está a ser visualizada atualmente. Quando você cria uma nova programação, esse botão não está disponível.
+
+* *Guardar*
++
+Guarda a agenda que está a ser visualizada, modificada ou adicionada.
+
+* *Salvar e fechar*
++
+Salva a programação que está sendo visualizada, modificada ou adicionada e fecha a caixa de diálogo Gerenciar agendas de relatórios.
+
+* *Cancelar*
++
+Fecha a caixa de diálogo Gerenciar agendas de relatórios enquanto exibe uma mensagem para salvar a programação.
+
+

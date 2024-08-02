@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-network-interface-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Use a página informações de desempenho/LIF para exibir uma lista dos atributos configurados do LIF. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho. 
+---
+= Página de informações de desempenho/LIF
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use a página informações de desempenho/LIF para exibir uma lista dos atributos configurados do LIF. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho.
+
+
+
+== Atributos LIF
+
+* *Endereço IP*
++
+O endereço IPv4 ou IPv6 atribuído ao LIF. Pode haver vários endereços IP atribuídos a um LIF.
+
+* *Função*
++
+A função determina o tipo de tráfego suportado pelo LIF.
+
++
+LIFs podem ter uma das seguintes funções:
+
++
+** Dados
+** Cluster
+** Gerenciamento de nós
+** Entre clusters
+
+
+* *Grupo de failover*
++
+O nome do grupo de failover atribuído ao LIF.
+
++
+Este campo se aplica apenas a LIFs de rede, não a SAN (FC/ISCSI) e LIFs NVMe.
+
+* *Política de failover*
++
+O nome da política de failover atribuída ao LIF.
+
++
+Este campo se aplica apenas a LIFs de rede, não a SAN (FC/ISCSI) e LIFs NVMe.
+
+* *Porto de casa*
++
+O nome do nó e da porta que foi definido como a porta inicial para esta interface. Você pode clicar no nome para exibir os detalhes da porta na página Performance/Port Explorer.
+
+* *Porta atual*
++
+O nome do nó e da porta na qual a interface está hospedada atualmente. Você pode clicar no nome para exibir os detalhes da porta na página Performance/Port Explorer.
+
+

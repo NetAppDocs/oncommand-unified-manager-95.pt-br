@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível gerenciar os clusters do ONTAP usando o Unified Manager para monitorar, adicionar, editar e remover clusters. 
+---
+= Gerenciamento de clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível gerenciar os clusters do ONTAP usando o Unified Manager para monitorar, adicionar, editar e remover clusters.

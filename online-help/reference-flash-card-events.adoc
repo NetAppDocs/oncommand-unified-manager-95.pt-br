@@ -1,0 +1,33 @@
+---
+permalink: online-help/reference-flash-card-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos do cartão flash fornecem informações sobre o status das placas flash instaladas nos nós do data center para que você possa monitorar se há problemas em potencial. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos do cartão flash
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos do cartão flash fornecem informações sobre o status das placas flash instaladas nos nós do data center para que você possa monitorar se há problemas em potencial. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Flash Cards Offline (ocumEvtFlashCardOffline)
+ a| 
+Incidente
+ a| 
+Nó
+ a| 
+Crítico
+
+|===

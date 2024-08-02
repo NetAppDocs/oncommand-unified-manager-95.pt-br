@@ -1,0 +1,28 @@
+---
+permalink: performance-checker/reference-how-the-expected-range-is-used-in-performance-analysis.html 
+sidebar: sidebar 
+keywords:  
+summary: O Unified Manager usa o intervalo esperado para representar a atividade típica de latência de e/S e IOPS para os workloads monitorados. Ele alerta quando a latência real de um workload está acima dos limites superiores do intervalo esperado, o que aciona um evento de performance, para que você possa analisar o problema de performance e tomar medidas corretivas para resolvê-lo. 
+---
+= Como o intervalo esperado é usado na análise de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager usa o intervalo esperado para representar a atividade típica de latência de e/S (tempo de resposta) e IOPS (operações) dos workloads monitorados. Ele alerta quando a latência real de um workload está acima dos limites superiores do intervalo esperado, o que aciona um evento de performance, para que você possa analisar o problema de performance e tomar medidas corretivas para resolvê-lo.
+
+O intervalo esperado define a linha de base de desempenho para o workload. Com o tempo, o Unified Manager aprende com medições de desempenho anteriores para prever os níveis de desempenho e atividade esperados para a carga de trabalho. O limite superior do intervalo esperado estabelece o limite de desempenho. O Unified Manager usa a linha de base para determinar quando a latência ou as operações reais estão acima ou abaixo de um limite, ou fora dos limites de seu intervalo esperado. A comparação entre os valores reais e os valores esperados cria um perfil de performance para a carga de trabalho.
+
+Quando a latência real de um workload excede o limite de performance, devido à contenção em um componente do cluster, a latência é alta e o workload executa mais lentamente do que o esperado. O desempenho de outras cargas de trabalho que compartilham os mesmos componentes de cluster também pode ser mais lento do que o esperado.
+
+O Unified Manager analisa o evento de cruzamento de limites e determina se a atividade é um evento de desempenho. Se a atividade de alto workload permanecer consistente por um longo período de tempo, como várias horas, o Unified Manager considera a atividade normal e ajusta dinamicamente o intervalo esperado para formar o novo limite de performance.
+
+Algumas cargas de trabalho podem ter atividades consistentemente baixas, onde o intervalo esperado para as operações ou a latência não tem uma alta taxa de alteração ao longo do tempo. Para minimizar o número de alertas de eventos, durante a análise de eventos de performance, o Unified Manager aciona um evento apenas para volumes de baixa atividade cujas operações e latências são muito maiores do que o esperado.
+
+image::../media/opm-expected-range-jpg.gif[Intervalo esperado para latência no Performance Manager]
+
+Neste exemplo, a latência de um volume tem um intervalo esperado, em cinza, de 0 milissegundos por operação (ms/op) no menor e 5 ms/op no máximo. Se a latência real, em azul, aumentar repentinamente para 10 ms/op, devido a um pico intermitente no tráfego de rede ou contenção em um componente de cluster, ela estará então acima do intervalo esperado e excedeu o limite de desempenho.
+
+Quando o tráfego de rede diminuiu ou o componente do cluster não está mais na contenção, a latência retorna dentro do intervalo esperado. Se a latência permanecer em ou acima de 10 ms/op por um longo período de tempo, talvez seja necessário tomar medidas corretivas para resolver o evento.

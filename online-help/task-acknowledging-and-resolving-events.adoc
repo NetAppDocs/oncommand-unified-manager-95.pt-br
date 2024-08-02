@@ -1,0 +1,71 @@
+---
+permalink: online-help/task-acknowledging-and-resolving-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Você deve reconhecer um evento antes de começar a trabalhar no problema que gerou o evento para que você não continue a receber notificações de alerta repetidas. Depois de tomar medidas corretivas para um evento específico, você deve marcar o evento como resolvido. 
+---
+= Reconhecer e resolver eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você deve reconhecer um evento antes de começar a trabalhar no problema que gerou o evento para que você não continue a receber notificações de alerta repetidas. Depois de tomar medidas corretivas para um evento específico, você deve marcar o evento como resolvido.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Você pode reconhecer e resolver vários eventos simultaneamente.
+
+[NOTE]
+====
+Você não pode reconhecer eventos de informações.
+
+====
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Eventos*.
+. Na lista de eventos, execute as seguintes ações para confirmar os eventos:
++
+|===
+| Se você quiser... | Faça isso... 
+
+
+ a| 
+Confirme e marque um único evento como resolvido
+ a| 
+.. Clique no nome do evento.
+.. Na página de detalhes do evento, determine a causa do evento.
+.. Clique em *confirmar*.
+.. Tome as medidas corretivas adequadas.
+.. Clique em *Marcar como resolvido*.
+
+
+
+
+ a| 
+Confirmar e marcar vários eventos como resolvidos
+ a| 
+.. Determine a causa dos eventos na respetiva página de detalhes do evento.
+.. Selecione os eventos.
+.. Clique em *confirmar*.
+.. Tome as medidas corretivas apropriadas.
+.. Clique em *Marcar como resolvido*.
+
+
+|===
++
+Depois que o evento é marcado como resolvido, o evento é movido para a lista de eventos resolvidos.
+
+. Na área *Notas e atualizações*, adicione uma nota sobre como você abordou o evento e clique em *Post*.
+

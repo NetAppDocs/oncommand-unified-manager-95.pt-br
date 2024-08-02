@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-backup-and-restore-using-a-mysql-database-dump.html 
+sidebar: sidebar 
+keywords:  
+summary: Um backup é uma cópia do banco de dados do Unified Manager e dos arquivos de configuração que você pode usar em caso de falha do sistema ou perda de dados. Pode programar uma cópia de segurança para ser escrita num destino local ou num destino remoto. É altamente recomendável que você defina um local remoto externo ao sistema de host do Unified Manager. 
+---
+= O que é um backup de banco de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um backup é uma cópia do banco de dados do Unified Manager e dos arquivos de configuração que você pode usar em caso de falha do sistema ou perda de dados. Pode programar uma cópia de segurança para ser escrita num destino local ou num destino remoto. É altamente recomendável que você defina um local remoto externo ao sistema de host do Unified Manager.
+
+Um backup consiste em um único arquivo no diretório de backup e um ou mais arquivos no diretório de repositório de banco de dados. O arquivo no diretório de backup é muito pequeno porque contém apenas um ponteiro para os arquivos localizados no diretório de repositório de banco de dados que são necessários para recriar o backup.
+
+Na primeira vez que você gera um backup, um único arquivo é criado no diretório de backup e um arquivo de backup completo é criado no diretório de repositório de banco de dados. Da próxima vez que você gerar um backup, um único arquivo é criado no diretório de backup e um arquivo de backup incremental é criado no diretório de repositório de banco de dados que contém as diferenças do arquivo de backup completo. Esse processo continua à medida que você cria backups adicionais, até a configuração de retenção máxima, como mostrado na figura a seguir.
+
+image::../media/database-backup.gif[backup de banco de dados]
+
+[NOTE]
+====
+Não renomeie ou remova nenhum dos arquivos de backup nesses dois diretórios ou qualquer operação de restauração subsequente falhará.
+
+====
+Se você gravar seus arquivos de backup no sistema local, você deve iniciar um processo para copiar os arquivos de backup para um local remoto para que eles estejam disponíveis caso você tenha um problema de sistema que exija uma restauração completa.
+
+Antes de iniciar uma operação de backup, o Unified Manager realiza uma verificação de integridade para verificar se todos os arquivos de backup e diretórios de backup necessários existem e são graváveis. Ele também verifica se há espaço suficiente no sistema para criar o arquivo de backup.
+
+Observe que você pode restaurar um backup somente na mesma versão do Unified Manager. Por exemplo, se você criou um backup no Unified Manager 9,4, o backup só poderá ser restaurado em sistemas Unified Manager 9,4.

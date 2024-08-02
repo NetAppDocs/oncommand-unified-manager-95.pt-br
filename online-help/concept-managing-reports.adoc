@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-managing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: O Gerenciador Unificado do OnCommand permite que você crie e gerencie relatórios para que você possa exibir informações personalizadas sobre a capacidade, a utilização e a performance de objetos e eventos de storage relacionados a objetos de storage. 
+---
+= Gerenciamento de relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Gerenciador Unificado do OnCommand permite que você crie e gerencie relatórios para que você possa exibir informações personalizadas sobre a capacidade, a utilização e a performance de objetos e eventos de storage relacionados a objetos de storage.
+
+[NOTE]
+====
+A implementação do agendamento e geração de relatórios a partir da opção relatórios no Painel de Navegação esquerdo será obsoleta em uma versão futura. Você pode extrair dados de integridade e performance do Unified Manager usando esses métodos adicionais:
+
+* Extraindo dados diretamente das páginas de grade na GUI
+* Usando Open Database para acesso a todos os objetos disponíveis
+* Executando as APIs REST do Unified Manager para retornar as informações que você está interessado em analisar
+
+
+====

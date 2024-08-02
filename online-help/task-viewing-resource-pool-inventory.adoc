@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-resource-pool-inventory.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a página conjuntos de proteção/recursos para exibir o inventário do pool de recursos e monitorar a capacidade restante de cada pool de recursos. 
+---
+= Exibindo inventário de pools de recursos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a página conjuntos de proteção/recursos para exibir o inventário do pool de recursos e monitorar a capacidade restante de cada pool de recursos.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *proteção* > *pools de recursos*.
++
+O inventário do pool de recursos é exibido.
+
+

@@ -1,0 +1,196 @@
+---
+permalink: online-help/reference-group-action-volume-thresholds-section.html 
+sidebar: sidebar 
+keywords:  
+summary: A seção limites de volume de ação do grupo permite configurar limites de integridade em nível de grupo para volumes. Esses limites são aplicados a todos os volumes de um grupo. Quando os limites de integridade do volume são configurados no nível do grupo, os valores de limite de integridade global não são afetados. 
+---
+= Seção limites de volume de ação do grupo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A seção limites de volume de ação do grupo permite configurar limites de integridade em nível de grupo para volumes. Esses limites são aplicados a todos os volumes de um grupo. Quando os limites de integridade do volume são configurados no nível do grupo, os valores de limite de integridade global não são afetados.
+
+Você pode configurar limites de integridade do volume para o seguinte para configurar uma ação de grupo:
+
+* Capacidade
+* Crescimento
+* Cota Qtree
+* Cópias Snapshot
+* Inodes
+
+
+Os valores padrão globais são usados se os limites de integridade do volume não estiverem configurados para nenhuma dessas categorias. Você pode definir limites de integridade para o seguinte:
+
+* Capacidade
+* Crescimento
+* Cota Qtree
+* Cópias Snapshot
+* Inodes
+
+
+
+
+== Secção de capacidade
+
+Você pode definir condições para os seguintes limites de integridade da capacidade de volume:
+
+* *Espaço quase cheio*
++
+Especifica a porcentagem em que um volume é considerado quase cheio:
+
++
+** Valor padrão: 80 por cento
++
+O valor para esse limite deve ser menor do que o valor do limite volume cheio para que o servidor de gerenciamento gere um evento.
+
+** Evento gerado: Volume quase cheio
+** Gravidade do evento: Aviso
+
+
+* *Espaço cheio*
++
+Especifica a porcentagem em que um volume é considerado cheio:
+
++
+** Valor padrão: 90 por cento
+** Evento gerado: Volume cheio
+** Gravidade do evento: Erro
+
+
+* * Overcommitted*
++
+Especifica a porcentagem em que um volume é considerado sobrecarregado:
+
++
+** Valor padrão: 100 por cento
+** Evento gerado: Volume sobrecomprometido
+** Gravidade do evento: Erro
+
+
+
+
+
+
+== Secção de crescimento
+
+Você pode definir as seguintes condições de limite de integridade para o crescimento de volume:
+
+* *Taxa de crescimento*
++
+Especifica a percentagem em que a taxa de crescimento de um volume é considerada normal antes de o sistema gerar um evento anormal da taxa de crescimento de volume:
+
++
+** Valor padrão: 1 por cento
+** Evento gerado: Taxa de crescimento do volume anormal
+** Gravidade do evento: Aviso
+
+
+* * Sensibilidade da taxa de crescimento*
++
+Especifica o fator que é aplicado ao desvio padrão da taxa de crescimento de um volume. Se a taxa de crescimento exceder o desvio padrão fatorado, é gerado um evento anormal da taxa de crescimento do volume.
+
++
+Um valor mais baixo para a sensibilidade da taxa de crescimento indica que o agregado é altamente sensível às mudanças na taxa de crescimento. O intervalo para a sensibilidade da taxa de crescimento é de 1 a 5.
+
++
+** Valor padrão: 2
+
+
+
+
+
+
+== Seção de cota de Qtree
+
+Você pode definir as seguintes condições de limite de integridade para cotas de volume:
+
+* * Quase exagerado*
++
+Especifica a porcentagem em que um volume é considerado quase sobrecarregado por cotas de qtree:
+
++
+** Valor padrão: 95 por cento
+** Evento gerado: Volume Qtree quota quase comprometida
+** Gravidade do evento: Aviso
+
+
+* * Overcommitted*
++
+Especifica a porcentagem em que um volume é considerado sobrecarregado por cotas de qtree:
+
++
+** Valor padrão: 100 por cento
+** Evento gerado: Cota de volume Qtree sobrecomprometida
+** Gravidade do evento: Erro
+
+
+
+
+
+
+== Seção cópias Snapshot
+
+Você pode definir as seguintes condições de limite de integridade para as cópias Snapshot no volume:
+
+* *Reserva Snapshot completa*
++
+Especifica a porcentagem em que o espaço reservado para cópias Snapshot é considerado cheio:
+
++
+** Valor padrão: 90 por cento
+** Evento gerado: Reserva Snapshot volume cheia
+** Gravidade do evento: Erro
+
+
+* *Dias até completo*
++
+Especifica o número de dias restantes antes que o espaço reservado para cópias Snapshot alcance a capacidade total:
+
++
+** Valor padrão: 7
+** Evento gerado: Dias reserva Snapshot volume até cheio
+** Gravidade do evento: Erro
+
+
+* *Contagem*
++
+Especifica o número de cópias snapshot em um volume que é considerado muito:
+
++
+** Valor padrão: 250
+** Evento gerado: Muitas cópias Snapshot
+** Gravidade do evento: Erro
+
+
+
+
+
+
+== Seção inodes
+
+Você pode definir as seguintes condições de limite de saúde para inodes:
+
+* *Quase cheio*
++
+Especifica a porcentagem em que um volume é considerado como tendo consumido a maioria de seus inodes:
+
++
+** Valor padrão: 80 por cento
+** Evento gerado: Inodes quase cheio
+** Gravidade do evento: Aviso
+
+
+* *Full*
++
+Especifica a porcentagem na qual um volume é considerado ter consumido todos os seus inodes:
+
++
+** Valor padrão: 90 por cento
+** Evento gerado: Inodes Full
+** Gravidade do evento: Erro
+
+
+

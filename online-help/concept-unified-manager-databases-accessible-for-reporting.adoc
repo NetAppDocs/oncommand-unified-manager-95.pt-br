@@ -1,0 +1,74 @@
+---
+permalink: online-help/concept-unified-manager-databases-accessible-for-reporting.html 
+sidebar: sidebar 
+keywords:  
+summary: O Unified Manager usa um banco de dados MySQL para armazenar dados dos clusters que ele está monitorando. Os dados são persistidos em vários esquemas no banco de dados MySQL. 
+---
+= Bancos de dados do Unified Manager acessíveis para relatórios personalizados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager usa um banco de dados MySQL para armazenar dados dos clusters que ele está monitorando. Os dados são persistidos em vários esquemas no banco de dados MySQL.
+
+A partir do Unified Manager 7,3, esquemas adicionais são expostos que fornecem acesso a dados de tabela adicionais.
+
+Todos os dados de tabela dos seguintes bancos de dados estão disponíveis:
+
+|===
+| Banco de dados | Descrição 
+
+
+ a| 
+NetApp_model_view
+ a| 
+Dados sobre os objetos nos controladores ONTAP.
+
+
+
+ a| 
+NetApp_performance
+ a| 
+Contadores de desempenho específicos de cluster.
+
+
+
+ a| 
+ocum
+ a| 
+Dados e informações do aplicativo Unified Manager para oferecer suporte à filtragem, classificação e cálculo de alguns campos derivados da interface do usuário.
+
+
+
+ a| 
+ocum_report
+ a| 
+Dados para configuração de inventário e informações relacionadas à capacidade.
+
+
+
+ a| 
+ocum_report_birt
+ a| 
+O mesmo que acima, mas esse banco de dados é consumido por relatórios BIRT integrados.
+
+
+
+ a| 
+opm
+ a| 
+Configurações de desempenho e informações de limite.
+
+
+
+ a| 
+scalemonitor
+ a| 
+Dados sobre problemas de integridade e performance da aplicação do Unified Manager.
+
+|===
+Um usuário de relatório -- um usuário de banco de dados com a função Report Schema -- é capaz de acessar os dados nessas tabelas. Esse usuário tem acesso somente leitura a relatórios e outras visualizações de banco de dados diretamente do banco de dados do Unified Manager. Observe que esse usuário não tem permissão para acessar nenhuma tabela que contenha dados de usuário ou informações de credenciais de cluster.
+
+Consulte https://www.netapp.com/pdf.html?item=/media/16308-tr-4565pdf.pdf["Relatório técnico para relatórios do Unified Manager"^] (TR-4565) para obter mais detalhes.

@@ -1,0 +1,47 @@
+---
+permalink: online-help/reference-available-iops-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: O gráfico de contador de IOPS disponível do Performance Explorer exibe o número de operações de entrada/saída por segundo que estão atualmente disponíveis no objeto de armazenamento selecionado. 
+---
+= Gráfico de contador de desempenho de IOPS disponível
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O gráfico de contador de IOPS disponível do Performance Explorer exibe o número de operações de entrada/saída por segundo que estão atualmente disponíveis (livres) no objeto de armazenamento selecionado.
+
+A janela pop-up que é exibida quando o cursor está na área do gráfico mostra os valores específicos do contador em momentos específicos.
+
+Esta opção de gráfico aplica-se apenas quando o objeto selecionado é um nó ou agregado.
+
+A parte inferior da página do gráfico exibe informações sobre a capacidade de desempenho mínima, máxima, média e percentil 95th usada para o intervalo de tempo selecionado.
+
+
+
+== IOPS disponíveis - gráfico de contador total
+
+Exibe o número de operações de entrada/saída por segundo que estão atualmente disponíveis (gratuitas) no objeto de armazenamento selecionado. Esse número é o resultado da subtração do IOPS usado atualmente do total de IOPS que o Unified Manager calcula que o objeto pode executar.
+
+[NOTE]
+====
+Os dados de IOPS disponíveis estão disponíveis somente quando os nós em um cluster são instalados com o software ONTAP 9.0 ou posterior.
+
+====
+
+
+== *Botão Zoom View*
+
+Apresenta uma vista ampliada dos dados da carta de contador.
+
+* Eventos
++
+A ocorrência de eventos críticos, de aviso e informativos é indicada nas linhas de tempo acima dos gráficos.
+
+* Contadores
++
+Os contadores no painel esquerdo mostram quais valores de contador estão sendo exibidos. Desmarcar ou selecionar o image:../media/eye-icon.gif[""] que está associado a um contador oculta e mostra as informações do contador do gráfico e pode ajudar na comparação de objetos.
+
+

@@ -1,0 +1,50 @@
+---
+permalink: install/task-deploying-unified-manager-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: A implantação do Unified Manager inclui o download de software, a implantação do dispositivo virtual, a criação de um nome de usuário e senha de manutenção e a execução da configuração inicial na interface da Web. 
+---
+= Implantando o Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A implantação do Unified Manager inclui o download de software, a implantação do dispositivo virtual, a criação de um nome de usuário e senha de manutenção e a execução da configuração inicial na interface da Web.
+
+
+
+== Antes de começar
+
+* Você deve ter concluído os requisitos de sistema para implantação.
++
+xref:concept-requirements-for-installing-unified-manager.adoc[Requisitos do sistema]
+
+* Você deve ter as seguintes informações:
++
+** Credenciais de login para o site de suporte da NetApp
+** Credenciais para acessar o VMware vCenter Server e o vSphere Web Client (para o vSphere versão 6,5) ou o vSphere Client (para o vSphere versão 5,5 ou 6,0)
+** Endereço IP do servidor ESXi no qual você está implantando o dispositivo virtual do Unified Manager
+** Detalhes sobre o data center, como espaço de armazenamento no armazenamento de dados e requisitos de memória
+** IPv6 deve estar habilitado no host se você estiver planejando usar endereçamento IPv6.
+** Imagem de CD-ROM ou ISO do VMware Tools
+
+
+
+
+
+
+== Sobre esta tarefa
+
+Você pode implantar o Unified Manager como um dispositivo virtual em um servidor VMware ESXi.
+
+Você deve acessar o console de manutenção usando o console VMware e não usando SSH.
+
+O VMware Tools não está incluído no arquivo do Unified Manager``.ova`` e deve ser instalado separadamente.
+
+
+
+== Depois de terminar
+
+Depois de concluir a implantação e a configuração inicial, você pode adicionar clusters ou configurar configurações de rede adicionais no console de manutenção e acessar a IU da Web.

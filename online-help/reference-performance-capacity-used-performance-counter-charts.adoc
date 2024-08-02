@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-performance-capacity-used-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: Os gráficos de contadores de capacidade de desempenho usados do Performance ExplorerPerformance exibem a porcentagem de capacidade de desempenho que está sendo consumida pelo nó ou agregado. 
+---
+= Capacidade de desempenho utilizada gráficos de contadores de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os gráficos de contadores de capacidade de desempenho usados do Performance ExplorerPerformance exibem a porcentagem de capacidade de desempenho que está sendo consumida pelo nó ou agregado.
+
+[NOTE]
+====
+Os dados de capacidade de performance só estão disponíveis quando os nós de um cluster são instalados com o software ONTAP 9.0 ou posterior.
+
+====
+Esses gráficos se aplicam somente quando o objeto selecionado é um nó ou agregado.
+
+A janela pop-up que é exibida quando o cursor está na área do gráfico mostra os valores específicos do contador em momentos específicos.
+
+A parte inferior da página do gráfico exibe informações sobre a capacidade de desempenho mínima, máxima, média e percentil 95th usada para o intervalo de tempo selecionado.
+
+Existem dois tipos de gráficos de capacidade de desempenho usados disponíveis:
+
+
+
+== Capacidade de desempenho utilizada - gráfico de contador total
+
+Exibe a porcentagem de capacidade de performance que está sendo consumida pelo nó ou pelo agregado.
+
+* Zona verde
++
+O valor da capacidade está abaixo do limite de aviso definido no Unified Manager.
+
+* Zona amarela
++
+O valor da capacidade está se aproximando do limite de aviso definido no Unified Manager.
+
+* Zona vermelha
++
+O valor da capacidade está acima do limite de aviso e se aproximando do limite máximo definido no Unified Manager.
+
+
+
+
+
+== Capacidade de desempenho utilizada - Gráfico do contador de avarias
+
+Exibe a mesma porcentagem de capacidade de desempenho separada em protocolos de usuário, processos de fundo do sistema e a quantidade de capacidade de desempenho livre.
+
+
+
+== *Botão Zoom View*
+
+Apresenta uma vista ampliada dos dados da carta de contador.
+
+* Eventos
++
+A ocorrência de eventos críticos, de aviso e informativos é indicada nas linhas de tempo acima dos gráficos.
+
+* Limites
++
+A linha horizontal tracejada indica o valor limite de aviso de capacidade definido no Unified Manager.
+
++
+A linha vermelha contínua indica o valor limite crítico de capacidade definido no Unified Manager.
+
++
+A linha preta sólida a 100% é o valor recomendado de capacidade máxima de desempenho usado.
+
+* Contadores
++
+Os contadores no painel esquerdo mostram quais valores de contador estão sendo exibidos. Desmarcar ou selecionar o image:../media/eye-icon.gif[""] que está associado a um contador pode restringir a comparação.
+
+

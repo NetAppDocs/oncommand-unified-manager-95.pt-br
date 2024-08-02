@@ -1,0 +1,56 @@
+---
+permalink: online-help/task-viewing-the-node-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a página de inventário de integridade/nós para exibir a lista de nós nos clusters. Você pode usar a página de detalhes de integridade/cluster para exibir informações detalhadas sobre nós que fazem parte do cluster monitorado. 
+---
+= Exibindo a lista de nós e os detalhes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a página de inventário de integridade/nós para exibir a lista de nós nos clusters. Você pode usar a página de detalhes de integridade/cluster para exibir informações detalhadas sobre nós que fazem parte do cluster monitorado.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Você pode visualizar detalhes como o estado do nó, o cluster que contém o nó, os detalhes de capacidade agregada (usada e total) e os detalhes de capacidade bruta (utilizável, sobressalente e total). Você também pode obter informações sobre pares de HA, compartimentos de discos e portas.
+
+
+
+== Passos
+
+. No painel de navegação à esquerda, clique em *Saúde* > *nós*.
+. Na página de inventário *Saúde/nós*, clique no nó cujos detalhes você deseja exibir.
++
+As informações detalhadas para o nó selecionado são exibidas na página de detalhes de integridade/cluster. O painel esquerdo exibe a lista de pares de HA. Por padrão, os Detalhes da HA estão abertos, que exibe detalhes do estado da HA e eventos relacionados ao par de HA selecionado.
+
+. Para exibir outros detalhes sobre o nó, execute a ação apropriada:
++
+|===
+| Para ver... | Clique em... 
+
+
+ a| 
+Detalhes sobre as gavetas de disco
+ a| 
+*Prateleiras de disco*.
+
+
+
+ a| 
+Informações relacionadas com a porta
+ a| 
+*Portos*.
+
+|===
+

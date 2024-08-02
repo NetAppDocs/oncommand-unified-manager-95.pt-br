@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-view-aggregates-reaching-full-capacity.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório de capacidade agregada e utilização para exibir agregados classificados por ordem crescente de utilização de capacidade agregada. Isso permite que você visualize os agregados atingindo a capacidade total. 
+---
+= Personalização do relatório de capacidade agregada e utilização para visualizar agregados que alcançam a capacidade total
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório de capacidade agregada e utilização para exibir agregados classificados por ordem crescente de utilização de capacidade agregada. Isso permite que você visualize os agregados atingindo a capacidade total.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por cluster e por par de HA, execute as seguintes etapas:
++
+.. Clique nas colunas que precisam ser desagrupadas.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group Option*.
+
+
+. Para classificar os agregados que atingem a capacidade total, clique na coluna *dias a completos* e clique no image:../media/click-to-see-menu.gif[""] ícone.
+. Selecione *Filter* > *Top/Bottom N*.
+. Na caixa de diálogo *N* superior/inferior, selecione *N inferior* no campo *filtro* e insira um valor no campo de texto.
+. Clique em *OK*.
+

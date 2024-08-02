@@ -1,0 +1,91 @@
+---
+permalink: install/reference-windows-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: Para a instalação bem-sucedida do Unified Manager no Windows, você deve garantir que o sistema no qual o Unified Manager está sendo instalado atenda aos requisitos de software. 
+---
+= Requisitos de software e instalação do Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+Para a instalação bem-sucedida do Unified Manager no Windows, você deve garantir que o sistema no qual o Unified Manager está sendo instalado atenda aos requisitos de software.
+
+
+
+== Software do sistema operativo
+
+O Unified Manager é executado apenas em um sistema operacional Windows de 64 bits em inglês. Você pode instalar o Unified Manager nas seguintes plataformas Windows:
+
+* Microsoft Windows Server 2012 Standard e Datacenter Edition
+* Microsoft Windows Server 2012 R2 Standard e Datacenter Edition
+* Microsoft Windows Server 2016 Standard e Datacenter Edition
+
+
+[NOTE]
+====
+No Windows Server 2012 R2, a atualização KB2919355 do Windows deve ser instalada no sistema de destino ou a instalação falhará.
+
+====
+Observe que o Windows Server 2008 não é suportado como era em versões anteriores. Consulte a Matriz de interoperabilidade para obter a lista completa e mais atual de versões suportadas do Windows.
+
+http://mysupport.netapp.com/matrix["mysupport.NetApp.com/matrix"]
+
+O servidor deve ser dedicado à execução do Unified Manager; nenhum outro aplicativo deve ser instalado no servidor.
+
+São necessários os seguintes pacotes de terceiros:
+
+* Microsoft Visual C& n.o 43;& n.o 43; 2015 Redistributable package versão 14.0.24212
+* Microsoft Visual C& n.o 43;& n.o 43; Redistributable Packages for Visual Studio 2013 versão 12.0.40660
+* MySQL Community Edition versão 5,7.23, ou versões posteriores da família 5,7
+* OpenJDK versão 11
+* p7zip versão 18,01 ou posterior
+
+
+Se esses pacotes de terceiros não estiverem instalados, o Unified Manager os instalará como parte da instalação.
+
+[NOTE]
+====
+A partir do Unified Manager 9,5, o OpenJDK é fornecido no pacote de instalação do Unified Manager e instalado automaticamente. O Oracle Java não é suportado a partir do Unified Manager 9,5.
+
+====
+Se o MySQL estiver pré-instalado, você deve garantir que:
+
+* Ele está usando a porta padrão.
+* Os bancos de dados de amostra não estão instalados.
+* O nome do serviço é "MYSQL".
+
+
+[NOTE]
+====
+Se você planeja atualizar qualquer um dos softwares de terceiros depois que o Unified Manager tiver sido executado, primeiro será necessário desligar o Unified Manager. Após a conclusão da instalação de software de terceiros, você pode reiniciar o Unified Manager.
+
+====
+
+
+== Requisitos de instalação
+
+* O Microsoft .NET 4,5.2, ou superior, deve estar instalado.
+* Você deve reservar 2 GB de espaço em disco para que o `temp` diretório extraia os arquivos de instalação.
+* Você deve reservar 2 GB de espaço em disco na unidade do Windows para armazenar em cache os arquivos MSI do Unified Manager.
+* O Microsoft Windows Server no qual você deseja instalar o Unified Manager deve ser configurado com um nome de domínio totalmente qualificado (FQDN) para que `ping` as respostas ao nome do host e FQDN sejam bem-sucedidas.
+* Você deve desativar o serviço de publicação na Web mundial do Microsoft IIS e garantir que as portas 80 e 443 são gratuitas.
+* Você deve certificar-se de que a configuração do Host de sessão de Área de trabalho Remota para ""Compatibilidade RDS do Windows Installer"" esteja desativada durante a instalação.
+* A porta UDP 514 deve ser livre e não deve ser usada por nenhum outro serviço.
+
+
+[NOTE]
+====
+O programa de instalação do Unified Manager configura as seguintes exclusões no Windows Defender:
+
+* Diretório de dados do Unified Manager (somente Windows Server 2016)
+* Diretório de instalação do Unified Manager
+* Diretório de dados MySQL
+
+
+Se o servidor tiver um antivírus diferente instalado, você deverá configurar essas exclusões manualmente.
+
+====

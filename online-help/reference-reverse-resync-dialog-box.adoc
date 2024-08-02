@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-reverse-resync-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Quando você tem uma relação de proteção que é quebrada porque o volume de origem está desativado e o destino é feito um volume de leitura/gravação, a ressincronização reversa permite reverter a direção da relação para que o destino se torne a nova fonte e a origem se torne o novo destino. 
+---
+= Caixa de diálogo Reverter Resync
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando você tem uma relação de proteção que é quebrada porque o volume de origem está desativado e o destino é feito um volume de leitura/gravação, a ressincronização reversa permite reverter a direção da relação para que o destino se torne a nova fonte e a origem se torne o novo destino.
+
+Quando um desastre desativa o volume de origem em sua relação de proteção, você pode usar o volume de destino para servir dados convertendo-os para leitura/gravação, enquanto você reparar ou substituir a fonte, atualizar a fonte e restabelecer a relação. Quando você executa uma operação de ressincronização reversa, os dados na fonte mais recente do que os dados na cópia Snapshot comum são excluídos.
+
+
+
+== Antes da ressincronização inversa
+
+Exibe a origem e o destino de uma relação antes de uma operação de ressincronização reversa.
+
+* *Volume da fonte*
++
+O nome e o local do volume de origem antes de uma operação de ressincronização reversa .
+
+* *Volume de destino*
++
+O nome e a localização do volume de destino antes de uma operação de ressincronização reversa .
+
+
+
+
+
+== Após a ressincronização inversa
+
+Exibe qual é a origem e o destino de uma relação após uma operação de ressincronização de reserva.
+
+* *Volume da fonte*
++
+O nome e a localização do volume de origem após uma operação de ressincronização reversa.
+
+* *Volume de destino*
++
+O nome e a localização do volume de destino após uma operação de ressincronização reversa.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes ações:
+
+* *Submeter*
++
+Inicia o processo de ressincronização reversa.
+
+* *Cancelar*
++
+Fecha a caixa de diálogo Reverse Resync sem iniciar uma operação de ressincronização reversa.
+
+

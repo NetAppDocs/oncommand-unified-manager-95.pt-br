@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-edit-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo Editar regra para editar as propriedades de uma regra, como os tipos de arquivo, caminhos de diretório ou proprietários. Você também pode selecionar uma classe de armazenamento apropriada para a regra. Por exemplo, quando um determinado caminho de arquivo não é mais válido, você pode excluir o caminho do arquivo da regra correspondente. 
+---
+= Caixa de diálogo Editar regra
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo Editar regra para editar as propriedades de uma regra, como os tipos de arquivo, caminhos de diretório ou proprietários. Você também pode selecionar uma classe de armazenamento apropriada para a regra. Por exemplo, quando um determinado caminho de arquivo não é mais válido, você pode excluir o caminho do arquivo da regra correspondente.
+
+
+
+== Nome da regra
+
+Exibe o nome da regra.
+
+
+
+== Critérios de correspondência
+
+Apresenta uma lista de condições relacionadas com o modelo de regra selecionado. A lista de condições muda com base no modelo de regra selecionado.
+
+* *Adicionar*
++
+Permite adicionar uma nova propriedade de regra, um novo tipo de arquivo, um caminho de arquivo ou um novo proprietário. Por exemplo, se você tiver especificado o modelo de regra, "coloque todos os arquivos com os nomes de proprietário especificados em uma classe de armazenamento adequada", o botão Adicionar permite adicionar o nome do proprietário.
+
+* *Excluir*
++
+Permite eliminar uma propriedade de regra selecionada.
+
+
+
+
+
+== Área de posicionamento de conteúdo
+
+Exibe a lista de classes de armazenamento. Você pode selecionar uma classe de armazenamento apropriada para a regra selecionada.
+
+
+
+== Botões de comando
+
+* *Atualização*
++
+Atualiza as alterações feitas à regra e fecha a caixa de diálogo Editar regra.
+
+* *Cancelar*
++
+Cancela as alterações recentes feitas à regra e fecha a caixa de diálogo Editar regra.
+
+

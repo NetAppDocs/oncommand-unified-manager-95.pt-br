@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-what-objects-and-metrics-can-be-used-in-combination-threshold-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: Apenas alguns contadores de desempenho podem ser usados em conjunto em políticas de combinação. Quando os contadores de desempenho primário e secundário são especificados, ambos os contadores de desempenho devem exceder seus limites máximos antes que um evento seja gerado. 
+---
+= Quais objetos e contadores podem ser usados em políticas de limite de combinação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Apenas alguns contadores de desempenho podem ser usados em conjunto em políticas de combinação. Quando os contadores de desempenho primário e secundário são especificados, ambos os contadores de desempenho devem exceder seus limites máximos antes que um evento seja gerado.
+
+|===
+| Objeto de armazenamento primário e contador | Objeto e contador de armazenamento secundário 
+
+
+ a| 
+Latência de volume
+ a| 
+IOPS do volume
+
+
+
+ a| 
+Mbps de volume
+ a| 
+Utilização de agregado
+
+
+
+ a| 
+Capacidade de desempenho agregado usada
+ a| 
+Utilização do nó
+
+
+
+ a| 
+Capacidade de performance do nó usada
+ a| 
+Capacidade de desempenho do nó usada - takeover
+
+
+
+ a| 
+Latência de LUN
+ a| 
+IOPS LUN
+
+
+
+ a| 
+LUN Mbps
+ a| 
+Utilização de agregado
+
+
+
+ a| 
+Capacidade de desempenho agregado usada
+ a| 
+Utilização do nó
+
+
+
+ a| 
+Capacidade de performance do nó usada
+ a| 
+Capacidade de desempenho do nó usada - takeover
+
+|===
+[NOTE]
+====
+Quando uma política de combinação de volume é aplicada a um volume FlexGroup, em vez de a um FlexVol volume, apenas os atributos "'IOPS de volume'" e "'volume Mbps'" podem ser selecionados como o contador secundário. Se a política de limite contiver um dos atributos de nó ou agregado, a política não será aplicada ao volume FlexGroup e você receberá uma mensagem de erro descrevendo esse caso. Isso ocorre porque os volumes do FlexGroup podem existir em mais de um nó ou agregado.
+
+====

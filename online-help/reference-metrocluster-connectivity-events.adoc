@@ -1,0 +1,198 @@
+---
+permalink: online-help/reference-metrocluster-connectivity-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de conectividade fornecem informações sobre a conectividade entre os componentes de um cluster e entre clusters em uma configuração do MetroCluster para que você possa monitorar se há problemas em potencial. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de conetividade MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de conectividade fornecem informações sobre a conectividade entre os componentes de um cluster e entre clusters em uma configuração do MetroCluster para que você possa monitorar se há problemas em potencial. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Todos os links Inter-Switch para baixo(ocumEvtMetroClusterAllISLBetweenSwitchesDown)
+ a| 
+Incidente
+ a| 
+Ligação entre interrutores MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Todos os links entre parceiros MetroCluster Down(ocumEvtMetroClusterAllLinksBetweenPartnersDown)
+ a| 
+Incidente
+ a| 
+Relação de MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Link de ponte FC-SAS para pilha de armazenamento para baixo(ocumEvtBridgeSasPortDown)
+ a| 
+Incidente
+ a| 
+Conexão de pilha de ponte MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Configuração do MetroCluster comutada sobre((ocumEvtMetroClusterDRStatusImpated)
+ a| 
+Risco
+ a| 
+Relação de MetroCluster
+ a| 
+Aviso
+
+
+
+ a| 
+Configuração do MetroCluster parcialmente comutada (ocumEvtMetroClusterDRStatusPartiallyImpated)
+ a| 
+Risco
+ a| 
+Relação de MetroCluster
+ a| 
+Erro
+
+
+
+ a| 
+Capacidade de recuperação de desastres do MetroCluster impactada (ocumEvtMetroClusterDRStatusImpaced)
+ a| 
+Risco
+ a| 
+Relação de MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Parceiros MetroCluster não alcançáveis através da rede de peering (ocumEvtMetroClusterPartnersNotReachableOverPeeringNetwork)
+ a| 
+Incidente
+ a| 
+Relação de MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Todos os links de interconexão FC-VI para baixo (ocumEvtMccNodeSwitchFcviLinksDown)
+ a| 
+Incidente
+ a| 
+Conexão do switch do nó MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Um ou mais links do FC-Iniciador para baixo (ocumEvtMccNodeSwitchFcLinkOneOrMoreDown)
+ a| 
+Risco
+ a| 
+Conexão do switch do nó MetroCluster
+ a| 
+Aviso
+
+
+
+ a| 
+Todos os links do FC-Initiator para baixo(ocumEvtMccNodeSwitchFcLinksDown)
+ a| 
+Incidente
+ a| 
+Conexão do switch do nó MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Mudar para FC-SAS Bridge FC Link DOWN (ocumEvtMccSwitchBridgeFcLinkSWE)
+ a| 
+Incidente
+ a| 
+Ligação ponte do interrutor MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Internó todos os links de interconexão FC VI para baixo (ocumEvtMccInterNodeLinksDown)
+ a| 
+Incidente
+ a| 
+Conexão entre nós
+ a| 
+Crítico
+
+
+
+ a| 
+Um ou mais links de interconexão FC VI para baixo (ocumEvtMccInterNodeLinksOneOrMoreDown)
+ a| 
+Risco
+ a| 
+Conexão entre nós
+ a| 
+Aviso
+
+
+
+ a| 
+Nó para Ponte Link para baixo (ocumEvtMccNodeBridgeLinkSDown)
+ a| 
+Incidente
+ a| 
+Conexão de ponte do nó
+ a| 
+Crítico
+
+
+
+ a| 
+Nó para pilha de armazenamento todos os links SAS para baixo ( ocumEvtMccNodeStackLinkSDown)
+ a| 
+Incidente
+ a| 
+Conexão da pilha de nós
+ a| 
+Crítico
+
+
+
+ a| 
+Um ou mais links SAS para baixo ( ocumEvtMccNodeStackLinkOneOrMoreDown)
+ a| 
+Risco
+ a| 
+Conexão da pilha de nós
+ a| 
+Aviso
+
+|===

@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-using-a-threshold-policy-with-the-node-failover-planning-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode criar uma política de limite de nó para que você possa ser notificado na página Planejamento de failover de nó/desempenho quando um potencial failover degradar o desempenho do nó de aquisição para um nível inaceitável. 
+---
+= Usando uma política de limite com a página Planejamento de failover de nó
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar uma política de limite de nó para que você possa ser notificado na página Planejamento de failover de nó/desempenho quando um potencial failover degradar o desempenho do nó de aquisição para um nível inaceitável.
+
+A política de limite de desempenho definido pelo sistema denominada ""par de HA de nós sobreutilizado"" gera um evento de aviso se o limite for violado por seis períodos de coleta consecutivos (30 minutos). O limite é considerado violado se a capacidade de performance combinada usada pelos nós em um par de HA exceder 200%.
+
+O evento da política de limite definido pelo sistema alerta você para o fato de que um failover fará com que a latência do nó de takeover aumente para um nível inaceitável. Quando você vê um evento gerado por essa diretiva para um nó específico, você pode navegar para a página Planejamento de failover de Performance/nó para esse nó para exibir o valor de latência previsto devido a um failover.
+
+Além de usar essa política de limite definida pelo sistema, você pode criar políticas de limite usando o contador "capacidade de desempenho usada - aquisição" e, em seguida, aplicar a política aos nós selecionados. Especificar um limite inferior a 200% permite que você receba um evento antes que o limite para a política definida pelo sistema seja violado. Você também pode especificar o período mínimo de tempo para o qual o limite é excedido para menos de 30 minutos se quiser ser notificado antes que o evento de política definido pelo sistema seja gerado.
+
+Por exemplo, você pode definir uma política de limite para gerar um evento de aviso se a capacidade combinada de performance usada pelos nós em um par de HA exceder 175% por mais de 10 minutos. Você pode aplicar essa política ao Node1 e ao Node2, que formam um par de HA. Depois de receber uma notificação de evento de aviso para Node1 ou Node2, você pode visualizar a página Planejamento de failover de nó/desempenho para esse nó para avaliar o impactos estimado no desempenho no nó de aquisição. Você pode tomar medidas corretivas para evitar sobrecarregar o nó de takeover se ocorrer um failover. Se você agir quando a capacidade combinada de performance usada pelos nós for inferior a 200%, a latência do nó de takeover não atinge um nível inaceitável mesmo que um failover ocorra durante esse período.

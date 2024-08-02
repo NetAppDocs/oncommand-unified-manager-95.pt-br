@@ -1,0 +1,36 @@
+---
+permalink: install/reference-users-created-in-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Quando você instala o Unified Manager no Red Hat Enterprise Linux ou CentOS, os seguintes usuários são criados pelo Unified Manager e utilitários de terceiros: Umadmin, jboss e mysql.' 
+---
+= Usuários criados durante a instalação do Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando você instala o Unified Manager no Red Hat Enterprise Linux ou CentOS, os seguintes usuários são criados pelo Unified Manager e utilitários de terceiros: Umadmin, jboss e mysql.
+
+* *umadmin*
++
+Usado para fazer login no Unified Manager pela primeira vez. A este usuário é atribuída uma função de usuário "'Administrador do OnCommand'" e é configurada como o tipo "'Usuário de Manutenção'". Esse usuário é criado pelo Unified Manager.
+
+* *jboss*
++
+Usado para executar serviços do Unified Manager relacionados ao utilitário JBoss. Esse usuário é criado pelo Unified Manager.
+
+* *mysql*
++
+Usado para executar consultas de banco de dados MySQL do Unified Manager. Este usuário é criado pelo utilitário de terceiros MySQL.
+
+
+
+Além desses usuários, o Unified Manager também cria grupos correspondentes: Maintenance, jboss e mysql. Os grupos de manutenção e jboss são criados pelo Unified Manager, enquanto o grupo mysql é criado por um utilitário de terceiros.
+
+[NOTE]
+====
+Se você criou um diretório inicial personalizado e definiu sua própria senha de usuário umadmin antes de instalar o Unified Manager, o programa de instalação não recriará o grupo de manutenção ou o usuário umadmin.
+
+====

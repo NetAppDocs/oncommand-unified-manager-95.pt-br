@@ -1,0 +1,89 @@
+---
+permalink: config/reference-identity-provider-requirements-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Ao configurar o Unified Manager para usar um provedor de identidade (IDP) para executar a autenticação SAML para todos os usuários remotos, você precisa estar ciente de algumas configurações necessárias para que a conexão com o Unified Manager seja bem-sucedida.' 
+---
+= Requisitos do provedor de identidade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ao configurar o Unified Manager para usar um provedor de identidade (IDP) para executar a autenticação SAML para todos os usuários remotos, você precisa estar ciente de algumas configurações necessárias para que a conexão com o Unified Manager seja bem-sucedida.
+
+É necessário inserir o URI e os metadados do Unified Manager no servidor IDP. Você pode copiar essas informações da página Autenticação do Unified ManagerSAML. O Unified Manager é considerado o provedor de serviços (SP) no padrão SAML (Security Assertion Markup Language).
+
+
+
+== Padrões de criptografia suportados
+
+* AES (Advanced Encryption Standard): AES-128 e AES-256
+* Algoritmo Hash seguro (SHA): SHA-1 e SHA-256
+
+
+
+
+== Provedores de identidade validados
+
+* Shibboleth
+* Serviços de Federação do ative Directory (ADFS)
+
+
+
+
+== Requisitos de configuração ADFS
+
+* Você deve definir três regras de reivindicação na ordem a seguir, necessárias para que o Unified Manager analise respostas ADFS SAML para essa entrada confiável de parte confiável.
++
+|===
+| Regra de reclamação | Valor 
+
+
+ a| 
+Nome da conta SAM
+ a| 
+ID do nome
+
+
+
+ a| 
+Nome da conta SAM
+ a| 
+urna:oid:0.9.2342.19200300.100.1.1
+
+
+
+ a| 
+Grupos de token -- Nome não qualificado
+ a| 
+urna:oid:1.3.6.1.4.1.5923.1.5.1.1
+
+|===
+* Você deve definir o método de autenticação como ""Autenticação de formulários""" ou os usuários podem receber um erro ao fazer logout do Unified Manager ao usar o Internet Explorer. Siga estes passos:
++
+.. Abra o Console de Gerenciamento ADFS.
+.. Clique na pasta Authentication Policies (políticas de autenticação) no modo de exibição de árvore à esquerda.
+.. Em ações à direita, clique em Editar política de autenticação primária global.
+.. Defina o método de autenticação da Intranet como ""Autenticação de formulários"" em vez da "Autenticação do Windows" padrão.
+
+
+* Em alguns casos, o login pelo IDP é rejeitado quando o certificado de segurança do Unified Manager é assinado pela CA. Existem duas soluções alternativas para resolver este problema:
++
+** Siga as instruções identificadas no link para desativar a verificação de revogação no servidor ADFS para a entidade dependente associada a cert AC encadeada:
++
+http://www.torivar.com/2016/03/22/adfs-3-0-disable-revocation-check-windows-2012-r2/[]
+
+** Peça que o servidor da CA resida no servidor ADFS para assinar a solicitação de cert do servidor do Unified Manager.
+
+
+
+
+
+
+== Outros requisitos de configuração
+
+* O desvio do relógio do Unified Manager é definido para 5 minutos, portanto, a diferença de tempo entre o servidor IDP e o servidor do Unified Manager não pode ser superior a 5 minutos ou a autenticação falhará.
+* Quando os usuários tentam acessar o Unified Manager usando o Internet Explorer, eles podem ver a mensagem *o site não pode exibir a página*. Se isso ocorrer, certifique-se de que esses usuários desmarque a opção "Mostrar mensagens de erro HTTP amigáveis" em *Ferramentas* > *Opções da Internet* > *Avançado*.
+

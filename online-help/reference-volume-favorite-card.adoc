@@ -1,0 +1,57 @@
+---
+permalink: online-help/reference-volume-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: O cartão Favorito de volume permite visualizar os detalhes de capacidade, proteção e desempenho dos volumes marcados como favoritos. 
+---
+= Volume cartão favorito
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O cartão Favorito de volume permite visualizar os detalhes de capacidade, proteção e desempenho dos volumes marcados como favoritos.
+
+
+
+== Atributos de volume
+
+O cartão Favorito de volume exibe os seguintes atributos de volume:
+
+* *Estado de saúde do volume*
++
+Um ícone que indica o estado de funcionamento do volume. Os valores possíveis são normal, Aviso, erro e crítico.
+
+* *Nome do volume*
++
+Nome do volume.
+
+* *Capacidade*
++
+Porcentagem de espaço livre disponível no volume, e o número estimado de dias até o volume ficar cheio.
+
+* *Proteção*
++
+Função de proteção definida para o volume. Os valores possíveis são desprotegidos, não aplicáveis, protegidos e destino.
+
+* *Desempenho*
++
+Estatísticas de desempenho para o volume.
+
++
+** *IOPS*
++
+Número médio de operações de e/S por segundo nas últimas 72 horas.
+
+** *Taxa de transferência*
++
+Taxa de transferência média nas últimas 72 horas, em Mbps.
+
+** *Latência*
++
+Tempo médio de resposta necessário para uma operação, em milissegundos.
+
+
+
+

@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-managing-backup-and-restore-operations.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode criar backups do Unified Manager e usar o recurso de restauração para restaurar o backup para o mesmo sistema local ou um novo sistema remoto em caso de falha do sistema ou perda de dados. 
+---
+= Configuração de operações de backup e restauração
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar backups do Unified Manager e usar o recurso de restauração para restaurar o backup no mesmo sistema (local) ou em um novo sistema (remoto) em caso de falha do sistema ou perda de dados.

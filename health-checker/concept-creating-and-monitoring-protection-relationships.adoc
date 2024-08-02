@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-creating-and-monitoring-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: Com o Unified Manager, você cria relacionamentos de proteção, monitora e soluciona problemas de proteção espelhada e de backup de dados armazenados em clusters gerenciados, além de restaurar os dados quando substituídos ou perdidos. 
+---
+= Criação, monitoramento e solução de problemas de relacionamentos de proteção
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Com o Unified Manager, você cria relacionamentos de proteção, monitora e soluciona problemas de proteção espelhada e de backup de dados armazenados em clusters gerenciados, além de restaurar os dados quando substituídos ou perdidos.

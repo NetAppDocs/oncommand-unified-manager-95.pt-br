@@ -1,0 +1,227 @@
+---
+permalink: online-help/reference-unified-manager-roles-and-capabilities.html 
+sidebar: sidebar 
+keywords:  
+summary: Com base na função de usuário atribuída, você pode determinar quais operações podem ser executadas no Unified Manager. 
+---
+= Funções e recursos de usuário do Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Com base na função de usuário atribuída, você pode determinar quais operações podem ser executadas no Unified Manager.
+
+A tabela a seguir exibe as funções que cada função de usuário pode executar:
+
+|===
+| Função | Operador | Administrador de armazenamento | Administrador do OnCommand | Esquema de integração | Esquema Relatório 
+
+
+ a| 
+Ver informações do sistema de armazenamento
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+•
+
+
+
+ a| 
+Veja outros dados, como históricos e tendências de capacidade
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+•
+
+
+
+ a| 
+Exibir, atribuir e resolver eventos
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Visualize objetos do serviço de storage, como associações de SVM e pools de recursos
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Exibir políticas de limite
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gerenciar objetos de serviço de storage, como associações de SVM e pools de recursos
+ a| 
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Definir alertas
+ a| 
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gerenciar opções de gerenciamento de storage
+ a| 
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gerenciar políticas de gerenciamento de storage
+ a| 
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gerenciar usuários
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gerenciar opções administrativas
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Definir políticas de limite
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gerenciar acesso ao banco de dados
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gerencie a integração com O WFA e forneça acesso às visualizações do banco de dados
+ a| 
+ a| 
+ a| 
+ a| 
+•
+ a| 
+
+
+
+ a| 
+Fornecer acesso somente leitura a relatórios e outras exibições de banco de dados
+ a| 
+ a| 
+ a| 
+ a| 
+ a| 
+•
+
+
+
+ a| 
+Programe e salve relatórios
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Importar e eliminar relatórios importados
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+|===

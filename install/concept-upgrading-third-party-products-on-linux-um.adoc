@@ -1,0 +1,16 @@
+---
+permalink: install/concept-upgrading-third-party-products-on-linux-um.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Você pode atualizar produtos de terceiros, como JRE e MySQL, no Unified Manager quando instalado em sistemas Linux. 
+---
+= Atualização de produtos de terceiros no Linux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode atualizar produtos de terceiros, como JRE e MySQL, no Unified Manager quando instalado em sistemas Linux.
+
+As empresas que desenvolvem esses produtos de terceiros relatam vulnerabilidades de segurança regularmente. Você pode atualizar para versões mais recentes deste software em sua própria programação.

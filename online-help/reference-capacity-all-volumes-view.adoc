@@ -1,0 +1,209 @@
+---
+permalink: online-help/reference-capacity-all-volumes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: A página integridade/capacidade de volumes e utilização permite visualizar informações sobre a capacidade e a utilização de volumes em um cluster. Essas informações permitem que você entenda possíveis riscos de capacidade e visualize a capacidade de volumes configurada, usada e não utilizada. Além disso, as informações ajudam você a tomar decisões sobre a ativação de recursos de economia de espaço, como deduplicação e thin Provisioning. 
+---
+= Página de integridade/volumes de capacidade e utilização
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página integridade/capacidade de volumes e utilização permite visualizar informações sobre a capacidade e a utilização de volumes em um cluster. Essas informações permitem que você entenda possíveis riscos de capacidade e visualize a capacidade de volumes configurada, usada e não utilizada. Além disso, as informações ajudam você a tomar decisões sobre a ativação de recursos de economia de espaço, como deduplicação e thin Provisioning.
+
+Use o botão *Export* para exportar os detalhes de todos os volumes monitorados para um (`.csv`arquivo de valores separados por vírgulas ).
+
+* *Cluster*
++
+O nome do cluster.
+
+* *SVM*
++
+O nome da máquina virtual de storage (SVM) que contém o volume.
+
+* *Volume*
++
+O nome do volume.
+
+* *Capacidade total de dados*
++
+A capacidade total de dados (usada mais disponível) em um volume.
+
+* * Capacidade de dados usados*
++
+A capacidade de dados usada em um volume.
+
+* *Dados usados %*
++
+Os dados usados em um volume como uma porcentagem.
+
+* *Capacidade de dados disponível*
++
+A capacidade de dados disponível em um volume.
+
+* *Dados disponíveis %*
++
+A capacidade de dados disponível em um volume como porcentagem.
+
+* *Taxa diária de crescimento %*
++
+A taxa de crescimento que ocorre a cada 24 horas no volume.
+
+* *Dias completos*
++
+O número estimado de dias restantes antes do volume atingir a capacidade total.
+
+* *Limite máximo de espaço %*
++
+A porcentagem de espaço utilizado no volume considerado cheio.
+
+* *Espaço quase limite máximo %*
++
+A porcentagem de espaço utilizado no volume que é considerado quase cheio.
+
+* *Limite de taxa de crescimento %*
++
+A taxa de crescimento do volume que é considerada normal antes do sistema gerar um evento anormal da taxa de crescimento do volume.
+
+* *Limiar de sensibilidade da taxa de crescimento*
++
+O fator que é aplicado ao desvio padrão da taxa de crescimento de um volume. Se a taxa de crescimento exceder o desvio padrão fatorado, é gerado um evento anormal da taxa de crescimento do volume.
+
+* *Dias até o limite máximo*
++
+O número de dias restantes antes de atingir a capacidade total.
+
+* *Snapshot Overflow %*
++
+Porcentagem do espaço de dados consumido pelas cópias Snapshot.
+
+* *Reserva de snapshot capacidade utilizada*
++
+A quantidade de espaço usada pelas cópias Snapshot no volume.
+
+* *Reserva Snapshot utilizada %*
++
+A quantidade de espaço usada pelas cópias Snapshot no volume como porcentagem.
+
+* *Reserva de snapshot com capacidade disponível*
++
+A quantidade de espaço disponível para cópias Snapshot no volume.
+
+* *Reserva de snapshot disponível %*
++
+Quantidade de espaço disponível para cópias Snapshot no volume como porcentagem.
+
+* *Capacidade total de reserva de instantâneo*
++
+Exibe a capacidade total de cópia Snapshot no volume.
+
+* *Cópias Snapshot reservam limite total %*
++
+A porcentagem em que o espaço reservado para cópias Snapshot é considerada completa.
+
+* *Limite de contagem de cópias Snapshot*
++
+O número de cópias Snapshot em um volume que é considerado demais.
+
+* *Snapshot copia dias até o limite máximo*
++
+O número de dias restantes antes do espaço reservado para cópias Snapshot atingir a capacidade total.
+
+* *Número de inodes*
++
+O número de inodes no volume.
+
+* * Utilização de inode %*
++
+A porcentagem de espaço de inode usado no volume.
+
+* *Inodes Full Threshold %*
++
+A porcentagem em que um volume é considerado ter consumido todos os seus inodes.
+
+* *Inodes quase limite máximo %*
++
+A porcentagem em que um volume é considerado ter consumido a maioria de seus inodes.
+
+* * Quota de capacidade comprometida*
++
+O espaço reservado para cotas no volume.
+
+* * Quota de capacidade sobrecomprometida*
++
+A quantidade de espaço que pode ser usada para cotas antes que o sistema gere o evento de excesso de cota de volume.
+
+* *Limite de cota sobrecomprometida %*
++
+A percentagem em que o espaço utilizado para as quotas sobre o volume é considerado sobrecomprometido.
+
+* *Quota quase sobrecomprometida Threshold %*
++
+A percentagem em que o espaço utilizado para as quotas sobre o volume é considerado quase exagerado.
+
+* *Snapshot Autodelete*
++
+Se a exclusão automática de cópias Snapshot está ativada ou desativada.
+
+* *Desduplicação*
++
+Se a deduplicação está ativada ou desativada para o volume.
+
+* *Economia de espaço de deduplicação*
++
+A quantidade de espaço economizada em um volume com o uso de deduplicação.
+
+* *Compressão*
++
+Se a compressão está ativada ou desativada para o volume.
+
+* *Economia de espaço de compressão*
++
+A quantidade de espaço economizada em um volume usando compressão.
+
+* *Política de Cache*
++
+A política de armazenamento em cache associada ao volume selecionado.
+
++
+A política fornece informações sobre como o armazenamento em cache do Flash Pool ocorre para o volume. Consulte a página de inventário de integridade/volumes para obter mais informações sobre políticas de armazenamento em cache.
+
+* *Prioridade de retenção de cache*
++
+A prioridade usada para reter pools em cache.
+
+* *Thin Provisioning*
++
+Se a garantia de espaço está definida para o volume selecionado. Os valores válidos são Sim e não
+
+* *Autowore*
++
+Se o volume cresce automaticamente em tamanho quando está fora do espaço.
+
+* *Garantia de espaço*
++
+A opção de garantia de armazenamento associada ao volume.
+
+* *Função de proteção*
++
+A função de proteção definida para o volume.
+
+* *Estado*
++
+O estado do volume que está a ser exportado.
+
+* *Tipo SnapLock*
++
+Se o volume é um volume SnapLock ou não SnapLock.
+
+* *Data de expiração do SnapLock*
++
+A data de expiração do SnapLock.
+
+* *Política de disposição em camadas*
++
+A política de disposição em camadas definida para o volume. Válido somente quando implantado em agregados habilitados para FabricPool.
+
+

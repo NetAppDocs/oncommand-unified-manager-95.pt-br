@@ -1,0 +1,36 @@
+---
+permalink: performance-checker/concept-cluster-configuration-changes-detected-by-unified-manager.html 
+sidebar: sidebar 
+keywords: Performance Manager 
+summary: 'O Unified Manager monitora seus clusters para ver se há alterações de configuração para ajudar você a determinar se uma alteração pode ter causado ou contribuído para um evento de performance. As páginas do Performance Explorer exibem um ícone de evento de mudança (() para indicar a data e a hora em que a alteração foi detetada.' 
+---
+= Alterações de configuração detetadas pelo Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager monitora seus clusters para ver se há alterações de configuração para ajudar você a determinar se uma alteração pode ter causado ou contribuído para um evento de performance. As páginas do Explorador de desempenho apresentam um ícone de alteração de evento (image:../media/opm-change-icon.gif["Alterar ícone de evento"]) para indicar a data e a hora em que a alteração foi detetada.
+
+Você pode revisar os gráficos de desempenho nas páginas do Performance Explorer e na página Detalhes de desempenho/volume para ver se o evento de alteração impactou o desempenho do objeto de cluster selecionado. Se a alteração tiver sido detetada ao mesmo tempo ou em torno de um evento de desempenho, a alteração pode ter contribuído para o problema, o que fez com que o alerta de evento fosse acionado.
+
+O Unified Manager pode detetar os seguintes eventos de mudança, que são categorizados como eventos informativos:
+
+* Um volume se move entre agregados.
++
+O Unified Manager pode detetar quando a movimentação está em andamento, concluída ou com falha. Se o Unified Manager estiver inativo durante uma movimentação de volume, quando estiver fazendo backup, ele detetará a movimentação de volume e exibirá um evento de mudança para ele.
+
+* O limite de taxa de transferência (Mbps ou IOPS) de um grupo de políticas de QoS que contém uma ou mais alterações de workloads monitorados.
++
+A alteração do limite de um grupo de políticas pode causar picos intermitentes na latência (tempo de resposta), o que também pode acionar eventos para o grupo de políticas. A latência volta gradualmente ao normal e quaisquer eventos causados pelos picos se tornam obsoletos.
+
+* Um nó em um par de HA assume ou devolve o storage de seu nó de parceiro.
++
+O Unified Manager pode detetar quando a operação de takeover, takeover parcial ou giveback foi concluída. Se o takeover for causado por um nó em pânico, o Unified Manager não detetará o evento.
+
+* Uma operação de atualização ou reversão do ONTAP foi concluída com êxito.
++
+São apresentadas a versão anterior e a nova versão.
+
+

@@ -1,0 +1,44 @@
+---
+permalink: online-help/concept-what-report-importing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode importar um relatório usando a opção Importar relatório do Unified Manager e salvar o relatório importado com um nome e uma breve descrição. Ao importar relatórios, você pode adicionar relatórios personalizados ao seu ambiente, além dos relatórios padrão fornecidos no Unified Manager. 
+---
+= Qual é a importação de relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode importar um relatório usando a opção *Importar relatório* do Unified Manager e salvar o relatório importado com um nome e uma breve descrição. Ao importar relatórios, você pode adicionar relatórios personalizados ao seu ambiente, além dos relatórios padrão fornecidos no Unified Manager.
+
+Você pode importar um `.rptdesign` arquivo que já foi criado. Você pode executar, compartilhar, agendar e excluir um relatório importado.
+
+O Unified Manager armazena os arquivos de log de relatórios de importação nos arquivos jboss.log, ocum-report.log e ocumserver-debug.log.
+
+[NOTE]
+====
+O suporte ao cliente não ajudará no projeto de relatórios, mas ele irá apoiá-lo com problemas enfrentados durante uma operação de importação de relatórios.
+
+====
+O recurso de importação de relatório inclui o seguinte suporte:
+
+* Relatórios com vários cabeçalhos, nos quais a extensão da coluna está definida como 1 (`colspan=1`)
+* Relatórios apenas com gráficos
+* Relatórios apenas com listas e grade
+* As senhas usadas nos relatórios devem ser codificadas usando o formato ""base64"". Relatórios usando outra codificação, por exemplo, o formato "'jce'", causará um erro durante o processo de importação.
+* Os relatórios contendo agregação de dados devem incluir o elemento de coluna agregada nos dados da tabela do relatório.
+
+
+Os relatórios nos formatos de texto, CSV e Excel são suportados nos seguintes cenários:
+
+* Elemento de tabela somente no `.rptdesign` arquivo
+* Uma tabela com apenas uma linha de cabeçalho
+
+
+[NOTE]
+====
+Não é possível importar relatórios que tenham uma extensão de coluna superior a 1. Se um relatório no formato texto, CSV ou Excel tiver mais de uma linha de cabeçalho, apenas a primeira linha de cabeçalho será considerada e o restante será ignorado.
+
+====

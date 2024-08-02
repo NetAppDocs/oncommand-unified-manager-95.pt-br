@@ -1,0 +1,72 @@
+---
+permalink: online-help/concept-understanding-events-from-adaptive-qos-policies-that-have-a-defined-block-size.html 
+sidebar: sidebar 
+keywords:  
+summary: Os grupos de políticas de QoS adaptáveis escalam automaticamente um limite de taxa de transferência ou um piso com base no tamanho do volume, mantendo a proporção de IOPS para TBs conforme o tamanho do volume muda. A partir do ONTAP 9.5, você pode especificar o tamanho do bloco na política de QoS para aplicar efetivamente um limite de Mbps ao mesmo tempo. 
+---
+= Entendendo eventos de políticas de QoS adaptáveis que têm um tamanho de bloco definido
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os grupos de políticas de QoS adaptáveis escalam automaticamente um limite de taxa de transferência ou um piso com base no tamanho do volume, mantendo a proporção de IOPS para TBs conforme o tamanho do volume muda. A partir do ONTAP 9.5, você pode especificar o tamanho do bloco na política de QoS para aplicar efetivamente um limite de Mbps ao mesmo tempo.
+
+A atribuição de um limite de IOPS em uma política de QoS adaptável coloca um limite apenas no número de operações que ocorrem em cada workload. Dependendo do tamanho do bloco definido no cliente que gera as cargas de trabalho, alguns IOPS incluem muito mais dados e, portanto, colocam uma carga muito maior sobre os nós que processam as operações.
+
+O valor de Mbps para uma carga de trabalho é gerado usando a seguinte fórmula:
+
+[listing]
+----
+MBps = (IOPS * Block Size) / 1000
+----
+Se uma carga de trabalho estiver com uma média de 3.000 IOPS e o tamanho do bloco no cliente estiver definido para 32 KB, o Mbps efetivo para essa carga de trabalho será de 96 Mbps. Se essa mesma carga de trabalho estiver com uma média de 3.000 IOPS e o tamanho do bloco no cliente estiver definido para 48 KB, o Mbps efetivo para essa carga de trabalho será de 144 Mbps. Você pode ver que o nó está processando 50% mais dados quando o tamanho do bloco é maior.
+
+Vejamos a seguinte política de QoS adaptável que tem um tamanho de bloco definido e como os eventos são acionados com base no tamanho do bloco definido no cliente.
+
+Crie uma política e defina a taxa de transferência de pico para 2.500 IOPS/TB com um tamanho de bloco de 32KBK. Isso efetivamente define o limite de Mbps para 80 Mbps ((2500 IOPS * 32KB) / 1000 Mbps) para um volume com 1 TB de capacidade usada. Observe que o Unified Manager gera um evento de aviso quando o valor da taxa de transferência é 10% menor do que o limite definido. Os eventos são gerados nas seguintes situações:
+
+|===
+| Capacidade utilizada | O evento é gerado quando a taxa de transferência excede este número de ... 
+
+
+| IOPS | Mbps 
+
+
+ a| 
+1 TB
+ a| 
+2.250 IOPS
+
+
+
+ a| 
+72 Mbps
+ a| 
+2 TB
+
+
+
+ a| 
+4.500 IOPS
+ a| 
+144 Mbps
+
+
+
+ a| 
+5 TB
+ a| 
+11.250 IOPS
+
+|===
+Se o volume estiver usando 2TBMB do espaço disponível e o IOPS for 4.000MB, e o tamanho do bloco QoS estiver definido como 32KBMB no cliente, a taxa de transferência de Mbps será de 128 Mbps ((4.000 IOPS * 32 KB) / 1000MB). Nenhum evento é gerado neste cenário porque tanto 4.000 IOPS como 128 Mbps estão abaixo do limite para um volume que está usando 2 TB de espaço.
+
+Se o volume estiver usando 2TBMB do espaço disponível e o IOPS for 4.000MB, e o tamanho do bloco QoS estiver definido como 64KBMB no cliente, a taxa de transferência de Mbps será de 256 Mbps ((4.000 IOPS * 64 KB) / 1000MB). Nesse caso, o 4.000 IOPS não gera um evento, mas o valor de 256 Mbps está acima do limite de 144 Mbps e um evento é gerado.
+
+Por esse motivo, quando um evento é acionado com base em uma violação de Mbps para uma política de QoS adaptável que inclua o tamanho do bloco, um gráfico de Mbps é exibido na seção Diagnóstico do sistema da página Detalhes do evento. Se o evento for acionado com base em uma violação de IOPS para a política de QoS adaptável, um gráfico de IOPS será exibido na seção Diagnóstico do sistema. Se ocorrer uma violação para IOPS e Mbps, você receberá dois eventos.
+
+Para obter mais informações sobre como ajustar as configurações de QoS, consulte o _Guia de Energia de Monitoramento de desempenho do ONTAP 9_.
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["Guia de alimentação para monitoramento de desempenho do ONTAP 9"]

@@ -1,0 +1,153 @@
+---
+permalink: online-help/reference-aggregate-thresholds-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página limites de configuração/integridade para agregados permite configurar valores de limite de integridade globais para agregados monitorados. Quando você configura as opções globalmente, os valores padrão de todos os objetos são modificados. No entanto, se os valores padrão tiverem sido alterados no nível do objeto, os valores globais não serão modificados. 
+---
+= Página de limites de configuração/integridade para agregados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página limites de configuração/integridade para agregados permite configurar valores de limite de integridade globais para agregados monitorados. Quando você configura as opções globalmente, os valores padrão de todos os objetos são modificados. No entanto, se os valores padrão tiverem sido alterados no nível do objeto, os valores globais não serão modificados.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+Os eventos são gerados quando um limite é violado. Você pode tomar ações corretivas para tais eventos.
+
+Os valores de limite não são aplicáveis ao agregado raiz do nó.
+
+Você pode definir limites de integridade agregados para o seguinte: Capacidade, crescimento agregado e cópias Snapshot agregadas.
+
+
+
+== Área de capacidade
+
+A área capacidade permite definir as seguintes condições de limite de capacidade agregada. Observe que quando o crescimento automático é ativado em volumes que residem no agregado, os limites de capacidade agregada são considerados violados com base no tamanho máximo do volume definido pelo crescimento automático, não com base no tamanho do volume original.
+
+* *Espaço quase cheio*
++
+Especifica a porcentagem em que um agregado é considerado quase cheio:
+
++
+** Valor padrão: 80 por cento
++
+O valor desse limite deve ser menor do que o valor do limite Total agregado para que o servidor de gerenciamento gere um evento.
+
+** Evento gerado: Agregado quase completo
+** Gravidade do evento: Aviso
+
+
+* *Espaço cheio*
++
+Especifica a porcentagem em que um agregado é considerado cheio:
+
++
+** Valor padrão: 90 por cento
+** Evento gerado: Agregado completo
+** Gravidade do evento: Erro
+
+
+* * Quase exagerado*
++
+Especifica a porcentagem em que um agregado é considerado como sendo quase supercomprometido:
+
++
+** Valor padrão: 95 por cento
++
+O valor desse limite deve ser menor que o valor do limite total de comprometimento excessivo agregado para que o servidor de gerenciamento gere um evento.
+
+** Evento gerado: Agregado quase comprometido
+** Gravidade do evento: Aviso
+
+
+* * Overcommitted*
++
+Especifica a porcentagem em que um agregado é considerado como supercomprometido:
+
++
+** Valor padrão: 100 por cento
+** Evento gerado: Agregado com excesso de comprometimento
+** Gravidade do evento: Erro
+
+
+* *Dias até completo*
++
+Especifica o número de dias restantes antes que o agregado atinja a capacidade total:
+
++
+** Valor padrão: 7
+** Evento gerado: Agregar dias até completo
+** Gravidade do evento: Erro
+
+
+
+
+
+
+== Área de crescimento
+
+A área de crescimento permite definir as seguintes condições de limite para o crescimento agregado:
+
+* *Taxa de crescimento*
++
+Especifica a porcentagem na qual a taxa de crescimento de um agregado é considerada normal antes que o sistema gere um evento anormal da taxa de crescimento agregada:
+
++
+** Valor padrão: 1 por cento
+** Evento gerado: Taxa de crescimento agregada anormal
+** Gravidade do evento: Aviso
+
+
+* * Sensibilidade da taxa de crescimento*
++
+Especifica o fator que é aplicado ao desvio padrão da taxa de crescimento de um agregado. Se a taxa de crescimento exceder o desvio padrão fatorado, um evento anormal da taxa de crescimento agregado é gerado.
+
++
+Um valor mais baixo para a sensibilidade da taxa de crescimento indica que o agregado é altamente sensível às mudanças na taxa de crescimento. O intervalo para a sensibilidade da taxa de crescimento é de 1 a 5.
+
++
+** Valor padrão: 2
+
+
++
+[NOTE]
+====
+Se você modificar a sensibilidade da taxa de crescimento para agregados no nível do limiar global, a mudança também será aplicada à sensibilidade da taxa de crescimento para volumes no nível do limiar global.
+
+====
+
+
+
+
+== Área cópias Snapshot
+
+A área cópias Snapshot permite definir as seguintes condições de limite de reserva Snapshot:
+
+* *Reserva Snapshot completa*
++
+Especifica a porcentagem em que um agregado consumiu todo o espaço reservado para cópias Snapshot:
+
++
+** Valor padrão: 90 por cento
+** Evento gerado: Reserva Snapshot agregada cheia
+** Gravidade do evento: Aviso
+
+
+
+
+
+
+== Botões de comando
+
+* *Restaurar para padrões de fábrica*
++
+Permite restaurar as definições de configuração para os valores predefinidos de fábrica.
+
+* *Guardar*
++
+Guarda as definições de configuração para a opção selecionada.
+
+

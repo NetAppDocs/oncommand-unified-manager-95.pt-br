@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-the-least-consumed-volumes-with-thin-provisioning-disabled.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório capacidade de volume e utilização para exibir volumes com base no consumo de volume. 
+---
+= Personalizar o relatório capacidade de volume e utilização para exibir os volumes menos consumidos com o provisionamento de thin Provisioning desativado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório capacidade de volume e utilização para exibir volumes com base no consumo de volume.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por SVM, cluster ou volume, execute o seguinte procedimento:
++
+.. Clique na coluna que precisa ser desagrupada.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para classificar volumes com base na porcentagem consumida, clique na coluna *dados usados %* e clique no image:../media/sort-asc.gif[""] ícone.
+. Para filtrar volumes com provisionamento de thin desativado, clique na coluna *thin Provisioning* e abra a caixa de diálogo *Filter* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista *condição*, selecione *igual a*.
+. Clique em *Select values* (Selecionar valores) e selecione *no* (não).
+. Clique em *OK*.
+

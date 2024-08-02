@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-storage-summary-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar os relatórios de Resumo do storage para exibir e analisar informações sobre a capacidade de storage em pares de HA. Use filtros para exibir a utilização de storage por modelo de cluster, a capacidade das LUNs mais não atribuídas e a capacidade dos pares de HA disponíveis para provisionar novos volumes e LUNs. 
+---
+= Personalizações do relatório Resumo de armazenamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar os relatórios de Resumo do storage para exibir e analisar informações sobre a capacidade de storage em pares de HA. Use filtros para exibir a utilização de storage por modelo de cluster, a capacidade das LUNs mais não atribuídas e a capacidade dos pares de HA disponíveis para provisionar novos volumes e LUNs.

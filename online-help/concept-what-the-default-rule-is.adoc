@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-the-default-rule-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A regra padrão é a regra presente na política de dados de uma máquina virtual de armazenamento (SVM) com Infinite volume. Ele é usado para determinar o posicionamento dos dados gravados no Infinite volume quando nenhuma das condições nas regras existentes corresponder aos dados que estão sendo gravados.' 
+---
+= Qual é a regra padrão
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A regra padrão é a regra presente na política de dados de uma máquina virtual de storage (SVM) com Infinite volume. Ele é usado para determinar o posicionamento dos dados gravados no Infinite volume quando nenhuma das condições nas regras existentes corresponder aos dados que estão sendo gravados.
+
+A regra padrão é sempre a última regra de uma política de dados e não pode ser reordenada. Por exemplo, considere uma política de dados com três regras. A regra-1 coloca todos os arquivos .pdf na classe __high_performance__storage. Regra-2 coloca todos os arquivos de propriedade do administrador e nomes de arquivo que terminam com *.xls na classe de armazenamento _archive_constituinte_. A terceira regra é a regra padrão com a classe de armazenamento _low_performance_.
+
+Quando um conjunto de arquivos *.jpg que não são de propriedade do administrador é gravado no Infinite volume, a regra padrão é usada para colocar esses arquivos .jpg na classe de armazenamento _low_performance_. A regra-1 e a regra-2 não são usadas porque os dados gravados não correspondem a essas regras.

@@ -1,0 +1,26 @@
+---
+permalink: online-help/task-identifying-the-best-node-for-a-busy-lif-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode exibir informações sobre todas as portas em um cluster. Você pode exibir informações como a função de porta de rede (cluster, dados ou gerenciamento de nó), status do link, unidade máxima de transmissão (MTU), configuração de velocidade e status operacional e o grupo de interface da porta, se aplicável.' 
+---
+= Identificando o melhor nó para um LIF ocupado usando o OnCommand System Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exibir informações sobre todas as portas em um cluster. Você pode exibir informações como a função de porta de rede (cluster, dados ou gerenciamento de nós), status do link, MTU (unidade máxima de transmissão), configuração de velocidade e status operacional e o grupo de interfaces da porta, se aplicável.
+
+
+
+== Passos
+
+. Abra o OnCommand System Manager.
+. Na guia *Home*, clique duas vezes no sistema de armazenamento.
+. No painel de navegação, expanda a hierarquia *nodes*.
+. Para localizar as conexões ativas em um nó, no painel de navegação, selecione o ícone de um nó.
+. Clique no link de nome de um nó e clique em *Configuração* > *portas/adaptadores*.
+. Observe a maior contagem de clientes por nó.
+

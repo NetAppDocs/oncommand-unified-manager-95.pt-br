@@ -1,0 +1,92 @@
+---
+permalink: performance-checker/task-creating-user-defined-performance-threshold-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: Você cria políticas de limite de desempenho para objetos de armazenamento de modo que as notificações sejam enviadas quando um contador de desempenho exceder um valor específico. A notificação de evento identifica que o cluster está enfrentando um problema de desempenho. 
+---
+= Criação de políticas de limite de performance definidas pelo usuário
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você cria políticas de limite de desempenho para objetos de armazenamento de modo que as notificações sejam enviadas quando um contador de desempenho exceder um valor específico. A notificação de evento identifica que o cluster está enfrentando um problema de desempenho.
+
+
+
+== Antes de começar
+
+Tem de ter a função de Administrador do OnCommand.
+
+
+
+== Sobre esta tarefa
+
+Você cria políticas de limite de desempenho inserindo os valores de limite na página criar política de limite. Você pode criar novas políticas definindo todos os valores de política nesta página ou pode fazer uma cópia de uma política existente e alterar os valores da cópia (chamada _clonagem_).
+
+Os valores-limite válidos são de 0,001 a 10.000.000 para números, 0.001-100 para porcentagens e 0.001-200 para porcentagens de capacidade de desempenho usada.
+
+[NOTE]
+====
+A versão atual fornece limites que enviam eventos quando um valor de contador excede a configuração de limite. Você não pode definir limites que enviam eventos quando um valor de contador cai abaixo de uma configuração de limite.
+
+====
+
+
+== Passos
+
+. No painel de navegação esquerdo, selecione *Configuração* > *limites de desempenho*.
++
+É apresentada a página Configuration/Performance Thresholds (limites de configuração/desempenho).
+
+. Clique no botão apropriado dependendo se você deseja criar uma nova política ou se deseja clonar uma política semelhante e modificar a versão clonada.
++
+|===
+| Para... | Clique em... 
+
+
+ a| 
+Crie uma nova política
+ a| 
+*Criar*
+
+
+
+ a| 
+Clonar uma política existente
+ a| 
+Selecione uma política existente e clique em *Clone*
+
+|===
++
+É apresentada a página criar política de limiar ou a página Clone política de limiar.
+
+. Defina a política de limite especificando os valores de limite do contador de desempenho que deseja definir para objetos de armazenamento específicos:
++
+.. Selecione o tipo de objeto de armazenamento e especifique um nome e uma descrição para a política.
+.. Selecione o contador de desempenho a ser rastreado e especifique os valores limite que definem eventos de Aviso e Crítica.
++
+Tem de definir pelo menos um aviso ou um limite crítico. Não é necessário definir ambos os tipos de limites.
+
+.. Selecione um contador de desempenho secundário, se necessário, e especifique os valores limite para eventos de Aviso e Crítica.
++
+A inclusão de um contador secundário exige que ambos os contadores excedam os valores limite antes que o limite seja violado e um evento seja relatado. Somente determinados objetos e contadores podem ser configurados usando uma política de combinação.
+
+.. Selecione a duração do tempo para o qual os valores-limite devem ser violados para que um evento seja enviado.
+
+
++
+Ao clonar uma política existente, você deve inserir um novo nome para a política.
+
+. Clique em *Salvar* para salvar a política.
++
+Regressa à página limites de configuração/desempenho. Uma mensagem de sucesso na parte superior da página confirma que a diretiva de limite foi criada e fornece um link para a página Inventário para esse tipo de objeto para que você possa aplicar a nova diretiva a objetos de armazenamento imediatamente.
+
+
+
+
+
+== Depois de terminar
+
+Se você quiser aplicar a nova diretiva de limite a objetos de armazenamento neste momento, clique no link *ir para object_type now* para ir para a página Inventário.

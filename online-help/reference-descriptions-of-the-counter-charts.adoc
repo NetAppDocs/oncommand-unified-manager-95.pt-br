@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: Você usa os gráficos de contador do Performance Explorer para exibir e comparar dados de desempenho para objetos de armazenamento selecionados. Esses gráficos podem ajudá-lo a entender as tendências de desempenho e isolar e resolver problemas de desempenho. 
+---
+= Descrições dos gráficos de contador
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você usa os gráficos de contador do Performance Explorer para exibir e comparar dados de desempenho para objetos de armazenamento selecionados. Esses gráficos podem ajudá-lo a entender as tendências de desempenho e isolar e resolver problemas de desempenho.

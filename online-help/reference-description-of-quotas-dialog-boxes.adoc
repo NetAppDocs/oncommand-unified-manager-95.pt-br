@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-quotas-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a opção apropriada na guia cotas de Usuário e Grupo na página de inventário de máquinas virtuais de Saúde/armazenamento para configurar o formato da notificação de e-mail enviada quando ocorre um problema relacionado à cota e configurar regras para especificar endereços de e-mail com base na cota de usuário. 
+---
+= Descrição das caixas de diálogo cotas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a opção apropriada na guia cotas de Usuário e Grupo na página de inventário de máquinas virtuais de Saúde/armazenamento para configurar o formato da notificação de e-mail enviada quando ocorre um problema relacionado à cota e configurar regras para especificar endereços de e-mail com base na cota de usuário.

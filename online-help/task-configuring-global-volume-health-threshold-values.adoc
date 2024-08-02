@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-configuring-global-volume-health-threshold-values.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode configurar os valores de limite de integridade global para todos os volumes para rastrear qualquer violação de limite. Eventos apropriados são gerados para violações de limites de integridade e você pode tomar medidas preventivas com base nesses eventos. Você pode configurar os valores globais com base nas configurações de práticas recomendadas para limites que se aplicam a todos os volumes monitorados. 
+---
+= Configuração dos valores do limite de integridade do volume global
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar os valores de limite de integridade global para todos os volumes para rastrear qualquer violação de limite. Eventos apropriados são gerados para violações de limites de integridade e você pode tomar medidas preventivas com base nesses eventos. Você pode configurar os valores globais com base nas configurações de práticas recomendadas para limites que se aplicam a todos os volumes monitorados.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+A maioria das opções de limite tem valores padrão para melhor monitoramento. No entanto, você pode alterar os valores de acordo com os requisitos do seu ambiente.
+
+Observe que, quando o crescimento automático está ativado em um volume, os limites de capacidade são considerados violados com base no tamanho máximo do volume definido pelo crescimento automático, não com base no tamanho do volume original.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Configuração* > *limites de integridade*.
+. Na página *limiares de configuração/integridade*, clique em *volumes*.
+. Configurar os valores de limite apropriados para capacidade, cópias Snapshot, cotas de qtree, crescimento de volume e inodes.
+. Clique em *Salvar*.
+

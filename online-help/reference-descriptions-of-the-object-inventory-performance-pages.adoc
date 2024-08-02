@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Use as páginas de inventário de desempenho para ver um resumo das informações de performance sobre cada um dos objetos de storage disponíveis, como clusters, agregados, volumes, etc. Você pode vincular as páginas de detalhes do objeto Performance para exibir informações detalhadas de um objeto específico. 
+---
+= Descrições das páginas de inventário de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use as páginas de inventário de desempenho para ver um resumo das informações de performance sobre cada um dos objetos de storage disponíveis, como clusters, agregados, volumes, etc. Você pode vincular as páginas de detalhes do objeto Performance para exibir informações detalhadas de um objeto específico.

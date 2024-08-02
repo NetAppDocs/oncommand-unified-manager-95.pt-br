@@ -1,0 +1,193 @@
+---
+permalink: online-help/reference-management-annotations-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Gestão/Anotações permite criar anotações no Unified Manager que podem ser usadas para anotar objetos de armazenamento ou editar ou excluir anotações. Você pode anotar manualmente objetos de armazenamento com um par de anotações ou configurar regras de anotação. Os objetos de armazenamento são anotados dinamicamente com base na anotação aplicada. 
+---
+= Página de Gestão/Anotações
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Gestão/Anotações permite criar anotações no Unified Manager que podem ser usadas para anotar objetos de armazenamento ou editar ou excluir anotações. Você pode anotar manualmente objetos de armazenamento com um par de anotações ou configurar regras de anotação. Os objetos de armazenamento são anotados dinamicamente com base na anotação aplicada.
+
+Quando iniciar sessão como operador, terá apenas acesso de leitura à página. Você pode acessar os botões adicionar, editar ou excluir em cada guia quando você fizer login como administrador de armazenamento ou administrador do Unified Manager.
+
+
+
+== Separador Anotações
+
+O separador Anotações permite visualizar, criar, editar ou eliminar anotações no Unified Manager.
+
+* *Lista de anotações*
++
+Apresenta os nomes das anotações predefinidas e personalizadas. É também apresentada a contagem dos valores de anotação associados a cada anotação. Pode clicar no nome da anotação para ver os detalhes da anotação.
+
+
+
+
+
+== Área de resumo
+
+Pode visualizar os seguintes detalhes da anotação selecionada:
+
+* *Descrição*
++
+Apresenta a descrição fornecida para a anotação.
+
+* *Criado por*
++
+Apresenta o nome do utilizador que criou a anotação.
+
+* *Data de criação*
++
+Apresenta a data em que a anotação foi criada.
+
+
+
+
+
+== Pares de valores
+
+Apresenta a lista de pares de valores de anotação e objetos de armazenamento associados que estão disponíveis para a anotação selecionada.
+
+* *Valor*
++
+Apresenta o nome do par de valores da anotação.
+
+* *Clusters aplicáveis*
++
+Exibe o número de clusters que são anotados com um par de anotação particular. Você pode clicar no número para exibir a página clusters, que exibe uma lista filtrada dos clusters associados a um valor específico.
+
+* *Máquinas virtuais de armazenamento aplicáveis (SVMs)*
++
+Exibe o número de máquinas virtuais de armazenamento (SVMs) que são anotadas com um par de valores de anotação particular. Você pode clicar no número para exibir a página máquinas virtuais de armazenamento (SVMs), que exibe uma lista filtrada de máquinas virtuais de armazenamento (SVMs) associadas a um valor específico.
+
+* *Volumes aplicáveis*
++
+Exibe o número de volumes que são anotados com um par de valores de anotação particular. Você pode clicar no número para exibir a página volumes, que exibe uma lista filtrada dos volumes associados a um valor específico.
+
+
+
+
+
+== Associações de objetos através de regras
+
+Apresenta a lista de regras de anotação e os objetos de armazenamento associados para a anotação selecionada.
+
+* *Classificação*
++
+Apresenta a ordem das regras de anotação a aplicar nos objetos de armazenamento.
+
+* *Regras*
++
+Apresenta o nome da regra de anotação.
+
+* * Tipo Objeto alvo*
++
+Apresenta o tipo de objeto de armazenamento ao qual a regra de anotação é aplicada.
+
+* *Valor de anotação associado*
++
+Apresenta o par de valores de anotação aplicado ao objeto de armazenamento.
+
+* *Objetos aplicáveis*
++
+Exibe a contagem dos objetos de armazenamento anotados com base na regra de anotação.
+
+
+
+
+
+== Associações Objeto Manual
+
+Exibe a lista de anotações que você configurou manualmente e associadas a objetos de armazenamento.
+
+* *Anotação – par de valores*
++
+Apresenta o nome da anotação manual e o valor.
+
+* *Clusters aplicáveis*
++
+Apresenta o número de clusters anotados com um determinado valor de anotação manual. Você pode clicar no número para exibir a página clusters, que exibe uma lista filtrada dos clusters associados a um valor específico.
+
+* *Máquinas virtuais de armazenamento aplicáveis (SVMs)*
++
+Exibe o número de máquinas virtuais de armazenamento (SVMs) anotadas com um determinado valor de anotação manual. Você pode clicar no número para exibir a página máquinas virtuais de armazenamento (SVMs), que exibe uma lista filtrada de máquinas virtuais de armazenamento (SVMs) associadas a um valor específico.
+
+* *Volumes aplicáveis*
++
+Apresenta o número de volumes anotados com um determinado valor de anotação manual. Você pode clicar no número para exibir a página volumes, que exibe uma lista filtrada dos volumes associados a um valor específico.
+
+
+
+
+
+== Botões de comando
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento. Para anotações predefinidas, não é possível adicionar ou eliminar valores.
+
+* *Adicionar Anotação*
++
+Abre a caixa de diálogo Adicionar anotação, que permite criar novas anotações personalizadas e atribuir valores à anotação.
+
+* *Ações*
++
+Permite editar ou eliminar a descrição da anotação selecionada.
+
+* *Editar*
++
+Abre a caixa de diálogo Editar anotação, que permite modificar o nome e a descrição da anotação.
+
+* *Excluir*
++
+Permite eliminar o valor da anotação. Só pode eliminar o valor quando não estiver associado a quaisquer regras de anotação ou regras de grupo.
+
+
+
+
+
+== Separador regras de anotação
+
+A guia regras de anotações exibe as regras de anotação criadas para anotar objetos de armazenamento. Você pode executar tarefas como adicionar, editar, excluir ou reordenar uma regra de anotação. Você também pode exibir o número de objetos de armazenamento que satisfazem a regra de anotação.
+
+
+
+== Botões de comando
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+* *Adicionar*
++
+Exibe a caixa de diálogo Adicionar regra de anotação, que permite criar regras de anotação para objetos de armazenamento.
+
+* *Editar*
++
+Exibe a caixa de diálogo Editar regra de anotação, que permite reconfigurar regras de anotação configuradas anteriormente.
+
+* *Excluir*
++
+Elimina as regras de anotação selecionadas.
+
+* *Reordenar*
++
+Apresenta a caixa de diálogo Reordenar regra de anotação, que lhe permite reorganizar a ordem das regras de anotação.
+
+
+
+
+
+== Vista de lista
+
+A vista de lista apresenta, em formato tabular, as regras de anotação criadas no servidor do Unified Manager. Você pode usar os filtros de coluna para personalizar os dados exibidos. A exibição de lista da guia regras de anotação e a exibição de lista da seção regras associadas na guia Anotação contém as seguintes colunas:
+
+* Classificação
+* Nome
+* Tipo Objeto alvo
+* Valor de anotação associado
+* Objetos aplicáveis
+
+
+É apresentada uma coluna adicional para o separador Annotation Rules (regras de anotação), Associated Annotation (Anotação associada), que apresenta o nome da anotação aplicada ao objeto de armazenamento.

@@ -1,0 +1,73 @@
+---
+permalink: performance-checker/task-defining-the-list-of-correlated-objects-for-comparison-graphing.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode definir uma lista de objetos correlacionados para comparação de dados e desempenho no painel Counter Chart. Por exemplo, se a máquina virtual de armazenamento (SVM) estiver enfrentando um problema de desempenho, você poderá comparar todos os volumes no SVM para identificar qual volume pode estar causando o problema.' 
+---
+= Definir a lista de objetos correlacionados para gráficos de comparação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode definir uma lista de objetos correlacionados para comparação de dados e desempenho no painel Counter Chart. Por exemplo, se a máquina virtual de storage (SVM) tiver algum problema de performance, você poderá comparar todos os volumes no SVM para identificar qual volume pode estar causando o problema.
+
+
+
+== Sobre esta tarefa
+
+Você pode adicionar qualquer objeto na grade objetos correlacionados aos painéis comparação e Gráfico de Contador. Isso permite que você visualize e compare dados de vários objetos e com o objeto raiz. Você pode adicionar e remover objetos de e para a grade de objetos correlacionados; no entanto, o objeto raiz no painel de comparação não é removível.
+
+[NOTE]
+====
+Adicionar muitos objetos ao painel de comparação pode ter um impactos negativo no desempenho. Para manter o desempenho, você deve selecionar um número limitado de gráficos para comparação de dados.
+
+====
+
+
+== Passos
+
+. Na grade objetos, localize o objeto que você deseja adicionar e clique no botão *Adicionar*.
++
+O botão *Add* fica cinza e o objeto é adicionado à lista de objetos adicionais no painel de comparação. Os dados do objeto são adicionados aos gráficos nos painéis gráficos do contador. A cor do ícone de olho do objeto (image:../media/eye-icon.gif[""]) corresponde à cor da linha de tendência de dados do objeto nos gráficos.
+
+. Ocultar ou mostrar dados para objetos selecionados:
++
+|===
+| Para fazer isso... | Tome esta ação... 
+
+
+ a| 
+Ocultar um objeto selecionado
+ a| 
+Clique no ícone olho do objeto selecionado (image:../media/eye-icon.gif[""]) no painel de comparação. Os dados do objeto ficam ocultos e o ícone de olho desse objeto fica cinza.
+
+
+
+ a| 
+Mostrar um objeto oculto
+ a| 
+Clique no ícone de olho cinzento do objeto selecionado no painel de comparação. O ícone de olho retorna à sua cor original e os dados do objeto são adicionados de volta aos gráficos no painel Cartas Contadoras.
+
+|===
+. Remover objetos selecionados do painel *comparando*:
++
+|===
+| Para fazer isso... | Tome esta ação... 
+
+
+ a| 
+Remover um objeto selecionado
+ a| 
+Passe o Mouse sobre o nome do objeto selecionado no painel comparação para mostrar o botão remover objeto (*X*) e clique no botão. O objeto é removido do painel de comparação e seus dados são limpos dos gráficos de contador.
+
+
+
+ a| 
+Remova todos os objetos selecionados
+ a| 
+Clique no botão remover todos os objetos (*X*) na parte superior do painel de comparação. Todos os objetos selecionados e seus dados são removidos, deixando apenas o objeto raiz.
+
+|===
+

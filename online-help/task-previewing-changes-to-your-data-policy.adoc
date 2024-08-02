@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-previewing-changes-to-your-data-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: Você deve pré-visualizar todas as alterações feitas em suas regras em uma política de dados antes de enviar as alterações na política de dados para o SVM com Infinite volume para ativação. 
+---
+= Pré-visualizar as alterações à sua política de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você deve pré-visualizar todas as alterações feitas em suas regras em uma política de dados antes de enviar as alterações na política de dados para o SVM com Infinite volume para ativação.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+A guia Política de dados fica visível apenas para uma SVM com Infinite volume.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Na página de inventário *máquinas virtuais de integridade/storage*, selecione o SVM apropriado.
+. Clique em *Política de dados*.
++
+A lista de regras na política de dados para o SVM selecionado com Infinite volume é exibida.
+
+. Modifique a política de dados conforme necessário.
++
+As modificações da política de dados podem incluir a criação de novas regras, a edição de regras existentes, a exclusão de regras existentes ou a reordenação das regras.
+
+. Clique em *Ativar*.
+. Na janela *Resumo das alterações na configuração da política de dados*, visualize as alterações na política de dados e clique em *Ativar* para ativar as alterações na política de dados na SVM com Infinite volume.
+

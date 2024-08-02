@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-report-sharing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode compartilhar um relatório com um ou mais usuários por e-mail usando a opção compartilhar. 
+---
+= O que é compartilhamento de relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode compartilhar um relatório com um ou mais usuários por e-mail usando a opção *compartilhar*.
+
+Você deve salvar o relatório antes de compartilhá-lo para garantir que as alterações recentes feitas no relatório sejam exibidas.
+
+Você pode compartilhar o relatório em qualquer formato desejado. A opção *Share* ajuda você a compartilhar relatórios por e-mail instantaneamente, mesmo com pessoas que não têm acesso ao Unified Manager, mas têm um endereço de e-mail válido.

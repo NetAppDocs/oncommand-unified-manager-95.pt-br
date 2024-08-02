@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-failed-or-successful-volume-transfers.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode personalizar o relatório Status da transferência de volume (Histórico) para exibir os detalhes das transferências de volume com falha ou êxito.' 
+---
+= Personalizar o relatório Status da transferência de volume (Histórico) para exibir transferências de volume com falha ou êxito
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Status da transferência de volume (Histórico) para exibir os detalhes das transferências de volume com falha ou êxito.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Remover agrupamento por cluster:
++
+.. Selecione a coluna que pretende desagrupar.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para classificar as transferências de volume de acordo com falha ou sucesso, clique na coluna *resultado operacional* e, em seguida, clique no image:../media/click-to-see-menu.gif[""] ícone.
+. Selecione *filtro*.
+. Na caixa de diálogo *Filter*, clique em *Select Values* e selecione *success* ou *failure*.
+

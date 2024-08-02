@@ -1,0 +1,18 @@
+---
+permalink: performance-checker/concept-monitoring-performance-using-the-performance-explorer-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: As páginas do Performance Explorer exibem informações detalhadas sobre o desempenho de cada objeto em um cluster. A página fornece uma visão detalhada do desempenho de todos os objetos de cluster, permitindo que você selecione e compare os dados de desempenho de objetos específicos em vários períodos de tempo. 
+---
+= Monitoramento do desempenho usando as páginas do Performance Explorer
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+As páginas do Performance Explorer exibem informações detalhadas sobre o desempenho de cada objeto em um cluster. A página fornece uma visão detalhada do desempenho de todos os objetos de cluster, permitindo que você selecione e compare os dados de desempenho de objetos específicos em vários períodos de tempo.
+
+Você também pode avaliar o desempenho geral de todos os objetos e comparar os dados de desempenho do objeto em um formato lado a lado.
+
+Se um objeto não for mais gerenciado pelo Unified Manager, o status *removido* será exibido à direita do nome do objeto na parte superior da página Performance Explorer.

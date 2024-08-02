@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-volumes-grouped-by-time-of-occurrence.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode personalizar o relatório Status de transferência de volume (Histórico) para exibir a lista de volumes agrupados por hora de ocorrência entre duas datas.' 
+---
+= Personalizar o relatório Status da transferência de volume (Histórico) para exibir volumes agrupados por hora de ocorrência
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Status da transferência de volume (Histórico) para exibir a lista de volumes agrupados por hora de ocorrência entre duas datas.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Remover agrupamento por cluster:
++
+.. Na coluna que tem de ser desagrupada, clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Na coluna *hora de início*, abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista suspensa *condição*, selecione *entre*.
+. Clique em *Selecionar valores* e escolha os valores *Data de* e *Data até*.
+. Clique em *OK*.
+

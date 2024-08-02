@@ -1,0 +1,29 @@
+---
+permalink: health-checker/reference-what-the-system-diagnosis-section-displays.html 
+sidebar: sidebar 
+keywords:  
+summary: A secção Diagnóstico do sistema da página de detalhes do evento fornece informações que podem ajudá-lo a diagnosticar problemas que possam ter sido responsáveis pelo evento. 
+---
+= O que é apresentado na secção Diagnóstico do sistema
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A secção Diagnóstico do sistema da página de detalhes do evento fornece informações que podem ajudá-lo a diagnosticar problemas que possam ter sido responsáveis pelo evento.
+
+Esta área é apresentada apenas para alguns eventos.
+
+Alguns eventos de desempenho fornecem gráficos que são relevantes para o evento específico que foi acionado. Normalmente, isso inclui um gráfico de IOPS ou Mbps e um gráfico de latência para os dez dias anteriores. Quando organizado dessa maneira, você pode ver quais componentes de storage estão afetando a latência ou sendo afetados pela latência, quando o evento está ativo.
+
+Para eventos de desempenho dinâmico, os seguintes gráficos são exibidos:
+
+* Latência da carga de trabalho - exibe o histórico de latência das principais cargas de trabalho de vítima, agressor ou tubarão no componente em disputa.
+* Atividade do workload - exibe detalhes sobre o uso do workload do componente do cluster na contenção.
+* Atividade de recurso - exibe estatísticas históricas de desempenho para o componente de cluster em contenção.
+
+
+Outros gráficos são exibidos quando alguns componentes de cluster estão em contenção.
+
+Outros eventos fornecem uma breve descrição do tipo de análise que o sistema está executando no objeto de armazenamento. Em alguns casos, haverá uma ou mais linhas; uma para cada componente analisado, para políticas de desempenho definidas pelo sistema que analisam vários contadores de desempenho. Neste cenário, é apresentado um ícone verde ou vermelho junto ao diagnóstico para indicar se foi ou não encontrado um problema nesse diagnóstico específico.

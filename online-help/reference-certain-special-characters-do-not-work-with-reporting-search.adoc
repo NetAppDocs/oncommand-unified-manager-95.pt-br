@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-certain-special-characters-do-not-work-with-reporting-search.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Certos carateres especiais não funcionam com a pesquisa de relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* *Emissão*
++
+Usar os carateres especiais % e _ durante a pesquisa dentro de um relatório faz com que a operação falhe.
+
+* *Ações corretivas*
++
+Se você pesquisar uma cadeia de carateres que contenha % ou _, você deve usar uma barra invertida dupla antes do caractere especificado.
+
++
+Por exemplo, para encontrar uma cadeia de carateres contendo S_10, deve introduzir S_10.
+
+

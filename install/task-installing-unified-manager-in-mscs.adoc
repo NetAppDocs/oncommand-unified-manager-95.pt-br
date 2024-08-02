@@ -1,0 +1,49 @@
+---
+permalink: install/task-installing-unified-manager-in-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Para configurar a alta disponibilidade, você deve instalar o Unified Manager nos nós de cluster do Microsoft Cluster Server (MSCS).' 
+---
+= Instalação do Unified Manager no MSCS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para configurar a alta disponibilidade, você deve instalar o Unified Manager nos nós de cluster do Microsoft Cluster Server (MSCS).
+
+
+
+== Passos
+
+. Faça login como o usuário do domínio nos dois nós do cluster.
+. Configure a alta disponibilidade escolhendo uma das seguintes opções:
++
+|===
+| Se você quiser... | Então faça isso... 
+
+
+ a| 
+Configure a alta disponibilidade em uma instalação do Unified Manager existente
+ a| 
+Adicione outro servidor a ser emparelhado com o servidor existente:
+
+.. Atualize o servidor Unified Manager existente para a versão de software mais recente.
+.. Crie um backup da instalação do Unified Manager existente e armazene o backup em um LUN montado.
+.. Instale o Unified Manager no segundo nó.
++
+xref:task-installing-unified-manager-on-windows.adoc[Instalar o Unified Manager em um sistema Windows]
+
+.. Restaure o backup da instalação do Unified Manager existente no segundo nó.
+
+
+
+
+ a| 
+Configure a alta disponibilidade em uma nova instalação do Unified Manager
+ a| 
+Instale o Unified Manager em ambos os nós. xref:task-installing-unified-manager-on-windows.adoc[Instalar o Unified Manager em um sistema Windows]
+
+|===
+

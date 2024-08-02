@@ -1,0 +1,63 @@
+---
+permalink: online-help/task-editing-custom-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode editar uma regra para incluir novas condições ou conjuntos de condições na regra. Por exemplo, se você quiser incluir novos caminhos de diretório junto com os nomes de proprietário, você pode fazê-lo na caixa de diálogo Editar regra. 
+---
+= Editando regras personalizadas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar uma regra para incluir novas condições ou conjuntos de condições na regra. Por exemplo, se você quiser incluir novos caminhos de diretório junto com os nomes de proprietário, você pode fazê-lo na caixa de diálogo Editar regra.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+A guia Política de dados fica visível apenas para uma SVM com Infinite volume.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Na página de inventário *máquinas virtuais de integridade/storage*, selecione um SVM apropriado.
+. Clique em *Política de dados*.
++
+A lista de regras na política de dados para o SVM selecionado com Infinite volume é exibida.
+
+. Selecione a regra para a qual deseja incluir novas condições ou conjuntos de condições.
+. Clique em *Editar*.
+. Na caixa de diálogo *Editar regra*, adicione novas condições ou conjuntos de condições:
++
+|===
+| Se você quiser adicionar... | Clique em... 
+
+
+ a| 
+Uma nova condição
+ a| 
+O image:../media/customrulecreate.gif[""] ícone.
+
+
+
+ a| 
+Um novo conjunto de condições
+ a| 
+*Adicionar conjunto de condições*.
+
+|===
+. Clique em *Atualizar*.
+. Verifique se suas modificações são aplicadas à regra expandindo a regra na guia *Política de dados*.
+. Visualize quaisquer outras alterações feitas à política de dados.
+. Clique em *Ativar* para ativar as alterações nas propriedades da regra no SVM.
+

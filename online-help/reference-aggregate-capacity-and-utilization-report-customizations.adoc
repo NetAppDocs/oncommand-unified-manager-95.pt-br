@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-aggregate-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar relatórios para exibir uma variedade de informações sobre agregados. 
+---
+= Agregar personalizações do Relatório de capacidade e utilização
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar relatórios para exibir uma variedade de informações sobre agregados.

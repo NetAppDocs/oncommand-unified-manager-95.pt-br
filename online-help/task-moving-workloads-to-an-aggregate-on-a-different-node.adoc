@@ -1,0 +1,100 @@
+---
+permalink: online-help/task-moving-workloads-to-an-aggregate-on-a-different-node.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar o Unified Manager para ajudar a identificar um agregado em um nó diferente que esteja menos ocupado do que o nó em que seus workloads estão atualmente em execução e, em seguida, mover volumes selecionados para esse agregado. Mover workloads de alta performance para um agregado em um nó menos ocupado permite que as cargas de trabalho em ambos os nós tenham desempenho mais eficiente. 
+---
+= Movimentação de workloads para um agregado em um nó diferente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar o Unified Manager para ajudar a identificar um agregado em um nó diferente que esteja menos ocupado do que o nó em que seus workloads estão atualmente em execução e, em seguida, mover volumes selecionados para esse agregado. Mover workloads de alta performance para um agregado em um nó menos ocupado permite que as cargas de trabalho em ambos os nós tenham desempenho mais eficiente.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Você deve ter registrado o nome do nó que está tendo um problema de desempenho no momento.
+* Você precisa ter registrado a data e a hora em que o nó recebeu o evento de performance.
+* Você deve ter registrado o ID do evento, por exemplo, "'p-sdt-clus1-nod-6982".
+* O Unified Manager precisa ter coletado e analisado um mês ou mais dos dados de desempenho.
+
+
+
+
+== Sobre esta tarefa
+
+Estas etapas ajudam a identificar os recursos a seguir para que você possa mover workloads de alta performance para um nó de utilização mais baixa:
+
+* Os nós no mesmo cluster que são menos utilizados
+* Os agregados no novo nó que são os menos utilizados
+* Os volumes de maior desempenho no nó atual
+
+
+
+
+== Passos
+
+. Identifique um nó no cluster que seja o menos utilizado:
++
+.. Na página de detalhes do *evento*, clique no nome do cluster no qual o nó reside.
++
+Os detalhes do cluster são exibidos na página Performance/Cluster Landing.
+
+.. Na página *Summary*, clique em *nodes* no painel *Managed Objects*.
++
+A lista de nós neste cluster é exibida.
+
+.. Clique na coluna *utilização* para classificar os nós pelo menos utilizado.
++
+Você também pode identificar os nós que têm a maior capacidade *Free*. Isso fornece uma lista de nós potenciais para os quais você pode querer mover cargas de trabalho.
+
+.. Anote o nome do nó para o qual você deseja mover as cargas de trabalho.
+
+
+. Identifique um agregado no novo nó que seja o menos utilizado:
++
+.. No painel de navegação à esquerda, clique em *Performance* > *agregados*.
++
+É apresentada a página desempenho/agregados.
+
+.. Clique em *Filtering*, selecione *Node* no menu suspenso à esquerda, digite o nome do nó no campo de texto e clique em *Apply Filter*.
++
+O desempenho/agregados é reexibido com a lista de agregados disponíveis neste nó.
+
+.. Clique na coluna *utilização* para classificar os agregados pelo menos utilizado.
++
+Você também pode identificar aqueles agregados que têm a maior capacidade *Free*. Isso fornece uma lista de agregados potenciais aos quais você pode querer mover workloads.
+
+.. Anote o nome do agregado para o qual você deseja mover as cargas de trabalho.
+
+
+. Identifique os workloads de alta performance do nó que recebeu o evento:
++
+.. Voltar à página de detalhes do *evento* para o evento.
+.. No campo *volumes afetados*, clique no link para o número de volumes.
++
+A página desempenho/volumes é exibida com uma lista filtrada dos volumes nesse nó.
+
+.. Clique na coluna *capacidade total* para classificar os volumes pelo maior espaço alocado.
++
+Isso fornece uma lista de volumes potenciais que você pode querer mover.
+
+.. Anote os nomes dos volumes que você deseja mover e os nomes dos agregados atuais nos quais eles residem.
+
+
+. Mova os volumes para os agregados identificados como tendo baixa utilização no novo nó.
++
+Você pode executar a operação mover usando os comandos OnCommand System Manager, OnCommand Workflow Automation, ONTAP ou uma combinação dessas ferramentas.
+
+
+
+
+
+== Depois de terminar
+
+Após alguns dias, verifique se você está recebendo o mesmo tipo de eventos desse nó ou agregado.

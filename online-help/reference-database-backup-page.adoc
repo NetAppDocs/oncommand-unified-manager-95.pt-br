@@ -1,0 +1,50 @@
+---
+permalink: online-help/reference-database-backup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Backup de gerenciamento/banco de dados exibe uma lista de backups criados pelo Unified Manager e fornece informações sobre o nome, o tamanho, o horário de criação e a programação do backup. 
+---
+= Página de backup de gerenciamento/banco de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Backup de gerenciamento/banco de dados exibe uma lista de backups criados pelo Unified Manager e fornece informações sobre o nome, o tamanho, o horário de criação e a programação do backup.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Botões de comando
+
+* *Ações*
++
+Exibe a caixa de diálogo Configurações de backup de banco de dados, que permite especificar um caminho de backup, contagem de retenção e agendamento de backup.
+
+
+
+
+
+== Vista de lista
+
+A exibição de lista exibe, em formato tabular, informações sobre os backups criados pelo Unified Manager. Você pode usar os filtros de coluna para personalizar os dados exibidos.
+
+* *Nome*
++
+Apresenta o nome da cópia de segurança selecionada.
+
+* *Tamanho*
++
+Apresenta o tamanho da cópia de segurança selecionada.
+
+* *Tempo de criação*
++
+Apresenta a data e a hora de criação da cópia de segurança selecionada.
+
+* *Programação*
++
+Apresenta o estado da operação de cópia de segurança. Também indica se é um backup programado ou não.
+
+

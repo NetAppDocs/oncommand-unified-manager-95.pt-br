@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-configuring-global-aggregate-health-threshold-values.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode configurar valores de limite de integridade globais para todos os agregados para rastrear qualquer violação de limite. Eventos apropriados são gerados para violações de limites e você pode tomar medidas preventivas com base nesses eventos. Você pode configurar os valores globais com base nas configurações de práticas recomendadas para limites que se aplicam a todos os agregados monitorados. 
+---
+= Configurando valores de limite globais de integridade agregada
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar valores de limite de integridade globais para todos os agregados para rastrear qualquer violação de limite. Eventos apropriados são gerados para violações de limites e você pode tomar medidas preventivas com base nesses eventos. Você pode configurar os valores globais com base nas configurações de práticas recomendadas para limites que se aplicam a todos os agregados monitorados.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Quando você configura as opções globalmente, os valores padrão dos objetos são modificados. No entanto, se os valores padrão tiverem sido alterados no nível do objeto, os valores globais não serão modificados.
+
+As opções de limite têm valores padrão para melhor monitoramento, no entanto, você pode alterar os valores de acordo com os requisitos do seu ambiente.
+
+Quando o crescimento automático é ativado em volumes que residem no agregado, os limites de capacidade agregada são considerados violados com base no tamanho máximo do volume definido pelo crescimento automático, não com base no tamanho do volume original.
+
+[NOTE]
+====
+Os valores de limite de integridade não são aplicáveis ao agregado raiz do nó.
+
+====
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Configuração* > *limites de integridade*.
+. Na página *limiares de Configuração/Saúde*, clique em *agregados*.
+. Configurar os valores-limite apropriados para capacidade, crescimento e cópias Snapshot.
+. Clique em *Salvar*.
+

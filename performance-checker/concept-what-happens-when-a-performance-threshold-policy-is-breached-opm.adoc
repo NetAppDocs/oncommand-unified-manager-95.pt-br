@@ -1,0 +1,27 @@
+---
+permalink: performance-checker/concept-what-happens-when-a-performance-threshold-policy-is-breached-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Quando um valor de contador excede seu valor limite de desempenho definido pelo período de tempo especificado na duração, o limite é violado e um evento é relatado. 
+---
+= O que acontece quando uma política de limite de desempenho é violada
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando um valor de contador excede seu valor limite de desempenho definido pelo período de tempo especificado na duração, o limite é violado e um evento é relatado.
+
+O evento faz com que as seguintes ações sejam iniciadas:
+
+* O evento é exibido no Painel de desempenho, na página Resumo do cluster de desempenho, na página Eventos e na página Inventário de desempenho específico do objeto.
+* (Opcional) um alerta de e-mail sobre o evento pode ser enviado para um ou mais destinatários de e-mail e uma armadilha SNMP pode ser enviada para um recetor de armadilha.
+* (Opcional) Um script pode ser executado para modificar ou atualizar automaticamente objetos de armazenamento.
+
+
+A primeira ação é sempre executada. Você configura se as ações opcionais são executadas na página Configuração/alertas. Você pode definir ações exclusivas dependendo se uma política de aviso ou limite crítico for violada.
+
+Após uma violação de política de limite de desempenho ter ocorrido em um objeto de armazenamento, não serão gerados mais eventos para essa política até que o valor do contador fique abaixo do valor limite, momento em que a duração é redefinida para esse limite. Embora o limite continue a ser excedido, a hora de término do evento é continuamente atualizada para refletir que esse evento está em andamento.
+
+Um evento de limite captura ou congela as informações relacionadas à gravidade e à definição de política para que as informações de limite exclusivas sejam exibidas com o evento, mesmo que a política de limite seja modificada no futuro.

@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-top-most-discussed-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório Eventos para exibir os eventos mais discutidos. 
+---
+= Personalizar o relatório Eventos para exibir os principais eventos mais discutidos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Eventos para exibir os eventos mais discutidos.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para classificar os eventos que são mais discutidos, clique na coluna *Notas* e clique no image:../media/click-to-see-menu.gif[""] ícone.
+. Selecione *Filter* > *Top/Bottom N*.
+. Na caixa de diálogo *Top/Bottom N*, selecione *Top N* no campo *Filter* e insira um valor no campo de texto.
+. Clique em *OK*.
+

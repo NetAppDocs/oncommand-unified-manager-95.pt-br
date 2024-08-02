@@ -1,0 +1,71 @@
+---
+permalink: online-help/reference-edit-qtree-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode configurar alertas para enviar notificações quando um evento relacionado à capacidade de uma qtree é gerado e pode executar ações corretivas para o evento. Por exemplo, para o limite Qtree Full, você pode configurar um alerta para enviar uma notificação quando a condição persistir durante um período especificado. 
+---
+= Caixa de diálogo Editar limiares de Qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar alertas para enviar notificações quando um evento relacionado à capacidade de uma qtree é gerado e pode tomar ações corretivas para o evento. Por exemplo, para o limite Qtree Full, você pode configurar um alerta para enviar uma notificação quando a condição persistir durante um período especificado.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+A caixa de diálogo Editar limites de Qtree permite configurar limites no nível de qtree que são aplicados aos qtrees selecionados. Quando os limites são configurados no nível de qtree, eles têm prioridade sobre os limites de nível de grupo ou os valores de limite de nível global.
+
+Você pode configurar as configurações de limite para a capacidade no nível de qtree. Quando uma ação de grupo do tipo de limite de qtree é configurada, os valores de limite de ação de grupo são usados para configurações que não estão configuradas no nível de qtree. Quando nenhuma ação de grupo do tipo de limite de qtree estiver configurada, as áreas na caixa de diálogo Editar limites de Qtree que não estejam configuradas, use valores de limite global.
+
+
+
+== Área de capacidade
+
+A área capacidade permite definir as seguintes condições de limite de capacidade de qtree:
+
+* *Espaço quase cheio*
++
+Especifica a porcentagem em que uma qtree é considerada quase cheia. Ele também exibe o tamanho da qtree correspondente ao valor de limite especificado.
+
++
+Você também pode usar o controle deslizante para definir o valor de limite.
+
+* *Espaço cheio*
++
+Especifica a porcentagem em que uma qtree é considerada cheia. Ele também exibe o tamanho da qtree correspondente ao valor de limite especificado.
+
++
+Você também pode usar o controle deslizante para definir o valor de limite.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas para uma qtree selecionada:
+
+* *Restaurar para padrões*
++
+Permite restaurar os valores de limite para uma das seguintes opções:
+
++
+** Valores de grupo, se a qtree pertencer a um grupo e esse grupo tiver um tipo de ação de limite de qtree.
+** Valores globais, se a qtree não pertencer a nenhum grupo ou se pertencer a um grupo que não tenha um tipo de ação de limite de qtree.
+
+
+* *Guardar*
++
+Guarda todas as definições de limite.
+
+* *Salvar e fechar*
++
+Salva todas as configurações de limite e fecha a caixa de diálogo.
+
+* *Cancelar*
++
+Ignora as alterações (se houver) nas definições de limiar e fecha a caixa de diálogo.
+
+

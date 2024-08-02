@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-creating-snapmirror-and-snapvault-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode criar agendas básicas ou avançadas de SnapMirror e SnapVault para permitir transferências automáticas de proteção de dados em uma fonte ou volume primário para que as transferências ocorram com mais frequência ou com menos frequência, dependendo da frequência com que os dados mudam em seus volumes. 
+---
+= Criando agendas SnapMirror e SnapVault
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar agendas básicas ou avançadas de SnapMirror e SnapVault para permitir transferências automáticas de proteção de dados em uma fonte ou volume primário para que as transferências ocorram com mais frequência ou com menos frequência, dependendo da frequência com que os dados mudam em seus volumes.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você já deve ter concluído a área informações de destino na caixa de diálogo Configurar proteção.
+* Você deve ter configurado o Workflow Automation para executar esta tarefa.
+
+
+
+
+== Passos
+
+. Na guia *SnapMirror* ou na guia *SnapVault* da caixa de diálogo *Configurar proteção*, clique no link *criar agendamento* na área *Configurações de relacionamento*.
++
+A caixa de diálogo criar agendamento é exibida.
+
+. No campo *Nome da programação*, digite o nome que deseja dar à programação.
+. Selecione uma das seguintes opções:
++
+** *Básico*
++
+Selecione se pretende criar uma agenda de estilo de intervalo básico.
+
+** *Avançado*
++
+Selecione se você deseja criar um cronograma de estilo cron.
+
+
+
+. Clique em *criar*.
++
+A nova programação é apresentada na lista pendente Agenda SnapMirror ou Programação SnapVault.
+
+

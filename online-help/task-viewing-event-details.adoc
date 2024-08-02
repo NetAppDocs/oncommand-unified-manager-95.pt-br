@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-viewing-event-details.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode exibir detalhes sobre um evento que é acionado pelo Unified Manager para tomar medidas corretivas. Por exemplo, se houver um volume off-line de eventos de integridade, você pode clicar nesse evento para exibir os detalhes e executar ações corretivas. 
+---
+= Exibindo detalhes do evento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exibir detalhes sobre um evento que é acionado pelo Unified Manager para tomar medidas corretivas. Por exemplo, se houver um volume off-line de eventos de integridade, você pode clicar nesse evento para exibir os detalhes e executar ações corretivas.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Os detalhes do evento incluem informações como a origem do evento, a causa do evento e quaisquer notas relacionadas ao evento.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Eventos*.
+. Na página de inventário *Eventos*, clique no nome do evento para o qual deseja exibir os detalhes.
++
+Os detalhes do evento são exibidos na página de detalhes do evento.
+
+

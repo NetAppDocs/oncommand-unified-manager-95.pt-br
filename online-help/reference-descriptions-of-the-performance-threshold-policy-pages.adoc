@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-descriptions-of-the-performance-threshold-policy-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Você usa a página limites de configuração/desempenho para criar, editar, clonar, excluir e exibir políticas de limite de desempenho. 
+---
+= Descrições das páginas de política de limite de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você usa a página limites de configuração/desempenho para criar, editar, clonar, excluir e exibir políticas de limite de desempenho.
+
+Os tópicos abaixo são exibidos quando você clica em *Ajuda* na página apropriada.

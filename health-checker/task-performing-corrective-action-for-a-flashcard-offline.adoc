@@ -1,0 +1,67 @@
+---
+permalink: health-checker/task-performing-corrective-action-for-a-flashcard-offline.html 
+sidebar: sidebar 
+keywords:  
+summary: Depois de analisar a descrição no campo causa da página de detalhes do evento offline do cartão flash, você pode procurar informações adicionais úteis para resolver a condição. 
+---
+= Execução de ações corretivas para um cartão flash offline
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de analisar a descrição no campo causa da página de detalhes do evento offline do cartão flash, você pode procurar informações adicionais úteis para resolver a condição.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Neste cenário de exemplo, o resumo do evento fornecido na página de detalhes do evento contém as seguintes informações sobre a condição do cartão flash offline:
+
+[listing]
+----
+Severity: Critical
+State: New
+Impact Level: Incident
+Impact Area: Availability
+Source: alpha-node
+Source Type: Node
+Acknowledged By:
+Resolved By:
+Assigned To:
+Cause: Flash cards at slot numbers 3 are offline.
+Alert Settings:
+----
+As informações do evento indicam que a placa flash instalada no slot 3 no nó do cluster chamado "nó alfa" está offline.
+
+As informações localizam a condição offline do cartão flash para um slot específico em um nó de cluster específico, mas não sugerem um motivo para o cartão flash estar offline.
+
+
+
+== Passos
+
+. Para obter mais detalhes que possam ajudá-lo a diagnosticar a condição offline do cartão flash, você pode clicar no nome da origem do evento.
++
+Neste exemplo, a origem do evento é o nó de cluster "'alfa-node'". Clicar nesse nome de nó exibe os Detalhes da HA na guia nós da página de detalhes de integridade/cluster do cluster afetado. Os Detalhes da HA exibidos exibem informações sobre o par de HA ao qual esse nó pertence.
+
++
+Neste exemplo, as informações relevantes estão na tabela Resumo de Eventos nos Detalhes do HA. A tabela especifica o evento off-line do cartão flash, a hora em que o evento foi gerado e, novamente, o nó do cluster a partir do qual este evento se originou.
+
+. Usando a CLI ou o OnCommand System Manager do ONTAP, acesse os logs do sistema do Gerenciador de Eventos (EMS) do cluster afetado.
++
+Neste exemplo, você usa o nome do evento, a hora do evento e a origem do evento para encontrar o relatório EMS sobre esse evento. O relatório EMS sobre o evento contém uma descrição detalhada do evento e muitas vezes conselhos para corrigir a condição indicada pelo evento.
+
+
+
+
+
+== Depois de terminar
+
+Depois de diagnosticar o problema, contacte o administrador ou operador adequado para concluir os passos manuais necessários para colocar o cartão flash novamente online.

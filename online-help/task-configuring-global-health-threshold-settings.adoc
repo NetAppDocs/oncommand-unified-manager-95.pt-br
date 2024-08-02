@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-configuring-global-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode configurar condições de limite de integridade globais para capacidade, crescimento, reserva de snapshot, cotas e inodes para monitorar seu agregado, volume e tamanho de qtree com eficiência. Você também pode editar as configurações para gerar eventos para exceder limites de atraso. 
+---
+= Configurar definições de limites globais de saúde
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar condições de limite de integridade globais para capacidade, crescimento, reserva de snapshot, cotas e inodes para monitorar seu agregado, volume e tamanho de qtree com eficiência. Você também pode editar as configurações para gerar eventos para exceder limites de atraso.
+
+
+
+== Sobre esta tarefa
+
+As configurações de limites globais de integridade se aplicam a todos os objetos aos quais estão associados, como agregados, volumes, etc. Quando os limites são cruzados, um evento é gerado e, se os alertas forem configurados, uma notificação de alerta é enviada. Os padrões de limite são definidos como valores recomendados, mas você pode modificá-los para gerar eventos em intervalos para atender às suas necessidades específicas. Quando os limites são alterados, os eventos são gerados ou obsoletos no próximo ciclo de monitoramento.
+
+As definições de limites globais de integridade estão acessíveis a partir da página limites de configuração/integridade. Você também pode modificar as configurações de limite para objetos individuais, a partir da página de inventário ou da página de detalhes para esse objeto.
+
+
+
+== Opções
+
+* xref:task-configuring-global-aggregate-health-threshold-values.adoc[Configurando valores de limite globais de integridade agregada]
++
+Você pode configurar as configurações de limite de integridade para capacidade, crescimento e cópias Snapshot de todos os agregados para controlar qualquer violação de limite.
+
+* xref:task-configuring-global-volume-health-threshold-values.adoc[Configuração dos valores do limite de integridade do volume global]
++
+Você pode editar as configurações de limite de integridade para capacidade, cópias Snapshot, cotas de qtree, crescimento de volume, sobrescrever espaço de reserva e inodes para todos os volumes para controlar qualquer violação de limite.
+
+* xref:task-configuring-global-qtree-health-threshold-values.adoc[Configurando valores de limite de integridade de qtree global]
++
+Você pode editar as configurações de limite de integridade para a capacidade de todos os qtrees para rastrear qualquer violação de limite.
+
+* xref:task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.adoc[Editar as configurações de limite de integridade de atraso para relacionamentos de proteção não gerenciados]
++
+Você pode aumentar ou diminuir a porcentagem de tempo de atraso de aviso ou erro para que os eventos sejam gerados em intervalos mais adequados às suas necessidades.
+
+

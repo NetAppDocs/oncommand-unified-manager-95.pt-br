@@ -1,0 +1,74 @@
+---
+permalink: online-help/task-responding-to-a-performance-incident-caused-by-ha-takeover.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar o Unified Manager para investigar um evento de desempenho causado por Data Processing alto em um nó de cluster que está em um par de alta disponibilidade. Você também pode usar o Unified Manager para verificar a integridade dos nós e verificar se algum evento de integridade recente detetado nos nós contribuiu para o evento de performance. 
+---
+= Resposta a um evento de performance dinâmico causado pelo takeover de HA
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar o Unified Manager para investigar um evento de desempenho causado pela alta Data Processing em um nó de cluster que esteja em um par de alta disponibilidade (HA). Você também pode usar o Unified Manager para verificar a integridade dos nós e verificar se algum evento de integridade recente detetado nos nós contribuiu para o evento de performance.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Deve haver eventos de desempenho novos, reconhecidos ou obsoletos.
+
+
+
+
+== Passos
+
+. Exiba a página *Detalhes do evento* para exibir informações sobre o evento.
+. Leia a *Descrição*, que descreve as cargas de trabalho envolvidas no evento e o componente do cluster em contenção.
++
+Há um volume de vítima cuja latência foi afetada pelo componente de cluster na contenção. O nó Data Processing, que assumiu todos os workloads de seu nó de parceiro, é o componente do cluster em disputa. Em componente na contenção, o ícone Data Processing é destacado em vermelho e o nome do nó que estava manipulando Data Processing no momento do evento é exibido entre parênteses.
+
+. Na *Descrição*, clique no nome do volume da vítima.
++
+É apresentada a página Performance/volume Details (Detalhes do desempenho/volume). Na parte inferior da página, na linha hora de Eventos, um ícone de evento de mudança (image:../media/opm-change-icon.gif["Alterar ícone de evento"]) indica a hora em que o Unified Manager detetou o início do takeover de HA.
+
+. Aponte o cursor para o ícone alterar evento para a aquisição de HA.
++
+Os detalhes sobre a aquisição de HA são exibidos na tabela Lista de Eventos. No gráfico de latência, um evento indica que o volume selecionado ultrapassou o limite de desempenho devido à alta latência em torno do mesmo tempo que o takeover de HA.
+
+. Selecione *divida os dados por*.
+. Em *latência*, selecione ***Cluster Components***.
+. Clique em *Enviar*.
++
+É apresentado o gráfico de componentes do grupo. O gráfico divide a latência total por componente de cluster.
+
+. Na parte inferior da página, aponte o cursor do Mouse para o ícone alterar evento para o início da aquisição de HA.
+. No gráfico *componentes de cluster*, compare a latência do Data Processing com a latência total no gráfico *latência*.
++
+No momento do takeover de HA, houve um pico no Data Processing devido à maior demanda de workload no nó Data Processing. O aumento da utilização da CPU aumentou a latência e acionou o evento.
+
+. Após corrigir o nó com falha, use o OnCommand System Manager para executar um giveback de HA, que move os workloads do nó do parceiro para o nó fixo.
+. Após a conclusão da HA giveback, no Unified Manager, procure a ID do evento que gravou na Etapa 2.
++
+O evento acionado pela aquisição de HA é exibido na página de detalhes do evento. O evento agora tem um estado de obsoleto, o que indica que o evento foi resolvido.
+
+. Na *Descrição*, clique no nome do volume da vítima.
++
+É apresentada a página Performance/volume Details (Detalhes do desempenho/volume). Na parte inferior da página, na linha hora de Eventos, um ícone de evento de mudança indica a hora em que o Unified Manager detetou a conclusão da HA giveback.
+
+. Selecione *divida os dados por*.
+. Em *latência*, selecione ***Cluster Components***.
++
+É apresentado o gráfico de componentes do grupo.
+
+. Na parte inferior da página, aponte o cursor para o ícone alterar evento para o HA giveback.
++
+O evento de mudança é realçado na tabela Lista de Eventos e indica que a HA foi concluída com êxito.
+
+. No gráfico *componentes de cluster*, compare a latência do Data Processing com a latência total no gráfico *latência*.
++
+A latência no componente Data Processing diminuiu, o que diminuiu a latência total. O nó que o volume selecionado está usando agora para Data Processing resolveu o evento.
+
+

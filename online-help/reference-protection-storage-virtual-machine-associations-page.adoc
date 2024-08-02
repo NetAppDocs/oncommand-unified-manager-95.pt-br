@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-protection-storage-virtual-machine-associations-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página associações de máquinas virtuais de proteção/storage permite visualizar associações de SVM existentes entre SVMs de origem e destino e criar novas associações de SVM para uso por aplicativos de parceiros para criar relacionamentos SnapMirror e SnapVault. 
+---
+= Página de associações de máquinas virtuais de proteção/armazenamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página associações de máquinas virtuais de proteção/storage permite visualizar associações de SVM existentes entre SVMs de origem e destino e criar novas associações de SVM para uso por aplicativos de parceiros para criar relacionamentos SnapMirror e SnapVault.
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Criar*
++
+Abre o assistente criar associações de máquinas virtuais de armazenamento.
+
+* *Excluir*
++
+Permite excluir as associações SVM selecionadas.
+
+
+
+
+
+== Lista de associações de máquinas virtuais de storage (SVM)
+
+A lista associações de máquinas virtuais de storage exibe em uma tabela as associações SVM de origem e destino que foram criadas e o tipo de relação de proteção permitido para cada associação.
+
+* *Source Storage Virtual Machine*
++
+Exibe o nome da SVM de origem.
+
+* *Cluster de origem*
++
+Exibe o nome do cluster de origem.
+
+* *Destination Storage Virtual Machine*
++
+Exibe o nome do SVM de destino.
+
+* *Cluster de destino*
++
+Exibe o nome do cluster de destino.
+
+* *Tipo*
++
+Exibe o tipo de relação de proteção. Os tipos de relacionamento são SnapMirror ou SnapVault.
+
+

@@ -1,0 +1,132 @@
+---
+permalink: online-help/concept-performance-all-volumes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: A página de inventário de performance/volumes exibe uma visão geral dos eventos de performance, dados de contador e informações de configuração de cada volume do FlexVol volume e do FlexGroup que está sendo monitorado por uma instância do Unified Manager. Isso permite que você monitore rapidamente a performance dos volumes e solucione problemas de performance e eventos de limite. 
+---
+= Página de inventário de performance/volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página de inventário de performance/volumes exibe uma visão geral dos eventos de performance, dados de contador e informações de configuração de cada volume do FlexVol volume e do FlexGroup que está sendo monitorado por uma instância do Unified Manager. Isso permite que você monitore rapidamente a performance dos volumes e solucione problemas de performance e eventos de limite.
+
+Dependendo de como você navega para esta página, o topo da página pode exibir um título diferente para indicar se a lista foi filtrada. Por exemplo, ao exibir todos os volumes, o título é "volumes". Ao exibir um subconjunto de volumes retornados da página políticas de limite, o título é "'volumes em que política: Vol_IOPS é aplicada".
+
+Os botões ao longo da parte superior da página permitem que você realize pesquisas para localizar dados específicos, criar e aplicar filtros para restringir a lista de dados exibidos, exportar os dados da página para um `.csv` arquivo e adicionar ou remover colunas da página.
+
+Por padrão, os objetos nas páginas de inventário de objetos são classificados com base na criticidade do evento de desempenho do objeto. Os objetos com eventos críticos são listados primeiro e os objetos com eventos de aviso são listados em segundo lugar. Isso fornece uma indicação visual imediata dos problemas que devem ser resolvidos. Os valores dos contadores de desempenho baseiam-se numa média das 72 horas anteriores ou mais de dados, conforme indicado na página. Você pode clicar no botão Atualizar para atualizar os dados de inventário de objetos.
+
+[NOTE]
+====
+Para volumes de proteção de dados (DP), somente os valores de contador para tráfego gerado pelo usuário são exibidos. Quando o cluster é instalado com uma versão do software ONTAP anterior a 8,3, não são apresentados valores de contador.
+
+====
+Você pode atribuir políticas de limite de desempenho a, ou limpar políticas de limite de, qualquer objeto nas páginas de inventário de objetos usando os botões *Assign Performance Threshold Policy* e *Clear PerformanceThreshold Policy*.
+
+[NOTE]
+====
+Os volumes raiz não são exibidos nesta página.
+
+====
+
+
+== Colunas da página de inventário de volume
+
+A página de inventário de desempenho/volumes contém as seguintes colunas para cada volume:
+
+* *Status*
++
+Um objeto saudável sem eventos ativos exibe um ícone de marca de seleção verde (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]). Se o objeto tiver um evento ativo, o ícone do indicador de evento identifica a gravidade do evento: Os eventos críticos são vermelhos (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"]), os eventos de erro são laranja (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ) e os eventos de aviso são amarelos (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"]).
+
+* *Volume*
++
+O nome do volume. Pode clicar no nome do volume para navegar até à página de detalhes de desempenho do volume.
+
+* *Estilo*
++
+O estilo do volume; FlexVol ou FlexGroup.
+
+* *Latência*
++
+Para volumes FlexVol, esse é o tempo médio de resposta do volume para todas as solicitações de e/S, expresso em milissegundos por operação. Para volumes FlexGroup, essa é a latência média de todos os volumes constituintes.
+
+* *IOPS*
++
+Para volumes FlexVol, este é o número de operações de entrada/saída por segundo para o volume. Para volumes FlexGroup, essa é a soma de IOPS para todos os volumes constituintes.
+
+* *Mbps*
++
+Para volumes FlexVol, esta é a taxa de transferência no volume, medida em megabytes por segundo. Para volumes FlexGroup, esta é a soma de Mbps para todos os volumes constituintes.
+
+* * Capacidade livre*
++
+A capacidade de armazenamento não utilizada do volume, expressa em gigabytes.
+
+* * Capacidade total*
++
+A capacidade total de armazenamento do volume, expressa em gigabytes.
+
+* *Política de disposição em camadas*
++
+A política de disposição em categorias definida no volume. A política afeta somente quando o volume é implantado em um agregado FabricPool. As políticas disponíveis são:
+
++
+** Nenhum. Os dados desse volume sempre permanecem na camada de performance.
+** Apenas Snapshot. Somente os dados do Snapshot são movidos automaticamente para a categoria de nuvem. Todos os outros dados permanecem na camada de performance.
+** Backup. Em volumes de proteção de dados, todos os dados de usuário transferidos começam na camada de nuvem, mas leituras posteriores de clientes podem fazer com que os dados ativos voltem para a categoria de performance.
+** Auto. Os dados desse volume são movidos automaticamente entre a camada de desempenho e a camada de nuvem quando o ONTAP determina que os dados estão "quentes" ou "frios".
+
+
+* *Dados inativos*
++
+O tamanho dos dados do usuário armazenados no volume que está inativo (frio).
+
++
+O valor é listado como "N/A" nas seguintes situações:
+
++
+** Quando ""relatórios de dados inativos" é desativado no agregado em que o volume reside.
+** Quando ""relatórios de dados inativos" é ativado, mas o número mínimo de dias para a coleta de dados não foi atingido.
+** Ao usar a política de disposição em camadas "'backup'" ou ao usar uma versão do ONTAP anterior a 9,4 (quando os relatórios de dados inativos não estiverem disponíveis).
+
+
+* *Recomendação de nuvem*
++
+O Unified Manager executa a análise de capacidade em cada volume para determinar se você pode melhorar a utilização de disco do sistema de storage e economizar espaço na categoria de performance, movendo dados inativos (frios) para a camada de nuvem. Quando a recomendação for "Tier", passe o cursor sobre a palavra *Tier* para ver a recomendação. As possíveis recomendações são:
+
++
+** Aprendizagem. Não foram coletados dados suficientes para fazer uma recomendação.
+** Nível. A análise determinou que o volume contém dados inativos (frios) e que você deve configurar o volume para movê-los para a camada de nuvem.
+** Sem ação. Ou o volume tem muito pouco dados inativos, ou o volume já está definido para a política de disposição em camadas ""automática""", ou a versão do ONTAP não oferece suporte ao FabricPool. Se você estiver conetado ao Gerenciador Unificado com a função Administrador do OnCommand ou Administrador de armazenamento, quando você passar o cursor sobre a palavra *nível*, o link *Configurar volume* está disponível para iniciar o Gerenciador do sistema para que você possa fazer a alteração recomendada.
+
+
+* *Cluster*
++
+O cluster ao qual o volume pertence. Você pode clicar no nome do cluster para navegar até a página de detalhes do cluster.
+
+* *Nó*
++
+O nome do nó no qual reside o FlexVol volume ou o número de nós nos quais reside o volume FlexGroup.
+
++
+Para volumes do FlexVol, você pode clicar no nome para exibir os detalhes do nó na página Detalhes do nó. Para volumes do FlexGroup, você pode clicar no número para exibir os nós que são usados no FlexGroup na página de inventário de nós.
+
+* *SVM*
++
+A máquina virtual de storage (SVM) à qual o volume pertence. Você pode clicar no nome do SVM para navegar até a página de detalhes do SVM.
+
+* *Agregado*
++
+O nome do agregado no qual reside o FlexVol volume ou o número de agregados no qual reside o volume FlexGroup.
+
++
+Para volumes FlexVol, você pode clicar no nome para exibir detalhes de agregados na página de detalhes de agregados. Para volumes FlexGroup, você pode clicar no número para exibir os agregados usados na FlexGroup na página de inventário de agregados.
+
+* *Política de limite*
++
+A política de limite de performance definida pelo usuário, ou políticas, que estão ativas neste objeto de storage. Você pode posicionar o cursor sobre os nomes de políticas que contêm uma elipse (...) para exibir o nome completo da política ou a lista de nomes de políticas atribuídos. Os botões *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* permanecem desativados até selecionar um ou mais objetos clicando nas caixas de seleção localizadas à esquerda.
+
+

@@ -1,0 +1,41 @@
+---
+permalink: health-checker/generic-managing-storage-objects-using-the-favorite-option.html 
+sidebar: sidebar 
+keywords:  
+summary: A opção Favoritos permite exibir e gerenciar objetos de armazenamento selecionados no Unified Manager marcando-os como favoritos. Você pode visualizar rapidamente o status de seus objetos de armazenamento favoritos e corrigir problemas antes que eles se tornem críticos. 
+---
+= Gerenciando objetos de armazenamento usando a opção Favoritos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A opção Favoritos permite exibir e gerenciar objetos de armazenamento selecionados no Unified Manager marcando-os como favoritos. Você pode visualizar rapidamente o status de seus objetos de armazenamento favoritos e corrigir problemas antes que eles se tornem críticos.
+
+
+
+== Tarefas que podem ser executadas a partir do painel Favoritos
+
+* Veja a lista de objetos de armazenamento marcados como favoritos.
+* Adicione objetos de armazenamento à lista Favoritos.
+* Remover objetos de armazenamento da lista Favoritos.
+
+
+
+
+== Visualizar a lista Favoritos
+
+Você pode exibir os detalhes de capacidade, desempenho e proteção de objetos de armazenamento selecionados na lista Favoritos. Os detalhes de um máximo de 20 objetos de armazenamento são exibidos na lista Favoritos.
+
+
+
+== Adicionando objetos de armazenamento à lista Favoritos
+
+Você pode adicionar objetos de storage à lista Favoritos e monitorar esses objetos quanto à integridade, capacidade e desempenho. Você só pode marcar clusters, volumes e agregados como favoritos.
+
+
+
+== Remover objetos de armazenamento da lista Favoritos
+
+Você pode remover objetos de armazenamento da lista Favoritos quando não precisar mais que eles sejam marcados como favoritos.

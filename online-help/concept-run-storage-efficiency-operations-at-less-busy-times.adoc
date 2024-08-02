@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-run-storage-efficiency-operations-at-less-busy-times.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode modificar a política ou a programação que lida com operações de eficiência de storage para execução quando os workloads de volume afetados estiverem menos ocupados. 
+---
+= Execute operações de eficiência de storage em momentos menos ocupados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode modificar a política ou a programação que lida com operações de eficiência de storage para execução quando os workloads de volume afetados estiverem menos ocupados.
+
+As operações de eficiência de storage podem usar uma grande quantidade de recursos de CPU do cluster e se tornar um bully para os volumes em que as operações estão sendo executadas. Se os volumes das vítimas tiverem alta atividade ao mesmo tempo em que as operações de eficiência de storage são executadas, sua latência poderá aumentar e acionar um evento.
+
+Na página de detalhes do evento, a seção Diagnóstico do sistema exibe cargas de trabalho no grupo de políticas de QoS por desvio de pico na atividade para identificar as cargas de trabalho bully. Se você vir "eficiência de toragem" exibida perto da parte superior da tabela, essas operações estão intimidando as cargas de trabalho da vítima. Ao modificar a política de eficiência ou a programação para execução quando esses workloads estão menos ocupados, é possível evitar que as operações de eficiência de storage causem contenção em um cluster.
+
+Você pode usar o OnCommand System Manager para gerenciar políticas de eficiência. Você pode usar os comandos ONTAP para gerenciar políticas e programações de eficiência.

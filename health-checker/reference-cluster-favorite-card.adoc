@@ -1,0 +1,64 @@
+---
+permalink: health-checker/reference-cluster-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: A placa favorita do cluster permite visualizar os detalhes de capacidade, configuração e desempenho dos clusters individuais marcados como favoritos. 
+---
+= Cartão favorito de cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A placa favorita do cluster permite visualizar os detalhes de capacidade, configuração e desempenho dos clusters individuais marcados como favoritos.
+
+
+
+== Atributos do cluster
+
+A placa de favoritos do cluster exibe os seguintes atributos de clusters individuais:
+
+* *Estado de integridade do cluster*
++
+Um ícone que indica a integridade do cluster. Os valores possíveis são normal, Aviso, erro e crítico.
+
+* *Nome do cluster*
++
+Nome do cluster.
+
+* *Capacidade*
++
+Espaço livre total no cluster.
+
+* *Configuração*
++
+Detalhes de configuração do cluster.
+
++
+** *Endereço IP*
++
+Endereço IP, ou nome do host, da interface lógica de gerenciamento de cluster (LIF) que foi usada para adicionar o cluster.
+
+** *Número de nós*
++
+Número de nós no cluster.
+
+
+
+* *Desempenho*
++
+Detalhes de desempenho do cluster.
+
++
+** *IOPS*
++
+Número médio de operações de e/S por segundo nas últimas 72 horas.
+
+** *Taxa de transferência*
++
+Taxa de transferência média nas últimas 72 horas, em Mbps .
+
+
+
+

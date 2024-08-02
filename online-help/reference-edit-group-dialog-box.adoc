@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-edit-group-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo Editar grupo permite alterar o nome e a descrição de um grupo. 
+---
+= Caixa de diálogo Edit Group (Editar grupo)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Editar grupo permite alterar o nome e a descrição de um grupo.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+* *Nome do grupo*
++
+Exibe o nome do grupo. Ao alterar o nome do grupo, você não deve usar um nome de grupo existente.
+
+* *Descrição*
++
+Fornece uma descrição significativa do grupo. Pode editar este campo quando pretender alterar a descrição atual do grupo.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem que você salve ou cancele as alterações feitas no grupo.
+
+* *Guardar*
++
+Salva as alterações feitas e fecha a caixa de diálogo.
+
+* *Cancelar*
++
+Fecha a caixa de diálogo Editar grupo sem salvar as alterações.
+
+

@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-add-group-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo Adicionar grupo permite criar grupos para incluir clusters, volumes e SVMs com base nas regras do grupo. 
+---
+= Caixa de diálogo Adicionar grupo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Adicionar grupo permite criar grupos para incluir clusters, volumes e SVMs com base nas regras do grupo.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+* *Nome*
++
+Especifica o nome do grupo. Tem de introduzir um nome exclusivo para o grupo.
+
+* *Descrição*
++
+Especifica uma descrição significativa do grupo.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem adicionar ou cancelar a criação de um novo grupo.
+
+* *Adicionar*
++
+Cria o novo grupo.
+
+* *Cancelar*
++
+Fecha a caixa de diálogo Adicionar grupo sem salvar as alterações.
+
+

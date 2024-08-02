@@ -1,0 +1,83 @@
+---
+permalink: online-help/task-viewing-fabricpool-capacity-information.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível visualizar as informações de capacidade do FabricPool para clusters, agregados e volumes nas páginas de detalhes e inventário de integridade desses objetos. Você também pode exibir informações do FabricPool no relatório de capacidade agregada e utilização. 
+---
+= Visualização de informações de capacidade do FabricPool
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível visualizar as informações de capacidade do FabricPool para clusters, agregados e volumes nas páginas de detalhes e inventário de integridade desses objetos. Você também pode exibir informações do FabricPool no relatório de capacidade agregada e utilização.
+
+
+
+== Sobre esta tarefa
+
+Essas páginas exibem informações como a capacidade disponível na camada de performance local e na camada de nuvem, quanta capacidade está sendo usada em ambas as camadas, quais agregados estão anexados a uma camada de nuvem e quais volumes estão implementando os recursos do FabricPool movendo certas informações para a camada de nuvem.
+
+
+
+== Passos
+
+. Execute um dos seguintes procedimentos:
++
+|===
+| Para exibir informações de capacidade para... | Faça isso... 
+
+
+ a| 
+Clusters
+ a| 
+.. Na página de inventário de integridade/clusters, clique em um cluster.
+.. Na página de detalhes de integridade/cluster, clique na guia *Configuração*.
++
+O visor mostra os nomes de quaisquer camadas de nuvem às quais esse cluster está conetado.
+
+
+
+
+
+ a| 
+Agregados
+ a| 
+.. Na página de inventário de integridade/agregados, clique em um agregado em que o campo tipo indica ""SSD (FabricPool)".
+.. Na página de detalhes de integridade/agregado, clique na guia *capacidade*.
++
+A tela mostra a capacidade total, além do espaço usado e livre na camada de nuvem.
+
+.. Clique na guia *informações do disco*.
++
+O visor mostra o nome do nível de nuvem e o espaço disponível.
+
+.. Clique na guia *Configuração*.
++
+A exibição mostra o nome do nível de nuvem e outras informações detalhadas sobre o armazenamento de objetos.
+
+
+
+
+
+ a| 
+Volumes
+ a| 
+.. Na página de inventário de integridade/volumes, clique em um volume em que um nome de política aparece no campo "Política de disposição em categorias".
+.. Na página de detalhes de integridade/volume, clique na guia *Configuração*.
++
+O visor mostra o nome da política de disposição em camadas do FabricPool atribuída ao volume.
+
+
+
+|===
+
+
+
+
+== Depois de terminar
+
+Para obter mais informações sobre agregados FabricPool, consulte o _ONTAP 9 Disks and Aggregates Power Guide_.
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html["Guia de energia de agregados e discos ONTAP 9"]

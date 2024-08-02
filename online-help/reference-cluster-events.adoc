@@ -1,0 +1,422 @@
+---
+permalink: online-help/reference-cluster-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos do cluster fornecem informações sobre o status dos clusters, o que permite monitorar os clusters em busca de possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento, o nome da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos do cluster fornecem informações sobre o status dos clusters, o que permite monitorar os clusters em busca de possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento, o nome da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+Um asterisco (*) identifica eventos EMS que foram convertidos para eventos do Unified Manager.
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Cluster não possui discos de reserva (ocumEvtDisksNoSpares)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Cluster não alcançável (ocumEvtClusterUnreachable)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Erro
+
+
+
+ a| 
+Falha no monitoramento de cluster (ocumEvtClusterMonitoringFailed)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Limites de capacidade de licença de cluster FabricPool violados (ocumEvtExternalCapacityTierSpaceFull)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Período de carência NVMe-of iniciado *(nvmfGracePeriodStart)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Período de carência NVMe-of Ativo *(nvmfGracePeriodActive)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Período de carência de NVMe-of expirado *(nvmfGracePeriodExpired)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Janela Manutenção Objeto iniciada(objectMaintenance WindowStarted)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Crítico
+
+
+
+ a| 
+Janela Manutenção Objeto terminado(objectMaintenance WindowEnded)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Informações
+
+
+
+ a| 
+Discos de reposição MetroCluster deixados para trás (ocumEvtSpareDiskLeftBehind)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Erro
+
+
+
+ a| 
+Comutação automática não planejada do MetroCluster desativada(ocumEvtMccAutomaticUnplannedSwitchOverDisabled)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Aviso
+
+|===
+
+
+== Área de impactos: Capacidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Planejamento de camada de nuvem de cluster (clusterCloudTierPlanningWarning)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Espaço FabricPool quase cheio *
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Erro
+
+|===
+
+
+== Área de impactos: Configuração
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Nó adicionado (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Informações
+
+
+
+ a| 
+Nó removido (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Informações
+
+
+
+ a| 
+Cluster removido (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Informações
+
+
+
+ a| 
+Falha na adição de cluster (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Erro
+
+
+
+ a| 
+Nome do cluster alterado (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Informações
+
+
+
+ a| 
+EMS de emergência recebido (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Crítico
+
+
+
+ a| 
+EMS crítico recebido (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Crítico
+
+
+
+ a| 
+Alerta EMS recebido (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Erro
+
+
+
+ a| 
+Erro EMS recebido (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Aviso EMS recebido (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Depurar EMS recebido (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Aviso EMS recebido (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+EMS informativo recebido (não aplicável)
+ a| 
+Evento
+ a| 
+Cluster
+ a| 
+Aviso
+
+|===
+Os eventos do ONTAP EMS são categorizados em três níveis de gravidade de evento do Unified Manager.
+
+|===
+| Nível de gravidade do evento do Unified Manager | Nível de gravidade do evento EMS do ONTAP 
+
+
+ a| 
+Crítico
+ a| 
+Emergência
+
+Crítico
+
+
+
+ a| 
+Erro
+ a| 
+Alerta
+
+
+
+ a| 
+Aviso
+ a| 
+Erro
+
+Aviso
+
+Depurar
+
+Aviso
+
+Informativo
+
+|===
+
+
+== Área de impactos: Desempenho
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Limite crítico de IOPS do cluster violado (ocumClusterIopsIncident)
+ a| 
+Incidente
+ a| 
+Cluster
+ a| 
+Crítico
+
+
+
+ a| 
+Limite de aviso de IOPS do cluster violado (ocumClusterIopsWarning)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Limite crítico do cluster Mbps violado (ocumClusterMbpsIncident)
+ a| 
+Incidente
+ a| 
+Cluster
+ a| 
+Crítico
+
+
+
+ a| 
+Limite de aviso de cluster Mbps violado (ocumClusterMbpsWarning)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Aviso
+
+
+
+ a| 
+Limite dinâmico do cluster violado (ocumClusterDynamicEventWarning)
+ a| 
+Risco
+ a| 
+Cluster
+ a| 
+Aviso
+
+|===

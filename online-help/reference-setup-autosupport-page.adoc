@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-setup-autosupport-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Configuração/AutoSupport permite visualizar a descrição do AutoSupport, ativar o AutoSupport periódico ou enviar uma mensagem do AutoSupport sob demanda. 
+---
+= Página de configuração/AutoSupport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Configuração/AutoSupport permite visualizar a descrição do AutoSupport, ativar o AutoSupport periódico ou enviar uma mensagem do AutoSupport sob demanda.
+
+
+
+== Área de informação
+
+* *ID do sistema*
++
+Exibe a ID do sistema para este servidor do Unified Manager.
+
+
+
+
+
+== Área Periódica AutoSupport
+
+Permite que você tenha mensagens específicas e predefinidas para suporte técnico para diagnóstico e resolução de problemas gerados periodicamente.
+
+* *Ativar AutoSupport Periódico*
++
+Indica que você deseja ativar a funcionalidade AutoSupport periódica.
+
+
+
+
+
+== Área AutoSupport sob demanda
+
+Você pode gerar e enviar uma mensagem sob demanda para o suporte técnico, um destinatário de e-mail especificado ou ambos:
+
+* *Enviar para suporte técnico*
++
+Indica que você deseja enviar uma mensagem sob demanda para o suporte técnico para quaisquer problemas que tenham ocorrido.
+
+* *Enviar para destinatário de e-mail*
++
+Indica que você deseja enviar uma mensagem sob demanda para um destinatário especificado para quaisquer problemas que tenham ocorrido.
+
+* *Gerar e enviar AutoSupport*
++
+Gera e envia uma mensagem sob demanda para o suporte técnico, um destinatário de e-mail especificado ou ambos para quaisquer problemas que tenham ocorrido.
+
+
+
+
+
+== Área Proxy HTTP
+
+Você pode designar um proxy para fornecer acesso à Internet para enviar conteúdo do AutoSupport para suporte se o seu ambiente não fornecer acesso direto do servidor do Gerenciador Unificado.
+
+* *Use proxy HTTP*
++
+Marque esta caixa para identificar o servidor que está sendo usado como proxy HTTP.
+
++
+Insira o nome do host ou o endereço IP do servidor proxy e o número da porta usada para se conetar ao servidor.
+
+* *Use autenticação*
++
+Marque esta caixa se precisar fornecer informações de autenticação para acessar o servidor que está sendo usado como proxy HTTP.
+
++
+Introduza o nome de utilizador e a palavra-passe necessários para a autenticação com o proxy HTTP.
+
+
+
+[NOTE]
+====
+Os proxies HTTP que fornecem somente a Autenticação básica não são suportados.
+
+====

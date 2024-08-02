@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-metrocluster-bridge-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos Ponte MetroCluster fornecem informações sobre o status das pontes para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Rio de Janeiro events MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos Ponte MetroCluster fornecem informações sobre o status das pontes para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Ponte inalcançável (ocumEvtBridgeUnreachable)
+ a| 
+Incidente
+ a| 
+Ponte de MetroCluster
+ a| 
+Crítico
+
+
+
+ a| 
+Temperatura da ponte anormal (ocumEvtBridgeTemperatureAbnormal)
+ a| 
+Incidente
+ a| 
+Ponte de MetroCluster
+ a| 
+Crítico
+
+|===

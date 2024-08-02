@@ -1,0 +1,56 @@
+---
+permalink: health-checker/task-creating-a-database-user.html 
+sidebar: sidebar 
+keywords:  
+summary: Para oferecer suporte a uma conexão entre o Workflow Automation e o Unified Manager, ou para acessar exibições de banco de dados, primeiro é necessário criar um usuário de banco de dados com a função Esquema de integração ou Esquema de Relatório na IU da Web do Unified Manager. 
+---
+= Criando um usuário de banco de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para oferecer suporte a uma conexão entre o Workflow Automation e o Unified Manager, ou para acessar exibições de banco de dados, primeiro é necessário criar um usuário de banco de dados com a função Esquema de integração ou Esquema de Relatório na IU da Web do Unified Manager.
+
+
+
+== Antes de começar
+
+Tem de ter a função de Administrador do OnCommand.
+
+
+
+== Sobre esta tarefa
+
+Os usuários de banco de dados fornecem integração com o Workflow Automation e acesso a visualizações de banco de dados específicas de relatórios. Os usuários de banco de dados não têm acesso à IU da Web do Unified Manager nem ao console de manutenção e não podem executar chamadas de API.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Gestão* > *utilizadores*.
+. Na página *Gerenciamento/usuários*, clique em *Adicionar*.
+. Na caixa de diálogo *Adicionar usuário*, selecione *Usuário de banco de dados* na lista suspensa *tipo*.
+. Digite um nome e uma senha para o usuário do banco de dados.
+. Na lista suspensa *Role*, selecione a função apropriada.
++
+|===
+| Se você é... | Escolha esta função 
+
+
+ a| 
+Conetando o Unified Manager ao Workflow Automation
+ a| 
+Esquema de integração
+
+
+
+ a| 
+Acessando relatórios e outras exibições de banco de dados
+ a| 
+Esquema Relatório
+
+|===
+. Clique em *Add*.
+

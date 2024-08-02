@@ -1,0 +1,22 @@
+---
+permalink: performance-checker/concept-counter-charts-zoom-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Os gráficos de contador fornecem uma visualização de zoom que permite aumentar o zoom nos detalhes de desempenho durante o período de tempo especificado. Isso permite que você veja detalhes e eventos de desempenho com granularidade muito maior, o que é benéfico para solucionar problemas de desempenho. 
+---
+= Contador gráficos Zoom View
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os gráficos de contador fornecem uma visualização de zoom que permite aumentar o zoom nos detalhes de desempenho durante o período de tempo especificado. Isso permite que você veja detalhes e eventos de desempenho com granularidade muito maior, o que é benéfico para solucionar problemas de desempenho.
+
+Quando exibido na Exibição de Zoom, alguns dos gráficos de detalhamento fornecem informações adicionais do que aparece quando o gráfico não está na Exibição de Zoom. Por exemplo, as páginas de visualização de zoom do gráfico de IOPS, IOPS/TB e Mbps exibem valores de política de QoS para volumes e LUNs se tiverem sido definidos no ONTAP.
+
+[NOTE]
+====
+Para políticas de limite de desempenho definidas pelo sistema, apenas as políticas "'recursos do nó sobreutilizados'" e "'limite de taxa de transferência de QoS violado'" estão disponíveis na lista *políticas*. As outras políticas de limite definidas pelo sistema não estão disponíveis no momento.
+
+====

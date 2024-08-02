@@ -1,0 +1,47 @@
+---
+permalink: health-checker/task-resolving-capacity-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: Este fluxo de trabalho fornece um exemplo de como você pode resolver um problema de capacidade. Nesse cenário, você é um administrador ou operador e acessa a página painéis/Visão geral do Unified Manager para ver se algum dos objetos de armazenamento monitorados tem problemas de capacidade. Você vê que há um volume com um risco de capacidade e deseja determinar a possível causa e resolução do problema. 
+---
+= Resolução de problemas de capacidade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Este fluxo de trabalho fornece um exemplo de como você pode resolver um problema de capacidade. Nesse cenário, você é um administrador ou operador e acessa a página Unified ManagerDashboards/Visão geral para ver se algum dos objetos de armazenamento monitorados tem problemas de capacidade. Você vê que há um volume com um risco de capacidade e deseja determinar a possível causa e resolução do problema.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Na página Dashboards/Visão geral, você olha para a área de incidentes e riscos não resolvidos e vê um evento de erro ""espaço em volume cheio""" no painel capacidade sob a capacidade de volume SVM em risco.
+
+
+
+== Passos
+
+. Na área *incidentes e riscos não resolvidos* da página *painéis/Visão geral*, clique no nome do evento de erro espaço em volume no painel *capacidade*.
++
+A página de detalhes do evento para o erro é exibida.
+
+. Na página de detalhes do *evento*, você pode executar uma ou mais das seguintes tarefas:
++
+** Reveja a mensagem de erro no campo causa e clique nas sugestões em ações corretivas sugeridas para rever as descrições de possíveis correções. xref:task-performing-suggested-remedial-actions-for-a-full-volume.adoc[Executar ações corretivas sugeridas para um volume total]
+** Clique no nome do objeto, neste caso um volume, no campo fonte para obter detalhes sobre o objeto. xref:reference-health-volume-details-page.adoc[Página de detalhes do volume]
+** Procure por notas que possam ter sido adicionadas sobre este evento. xref:task-adding-and-reviewing-notes-about-an-event.adoc[Adicionar e rever notas associadas a um evento]
+** Adicione uma nota ao evento. xref:task-adding-and-reviewing-notes-about-an-event.adoc[Adicionar e rever notas associadas a um evento]
+** Atribua o evento a outro usuário. xref:task-assigning-events-to-specific-users.adoc[Atribuindo eventos]
+** Confirme o evento. xref:task-acknowledging-and-resolving-events.adoc[Reconhecer e resolver eventos]
+** Marque o evento como resolvido. xref:task-acknowledging-and-resolving-events.adoc[Reconhecer e resolver eventos]
+
+
+

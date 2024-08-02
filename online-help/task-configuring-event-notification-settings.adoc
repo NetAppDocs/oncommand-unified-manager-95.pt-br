@@ -1,0 +1,46 @@
+---
+permalink: online-help/task-configuring-event-notification-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode configurar o Unified Manager para enviar notificações de alerta quando um evento é gerado ou quando um evento é atribuído a um usuário. Você pode configurar o servidor SMTP que é usado para enviar o alerta e pode definir vários mecanismos de notificação, por exemplo, notificações de alerta podem ser enviadas como e-mails ou traps SNMP. 
+---
+= Configurar definições de notificação de eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar o Unified Manager para enviar notificações de alerta quando um evento é gerado ou quando um evento é atribuído a um usuário. Você pode configurar o servidor SMTP que é usado para enviar o alerta, e você pode definir vários mecanismos de notificação - por exemplo, notificações de alerta podem ser enviadas como e-mails ou traps SNMP.
+
+
+
+== Antes de começar
+
+Você deve ter as seguintes informações:
+
+* Endereço de e-mail a partir do qual a notificação de alerta é enviada
++
+O endereço de e-mail aparece no campo "de" nas notificações de alerta enviadas. Se o e-mail não puder ser entregue por qualquer motivo, esse endereço de e-mail também será usado como destinatário de e-mails não entregues.
+
+* Nome do host do servidor SMTP e nome de usuário e senha para acessar o servidor
+* Versão SNMP, endereço IP do host de destino de trap, porta de trap de saída e a comunidade para configurar a trap SNMP
+
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *notificações* no menu Configuração à esquerda.
+. Na página *Configuração/notificações*, configure as configurações apropriadas e clique em *Salvar*.
++
+*Notas:*
+
++
+** Se o Endereço de for preenchido com o endereço "`OnCommand@localhost.com`", você deve alterá-lo para um endereço de e-mail real e funcional para garantir que todas as notificações de e-mail sejam entregues com sucesso.
+** Se o nome do host do servidor SMTP não puder ser resolvido, você poderá especificar o endereço IP (IPv4 ou IPv6) do servidor SMTP em vez do nome do host.
+
+
+

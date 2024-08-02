@@ -1,0 +1,81 @@
+---
+permalink: online-help/reference-user-defined-threshold-policies-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a página limites de configuração/desempenho para exibir todas as políticas de limite de desempenho definidas atualmente. Esta página também fornece a funcionalidade para criar, clonar, editar e excluir políticas de limite. 
+---
+= Página limites de configuração/desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a página limites de configuração/desempenho para exibir todas as políticas de limite de desempenho definidas atualmente. Esta página também fornece a funcionalidade para criar, clonar, editar e excluir políticas de limite.
+
+A lista de políticas de limite de desempenho é ordenada alfabeticamente por nome de política. Você pode clicar em um cabeçalho de coluna para classificar as políticas por essa coluna. Se você estiver procurando uma política específica, você pode usar os mecanismos de filtro e pesquisa para refinar a lista de políticas de limite que aparecem na lista de inventário.
+
+
+
+== Filtro e barra de pesquisa
+
+O botão *Filtering* permite refinar a lista de políticas de limite exibindo apenas as políticas que correspondem a determinados critérios.
+
+O botão *pesquisar* permite pesquisar determinadas políticas inserindo nomes de políticas totais ou parciais para refinar a lista de políticas de limite que aparecem na lista de inventário.
+
+
+
+== Botões de comando
+
+* *Criar*
++
+Cria uma nova política de limite de desempenho.
+
+* *Clone*
++
+Cria uma nova política de limite de desempenho com base em uma cópia da política selecionada.
+
+* *Editar*
++
+Modifica a política de limite de desempenho selecionada. Todos os objetos de armazenamento que estão usando a política são atualizados para usar a política revisada.
+
+* *Excluir*
++
+Exclui a política de limite de desempenho selecionada. A política é removida de todos os objetos de armazenamento que estão usando a política. Você pode clicar no item na coluna objetos associados para exibir os objetos que estão usando essa diretiva no momento.
+
+
+
+
+
+== Lista de políticas de limite
+
+* *Nome da política*
++
+Exibe o nome da política de limite. Você pode posicionar o cursor sobre o nome da política para exibir os detalhes da política.
+
+* *Descrição*
++
+Exibe uma breve descrição da política de limites.
+
+* *Primeira condição*
++
+Exibe a condição primária da política de limite, incluindo o contador de desempenho definido e os valores de gatilho de aviso e os valores críticos de gatilho. Pode posicionar o cursor sobre o nome da condição para visualizar os detalhes da condição.
+
+* *Segunda condição*
++
+Exibe a condição de política de limite secundário, se definida. Pode posicionar o cursor sobre o nome da condição para visualizar os detalhes da condição. Se uma segunda condição não for definida, esta coluna estará em branco.
+
++
+[NOTE]
+====
+Quando uma segunda condição é definida, um evento é gerado somente quando ambas as condições são violadas.
+
+====
+* *Objetos associados*
++
+Exibe o tipo de objeto de storage ao qual a diretiva de limite pode ser aplicada e o número de objetos que estão usando a diretiva. Este campo fica em branco até que você atribua a política a pelo menos um objeto.
+
++
+Você pode clicar no cabeçalho da coluna para classificar as políticas por tipo de objeto: Volume, LUN, agregado e assim por diante. Você pode clicar no nome da política para exibir a página de inventário preenchida com os objetos que estão usando atualmente a política de limite.
+
+

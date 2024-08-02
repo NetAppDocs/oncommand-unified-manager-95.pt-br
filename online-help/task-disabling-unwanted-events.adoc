@@ -1,0 +1,61 @@
+---
+permalink: online-help/task-disabling-unwanted-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Todos os eventos são ativados por padrão. Você pode desativar eventos globalmente para impedir a geração de notificações para eventos que não são importantes em seu ambiente. Você pode ativar eventos desativados quando quiser retomar o recebimento de notificações para eles. 
+---
+= Desativar ou ativar eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Todos os eventos são ativados por padrão. Você pode desativar eventos globalmente para impedir a geração de notificações para eventos que não são importantes em seu ambiente. Você pode ativar eventos desativados quando quiser retomar o recebimento de notificações para eles.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Quando você desativa eventos, os eventos gerados anteriormente no sistema são marcados como obsoletos e os alertas configurados para esses eventos não são acionados. Quando você ativa eventos desativados, as notificações para esses eventos são geradas a partir do próximo ciclo de monitoramento.
+
+Quando você desativa um evento para um objeto (por exemplo, o `vol offline` evento) e, depois, ativa o evento, o Unified Manager não gera novos eventos para objetos que ficaram offline quando o evento estava no estado desativado. O Unified Manager gera um novo evento somente quando há uma alteração no estado do objeto após o evento ser reativado.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Configuração* > *Gerenciar eventos*.
+. Na página *Configuração/Gerenciar eventos*, desative ou habilite eventos escolhendo uma das seguintes opções:
++
+|===
+| Se você quiser... | Então faça isso... 
+
+
+ a| 
+Desativar eventos
+ a| 
+.. Clique em *Desativar*.
+.. Na caixa de diálogo Desativar eventos , selecione a gravidade do evento.
+.. Na coluna Eventos correspondentes, selecione os eventos que deseja desativar com base na gravidade do evento e clique na seta para a direita para mover esses eventos para a coluna Desativar eventos.
+.. Clique em *Salvar e fechar*.
+.. Verifique se os eventos desativados são apresentados na vista de lista da página Configuração/gerir Eventos.
+
+
+
+
+ a| 
+Ativar eventos
+ a| 
+.. Marque a caixa de seleção do evento ou eventos que deseja ativar.
+.. Clique em *Ativar*.
+
+
+|===
+

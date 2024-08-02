@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-resuming-scheduled-transfers-on-a-quiesced-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Depois de ter silenciado um relacionamento para impedir que as transferências agendadas ocorram, você pode usar Resume (Retomar) na página Health/volume details (Detalhes do volume/Saúde) para reativar as transferências agendadas para que os dados na origem ou no volume primário sejam protegidos. As transferências são retomadas a partir de um ponto de verificação, se houver, no próximo intervalo de transferência programado.' 
+---
+= Retomar as transferências agendadas numa relação quiesced na página de detalhes de Saúde/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de ter silenciado um relacionamento para impedir que as transferências agendadas ocorram, você pode usar *Resume* na página de detalhes de integridade/volume para reativar as transferências agendadas para que os dados na origem ou no volume primário sejam protegidos. As transferências são retomadas a partir de um ponto de verificação, se houver, no próximo intervalo de transferência programado.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter configurado o Workflow Automation.
+
+
+
+
+== Passos
+
+. Na guia *proteção* da página de detalhes *Saúde/volume*, clique com o botão direito do Mouse na exibição de topologia uma relação quiesced que você deseja retomar.
++
+Em alternativa, selecione *Resume* no menu *ações* > *relacionamento*.
+
+. Na caixa de diálogo *Resume*, clique em *Continue*.
++
+Regressa à página de detalhes de saúde/volume.
+
+. Para visualizar as tarefas relacionadas e acompanhar o seu progresso, clique no link da tarefa que é exibido na parte superior da página de detalhes *Saúde/volume*.
+. Na página de detalhes *proteção/trabalho*, clique em *Atualizar* para atualizar a lista de tarefas e os detalhes da tarefa associados ao trabalho de configuração de proteção e para determinar quando o trabalho está concluído.
++
+Após a conclusão dos trabalhos, as transferências de dados são retomadas no próximo intervalo de transferência programado.
+
+

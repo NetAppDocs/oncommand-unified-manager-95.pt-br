@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-using-the-failover-planning-page-to-determine-corrective-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: Com base nas informações exibidas na página Planejamento de failover de desempenho/nó, você pode tomar medidas para garantir que um failover não faça com que o desempenho de um par de HA caia abaixo de um nível aceitável. 
+---
+= Usando a página Planejamento de failover de nó para determinar ações corretivas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Com base nas informações exibidas na página Planejamento de failover de desempenho/nó, você pode tomar medidas para garantir que um failover não faça com que o desempenho de um par de HA caia abaixo de um nível aceitável.
+
+Por exemplo, para reduzir o impacto estimado de um failover na performance, é possível mover alguns volumes ou LUNs de um nó no par de HA para outros nós no cluster. Fazer isso garante que o nó principal possa continuar a fornecer desempenho aceitável após um failover.

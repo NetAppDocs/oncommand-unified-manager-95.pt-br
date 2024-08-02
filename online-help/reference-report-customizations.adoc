@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível personalizar vários relatórios do Unified Manager com base na capacidade de utilização e storage, eventos, inventário de cluster, exportações de NFS ou inventário de SVM. . 
+---
+= Personalizações de relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível personalizar vários relatórios do Unified Manager com base na capacidade de utilização e storage, eventos, inventário de cluster, exportações de NFS ou inventário de SVM. .

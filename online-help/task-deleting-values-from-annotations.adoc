@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-deleting-values-from-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: Pode eliminar valores associados a anotações personalizadas quando esse valor já não se aplica à anotação. 
+---
+= Eliminar valores de anotações
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode eliminar valores associados a anotações personalizadas quando esse valor já não se aplica à anotação.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* O valor da anotação não deve estar associado a quaisquer regras de anotação ou regras de grupo.
+
+
+
+
+== Sobre esta tarefa
+
+Não é possível eliminar valores de anotações predefinidas.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Anotações* no menu Gestão à esquerda.
+. Na lista de anotações no separador *Anotações*, selecione a anotação a partir da qual pretende eliminar um valor.
+. Na área *valores* da guia *Anotações*, selecione o valor que deseja excluir e clique em *Excluir*.
+. Na caixa de diálogo *Aviso*, clique em *Sim*.
++
+O valor é eliminado e já não é apresentado na lista de valores para a anotação selecionada.
+
+

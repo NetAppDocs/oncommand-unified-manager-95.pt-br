@@ -1,0 +1,180 @@
+---
+permalink: online-help/reference-select-source-snapshot-copy-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Use a caixa de diálogo Selecionar cópia Snapshot de origem para selecionar uma cópia Snapshot específica para transferir dados entre relacionamentos de proteção ou selecione o comportamento padrão, que varia dependendo se você está inicializando, atualizando ou ressincronizando um relacionamento e se o relacionamento é um SnapMirror ou SnapVault. 
+---
+= Selecione a caixa de diálogo cópia Instantânea de origem
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use a caixa de diálogo Selecionar cópia Snapshot de origem para selecionar uma cópia Snapshot específica para transferir dados entre relacionamentos de proteção ou selecione o comportamento padrão, que varia dependendo se você está inicializando, atualizando ou ressincronizando um relacionamento e se o relacionamento é um SnapMirror ou SnapVault.
+
+
+
+== Padrão
+
+Permite selecionar o comportamento padrão para determinar qual cópia Snapshot é usada para inicializar, atualizar e ressincronizar transferências para relacionamentos SnapVault e SnapMirror.
+
+Se você estiver executando uma transferência SnapVault, o comportamento padrão para cada operação é o seguinte:
+
+|===
+| Operação | Comportamento padrão do SnapVault quando a fonte é leitura/gravação | Comportamento padrão do SnapVault quando a origem é proteção de dados (DP) 
+
+
+ a| 
+Inicializar
+ a| 
+Cria uma nova cópia Snapshot e a transfere.
+ a| 
+Transfere a última cópia Snapshot exportada.
+
+
+
+ a| 
+Atualização
+ a| 
+Transfere apenas cópias Snapshot rotuladas, conforme especificado na política.
+ a| 
+Transfere a última cópia Snapshot exportada.
+
+
+
+ a| 
+Ressincronizar
+ a| 
+Transfere todas as cópias Snapshot identificadas criadas após a cópia Snapshot comum mais recente.
+ a| 
+Transfere a mais recente cópia Snapshot rotulada.
+
+|===
+Se você estiver executando uma transferência SnapMirror, o comportamento padrão para cada operação é o seguinte:
+
+|===
+| Operação | Comportamento padrão do SnapMirror | Comportamento padrão do SnapMirror quando o relacionamento é segundo salto em uma cascata SnapMirror to SnapMirror 
+
+
+ a| 
+Inicializar
+ a| 
+Cria uma nova cópia Snapshot e transfere-a para todas as cópias Snapshot criadas antes da nova cópia Snapshot.
+ a| 
+Transfere todas as cópias Snapshot da origem.
+
+
+
+ a| 
+Atualização
+ a| 
+Cria uma nova cópia Snapshot e transfere-a para todas as cópias Snapshot criadas antes da nova cópia Snapshot.
+ a| 
+Transfere todas as cópias Snapshot.
+
+
+
+ a| 
+Ressincronizar
+ a| 
+Cria uma nova cópia Snapshot e transfere todas as cópias Snapshot da origem.
+ a| 
+Transfere todas as cópias Snapshot do volume secundário para o volume terciário, e exclui todos os dados adicionados após a criação da cópia Snapshot comum mais recente.
+
+|===
+
+
+== Cópia Snapshot existente
+
+Permite selecionar uma cópia Snapshot existente na lista se a seleção de cópia Snapshot for permitida para essa operação.
+
+* *Cópia Snapshot*
++
+Exibe as cópias Snapshot existentes a partir das quais você pode selecionar para uma transferência.
+
+* *Data de criação*
++
+Exibe a data e a hora em que a cópia Snapshot foi criada. As cópias snapshot são listadas das mais recentes às menos recentes, sendo as mais recentes no topo da lista.
+
+
+
+Se você estiver executando uma transferência SnapVault e quiser selecionar uma cópia Snapshot existente para transferir de uma origem para um destino, o comportamento de cada operação será o seguinte:
+
+|===
+| Operação | Comportamento do SnapVault ao especificar uma cópia Snapshot | Comportamento do SnapVault ao especificar uma cópia Snapshot em uma cascata 
+
+
+ a| 
+Inicializar
+ a| 
+Transfere a cópia Snapshot especificada.
+ a| 
+A seleção de cópia Snapshot de origem não é compatível com volumes de proteção de dados.
+
+
+
+ a| 
+Atualização
+ a| 
+Transfere a cópia Snapshot especificada.
+ a| 
+A seleção de cópia Snapshot de origem não é compatível com volumes de proteção de dados.
+
+
+
+ a| 
+Ressincronizar
+ a| 
+Transfere a cópia Snapshot selecionada.
+ a| 
+A seleção de cópia Snapshot de origem não é compatível com volumes de proteção de dados.
+
+|===
+Se você estiver executando uma transferência SnapMirror e quiser selecionar uma cópia Snapshot existente para transferir de uma origem para um destino, o comportamento de cada operação será o seguinte:
+
+|===
+| Operação | Comportamento do SnapMirror ao especificar uma cópia Snapshot | Comportamento do SnapMirror ao especificar uma cópia Snapshot em uma cascata 
+
+
+ a| 
+Inicializar
+ a| 
+Transfere todas as cópias Snapshot na origem, até a cópia Snapshot especificada.
+ a| 
+A seleção de cópia Snapshot de origem não é compatível com volumes de proteção de dados.
+
+
+
+ a| 
+Atualização
+ a| 
+Transfere todas as cópias Snapshot na origem, até a cópia Snapshot especificada.
+ a| 
+A seleção de cópia Snapshot de origem não é compatível com volumes de proteção de dados.
+
+
+
+ a| 
+Ressincronizar
+ a| 
+Transfere todas as cópias snapshot da origem, até a cópia Snapshot selecionada e, em seguida, exclui todos os dados adicionados após a criação da cópia Snapshot comum mais recente.
+ a| 
+A seleção de cópia Snapshot de origem não é compatível com volumes de proteção de dados.
+
+|===
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Submeter*
++
+Envia suas seleções e fecha a caixa de diálogo Selecionar cópia Snapshot de origem.
+
+* *Cancelar*
++
+Descarta suas seleções e fecha a caixa de diálogo Selecionar cópia Instantânea de origem.
+
+

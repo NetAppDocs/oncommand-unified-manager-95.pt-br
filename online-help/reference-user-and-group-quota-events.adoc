@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-user-and-group-quota-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de cota de usuário e grupo fornecem informações sobre a capacidade da cota de usuário e grupo de usuários, bem como os limites de arquivo e disco para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de quota de utilizador e grupo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de cota de usuário e grupo fornecem informações sobre a capacidade da cota de usuário e grupo de usuários, bem como os limites de arquivo e disco para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Capacidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Limite de espaço em disco de quota de usuário ou grupo violado(ocumEvtUserOrGroupQuotaDiskSpaceSoftLimitBreached)
+ a| 
+Risco
+ a| 
+Quota de utilizador ou grupo
+ a| 
+Aviso
+
+
+
+ a| 
+Limite rígido de espaço em disco de quota de utilizador ou de grupo atingido(ocumEvtUserOrGroupQuotaDiskSpaceHardLimitReached)
+ a| 
+Incidente
+ a| 
+Quota de utilizador ou grupo
+ a| 
+Crítico
+
+
+
+ a| 
+Limite de arquivos de cota de usuário ou grupo violado(ocumEvtUserOrGroupQuotaFileCountSoftLimitBreached)
+ a| 
+Risco
+ a| 
+Quota de utilizador ou grupo
+ a| 
+Aviso
+
+
+
+ a| 
+Limite rígido de contagem de ficheiros de quota de utilizador ou grupo atingido(ocumEvtUserOrGroupQuotaFileCountHardLimitReached)
+ a| 
+Incidente
+ a| 
+Quota de utilizador ou grupo
+ a| 
+Crítico
+
+|===

@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-unknown-authentication-error.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Erro de autenticação desconhecido
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* *Emissão*
++
+Quando você estiver executando uma operação relacionada à autenticação, como adicionar, editar, excluir ou testar usuários ou grupos remotos, a seguinte mensagem de erro pode ser exibida: `Unknown authentication error`.
+
+* *Causa*
++
+Esse problema pode ocorrer se você tiver definido um valor incorreto para as seguintes opções:
+
++
+** Nome do administrador do serviço de autenticação do ative Directory
+** Vincular Nome distinto do serviço de autenticação OpenLDAP
+
+
+* *Ações corretivas*
++
+.. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Configuração* > *Autenticação*.
+.. Com base no serviço de autenticação que selecionou, introduza as informações adequadas para Nome de administrador ou Nome distinto vincular.
+.. Clique em *Test Authentication* para testar a autenticação com os detalhes especificados.
+.. Clique em *Salvar e fechar*.
+
+
+

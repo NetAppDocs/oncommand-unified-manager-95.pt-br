@@ -1,0 +1,386 @@
+---
+permalink: online-help/reference-node-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos do nó fornecem informações sobre o status do nó para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos do nó
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos do nó fornecem informações sobre o status do nó para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+Um asterisco (*) identifica eventos EMS que foram convertidos para eventos do Unified Manager.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Espaço de volume raiz do nó quase cheio (ocumEvtClusterNodeRootVolumeSpaceNearlyFull )
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Cloud AWS MetaDataConnFail *(ocumCloudAwsMetadataConnFail)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Cloud AWS IAMCredsExpired *(ocumCloudAwsIamCredsExpired)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Nuvem AWS IAMCredsInvalid *(ocumCloudAwsIamCredsInvalid)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Cloud AWS IAMCredsNotFound *(ocumCloudAwsIamCredsNotFound)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Cloud AWS IAMCredsNotInitialized *(ocumCloudAwsIamCredsNotInitialized)
+ a| 
+Evento
+ a| 
+Nó
+ a| 
+Informações
+
+
+
+ a| 
+Nuvem AWS IAMRoleInvalid *(ocumCloudAwsIamRoleInvalid)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Cloud AWS IAMRoleNotFound *(ocumCloudAwsIamRoleNotFound)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Objstore Host unresolvable *(ocumObjstoreHostUnresolvable)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+InterClusterLifDown *(ocumObjstoreInterClusterLifDown)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Solicitar assinatura de armazenamento de objetos incoerente *
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Uma das NFSv4 piscinas esgotada *
+ a| 
+Incidente
+ a| 
+Nó
+ a| 
+Crítico
+
+|===
+
+
+== Área de impactos: Capacidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Memória do monitor QoS maximizada * (ocumQosMonitorMemoryMaxed)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+Memória do monitor QoS abatido * (ocumQosMonitorMemoryAbated)
+ a| 
+Evento
+ a| 
+Nó
+ a| 
+Informações
+
+|===
+
+
+== Área de impactos: Configuração
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Nó renomeado (não aplicável)
+ a| 
+Evento
+ a| 
+Nó
+ a| 
+Informações
+
+|===
+
+
+== Área de impactos: Desempenho
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Limite crítico de IOPS do nó violado (ocumNodeIopsIncident)
+ a| 
+Incidente
+ a| 
+Nó
+ a| 
+Crítico
+
+
+
+ a| 
+Limite de aviso de IOPS do nó violado (ocumNodeIopsWarning)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Limite crítico do nó Mbps violado (ocumNodeMbpsIncident)
+ a| 
+Incidente
+ a| 
+Nó
+ a| 
+Crítico
+
+
+
+ a| 
+Limite de aviso do nó Mbps violado (ocumNodeMbpsWarning)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Latência do nó ms/op limite crítico violado(ocumNodeLatencyIncident)
+ a| 
+Incidente
+ a| 
+Nó
+ a| 
+Crítico
+
+
+
+ a| 
+Limite de aviso ms/op de latência do nó violado(ocumNodeLatencyWarning)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Perf. Nó Limite crítico violado (ocumNodePerfCapacityUsedIncident)
+ a| 
+Incidente
+ a| 
+Nó
+ a| 
+Crítico
+
+
+
+ a| 
+Perf. Nó Limite de aviso de capacidade usado violado (ocumNodePerfCapacityUsedWarning)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Capacidade do nó usada - limite crítico de aquisição violado (ocumNodePerfCapacityUsedTakooverIncident)
+ a| 
+Incidente
+ a| 
+Nó
+ a| 
+Crítico
+
+
+
+ a| 
+Capacidade do nó usada - limite de aviso de aquisição violado (ocumNodePerfCapacityUsedTakooverWarning)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Limite crítico de utilização do nó violado (ocumNodeUtilizationIncident)
+ a| 
+Incidente
+ a| 
+Nó
+ a| 
+Crítico
+
+
+
+ a| 
+Limite de aviso de utilização do nó violado (ocumNodeUtilizationWarning)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Nó HA par sobre-utilizado Threshold violado (ocumNodeHaPairOverUtilizedInformation)
+ a| 
+Evento
+ a| 
+Nó
+ a| 
+Informações
+
+
+
+ a| 
+Limite de fragmentação do disco do nó violado (ocumNodeDiskFragmentationWarning)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Limite sobreutilizado do nó violado (ocumNodeOverUtilizedWarning)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Limite dinâmico do nó violado (ocumNodeDynamicEventWarning)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+|===

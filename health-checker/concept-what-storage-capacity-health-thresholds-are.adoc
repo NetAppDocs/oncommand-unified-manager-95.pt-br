@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-what-storage-capacity-health-thresholds-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Um limite de integridade da capacidade de storage é o ponto em que o servidor do Unified Manager gera eventos para relatar qualquer problema de capacidade com objetos de storage. Você pode configurar alertas para enviar notificações sempre que tais eventos ocorrerem. 
+---
+= Quais são os limites de integridade da capacidade de storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um limite de integridade da capacidade de storage é o ponto em que o servidor do Unified Manager gera eventos para relatar qualquer problema de capacidade com objetos de storage. Você pode configurar alertas para enviar notificações sempre que tais eventos ocorrerem.
+
+Os limites de integridade da capacidade de storage para todos os agregados, volumes e qtrees são definidos como valores padrão. Você pode alterar as configurações conforme necessário para um objeto ou um grupo de objetos.

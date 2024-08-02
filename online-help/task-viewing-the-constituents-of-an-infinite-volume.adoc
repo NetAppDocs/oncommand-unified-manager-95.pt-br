@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-viewing-the-constituents-of-an-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a página de inventário de integridade/volumes para exibir a lista de constituintes em seu Infinite volume. Você pode ver detalhes como o estado constituinte, o SVM com Infinite volume que contém o constituinte, caminho de junção do constituinte, agregado que contém o constituinte, bem como a capacidade de dados disponível, usado e total do constituinte. 
+---
+= Visualizar os constituintes de um Infinite volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a página de inventário de integridade/volumes para exibir a lista de constituintes em seu Infinite volume. Você pode ver detalhes como o estado constituinte, o SVM com Infinite volume que contém o constituinte, caminho de junção do constituinte, agregado que contém o constituinte, bem como a capacidade de dados disponível, usado e total do constituinte.
+
+
+
+== Antes de começar
+
+Os seguintes requisitos devem ser atendidos:
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* O cluster que contém o SVM com Infinite volume deve ser adicionado ao banco de dados do Unified Manager.
+
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Clique no nome de uma SVM com Infinite volume.
+. Na página de detalhes *Health/Storage Virtual Machine*, clique em *volumes* no painel direito *Related Devices*.
++
+A lista de constituintes é apresentada na página de inventário de integridade/volumes.
+
+

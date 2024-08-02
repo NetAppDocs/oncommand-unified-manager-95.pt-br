@@ -1,0 +1,89 @@
+---
+permalink: online-help/task-adding-space-to-the-data-directory-of-the-unified-manager-red-hat-enterprise-linux-host.html 
+sidebar: sidebar 
+keywords:  
+summary: Se você atribuiu espaço em disco insuficiente ao diretório /opt/NetApp/data para oferecer suporte ao Unified Manager quando você configurou originalmente o host Linux e instalou o Unified Manager, você pode adicionar espaço em disco após a instalação aumentando o espaço em disco no diretório /opt/NetApp/data. 
+---
+= Adicionando espaço ao diretório de dados do host Linux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você atribuiu espaço em disco insuficiente ao `/opt/netapp/data` diretório para oferecer suporte ao Unified Manager quando configurou originalmente o host Linux e instalou o Unified Manager, você poderá adicionar espaço em disco após a instalação aumentando o espaço em disco `/opt/netapp/data` no diretório.
+
+
+
+== Antes de começar
+
+É necessário ter acesso de usuário raiz à máquina Red Hat Enterprise Linux ou CentOS Linux na qual o Unified Manager está instalado.
+
+
+
+== Sobre esta tarefa
+
+Recomendamos que você faça backup do banco de dados do Unified Manager antes de aumentar o tamanho do diretório de dados.
+
+
+
+== Passos
+
+. Faça login como usuário root na máquina Linux na qual você deseja adicionar espaço em disco.
+. Pare o serviço Unified Manager e o software MySQL associado na ordem mostrada:
+. Crie uma pasta de backup temporária (por exemplo, `/backup-data`) com espaço em disco suficiente para conter os dados no diretório atual `/opt/netapp/data`.
+. Copie o conteúdo e a configuração de privilégios do diretório existente `/opt/netapp/data` para o diretório de dados de backup: `cp -rp /opt/netapp/data/* /backup-data`
+. Se o se Linux estiver ativado:
++
+.. Obtenha o tipo se Linux para pastas na pasta existente `/opt/netapp/data`:
++
+`se_type= ls -Z /opt/netapp/data | awk '{print $4}'| awk -F: '{print $3}'| head -1`
+
++
+O sistema retorna uma confirmação semelhante à seguinte:
+
++
+[listing]
+----
+echo $se_type
+mysqld_db_t
+----
+.. Execute o `chcon` comando para definir o tipo se Linux para o diretório de backup: `chcon -R --type=mysqld_db_t /backup-data`
+
+
+. Remova o conteúdo do `/opt/netapp/data` diretório:
++
+.. `cd /opt/netapp/data`
+.. `rm -rf *`
+
+
+. Expanda o tamanho `/opt/netapp/data` do diretório para um mínimo de 750 GB por meio de comandos LVM ou adicionando discos extras.
++
+[NOTE]
+====
+A montagem do `/opt/netapp/data` diretório em uma exportação NFS ou compartilhamento CIFS não é suportada.
+
+====
+. Confirme que o `/opt/netapp/data` proprietário do diretório (mysql) e o grupo (root) estão inalterados: `ls -ltr / | grep opt/netapp/data`
++
+O sistema retorna uma confirmação semelhante à seguinte:
+
++
+[listing]
+----
+drwxr-xr-x.  17 mysql root  4096 Aug 28 13:08 data
+----
+. Se o se Linux estiver ativado, confirme que o contexto `/opt/netapp/data` do diretório ainda está definido como mysqld_dB_t: `touch /opt/netapp/data/abc``ls -Z /opt/netapp/data/abc`
++
+O sistema retorna uma confirmação semelhante à seguinte:
+
++
+[listing]
+----
+-rw-r--r--. root root unconfined_u:object_r:mysqld_db_t:s0 /opt/netapp/data/abc
+----
+. Copie o conteúdo do `backup-data`, de volta para o diretório expandido `/opt/netapp/data`: `cp -rp /backup-data/* /opt/netapp/data/`
+. Inicie o serviço MySQL: `service mysqld start`
+. Após o início do serviço MySQL, inicie os serviços ocie e ocieau na ordem mostrada: `service ocie start``service ocieau start`
+. Depois de todos os serviços serem iniciados, exclua a pasta de `/backup-data` backup : `rm -rf /backup-data`
+

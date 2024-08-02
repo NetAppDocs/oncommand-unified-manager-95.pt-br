@@ -1,0 +1,54 @@
+---
+permalink: online-help/concept-unified-manager-health-monitoring-features.html 
+sidebar: sidebar 
+keywords:  
+summary: O Unified Manager foi desenvolvido em uma infraestrutura de servidor que oferece escalabilidade, capacidade de suporte e recursos aprimorados de monitoramento e notificação. O Unified Manager é compatível com o monitoramento de sistemas que executam o software ONTAP. 
+---
+= Recursos de monitoramento de integridade do Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager foi desenvolvido em uma infraestrutura de servidor que oferece escalabilidade, capacidade de suporte e recursos aprimorados de monitoramento e notificação. O Unified Manager é compatível com o monitoramento de sistemas que executam o software ONTAP.
+
+O Unified Manager inclui os seguintes recursos:
+
+* Detecção, monitoramento e notificações de sistemas instalados com o software ONTAP:
++
+** Objetos físicos: Nós, discos, compartimentos de disco, pares SFO, portas e Flash Cache
+** Objetos lógicos: Clusters, máquinas virtuais de storage (SVMs), agregados, volumes, LUNs, namespaces, qtrees, LIFs, cópias Snapshot, caminhos de junção, exportações de NFS, compartilhamentos CIFS, cotas de usuários e grupos e grupos de iniciadores
+** Protocolos: CIFS, NFS, FC, iSCSI, NVMe e FCoE
+** Eficiência de storage: Agregados SSD, agregados de Flash Pool, agregados FabricPool, deduplicação e compactação
+** Proteção: Relacionamentos SnapMirror (síncronos e assíncronos) e relacionamentos SnapVault
+
+
+* Visualização do estado de deteção e monitorização do cluster
+* Configuração do MetroCluster: Visualização e monitoramento da configuração, switches e bridges do MetroCluster, problemas e status de conetividade dos componentes do cluster
+* Infraestrutura de alertas, eventos e limites aprimorados
+* LDAP, LDAPS, autenticação SAML e suporte ao usuário local
+* RBAC (para um conjunto predefinido de funções)
+* AutoSupport e pacote de suporte
+* Painel aprimorado para mostrar a capacidade, disponibilidade, proteção e integridade de performance do ambiente
+* Interoperabilidade de movimentação de volume, histórico de movimentação de volume e histórico de mudança de caminho de junção
+* Área de escopo de impactos que exibe graficamente os recursos que são afetados para eventos como alguns discos com falha, espelhamento agregado MetroCluster degradado e discos de reserva MetroCluster deixados para trás eventos
+* Possível área de efeito que exibe o efeito dos eventos MetroCluster
+* Área de ações corretivas sugeridas que exibe as ações que podem ser executadas para resolver eventos como alguns discos com falha, espelhamento agregado MetroCluster degradado e discos sobressalentes MetroCluster deixados para trás eventos
+* Recursos que podem ser afetados área que exibe os recursos que podem ser afetados para eventos como o evento volume Offline, o evento volume restrito e o evento espaço em volume provisionado por thin
+* Suporte para SVMs com:
++
+** Volumes FlexVol
+** Volumes FlexGroup
+** Volumes infinitos
+
+
+* Suporte para monitoramento de volumes de raiz de nós
+* Monitoramento aprimorado de cópia Snapshot, incluindo computação de espaço que pode ser recuperado e exclusão de cópias Snapshot
+* Anotações para objetos de armazenamento
+* Relatar a criação e o gerenciamento de informações de objetos de storage, como capacidade física e lógica, utilização, economia de espaço e eventos relacionados
+* Integração com o OnCommand Workflow Automation para executar fluxos de trabalho
++
+O repositório de automação do storage contém pacotes de fluxo de trabalho de storage automatizado certificados pela NetApp, desenvolvidos para uso com o OnCommand Workflow Automation (WFA). Você pode baixar os pacotes e depois importá-los para O WFA para executá-los. Os fluxos de trabalho automatizados estão disponíveis no seguinte endereço link:https://automationstore.netapp.com["Armazenamento de automação de storage"]
+
+

@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-aborting-an-active-data-protection-transfer.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode cancelar uma transferência de proteção de dados ativa quando quiser interromper uma replicação do SnapMirror em andamento. Você também pode limpar o ponto de verificação reiniciar para transferências subsequentes à transferência da linha de base. Você pode cancelar uma transferência quando ela entrar em conflito com outra operação, como uma movimentação de volume. 
+---
+= Abortar uma transferência ativa de proteção de dados a partir da página Relações de proteção/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode cancelar uma transferência de proteção de dados ativa quando quiser interromper uma replicação do SnapMirror em andamento. Você também pode limpar o ponto de verificação reiniciar para transferências subsequentes à transferência da linha de base. Você pode cancelar uma transferência quando ela entrar em conflito com outra operação, como uma movimentação de volume.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter configurado o Workflow Automation.
+
+
+
+
+== Sobre esta tarefa
+
+A ação de cancelamento não é exibida nas seguintes instâncias:
+
+* Se as configurações RBAC não permitirem essa ação: Por exemplo, se você tiver apenas Privileges de operador
+* Quando o ID do volume é desconhecido: Por exemplo, quando você tem uma relação entre clusters e o cluster de destino ainda não foi descoberto
+
+
+Não é possível limpar o ponto de verificação reiniciar para uma transferência de linha de base.
+
+
+
+== Passos
+
+. Para cancelar transferências para um ou mais relacionamentos de proteção, na página *relacionamentos de proteção/volume*, selecione um ou mais volumes e, na barra de ferramentas, clique em *Cancelar*.
++
+A caixa de diálogo Cancelar transferência é exibida.
+
+. Se quiser limpar o ponto de verificação reiniciar para uma transferência que não seja uma transferência de linha de base, selecione *Limpar pontos de verificação*.
+. Clique em *continuar*.
++
+A caixa de diálogo Cancelar transferência é fechada e o status da tarefa de abortar é exibido na parte superior da página relacionamentos de proteção/volume, juntamente com um link para os detalhes da tarefa.
+
+. Clique no link *Exibir detalhes* para ir para a página de detalhes *proteção/trabalho* para obter detalhes adicionais e para ver o progresso do trabalho.
+

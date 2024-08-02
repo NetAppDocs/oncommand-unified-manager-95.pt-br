@@ -1,0 +1,88 @@
+---
+permalink: install/task-selinux-requirements-for-mounting-opt-netapp-or-opt-netapp-data-on-an-nfs-or-cifs-share.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Se você está planejando montar /opt/NetApp ou /opt/NetApp/data em um dispositivo nas ou SAN, e você tem o SELinux habilitado, você precisa estar ciente das seguintes considerações. 
+---
+= Requisitos do SELinux para montagem de /opt/NetApp ou /opt/NetApp/data em um compartilhamento NFS ou CIFS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você está planejando montar `/opt/netapp` ou `/opt/netapp/data` em um dispositivo nas ou SAN e tem o SELinux habilitado, você precisa estar ciente das seguintes considerações.
+
+
+
+== Sobre esta tarefa
+
+Se estiver planejando montar `/opt/netapp` ou `/opt/netapp/data` de qualquer outro lugar que o sistema de arquivos raiz, e você tiver o SELinux habilitado em seu ambiente, você deve definir o contexto correto para os diretórios montados. Siga estes dois passos para configurar e confirmar o contexto correto do SELinux.
+
+* Configure o contexto SELinux quando `/opt/netapp/data` estiver montado
+* Configure o contexto SELinux quando `/opt/netapp` estiver montado
+
+
+*Configurando o contexto SELinux `/opt/netapp/data` quando estiver montado*
+
+Se você tiver montado `/opt/netapp/data` no sistema e o SELinux estiver definido como `Enforcing`, certifique-se de que o tipo de contexto SELinux for `/opt/netapp/data` definido como `mysqld_db_t`, que é o elemento de contexto padrão para a localização dos arquivos do banco de dados.
+
+. Execute este comando para verificar o contexto: `ls -dZ /opt/netapp/data`
++
+Uma saída de amostra:
+
++
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:default_t:s0 /opt/netapp/data
+----
++
+Nesta saída, o contexto é `default_t` que deve ser alterado para `mysqld_db_t`.
+
+. Execute estas etapas para definir o contexto, com base em como você montou `/opt/netapp/data`o .
++
+.. Execute os seguintes comandos para definir o contexto como `mysqld_db_t`: `semanage fcontext -a -t mysql_db_t "/opt/netapp/data"``restorecon -R -v /opt/netapp/data`
+.. Se tiver configurado `/opt/netapp/data` no `/etc/fstab`, tem de editar o `/etc/fstab` ficheiro. Para a `/opt/netapp/data/` opção de montagem, adicione o rótulo MySQL como: `context=system_u:object_r:mysqld_db_t:s0`
+.. Desmonte e remonte `/opt/netapp/data/` para ativar o contexto.
+.. Se você tiver uma montagem NFS direta, execute o seguinte comando para definir o contexto como `mysql_db_t`: `mount <nfsshare>:/<mountpoint> /opt/netapp/data -o context=system_u:object_r:mysql_db_t:s0`
+
+
+. Verifique se o contexto está definido corretamente: `ls -dZ /opt/netapp/data/`
++
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:mysqld_db_t:s0 /opt/netapp/data/
+----
+
+
+*Configurando o contexto SELinux `/opt/netapp` quando estiver montado*
+
+Depois de definir o contexto correto para `/opt/netapp/data/`, certifique-se de que o diretório pai `/opt/netapp` não tem o contexto SELinux definido como `file_t`.
+
+. Execute este comando para verificar o contexto: `ls -dZ /opt/netapp`
++
+Uma saída de amostra:
+
++
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:file_t:s0 /opt/netapp
+----
++
+Nesta saída, o contexto é `file_t` que deve ser alterado. Os comandos a seguir definem o contexto como `usr_t`. Você pode definir o contexto para qualquer valor que não seja `file_t` com base em seus requisitos de segurança.
+
+. Execute estas etapas para definir o contexto, com base em como você montou `/opt/netapp`o .
++
+.. Execute os seguintes comandos para definir o contexto: `semanage fcontext -a -t usr_t "/opt/netapp"``restorecon -v /opt/netapp`
+.. Se tiver configurado `/opt/netapp` no `/etc/fstab`, tem de editar o `/etc/fstab` ficheiro. Para a `/opt/netapp` opção de montagem, adicione o rótulo MySQL como: `context=system_u:object_r:usr_t:s0`
+.. Desmonte e remonte `/opt/netapp` para ativar o contexto.
+.. Se você tiver uma montagem NFS direta, execute o seguinte comando para definir o contexto: `mount <nfsshare>:/<mountpoint> /opt/netapp -o context=system_u:object_r:usr_t:s0`
+
+
+. Verifique se o contexto está definido corretamente: `ls -dZ /opt/netapp`
++
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:usr_t:s0 /opt/netapp
+----
+

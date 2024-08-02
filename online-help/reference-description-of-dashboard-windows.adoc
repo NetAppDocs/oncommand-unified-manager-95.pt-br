@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-dashboard-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar as páginas do painel para obter uma visão rápida dos objetos que estão sendo monitorados. 
+---
+= Descrição das janelas do tablier
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar as páginas do painel para obter uma visão rápida dos objetos que estão sendo monitorados.

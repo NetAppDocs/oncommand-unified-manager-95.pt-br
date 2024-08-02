@@ -1,0 +1,77 @@
+---
+permalink: online-help/reference-backup-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo Configurações de backup de banco de dados para especificar um caminho de backup e uma contagem de retenção e habilitar um agendamento de backup para uma instância de backup selecionada. 
+---
+= Caixa de diálogo Configurações de backup de banco de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo Configurações de backup de banco de dados para especificar um caminho de backup e uma contagem de retenção e habilitar um agendamento de backup para uma instância de backup selecionada.
+
+Pode alterar as seguintes definições de cópia de segurança da base de dados:
+
+* *Caminho*
++
+Especifica o caminho para o local onde você armazena os arquivos de backup. A tabela a seguir especifica o formato do caminho de backup e os locais padrão para diferentes sistemas operacionais:
+
++
+|===
+| Sistema operacional de host | Formato do caminho de cópia de segurança 
+
+
+ a| 
+Dispositivo virtual
+ a| 
+`/opt/netapp/data/ocum-backup`
+
+
+
+ a| 
+Red Hat Enterprise Linux ou CentOS
+ a| 
+`/data/ocum-backup`
+
+
+
+ a| 
+Microsoft Windows
+ a| 
+`C:\ProgramData\NetApp\OnCommandAppData\ocum\backup\`
+
+|===
+* *Contagem de retenção*
++
+Especifica o número máximo de backups a serem retidos pelo Unified Manager. O valor padrão é dez.
+
+* * Programar frequência de ativação*
++
+Esta opção permite especificar quando agendar uma cópia de segurança; pode escolher diariamente ou semanalmente.
+
+* *Diária*
++
+Especifica a programação diária de backup com a hora.
+
+* *Semanal*
++
+Especifica a programação semanal de backup com o dia e a hora.
+
+
+
+
+
+== Botões de comando
+
+* *Salvar e fechar*
++
+Salva o arquivo de backup e fecha a caixa de diálogo. O Unified Manager salva o arquivo de backup no seguinte formato `um_um_version_backup_os_timestamp.7z`: .
+
+* *Cancelar*
++
+Fecha a caixa de diálogo Configurações de backup de banco de dados sem salvar as alterações.
+
+

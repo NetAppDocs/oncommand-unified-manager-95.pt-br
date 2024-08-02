@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-add-annotation-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo Adicionar regra de anotação permite criar regras de anotação no Unified Manager para anotar dinamicamente objetos de armazenamento. 
+---
+= Caixa de diálogo Adicionar regra de anotação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Adicionar regra de anotação permite criar regras de anotação no Unified Manager para anotar dinamicamente objetos de armazenamento.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+* *Nome*
++
+Especifica o nome da regra de anotação.
+
+* * Tipo Objeto alvo*
++
+Especifica o tipo de objetos de armazenamento (máquinas virtuais de armazenamento (SVMs), volumes ou clusters) que você deseja anotar.
+
+* *Aplicar Anotação*
++
+Especifica a anotação e o valor que você pode usar para anotar objetos de armazenamento quando todas as condições forem atendidas.
+
+* *Condições*
++
+Especifica condições que determinam quais objetos de armazenamento você pode anotar.
+
+
+
+
+
+== Botões de comando
+
+* *Salvar e Adicionar*
++
+Adiciona a regra de anotação criada e permite adicionar outra regra de anotação sem fechar a caixa de diálogo.
+
+* *Adicionar*
++
+Adiciona a regra de anotação e fecha a caixa de diálogo Adicionar regra de anotação.
+
+* *Cancelar*
++
+Cancela as alterações e fecha a caixa de diálogo Adicionar regra de anotação.
+
+* *Adicionar condição*
++
+Adiciona uma condição para definir a regra de anotação.
+
+* *Adicionar grupo condição*
++
+Adiciona um grupo de condições para definir condições para a regra de anotação.
+
+

@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-by-source-of-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório Inventário de relacionamentos de volume para exibir volumes agrupados por origem da falha. 
+---
+= Personalizar o relatório Inventário de relacionamentos de volume para exibir volumes agrupados por fonte de falha
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Inventário de relacionamentos de volume para exibir volumes agrupados por origem da falha.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Selecione a coluna *Saúde do relacionamento*.
+. Para exibir os detalhes do volume para volumes defeituosos, clique no sinal -- ao lado da coluna *Bad*.
+. Para ver os detalhes do volume para bons volumes, clique no sinal -- ao lado da coluna *bom*.
+

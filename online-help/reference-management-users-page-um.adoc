@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-management-users-page-um.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Gerenciamento/usuários exibe uma lista de usuários e grupos e fornece informações como nome, tipo de usuário e endereço de e-mail. Você também pode usar esta página para executar tarefas como adicionar, editar, excluir e testar usuários. 
+---
+= Página de gerenciamento/usuários
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Gerenciamento/usuários exibe uma lista de usuários e grupos e fornece informações como nome, tipo de usuário e endereço de e-mail. Você também pode usar esta página para executar tarefas como adicionar, editar, excluir e testar usuários.
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas para usuários selecionados:
+
+* *Adicionar*
++
+Exibe a caixa de diálogo Adicionar usuário, que permite adicionar um usuário local, um usuário remoto, um grupo remoto ou um usuário de banco de dados.
+
++
+Só é possível adicionar utilizadores ou grupos remotos se o servidor de autenticação estiver ativado e configurado.
+
+* *Editar*
++
+Exibe a caixa de diálogo Editar usuário, que permite editar as configurações do usuário selecionado.
+
+* *Excluir*
++
+Exclui os usuários selecionados do banco de dados do servidor de gerenciamento.
+
+* *Teste*
++
+Permite validar se um usuário ou grupo remoto está presente no servidor de autenticação.
+
++
+Só pode executar esta tarefa se o servidor de autenticação estiver ativado e configurado.
+
+
+
+
+
+== Vista de lista
+
+O modo de exibição Lista exibe, em formato tabular, informações sobre os usuários criados. Você pode usar os filtros de coluna para personalizar os dados exibidos.
+
+* *Nome*
++
+Exibe o nome do usuário ou grupo.
+
+* *Tipo*
++
+Apresenta o tipo de utilizador: Utilizador local, Utilizador remoto, Grupo remoto, Utilizador de base de dados ou Utilizador de manutenção.
+
+* *Email*
++
+Exibe o endereço de e-mail do usuário.
+
+* *Função*
++
+Exibe o tipo de função atribuída ao usuário: Operador, administrador de armazenamento, administrador de OnCommand, esquema de integração ou esquema de relatório.
+
+

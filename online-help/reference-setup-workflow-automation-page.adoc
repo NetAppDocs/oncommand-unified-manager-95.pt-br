@@ -1,0 +1,72 @@
+---
+permalink: online-help/reference-setup-workflow-automation-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Configuração/Automação do fluxo de trabalho permite configurar as configurações para integrar o OnCommand Workflow Automation ao Gerenciador Unificado. Também pode adicionar, modificar ou eliminar as definições. 
+---
+= Página Configuração/automatização do fluxo de trabalho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Configuração/Automação do fluxo de trabalho permite configurar as configurações para integrar o OnCommand Workflow Automation ao Gerenciador Unificado. Também pode adicionar, modificar ou eliminar as definições.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Usuário do banco de dados do Unified Manager
+
+Essa área permite inserir as credenciais de um usuário de banco de dados que é necessário para emparelhar o Unified Manager com o Workflow Automation:
+
+* *Nome*
++
+Permite especificar o nome de usuário de um usuário de banco de dados que pode ser usado para acessar dados no banco de dados do Unified Manager. Por padrão, nenhum usuário de banco de dados está selecionado. Você pode selecionar um usuário de banco de dados na lista suspensa.
+
+* *Senha*
++
+Permite especificar uma palavra-passe para o nome de utilizador especificado.
+
+
+
+
+
+== Credenciais do OnCommand Workflow Automation
+
+Essa área permite inserir as credenciais de uma conta do Workflow Automation que é necessária para o emparelhamento com o Unified Manager:
+
+* *Nome do host ou endereço IP*
++
+Especifica o nome ou endereço IP do servidor host do Workflow Automation, que é usado para emparelhar com o Unified Manager.
+
+* *Porto*
++
+Exibe o número de porta necessário do servidor host do Workflow Automation, que é 443.
+
+* *Nome de usuário*
++
+Permite especificar um nome de utilizador que pode ser utilizado para iniciar sessão no Workflow Automation.
+
+* *Senha*
++
+Permite especificar uma palavra-passe para o nome de utilizador especificado.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem remover, guardar ou cancelar as opções de configuração:
+
+* *Remover Configuração*
++
+Remove a configuração do Workflow Automation do Unified Manager.
+
+* *Guardar*
++
+Guarda as definições de configuração para a opção selecionada.
+
+

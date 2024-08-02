@@ -1,0 +1,32 @@
+---
+permalink: performance-checker/task-selecting-performance-thresholds-in-zoom-view.html 
+sidebar: sidebar 
+keywords:  
+summary: A aplicação de limites na Exibição de Zoom de gráficos de Contador fornece uma visualização detalhada das ocorrências de eventos de limite de desempenho. Isso permite que você aplique ou remova limites e visualize imediatamente os resultados, o que pode ser útil ao decidir se a solução de problemas deve ser sua próxima etapa. 
+---
+= Selecionar limites de desempenho na visualização de zoom de gráficos de contador
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A aplicação de limites na Exibição de Zoom de gráficos de Contador fornece uma visualização detalhada das ocorrências de eventos de limite de desempenho. Isso permite que você aplique ou remova limites e visualize imediatamente os resultados, o que pode ser útil ao decidir se a solução de problemas deve ser sua próxima etapa.
+
+
+
+== Sobre esta tarefa
+
+A seleção de limites na Exibição de zoom de gráficos de contador permite visualizar dados precisos sobre eventos de limite de desempenho. Você pode aplicar qualquer limite exibido na área *políticas* da Exibição de Zoom de gráficos de Contador.
+
+Apenas uma política de cada vez pode ser aplicada ao objeto na Exibição de Zoom de gráficos de Contador.
+
+
+
+== Passos
+
+. Selecione ou desmarque a image:../media/eye-icon.gif[""] que está associada a uma política.
++
+O limite selecionado é aplicado à vista de zoom de gráficos de contador. Os limites críticos são exibidos como uma linha vermelha; os limites de aviso são exibidos como uma linha amarela.
+
+

@@ -1,0 +1,32 @@
+---
+permalink: health-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-health.html 
+sidebar: sidebar 
+keywords:  
+summary: Esta seção contém informações sobre as duas interfaces de usuário fornecidas pelo OnCommand Unified Manager para solucionar problemas de capacidade, disponibilidade e proteção de storage de dados. As duas UIs são a IU da Web do Unified Manager e o console de manutenção. 
+---
+= Interfaces do Unified Manager usadas para gerenciar a integridade do sistema de storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Esta seção contém informações sobre as duas interfaces de usuário fornecidas pelo OnCommand Unified Manager para solucionar problemas de capacidade, disponibilidade e proteção de storage de dados. As duas UIs são a IU da Web do Unified Manager e o console de manutenção.
+
+Se você quiser usar os recursos de proteção no Unified Manager, também deverá instalar e configurar o OnCommand Workflow Automation (WFA).
+
+
+
+== IU da Web do Unified Manager
+
+A IU da Web do Unified Manager permite que um administrador monitore e solucione problemas de cluster relacionados à capacidade, disponibilidade e proteção de storage de dados.
+
+Esta seção descreve alguns fluxos de trabalho comuns que um administrador pode seguir para solucionar problemas de capacidade de storage, disponibilidade de dados ou proteção exibidos na IU da Web do Unified Manager.
+
+
+
+== Consola de manutenção
+
+O console de manutenção permite que um administrador monitore, diagnostique e solucione problemas do sistema operacional, problemas de atualização de versão, problemas de acesso do usuário e problemas de rede relacionados ao próprio servidor do Unified Manager. Se a IU da Web do Unified Manager não estiver disponível, o console de manutenção será a única forma de acesso ao Unified Manager.
+
+Esta seção fornece instruções para acessar o console de manutenção e usá-lo para resolver problemas relacionados ao funcionamento do servidor do Unified Manager.

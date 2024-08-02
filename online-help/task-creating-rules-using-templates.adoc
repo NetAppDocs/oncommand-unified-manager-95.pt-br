@@ -1,0 +1,53 @@
+---
+permalink: online-help/task-creating-rules-using-templates.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode adicionar novas regras usando modelos de regra definidos pelo Unified Manager para determinar o posicionamento dos dados gravados no SVM com Infinite volume. Você pode criar regras com base em tipos de arquivo, caminhos de diretório ou proprietários. 
+---
+= Criando regras usando modelos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode adicionar novas regras usando modelos de regra definidos pelo Unified Manager para determinar o posicionamento dos dados gravados no SVM com Infinite volume. Você pode criar regras com base em tipos de arquivo, caminhos de diretório ou proprietários.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* O cluster que contém o SVM com Infinite volume com classes de storage deve ser adicionado ao banco de dados do Unified Manager.
+
+
+
+
+== Sobre esta tarefa
+
+A guia Política de dados fica visível apenas para uma SVM com Infinite volume.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Na página de inventário *máquinas virtuais de integridade/storage*, selecione o SVM apropriado.
+. Clique na guia *Política de dados*.
++
+A lista de regras na política de dados para o SVM selecionado com Infinite volume é exibida.
+
+. Clique em *criar*.
+. Na caixa de diálogo *criar regra*, escolha um modelo de regra apropriado na lista suspensa.
++
+O modelo é baseado em três categorias: Tipo de arquivo, proprietário ou caminho de diretório.
+
+. Com base no modelo selecionado, adicione as condições necessárias na área *critérios de correspondência*.
+. Selecione uma classe de armazenamento apropriada na lista suspensa *coloque o conteúdo correspondente na Classe de armazenamento*.
+. Clique em *criar*.
++
+A nova regra criada é exibida na guia Política de dados.
+
+. Visualize quaisquer outras alterações feitas à política de dados.
+. Clique em *Ativar* para ativar as alterações nas propriedades da regra no SVM.
+

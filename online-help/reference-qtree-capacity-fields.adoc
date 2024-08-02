@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-qtree-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: O relatório de capacidade e utilização do Qtree permite analisar a capacidade e a utilização dos qtrees do sistema para entender possíveis riscos que podem ocorrer devido à redução da capacidade do cluster. 
+---
+= Relatório de capacidade e utilização do Qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O relatório de capacidade e utilização do Qtree permite analisar a capacidade e a utilização dos qtrees do sistema para entender possíveis riscos que podem ocorrer devido à redução da capacidade do cluster.
+
+
+
+== Visualização tabular do relatório de capacidade e utilização do Qtree
+
+* *Cluster*
++
+Exibe o nome do cluster que contém a qtree.
+
+* *Storage Virtual Machine*
++
+Exibe o nome da máquina virtual de storage (SVM) que contém a qtree.
+
+* *Volume*
++
+Exibe o nome do volume que contém a qtree.
+
+* *Qtree*
++
+Exibe o nome da qtree.
+
+* *Tipo de cota*
++
+Especifica se a cota é para um usuário, grupo de usuários ou uma qtree.
+
+* *Usuário ou Grupo*
++
+Exibe o nome do usuário ou grupo de usuários. Haverá várias linhas para cada usuário e grupo de usuários. Quando o tipo de cota é qtree, então _não aplicável_ é exibido. Se a cota não estiver definida, a coluna estará vazia.
+
+* *Disco usado %*
++
+Exibe a porcentagem do espaço em disco usado. Se um limite de disco rígido for definido, esse valor será baseado no limite de disco rígido. Se a cota for definida sem um limite de disco rígido, o valor será baseado no espaço de dados do volume. Se a cota não estiver definida ou se as cotas estiverem desativadas no volume ao qual a qtree pertence, então _não aplicável_ será exibido.
+
+* *Limite rígido do disco*
++
+Exibe o espaço máximo em disco alocado para a qtree. O Unified Manager gera um evento crítico quando esse limite é atingido e nenhuma gravação de disco adicional é permitida. O valor é exibido como _ilimitado_ se a cota for definida sem um limite rígido do disco, se a cota não estiver definida ou se as cotas estiverem desativadas no volume ao qual a qtree pertence.
+
+* *Limite de software do disco*
++
+Exibe o espaço em disco alocado para a qtree antes que um evento de aviso seja gerado. O valor é exibido como _ilimitado_ se a cota for definida sem um limite de software do disco, se a cota não estiver definida ou se as cotas estiverem desativadas no volume ao qual a qtree pertence.
+
+* *Ficheiros utilizados %*
++
+Exibe a porcentagem de arquivos usados na qtree. Se o limite rígido do arquivo estiver definido, esse valor será baseado no limite rígido do arquivo. O valor é exibido como _não aplicável_ se a cota não estiver definida, ou se a cota for definida sem um limite rígido de arquivo, ou se as cotas estiverem desativadas no volume ao qual a qtree pertence.
+
+* *Limite rígido do arquivo*
++
+Exibe o limite rígido para o número de arquivos permitidos no qtrees. O valor é exibido como _ilimitado_ se a cota for definida sem um limite rígido de arquivo, se a cota não estiver definida ou se as cotas estiverem desativadas no volume ao qual a qtree pertence.
+
+* *Limite de software de arquivo*
++
+Apresenta o limite de software para o número de ficheiros permitidos no qtrees. O valor é exibido como _ilimitado_ se a cota for definida sem um limite de software de arquivo, se a cota não estiver definida ou se as cotas estiverem desativadas no volume ao qual a qtree pertence.
+
+

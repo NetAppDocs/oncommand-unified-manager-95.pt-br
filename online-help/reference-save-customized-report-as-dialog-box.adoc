@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-save-customized-report-as-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo Salvar relatório personalizado como para salvar um relatório após personalizá-lo. 
+---
+= Salvar Relatório personalizado como caixa de diálogo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo Salvar relatório personalizado como para salvar um relatório após personalizá-lo.
+
+
+
+== Propriedades
+
+Você pode personalizar e salvar um relatório especificando propriedades como o nome e a descrição.
+
+* *Nome do Relatório*
++
+Exibe o nome do relatório. O nome do relatório original é exibido por padrão. Você pode modificar o nome do relatório de acordo com a personalização. O nome do relatório não pode exceder 255 carateres.
+
+* *Descrição*
++
+Especifica a descrição da personalização feita no relatório. A descrição não pode exceder 150 carateres.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Guardar*
++
+Salva o relatório personalizado .
+
+* *Cancelar*
++
+Cancela as alterações recentes e fecha a caixa de diálogo Salvar relatório personalizado como .
+
+

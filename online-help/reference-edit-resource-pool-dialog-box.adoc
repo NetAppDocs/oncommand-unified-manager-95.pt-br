@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-edit-resource-pool-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo Editar pool de recursos para alterar o nome e a descrição de um pool de recursos existente. Por exemplo, se o nome e a descrição originais forem imprecisos ou incorretos, você pode alterá-los para que sejam mais precisos. 
+---
+= Caixa de diálogo Editar pool de recursos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo Editar pool de recursos para alterar o nome e a descrição de um pool de recursos existente. Por exemplo, se o nome e a descrição originais forem imprecisos ou incorretos, você pode alterá-los para que sejam mais precisos.
+
+
+
+== Caixas de texto
+
+As caixas de texto permitem alterar as seguintes informações para o pool de recursos selecionado:
+
+* *Nome do pool de recursos*
++
+Permite-lhe introduzir um novo nome.
+
+* *Descrição*
++
+Permite-lhe introduzir uma nova descrição.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Guardar*
++
+Salva as alterações no nome e na descrição do pool de recursos.
+
+* *Cancelar*
++
+Descarta as alterações e fecha a caixa de diálogo Editar pool de recursos.
+
+

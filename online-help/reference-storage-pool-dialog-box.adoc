@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-storage-pool-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo conjunto de armazenamento permite visualizar os detalhes do cache dedicado de SSDs, também conhecido como pools de armazenamento. Você pode monitorar os pools de storage e visualizar detalhes, como a integridade do pool de storage, o cache total e disponível, além de alocações usadas e disponíveis no pool de storage. 
+---
+= Caixa de diálogo conjunto de armazenamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo conjunto de armazenamento permite visualizar os detalhes do cache dedicado de SSDs, também conhecido como _pools de armazenamento_. Você pode monitorar os pools de storage e visualizar detalhes, como a integridade do pool de storage, o cache total e disponível, além de alocações usadas e disponíveis no pool de storage.
+
+Você pode exibir os seguintes detalhes do pool de armazenamento:
+
+* *Status*
++
+Exibe o status do pool de armazenamento, que pode estar saudável ou não saudável.
+
+* * Total de alocações*
++
+Exibe as unidades de alocação total e o tamanho no pool de armazenamento.
+
+* *Tamanho da unidade de alocação*
++
+Exibe a quantidade mínima de espaço no pool de armazenamento que pode ser alocada a um agregado.
+
+* *Discos*
++
+Exibe o número de discos usados para criar o pool de armazenamento. Se a contagem de discos na coluna do pool de armazenamento e o número de discos exibidos na guia informações do disco para esse pool de armazenamento não corresponderem, isso indica que um ou mais discos estão quebrados e o pool de armazenamento não está funcionando.
+
+* *Alocações de cache*
++
+** Alocações usadas
++
+Exibe o número e o tamanho das unidades de alocação usadas pelos agregados. Você pode clicar no nome do agregado para exibir os detalhes do agregado.
+
+** Alocações disponíveis
++
+Exibe o número e o tamanho das unidades de alocação disponíveis para os nós. Você pode clicar no nome do nó para exibir os detalhes do agregado.
+
+
+
+

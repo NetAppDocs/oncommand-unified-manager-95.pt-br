@@ -1,0 +1,80 @@
+---
+permalink: performance-checker/task-responding-to-a-dynamic-performance-event-caused-by-qos-policy-group-throttling.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode usar o Unified Manager para investigar um evento de desempenho causado por um grupo de políticas de qualidade do serviço (QoS) que limita a taxa de transferência de workload (Mbps). A limitação aumentou os tempos de resposta (latência) de cargas de trabalho de volume no grupo de políticas. Você pode usar as informações do evento para determinar se novos limites nos grupos de políticas são necessários para interromper a limitação.' 
+---
+= Resposta a um evento de desempenho dinâmico causado pela limitação do grupo de políticas de QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar o Unified Manager para investigar um evento de performance causado por uma taxa de transferência de workload (Mbps) do grupo de políticas de qualidade do serviço (QoS). A regulagem aumentou os tempos de resposta (latência) das cargas de trabalho de volume no grupo de políticas. Você pode usar as informações do evento para determinar se novos limites nos grupos de políticas são necessários para interromper a limitação.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Deve haver eventos de desempenho novos, reconhecidos ou obsoletos.
+
+
+
+
+== Passos
+
+. Exiba a página *Detalhes do evento* para exibir informações sobre o evento.
+. Leia a *Descrição*, que exibe o nome das cargas de trabalho afetadas pela limitação.
++
+[NOTE]
+====
+A descrição pode exibir a mesma carga de trabalho para a vítima e o agressor, porque a limitação torna a carga de trabalho uma vítima de si mesma.
+
+====
+. Grave o nome do volume usando um aplicativo como um editor de texto.
++
+Você pode pesquisar o nome do volume para localizá-lo mais tarde.
+
+. Nos gráficos latência de workload e atividade de workload, selecione *cargas de trabalho*.
+. Passe o cursor sobre os gráficos para ver as principais cargas de trabalho definidas pelo usuário que estão afetando o grupo de políticas.
++
+A carga de trabalho na parte superior da lista tem o desvio mais alto e fez com que a limitação ocorresse. A atividade é a porcentagem do limite do grupo de políticas usado por cada workload.
+
+. Navegue até a página *Detalhes de desempenho/volume* para a carga de trabalho principal.
+. Selecione *divida os dados por*.
+. Marque a caixa de seleção ao lado de ***latência*** para selecionar todos os gráficos de divisão de latência.
+. Em *IOPS*, selecione ***reads/Write/other***.
+. Clique em *Enviar*.
++
+Os gráficos de detalhamento são exibidos sob o gráfico de latência e o gráfico de IOPS.
+
+. Compare o gráfico *Policy Group Impact* com o gráfico *Latency* para ver qual porcentagem de estrangulamento impactou a latência no momento do evento.
++
+O grupo de políticas tem uma taxa de transferência máxima de 1.000 operações por segundo (op/seg), que as cargas de trabalho nele não podem exceder coletivamente. No momento do evento, as cargas de trabalho no grupo de políticas tinham uma taxa de transferência combinada de mais de 1.200 op/seg, o que fez com que o grupo de políticas reduzisse sua atividade para 1.000 op/seg O gráfico de impacto do Grupo de políticas mostra que a limitação causou 10% da latência total, confirmando que a limitação causou o evento.
+
+. Revise o gráfico *Cluster Components*, que mostra a latência total por componente de cluster.
++
+A latência é mais alta no grupo de políticas, confirmando ainda mais que a limitação causou o evento.
+
+. Compare o gráfico *reads/Write Latency* com o gráfico *reads/Write/Other*.
++
+Ambos os gráficos mostram um alto número de solicitações de leitura com alta latência, mas o número de solicitações e a quantidade de latência para solicitações de gravação são baixos. Esses valores ajudam a determinar se há uma alta quantidade de taxa de transferência ou número de operações que aumentaram a latência. Você pode usar esses valores ao decidir colocar um limite de grupo de políticas na taxa de transferência ou nas operações.
+
+. Use OnCommand System Manager para aumentar o limite atual no grupo de políticas para 1.300 op/seg.
+. Após um dia, retorne ao Unified Manager e procure o nome da carga de trabalho gravada na Etapa 3.
++
+É apresentada a página Performance/volume Details (Detalhes do desempenho/volume).
+
+. Selecione *divida os dados por* > ***IOPS***.
+. Clique em *Enviar*.
++
+É apresentado o gráfico de leituras/gravações/outro.
+
+. Na parte inferior da página, aponte o cursor para o ícone alterar evento (image:../media/opm-change-icon.gif["Alterar ícone de evento"]) para a alteração de limite do grupo de políticas.
+. Compare o gráfico *reads/Write/Other* com o gráfico *latência*.
++
+As solicitações de leitura e gravação são as mesmas, mas a limitação parou e a latência diminuiu.
+
+

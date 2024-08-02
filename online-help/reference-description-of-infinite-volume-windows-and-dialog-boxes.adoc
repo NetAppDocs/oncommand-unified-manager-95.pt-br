@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-infinite-volume-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode monitorar SVMs com Infinite volume na respetiva página de detalhes da máquina virtual de integridade/storage. Você pode gerenciar regras e políticas de dados na caixa de diálogo criar regra. Você também pode modificar os limites da classe de armazenamento na caixa de diálogo Editar limites da classe de armazenamento. 
+---
+= Descrição das janelas Infinite volume e caixas de diálogo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode monitorar SVMs com Infinite volume na respetiva página de detalhes da máquina virtual de integridade/storage. Você pode gerenciar regras e políticas de dados na caixa de diálogo criar regra. Você também pode modificar os limites da classe de armazenamento na caixa de diálogo Editar limites da classe de armazenamento.

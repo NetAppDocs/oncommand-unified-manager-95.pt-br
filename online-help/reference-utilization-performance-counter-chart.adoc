@@ -1,0 +1,49 @@
+---
+permalink: online-help/reference-utilization-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: O gráfico do contador de utilização do Performance Explorer exibe a porcentagem média do recurso selecionado que está sendo usado. 
+---
+= Gráfico do contador de desempenho de utilização
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O gráfico do contador de utilização do Performance Explorer exibe a porcentagem média do recurso selecionado que está sendo usado.
+
+A janela pop-up que é exibida quando o cursor está na área do gráfico mostra os valores específicos do contador em momentos específicos.
+
+A parte inferior da página do gráfico exibe informações sobre a utilização mínima, máxima, média e percentil 95th para o intervalo de tempo selecionado.
+
+
+
+== Utilização - Gráfico do contador total
+
+Exibe a porcentagem média do recurso selecionado que está sendo usado. Para nós, isso indica a utilização de recursos de nós (CPU e RAM), para agregados, isso indica a utilização dos discos no agregado e para portas isso indica a utilização de largura de banda da porta.
+
+Essa opção de gráfico se aplica quando o objeto selecionado é um nó, agregado ou porta.
+
+
+
+== *Botão Zoom View*
+
+Apresenta uma vista ampliada dos dados da carta de contador.
+
+* Eventos
++
+A ocorrência de eventos críticos, de aviso e informativos é indicada nas linhas de tempo acima dos gráficos.
+
+* Limites
++
+A linha horizontal tracejada indica o valor limite de aviso de utilização definido no Unified Manager.
+
++
+A linha vermelha contínua indica o valor de limite crítico de utilização definido no Unified Manager.
+
+* Contadores
++
+Os contadores no painel esquerdo mostram quais valores de contador estão sendo exibidos. Desmarcar ou selecionar o image:../media/eye-icon.gif[""] que está associado a um contador oculta e mostra as informações do contador do gráfico e pode ajudar ao comparar a utilização do objeto.
+
+

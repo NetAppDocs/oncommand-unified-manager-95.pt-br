@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-creating-cascade-or-fanout-relationships-to-extend-protection-from-an-existing-destination-or-secondary-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode estender a proteção de um relacionamento existente criando um fanout do volume de origem ou uma cascata do volume de destino de um relacionamento existente. Você pode fazer isso quando precisar copiar dados de um site para muitos sites ou fornecer proteção adicional criando mais backups. 
+---
+= Criando relações em cascata ou fanout para estender a proteção de uma relação de proteção existente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode estender a proteção de um relacionamento existente criando um fanout do volume de origem ou uma cascata do volume de destino de um relacionamento existente. Você pode fazer isso quando precisar copiar dados de um site para muitos sites ou fornecer proteção adicional criando mais backups.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Passos
+
+. Clique em *proteção* > *relacionamentos de volume*.
+. Na página *relacionamentos de proteção/volume*, selecione a relação SnapMirror a partir da qual deseja estender a proteção.
+. Na barra de ação, clique em *Extend Protection*.
+. No menu, selecione *de origem* ou *de destino*, dependendo se você está criando uma relação de fanout da fonte ou uma relação em cascata do destino.
+. Selecione *com SnapMirror* ou *com SnapVault*, dependendo do tipo de relação de proteção que você está criando.
++
+A caixa de diálogo Configurar proteção é exibida.
+
+. Preencha as informações conforme indicado na caixa de diálogo *Configurar proteção*.
+

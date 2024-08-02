@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-introduction-to-unified-manager-performance-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: O OnCommand Unified Manager fornece recursos de monitoramento de desempenho e análise de causa-raiz de eventos para sistemas que executam o software NetApp ONTAP. 
+---
+= Introdução ao monitoramento de desempenho do OnCommand Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O OnCommand Unified Manager fornece recursos de monitoramento de desempenho e análise de causa-raiz de eventos para sistemas que executam o software NetApp ONTAP.
+
+O Unified Manager ajuda você a identificar workloads que estão sobrecarregando componentes do cluster e diminuindo o desempenho de outros workloads no cluster. Ao definir políticas de limite de desempenho, você também pode especificar valores máximos para determinados contadores de desempenho para que os eventos sejam gerados quando o limite for violado. O Unified Manager alerta você sobre esses eventos de performance para que você tome medidas corretivas e coloque a performance de volta ao nível normal de operação. Você pode exibir e analisar eventos na IU do Unified Manager.
+
+O Unified Manager monitora a performance de dois tipos de workloads:
+
+* Workloads definidos pelo usuário
++
+Esses workloads consistem em FlexVol volumes e FlexGroup volumes criados no cluster.
+
+* Workloads definidos pelo sistema
++
+Esses workloads consistem em atividade interna do sistema.
+
+

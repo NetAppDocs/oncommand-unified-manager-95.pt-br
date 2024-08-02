@@ -1,0 +1,51 @@
+---
+permalink: health-checker/task-determining-if-a-volume-is-offline-because-of-broken-disks-in-an-aggregate.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a IU da Web do Unified Manager para confirmar ou eliminar a possibilidade de um volume estar offline porque os problemas de disco RAID tornaram seu agregado de host offline. 
+---
+= Determinando se um volume está offline por causa de discos quebrados em um agregado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a IU da Web do Unified Manager para confirmar ou eliminar a possibilidade de um volume estar offline porque os problemas de disco RAID tornaram seu agregado de host offline.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Para determinar se a condição off-line do volume é causada por problemas de disco RAID que estão tomando o agregado de hospedagem offline, execute as seguintes ações:
+
+
+
+== Passos
+
+. Localize e clique no link de hipertexto exibido em agregado no painel *dispositivos relacionados* da página de detalhes *Saúde/volume*.
++
+A página de detalhes de integridade/agregação exibe o status online ou offline do agregado de hospedagem. Se o status agregado estiver on-line, os problemas do disco RAID não são a causa do volume estar off-line.
+
+. Se o status agregado estiver offline, clique em *informações do disco* e procure eventos de disco quebrados na lista *Eventos* na guia *informações do disco*.
+. Para identificar ainda mais os discos quebrados, clique no link de hipertexto exibido em Cluster no painel *Related Devices* (dispositivos relacionados).
++
+É apresentada a página de detalhes do estado/cluster.
+
+. Clique em *Disks* e selecione *Broken* no painel *Filters* para listar todos os discos no estado quebrado.
++
+Se os discos no estado quebrado causarem o estado offline do agregado de host, o nome do agregado será exibido na coluna agregado impactado.
+
+
+
+
+
+== Depois de terminar
+
+Depois de confirmar que a condição de volume off-line é causada por discos RAID quebrados e o consequente agregado de host off-line, entre em Contato com o administrador ou operador apropriado para substituir manualmente os discos quebrados e colocar o agregado de volta on-line.

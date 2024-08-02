@@ -1,0 +1,58 @@
+---
+permalink: online-help/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode configurar as configurações de backup do banco de dados do Unified Manager para definir o caminho do backup do banco de dados, a contagem de retenção e as programações de backup. Você pode ativar backups programados diários ou semanais. Por padrão, backups programados são desativados. 
+---
+= Configurar definições de cópia de segurança da base de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar as configurações de backup do banco de dados do Unified Manager para definir o caminho do backup do banco de dados, a contagem de retenção e as programações de backup. Você pode ativar backups programados diários ou semanais. Por padrão, backups programados são desativados.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Você deve ter um mínimo de 150 GB de espaço disponível no local que você definir como caminho de backup.
++
+É recomendável usar um local remoto externo ao sistema host do Unified Manager.
+
+* Quando o Unified Manager estiver instalado em um sistema Linux, verifique se o usuário "jboss" tem permissões de gravação no diretório de backup.
+* Você não deve agendar operações de backup para que ocorram imediatamente após a adição de um novo cluster enquanto o Unified Manager estiver coletando 15 dias de dados históricos de desempenho.
+
+
+
+
+== Sobre esta tarefa
+
+Mais tempo é necessário na primeira vez que um backup é executado do que para backups subsequentes, porque o primeiro backup é um backup completo. Um backup completo pode ter mais de 1 GB e pode levar de três a quatro horas. Backups subsequentes são incrementais e exigem menos tempo.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Gestão* > *cópia de segurança da base de dados*.
+. Na página *Backup de gerenciamento/banco de dados*, clique em *ações* > *Configurações de backup de banco de dados*.
+. Configure os valores apropriados para um caminho de backup e contagem de retenção.
++
+O valor padrão para a contagem de retenção é 10; você pode usar 0 para criar backups ilimitados.
+
+. Na seção *frequência de programação*, marque a caixa de seleção *Ativar* e especifique um horário diário ou semanal.
++
+** *Diária*
++
+Se selecionar esta opção, tem de introduzir uma hora no formato de 24 horas para criar a cópia de segurança. Por exemplo, se você especificar 18:30, um backup será criado diariamente às 6:30:00.
+
+** *Semanal*
++
+Se selecionar esta opção, tem de especificar a hora e o dia para a criação da cópia de segurança. Por exemplo, se você especificar o dia como segunda-feira e hora como 16:30, um backup semanal será criado todas as segundas-feiras às 4:30:00.
+
+
+
+. Clique em *Salvar e fechar*.
+

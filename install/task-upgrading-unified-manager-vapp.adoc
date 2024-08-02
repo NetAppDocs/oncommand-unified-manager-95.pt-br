@@ -1,0 +1,22 @@
+---
+permalink: install/task-upgrading-unified-manager-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode atualizar para o Unified Manager versão 9,5 somente a partir de instâncias do Unified Manager 7,3 ou 9,4. 
+---
+= Atualização do Unified Manager no VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode atualizar para o Unified Manager versão 9,5 somente a partir de instâncias do Unified Manager 7,3 ou 9,4.
+
+
+
+== Sobre esta tarefa
+
+Durante o processo de atualização, o Unified Manager não está disponível. Você deve concluir todas as operações em execução antes de atualizar o Unified Manager.
+
+Se o Unified Manager estiver emparelhado com uma instância do OnCommand Workflow Automation e houver novas versões de software disponíveis para ambos os produtos, será necessário desconetar os dois produtos e configurar uma nova conexão do Workflow Automation após a realização das atualizações. Se você estiver executando uma atualização para apenas um dos produtos, deverá fazer login no Workflow Automation após a atualização e verificar se ele ainda está adquirindo dados do Unified Manager.

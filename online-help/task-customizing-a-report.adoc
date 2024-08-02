@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-customizing-a-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar os relatórios na página Detalhes do relatório e, em seguida, salvar o relatório personalizado com um nome diferente. 
+---
+= Personalizar um relatório
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar os relatórios na página Detalhes do relatório e, em seguida, salvar o relatório personalizado com um nome diferente.
+
+
+
+== Sobre esta tarefa
+
+Depois de salvar um relatório personalizado, você não pode modificar nenhum dos filtros aplicados para criar o relatório porque o relatório é considerado "novo". Portanto, certifique-se de que você está satisfeito com todas as alterações antes de salvar o relatório. No entanto, você pode aplicar novos filtros ao relatório.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *relatórios* e, em seguida, clique em *Executar relatório* para o relatório que você deseja personalizar.
++
+É apresentada a página de detalhes do relatório.
+
+. Personalize o relatório conforme necessário e clique em *ações* > *Salvar relatório personalizado como*.
+. Na caixa de diálogo *Salvar relatório personalizado como*, insira um nome para o relatório personalizado e uma breve descrição sobre a personalização para que outras pessoas entendam o que o relatório exibe.
++
+Por padrão, o nome do relatório atual é exibido.
+
+. Clique em *Salvar*.
++
+Se você receber a mensagem de erro "'Falha ao salvar o relatório personalizado. O arquivo necessário não foi criado'", aguarde alguns momentos e clique em *Salvar* novamente. Esse problema foi observado quando há uma conexão lenta entre o navegador da Web e o servidor do Unified Manager.
+
+
+
+
+
+== Resultados
+
+O relatório personalizado é guardado e apresentado na respetiva categoria de relatório na página Detalhes do relatório.

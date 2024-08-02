@@ -1,0 +1,21 @@
+---
+permalink: online-help/concept-why-you-use-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar cotas para limitar o uso de recursos em volumes do FlexVol, fornecer notificações quando o uso de recursos atingir níveis específicos ou controlar o uso dos recursos. 
+---
+= Por que você usa cotas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar cotas para limitar o uso de recursos em volumes do FlexVol, fornecer notificações quando o uso de recursos atingir níveis específicos ou controlar o uso dos recursos.
+
+Você especifica uma cota pelos seguintes motivos:
+
+* Para limitar a quantidade de espaço em disco ou o número de arquivos que podem ser usados por um usuário ou grupo, ou que podem ser contidos por uma qtree
+* Para rastrear a quantidade de espaço em disco ou o número de arquivos usados por um usuário, grupo ou qtree, sem impor um limite
+* Avisar os usuários quando o uso do disco ou o uso do arquivo for alto
+

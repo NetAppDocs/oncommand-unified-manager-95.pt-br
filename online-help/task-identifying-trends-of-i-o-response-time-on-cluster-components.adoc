@@ -1,0 +1,68 @@
+---
+permalink: online-help/task-identifying-trends-of-i-o-response-time-on-cluster-components.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar o Unified Manager para exibir as tendências de desempenho de todos os componentes de cluster monitorados para um workload de volume. Você pode ver, com o tempo, quais componentes têm o maior uso, se o maior uso é de solicitações de leitura ou gravação e como o uso afetou o tempo de resposta da carga de trabalho. 
+---
+= Identificação das tendências do tempo de resposta de e/S nos componentes do cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar o Unified Manager para exibir as tendências de desempenho de todos os componentes de cluster monitorados para um workload de volume. Você pode ver, com o tempo, quais componentes têm o maior uso, se o maior uso é de solicitações de leitura ou gravação e como o uso afetou o tempo de resposta da carga de trabalho.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Você deve ter identificado o nome do volume ou LUN associado que deseja analisar.
+* Para exibir estatísticas de desempenho de 30 dias, o Unified Manager deve ter coletado e analisado um mínimo de 30 dias de estatísticas de desempenho do cluster.
+
+
+
+
+== Sobre esta tarefa
+
+Identificar tendências de desempenho para os componentes do cluster ajuda o administrador a decidir se o cluster está sendo usado em excesso ou subusado.
+
+Se estiver a visualizar a página de detalhes do evento, pode clicar no nome de um volume para ir diretamente para a página Detalhes do desempenho/volume.
+
+
+
+== Passos
+
+. Na barra *pesquisar*, digite o nome do volume.
++
+O nome do volume é apresentado nos resultados da pesquisa.
+
+. Clique no nome do volume.
++
+O volume é apresentado na página Performance/volume Details (Detalhes de desempenho/volume).
+
+. No gráfico de dados históricos, clique em *30d* para exibir os últimos 30 dias de dados históricos.
+. Clique em *dividir dados por*.
+. Em *latência*, selecione ***Cluster Components*** e ***lê/grava latência***.
+. Clique em *Enviar*.
++
+Ambos os gráficos são exibidos abaixo do gráfico de latência.
+
+. Revise o gráfico *componentes de cluster*.
++
+O gráfico divide o tempo total de resposta por componente de cluster. O tempo de resposta no agregado é o mais alto.
+
+. Compare o gráfico *componentes de cluster* com o gráfico *latência*.
++
+O gráfico de latência mostra picos no tempo total de resposta alinhados aos picos no tempo de resposta do agregado. Há alguns no final do período de 30 dias, onde o limite de desempenho foi ultrapassado.
+
+. Revise o gráfico *reads/Write Latency*.
++
+O gráfico mostra um tempo de resposta mais alto para solicitações de gravação do que as solicitações de leitura, indicando que os aplicativos cliente estão aguardando mais tempo do que o habitual para que suas solicitações de gravação sejam atendidas.
+
+. Compare o gráfico *reads/Write Latency* com o gráfico *latency*.
++
+Os picos no tempo total de resposta que se alinham com o agregado no gráfico de componentes de cluster também se alinham com as gravações no gráfico de latência de leitura/gravação. O administrador deve decidir se os aplicativos cliente que usam a carga de trabalho devem ser endereçados ou se o agregado está sendo usado em excesso.
+
+

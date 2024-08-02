@@ -1,0 +1,71 @@
+---
+permalink: online-help/reference-performance-all-svms-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A página de inventário de desempenho/SVMs exibe uma visão geral dos eventos de performance, dados e informações de configuração de cada máquina virtual de storage (SVM) que está sendo monitorada por uma instância do Unified Manager. Isso permite que você monitore rapidamente a performance de seus SVMs e solucione problemas de performance e eventos de limite.' 
+---
+= Página de inventário de performance/SVMs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página de inventário Performance/SVMs exibe uma visão geral dos eventos de performance, dados e informações de configuração de cada máquina virtual de storage (SVM) que está sendo monitorada por uma instância do Unified Manager. Isso permite que você monitore rapidamente a performance de seus SVMs e solucione problemas de performance e eventos de limite.
+
+Dependendo de como você navega para esta página, o topo da página pode exibir um título diferente para indicar se a lista foi filtrada. Por exemplo, ao exibir todos os SVMs, o título é "'SVMs'". Ao exibir um subconjunto de SVMs que é retornado da página políticas de limite, o título é "'SVMs em que política: SVM_IOPS é aplicada".
+
+Os botões ao longo da parte superior da página permitem que você realize pesquisas para localizar dados específicos, criar e aplicar filtros para restringir a lista de dados exibidos, exportar os dados da página para um `.csv` arquivo e adicionar ou remover colunas da página.
+
+Por padrão, os objetos nas páginas de inventário de objetos são classificados com base na criticidade do evento de desempenho do objeto. Os objetos com eventos críticos são listados primeiro e os objetos com eventos de aviso são listados em segundo lugar. Isso fornece uma indicação visual imediata dos problemas que devem ser resolvidos. Os valores dos contadores de desempenho baseiam-se numa média das 72 horas anteriores ou mais de dados, conforme indicado na página. Você pode clicar no botão Atualizar para atualizar os dados de inventário de objetos.
+
+Você pode atribuir políticas de limite de desempenho a, ou limpar políticas de limite de, qualquer objeto nas páginas de inventário de objetos usando os botões *Assign Performance Threshold Policy* e *Clear PerformanceThreshold Policy*.
+
+[NOTE]
+====
+Os SVMs listados nesta página incluem somente dados e SVMs de cluster. O Unified Manager não usa nem exibe SVMs de Admin ou nó.
+
+====
+
+
+== Colunas da página de inventário SVMs
+
+A página de inventário Performance/SVMs contém as seguintes colunas para cada SVM:
+
+* *Status*
++
+Um objeto saudável sem eventos ativos exibe um ícone de marca de seleção verde (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]). Se o objeto tiver um evento ativo, o ícone do indicador de evento identifica a gravidade do evento: Os eventos críticos são vermelhos (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"]), os eventos de erro são laranja (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ) e os eventos de aviso são amarelos (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"]).
+
+* *SVM*
++
+Você pode clicar no nome do SVM para navegar até a página de detalhes de performance do SVM.
+
+* *Latência*
++
+O tempo médio de resposta para todas as solicitações de e/S, expresso em milissegundos por operação.
+
+* *IOPS*
++
+As operações de entrada/saída por segundo para o SVM.
+
+* *Mbps*
++
+A taxa de transferência na SVM, medida em megabytes por segundo.
+
+* * Capacidade livre*
++
+Capacidade de storage não utilizada do SVM, em gigabytes.
+
+* * Capacidade total*
++
+Capacidade de storage total do SVM, em gigabytes.
+
+* *Cluster*
++
+O cluster ao qual o SVM pertence. Você pode clicar no nome do cluster para navegar até a página de detalhes do cluster.
+
+* *Política de limite*
++
+A política de limite de performance definida pelo usuário, ou políticas, que estão ativas neste objeto de storage. Você pode posicionar o cursor sobre os nomes de políticas que contêm uma elipse (...) para exibir o nome completo da política ou a lista de nomes de políticas atribuídos. Os botões *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* permanecem desativados até selecionar um ou mais objetos clicando nas caixas de seleção localizadas à esquerda.
+
+

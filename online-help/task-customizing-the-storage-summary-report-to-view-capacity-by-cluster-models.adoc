@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-view-capacity-by-cluster-models.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível personalizar o relatório Resumo do storage para analisar a capacidade de storage e a utilização de clusters e visualizar agregados incluídos na capacidade bruta total. 
+---
+= Personalizar o relatório Resumo do armazenamento para visualizar a capacidade por modelos de cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível personalizar o relatório Resumo do storage para analisar a capacidade de storage e a utilização de clusters e visualizar agregados incluídos na capacidade bruta total.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por cluster, execute as seguintes etapas:
++
+.. Clique na coluna que precisa ser desagrupada.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para agrupar o relatório pelo nome do modelo, execute as seguintes etapas:
++
+.. Clique na coluna *Model* e clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Grupo* > *Adicionar grupo*.
+
+
+. Para adicionar agregados à capacidade bruta total, execute as seguintes etapas:
++
+.. Clique na coluna *capacidade bruta total* e clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *agregação*.
+.. Na caixa de diálogo *agregação*, desmarque a caixa de seleção *nível de tabela* e marque a caixa de seleção *nível de grupo*.
+.. Digite um nome de rótulo no campo *Inserir rótulo*, se necessário.
+
+
+. Clique em *OK*.
+. Para adicionar agregados às outras colunas do relatório, repita as etapas 3 e 4.
+

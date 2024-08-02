@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-viewing-the-list-of-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível exibir a lista de cópias Snapshot de um volume selecionado. Você pode usar a lista de cópias Snapshot para calcular a quantidade de espaço em disco que pode ser recuperado se uma ou mais cópias Snapshot forem excluídas e excluir as cópias Snapshot, se necessário. 
+---
+= Exibição da lista de cópias Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível exibir a lista de cópias Snapshot de um volume selecionado. Você pode usar a lista de cópias Snapshot para calcular a quantidade de espaço em disco que pode ser recuperado se uma ou mais cópias Snapshot forem excluídas e excluir as cópias Snapshot, se necessário.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* O volume que contém as cópias Snapshot precisa estar online.
+
+
+
+
+== Passos
+
+. No painel de navegação à esquerda, clique em *Health* > *volumes*.
+. Na página de inventário *Saúde/volumes*, selecione o volume que contém as cópias Snapshot que deseja exibir.
+. Na página de detalhes *Saúde/volume*, clique na guia *capacidade*.
+. No painel *Detalhes* da guia *capacidade*, na seção outros detalhes, clique no link ao lado de *cópias instantâneas*.
++
+O número de cópias Snapshot é um link que exibe a lista de cópias snapshot.
+
+

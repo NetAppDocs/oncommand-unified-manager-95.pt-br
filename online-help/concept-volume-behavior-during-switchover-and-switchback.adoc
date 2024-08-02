@@ -1,0 +1,56 @@
+---
+permalink: online-help/concept-volume-behavior-during-switchover-and-switchback.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos que acionam um switchover ou switchback fazem com que os volumes ativos sejam movidos de um cluster para o outro cluster no grupo de recuperação de desastres. Os volumes no cluster que estavam ativos e fornecendo dados aos clientes são interrompidos, e os volumes no outro cluster são ativados e começam a fornecer dados. O Unified Manager monitora apenas os volumes ativos e em execução. 
+---
+= Comportamento do volume durante o switchover e o switchback
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos que acionam um switchover ou switchback fazem com que os volumes ativos sejam movidos de um cluster para o outro cluster no grupo de recuperação de desastres. Os volumes no cluster que estavam ativos e fornecendo dados aos clientes são interrompidos, e os volumes no outro cluster são ativados e começam a fornecer dados. O Unified Manager monitora apenas os volumes ativos e em execução.
+
+Como os volumes são movidos de um cluster para outro, é recomendável que você monitore os dois clusters. Uma única instância do Unified Manager pode monitorar ambos os clusters em uma configuração do MetroCluster, mas às vezes a distância entre os dois locais exige o uso de duas instâncias do Unified Manager para monitorar ambos os clusters. A figura a seguir mostra uma única instância do Unified Manager:
+
+image::../media/opm-mcc-switchover.gif[comutação mcc opm]
+
+Os volumes com p em seus nomes indicam os volumes primários, e os volumes com b em seus nomes são volumes de backup espelhados criados pelo SnapMirror.
+
+Durante o funcionamento normal:
+
+* O cluster A tem dois volumes ativos: Vol1p e Vol2p.
+* O cluster B tem dois volumes ativos: Vol3p e Vol4p.
+* O cluster A tem dois volumes inativos: Vol3b e Vol4b.
+* O cluster B tem dois volumes inativos: Vol1b e Vol2b.
+
+
+As informações referentes a cada um dos volumes ativos (estatísticas, eventos etc.) são coletadas pelo Unified Manager. As estatísticas Vol1p e Vol2p são coletadas pelo Cluster A e as estatísticas Vol3p e Vol4p são coletadas pelo Cluster B.
+
+Após uma falha catastrófica, causa um switchover de volumes ativos do cluster B para o cluster A:
+
+* O cluster A tem quatro volumes ativos: Vol1p, Vol2p, Vol3b e Vol4b.
+* O cluster B tem quatro volumes inativos: Vol3p, Vol4p, Vol1b e Vol2b.
+
+
+Como durante a operação normal, as informações referentes a cada um dos volumes ativos são coletadas pelo Unified Manager. Mas neste caso, as estatísticas Vol1p e Vol2p são coletadas pelo Cluster A, e as estatísticas Vol3b e Vol4b também são coletadas pelo Cluster A.
+
+Observe que Vol3p e Vol3b não são os mesmos volumes, porque estão em clusters diferentes. As informações do Unified Manager para Vol3p não são as mesmas que Vol3b:
+
+* Durante o switchover para o cluster A, as estatísticas e os eventos do Vol3p não são visíveis.
+* Na primeira mudança, Vol3b parece um novo volume sem informações históricas.
+
+
+Quando o cluster B é reparado e um switchback é executado, o Vol3p é novamente ativo no cluster B, com as estatísticas históricas e uma lacuna de estatísticas para o período durante o switchover. O Vol3b não pode ser visualizado a partir do cluster A até que ocorra outro switchover:
+
+image::../media/opm-mcc-volumes.gif[volumes mcc de opm]
+
+[NOTE]
+====
+* Os volumes MetroCluster que estão inativos, por exemplo, Vol3b no cluster A após o switchback, são identificados com a mensagem ""este volume foi excluído"". O volume não é realmente excluído, mas não está sendo monitorado pelo Unified Manager, porque não é o volume ativo.
+* Se um único Gerenciador unificado estiver monitorando ambos os clusters em uma configuração do MetroCluster, a pesquisa de volume retornará informações sobre o volume que estiver ativo naquele momento. Por exemplo, uma pesquisa por "'Vol3'" retornará estatísticas e eventos para Vol3b no Cluster A se um switchover tiver ocorrido e Vol3 se tornar ativo no Cluster A.
+
+
+====

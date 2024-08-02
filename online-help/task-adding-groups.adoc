@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-adding-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode criar grupos para combinar clusters, volumes e máquinas virtuais de armazenamento (SVMs) para facilitar o gerenciamento.' 
+---
+= Adicionando grupos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível criar grupos para combinar clusters, volumes e máquinas virtuais de storage (SVMs) para facilitar o gerenciamento.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Você pode definir regras de grupo para adicionar ou remover membros do grupo e modificar ações de grupo para o grupo.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Gestão* > *grupos*.
+. Na guia *Groups*, clique em *Add*.
+. Na caixa de diálogo *Adicionar grupo*, insira um nome e uma descrição para o grupo.
++
+O nome do grupo deve ser único.
+
+. Clique em *Add*_**_.
+

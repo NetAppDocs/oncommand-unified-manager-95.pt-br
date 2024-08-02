@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-cache-miss-ratio-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: O gráfico de contador de taxa de falta de cache do Performance Explorer exibe a porcentagem de solicitações de leitura de aplicativos clientes que são retornadas do disco em vez de serem retornadas do cache. 
+---
+= Gráfico de contador de desempenho da relação de perda de cache
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O gráfico de contador de taxa de falta de cache do Performance Explorer exibe a porcentagem de solicitações de leitura de aplicativos clientes que são retornadas do disco em vez de serem retornadas do cache.
+
+A janela pop-up que é exibida quando o cursor está na área do gráfico mostra os valores específicos do contador em momentos específicos.
+
+A parte inferior da página do gráfico exibe informações sobre a relação de falta de cache mínimo, máximo, médio e percentil 95th para o intervalo de tempo selecionado.
+
+
+
+== Taxa de perda de cache - gráfico de contador total
+
+Exibe a porcentagem de solicitações de leitura de aplicativos clientes que são retornadas do disco em vez de serem retornadas do cache.
+
+Esta opção de gráfico aplica-se apenas quando o objeto selecionado é um volume.
+
+
+
+== *Botão Zoom View*
+
+Apresenta uma vista ampliada dos dados da carta de contador.
+
+* Eventos
++
+A ocorrência de eventos críticos, de aviso e informativos é indicada nas linhas de tempo acima dos gráficos.
+
+* Contadores
++
+Os contadores no painel esquerdo mostram quais valores de contador estão sendo exibidos. Desmarcar ou selecionar o image:../media/eye-icon.gif[""] que está associado a um contador oculta e mostra as informações do contador do gráfico e pode ajudar na comparação de objetos.
+
+

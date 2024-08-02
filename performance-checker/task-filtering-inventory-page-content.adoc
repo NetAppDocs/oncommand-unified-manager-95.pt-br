@@ -1,0 +1,78 @@
+---
+permalink: performance-checker/task-filtering-inventory-page-content.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode filtrar os dados de inventário de desempenho no Unified Manager para localizar rapidamente os dados com base em critérios específicos. Você pode usar a filtragem para restringir o conteúdo das páginas do Unified Manager para mostrar apenas os resultados nos quais você está interessado. Isso fornece um método muito eficiente de exibir apenas os dados de desempenho em que você está interessado. 
+---
+= Filtragem do conteúdo da página de inventário de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode filtrar os dados de inventário de desempenho no Unified Manager para localizar rapidamente os dados com base em critérios específicos. Você pode usar a filtragem para restringir o conteúdo das páginas do Unified Manager para mostrar apenas os resultados nos quais você está interessado. Isso fornece um método muito eficiente de exibir apenas os dados de desempenho em que você está interessado.
+
+
+
+== Sobre esta tarefa
+
+Use *Filtering* para personalizar a exibição de grade com base em suas preferências. As opções de filtro disponíveis são baseadas no tipo de objeto que está sendo visualizado na grade. Se os filtros forem aplicados no momento, um asterisco (*) será exibido à esquerda do controle de filtragem.
+
+Quatro tipos de parâmetros de filtro são suportados.
+
+|===
+| Parâmetro | Validação 
+
+
+ a| 
+Cadeia de carateres (texto)
+ a| 
+Os operadores são *contém* e *começa com*.
+
+
+
+ a| 
+Número
+ a| 
+Os operadores são *maiores que* e *menores que*.
+
+
+
+ a| 
+Recurso
+ a| 
+Os operadores são *name contém* e *name começa com*.
+
+
+
+ a| 
+Estado
+ a| 
+Os operadores são *is* e *não*.
+
+|===
+Todos os três campos são obrigatórios para cada filtro; os filtros disponíveis refletem as colunas filtráveis na página atual. O número máximo de filtros que você pode aplicar é de quatro. Os resultados filtrados são baseados em parâmetros de filtro combinados. Os resultados filtrados aplicam-se a todas as páginas da pesquisa filtrada, não apenas à página exibida atualmente.
+
+Você pode adicionar filtros usando o painel filtragem.
+
+. Na parte superior da página, clique em *Filtering*. O painel de filtragem é exibido.
+. No painel filtragem, clique na lista suspensa esquerda e selecione um nome de objeto: Por exemplo, _Cluster_ ou um contador de desempenho.
+. Clique na lista suspensa central e selecione o operador booleano *name contains* ou *name começa com* se a primeira seleção for um nome de objeto. Se a primeira seleção for um contador de desempenho, selecione *maior que* ou *menor que*. Se a primeira seleção for *Status*, selecione *is* ou *não*.
+. Se os critérios de pesquisa exigirem um valor numérico, os botões de seta para cima e para baixo são exibidos no campo à direita. Você pode clicar nos botões de seta para cima e para baixo para exibir o valor numérico desejado.
+. Se necessário, digite seus critérios de pesquisa não numéricos no campo de texto à direita.
+. Para adicionar filtros, clique em *Adicionar filtro*. É apresentado um campo de filtro adicional. Conclua este filtro usando o processo descrito nas etapas anteriores. Observe que ao adicionar seu quarto filtro, o botão *Adicionar filtro* não será mais exibido.
+. Clique em *Apply Filter* (aplicar filtro). As opções de filtro são aplicadas à grade e um asterisco (*) é exibido no botão filtragem.
+. Use o painel filtragem para remover filtros individuais clicando no ícone de lixo à direita do filtro a ser removido.
+. Para remover todos os filtros, clique em *Reset* na parte inferior do painel de filtragem.
+
+
+
+
+== Exemplo de filtragem
+
+A ilustração mostra o painel filtragem com três filtros. O botão *Adicionar filtro* é exibido quando você tem menos do que o máximo de quatro filtros.
+
+image::../media/opm-filtering-panel-draft-3.gif[painel de filtragem opm rascunho 3]
+
+Depois de clicar em *Apply Filter*, o painel Filtering fecha e aplica os filtros.

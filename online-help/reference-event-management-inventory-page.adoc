@@ -1,0 +1,173 @@
+---
+permalink: online-help/reference-event-management-inventory-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página de inventário de eventos permite visualizar uma lista de eventos atuais e suas propriedades. Você pode executar tarefas como reconhecer, resolver e atribuir eventos. Você também pode adicionar um alerta a eventos específicos. 
+---
+= Página de inventário de eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página de inventário de eventos permite visualizar uma lista de eventos atuais e suas propriedades. Você pode executar tarefas como reconhecer, resolver e atribuir eventos. Você também pode adicionar um alerta a eventos específicos.
+
+Por padrão, as informações nesta página são atualizadas automaticamente a cada 5 minutos para garantir que os novos eventos mais atuais sejam exibidos.
+
+
+
+== Componentes do filtro
+
+Permite-lhe personalizar as informações apresentadas na lista de eventos. Você pode refinar a lista de eventos que são exibidos usando os seguintes componentes:
+
+* Menu View (Ver) para selecionar a partir de uma lista predefinida de seleções de filtros.
++
+Isso inclui itens como todos os eventos ativos (novos e reconhecidos), eventos de desempenho ativo, eventos atribuídos a mim (o usuário conetado) e todos os eventos gerados durante todas as janelas de manutenção.
+
+* Painel de pesquisa para refinar a lista de eventos inserindo termos completos ou parciais.
+* Botão de filtro que inicia o painel filtros para que você possa selecionar a partir de cada campo e atributo de campo disponível para refinar a lista de eventos.
+* Seletor de tempo para refinar a lista de eventos pelo momento em que o evento foi acionado.
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Atribuir a*
++
+Permite-lhe selecionar o utilizador a quem o evento é atribuído. Quando você atribui um evento a um usuário, o nome de usuário e a hora em que o evento foi atribuído são adicionados na lista de eventos para os eventos selecionados.
+
++
+** Eu
++
+Atribui o evento ao usuário conetado atualmente.
+
+** Outro utilizador
++
+Exibe a caixa de diálogo atribuir proprietário, que permite atribuir ou reatribuir o evento a outros usuários. Você também pode cancelar a atribuição de eventos deixando o campo propriedade em branco.
+
+
+
+* *Reconhecimento*
++
+Reconhece os eventos selecionados.
+
++
+Quando você reconhece um evento, seu nome de usuário e a hora em que você reconheceu o evento são adicionados na lista de eventos para os eventos selecionados. Quando você reconhece um evento, você é responsável por gerenciar esse evento.
+
++
+[NOTE]
+====
+Você não pode reconhecer eventos de informações.
+
+====
+* *Marcar como resolvido*
++
+Permite alterar o estado do evento para resolvido.
+
++
+Quando você resolve um evento, seu nome de usuário e a hora em que você resolveu o evento são adicionados na lista de eventos para os eventos selecionados. Depois de tomar medidas corretivas para o evento, você deve marcar o evento como resolvido.
+
+* *Adicionar alerta*
++
+Exibe a caixa de diálogo Adicionar alerta, que permite adicionar alertas para os eventos selecionados.
+
+* * Exportação*
++
+Permite exportar detalhes de todos os eventos para um (`.csv`arquivo de valores separados por vírgulas ).
+
+* * Seletor de coluna*
++
+Permite-lhe escolher as colunas que são apresentadas na página e selecionar a ordem em que são apresentadas.
+
+
+
+
+
+== Lista de eventos
+
+Exibe detalhes de todos os eventos ordenados por hora acionada.
+
+Por predefinição, são apresentados eventos novos e confirmados para os sete dias anteriores do tipo de gravidade crítico, erro e aviso.
+
+* *Tempo acionado*
++
+O momento em que o evento foi gerado.
+
+* *Gravidade*
++
+Gravidade do evento: Crítica (image:../media/sev-critical-um60.png[""] ), erro (image:../media/sev-error-um60.png[""] ), Aviso (image:../media/sev-warning-um60.png[""]) e informações (image:../media/sev-information-um60.gif[""]).
+
+* *Estado*
++
+O estado do evento: Novo, reconhecido, resolvido ou Obsoleto.
+
+* *Nível de impactos*
++
+O nível de impacto do evento: Incidente, risco ou evento.
+
+* *Área de impactos*
++
+A área de impacto do evento: Disponibilidade, capacidade, desempenho, proteção ou Configuração.
+
+* *Nome*
++
+O nome do evento.
+
++
+Você pode selecionar o nome do evento para exibir a página de detalhes do evento.
+
+* *Fonte*
++
+O nome do objeto no qual o evento ocorreu.
+
++
+Quando ocorre uma violação de política de QoS compartilhada, somente o objeto de workload que está consumindo a maioria das IOPS ou Mbps é mostrado neste campo. Cargas de trabalho adicionais que estão usando esta política são exibidas na página de detalhes do evento.
+
++
+Você pode selecionar o nome da fonte para exibir a página de detalhes de integridade ou desempenho para esse objeto.
+
+* *Tipo de fonte*
++
+O tipo de objeto (por exemplo, SVM, volume ou Qtree) ao qual o evento está associado.
+
+* *Atribuído a*
++
+O nome do usuário ao qual o evento é atribuído.
+
+* *Notas*
++
+O número de notas que são adicionadas para um evento.
+
+* *Dias pendentes*
++
+O número de dias desde o evento foi inicialmente gerado.
+
+* *Hora atribuída*
++
+O tempo decorrido desde que o evento foi atribuído a um usuário. Se o tempo decorrido exceder uma semana, o carimbo de data/hora quando o evento foi atribuído a um usuário é exibido.
+
+* *Reconhecido por*
++
+O nome do usuário que reconheceu o evento. O campo fica em branco se o evento não for reconhecido.
+
+* *Hora reconhecida*
++
+O tempo decorrido desde que o evento foi reconhecido. Se o tempo decorrido exceder uma semana, é apresentado o carimbo de data/hora quando o evento foi reconhecido.
+
+* *Resolvido por*
++
+O nome do usuário que resolveu o evento. O campo fica em branco se o evento não for resolvido.
+
+* *Tempo resolvido*
++
+O tempo decorrido desde que o evento foi resolvido. Se o tempo decorrido exceder uma semana, o carimbo de data/hora quando o evento foi resolvido é exibido.
+
+* *Tempo obsoleto*
++
+A época em que o estado do evento se tornou Obsoleto.
+
+

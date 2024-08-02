@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-noncompliant-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório de capacidade agregada e utilização para exibir os agregados filtrados pelo limite total. Isso permite visualizar os agregados que podem não estar em conformidade com as políticas da empresa. 
+---
+= Personalização do relatório de capacidade agregada e utilização para exibir agregados com configuração não compatível
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório de capacidade agregada e utilização para exibir os agregados filtrados pelo limite total. Isso permite visualizar os agregados que podem não estar em conformidade com as políticas da empresa.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por cluster ou par de HA, execute as seguintes etapas:
++
+.. Clique na coluna que precisa ser desagrupada.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para filtrar o limite de agregados não superior a 85%, clique na coluna *limite total de espaço* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista *condição*, selecione *maior que*.
+. Clique em *Select Values* e selecione *85*.
+. Clique em *OK*.
+

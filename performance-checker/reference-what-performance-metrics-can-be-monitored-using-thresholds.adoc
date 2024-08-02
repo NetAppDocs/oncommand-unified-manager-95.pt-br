@@ -1,0 +1,225 @@
+---
+permalink: performance-checker/reference-what-performance-metrics-can-be-monitored-using-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: Alguns contadores de performance comuns, como IOPS e Mbps, podem ter limites definidos para todos os objetos de storage. Existem outros contadores que podem ter limites definidos apenas para determinados objetos de armazenamento. 
+---
+= Quais contadores de desempenho podem ser rastreados usando limites
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Alguns contadores de performance comuns, como IOPS e Mbps, podem ter limites definidos para todos os objetos de storage. Existem outros contadores que podem ter limites definidos apenas para determinados objetos de armazenamento.
+
+
+
+== Contadores de desempenho disponíveis
+
+|===
+| Objeto de storage | Contador de desempenho | Descrição 
+
+
+ a| 
+Cluster
+ a| 
+IOPS
+ a| 
+Número médio de operações de entrada/saída que o cluster processa por segundo.
+
+
+
+ a| 
+Mbps
+ a| 
+Número médio de megabytes de dados transferidos de e para este cluster por segundo.
+ a| 
+Nó
+
+
+
+ a| 
+IOPS
+ a| 
+Número médio de operações de entrada/saída que o nó processa por segundo.
+ a| 
+Mbps
+
+
+
+ a| 
+Número médio de megabytes de dados transferidos de e para este nó por segundo.
+ a| 
+Latência
+ a| 
+Número médio de milissegundos que o nó leva para responder às solicitações de aplicação.
+
+
+
+ a| 
+Utilização
+ a| 
+Porcentagem média da CPU e RAM do nó que está sendo usado.
+ a| 
+Capacidade de performance utilizada
+
+
+
+ a| 
+Porcentagem média de capacidade de performance consumida pelo nó.
+ a| 
+Capacidade de desempenho utilizada - takeover
+ a| 
+Porcentagem média de capacidade de performance consumida pelo nó e a capacidade de performance do nó do parceiro.
+
+
+
+ a| 
+Agregado
+ a| 
+IOPS
+ a| 
+Número médio de operações de entrada/saída os processos agregados por segundo.
+
+
+
+ a| 
+Mbps
+ a| 
+Número médio de megabytes de dados transferidos de e para este agregado por segundo.
+ a| 
+Latência
+
+
+
+ a| 
+Número médio de milissegundos que o agregado leva para responder às solicitações do aplicativo.
+ a| 
+Utilização
+ a| 
+Porcentagem média dos discos do agregado que estão sendo usados.
+
+
+
+ a| 
+Capacidade de performance utilizada
+ a| 
+Porcentagem média de capacidade de performance consumida pelo agregado.
+ a| 
+Máquina de Storage Virtual (SVM)
+
+
+
+ a| 
+IOPS
+ a| 
+Número médio de operações de entrada/saída processadas pelo SVM por segundo.
+ a| 
+Mbps
+
+
+
+ a| 
+Número médio de megabytes de dados transferidos de e para este SVM por segundo.
+ a| 
+Latência
+ a| 
+Número médio de milissegundos que o SVM leva para responder a solicitações de aplicações.
+
+
+
+ a| 
+Volume
+ a| 
+IOPS
+ a| 
+Número médio de operações de entrada/saída o volume processa por segundo.
+
+
+
+ a| 
+Mbps
+ a| 
+Número médio de megabytes de dados transferidos de e para este volume por segundo.
+ a| 
+Latência
+
+
+
+ a| 
+Número médio de milissegundos que o volume leva para responder às solicitações do aplicativo.
+ a| 
+Relação de falta de cache
+ a| 
+Porcentagem média de solicitações de leitura de aplicativos clientes que são retornadas do volume em vez de serem retornadas do cache.
+
+
+
+ a| 
+LUN
+ a| 
+IOPS
+ a| 
+Número médio de operações de entrada/saída que o LUN processa por segundo.
+
+
+
+ a| 
+Mbps
+ a| 
+Número médio de megabytes de dados transferidos de e para este LUN por segundo.
+ a| 
+Latência
+
+
+
+ a| 
+Número médio de milissegundos que o LUN leva para responder às solicitações de aplicativos.
+ a| 
+Namespace
+ a| 
+IOPS
+
+
+
+ a| 
+Número médio de operações de entrada/saída que o namespace processa por segundo.
+ a| 
+Mbps
+ a| 
+Número médio de megabytes de dados transferidos para e a partir deste namespace por segundo.
+
+
+
+ a| 
+Latência
+ a| 
+Número médio de milissegundos que o namespace leva para responder a solicitações de aplicativos.
+ a| 
+Porta
+
+
+
+ a| 
+Utilização de largura de banda
+ a| 
+Porcentagem média da largura de banda disponível da porta que está sendo usada.
+ a| 
+Mbps
+
+
+
+ a| 
+Número médio de megabytes de dados transferidos para e a partir desta porta por segundo.
+ a| 
+Interface lógica (LIF)
+ a| 
+Mbps
+
+|===
+[NOTE]
+====
+Os dados de capacidade de performance só estão disponíveis quando os nós de um cluster são instalados com o software ONTAP 9.0 ou posterior.
+
+====

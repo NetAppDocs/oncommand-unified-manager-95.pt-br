@@ -1,0 +1,77 @@
+---
+permalink: online-help/reference-top-performers-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A página principais executores exibe os objetos de armazenamento que têm o desempenho mais alto ou o desempenho mais baixo, com base no contador de desempenho selecionado. Por exemplo, na categoria SVMs, você pode exibir os SVMs que têm o IOPS mais alto, a latência mais alta ou o Mbps mais baixo. Esta página também é mostrada se algum dos melhores artistas tem algum evento de desempenho ativo(novo ou reconhecido).' 
+---
+= Página de melhores performers
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página principais executores exibe os objetos de armazenamento que têm o desempenho mais alto ou o desempenho mais baixo, com base no contador de desempenho selecionado. Por exemplo, na categoria SVMs, você pode exibir os SVMs que têm o IOPS mais alto, a latência mais alta ou o Mbps mais baixo. Esta página também mostra se algum dos melhores artistas tem algum evento de desempenho ativo (novo ou reconhecido).
+
+A página Top Performers exibe um máximo de 10 de cada objeto. Observe que o objeto volume inclui volumes FlexVol e volumes FlexGroup; ele não inclui componentes FlexGroup ou Infinite volumes.
+
+* *Intervalo de tempo*
++
+Pode selecionar um intervalo de tempo para visualizar os melhores desempenhos; o intervalo de tempo selecionado aplica-se a todos os objetos de armazenamento. Intervalos de tempo disponíveis:
+
++
+** Hora da última
+** Últimas 24 horas
+** Últimas 72 horas (padrão)
+** Últimos 7 dias
+
+
+* *Métrica*
++
+Clique no menu *Metric* para selecionar um contador diferente. As opções de contador são exclusivas do tipo de objeto. Por exemplo, os contadores disponíveis para o objeto *volumes* são *latência*, *IOPS* e *Mbps*. Alterar o contador recarrega os dados do painel com os melhores desempenhos com base no contador selecionado.
+
++
+Contadores disponíveis:
+
++
+** Latência
+** IOPS
+** Mbps
+** Capacidade de performance utilizada (para nós e agregados)
+** Utilização (para nós e agregados)
+
+
+* *Ordenar*
++
+Clique no menu *Classificar* para selecionar uma classificação ascendente ou descendente para o objeto e contador selecionados. As opções são *mais altas a mais baixas* e *mais baixas a mais altas*. Essas opções permitem que você visualize os objetos com o desempenho mais alto ou o menor desempenho.
+
+* *Barra de contador*
++
+A barra de contador no gráfico mostra as estatísticas de desempenho para cada objeto, representadas como uma barra para esse item. Os gráficos de barras são codificados por cores. Se o contador não estiver a violar um limite de desempenho, a barra do contador é apresentada a azul. Se uma violação de limite estiver ativa (um evento novo ou confirmado), a barra será exibida na cor do evento: Os eventos de aviso são exibidos em amarelo (image:../media/treemapstatus-warning-png.gif["Ícone para TreeMap – Estado de aviso"] ) e os eventos críticos são exibidos em vermelho (image:../media/treemapred-png.gif["Ícone para TreeMap – Cor vermelha"]). As violações de limite são mais indicadas pelos ícones do indicador de eventos de gravidade para avisos e eventos críticos.
+
++
+image::../media/top-10-example.gif[top 10 exemplo]
+
++
+Para cada gráfico, o eixo X exibe os melhores desempenhos para o tipo de objeto selecionado. O eixo Y exibe as unidades aplicáveis ao contador selecionado. Clicar no link do nome do objeto abaixo de cada elemento de gráfico de barras vertical navega para a página de destino de desempenho do objeto selecionado.
+
+* *Indicador de evento de gravidade*
++
+O ícone do indicador *evento de gravidade* é exibido à esquerda de um nome de objeto para eventos críticos ativos (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"] ) ou de aviso (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"]) nos gráficos com desempenho superior. Clique no ícone do indicador *evento de gravidade* para visualizar:
+
++
+** *Um evento*
++
+Navega para a página de detalhes do evento para esse evento.
+
+** *Dois ou mais eventos*
++
+Navega para a página de inventário de eventos, que é filtrada para exibir todos os eventos para o objeto selecionado.
+
+
+
+* *Botão Exportar*
++
+Cria um `.csv` arquivo que contém os dados que aparecem na barra do contador. Você pode optar por criar o arquivo para o único cluster que está visualizando ou para todos os clusters no data center.
+
+

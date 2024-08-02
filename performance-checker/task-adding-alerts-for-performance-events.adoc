@@ -1,0 +1,50 @@
+---
+permalink: performance-checker/task-adding-alerts-for-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode configurar alertas para eventos de desempenho individuais, como qualquer outro evento recebido pelo Unified Manager. Além disso, se você quiser tratar todos os eventos de desempenho e mandar e-mails para a mesma pessoa, você pode criar um único alerta para notificá-lo quando quaisquer eventos críticos ou de desempenho de aviso forem acionados. 
+---
+= Adição de alertas para eventos de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar alertas para eventos de desempenho individuais, como qualquer outro evento recebido pelo Unified Manager. Além disso, se você quiser tratar todos os eventos de desempenho e mandar e-mails para a mesma pessoa, você pode criar um único alerta para notificá-lo quando quaisquer eventos críticos ou de desempenho de aviso forem acionados.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+O exemplo abaixo mostra como criar um evento para todos os eventos críticos de latência, IOPS e Mbps. Você pode usar essa mesma metodologia para selecionar eventos de todos os contadores de desempenho e para todos os eventos de aviso.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Configuration* > *Alerting*.
+. Na página *Configuração/alertas*, clique em *Adicionar*.
+. Na caixa de diálogo *Adicionar alerta*, clique em *Nome* e insira um nome e uma descrição para o alerta.
+. Não selecione nenhum recurso na página *recursos*.
++
+Como não há recursos selecionados, o alerta é aplicado a todos os clusters, agregados, volumes e assim por diante, para os quais esses eventos são recebidos.
+
+. Clique em *Eventos* e execute as seguintes ações:
++
+.. Na lista gravidade do evento, selecione *Crítica*.
+.. No campo Nome do evento contém, digite `latency` e clique na seta para selecionar todos os eventos correspondentes.
+.. No campo Nome do evento contém, digite `iops` e clique na seta para selecionar todos os eventos correspondentes.
+.. No campo Nome do evento contém, digite `mbps` e clique na seta para selecionar todos os eventos correspondentes.
+
+
+. Clique em *ações* e selecione o nome do usuário que receberá o e-mail de alerta no campo *alertar esses usuários*.
+. Configure quaisquer outras opções nesta página para emitir toques SNMP e executar um script.
+. Clique em *Salvar*.
+

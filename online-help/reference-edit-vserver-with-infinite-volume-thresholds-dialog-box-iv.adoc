@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-edit-vserver-with-infinite-volume-thresholds-dialog-box-iv.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo Editar SVM com limites infinitos de volume para modificar os valores de limite padrão de cada SVM com Infinite volume, de acordo com os requisitos da sua organização. Os valores de limite padrão indicam o nível de atividade que deve ser atingido no SVM antes de um evento ser acionado. 
+---
+= Caixa de diálogo Edit SVM with Infinite volume thresholds (Editar SVM com limites de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo Editar SVM com limites infinitos de volume para modificar os valores de limite padrão de cada SVM com Infinite volume, de acordo com os requisitos da sua organização. Os valores de limite padrão indicam o nível de atividade que deve ser atingido no SVM antes de um evento ser acionado.
+
+
+
+== Capacidade
+
+A área capacidade permite definir condições de limite de capacidade para o SVM selecionado com Infinite volume:
+
+* *Espaço quase cheio*
++
+Especifica a porcentagem na qual o SVM com Infinite volume é considerado quase cheio. Ele também exibe o espaço correspondente (em GB, MB ou TB) no Infinite volume. Por exemplo, se você tiver um Infinite volume de tamanho 10 GB e o limite espaço quase cheio for de 80%, as seguintes informações serão exibidas: (8 GB de 10 GB).
+
++
+Você também pode usar o controle deslizante para definir o valor de limite.
+
+* *Espaço cheio*
++
+Especifica a porcentagem na qual o SVM com Infinite volume é considerado cheio. Ele também exibe o espaço correspondente (em GB, MB ou TB) no Infinite volume. Por exemplo, se você tiver um Infinite volume de tamanho 10 GB e o limite espaço cheio for de 90%, as seguintes informações serão exibidas: (9 GB de 10 GB).
+
++
+Você também pode usar o controle deslizante para definir o valor de limite.
+
+* *Limite de uso do Snapshot*
++
+Especifica o limite, em porcentagem, de espaço reservado para cópias Snapshot no Infinite volume.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Restaurar para padrões globais*
++
+Permite restaurar as definições de limite para os valores atuais definidos a nível global.
+
+* *Guardar*
++
+Guarda todas as definições de limite.
+
+* *Salvar e fechar*
++
+Salva todas as configurações de limite e, em seguida, fecha a caixa de diálogo Editar SVM com limites de volume infinitos.
+
+* *Cancelar*
++
+Ignora quaisquer alterações nas configurações de limite e fecha a caixa de diálogo Editar SVM com limites infinitos de volume.
+
+

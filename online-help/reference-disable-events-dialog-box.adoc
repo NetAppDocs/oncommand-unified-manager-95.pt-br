@@ -1,0 +1,59 @@
+---
+permalink: online-help/reference-disable-events-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo Desativar eventos exibe a lista de tipos de eventos para os quais você pode desativar eventos. Você pode desativar eventos para um tipo de evento com base em uma gravidade específica ou em um conjunto de eventos. 
+---
+= Caixa de diálogo Desativar eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Desativar eventos exibe a lista de tipos de eventos para os quais você pode desativar eventos. Você pode desativar eventos para um tipo de evento com base em uma gravidade específica ou em um conjunto de eventos.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Área Propriedades do evento
+
+A área Propriedades do evento especifica as seguintes propriedades do evento:
+
+* *Gravidade do evento*
++
+Permite selecionar eventos com base no tipo de gravidade, que pode ser Crítica, erro, Aviso ou Informação.
+
+* *Nome do evento contém*
++
+Permite filtrar eventos cujo nome contém os carateres especificados.
+
+* *Eventos correspondentes*
++
+Exibe a lista de eventos que correspondem ao tipo de gravidade do evento e à cadeia de texto especificada.
+
+* *Desativar eventos*
++
+Exibe a lista de eventos que você selecionou para desativar.
+
++
+A gravidade do evento também é exibida juntamente com o nome do evento.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas para os eventos selecionados:
+
+* *Salvar e fechar*
++
+Desativa o tipo de evento e fecha a caixa de diálogo.
+
+* *Cancelar*
++
+Descarta as alterações e fecha a caixa de diálogo.
+
+

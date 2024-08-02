@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-viewing-job-details.html 
+sidebar: sidebar 
+keywords:  
+summary: Depois de iniciar um trabalho, pode monitorizar o seu progresso a partir da página proteção/detalhes do trabalho e monitorizar as tarefas associadas relativamente a possíveis erros. 
+---
+= Exibindo detalhes do trabalho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de iniciar um trabalho, pode monitorizar o seu progresso a partir da página proteção/detalhes do trabalho e monitorizar as tarefas associadas relativamente a possíveis erros.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *proteção* > *empregos*.
+. Na página *proteção/trabalhos*, clique no nome de um trabalho na coluna *Nome* para exibir a lista de tarefas associadas ao trabalho.
+. Clique em uma tarefa para exibir informações adicionais no painel *Detalhes da tarefa* e no painel *mensagens da tarefa* à direita da lista de tarefas.
+

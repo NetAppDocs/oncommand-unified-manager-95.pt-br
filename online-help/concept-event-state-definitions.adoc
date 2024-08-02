@@ -1,0 +1,52 @@
+---
+permalink: online-help/concept-event-state-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: O estado de um evento ajuda a identificar se é necessária uma ação corretiva adequada. Um evento pode ser novo, reconhecido, resolvido ou Obsoleto. Observe que eventos novos e reconhecidos são considerados eventos ativos. 
+---
+= Definições de estado do evento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O estado de um evento ajuda a identificar se é necessária uma ação corretiva adequada. Um evento pode ser novo, reconhecido, resolvido ou Obsoleto. Observe que eventos novos e reconhecidos são considerados eventos ativos.
+
+Os estados do evento são os seguintes:
+
+* *Novo*
++
+O estado de um novo evento.
+
+* *Reconhecido*
++
+O estado de um evento quando você o reconheceu.
+
+* *Resolvido*
++
+O estado de um evento quando ele é marcado como resolvido.
+
+* *Obsoleto*
++
+O estado de um evento quando ele é corrigido automaticamente ou quando a causa do evento não é mais válida.
+
++
+[NOTE]
+====
+Não é possível reconhecer ou resolver um evento obsoleto.
+
+====
+
+
+
+
+== Exemplo de estados diferentes de um evento
+
+Os exemplos a seguir ilustram as alterações manuais e automáticas do estado do evento.
+
+Quando o Cluster de Eventos não alcançável é acionado, o estado de evento é novo. Quando você reconhece o evento, o estado do evento muda para confirmado. Quando você tiver tomado uma ação corretiva apropriada, você deve marcar o evento como resolvido. O estado do evento muda então para resolvido.
+
+Se o evento Cluster Not reachable for gerado devido a uma falha de energia, então, quando a energia for restaurada, o cluster começa a funcionar sem qualquer intervenção do administrador. Portanto, o evento Cluster Not reachable não é mais válido e o estado do evento muda para Obsoleto no próximo ciclo de monitoramento.
+
+O Unified Manager envia um alerta quando um evento está no estado Obsoleto ou resolvido. A linha de assunto do e-mail e o conteúdo de um alerta fornecem informações sobre o estado do evento. Uma armadilha SNMP também inclui informações sobre o estado do evento.

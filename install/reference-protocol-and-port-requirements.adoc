@@ -1,0 +1,204 @@
+---
+permalink: install/reference-protocol-and-port-requirements.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Usando um navegador, um cliente de API ou SSH, as portas necessárias devem estar acessíveis à IU e às APIs do Unified Manager. As portas e protocolos necessários permitem a comunicação entre o servidor do Unified Manager e os sistemas de storage gerenciado, servidores e outros componentes. 
+---
+= Requisitos de protocolo e porta
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Usando um navegador, um cliente de API ou SSH, as portas necessárias devem estar acessíveis à IU e às APIs do Unified Manager. As portas e protocolos necessários permitem a comunicação entre o servidor do Unified Manager e os sistemas de storage gerenciado, servidores e outros componentes.
+
+
+
+== Conexões ao servidor do Unified Manager
+
+Não é necessário especificar números de portas ao se conetar à IU da Web do Unified Manager, pois as portas padrão são sempre usadas. Por exemplo, como o Unified Manager sempre é executado em sua porta padrão, você pode digitar `\https://<host>` em vez `\https://<host>:443` de . Os números de porta padrão não podem ser alterados.
+
+O servidor do Unified Manager usa protocolos específicos para acessar as seguintes interfaces:
+
+|===
+| Interface | Protocolo | Porta | Descrição 
+
+
+ a| 
+IU da Web do Unified Manager
+ a| 
+HTTP
+ a| 
+80
+ a| 
+Usado para acessar a IU da Web do Unified Manager; redireciona automaticamente para a porta segura 443.
+
+
+
+ a| 
+IU da Web do Unified Manager e programas que usam APIs
+ a| 
+HTTPS
+ a| 
+443
+ a| 
+Usado para acessar com segurança a IU da Web do Unified Manager ou para fazer chamadas de API; as chamadas de API só podem ser feitas usando HTTPS.
+
+
+
+ a| 
+Consola de manutenção
+ a| 
+SSH/SFTP
+ a| 
+22
+ a| 
+Usado para acessar o console de manutenção e recuperar pacotes de suporte.
+
+
+
+ a| 
+Linha de comando Linux
+ a| 
+SSH/SFTP
+ a| 
+22
+ a| 
+Usado para acessar a linha de comando Red Hat Enterprise Linux ou CentOS e recuperar pacotes de suporte.
+
+
+
+ a| 
+Banco de dados MySQL
+ a| 
+MySQL
+ a| 
+3306
+ a| 
+Usado para habilitar o acesso aos Serviços de API do OnCommand Workflow Automation e do OnCommand ao Unified Manager.
+
+
+
+ a| 
+Syslog
+ a| 
+UDP
+ a| 
+514
+ a| 
+Utilizado para aceder a mensagens EMS baseadas em subscrição a partir de sistemas ONTAP e para criar eventos com base nas mensagens.
+
+
+
+ a| 
+DESCANSO
+ a| 
+HTTPS
+ a| 
+9443
+ a| 
+Usado para acessar eventos EMS baseados em API REST em tempo real a partir de sistemas ONTAP autenticados.
+
+|===
+
+
+== Conexões do servidor do Unified Manager
+
+Você deve configurar seu firewall para abrir portas que habilitem a comunicação entre o servidor do Unified Manager e sistemas de armazenamento gerenciados, servidores e outros componentes. Se uma porta não estiver aberta, a comunicação falhará.
+
+Dependendo do seu ambiente, você pode optar por modificar as portas e protocolos usados pelo servidor do Unified Manager para se conetar a destinos específicos.
+
+O servidor Unified Manager se coneta, usando os seguintes protocolos e portas, aos sistemas de storage gerenciado, servidores e outros componentes:
+
+|===
+| Destino | Protocolo | Porta | Descrição 
+
+
+ a| 
+Sistema de storage
+ a| 
+HTTPS
+ a| 
+443/TCP
+ a| 
+Usado para monitorar e gerenciar sistemas de storage.
+
+
+
+ a| 
+Sistema de storage
+ a| 
+NDMP
+ a| 
+10000/TCP
+ a| 
+Usado para certas operações de restauração do Snapshot.
+
+
+
+ a| 
+Servidor AutoSupport
+ a| 
+HTTPS
+ a| 
+443
+ a| 
+Usado para enviar informações do AutoSupport. Requer acesso à Internet para executar esta função.
+
+
+
+ a| 
+Servidor de autenticação
+ a| 
+LDAP
+ a| 
+389
+ a| 
+Usado para fazer solicitações de autenticação e solicitações de pesquisa de usuários e grupos.
+
+
+
+ a| 
+LDAPS
+ a| 
+636
+ a| 
+Usado para comunicação LDAP segura.
+ a| 
+Servidor de correio
+
+
+
+ a| 
+SMTP
+ a| 
+25
+ a| 
+Usado para enviar e-mails de notificação de alerta.
+ a| 
+Emissor de trap SNMP
+
+
+
+ a| 
+SNMPv1 ou SNMPv3
+ a| 
+162/UDP
+ a| 
+Usado para enviar armadilhas SNMP de notificação de alerta.
+ a| 
+Servidor de provedor de dados externo
+
+
+
+ a| 
+TCP
+ a| 
+2003
+ a| 
+Usado para enviar dados de desempenho para um provedor de dados externo, como o Graphite.
+ a| 
+Servidor NTP
+
+|===

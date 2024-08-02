@@ -1,0 +1,69 @@
+---
+permalink: online-help/reference-snapshot-copies-on-a-volume-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar as cópias Snapshot em uma caixa de diálogo volume para exibir a lista de cópias snapshot. É possível excluir uma cópia Snapshot para conservar ou liberar espaço em disco ou se a cópia não for mais necessária. Você também pode calcular a quantidade de espaço em disco que pode ser recuperado se uma ou mais cópias Snapshot forem excluídas. 
+---
+= Cópias snapshot em uma caixa de diálogo volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar as cópias Snapshot em uma caixa de diálogo volume para exibir a lista de cópias snapshot. É possível excluir uma cópia Snapshot para conservar ou liberar espaço em disco ou se a cópia não for mais necessária. Você também pode calcular a quantidade de espaço em disco que pode ser recuperado se uma ou mais cópias Snapshot forem excluídas.
+
+
+
+== Vista de lista
+
+A exibição de lista exibe, em formato tabular, informações sobre as cópias Snapshot no volume. Você pode usar os filtros de coluna para personalizar os dados exibidos.
+
+* *Cópia Snapshot*
++
+Exibe o nome da cópia Snapshot.
+
+* *Espaço usado %*
++
+Exibe, em porcentagem, o espaço total usado pela cópia Snapshot no volume.
+
+* * Tamanho total*
++
+Exibe o tamanho total da cópia Snapshot.
+
+* *Hora criada*
++
+Exibe o carimbo de data/hora quando a cópia Snapshot foi criada.
+
+* *Dependência*
++
+Exibe os aplicativos que dependem da cópia Snapshot. Os valores possíveis são SnapMirror, SnapVault, SnapLock, Dump, LUNs, Vclone e Busy.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Calcular*
++
+Permite calcular o espaço que pode ser recuperado com a exclusão de uma ou mais cópias Snapshot.
+
+* *Excluir selecionados*
++
+Exclui uma ou mais cópias Snapshot.
+
+* *Fechar*
++
+Fecha as cópias Snapshot em uma caixa de diálogo volume.
+
+* *Recalculate*
++
+Permite calcular o espaço que pode ser recuperado excluindo as cópias Snapshot selecionadas.
+
++
+O botão *Recalcular* é ativado quando você faz quaisquer alterações na seleção das cópias Snapshot.
+
+

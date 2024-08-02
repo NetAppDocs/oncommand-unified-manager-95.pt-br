@@ -1,0 +1,56 @@
+---
+permalink: performance-checker/task-editing-user-defined-performance-threshold-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode editar as configurações de limite para as políticas de limite de desempenho existentes. Isso pode ser útil se você achar que está recebendo muitos ou poucos alertas para determinadas condições de limite. 
+---
+= Editando políticas de limite de performance definidas pelo usuário
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar as configurações de limite para as políticas de limite de desempenho existentes. Isso pode ser útil se você achar que está recebendo muitos ou poucos alertas para determinadas condições de limite.
+
+
+
+== Antes de começar
+
+Tem de ter a função de Administrador do OnCommand.
+
+
+
+== Sobre esta tarefa
+
+Não é possível alterar o nome da política ou o tipo de objeto de armazenamento que está sendo monitorado para políticas de limite existentes.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, selecione *Configuração* > *limites de desempenho*.
++
+A página limites de configuração/desempenho é exibida.
+
+. Selecione a política de limite que deseja alterar e clique em *Editar*.
++
+É apresentada a página Editar política de limites.
+
+. Faça suas alterações na política de limite e clique em *Salvar*.
++
+Regressa à página limites de configuração/desempenho.
+
+
+
+
+
+== Resultados
+
+Depois que eles são salvos, as alterações são atualizadas imediatamente em todos os objetos de armazenamento que usam a diretiva.
+
+
+
+== Depois de terminar
+
+Dependendo do tipo de alterações feitas na política, talvez você queira revisar as configurações de alerta configuradas para os objetos que usam a diretiva na página Configuração/alertas.

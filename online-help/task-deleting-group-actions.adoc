@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-deleting-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode excluir uma ação de grupo do Unified Manager quando a ação de grupo não for mais necessária. 
+---
+= Eliminar ações de grupo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir uma ação de grupo do Unified Manager quando a ação de grupo não for mais necessária.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Quando você exclui a ação de grupo para o limite de integridade do volume, os limites globais são aplicados aos objetos de storage nesse grupo. Quaisquer limites de integridade no nível do objeto definidos no objeto de storage não são afetados.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Gestão* > *grupos*.
+. Na guia *ações de grupo*, selecione a ação de grupo que deseja excluir e clique em *Excluir*.
+. Na caixa de diálogo *Aviso*, confirme a exclusão clicando em *Sim*.
+

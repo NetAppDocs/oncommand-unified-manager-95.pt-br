@@ -1,0 +1,54 @@
+---
+permalink: online-help/reference-browse-directories-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo Procurar diretórios quando quiser restaurar dados para um diretório em um cluster e SVM diferente da origem original. O cluster de origem e o volume originais são selecionados por padrão. 
+---
+= Caixa de diálogo Procurar diretórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo Procurar diretórios quando quiser restaurar dados para um diretório em um cluster e SVM diferente da origem original. O cluster de origem e o volume originais são selecionados por padrão.
+
+A caixa de diálogo Procurar diretórios permite selecionar o cluster, SVM, volume e caminho do diretório para o qual você deseja que os dados sejam restaurados.
+
+* *Cluster*
++
+Lista os destinos de cluster disponíveis para os quais pode restaurar. Por predefinição, é selecionado o cluster do volume de origem original.
+
+* *Lista suspensa SVM*
++
+Lista o SVM disponível disponível para o cluster selecionado. Por padrão, o SVM do volume de origem original é selecionado.
+
+* *Volume*
++
+Lista todos os volumes de leitura/gravação em um SVM selecionado. Você pode filtrar os volumes por nome e por espaço disponível. O volume com mais espaço é listado primeiro, e assim por diante, em ordem decrescente. Por predefinição, o volume de origem original é selecionado.
+
+* * Caixa de texto caminho do arquivo*
++
+Permite que você digite o caminho do arquivo para o qual deseja que os dados sejam restaurados. O caminho inserido já deve existir.
+
+* *Nome*
++
+Apresenta os nomes das pastas disponíveis para o volume selecionado. Clicar em uma pasta na lista Nome exibe as subpastas, se houver. Os ficheiros contidos nas pastas não são apresentados. Ao clicar image:../media/icon-upfolder.gif[""] depois de selecionar uma pasta, você sobe um nível na estrutura de diretórios.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Selecione diretório*
++
+Aplica suas seleções e fecha a caixa de diálogo Procurar diretórios. Se nenhum diretório for selecionado, este botão será desativado.
+
+* *Cancelar*
++
+Descarta suas seleções e fecha a caixa de diálogo Procurar diretórios.
+
+

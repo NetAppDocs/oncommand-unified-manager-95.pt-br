@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-about-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: As cotas fornecem uma maneira de restringir ou rastrear o espaço em disco e o número de arquivos usados por um usuário, grupo ou qtree. Você especifica cotas usando o arquivo /etc/cotas. As cotas são aplicadas a um volume ou qtree específico. 
+---
+= Sobre cotas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+As cotas fornecem uma maneira de restringir ou rastrear o espaço em disco e o número de arquivos usados por um usuário, grupo ou qtree. Você especifica cotas usando o `/etc/quotas` arquivo. As cotas são aplicadas a um volume ou qtree específico.

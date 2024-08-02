@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-user-access-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Com base nas configurações do RBAC, você pode adicionar usuários da página Gerenciamento/usuários e atribuir funções apropriadas a esses usuários para acessar e monitorar seus clusters. 
+---
+= Descrição das janelas e caixas de diálogo de acesso do usuário
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Com base nas configurações do RBAC, você pode adicionar usuários da página Gerenciamento/usuários e atribuir funções apropriadas a esses usuários para acessar e monitorar seus clusters.

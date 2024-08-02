@@ -1,0 +1,78 @@
+---
+permalink: online-help/reference-components-of-the-node-failover-planning-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Os componentes da página Planejamento de failover de desempenho/nó são exibidos em uma grade e no painel de comparação. Essas seções permitem avaliar o impacto de um failover de nó na performance do nó de takeover. 
+---
+= Componentes da página de Planejamento de failover de nó
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os componentes da página Planejamento de failover de desempenho/nó são exibidos em uma grade e no painel de comparação. Essas seções permitem avaliar o impacto de um failover de nó na performance do nó de takeover.
+
+
+
+== Grade de estatísticas de desempenho
+
+A página Planejamento de failover de desempenho/nó exibe uma grade contendo estatísticas de latência, IOPS, utilização e capacidade de desempenho usada.
+
+[NOTE]
+====
+Os valores de IOPS exibidos nesta página e na página Performance/Node Performance Explorer podem não ser os mesmos.
+
+====
+Na grade, cada nó recebe uma das seguintes funções:
+
+* Primário
++
+O nó que assume o parceiro de HA quando o parceiro falha. O objeto raiz é sempre o nó primário.
+
+* Parceiro
++
+O nó que falha no cenário de failover.
+
+* Aquisição estimada
++
+O mesmo que o nó principal. As estatísticas de desempenho exibidas para esse nó mostram o desempenho do nó de aquisição após assumir o parceiro com falha.
+
+
+
+[NOTE]
+====
+Embora a carga de trabalho do nó de takeover seja equivalente às cargas de trabalho combinadas de ambos os nós após um failover, as estatísticas do nó de takeover estimado não são a soma das estatísticas do nó principal e do nó do parceiro. Por exemplo, se a latência do nó principal for de 2 ms/op e a latência do nó Parceiro for de 3 ms/op, o nó de aquisição estimado poderá ter uma latência de 4 ms/op. Esse valor é um cálculo executado pelo Unified Manager.
+
+====
+Você pode clicar no nome do nó Parceiro se quiser que ele se torne o objeto raiz. Depois que a página Performance/Node Performance Explorer for exibida, você pode clicar na guia *Planejamento de failover* para ver como o desempenho muda neste cenário de falha de nó. Por exemplo, se Node1 for o nó principal e Node2 for o nó Parceiro, você poderá clicar em Node2 para torná-lo o nó principal. Dessa forma, você pode ver como o desempenho estimado muda dependendo de qual nó falhar.
+
+
+
+== Painel de comparação
+
+A lista a seguir descreve os componentes exibidos no painel de comparação por padrão:
+
+* *Gráficos de eventos*
++
+Eles são exibidos no mesmo formato que os da página Performance/Node Performance Explorer. Eles dizem respeito apenas ao nó primário.
+
+* *Contador de gráficos*
++
+Eles exibem estatísticas históricas para o contador de desempenho mostrado na grade. Em cada gráfico, o gráfico do nó de aquisição estimado mostra o desempenho estimado se um failover ocorreu em um determinado momento.
+
++
+Por exemplo, suponha que o gráfico de utilização mostre 73% para o nó de aquisição estimado às 11 da manhã do dia 8 de fevereiro. Se um failover tivesse ocorrido naquele momento, a utilização do nó de aquisição seria de 73%.
+
++
+As estatísticas históricas ajudam você a encontrar o momento ideal para iniciar um failover, minimizando a possibilidade de sobrecarregar o nó de aquisição. Você pode agendar um failover apenas em momentos em que o desempenho previsto do nó de takeover seja aceitável.
+
+
+
+Por padrão, as estatísticas do objeto raiz e do nó do parceiro são exibidas no painel de comparação. Ao contrário da página Performance/Node Performance Explorer, esta página não exibe o botão *Add* para adicionar objetos para comparação de estatísticas.
+
+Você pode personalizar o painel de comparação da mesma maneira que faz na página Performance/Node Performance Explorer. A lista a seguir mostra exemplos de personalização dos gráficos:
+
+* Clique no nome de um nó para mostrar ou ocultar as estatísticas do nó nos gráficos do contador.
+* Clique em *Zoom View* para exibir um gráfico detalhado para um contador específico em uma nova janela.
+

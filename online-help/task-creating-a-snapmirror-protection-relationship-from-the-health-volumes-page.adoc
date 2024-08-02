@@ -1,0 +1,79 @@
+---
+permalink: online-help/task-creating-a-snapmirror-protection-relationship-from-the-health-volumes-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Usar a página de inventário de integridade/volumes permite criar vários relacionamentos de proteção SnapMirror ao mesmo tempo, selecionando mais de um volume no mesmo SVM. 
+---
+= Criando um relacionamento de proteção SnapMirror a partir da página de inventário de integridade/volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Usar a página de inventário de integridade/volumes permite criar vários relacionamentos de proteção SnapMirror ao mesmo tempo, selecionando mais de um volume no mesmo SVM.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter configurado o Workflow Automation.
+
+
+
+
+== Sobre esta tarefa
+
+O menu *Protect* não é exibido nas seguintes instâncias:
+
+* Se as configurações RBAC não permitirem essa ação: Por exemplo, se você tiver apenas Privileges de operador
+* Quando o ID do volume é desconhecido: Por exemplo, quando você tem uma relação entre clusters e o cluster de destino ainda não foi descoberto
+
+
+
+
+== Passos
+
+. Na página de inventário *Saúde/volumes*, clique com o botão direito do Mouse em um volume que você deseja proteger.
++
+Como alternativa, para criar vários relacionamentos de proteção no mesmo SVM, selecione um ou mais volumes na página de inventário de integridade/volumes e clique em *proteger* > *SnapMirror* na barra de ferramentas.
+
++
+A caixa de diálogo Configurar proteção é exibida.
+
+. Clique em *SnapMirror* para visualizar a guia *SnapMirror* e configurar as informações de destino.
+. Clique em *Avançado* para definir a garantia de espaço, conforme necessário, e clique em *aplicar*.
+. Preencha a área *informações de destino* e a área *Configurações de relacionamento* na guia *SnapMirror*.
+. Clique em *aplicar*.
++
+Você será devolvido à página de inventário de integridade/volumes.
+
+. Clique no link trabalho de configuração de proteção na parte superior da página de inventário *Saúde/volumes*.
++
+Se estiver a criar apenas uma relação de proteçãoão, é apresentada a página proteção/detalhes do trabalho; no entanto, se estiver a criar mais do que uma relação de proteçãoão, é apresentada uma lista de todos os trabalhos associados à operação de proteçãoão.
+
+. Execute um dos seguintes procedimentos:
++
+** Se tiver apenas um trabalho, clique em *Atualizar* para atualizar a lista de tarefas e os detalhes da tarefa associados ao trabalho de configuração de proteção e para determinar quando o trabalho está concluído.
+** Se tiver mais de um trabalho:
++
+... Clique num trabalho na lista de trabalhos.
+... Clique em *Atualizar* para atualizar a lista de tarefas e os detalhes da tarefa associados ao trabalho de configuração de proteção e para determinar quando o trabalho está concluído.
+... Use o botão *voltar* para retornar à lista filtrada e exibir outro trabalho.
+
+
+
+
+
+
+
+
+== Resultados
+
+Dependendo do SVM de destino especificado durante a configuração ou das opções habilitadas nas configurações avançadas, a relação SnapMirror resultante pode ser uma das várias variações possíveis:
+
+* Se você especificou um SVM de destino que seja executado na mesma ou em uma versão mais recente do ONTAP em comparação com a do volume de origem, uma relação do SnapMirror baseada em replicação de bloco será o resultado padrão.
+* Se você especificou um SVM de destino que seja executado na mesma ou em uma versão mais recente do ONTAP (8,3 ou posterior) em comparação com o volume de origem, mas ativou a replicação flexível de versão nas configurações avançadas, o resultado será uma relação do SnapMirror com a replicação flexível de versão.
+* Se você especificou um SVM de destino que é executado em uma versão anterior do ONTAP 8,3 ou uma versão posterior que a do volume de origem e a versão anterior oferece suporte à replicação flexível de versão, uma relação do SnapMirror com a replicação flexível de versão será o resultado automático.
+

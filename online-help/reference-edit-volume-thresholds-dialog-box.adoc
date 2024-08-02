@@ -1,0 +1,158 @@
+---
+permalink: online-help/reference-edit-volume-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode configurar alertas para enviar notificações quando um evento relacionado à capacidade de um volume é gerado e pode tomar ações corretivas para o evento. Por exemplo, para o limite volume cheio, você pode configurar um alerta para enviar uma notificação quando a condição persistir durante um período especificado. 
+---
+= Caixa de diálogo Editar limites de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar alertas para enviar notificações quando um evento relacionado à capacidade de um volume é gerado e você pode tomar ações corretivas para o evento. Por exemplo, para o limite volume cheio, você pode configurar um alerta para enviar uma notificação quando a condição persistir durante um período especificado.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+A caixa de diálogo Editar limites de volume permite configurar limites de nível de volume aplicados aos volumes selecionados. Quando os limites são configurados no nível do volume, eles têm prioridade sobre os limites de nível do grupo ou os valores de limite de nível global.
+
+Você pode configurar as configurações de limite de capacidade, cópias Snapshot, cota de qtree, crescimento e inodes no nível de volume. Quando uma ação de grupo do tipo de limite de volume é configurada, os valores de limite de ação de grupo são usados para configurações que não estão configuradas no nível de volume. Quando nenhuma ação de grupo do tipo de limite de volume está configurada, as áreas na caixa de diálogo Editar limites de volume que não estão configuradas, use valores de limite global.
+
+
+
+== Área de capacidade
+
+A área capacidade permite definir as seguintes condições de limite de capacidade de volume:
+
+* *Espaço quase cheio*
++
+Especifica a porcentagem em que um volume é considerado quase cheio. Também exibe o tamanho do volume correspondente ao valor limite especificado.
+
++
+Você também pode usar o controle deslizante para definir o valor de limite.
+
+* *Espaço cheio*
++
+Especifica a porcentagem em que um volume é considerado cheio. Também exibe o tamanho do volume correspondente ao valor limite especificado.
+
++
+Você também pode usar o controle deslizante para definir o valor de limite.
+
+* *Dias até completo*
++
+Especifica o número de dias restantes antes de o volume atingir a capacidade total.
+
+
+
+
+
+== Cópias Snapshot
+
+A área cópias Snapshot permite definir as seguintes condições de limite para as cópias Snapshot no volume.
+
+* *Reserva Snapshot completa*
++
+Especifica a porcentagem em que o espaço reservado para cópias Snapshot é considerado cheio.
+
+* *Dias até completo*
++
+Especifica o número de dias restantes antes que o espaço reservado para cópias Snapshot alcance a capacidade total.
+
+* *Contagem*
++
+Especifica o número de cópias snapshot em um volume que é considerado muito.
+
+
+
+
+
+== Área de cota Qtree
+
+A área de cota Qtree permite definir as seguintes condições de limite de cota de qtree para os volumes selecionados:
+
+* * Quase exagerado*
++
+Especifica a porcentagem em que um volume é considerado quase sobrecarregado por cotas de qtree.
+
+* * Overcommitted*
++
+Especifica a porcentagem em que um volume é considerado sobrecarregado por cotas de qtree.
+
+
+
+
+
+== Área de crescimento
+
+A área de crescimento permite definir a seguinte condição de limite para o crescimento de volume:
+
+* *Taxa de crescimento*
++
+Especifica a porcentagem em que a taxa de crescimento de um volume é considerada normal antes que o sistema gere um evento anormal de taxa de crescimento de volume.
+
+* * Sensibilidade da taxa de crescimento*
++
+Especifica o fator que é aplicado ao desvio padrão da taxa de crescimento de um volume. Se a taxa de crescimento exceder o desvio padrão fatorado, é gerado um evento anormal da taxa de crescimento do volume.
+
++
+Um valor mais baixo para a sensibilidade da taxa de crescimento indica que o volume é altamente sensível às mudanças na taxa de crescimento.
+
++
+[NOTE]
+====
+Se você modificar a sensibilidade da taxa de crescimento para volumes no nível do limiar global, a mudança também será aplicada à sensibilidade da taxa de crescimento para agregados no nível do limiar global.
+
+====
+
+
+
+
+== Área de inodes
+
+A área inodes permite definir as seguintes condições de limite para inodes:
+
+* *Quase cheio*
++
+Especifica a porcentagem em que um volume é considerado como tendo consumido a maioria de seus inodes.
+
++
+Você também pode usar os controles deslizantes para definir o valor de limite.
+
+* *Full*
++
+Especifica a porcentagem na qual um volume é considerado ter consumido todos os seus inodes.
+
++
+Você também pode usar os controles deslizantes para definir o valor de limite.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas para um volume selecionado:
+
+* *Restaurar para padrões*
++
+Permite restaurar os valores de limite para uma das seguintes opções:
+
++
+** Valores de grupo, se o volume pertencer a um grupo e esse grupo tiver um tipo de ação de limite de volume.
+** Valores globais, se o volume não pertencer a nenhum grupo ou se pertencer a um grupo que não tenha um tipo de ação de limite de volume.
+
+
+* *Guardar*
++
+Guarda todas as definições de limite.
+
+* *Salvar e fechar*
++
+Salva todas as configurações de limite e fecha a caixa de diálogo.
+
+* *Cancelar*
++
+Ignora as alterações (se houver) nas definições de limiar e fecha a caixa de diálogo.
+
+

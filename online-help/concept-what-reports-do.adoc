@@ -1,0 +1,41 @@
+---
+permalink: online-help/concept-what-reports-do.html 
+sidebar: sidebar 
+keywords:  
+summary: Os relatórios exibem informações detalhadas sobre objetos de armazenamento, que permitem revisar e identificar possíveis problemas. 
+---
+= O que os relatórios fazem
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os relatórios exibem informações detalhadas sobre objetos de armazenamento, que permitem revisar e identificar possíveis problemas.
+
+Você pode salvar, excluir, compartilhar, agendar e importar relatórios. Você também pode pesquisar relatórios específicos. Você pode personalizar relatórios para lidar com casos de uso específicos e salvar o relatório personalizado para uso futuro. Você pode executar operações adicionais, como filtragem, classificação, agrupamento e formatação.
+
+Por padrão, cada grupo de relatórios é exibido por tipo de relatório e descrição. Você pode executar relatórios para exibir um grupo de relatórios específico.
+
+Depois de executar um relatório, você pode personalizá-lo e salvar o relatório personalizado. Você pode exibir os relatórios personalizados salvos na página relatórios, agrupados na categoria de relatório específico.
+
+Você pode agendar relatórios para serem enviados ou compartilhar relatórios em um dos formatos suportados: PDF, XHTML, CSV, XLS ou texto.
+
+Você pode exportar relatórios em diferentes formatos e salvá-los em sua área de trabalho. Você pode exportar dados de coluna individuais dos relatórios gerados.
+
+Você pode importar arquivos de design de relatório(`.rptdesign`) e salvar os relatórios importados na página relatórios. Pode eliminar relatórios personalizados e importados.
+
+Você pode importar os seguintes relatórios:
+
+* Relatórios com vários cabeçalhos que têm uma extensão de coluna definida como um
+* Relatórios apenas com gráficos
+* Relatórios apenas com listas e grade
+
+
+Os relatórios nos formatos de texto, CSV e Excel são suportados nos seguintes cenários:
+
+* Elemento de tabela somente no `.rptdesign` arquivo
+* Uma tabela com apenas um cabeçalho como uma linha
+
+
+Não é possível importar relatórios que tenham uma extensão de coluna de mais de um. Se um relatório no formato texto, CSV ou Excel tiver mais de uma linha de um cabeçalho, apenas a primeira linha de cabeçalho será considerada e as linhas restantes serão ignoradas.

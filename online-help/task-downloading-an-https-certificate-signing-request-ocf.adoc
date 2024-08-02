@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-downloading-an-https-certificate-signing-request-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode baixar uma solicitação de certificação para o certificado de segurança HTTPS atual para que você possa fornecer o arquivo a uma autoridade de certificação para assinar. Um certificado assinado pela CA ajuda a evitar ataques man-in-the-middle e fornece melhor proteção de segurança do que um certificado autoassinado. 
+---
+= Transferir uma solicitação de assinatura de certificado HTTPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode baixar uma solicitação de certificação para o certificado de segurança HTTPS atual para que você possa fornecer o arquivo a uma autoridade de certificação para assinar. Um certificado assinado pela CA ajuda a evitar ataques man-in-the-middle e fornece melhor proteção de segurança do que um certificado autoassinado.
+
+
+
+== Antes de começar
+
+Tem de ter a função de Administrador do OnCommand.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *certificado HTTPS* no menu *Configuração*.
+. Clique em *Download de solicitação de assinatura de certificado HTTPS*.
+. Salve o `<hostname>.csr` arquivo.
+
+
+
+
+== Depois de terminar
+
+Você pode fornecer o arquivo a uma autoridade de certificação para assinar e, em seguida, instalar o certificado assinado.

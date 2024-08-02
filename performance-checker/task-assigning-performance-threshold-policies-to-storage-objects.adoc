@@ -1,0 +1,94 @@
+---
+permalink: performance-checker/task-assigning-performance-threshold-policies-to-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: Você atribui uma política de limite de desempenho definido pelo usuário a um objeto de storage para que o Unified Manager relate um evento se o valor do contador de desempenho exceder a configuração de política. 
+---
+= Atribuindo políticas de limite de desempenho a objetos de storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você atribui uma política de limite de desempenho definido pelo usuário a um objeto de storage para que o Unified Manager relate um evento se o valor do contador de desempenho exceder a configuração de política.
+
+
+
+== Antes de começar
+
+Tem de ter a função de Administrador do OnCommand.
+
+A política de limite de desempenho, ou políticas, que você deseja aplicar ao objeto, deve existir.
+
+
+
+== Sobre esta tarefa
+
+Você pode aplicar apenas uma política de desempenho de cada vez a um objeto ou a um grupo de objetos.
+
+É possível atribuir um máximo de três políticas de limite a cada objeto de storage. Ao atribuir políticas a vários objetos, se algum dos objetos já tiver o número máximo de políticas atribuído, o Unified Manager executará as seguintes ações:
+
+* Aplica a política a todos os objetos selecionados que não atingiram o seu máximo
+* Ignora os objetos que atingiram o número máximo de políticas
+* Exibe uma mensagem informando que a diretiva não foi atribuída a todos os objetos
+
+
+Além disso, se alguns objetos não suportarem o contador que está sendo rastreado na política de limite, a política não será aplicada a esse objeto. Por exemplo, se você criar uma política de limite de capacidade de desempenho usada e tentar atribuí-la a um nó que não tenha o software ONTAP 9.0 ou posterior instalado, a política não será aplicada a esse nó.
+
+
+
+== Passos
+
+. Na página inventário de desempenho de qualquer objeto de storage, selecione o objeto ou objetos aos quais você deseja atribuir uma política de limite:
++
+|===
+| Para atribuir limites a... | Clique em... 
+
+
+ a| 
+Um único objeto
+ a| 
+A caixa de verificação à esquerda desse objeto.
+
+
+
+ a| 
+Vários objetos
+ a| 
+A caixa de verificação à esquerda de cada objeto.
+
+
+
+ a| 
+Todos os objetos na página
+ a| 
+A image:../media/select-dropdown-65-png.gif[""]caixa suspensa e escolha *Selecione todos os objetos nesta página*.
+
+
+
+ a| 
+Todos os objetos do mesmo tipo
+ a| 
+A image:../media/select-dropdown-65-png.gif[""]caixa suspensa e escolha *Selecionar todos os objetos*.
+
+|===
++
+Você pode usar a funcionalidade de classificação e filtragem para refinar a lista de objetos na página de inventário para facilitar a aplicação de políticas de limite a muitos objetos.
+
+. Faça sua seleção e clique em *Assign Performance Threshold Policy*.
++
+A página atribuir política de limite é exibida, mostrando uma lista de políticas de limite que existem para esse tipo específico de objeto de armazenamento.
+
+. Clique em cada política para exibir os detalhes das configurações de limite de desempenho para verificar se você selecionou a política de limite correta.
+. Depois de selecionar a política de limite apropriada, clique em *Assign Policy* (atribuir política).
++
+Uma mensagem de sucesso na parte superior da página confirma que a diretiva de limite foi atribuída ao objeto ou objetos e fornece um link para a página de alertas para que você possa configurar as configurações de alerta para esse objeto e política.
+
+
+
+
+
+== Depois de terminar
+
+Se você quiser que os alertas sejam enviados por e-mail ou como uma armadilha SNMP, para notificá-lo de que um evento de desempenho específico foi gerado, você deve configurar as configurações de alerta na página Configuração/alertas.

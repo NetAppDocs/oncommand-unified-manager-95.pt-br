@@ -1,0 +1,70 @@
+---
+permalink: online-help/reference-constituent-volume-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Use a página informações de volume de desempenho/constituinte para exibir uma lista dos atributos físicos e lógicos do volume constituinte do FlexGroup. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho. 
+---
+= Performance/Constituent volume Information page
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use a página informações de volume de desempenho/constituinte para exibir uma lista dos atributos físicos e lógicos do volume constituinte do FlexGroup. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho.
+
+
+
+== Atributos do volume constituinte
+
+* *Tipo*
++
+O tipo do constituinte; leitura-escrita (RW) ou proteção de dados (DP).
+
+* *Estilo*
++
+O estilo do volume; este é um volume constituinte de um volume FlexGroup.
+
+* *Cluster*
++
+O nome do cluster ao qual pertence este volume constituinte do FlexGroup. Você pode clicar no nome para exibir os detalhes do cluster na página Performance/Cluster Explorer.
+
+* *Agregado*
++
+O nome do agregado no qual reside este volume constituinte do FlexGroup. Você pode clicar no nome para exibir detalhes agregados na página Explorador de desempenho/agregado.
+
+* *FlexGroup*
++
+O nome do volume FlexGroup ao qual este constituinte pertence. Você pode clicar no nome para exibir os detalhes do volume do FlexGroup na página desempenho/Explorador do FlexGroup.
+
+* *Storage Virtual Machine*
++
+O nome do SVM ao qual pertence este volume constituinte do FlexGroup. Você pode clicar no nome para exibir os detalhes do SVM na página Performance/SVM Explorer.
+
+* *Política de disposição em camadas*
++
+A política de disposição em categorias definida no volume. A política afeta somente quando o volume é implantado em um agregado FabricPool. As políticas disponíveis são:
+
++
+** Nenhum. Os dados desse volume sempre permanecem na camada de performance.
+** Apenas Snapshot. Somente os dados do Snapshot são movidos automaticamente para a categoria de nuvem. Todos os outros dados permanecem na camada de performance.
+** Backup. Em volumes de proteção de dados, todos os dados de usuário transferidos começam na camada de nuvem, mas leituras posteriores de clientes podem fazer com que os dados ativos sejam movidos para a categoria de performance.
+** Auto. Os dados desse volume são movidos automaticamente entre a camada de desempenho e a camada de nuvem quando o ONTAP determina que os dados estão "quentes" ou "frios".
+
+
+* *Tipo RAID*
++
+O tipo de redundância que está sendo usado no agregado onde este constituinte reside. Tipos possíveis:
+
++
+** RAID0
+** RAID4
+** RAID-DP
+** RAID-TEC
+
+
+* *Capacidade (grátis/total)*
++
+O armazenamento total disponível no constituinte, em gigabytes, e a quantidade de armazenamento atualmente disponível.
+
+

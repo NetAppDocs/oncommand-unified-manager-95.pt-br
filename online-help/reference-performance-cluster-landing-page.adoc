@@ -1,0 +1,29 @@
+---
+permalink: online-help/reference-performance-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página de destino do cluster de desempenho exibe o status de desempenho de alto nível de um cluster selecionado. A página permite acessar detalhes completos de cada contador de desempenho para os objetos de armazenamento no cluster selecionado. 
+---
+= Página inicial do cluster de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página de destino do cluster de desempenho exibe o status de desempenho de alto nível de um cluster selecionado. A página permite acessar detalhes completos de cada contador de desempenho para os objetos de armazenamento no cluster selecionado.
+
+Você pode clicar no botão *Favoritos* (image:../media/favorites-inactive.png[""]) para adicionar este objeto à sua lista de objetos de armazenamento favoritos. Um botão azul (image:../media/favorites-active.png[""]) indica que este objeto já é um favorito.
+
+A página de destino do cluster de desempenho inclui quatro guias que separam os detalhes do cluster em quatro áreas de informações:
+
+* Página de resumo
++
+** Painel Eventos do cluster
+** Painel objetos gerenciados
+
+
+* Página de melhores performers
+* Página Explorer
+* Página de informações
+

@@ -1,0 +1,37 @@
+---
+permalink: health-checker/task-editing-individual-qtree-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode editar as configurações de limite de integridade para a capacidade de qtree para um ou mais qtrees. Quando um limite é cruzado, os alertas são gerados e você recebe notificações. Essas notificações ajudam você a tomar medidas preventivas com base no evento gerado. 
+---
+= Editar configurações individuais de limite de integridade de qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar as configurações de limite de integridade para a capacidade de qtree para um ou mais qtrees. Quando um limite é cruzado, os alertas são gerados e você recebe notificações. Essas notificações ajudam você a tomar medidas preventivas com base no evento gerado.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Com base nas alterações nos valores de limite, os eventos são gerados ou obsoletos no próximo ciclo de monitoramento.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Na página de inventário *máquinas virtuais de integridade/storage*, selecione o SVM no qual a qtree reside.
+. Na página de detalhes *Health/Storage Virtual Machine*, clique na guia Qtrees.
+. Selecione um ou mais qtrees e clique em *Editar limites*.
+. Na caixa de diálogo *Editar limites de Qtree*, altere os limites de capacidade para a qtree ou qtrees selecionados e clique em *Salvar*.
+

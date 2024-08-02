@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-identifying-the-best-node-for-a-busy-lif-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode exibir informações sobre todas as portas em um cluster. Você pode exibir informações como a função de porta de rede (cluster, dados ou gerenciamento de nó), status do link, unidade máxima de transmissão (MTU), configuração de velocidade e status operacional e o grupo de interface da porta, se aplicável.' 
+---
+= Identificando o melhor nó para um LIF ocupado usando a CLI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exibir informações sobre todas as portas em um cluster. Você pode exibir informações como a função de porta de rede (cluster, dados ou gerenciamento de nós), status do link, MTU (unidade máxima de transmissão), configuração de velocidade e status operacional e o grupo de interfaces da porta, se aplicável.
+
+
+
+== Passos
+
+. Para exibir as informações da porta, digite o seguinte comando: `network port show`
++
+O exemplo a seguir exibe informações sobre portas de rede que têm uma função de dados e estão no cluster:
+
++
+[listing]
+----
+cluster1::> network port show  -role data -link up
+                                   Auto-Negot Duplex      Speed (Mbps)
+Node Port Role         Link  MTU   Admin/Oper Admin/Oper  Admin/Oper
+---- ---- -----        ----  ----  ---------- ----------  ----------
+node1
+     e0M  data         up    1500  true/true  full/full   auto/100
+     e0b  data         up    1500  true/true  full/full   auto/1000
+
+node2
+     e0b  data         up    1500  true/true  full/full   auto/1000
+----
+. Verifique se há portas de destino que estejam na mesma rede que a porta inicial de origem e o nó inicial.
++
+Por exemplo, a porta inicial de destino e o nó inicial devem estar na mesma VLAN onde aplicável.
+
+. Para identificar a porta menos ocupada, escolha uma porta de dados que tenha o menor número de conexões.
+

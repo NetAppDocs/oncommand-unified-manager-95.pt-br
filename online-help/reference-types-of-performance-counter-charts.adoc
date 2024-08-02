@@ -1,0 +1,146 @@
+---
+permalink: online-help/reference-types-of-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: Existem gráficos de desempenho padrão que exibem os valores do contador para o objeto de armazenamento selecionado. Cada um dos gráficos do contador de avarias exibe os valores totais separados em ler, escrever e outras categorias. Além disso, alguns gráficos de contador de avarias apresentam detalhes adicionais quando o gráfico é apresentado na vista Zoom. 
+---
+= Tipos de gráficos de contador de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Existem gráficos de desempenho padrão que exibem os valores do contador para o objeto de armazenamento selecionado. Cada um dos gráficos do contador de avarias exibe os valores totais separados em ler, escrever e outras categorias. Além disso, alguns gráficos de contador de avarias apresentam detalhes adicionais quando o gráfico é apresentado na vista Zoom.
+
+A tabela a seguir mostra os gráficos de contador de desempenho disponíveis.
+
+|===
+| Gráficos disponíveis | Descrição da carta 
+
+
+ a| 
+Eventos
+ a| 
+Exibe eventos críticos, erros, avisos e informações em correlação com os gráficos estatísticos para o objeto raiz. Os eventos de saúde são exibidos além dos eventos de desempenho para fornecer uma visão completa dos motivos pelos quais o desempenho pode ser afetado.
+
+
+
+ a| 
+Latência - total
+ a| 
+Número de milissegundos necessários para responder às solicitações de aplicativos.Observe que os valores médios de latência são ponderados por e/S.
+
+
+
+ a| 
+Latência - avaria
+ a| 
+As mesmas informações mostradas no total de latência, mas com os dados de performance separados em leitura, gravação e outra latência. Essa opção de gráfico se aplica somente quando o objeto selecionado é um SVM, nó, agregado, volume, LUN ou namespace.
+
+
+
+ a| 
+Latência - componentes do cluster
+ a| 
+As mesmas informações mostradas no total de latência, mas com os dados de desempenho separados em latência por componente de cluster.esta opção de gráfico aplica-se apenas quando o objeto selecionado é um volume.
+
+
+
+ a| 
+IOPS - total
+ a| 
+Número de operações de entrada/saída processadas por segundo.
+
+
+
+ a| 
+IOPS - avaria
+ a| 
+As mesmas informações mostradas no total de IOPS, mas com os dados de performance separados em leitura, gravação e outros IOPS. Quando exibido na visualização Zoom, o gráfico de volumes exibe os valores de throughput mínimo e máximo de QoS, se configurado no ONTAP.
+
+Essa opção de gráfico se aplica somente quando o objeto selecionado é SVM, nó, agregado, volume, LUN ou namespace.
+
+
+
+ a| 
+IOPS - Protocolos
+ a| 
+As mesmas informações mostradas no total de IOPS, mas os dados de performance são separados em gráficos individuais para tráfego de protocolos CIFS, NFS, FCP, NVMe e iSCSI. Essa opção de gráfico se aplica somente quando o objeto selecionado é um SVM.
+
+
+
+ a| 
+IOPS/TB - total
+ a| 
+Número de operações de entrada/saída processadas por segundo com base no espaço total que está sendo consumido pela carga de trabalho, em terabytes. Também chamado de densidade de e/S, este contador mede quanto desempenho pode ser fornecido por uma determinada quantidade de capacidade de armazenamento.quando exibido na visualização Zoom, o gráfico de volumes exibe os valores de taxa de transferência esperada e de pico de QoS, se configurado no ONTAP.
+
+Esta opção de gráfico aplica-se apenas quando o objeto selecionado é um volume.
+
+
+
+ a| 
+Mbps - Total
+ a| 
+Número de megabytes de dados transferidos de e para o objeto por segundo.
+
+
+
+ a| 
+Mbps - avaria
+ a| 
+As mesmas informações mostradas no gráfico de Mbps, mas com os dados de Mbps separados em leituras de disco, o Flash Cache lê, grava e outros. Quando exibido na visualização Zoom, o gráfico de volumes exibe os valores máximos de taxa de transferência de QoS, se configurado no ONTAP.
+
+Essa opção de gráfico se aplica somente quando o objeto selecionado é SVM, nó, agregado, volume, LUN ou namespace.
+
+[NOTE]
+====
+Os dados do Flash Cache são exibidos somente para nós e somente quando um módulo Flash Cache é instalado no nó.
+
+====
+
+
+ a| 
+Capacidade de desempenho utilizada - total
+ a| 
+Porcentagem da capacidade de performance consumida pelo nó ou pelo agregado.
+
+[NOTE]
+====
+Os dados de capacidade de performance só estão disponíveis quando os nós de um cluster são instalados com o software ONTAP 9.0 ou posterior.
+
+====
+
+
+ a| 
+Capacidade de desempenho utilizada - avaria
+ a| 
+Capacidade de performance dados usados separados em protocolos de usuário e processos de fundo do sistema. Além disso, a quantidade de capacidade de desempenho livre é mostrada.
+
+
+
+ a| 
+IOPS disponíveis - total
+ a| 
+Número de operações de entrada/saída por segundo que estão atualmente disponíveis (livres) neste objeto. Esse número é o resultado da subtração do IOPS usado atualmente do total de IOPS que o Unified Manager calcula que o objeto pode executar. Esta opção de gráfico aplica-se apenas quando o objeto selecionado é um nó ou agregado.
+
+[NOTE]
+====
+Os dados de IOPS disponíveis estão disponíveis somente quando os nós em um cluster são instalados com o software ONTAP 9.0 ou posterior.
+
+====
+
+
+ a| 
+Utilização - Total
+ a| 
+Porcentagem de recurso disponível do objeto que está sendo usado. A utilização indica a utilização de nós para nós, a utilização de disco para agregados e a utilização de largura de banda para portas. Esta opção de gráfico aplica-se apenas quando o objeto selecionado é um nó, agregado ou porta.
+
+
+
+ a| 
+Taxa de perda de cache - total
+ a| 
+Porcentagem de solicitações de leitura de aplicativos clientes que são retornadas do disco em vez de serem retornadas do cache. Esta opção de gráfico aplica-se apenas quando o objeto selecionado é um volume.
+
+|===

@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-understanding-cluster-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível adicionar clusters ao banco de dados do Unified Manager para monitorar os clusters quanto à disponibilidade, capacidade e outros detalhes, como uso da CPU, estatísticas de interface, espaço livre em disco, uso de qtree e ambiente de chassi. 
+---
+= Compreender o monitoramento do cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível adicionar clusters ao banco de dados do Unified Manager para monitorar os clusters quanto à disponibilidade, capacidade e outros detalhes, como uso da CPU, estatísticas de interface, espaço livre em disco, uso de qtree e ambiente de chassi.
+
+Os eventos são gerados se o status for anormal ou quando um limite predefinido for violado. Se configurado para isso, o Unified Manager envia uma notificação para um destinatário especificado quando um evento aciona um alerta.
+
+O fluxograma a seguir ilustra o processo de monitoramento do Unified Manager:
+
+image::../media/cluster-monitoring2.gif[cluster monitoring2]

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-more-about-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Compreender os conceitos sobre eventos ajuda você a gerenciar seus clusters e objetos de cluster com eficiência e a definir alertas adequadamente. 
+---
+= Compreender mais sobre eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Compreender os conceitos sobre eventos ajuda você a gerenciar seus clusters e objetos de cluster com eficiência e a definir alertas adequadamente.

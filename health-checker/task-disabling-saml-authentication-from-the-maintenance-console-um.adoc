@@ -1,0 +1,57 @@
+---
+permalink: health-checker/task-disabling-saml-authentication-from-the-maintenance-console-um.html 
+sidebar: sidebar 
+keywords:  
+summary: Talvez seja necessário desativar a autenticação SAML do console de manutenção quando não houver acesso à GUI do Unified Manager. Isso pode acontecer em casos de má configuração ou se o IDP não estiver acessível. 
+---
+= Desativar a autenticação SAML a partir do console de manutenção
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Talvez seja necessário desativar a autenticação SAML do console de manutenção quando não houver acesso à GUI do Unified Manager. Isso pode acontecer em casos de má configuração ou se o IDP não estiver acessível.
+
+
+
+== Antes de começar
+
+Você deve ter acesso ao console de manutenção como usuário de manutenção.
+
+
+
+== Sobre esta tarefa
+
+Quando a autenticação SAML está desativada, os provedores de serviços de diretório configurados, como o ative Directory ou LDAP, executam a autenticação de logon. Usuários locais e usuários de manutenção poderão acessar a interface gráfica do usuário além de usuários remotos configurados.
+
+Você também pode desativar a autenticação SAML na página Configuração/Autenticação na IU.
+
+[NOTE]
+====
+O Unified Manager é reiniciado automaticamente após a autenticação SAML ser desativada.
+
+====
+
+
+== Passos
+
+. Inicie sessão na consola de manutenção.
+. No *Menu Principal*, insira o número da opção *Desativar autenticação SAML*.
++
+Uma mensagem é exibida para confirmar que você deseja desativar a autenticação SAML e reiniciar o Unified Manager.
+
+. Digite *y* e pressione Enter e o Unified Manager será reiniciado.
+
+
+
+
+== Resultados
+
+Na próxima vez que os usuários remotos tentarem acessar a interface gráfica do Unified Manager, eles inserirão suas credenciais na página de login do Unified Manager em vez da página de login do IDP.
+
+
+
+== Depois de terminar
+
+Se necessário, acesse seu IDP e exclua o URL e os metadados do servidor do Unified Manager.

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode criar relatórios para monitorar uma variedade de informações de capacidade e utilização sobre volumes. Por exemplo, você pode criar relatórios para exibir volumes usados, capacidade total, taxa de crescimento diária e capacidade de cópia Snapshot, o que pode ajudá-lo a determinar se um volume está ficando sem espaço ou se está sendo sobreutilizado ou subutilizado. 
+---
+= Personalizações do relatório de capacidade e utilização de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar relatórios para monitorar uma variedade de informações de capacidade e utilização sobre volumes. Por exemplo, você pode criar relatórios para exibir volumes usados, capacidade total, taxa de crescimento diária e capacidade de cópia Snapshot, o que pode ajudá-lo a determinar se um volume está ficando sem espaço ou se está sendo sobreutilizado ou subutilizado.

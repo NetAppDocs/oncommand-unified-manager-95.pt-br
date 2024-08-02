@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-nodes-running-older-versions-of-ontap.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório de inventário de cluster para exibir nós filtrados por versões mais antigas do ONTAP. 
+---
+= Personalizar o relatório de inventário de cluster para exibir nós que executam versões mais antigas do software ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório de inventário de cluster para exibir nós filtrados por versões mais antigas do ONTAP.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por cluster ou nó, execute as seguintes etapas:
++
+.. Clique na coluna que precisa ser desagrupada.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para filtrar os nós que não executam o ONTAP 8,3, clique na coluna *versão ONTAP* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista suspensa *condição*, selecione *não igual a*.
+. Clique em *Select Values* e selecione *8,3*.
+. Clique em *OK*.
+

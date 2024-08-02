@@ -1,0 +1,28 @@
+---
+permalink: online-help/task-displaying-the-counter-charts-zoom-view.html 
+sidebar: sidebar 
+keywords:  
+summary: A visualização de zoom de gráficos de contador fornece um nível mais fino de detalhes para o gráfico de contador selecionado e sua linha do tempo associada. Isso amplia os dados do gráfico de contador, permitindo que você tenha uma visão mais nítida dos eventos de desempenho e suas causas subjacentes. 
+---
+= Apresentar a vista de zoom das cartas do contador
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A visualização de zoom de gráficos de contador fornece um nível mais fino de detalhes para o gráfico de contador selecionado e sua linha do tempo associada. Isso amplia os dados do gráfico de contador, permitindo que você tenha uma visão mais nítida dos eventos de desempenho e suas causas subjacentes.
+
+
+
+== Sobre esta tarefa
+
+Pode apresentar a vista de zoom das cartas de contador para qualquer carta de contador.
+
+
+
+== Passos
+
+. Clique em *Zoom View* para abrir o gráfico selecionado uma nova janela do navegador.
+. Se você estiver exibindo um gráfico de divisão e, em seguida, clique em *Zoom View*, o gráfico de divisão é mostrado em Zoom View. Você pode selecionar *Total* enquanto estiver em Zoom View se quiser alterar a opção de exibição.
+

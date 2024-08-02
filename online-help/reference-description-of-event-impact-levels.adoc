@@ -1,0 +1,28 @@
+---
+permalink: online-help/reference-description-of-event-impact-levels.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Cada evento está associado a um nível de impactos (Incidente, risco ou evento) para ajudá-lo a priorizar os eventos que exigem ação corretiva imediata.' 
+---
+= Descrição dos níveis de impactos do evento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cada evento é associado a um nível de impactos (Incidente, risco ou evento) para ajudá-lo a priorizar os eventos que exigem ação corretiva imediata.
+
+* *Incidente*
++
+Um incidente é um conjunto de eventos que podem fazer com que um cluster pare de fornecer dados ao cliente e fique sem espaço para armazenar dados. Os eventos com um nível de impactos de Incidente são os mais graves. Devem ser tomadas medidas corretivas imediatas para evitar interrupções no serviço.
+
+* *Risco*
++
+Um risco é um conjunto de eventos que podem potencialmente fazer com que um cluster pare de fornecer dados ao cliente e fique sem espaço para armazenar dados. Eventos com um nível de impacto de risco podem causar interrupções no serviço. Pode ser necessária uma ação corretiva.
+
+* *Evento*
++
+Um evento é uma alteração de estado ou status de objetos de armazenamento e seus atributos. Os eventos com um nível de impactos de evento são informativos e não requerem ação corretiva.
+
+

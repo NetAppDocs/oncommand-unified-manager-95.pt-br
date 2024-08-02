@@ -1,0 +1,50 @@
+---
+permalink: online-help/reference-share-report-dialog-box-um-6-2.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode compartilhar um relatório com um ou mais usuários por e-mail. Depois de personalizar um relatório, você deve salvar as alterações antes de compartilhar o relatório para garantir que as alterações sejam exibidas. 
+---
+= Caixa de diálogo compartilhar Relatório
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode compartilhar um relatório com um ou mais usuários por e-mail. Depois de personalizar um relatório, você deve salvar as alterações antes de compartilhar o relatório para garantir que as alterações sejam exibidas.
+
+
+
+== Propriedades
+
+Você pode compartilhar um relatório especificando propriedades como o endereço de e-mail do usuário, assunto do e-mail e o formato do relatório.
+
+* *Endereço de e-mail do destinatário*
++
+Especifica o endereço de e-mail do usuário com quem você deseja compartilhar o relatório. Você pode especificar uma ou mais entradas, separadas por vírgulas. Este é um campo obrigatório.
+
+* *Assunto*
++
+Especifica o assunto do e-mail. Por padrão, o nome do relatório é exibido.
+
+* *Formato do relatório*
++
+Especifica o formato no qual você deseja compartilhar o relatório. A opção _PDF_ está selecionada por padrão. Se o formato XHTML estiver selecionado, abra o relatório que é enviado por e-mail usando um navegador da Web compatível.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Compartilhar*
++
+Compartilha o relatório com a configuração salva e fecha a caixa de diálogo compartilhar Relatório.
+
+* *Cancelar*
++
+Fecha a caixa de diálogo compartilhar relatório enquanto exibe uma mensagem para salvar a configuração do relatório.
+
+

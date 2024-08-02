@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-performing-suggested-remedial-actions-for-a-full-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Depois de receber um evento de erro "volume Space Full" (espaço de volume cheio), você analisa as ações corretivas sugeridas na página de detalhes do evento e decide executar uma das ações sugeridas.' 
+---
+= Executar ações corretivas sugeridas para um volume total
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de receber um evento de erro "volume Space Full", você analisa as ações corretivas sugeridas na página de detalhes do evento e decide executar uma das ações sugeridas.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+Um usuário com qualquer função pode executar todas as tarefas desse fluxo de trabalho que usam o Unified Manager.
+
+
+
+== Sobre esta tarefa
+
+Neste exemplo, você viu um evento de erro espaço de volume cheio na página Unified ManagerDashboards/Visão geral e clicou no nome do evento.
+
+As possíveis ações corretivas que você pode executar para um volume completo incluem as seguintes:
+
+* Habilitando o crescimento automático, a deduplicação ou a compactação no volume
+* Redimensionar ou mover o volume
+* Eliminar ou mover dados do volume
+
+
+Embora todas essas ações devam ser executadas a partir da OnCommand System Manager ou da CLI do ONTAP, você pode usar o Unified Manager para encontrar informações que talvez seja necessário para determinar quais ações tomar.
+
+
+
+== Passos
+
+. Na página de detalhes do *evento*, clique no nome do volume no campo origem para exibir detalhes sobre o volume afetado.
+. Na página de detalhes *Saúde/volume*, você clica em *Configuração* e vê que a deduplicação e a compactação já estão ativadas no volume.
++
+Você decide redimensionar o volume.
+
+. No painel *Related Devices* (dispositivos relacionados), clique no nome do agregado de hospedagem para ver se o agregado pode acomodar um volume maior.
+. Na página de detalhes *Saúde/agregado*, você vê que o agregado que hospeda o volume total tem capacidade não comprometida suficiente, então você usa o OnCommand System Manager para redimensionar o volume, dando mais capacidade.
+

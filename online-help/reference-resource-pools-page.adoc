@@ -1,0 +1,216 @@
+---
+permalink: online-help/reference-resource-pools-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página conjuntos de recursos/proteção exibe os pools de recursos existentes e seus membros e permite que você crie, monitore e gerencie pools de recursos para fins de provisionamento. 
+---
+= Página de proteção/pools de recursos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página conjuntos de recursos/proteção exibe os pools de recursos existentes e seus membros e permite que você crie, monitore e gerencie pools de recursos para fins de provisionamento.
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Criar*
++
+Inicia a caixa de diálogo criar pool de recursos, que você pode usar para criar pools de recursos.
+
+* *Editar*
++
+Permite editar o nome e a descrição dos pools de recursos criados.
+
+* *Excluir*
++
+Permite excluir um ou mais pools de recursos.
+
+
+
+
+
+== Lista de pools de recursos
+
+A lista pools de recursos exibe (em formato tabular) as propriedades dos pools de recursos existentes.
+
+* *Pool de recursos*
++
+Exibe o nome do pool de recursos.
+
+* *Descrição*
++
+Descreve o pool de recursos.
+
+* *Tipo SnapLock*
++
+Exibe o tipo SnapLock que está sendo usado pelos agregados no pool de recursos. Os valores válidos para o tipo SnapLock são Compliance, Enterprise e Non-SnapLock. Um pool de recursos pode conter agregados de apenas um tipo SnapLock.
+
+* * Capacidade total*
++
+Exibe a capacidade total (em MB, GB e assim por diante) do pool de recursos.
+
+* * Capacidade utilizada*
++
+Exibe a quantidade de espaço (em MB, GB e assim por diante) que é usada no pool de recursos.
+
+* *Capacidade disponível*
++
+Exibe a quantidade de espaço (em MB, GB e assim por diante) disponível no pool de recursos.
+
+* *% Usados*
++
+Exibe a porcentagem de espaço usada no pool de recursos.
+
+
+
+
+
+== Botões de comando da lista de membros
+
+Os botões de comando Lista de membros permitem executar as seguintes tarefas:
+
+* *Adicionar*
++
+Permite adicionar membros ao pool de recursos.
+
+* *Excluir*
++
+Permite excluir um ou mais membros do pool de recursos.
+
+
+
+
+
+== Lista de membros
+
+A lista Membros exibe (em formato tabular) os membros do pool de recursos e suas propriedades quando um pool de recursos é selecionado.
+
+* *Status*
++
+Exibe o status atual do agregado membro. O status pode ser crítico (image:../media/sev-critical-um60.png[""] ), erro (image:../media/sev-error-um60.png[""] ), Aviso (image:../media/sev-warning-um60.png[""] ) ou normal (image:../media/sev-normal-um60.png[""]).
+
+* *Nome agregado*
++
+Exibe o nome do agregado membro.
+
+* *Estado*
++
+Exibe o estado atual do agregado, que pode ser um dos seguintes:
+
++
+** Offline
++
+Acesso de leitura ou gravação não é permitido.
+
+** Online
++
+O acesso de leitura e gravação aos volumes que estão hospedados neste agregado é permitido.
+
+** Restrito
++
+Operações limitadas (como reconstrução de paridade) são permitidas, mas o acesso aos dados não é permitido.
+
+** A criar
++
+O agregado está sendo criado.
+
+** Destruindo
++
+O agregado está sendo destruído.
+
+** Falha
++
+O agregado não pode ser colocado online.
+
+** Congelado
++
+O agregado não está (temporariamente) atendendo solicitações.
+
+** Inconsistente
++
+O agregado foi marcado como corrompido; você deve entrar em Contato com o suporte técnico.
+
+** Ferro restrito
++
+As ferramentas de diagnóstico não podem ser executadas no agregado.
+
+** Montagem
++
+O agregado está em processo de montagem.
+
+** Parcial
++
+Pelo menos um disco foi encontrado para o agregado, mas dois ou mais discos estão faltando.
+
+** Quiescing
++
+O agregado está sendo silenciado.
+
+** Quiesced
++
+O agregado é aquiesced.
+
+** Revertido
++
+A reversão de um agregado é concluída.
+
+** Desmontado
++
+O agregado foi desmontado.
+
+** Desmontagem
++
+O agregado está sendo colocado off-line.
+
+** Desconhecido
++
+O agregado é descoberto, mas as informações agregadas ainda não são recuperadas pelo servidor do Unified Manager.
+
+
+
++
+Por padrão, essa coluna está oculta.
+
+* *Cluster*
++
+Exibe o nome do cluster ao qual o agregado pertence.
+
+* *Nó*
++
+Exibe o nome do nó no qual o agregado reside.
+
+* * Capacidade total*
++
+Exibe a capacidade total (em MB, GB e assim por diante) do agregado.
+
+* * Capacidade utilizada*
++
+Exibe a quantidade de espaço (em MB, GB e assim por diante) que é usada no agregado.
+
+* *Capacidade disponível*
++
+Exibe a quantidade de espaço (em MB, GB e assim por diante) que está disponível no agregado.
+
+* *% Usados*
++
+Exibe a porcentagem de espaço que é usado no agregado.
+
+* *Tipo de disco*
++
+Exibe o tipo de configuração RAID, que pode ser um dos seguintes:
+
++
+** RAID0: Todos os grupos RAID são do tipo RAID0.
+** RAID4: Todos os grupos RAID são do tipo RAID4.
+** RAID-DP: Todos os grupos RAID são do tipo RAID-DP.
+** RAID-TEC: Todos os grupos RAID são do tipo RAID-TEC.
+** RAID misto: O agregado contém grupos RAID de diferentes tipos de RAID (RAID0, RAID4, RAID-DP e RAID-TEC). Por padrão, essa coluna está oculta.
+
+
+

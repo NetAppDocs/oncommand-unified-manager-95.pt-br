@@ -1,0 +1,31 @@
+---
+permalink: health-checker/task-downloading-and-installing-mysql-connector-j.html 
+sidebar: sidebar 
+keywords:  
+summary: Você deve baixar e instalar os drivers MySQL Connector/J em um local específico. Você pode usar esses drivers para criar uma fonte de dados que coneta o relatório ao Unified Manager. 
+---
+= Baixar e instalar MySQL Connector/J
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você deve baixar e instalar os drivers MySQL Connector/J em um local específico. Você pode usar esses drivers para criar uma fonte de dados que coneta o relatório ao Unified Manager.
+
+
+
+== Sobre esta tarefa
+
+Você deve usar MySQL Connector/J versão 5,1 ou posterior.
+
+
+
+== Passos
+
+. Faça o download dos drivers MySQL Connector/J em `dev.mysql.com`.
+. Instale o `.jar` arquivo e anote sua localização para referência futura.
++
+Por exemplo, instale o `.jar` arquivo em `C:\Program Files\MySQL\MySQL Connector J\mysql-connector-java-5.1.32-bin.jar`.
+
+

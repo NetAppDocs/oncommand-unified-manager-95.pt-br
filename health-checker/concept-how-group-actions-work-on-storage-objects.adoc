@@ -1,0 +1,28 @@
+---
+permalink: health-checker/concept-how-group-actions-work-on-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: Uma ação de grupo é uma operação que é executada em todos os objetos de armazenamento em um grupo. Por exemplo, você pode configurar a ação de grupo de limite de volume para alterar simultaneamente os valores de limite de volume de todos os volumes em um grupo. 
+---
+= Como as ações de grupo funcionam em objetos de armazenamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Uma ação de grupo é uma operação que é executada em todos os objetos de armazenamento em um grupo. Por exemplo, você pode configurar a ação de grupo de limite de volume para alterar simultaneamente os valores de limite de volume de todos os volumes em um grupo.
+
+Os grupos suportam tipos de ação de grupo exclusivos. Você pode ter um grupo com apenas um tipo de ação de grupo de limite de integridade de volume. No entanto, você pode configurar um tipo diferente de ação de grupo, se disponível, para o mesmo grupo. A classificação de uma ação de grupo determina a ordem em que a ação é aplicada aos objetos de armazenamento. A página de detalhes de um objeto de armazenamento fornece informações sobre qual ação de grupo é aplicada no objeto de armazenamento.
+
+
+
+== Exemplo de ações de grupo únicas
+
+Considere um volume A que pertence aos grupos G1 e G2 e as seguintes ações de grupo de limite de integridade do volume estão configuradas para esses grupos:
+
+* `Change_capacity_threshold` ação de grupo com classificação 1, para configurar a capacidade do volume
+* `Change_snapshot_copies` Ação de grupo com classificação 2, para configurar as cópias Snapshot do volume
+
+
+A `Change_capacity_threshold` ação de grupo sempre tem prioridade sobre a `Change_snapshot_copies` ação de grupo e é aplicada ao volume A. quando o Unified Manager conclui um ciclo de monitoramento, os eventos relacionados ao limite de integridade do volume A são reavaliados de acordo com a `Change_capacity_threshold` ação do grupo. Não é possível configurar outro tipo de limite de volume de ação de grupo para o grupo G1 ou G2.

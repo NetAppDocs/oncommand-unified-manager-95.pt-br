@@ -1,0 +1,40 @@
+---
+permalink: health-checker/task-creating-a-snapmirror-policy-to-maximize-transfer-efficiency.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode criar uma política SnapMirror para especificar a prioridade de transferência SnapMirror para relacionamentos de proteção. As políticas do SnapMirror permitem maximizar a eficiência de transferência da origem para o destino, atribuindo prioridades para que as transferências de prioridade mais baixa sejam agendadas para serem executadas após as transferências de prioridade normal. 
+---
+= Criando uma política de SnapMirror para maximizar a eficiência de transferência
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar uma política SnapMirror para especificar a prioridade de transferência SnapMirror para relacionamentos de proteção. As políticas do SnapMirror permitem maximizar a eficiência de transferência da origem para o destino, atribuindo prioridades para que as transferências de prioridade mais baixa sejam agendadas para serem executadas após as transferências de prioridade normal.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter configurado o Workflow Automation.
+* Esta tarefa pressupõe que você já concluiu a área informações de destino na caixa de diálogo Configurar proteção.
+
+
+
+
+== Passos
+
+. Na guia *SnapMirror* da caixa de diálogo *Configurar proteção*, clique no link *criar política* na área *Configurações de relacionamento*.
++
+A caixa de diálogo criar política de SnapMirror é exibida.
+
+. No campo *Policy Name* (Nome da política), digite um nome que você deseja atribuir à política.
+. No campo *prioridade de transferência*, selecione a prioridade de transferência que deseja atribuir à política.
+. No campo *comentário*, insira um comentário opcional para a política.
+. Clique em *criar*.
++
+A nova política é exibida na lista suspensa Política de SnapMirror.
+
+

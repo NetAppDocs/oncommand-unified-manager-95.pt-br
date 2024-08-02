@@ -1,0 +1,126 @@
+---
+permalink: online-help/reference-event-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Na página de detalhes do evento, você pode exibir os detalhes de um evento selecionado, como a gravidade do evento, o nível de impactos, a área de impactos e a origem do evento. Você também pode exibir informações adicionais sobre possíveis correções para resolver o problema. 
+---
+= Página de detalhes do evento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Na página de detalhes do evento, você pode exibir os detalhes de um evento selecionado, como a gravidade do evento, o nível de impactos, a área de impactos e a origem do evento. Você também pode exibir informações adicionais sobre possíveis correções para resolver o problema.
+
+* *Nome do evento*
++
+O nome do evento e a hora em que o evento foi visto pela última vez.
+
++
+Para eventos que não sejam de desempenho, enquanto o evento estiver no estado novo ou reconhecido, a última informação vista não é conhecida e, portanto, está oculta.
+
+* *Descrição do evento*
++
+Uma breve descrição do evento.
+
++
+Em alguns casos, um motivo para o evento ser acionado é fornecido na descrição do evento.
+
+* *Componente em contenção*
++
+Para eventos de desempenho dinâmico, esta seção exibe ícones que representam os componentes lógicos e físicos do cluster. Se um componente estiver na contenção, seu ícone será circulado e destacado em vermelho.
+
++
+Podem ser apresentados os seguintes componentes:
+
++
+** *Rede*
++
+Representa o tempo de espera das solicitações de e/S pelos protocolos iSCSI ou Fibre Channel (FC) no cluster. O tempo de espera é o tempo gasto esperando que as transações iSCSI Ready to Transfer (R2T) ou FCP Transfer Ready (XFER_RDY) sejam concluídas antes que o cluster possa responder a uma solicitação de e/S. Se o componente de rede estiver em contenção, isso significa que o alto tempo de espera na camada de protocolo de bloco está impactando a latência de uma ou mais cargas de trabalho.
+
+** *Processamento de rede*
++
+Representa o componente de software no cluster envolvido com o processamento de e/S entre a camada de protocolo e o cluster. O processamento da rede de tratamento do nó pode ter sido alterado desde que o evento foi detetado. Se o componente de processamento de rede estiver em contenção, isso significa que a alta utilização no nó de processamento de rede está impactando a latência de uma ou mais cargas de trabalho.
+
+** *Política de QoS*
++
+Representa o grupo de políticas de qualidade do serviço (QoS) de storage do qual o workload é membro. Se o componente do grupo de políticas estiver na contenção, isso significa que todas as cargas de trabalho no grupo de políticas estão sendo controladas pelo limite de taxa de transferência definido, o que está impactando a latência de uma ou mais dessas cargas de trabalho.
+
+** *Interconexão de cluster*
++
+Representa os cabos e adaptadores com os quais os nós em cluster estão fisicamente conetados. Se o componente de interconexão de cluster estiver na contenção, isso significa que o tempo de espera alto para solicitações de e/S na interconexão de cluster está impactando a latência de um ou mais workloads.
+
+** *Data Processing*
++
+Representa o componente de software no cluster envolvido com o processamento de e/S entre o cluster e o agregado de storage que contém a carga de trabalho. O Data Processing de tratamento do nó pode ter sido alterado desde que o evento foi detetado. Se o componente Data Processing estiver em contenção, isso significa que a alta utilização no nó Data Processing está impactando a latência de um ou mais workloads.
+
+** *Recursos MetroCluster*
++
+Representa os recursos do MetroCluster, incluindo NVRAM e links interswitches (ISLs), usados para espelhar dados entre clusters em uma configuração do MetroCluster. Se o componente MetroCluster estiver em contenção, isso significa que a alta taxa de transferência de gravação de workloads no cluster local ou um problema de integridade de link está impactando a latência de um ou mais workloads no cluster local. Se o cluster não estiver em uma configuração do MetroCluster, este ícone não será exibido.
+
+** *Operações agregadas ou SSD agregadas*
++
+Representa o agregado de storage no qual os workloads estão sendo executados. Se o componente agregado estiver na contenção, isso significa que a alta utilização no agregado está impactando a latência de um ou mais workloads. Um agregado consiste em todos os HDDs ou uma combinação de HDDs e SSDs (agregado de Flash Pool). Um "agregado SSD" consiste em todos os SSDs (um agregado all-flash) ou uma combinação de SSDs e uma camada de nuvem (agregado FabricPool).
+
+** *Latência da nuvem*
++
+Representa o componente de software no cluster envolvido com o processamento de e/S entre o cluster e a camada de nuvem na qual os dados do usuário são armazenados. Se o componente de latência da nuvem estiver em contenção, isso significa que uma grande quantidade de leituras de volumes hospedados na camada de nuvem está impactando a latência de um ou mais workloads.
+
+** *Sincronizar SnapMirror*
++
+Representa o componente de software no cluster envolvido com a replicação dos dados do usuário do volume primário para o volume secundário em uma relação síncrona do SnapMirror. Se o componente Sync SnapMirror estiver na contenção, isso significa que a atividade das operações síncronas do SnapMirror está impactando a latência de um ou mais workloads.
+
+
+
+
+
+As seções informações de eventos, Diagnóstico do sistema e ações sugeridas são descritas em outros tópicos.
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Ícone de notas*
++
+Permite adicionar ou atualizar uma nota sobre o evento e rever todas as notas deixadas por outros utilizadores.
+
+
+
+*Menu ações*
+
+* *Atribuir a mim*
++
+Atribui o evento a você.
+
+* *Atribuir a outros*
++
+Abre a caixa de diálogo atribuir proprietário, que permite atribuir ou reatribuir o evento a outros usuários.
+
++
+Quando você atribui um evento a um usuário, o nome do usuário e a hora em que o evento foi atribuído são adicionados na lista de eventos para os eventos selecionados.
+
++
+Você também pode cancelar a atribuição de eventos deixando o campo propriedade em branco.
+
+* *Reconhecimento*
++
+Reconhece os eventos selecionados para que não continue a receber notificações de alerta repetidas.
+
++
+Quando você reconhece um evento, seu nome de usuário e a hora em que você reconheceu o evento são adicionados na lista de eventos (reconhecidos por) para os eventos selecionados. Quando você reconhece um evento, você assume a responsabilidade de gerenciar esse evento.
+
+* *Marcar como resolvido*
++
+Permite alterar o estado do evento para resolvido.
+
++
+Quando você resolve um evento, seu nome de usuário e a hora em que você resolveu o evento são adicionados na lista de eventos (resolvidos por) para os eventos selecionados. Depois de tomar medidas corretivas para o evento, você deve marcar o evento como resolvido.
+
+* *Adicionar alerta*
++
+Exibe a caixa de diálogo Adicionar alerta, que permite adicionar um alerta para o evento selecionado.
+
+

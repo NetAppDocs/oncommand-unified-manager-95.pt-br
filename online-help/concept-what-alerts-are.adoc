@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-alerts-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Embora os eventos ocorram continuamente, o Unified Manager gera um alerta somente quando um evento atende aos critérios de filtro especificados. Você pode escolher os eventos para os quais os alertas devem ser gerados, por exemplo, quando um limite de espaço é excedido ou um objeto fica offline. Você também pode associar um alerta a um script que é executado quando um alerta é acionado. 
+---
+= Quais são os alertas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Embora os eventos ocorram continuamente, o Unified Manager gera um alerta somente quando um evento atende aos critérios de filtro especificados. Você pode escolher os eventos para os quais os alertas devem ser gerados - por exemplo, quando um limite de espaço é excedido ou um objeto fica offline. Você também pode associar um alerta a um script que é executado quando um alerta é acionado.
+
+Os critérios de filtro incluem classe de objeto, nome ou gravidade do evento.

@@ -1,0 +1,53 @@
+---
+permalink: online-help/reference-edit-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a página Editar política de limite para modificar uma política de limite de desempenho existente. 
+---
+= Editar a página Política de limite de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a página Editar política de limite para modificar uma política de limite de desempenho existente.
+
+Você pode modificar os campos nesta página e clicar em *Salvar* para alterar uma política de limite de desempenho. Todos os objetos de cluster que estão usando atualmente a política de limite são atualizados automaticamente para usar a nova definição de política.
+
+* *Para tipo de objeto*
++
+O tipo de objeto não pode ser alterado.
+
+* *Nome da política*
++
+Altere o nome da política de limite.
+
+* *Descrição*
++
+Altere a descrição detalhada da política de limites.
+
+* *Valores de limiar*
++
+Altere a condição principal e, opcionalmente, a condição secundária do contador de limites.
+
++
+** *Selecione um contador*
++
+Altere o contador no qual deseja definir um limite de desempenho.
+
+** *Aviso*
++
+Introduza o valor limite para o contador que é considerado um aviso.
+
+** *Crítica*
++
+Introduza o valor limite para o contador que é considerado crítico.
+
+
+
+* *Duração*
++
+Altere o número de minutos em que o valor do contador deve ser superior ao valor de aviso ou limite crítico.
+
+

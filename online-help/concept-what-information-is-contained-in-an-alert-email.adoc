@@ -1,0 +1,27 @@
+---
+permalink: online-help/concept-what-information-is-contained-in-an-alert-email.html 
+sidebar: sidebar 
+keywords:  
+summary: Os e-mails de alerta do Unified Manager fornecem o tipo de evento, a gravidade do evento, o nome da política violada para causar o evento e uma descrição do evento. A mensagem de e-mail também fornece um hiperlink para cada evento que permite exibir a página de detalhes do evento na IU. 
+---
+= Quais informações estão contidas em um e-mail de alerta
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os e-mails de alerta do Unified Manager fornecem o tipo de evento, a gravidade do evento, o nome da política violada para causar o evento e uma descrição do evento. A mensagem de e-mail também fornece um hiperlink para cada evento que permite exibir a página de detalhes do evento na IU.
+
+Os e-mails de alerta são enviados a todos os usuários que se inscreveram para receber alertas.
+
+Se um contador de desempenho ou valor de capacidade tiver uma grande alteração durante um período de coleta, isso pode fazer com que um evento crítico e um evento de aviso sejam acionados ao mesmo tempo para a mesma política de limite. Neste caso, você pode receber um e-mail para o evento de aviso e um para o evento crítico. Isso ocorre porque o Unified Manager permite que você se inscreva separadamente para receber alertas de aviso e violações de limites críticos.
+
+[NOTE]
+====
+Após a atualização para o Unified Manager 7,2 ou superior, os links para eventos e alertas de e-mails enviados de versões mais antigas do Unified Manager não funcionarão mais devido a uma alteração nos URLs de eventos e alertas.
+
+====
+Um exemplo de e-mail de alerta é mostrado abaixo:
+
+image::../media/um-email-alert.gif[um alerta por e-mail]

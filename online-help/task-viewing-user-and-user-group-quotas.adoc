@@ -1,0 +1,28 @@
+---
+permalink: online-help/task-viewing-user-and-user-group-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: A página de inventário de máquinas virtuais de integridade/storage exibe informações sobre as cotas de usuário e grupo de usuários configuradas no SVM. Você pode exibir o nome do usuário ou grupo de usuários, os limites definidos nos discos e arquivos, o espaço usado em disco e arquivo e o endereço de e-mail para notificação. 
+---
+= Exibindo cotas de usuário e grupo de usuários
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página de inventário de máquinas virtuais de integridade/storage exibe informações sobre as cotas de usuário e grupo de usuários configuradas no SVM. Você pode exibir o nome do usuário ou grupo de usuários, os limites definidos nos discos e arquivos, o espaço usado em disco e arquivo e o endereço de e-mail para notificação.
+
+
+
+== Antes de começar
+
+Você deve ter uma das seguintes funções para executar esta tarefa: Operador, Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Na página de inventário *máquinas virtuais de armazenamento/integridade*, selecione um SVM e clique na guia *cotas de usuário e grupo*.
+

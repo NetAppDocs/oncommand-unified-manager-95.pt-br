@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-viewing-volume-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: Na página relacionamentos de proteção/volume, você pode visualizar o status das relações SnapMirror e SnapVault de volume existentes. Você também pode examinar detalhes sobre relacionamentos de proteção, incluindo status de transferência e atraso, detalhes de origem e destino, informações de programação e política, etc. 
+---
+= Exibindo relações de proteção de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Na página relacionamentos de proteção/volume, você pode visualizar o status das relações SnapMirror e SnapVault de volume existentes. Você também pode examinar detalhes sobre relacionamentos de proteção, incluindo status de transferência e atraso, detalhes de origem e destino, informações de programação e política, etc.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Você também pode iniciar comandos de relacionamento a partir desta página.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *proteção* > *relacionamentos de volume*.
++
+É apresentada a página Relações de proteção/volume.
+
+. Escolha uma das seguintes formas de visualizar os detalhes de proteção de volume:
++
+** Para exibir informações atuais sobre todas as relações de volume, permaneça na página padrão *todas as relações de volume*.
+** Para exibir informações detalhadas sobre as tendências de transferência de volume durante um período de tempo, no menu Exibir, selecione *Status da transferência de volume (Histórico)*.
+** Para exibir informações detalhadas sobre a atividade de transferência de volume diariamente, no menu Exibir, selecione *taxa de transferência de volume (Histórico)*.
+
+
++
+[NOTE]
+====
+As exibições de transferência de volume exibem informações somente para volumes em relacionamentos assíncronos - volumes em relacionamentos síncronos não são exibidos.
+
+====
+

@@ -1,0 +1,46 @@
+---
+permalink: performance-checker/task-viewing-volume-latency-by-cluster-component.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode exibir informações detalhadas de latência de um volume usando a página Performance/volume Explorer. O gráfico de latência - contador total mostra a latência total no volume e o gráfico de contagem de latência - discriminação é útil para determinar o impactos da latência de leitura e gravação no volume. 
+---
+= Visualização da latência do volume por componente do cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exibir informações detalhadas de latência de um volume usando a página Performance/volume Explorer. O gráfico de latência - contador total mostra a latência total no volume e o gráfico de contagem de latência - discriminação é útil para determinar o impactos da latência de leitura e gravação no volume.
+
+
+
+== Sobre esta tarefa
+
+Além disso, o gráfico latência - componentes de cluster mostra uma comparação detalhada da latência de cada componente do cluster para ajudar a determinar como cada componente contribui para a latência total no volume. Os seguintes componentes do cluster são exibidos:
+
+* Rede
+* Política de QoS
+* Processamento de rede
+* Interconexão de clusters
+* Data Processing
+* Operações agregadas
+* Recursos do MetroCluster
+* Latência da nuvem
+* Sincronizar SnapMirror
+
+
+
+
+== Passos
+
+. Na página *Explorador de desempenho/volume* do volume selecionado, no gráfico de latência, selecione *componentes de cluster* no menu suspenso.
++
+O gráfico latência - componentes do cluster é exibido.
+
+. Para exibir uma versão maior do gráfico, selecione *Zoom View*.
++
+É apresentado o gráfico comparativo dos componentes do grupo de instrumentos. Você pode restringir a comparação desmarcando ou selecionando o image:../media/eye-icon.gif[""] que está associado a cada componente do cluster.
+
+. Para visualizar os valores específicos, mova o cursor para a área do gráfico para ver a janela pop-up.
+

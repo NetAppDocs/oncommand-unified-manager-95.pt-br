@@ -1,0 +1,37 @@
+---
+permalink: config/task-disabling-nested-groups-from-remote-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: Se a autenticação remota estiver ativada, você poderá desativar a autenticação de grupo aninhado para que somente usuários individuais, e não membros de grupo, possam se autenticar remotamente no Unified Manager. Você pode desativar grupos aninhados quando quiser melhorar o tempo de resposta de autenticação do ative Directory. 
+---
+= Desativando grupos aninhados da autenticação remota
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se a autenticação remota estiver ativada, você poderá desativar a autenticação de grupo aninhado para que somente usuários individuais, e não membros de grupo, possam se autenticar remotamente no Unified Manager. Você pode desativar grupos aninhados quando quiser melhorar o tempo de resposta de autenticação do ative Directory.
+
+
+
+== Antes de começar
+
+* Tem de ter a função de Administrador do OnCommand.
+* A desativação de grupos aninhados só é aplicável ao usar o ative Directory.
+
+
+
+
+== Sobre esta tarefa
+
+Desativar o suporte para grupos aninhados no Unified Manager pode reduzir o tempo de autenticação. Se o suporte a grupos aninhados estiver desativado e se um grupo remoto for adicionado ao Unified Manager, os usuários individuais deverão ser membros do grupo remoto para se autenticar no Unified Manager.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Autenticação* no menu Configuração à esquerda.
+. Na página *Configuração/Autenticação*, marque a caixa *Desativar pesquisa de grupo aninhado*.
+. Clique em *Salvar*.
+

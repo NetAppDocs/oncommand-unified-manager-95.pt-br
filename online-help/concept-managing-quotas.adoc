@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar cotas de usuário e grupo para limitar a quantidade de espaço em disco ou o número de arquivos que um usuário ou um grupo de usuários podem usar. Você pode exibir informações de cota de usuário e grupo de usuários, como o uso de disco e arquivo e os vários limites definidos nos discos. 
+---
+= Gerenciamento de cotas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar cotas de usuário e grupo para limitar a quantidade de espaço em disco ou o número de arquivos que um usuário ou um grupo de usuários podem usar. Você pode exibir informações de cota de usuário e grupo de usuários, como o uso de disco e arquivo e os vários limites definidos nos discos.

@@ -1,0 +1,52 @@
+---
+permalink: config/task-configuring-unified-manager-to-send-alert-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode configurar o Unified Manager para enviar notificações que o alertam sobre eventos no seu ambiente. Antes que as notificações possam ser enviadas, você deve configurar várias outras opções do Unified Manager. 
+---
+= Configurando o Unified Manager para enviar notificações de alerta
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar o Unified Manager para enviar notificações que o alertam sobre eventos no seu ambiente. Antes que as notificações possam ser enviadas, você deve configurar várias outras opções do Unified Manager.
+
+
+
+== Antes de começar
+
+Tem de ter a função de Administrador do OnCommand.
+
+
+
+== Sobre esta tarefa
+
+Depois de implantar o Unified Manager e concluir a configuração inicial, você deve considerar a configuração do ambiente para acionar alertas e gerar e-mails de notificação ou traps SNMP com base no recebimento de eventos.
+
+
+
+== Passos
+
+. xref:task-configuring-event-notification-settings.adoc[Configurar as definições de notificação de eventos]
++
+Se você quiser que notificações de alerta sejam enviadas quando determinados eventos ocorrerem em seu ambiente, configure um servidor SMTP e forneça um endereço de e-mail a partir do qual a notificação de alerta será enviada. Se você quiser usar traps SNMP, você pode selecionar essa opção e fornecer as informações necessárias.
+
+. xref:task-enabling-remote-authentication.adoc[Ativar autenticação remota]
++
+Se você quiser que os usuários remotos LDAP ou ative Directory acessem a instância do Unified Manager e recebam notificações de alerta, habilite a autenticação remota.
+
+. xref:task-adding-authentication-servers.adoc[Adicionar servidores de autenticação]
++
+Você pode adicionar servidores de autenticação para que usuários remotos dentro do servidor de autenticação possam acessar o Unified Manager.
+
+. xref:task-adding-users.adoc[Adicionar utilizadores]
++
+Você pode adicionar vários tipos diferentes de usuários locais ou remotos e atribuir funções específicas. Ao criar um alerta, você atribui um usuário para receber as notificações de alerta.
+
+. xref:task-adding-alerts.adoc[Adicionar alertas]
++
+Depois de adicionar o endereço de e-mail para enviar notificações, adicionar usuários para receber notificações, configurar as configurações de rede e configurar as opções SMTP e SNMP necessárias para o seu ambiente, você poderá atribuir alertas.
+
+

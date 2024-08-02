@@ -1,0 +1,58 @@
+---
+permalink: health-checker/task-creating-a-snapvault-protection-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode criar uma relação do SnapVault usando a página de detalhes de integridade/volume para que os backups de dados sejam ativados para fins de proteção em volumes. 
+---
+= Criar uma relação de proteção SnapVault a partir da página de detalhes de integridade/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar uma relação do SnapVault usando a página de detalhes de integridade/volume para que os backups de dados sejam ativados para fins de proteção em volumes.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter configurado o Workflow Automation para executar esta tarefa.
+
+
+
+
+== Sobre esta tarefa
+
+O menu *Protect* não é exibido nas seguintes instâncias:
+
+* Se as configurações RBAC não permitirem essa ação: Por exemplo, se você tiver apenas Privileges de operador
+* Quando o ID do volume é desconhecido: Por exemplo, quando você tem uma relação entre clusters e o cluster de destino ainda não foi descoberto
+
+
+
+
+== Passos
+
+. Na guia *proteção* da página de detalhes *Saúde/volume*, clique com o botão direito do Mouse em um volume na exibição de topologia que você deseja proteger.
+. Selecione *Protect* > *SnapVault* no menu.
++
+A caixa de diálogo Configurar proteção é iniciada.
+
+. Clique em *SnapVault* para exibir a guia *SnapVault* e configurar as informações de recursos secundários.
+. Clique em *Avançado* para definir a exclusão de dados duplicados, compactação, crescimento automático e garantia de espaço, conforme necessário, e clique em *aplicar*.
+. Preencha a área *informações de destino* e a área *Configurações de relacionamento* na caixa de diálogo *Configurar proteção*.
+. Clique em *aplicar*.
++
+Regressa à página de detalhes de saúde/volume.
+
+. Clique no link do trabalho de configuração de proteção na parte superior da página de detalhes *Saúde/volume*.
++
+É apresentada a página proteção/detalhes do trabalho.
+
+. Clique em *Atualizar* para atualizar a lista de tarefas e os detalhes da tarefa associados ao trabalho de configuração de proteção e para determinar quando o trabalho está concluído.
++
+Quando as tarefas da tarefa estiverem concluídas, as novas relações são apresentadas na vista de topologia da página Health/volume details.
+
+

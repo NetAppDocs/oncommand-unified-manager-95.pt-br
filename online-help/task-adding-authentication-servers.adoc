@@ -1,0 +1,81 @@
+---
+permalink: online-help/task-adding-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode adicionar servidores de autenticação e ativar a autenticação remota no servidor de gerenciamento para que os usuários remotos no servidor de autenticação possam acessar o Unified Manager. 
+---
+= Adicionando servidores de autenticação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode adicionar servidores de autenticação e ativar a autenticação remota no servidor de gerenciamento para que os usuários remotos no servidor de autenticação possam acessar o Unified Manager.
+
+
+
+== Antes de começar
+
+* As seguintes informações devem estar disponíveis:
++
+** Nome do host ou endereço IP do servidor de autenticação
+** Número da porta do servidor de autenticação
+
+
+* Você deve ter habilitado a autenticação remota e configurado o serviço de autenticação para que o servidor de gerenciamento possa autenticar usuários remotos ou grupos no servidor de autenticação.
+* Tem de ter a função de Administrador do OnCommand.
+
+
+
+
+== Sobre esta tarefa
+
+Se o servidor de autenticação que você está adicionando fizer parte de um par de alta disponibilidade (HA) (usando o mesmo banco de dados), você também poderá adicionar o servidor de autenticação de parceiro. Isso permite que o servidor de gerenciamento se comunique com o parceiro quando um dos servidores de autenticação está inacessível.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Autenticação* no menu Configuração à esquerda.
+. Na página *Configuração/Autenticação*, clique em *servidor de gerenciamento* > *Autenticação*.
+. Ative ou desative a opção *Use secure Connection Authentication*:
++
+|===
+| Se você quiser... | Então faça isso... 
+
+
+ a| 
+Ative-o.
+ a| 
+.. Na caixa de verificação Ativar autenticação remota, selecione a opção *utilizar ligação segura*.
+.. Na área servidores de autenticação, clique em *Adicionar*.
+.. Na caixa de diálogo Adicionar servidor de autenticação, insira o nome de autenticação ou o endereço IP (IPv4 ou IPv6) do servidor.
+.. Na caixa de diálogo autorizar host, clique em Exibir certificado.
+.. Na caixa de diálogo Exibir certificado, verifique as informações do certificado e clique em *Fechar*.
+.. Na caixa de diálogo autorizar Host, clique em *Yes*.
++
+[NOTE]
+====
+Quando você ativa a opção *Use Secure Connection Authentication*, o Unified Manager se comunica com o servidor de autenticação e exibe o certificado. O Unified Manager usa o 636 como porta padrão para comunicação segura e o número de porta 389 para comunicação não segura.
+
+====
+
+
+
+
+ a| 
+Desative-o.
+ a| 
+.. Na caixa de verificação Ativar autenticação remota, desmarque a opção *usar conexão segura*.
+.. Na área servidores de autenticação, clique em *Adicionar*.
+.. Na caixa de diálogo Adicionar servidor de autenticação, especifique o nome do host ou o endereço IP (IPv4 ou IPv6) do servidor e os detalhes da porta.
+.. Clique em *Add*.
+
+
+|===
++
+O servidor de autenticação adicionado é exibido na área servidores.
+
+. Execute uma autenticação de teste para confirmar que é possível autenticar usuários no servidor de autenticação que você adicionou.
+

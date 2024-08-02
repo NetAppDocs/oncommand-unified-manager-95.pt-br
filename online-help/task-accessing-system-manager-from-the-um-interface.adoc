@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-accessing-system-manager-from-the-um-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: Quando a solução de problemas exigir que você faça alterações de configuração em um cluster, você pode usar a interface gráfica do Gerenciador do sistema em vez da interface de linha de comando do ONTAP. O Gerenciador do sistema está incluído no ONTAP como um serviço da Web, ele é habilitado por padrão e é acessível usando um navegador. 
+---
+= Acessando o OnCommand System Manager a partir da interface do Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando a solução de problemas exigir que você faça alterações de configuração em um cluster, você pode usar a interface gráfica do Gerenciador do sistema em vez da interface de linha de comando do ONTAP. O Gerenciador do sistema está incluído no ONTAP como um serviço da Web, ele é habilitado por padrão e é acessível usando um navegador.
+
+
+
+== Antes de começar
+
+Você deve ter uma conta de usuário de cluster configurada com a `admin` função e os `http` tipos de aplicativo , `ontapi` e `console` .
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *painéis* > *Vista de cluster*.
+. Na página *Dashboards/Cluster View*, selecione o cluster que deseja gerenciar.
++
+É apresentada uma descrição geral do estado, capacidade e desempenho da monitorização para esse cluster.
+
+. Clique no ícone *System Manager*.
++
+Se o cluster usar um certificado digital autoassinado, o navegador pode exibir um aviso indicando que o certificado não é confiável. Você pode reconhecer o risco de continuar o acesso ou instalar um certificado digital assinado pela autoridade de certificação (CA) no cluster para autenticação do servidor.
+
+. Faça login no System Manager usando as credenciais de administrador de cluster.
++
+Se o login na interface do usuário do System Manager estiver protegido usando autenticação SAML, você inserirá suas credenciais na página de login do provedor de identidade (IDP) em vez da página de login do System Manager.
+
+

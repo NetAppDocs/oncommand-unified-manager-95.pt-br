@@ -1,0 +1,16 @@
+---
+permalink: install/concept-overview-of-the-deployment-process.html 
+sidebar: sidebar 
+keywords:  
+summary: O fluxo de trabalho de implantação descreve as tarefas que você deve executar antes de usar o Unified Manager. 
+---
+= Visão geral do processo de implantação no VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O fluxo de trabalho de implantação descreve as tarefas que você deve executar antes de usar o Unified Manager.
+
+image::../media/deployment-sequence-oc-6-0.gif[sequência de implantação oc 6 0]

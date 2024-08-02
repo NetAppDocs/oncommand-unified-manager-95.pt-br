@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-viewing-performance-capacity-counter-charts-to-identify-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode visualizar gráficos usados de capacidade de performance para nós e agregados na página Performance Explorer. Isso permite visualizar dados detalhados de capacidade de performance para os nós selecionados e agregados para um período de tempo específico. 
+---
+= Visualização de gráficos de contadores de capacidade de desempenho para identificar problemas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode visualizar gráficos usados de capacidade de performance para nós e agregados na página Performance Explorer. Isso permite visualizar dados detalhados de capacidade de performance para os nós selecionados e agregados para um período de tempo específico.
+
+
+
+== Sobre esta tarefa
+
+O gráfico de contador padrão exibe os valores de capacidade de desempenho usados para os nós ou agregados selecionados. O gráfico de contador de avarias exibe os valores de capacidade de desempenho total para o objeto raiz separado em uso com base em protocolos de usuário versus processos de sistema em segundo plano. Além disso, a quantidade de capacidade de desempenho livre também é mostrada.
+
+[NOTE]
+====
+Como algumas atividades em segundo plano associadas ao gerenciamento de dados e sistema são identificadas como cargas de trabalho do usuário e categorizadas como protocolos de usuário, a porcentagem de protocolos do usuário pode parecer artificialmente alta quando esses processos são executados. Esses processos normalmente são executados por volta da meia-noite quando o uso do cluster é baixo. Se você vir um pico na atividade do protocolo do usuário por volta da meia-noite, verifique se os trabalhos de backup do cluster ou outras atividades em segundo plano estão configurados para serem executados nesse momento.
+
+====
+
+
+== Passos
+
+. Selecione a guia *Explorer* de um nó ou agregar a página *Landing*.
+. No painel *Counter Charts*, clique em *Choose charts* e selecione *Perf. Gráfico de capacidade utilizada*.
+. Role para baixo até que você possa visualizar o gráfico.
++
+As cores do gráfico padrão mostram quando o objeto está no intervalo ideal (amarelo), quando o objeto está subutilizado (verde) e quando o objeto é sobreutilizado (vermelho). O gráfico de detalhamento mostra detalhes detalhados da capacidade de desempenho somente para o objeto raiz.
+
++
+image::../media/headroom-counter-charts.gif[tabelas do contador da cabeceira]
+
+. Se você quiser exibir qualquer gráfico em um formato completo, clique em *Zoom View*.
++
+Dessa forma, você pode abrir vários gráficos de contador em uma janela separada para comparar os valores de capacidade de desempenho usados com valores de IOPS ou Mbps no mesmo período de tempo.
+
+

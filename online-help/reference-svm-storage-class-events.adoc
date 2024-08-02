@@ -1,0 +1,86 @@
+---
+permalink: online-help/reference-svm-storage-class-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de classe de storage da SVM fornecem informações sobre o status de suas classes de storage para que você possa monitorar se há problemas em potencial. As classes de storage SVM só existem em SVMs com Infinite volume. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de classe de storage SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de classe de storage da SVM fornecem informações sobre o status de suas classes de storage para que você possa monitorar se há problemas em potencial. As classes de storage SVM só existem em SVMs com Infinite volume. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+Os eventos de classe de storage do SVM a seguir se aplicam somente a SVMs com Infinite volume.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Classe de armazenamento SVM não disponível (ocumEvtVserStorageClassNotAvailable)
+ a| 
+Incidente
+ a| 
+Classe de armazenamento
+ a| 
+Crítico
+
+
+
+ a| 
+Classe de armazenamento SVM parcialmente disponível (ocumEvtVserStorageClassPartiallyDisponível)
+ a| 
+Risco
+ a| 
+Classe de armazenamento
+ a| 
+Erro
+
+|===
+
+
+== Área de impactos: Capacidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+SVM Storage Class Space quase cheio (ocumEvtVserStorageClassNearlyFull)
+ a| 
+Risco
+ a| 
+Classe de armazenamento
+ a| 
+Aviso
+
+
+
+ a| 
+SVM Storage Class Space Full (ocumEvtVserStorageClassFull)
+ a| 
+Risco
+ a| 
+Classe de armazenamento
+ a| 
+Erro
+
+
+
+ a| 
+Limite de uso do Snapshot da classe de storage SVM excedido (ocumEvtVserStorageClassSnapshotUsageExceeded)
+ a| 
+Risco
+ a| 
+Classe de armazenamento
+ a| 
+Aviso
+
+|===

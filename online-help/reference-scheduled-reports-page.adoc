@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-scheduled-reports-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página relatórios permite exibir informações detalhadas sobre os relatórios gerados. Você pode pesquisar um relatório específico, salvar um relatório e excluir um relatório. Você também pode agendar, compartilhar e importar um relatório. 
+---
+= Página de relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página relatórios permite exibir informações detalhadas sobre os relatórios gerados. Você pode pesquisar um relatório específico, salvar um relatório e excluir um relatório. Você também pode agendar, compartilhar e importar um relatório.
+
+A página relatórios exibe grupos categorizados de relatórios sobre os quais você pode obter detalhes específicos do relatório. Por padrão, os grupos de relatórios se expandem para exibir os tipos de relatório, uma visão geral do relatório e links que permitem personalizar os relatórios. Apenas um relatório pode ser visualizado de cada vez. Você pode clicar no botão *Executar relatório* para exibir um relatório para um grupo específico de relatórios.
+
+[NOTE]
+====
+A implementação do agendamento e geração de relatórios a partir da página relatórios será obsoleta em uma versão futura. Você pode extrair dados de integridade e performance do Unified Manager usando esses métodos adicionais:
+
+* Extraindo dados diretamente das páginas de grade na GUI
+* Usando Open Database para acesso a todos os objetos disponíveis
+* Executando as APIs REST do Unified Manager para retornar as informações que você está interessado em analisar
+
+
+====
+Segue-se uma lista de grupos de relatórios e tipos de relatórios que são apresentados na página relatórios:
+
+* Relatórios de utilização de capacidade
++
+** Resumo de armazenamento
+** Agregar capacidade e utilização
+** Capacidade de volume e utilização
+** Capacidade e utilização de Qtree
+
+
+* Relatórios operacionais - Eventos
+* Relatórios de inventário
++
+** Inventário de cluster
+** Exportações de NFS
+** Inventário da SVM
+
+
+* Relatórios importados
+* Relatórios de proteção de dados
++
+** Configuração de proteção de dados de volume
+** Inventário de relacionamentos de volume
+** Estado de transferência de volume (Histórico)
+** Taxa de transferência de volume (histórica)
+
+
+

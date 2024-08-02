@@ -1,0 +1,53 @@
+---
+permalink: online-help/concept-how-a-data-policy-filters-data-written-to-an-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: Uma política de dados filtra automaticamente os dados gravados no Infinite volume em diferentes classes de armazenamento. Todos os arquivos são gravados no único sistema de arquivos no namespace do Infinite volume e as regras na política de dados determinam qual classe de armazenamento armazena os dados para os arquivos. 
+---
+= Como uma política de dados filtra os dados gravados em um Infinite volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Uma política de dados filtra automaticamente os dados gravados no Infinite volume em diferentes classes de armazenamento. Todos os arquivos são gravados no sistema de arquivos único no namespace Infinite volume, e as regras na política de dados determinam qual classe de armazenamento armazena os dados para os arquivos.
+
+Uma política de dados padrão é criada automaticamente para uma máquina virtual de storage (SVM) com Infinite volume quando você cria o Infinite volume. A política de dados está ativa e contém uma regra padrão. A regra padrão armazena os dados recebidos para arquivos da seguinte forma para Infinite volumes com e sem classes de armazenamento:
+
+|===
+| Para um Infinite volume... | A política de dados padrão faz isso... 
+
+
+ a| 
+Sem classes de armazenamento
+ a| 
+Coloca todos os dados de entrada para ficheiros no Infinite volume
+
+
+
+ a| 
+Com uma classe de armazenamento
+ a| 
+Coloca todos os dados de entrada para arquivos na classe de armazenamento
+
+
+
+ a| 
+Com uma ou mais classes de armazenamento
+ a| 
+Coloca todos os dados de entrada de arquivos na primeira classe de armazenamento criada
+
+|===
+[NOTE]
+====
+Para um Infinite volume com duas ou mais classes de armazenamento, você deve modificar a política de dados o mais rápido possível para criar regras que filtrem dados para diferentes tipos de arquivos nas diferentes classes de armazenamento. Você deve modificar a política de dados usando o Unified Manager.
+
+====
+A política de dados não afeta a localização dos arquivos no sistema de arquivos no namespace do Infinite volume, e as classes de armazenamento são transparentes para os aplicativos cliente. O sistema de arquivos no namespace contém os nomes dos arquivos. A política de dados afeta apenas qual classe de armazenamento é usada para armazenar os dados dos arquivos. As políticas de dados são úteis quando você atribui duas ou mais classes de armazenamento a um Infinite volume.
+
+Você pode modificar a política de dados para criar regras adicionais, mas não pode excluir a política de dados ou sua regra padrão.
+
+O diagrama a seguir ilustra como uma política de dados filtra dados para um Infinite volume. O nome do arquivo é armazenado no componente do namespace, e as regras na política de dados especificam que os dados desse arquivo específico são armazenados na classe de armazenamento prata.
+
+image::../media/how-a-data-policy-filters-data-written-to-an-infinite-volume.gif[Este gráfico é descrito pelo texto circundante]

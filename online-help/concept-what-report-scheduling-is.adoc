@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-report-scheduling-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode agendar um relatório para ser gerado em uma data e hora específicas usando a opção Agendar. O relatório é enviado automaticamente por e-mail para um ou mais destinatários de acordo com a programação. 
+---
+= Qual é o agendamento de relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode agendar um relatório para ser gerado em uma data e hora específicas usando a opção *Agendar*. O relatório é enviado automaticamente por e-mail para um ou mais destinatários de acordo com a programação.
+
+Ao agendar um relatório, você pode minimizar o esforço de gerar e enviar os relatórios manualmente. Você pode garantir que o status atual do storage seja monitorado em intervalos especificados pelos administradores que não são notificados de outra forma pelo Unified Manager.

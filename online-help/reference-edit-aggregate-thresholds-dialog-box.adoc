@@ -1,0 +1,121 @@
+---
+permalink: online-help/reference-edit-aggregate-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode configurar alertas para enviar notificações quando um evento relacionado à capacidade de um agregado é gerado e pode executar ações corretivas para o evento. Por exemplo, para o limite Total agregado, você pode configurar um alerta para enviar notificação quando a condição persistir durante um período especificado. 
+---
+= Caixa de diálogo Editar limites de agregados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar alertas para enviar notificações quando um evento relacionado à capacidade de um agregado é gerado e pode tomar ações corretivas para o evento. Por exemplo, para o limite Total agregado, você pode configurar um alerta para enviar notificação quando a condição persistir durante um período especificado.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+A caixa de diálogo Editar limites de agregado permite configurar limites de nível de agregado que são aplicados a agregados selecionados. Se você configurar limites de nível agregado, eles terão prioridade sobre os valores de limite de nível global. Você pode configurar as configurações de limite de capacidade, crescimento e cópias Snapshot no nível agregado. Se essas configurações não estiverem configuradas, os valores de limite global serão aplicados.
+
+[NOTE]
+====
+Os valores de limite não são aplicáveis ao agregado raiz do nó.
+
+====
+
+
+== Área de capacidade
+
+A área capacidade permite definir as seguintes condições de limite de capacidade agregada:
+
+* *Espaço quase cheio*
++
+Especifica a porcentagem em que um agregado é considerado quase cheio. Ele também exibe o tamanho do agregado correspondente ao valor de limite especificado.
+
++
+Você também pode usar o controle deslizante para definir o valor de limite.
+
+* *Espaço cheio*
++
+Especifica a porcentagem em que um agregado é considerado cheio. Ele também exibe o tamanho do agregado correspondente ao valor de limite especificado.
+
++
+Você também pode usar o controle deslizante para definir o valor de limite.
+
+* * Quase exagerado*
++
+Especifica a porcentagem em que um agregado é considerado como sendo quase supercomprometido.
+
+* * Overcommitted*
++
+Especifica a porcentagem em que um agregado é considerado como supercomprometido.
+
+* *Dias até completo*
++
+Especifica o número de dias restantes antes que o agregado atinja a capacidade total.
+
+
+
+
+
+== Área de crescimento
+
+A área de crescimento permite definir a seguinte condição de limite para o crescimento agregado:
+
+* *Taxa de crescimento*
++
+Especifica a porcentagem na qual a taxa de crescimento de um agregado é considerada normal antes que o sistema gere um evento anormal da taxa de crescimento agregado.
+
+* * Sensibilidade da taxa de crescimento*
++
+Especifica o fator que é aplicado ao desvio padrão da taxa de crescimento de um agregado. Se a taxa de crescimento exceder o desvio padrão fatorado, um evento anormal da taxa de crescimento agregado é gerado.
+
++
+Um valor mais baixo para a sensibilidade da taxa de crescimento indica que o agregado é altamente sensível às mudanças na taxa de crescimento.
+
++
+[NOTE]
+====
+Se você modificar a sensibilidade da taxa de crescimento para agregados no nível do limiar global, a mudança também será aplicada à sensibilidade da taxa de crescimento para volumes no nível do limiar global.
+
+====
+
+
+
+
+== Área cópias Snapshot
+
+A área cópias Snapshot permite definir as seguintes condições de limite de reserva Snapshot:
+
+* *Reserva Snapshot completa*
++
+Especifica a porcentagem em que um agregado consumiu todo o espaço reservado para cópias Snapshot.
+
++
+Você também pode usar o controle deslizante para definir o valor de limite.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas para um agregado selecionado:
+
+* *Restaurar para padrões*
++
+Permite restaurar os valores de limite de nível agregado para os valores globais.
+
+* *Guardar*
++
+Guarda todas as definições de limite.
+
+* *Salvar e fechar*
++
+Salva todas as configurações de limite e fecha a caixa de diálogo.
+
+* *Cancelar*
++
+Ignora as alterações (se houver) nas definições de limiar e fecha a caixa de diálogo.
+
+

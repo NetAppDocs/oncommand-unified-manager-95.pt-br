@@ -1,0 +1,51 @@
+---
+permalink: online-help/reference-cluster-connectivity-status-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A conetividade entre os clusters em uma configuração do MetroCluster pode ser um dos seguintes status: Ideal, impactado ou inativo. Compreender os Estados de conetividade permite-lhe gerir eficazmente as suas configurações do MetroCluster.' 
+---
+= Definições de estado da conetividade do cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A conetividade entre os clusters em uma configuração do MetroCluster pode ser um dos seguintes status: Ideal, impactado ou inativo. Compreender os Estados de conetividade permite-lhe gerir eficazmente as suas configurações do MetroCluster.
+
+|===
+| Estado da conetividade | Descrição | Ícone apresentado 
+
+
+ a| 
+Ideal
+ a| 
+A conectividade entre os clusters na configuração do MetroCluster é normal.
+ a| 
+image:../media/metrocluster-connectivity-optimal.gif[""]
+
+
+
+ a| 
+Impactado
+ a| 
+Um ou mais erros comprometem o status da disponibilidade de failover. No entanto, os dois clusters na configuração MetroCluster ainda estão ativos. Por exemplo, quando o link ISL está inativo, quando o link IP entre clusters está inativo ou quando o cluster de parceiros não está acessível.
+ a| 
+image:../media/metrocluster-connectivity-impacted.gif[""]
+
+
+
+ a| 
+Para baixo
+ a| 
+A conectividade entre os clusters na configuração do MetroCluster está inativa porque um ou ambos os clusters estão inativos ou os clusters estão no modo failover. Por exemplo, quando o cluster de parceiros está inativo por causa de um desastre ou quando há um switchover planejado para fins de teste.
+ a| 
+Switchover com erros:
+
+image::../media/metrocluster-connectivity-down.gif[conetividade MetroCluster desativada]
+
+Comutação bem-sucedida:
+
+image::../media/metrocluster-connectivity-failover.gif[failover de conectividade MetroCluster]
+
+|===

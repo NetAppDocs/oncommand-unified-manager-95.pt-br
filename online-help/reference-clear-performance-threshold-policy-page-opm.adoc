@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-clear-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a página Limpar política de limite para remover ou limpar uma política de limite de desempenho de um ou mais objetos de armazenamento. 
+---
+= Limpar a página Política de limite de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a página Limpar política de limite para remover, ou _limpar_, uma política de limite de desempenho de um ou mais objetos de armazenamento.
+
+A lista de políticas é preenchida apenas com as políticas que estão sendo usadas no objeto ou objetos selecionados.
+
+Selecione a política que deseja remover do objeto de armazenamento ou objetos e clique em *Limpar política*.

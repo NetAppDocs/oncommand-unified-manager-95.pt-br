@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-grouped-by-issue.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório Inventário de relacionamentos de volume para exibir volumes agrupados de acordo com o status de integridade da relação de volume. 
+---
+= Personalizar o relatório Inventário de relacionamentos de volume para exibir volumes agrupados por problema
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Inventário de relacionamentos de volume para exibir volumes agrupados de acordo com o status de integridade da relação de volume.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para filtrar volumes de acordo com o status de integridade da relação de volume, selecione a coluna *Saúde da relação* e clique no image:../media/click-to-filter.gif[""] ícone.
+. Na caixa de diálogo *filtro*, clique em *Selecionar valores* e, em seguida, selecione o valor necessário na lista suspensa.
++
+São apresentados os detalhes do volume para o valor selecionado.
+
+

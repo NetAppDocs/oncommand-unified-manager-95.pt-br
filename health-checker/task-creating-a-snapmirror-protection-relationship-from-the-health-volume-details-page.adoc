@@ -1,0 +1,73 @@
+---
+permalink: health-checker/task-creating-a-snapmirror-protection-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a página de detalhes de integridade/volume para criar uma relação do SnapMirror para que a replicação de dados seja ativada para fins de proteção. A replicação do SnapMirror permite restaurar dados do volume de destino em caso de perda de dados na origem. 
+---
+= Criar uma relação de proteção SnapMirror a partir da página de detalhes de integridade/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a página de detalhes de integridade/volume para criar uma relação do SnapMirror para que a replicação de dados seja ativada para fins de proteção. A replicação do SnapMirror permite restaurar dados do volume de destino em caso de perda de dados na origem.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter configurado o Workflow Automation.
+
+
+
+
+== Sobre esta tarefa
+
+O menu *Protect* não é exibido nas seguintes instâncias:
+
+* Se as configurações RBAC não permitirem essa ação: Por exemplo, se você tiver apenas Privileges de operador
+* Se o volume for um volume FlexGroup
+* Quando o ID do volume é desconhecido: Por exemplo, quando você tem uma relação entre clusters e o cluster de destino ainda não foi descoberto
+
+
+Você pode executar até 10 tarefas de proteção simultaneamente sem impacto no desempenho. Você pode ter algum impactos no desempenho ao executar entre 11 e 30 tarefas simultaneamente. A execução de mais de 30 trabalhos em simultâneo não é recomendada.
+
+
+
+== Passos
+
+. Na guia *proteção* da página de detalhes *Saúde/volume*, clique com o botão direito do Mouse na exibição de topologia o nome de um volume que você deseja proteger.
+. Selecione *Protect* > *SnapMirror* no menu.
++
+A caixa de diálogo Configurar proteção é exibida.
+
+. Clique em *SnapMirror* para visualizar a guia *SnapMirror* e configurar as informações de destino.
+. Clique em *Avançado* para definir a garantia de espaço, conforme necessário, e clique em *aplicar*.
+. Preencha a área *informações de destino* e a área *Configurações de relacionamento* na caixa de diálogo *Configurar proteção*.
+. Clique em *aplicar*.
++
+Regressa à página de detalhes de saúde/volume.
+
+. Clique no link do trabalho de configuração de proteção na parte superior da página de detalhes *Saúde/volume*.
++
+As tarefas e os detalhes do trabalho são apresentados na página proteção/detalhes do trabalho.
+
+. Na página de detalhes *proteção/trabalho*, clique em *Atualizar* para atualizar a lista de tarefas e os detalhes da tarefa associados ao trabalho de configuração de proteção e para determinar quando o trabalho está concluído.
+. Quando as tarefas do trabalho estiverem concluídas, clique em *voltar* no seu navegador para retornar à página de detalhes *Saúde/volume*.
++
+A nova relação é exibida na visualização da topologia da página de detalhes de integridade/volume.
+
+
+
+
+
+== Resultados
+
+Dependendo do SVM de destino especificado durante a configuração ou das opções habilitadas nas configurações avançadas, a relação SnapMirror resultante pode ser uma das várias variações possíveis:
+
+* Se você especificou um SVM de destino que seja executado na mesma ou em uma versão mais recente do ONTAP em comparação com a do volume de origem, uma relação do SnapMirror baseada em replicação de bloco será o resultado padrão.
+* Se você especificou um SVM de destino que seja executado na mesma ou em uma versão mais recente do ONTAP (versão 8,3 ou superior) em comparação com o volume de origem, mas ativou a replicação flexível de versão nas configurações avançadas, o resultado será uma relação do SnapMirror com a replicação flexível de versão.
+* Se você especificou um SVM de destino que seja executado em uma versão anterior do ONTAP 8,3 ou uma versão maior do que a do volume de origem e a versão anterior oferecer suporte à replicação flexível de versão, uma relação do SnapMirror com a replicação flexível de versão será o resultado automático.
+

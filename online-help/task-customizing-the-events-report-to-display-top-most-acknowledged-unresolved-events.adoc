@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-top-most-acknowledged-unresolved-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório Eventos para exibir os eventos mais reconhecidos, filtrados pelo estado do evento. Você pode classificá-los em ordem decrescente para exibir o número de dias pendentes. 
+---
+= Personalizar o relatório Eventos para exibir os eventos não resolvidos mais reconhecidos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Eventos para exibir os eventos mais reconhecidos, filtrados pelo estado do evento. Você pode classificá-los em ordem decrescente para exibir o número de dias pendentes.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para filtrar eventos reconhecidos, clique na coluna *Estado* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista suspensa *condição*, selecione *igual a*.
+. Clique em *Select values* (Selecionar valores) e selecione *recognized* (confirmar).
+. Clique em *OK*.
+. Para filtrar mais o relatório, clique na coluna *reconhecido por* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista suspensa *condição*, selecione *igual a*.
+. Clique em *Selecionar valores* e selecione *Nome*.
+. Clique em *OK*.
+. Para classificar os eventos pendentes durante o maior número de dias, clique na coluna *dias pendentes* e clique image:../media/click-to-see-menu.gif[""]em .
+. Selecione *Filter* > *Top/Bottom N*.
+. Na caixa de diálogo *Top/Bottom N*, selecione *Top N* no campo *Filter* e insira um valor no campo de texto.
+. Clique em *OK*.
+

@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A caixa de diálogo Annotate Cluster (anotar Cluster) permite anotar manualmente objetos de armazenamento. Você pode selecionar um único cluster ou vários clusters e anotar com um par de valores específico na lista de anotações existente.' 
+---
+= Anotar a caixa de diálogo Cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Annotate Cluster (anotar Cluster) permite anotar manualmente objetos de armazenamento. Você pode selecionar um único cluster ou vários clusters e anotar com um par de valores específico na lista de anotações existente.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+* *Anotação de pares de valores*
++
+Permite selecionar a anotação pretendida para o cluster selecionado.
+
+* *Aplicar*
++
+Aplica a anotação selecionada ao cluster.
+
+* *Cancelar*
++
+Fecha a caixa de diálogo Annotate Cluster sem salvar as alterações.
+
+

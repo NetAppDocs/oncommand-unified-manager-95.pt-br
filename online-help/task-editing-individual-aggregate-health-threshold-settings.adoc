@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-editing-individual-aggregate-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode editar as configurações de limite de integridade para capacidade agregada, crescimento e cópias Snapshot de um ou mais agregados. Quando um limite é cruzado, os alertas são gerados e você recebe notificações. Essas notificações ajudam você a tomar medidas preventivas com base no evento gerado. 
+---
+= Editar configurações individuais de limite de integridade agregado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar as configurações de limite de integridade para capacidade agregada, crescimento e cópias Snapshot de um ou mais agregados. Quando um limite é cruzado, os alertas são gerados e você recebe notificações. Essas notificações ajudam você a tomar medidas preventivas com base no evento gerado.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Com base nas alterações nos valores de limite, os eventos são gerados ou obsoletos no próximo ciclo de monitoramento.
+
+Quando o crescimento automático é ativado em volumes que residem no agregado, os limites de capacidade agregada são considerados violados com base no tamanho máximo do volume definido pelo crescimento automático, não com base no tamanho do volume original.
+
+
+
+== Passos
+
+. No painel de navegação à esquerda, clique em *Saúde* > *agregados*.
+. Na página de inventário *Saúde/agregados*, selecione um ou mais agregados e clique em *Editar limites*.
+. Na caixa de diálogo *Editar limites agregados*, edite as configurações de limite de uma das seguintes opções: Capacidade, crescimento ou cópias Snapshot selecionando a caixa de seleção apropriada e modificando as configurações.
+. Clique em *Salvar*.
+

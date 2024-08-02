@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-add-user-dialog-box-um.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode criar usuários locais ou usuários de banco de dados, adicionar usuários remotos ou grupos remotos e atribuir funções para que esses usuários possam gerenciar objetos de storage e dados usando o Unified Manager. 
+---
+= Caixa de diálogo Add User (Adicionar utilizador)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar usuários locais ou usuários de banco de dados, adicionar usuários remotos ou grupos remotos e atribuir funções para que esses usuários possam gerenciar objetos de storage e dados usando o Unified Manager.
+
+Você pode adicionar um usuário preenchendo os seguintes campos:
+
+* *Tipo*
++
+Permite especificar o tipo de utilizador que pretende criar.
+
+* *Nome*
++
+Permite especificar um nome de usuário que um usuário pode usar para fazer login no Unified Manager.
+
+* *Senha*
++
+Permite especificar uma palavra-passe para o nome de utilizador especificado. Este campo é exibido apenas quando você está adicionando um usuário local ou um usuário de banco de dados.
+
+* *Confirme a senha*
++
+Permite-lhe reintroduzir a sua palavra-passe para garantir a precisão do que introduziu no campo Palavra-passe. Este campo é exibido apenas quando você está adicionando um usuário local ou um usuário de banco de dados.
+
+* *Email*
++
+Permite especificar um endereço de e-mail para o usuário; o endereço de e-mail especificado deve ser exclusivo para o nome de usuário. Este campo é exibido apenas quando você está adicionando um usuário remoto ou um usuário local.
+
+* *Função*
++
+Permite atribuir uma função ao utilizador e define o âmbito das atividades que o utilizador pode realizar. A função pode ser Administrador do OnCommand, Administrador de armazenamento, Operador, Esquema de integração ou Esquema de Relatório.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Adicionar*
++
+Adiciona o usuário e fecha a caixa de diálogo Adicionar usuário.
+
+* *Cancelar*
++
+Cancela as alterações e fecha a caixa de diálogo Adicionar usuário.
+
+

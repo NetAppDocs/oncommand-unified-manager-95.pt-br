@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-events-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode criar relatórios para monitorar eventos pendentes em um cluster. 
+---
+= Personalizações do relatório de eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar relatórios para monitorar eventos pendentes em um cluster.

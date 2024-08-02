@@ -1,0 +1,71 @@
+---
+permalink: online-help/reference-relationship-last-1-month-transfer-status-view.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Status de transferência de volume/proteção permite analisar as tendências de transferência de volume durante um período de tempo. Esta página também mostra se a transferência de volume foi um sucesso ou uma falha. 
+---
+= Página Status da transferência de proteção/volume (Histórico)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Status de transferência de volume/proteção (Histórico) permite analisar as tendências de transferência de volume durante um período de tempo. Esta página também mostra se a transferência de volume foi um sucesso ou uma falha.
+
+Use o botão *Export* para exportar os detalhes de todos os volumes monitorados para um (`.csv`arquivo de valores separados por vírgulas ).
+
+[NOTE]
+====
+Esta página exibe informações para volumes somente em relacionamentos assíncronos - volumes em relacionamentos síncronos não são exibidos.
+
+====
+* *Cluster de origem*
++
+Exibe o nome do cluster de origem.
+
+* *Fonte SVM*
++
+Exibe o nome da máquina virtual de storage (SVM).
+
+* *Volume da fonte*
++
+Exibe o nome do volume de origem.
+
+* *Cluster de destino*
++
+Exibe o nome do cluster de destino.
+
+* *SVM de destino*
++
+Exibe o nome do SVM de destino.
+
+* *Volume de destino*
++
+Apresenta o nome do volume de destino.
+
+* *Resultado da operação*
++
+Apresenta se a transferência de volume foi bem-sucedida.
+
+* *Hora de início da transferência*
++
+Apresenta a hora de início da transferência de volume.
+
+* * Tempo de término da transferência*
++
+Apresenta a hora de fim da transferência de volume.
+
+* *Duração da transferência*
++
+Apresenta o tempo necessário (em horas) para concluir a transferência de volume.
+
+* * Tamanho da transferência*
++
+Exibe o tamanho (em MB) do volume transferido.
+
+* *Tipo de operação*
++
+Apresenta o tipo de transferência de volume.
+
+

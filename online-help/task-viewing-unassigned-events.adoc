@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-viewing-unassigned-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode exibir eventos não atribuídos e, em seguida, atribuir cada um deles a um usuário que pode resolvê-los. 
+---
+= Exibindo eventos não atribuídos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exibir eventos não atribuídos e, em seguida, atribuir cada um deles a um usuário que pode resolvê-los.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Eventos*.
++
+Por padrão, eventos novos e confirmados são exibidos na página de inventário Eventos.
+
+. No painel *filtros*, selecione a opção de filtro *não atribuído* na área *atribuído a*.
+

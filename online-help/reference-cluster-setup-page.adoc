@@ -1,0 +1,130 @@
+---
+permalink: online-help/reference-cluster-setup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página fontes de dados de configuração/cluster exibe informações sobre os clusters que o Unified Manager está monitorando atualmente. Esta página permite adicionar clusters adicionais, editar configurações de cluster e remover clusters. 
+---
+= Página Configuration/Cluster Data Sources
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página fontes de dados de configuração/cluster exibe informações sobre os clusters que o Unified Manager está monitorando atualmente. Esta página permite adicionar clusters adicionais, editar configurações de cluster e remover clusters.
+
+Uma mensagem na parte inferior da página indica com que frequência o Unified Manager coleta dados de desempenho dos clusters. O intervalo de coleta padrão é de cinco minutos, mas você pode modificar esse intervalo por meio do console de manutenção se você descobrir que coleções de clusters grandes não estão sendo concluídas no tempo.
+
+
+
+== Botões de comando
+
+* *Adicionar*
++
+Abre a caixa de diálogo Adicionar cluster, que permite adicionar clusters.
+
+* *Editar*
++
+Abre a caixa de diálogo Editar Cluster, que permite editar as definições do cluster selecionado.
+
+* *Remover*
++
+Remove o cluster selecionado e todos os eventos e objetos de armazenamento associados. Depois que o cluster é removido, ele não é mais monitorado.
+
++
+[NOTE]
+====
+O cluster, os objetos de storage e todos os eventos associados são removidos e o cluster não é mais monitorado pelo Unified Manager. A instância do Unified Manager registrada com o cluster removido também não é registrada do cluster.
+
+====
+* *Redescobrir*
++
+Força uma operação de redescoberta do cluster para que você possa atualizar a coleta de dados de integridade e desempenho.
+
+
+
+
+
+== Lista de clusters
+
+A lista clusters exibe as propriedades de todos os clusters descobertos. Você pode clicar em um cabeçalho de coluna para classificar os clusters por essa coluna.
+
+* *Status*
++
+Exibe o status atual da descoberta da fonte de dados. O status pode ser Falha (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ), Concluído ( )image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"] ou em andamento (image:../media/in-progress.gif[""]).
+
+* *Nome*
++
+Exibe o nome do cluster.
+
++
+Observe que o nome pode levar quinze minutos ou mais para aparecer depois que o cluster é adicionado pela primeira vez.
+
+* *Modo de manutenção*
++
+Permite que você especifique o período de tempo, ou "janela de manutenção", quando um cluster estará inativo para manutenção, para que você não receba uma tempestade de alertas do cluster enquanto ele está sendo mantido.
+
++
+Quando o modo de manutenção está programado para o futuro, este campo exibe "agendado", e você pode passar o cursor sobre o campo para exibir a hora agendada. Quando o cluster está na janela de manutenção, este campo mostra ""Ativo"".
+
+* *Nome do host ou endereço IP*
++
+Exibe o nome do host, o nome de domínio totalmente qualificado (FQDN), o nome curto ou o endereço IP do LIF de gerenciamento de cluster usado para se conetar ao cluster.
+
+* *Protocolo*
++
+Exibe o tipo de protocolo que pode ser configurado no cluster: HTTP ou HTTPS (para uma conexão segura).
+
++
+Se uma conexão for estabelecida com o cluster usando ambos os protocolos, o HTTPS será escolhido em HTTP. O padrão é HTTPS.
+
+* *Porto*
++
+Exibe o número da porta do cluster.
+
++
+Se a porta não for especificada, a porta padrão para o protocolo selecionado será usada (80 para HTTP ou 443 para HTTPS).
+
+* *Nome de usuário*
++
+Apresenta o nome de utilizador que pode ser utilizado para iniciar sessão no cluster.
+
+* *Operação*
++
+Exibe a operação atual suportada pela fonte de dados do cluster.
+
++
+As seguintes operações são suportadas pela fonte de dados:
+
++
+** Detecção
++
+Especifica a operação quando a fonte de dados está sendo descoberta.
+
+** Enquete de Saúde
++
+Especifica a operação quando a fonte de dados é descoberta com êxito e iniciou a amostragem de dados.
+
+** Eliminação
++
+Especifica a operação quando a fonte de dados (cluster) é excluída da respetiva lista de objetos de armazenamento.
+
+
+
+* *Estado da operação*
++
+Apresenta o estado da operação atual. O estado pode ser falhou, concluído ou em andamento.
+
+* *Hora de início da operação*
++
+A data e a hora em que a operação foi iniciada.
+
+* *Tempo de fim da operação*
++
+A data e a hora em que a operação terminou.
+
+* *Descrição*
++
+Qualquer mensagem relacionada com a operação.
+
+

@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-understanding-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível criar grupos no Unified Manager para gerenciar objetos de storage. Entender os conceitos sobre grupos e como as regras de grupo permitem adicionar objetos de armazenamento a um grupo ajudará você a gerenciar os objetos de armazenamento em seu ambiente. 
+---
+= Compreender grupos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível criar grupos no Unified Manager para gerenciar objetos de storage. Entender os conceitos sobre grupos e como as regras de grupo permitem adicionar objetos de armazenamento a um grupo ajudará você a gerenciar os objetos de armazenamento em seu ambiente.

@@ -1,0 +1,24 @@
+---
+permalink: online-help/concept-what-storage-efficiency-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A eficiência de storage permite armazenar a quantidade máxima de dados pelo menor custo possível, além de acomodar o crescimento rápido dos dados e consumir menos espaço. A estratégia da NetApp para eficiência de storage é baseada na base incorporada da virtualização de storage e do storage unificado fornecida pelo sistema operacional ONTAP central e pelo sistema de arquivos "WAFL" (Write Anywhere File Layout).' 
+---
+= Qual é a eficiência de storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A eficiência de storage permite armazenar a quantidade máxima de dados pelo menor custo possível, além de acomodar o crescimento rápido dos dados e consumir menos espaço. A estratégia da NetApp para eficiência de storage é baseada na base incorporada da virtualização de storage e no storage unificado fornecida pelo sistema operacional ONTAP central e pelo sistema de arquivos Write Anywhere File Layout (WAFL).
+
+A eficiência de storage inclui o uso de tecnologias como thin Provisioning, cópia Snapshot, deduplicação, compressão de dados, FlexClone, thin replication com SnapVault e volume SnapMirror, RAID-DP, Flash Cache, agregado de Flash Pool e agregados habilitados para FabricPool, que ajudam a aumentar a utilização do storage e a diminuir os custos de storage.
+
+A arquitetura de storage unificada permite consolidar com eficiência uma rede de área de storage (SAN), armazenamento conetado à rede (nas) e storage secundário em uma única plataforma.
+
+Unidades de disco de alta densidade, como unidades SATA (serial Advanced Technology Attachment) configuradas no Flash Pool Aggregate ou com Flash Cache e tecnologia RAID-DP, aumentam a eficiência sem afetar o desempenho e a resiliência.
+
+Um agregado habilitado para FabricPool inclui um agregado totalmente SSD como a camada de performance e um armazenamento de objetos que você especifica como a camada de nuvem. A configuração do FabricPool ajuda a gerenciar qual camada de storage (a camada de performance local ou a camada de nuvem) os dados devem ser armazenados com base no fato de que eles são acessados com frequência.
+
+Tecnologias como thin Provisioning, cópia Snapshot, deduplicação, compressão de dados, thin replication com SnapVault e volume SnapMirror e FlexClone oferecem uma economia melhor. Você pode usar essas tecnologias individualmente ou em conjunto para obter a máxima eficiência de storage.

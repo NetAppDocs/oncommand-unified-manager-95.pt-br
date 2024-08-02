@@ -1,0 +1,70 @@
+---
+permalink: health-checker/task-changing-or-canceling-a-scheduled-maintenance-window.html 
+sidebar: sidebar 
+keywords:  
+summary: Se você tiver configurado uma janela de manutenção do Unified Manager para ocorrer no futuro, poderá alterar as horas de início e término ou cancelar a ocorrência da janela de manutenção. 
+---
+= Alterar ou cancelar uma janela de manutenção agendada
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você tiver configurado uma janela de manutenção do Unified Manager para ocorrer no futuro, poderá alterar as horas de início e término ou cancelar a ocorrência da janela de manutenção.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+O cancelamento de uma janela de manutenção atualmente em execução é útil se você tiver concluído a manutenção do cluster antes da hora de término da janela de manutenção programada e quiser começar a receber eventos e alertas do cluster novamente.
+
+
+
+== Passos
+
+. No painel de navegação à esquerda, clique em *Configuração* > *fontes de dados do Cluster*.
+. Na coluna *Maintenance Mode* para o cluster:
++
+|===
+| Se você quiser... | Execute esta etapa... 
+
+
+ a| 
+Altere o período de tempo para uma janela de manutenção agendada
+ a| 
+.. Clique no texto "agendado" ao lado do botão deslizante.
+.. Altere a data e hora de início e/ou fim e clique em *aplicar*.
+
+
+
+
+ a| 
+Estenda o comprimento de uma janela de manutenção ativa
+ a| 
+.. Clique no texto "Ativo" ao lado do botão deslizante.
+.. Altere a data e a hora de término e clique em *Apply*.
+
+
+
+
+ a| 
+Cancelar uma janela de manutenção agendada
+ a| 
+Selecione o botão deslizante e mova-o para a esquerda.
+
+
+
+ a| 
+Cancelar uma janela de manutenção ativa
+ a| 
+Selecione o botão deslizante e mova-o para a esquerda.
+
+|===
+

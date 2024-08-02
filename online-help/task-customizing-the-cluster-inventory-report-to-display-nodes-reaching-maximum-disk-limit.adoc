@@ -1,0 +1,65 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-nodes-reaching-maximum-disk-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório Inventário de cluster para exibir uma lista de nós que estão atingindo o limite máximo de disco e classificados por ordem crescente. 
+---
+= Personalizar o relatório Inventário de cluster para exibir nós que atingem o limite máximo de disco
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Inventário de cluster para exibir uma lista de nós que estão atingindo o limite máximo de disco e classificados por ordem crescente.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por cluster ou nó, execute as seguintes etapas:
++
+.. Clique nas colunas que precisam ser desagrupadas.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para mover a coluna *Disk Count* ao lado da coluna *Model*, execute as seguintes etapas:
++
+.. Clique na coluna *Disk Count*.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone e selecione *coluna* > *Reordenar colunas*.
+.. Na caixa de diálogo *Reordenar colunas*, use as teclas de seta *para cima* e *para baixo* para mover a coluna para a posição desejada.
+
+
+. Para adicionar uma nova coluna computada, execute as seguintes etapas:
++
+.. Selecione uma coluna, clique image:../media/click-to-see-menu.gif[""]em e selecione *coluna* > *Nova coluna calculada*.
+.. Na caixa de diálogo *Nova coluna computada*, digite `Maximum Disk Limit` o campo *rótulo da coluna*.
+.. Na lista Selecionar categoria, selecione *comparação*.
+.. Na lista *Selecionar função*, selecione *Avançado*.
+.. No campo *Enter Expression*, `IF([model]="FAS3250" , 960, 0)` digite .
+.. Clique em *OK*.
+
+
+. Para adicionar uma segunda nova coluna, execute as seguintes etapas:
++
+.. Selecione a coluna *limite máximo de disco*, clique no image:../media/click-to-see-menu.gif[""] ícone e selecione *coluna* > *Nova coluna calculada*.
+.. Na caixa de diálogo *Nova coluna computada*, digite `Available Volume` o campo *rótulo da coluna*.
+.. Na lista Selecionar categoria, selecione *Math*.
+.. Na lista *Selecionar função*, selecione *DIFERENÇA*.
+.. Na lista coluna 1, selecione *limite máximo de disco*.
+.. Na lista coluna 2, selecione *contagem de disco*.
+.. Clique em *OK*.
+
+
+. Para classificar os valores, clique na coluna *volume disponível* e clique no image:../media/click-to-see-menu.gif[""] ícone.
+. Selecione *Filter* > *Top/Bottom N*.
+. Na caixa de diálogo *Top/Bottom N*, selecione *Top N* no campo *Filter* e insira um valor no campo de texto.
+. Clique em *OK*.
+

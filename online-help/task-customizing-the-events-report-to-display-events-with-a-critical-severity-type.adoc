@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-with-a-critical-severity-type.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório Eventos para exibir eventos filtrados por seu tipo de gravidade e pelos eventos que não foram resolvidos durante o maior período de tempo. 
+---
+= Personalizar o relatório Eventos para exibir eventos com um tipo de gravidade crítica
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Eventos para exibir eventos filtrados por seu tipo de gravidade e pelos eventos que não foram resolvidos durante o maior período de tempo.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para filtrar eventos com tipo de gravidade crítica, clique na coluna *Status* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista *condição*, selecione *igual a*.
+. Clique em *Select Values* (Selecionar valores) e selecione *Critical* (Crítica).
+. Clique em *OK*.
+. Para classificar os eventos não resolvidos durante o maior período de tempo, clique na coluna *dias pendentes* e clique no image:../media/click-to-see-menu.gif[""] ícone.
+. Selecione *Filter* > *Top/Bottom N*.
+. Na caixa de diálogo *Top/Bottom N*, selecione *Top N* no campo *Filter* e insira um valor no campo de texto.
+. Clique em *OK*.
+

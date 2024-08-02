@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-authentication-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Pode ativar a autenticação LDAP a partir da página Configuração/Autenticação. 
+---
+= Descrição das janelas de autenticação e caixas de diálogo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode ativar a autenticação LDAP a partir da página Configuração/Autenticação.

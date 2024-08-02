@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-page-descriptions-for-object-landing-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Use as páginas do Performance Explorer para exibir informações detalhadas de performance sobre cada um dos objetos de storage disponíveis, como clusters, agregados, volumes, etc. Essas páginas permitem que você avalie o desempenho geral de todos os objetos e compare os dados de desempenho do objeto em um formato lado a lado. 
+---
+= Descrições das páginas do Performance Explorer
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use as páginas do Performance Explorer para exibir informações detalhadas de performance sobre cada um dos objetos de storage disponíveis, como clusters, agregados, volumes, etc. Essas páginas permitem que você avalie o desempenho geral de todos os objetos e compare os dados de desempenho do objeto em um formato lado a lado.

@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-what-the-expected-range-of-performance-is.html 
+sidebar: sidebar 
+keywords:  
+summary: O intervalo esperado de valores é uma previsão, ou previsão, do que os valores de desempenho superior e inferior devem ser em um momento específico. Para a latência do workload, os valores superiores formam o limite de performance. Quando o valor real cruza o limite de performance, o Unified Manager aciona um alerta de evento de performance. 
+---
+= Qual é a faixa de desempenho esperada
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O intervalo esperado de valores é uma previsão, ou previsão, do que os valores de desempenho superior e inferior devem ser em um momento específico. Para a latência do workload, os valores superiores formam o limite de performance. Quando o valor real cruza o limite de performance, o Unified Manager aciona um alerta de evento de performance.
+
+Por exemplo, durante o horário comercial regular entre as 9:00h e as 5:00h, a maioria dos funcionários pode verificar seu e-mail entre as 9:00h e as 10:30H. o aumento da demanda nos servidores de e-mail significa um aumento na atividade de carga de trabalho no armazenamento de back-end durante esse período. Os funcionários podem notar um tempo de resposta lento de seus clientes de e-mail.
+
+Durante a hora de almoço entre as 12:00h e as 1:00h e no final do dia de trabalho após as 5:00h, a maioria dos funcionários provavelmente está longe de seus computadores. A demanda nos servidores de e-mail geralmente diminui, também diminuindo a demanda no armazenamento de back-end. Como alternativa, pode haver operações de carga de trabalho agendadas, como backups de armazenamento ou verificação de vírus, que começam após as 5:00 horas e aumentam a atividade no armazenamento de back-end.
+
+Ao longo de vários dias, o aumento e a diminuição da atividade da carga de trabalho determina o intervalo esperado de atividade, com limites superior e inferior para uma carga de trabalho. Quando a atividade de carga de trabalho real para um objeto está fora dos limites superior ou inferior e permanece fora dos limites por um período de tempo, isso pode indicar que o objeto está sendo usado em excesso ou subutilizado.
+
+
+
+== Como a faixa esperada é formada
+
+O Unified Manager deve coletar no mínimo 3 dias de atividade do workload antes que ele possa iniciar a análise e antes que o intervalo esperado para o tempo de resposta e as operações de e/S possa ser exibido na GUI. A coleta de dados mínima necessária não é responsável por todas as alterações que ocorrem na atividade da carga de trabalho. Após coletar os primeiros 3 dias de atividade, o Unified Manager ajusta o intervalo esperado, a cada 24 horas às 12:00 da manhã, para refletir as alterações na atividade do workload e estabelecer um limite de performance mais preciso.
+
+[NOTE]
+====
+O horário de verão (DST) altera a hora do sistema, que altera o intervalo esperado de estatísticas de desempenho para cargas de trabalho monitoradas. O Unified Manager começa imediatamente a corrigir o intervalo esperado, o que leva aproximadamente 15 dias para ser concluído. Durante esse período, você pode continuar usando o Unified Manager, mas, como o Unified Manager usa o intervalo esperado para detetar eventos, alguns eventos podem não ser precisos. Os eventos detetados antes da alteração de hora não são afetados. Alterar manualmente a hora em um cluster ou em um servidor do Unified Manager para uma hora anterior também afetará os resultados da análise de eventos.
+
+====

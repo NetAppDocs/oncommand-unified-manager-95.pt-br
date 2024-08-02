@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-backup-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode exibir a lista de backups na página de backup no Unified Manager. Você pode exibir o nome, o tamanho e o tempo de criação do backup para os backups listados nesta página. Pode modificar as definições de cópia de segurança da base de dados a partir da página Definições de cópia de segurança da base de dados. 
+---
+= Descrição das janelas de backup e caixas de diálogo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exibir a lista de backups na página de backup no Unified Manager. Você pode exibir o nome, o tamanho e o tempo de criação do backup para os backups listados nesta página. Pode modificar as definições de cópia de segurança da base de dados a partir da página Definições de cópia de segurança da base de dados.

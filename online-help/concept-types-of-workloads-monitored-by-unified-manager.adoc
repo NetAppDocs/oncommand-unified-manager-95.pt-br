@@ -1,0 +1,54 @@
+---
+permalink: online-help/concept-types-of-workloads-monitored-by-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode usar o Unified Manager para monitorar a performance de dois tipos de workloads: Definido pelo usuário e definido pelo sistema.' 
+---
+= Tipos de workloads monitorados pelo Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar o Unified Manager para monitorar a performance de dois tipos de workloads: Definido pelo usuário e definido pelo sistema.
+
+* *_cargas de trabalho definidas pelo usuário_*
++
+A taxa de transferência de e/S das aplicações para o cluster. Estes são processos envolvidos em pedidos de leitura e escrita. Um volume de FlexVol volume ou FlexGroup é um workload definido pelo usuário.
+
++
+[NOTE]
+====
+O Unified Manager monitora apenas a atividade do workload no cluster. Ele não monitora os aplicativos, os clientes ou os caminhos entre os aplicativos e o cluster.
+
+====
++
+Se uma ou mais das opções a seguir for verdadeira para uma carga de trabalho, ela não poderá ser monitorada pelo Unified Manager:
+
++
+** É uma cópia de proteção de dados (DP) no modo somente leitura. (Observe que ao usar o ONTAP 8,3 e posterior, os volumes DP são monitorados quanto ao tráfego gerado pelo usuário.)
+** É um Infinite volume.
+** É um clone de dados off-line.
+** É um volume espelhado em uma configuração do MetroCluster.
+
+
+* *_cargas de trabalho definidas pelo sistema_*
++
+Os processos internos envolvidos com eficiência de storage, replicação de dados e integridade do sistema, incluindo:
+
++
+** Eficiência de storage, como deduplicação
+** Integridade do disco, que inclui RAID Reconstruct, análise de disco e assim por diante
+** Replicação de dados, como cópias SnapMirror
+** Atividades de gestão
+** Integridade do sistema de arquivos, que inclui várias atividades do WAFL
+** Scanners de sistema de arquivos, como WAFL scan
+** Descarga de cópia, como operações de eficiência de storage descarregadas de hosts VMware
+** Integridade do sistema, como movimentos de volume, compactação de dados etc.
+** Volumes não monitorizados
+
+
+
+
+Os dados de performance para workloads definidos pelo sistema são exibidos na GUI somente quando o componente de cluster usado por esses workloads está na contenção. Por exemplo, você não pode pesquisar o nome de uma carga de trabalho definida pelo sistema para exibir seus dados de performance na GUI. Se várias cargas de trabalho definidas pelo sistema do mesmo tipo forem exibidas, uma letra será anexada ao nome da carga de trabalho. A carta destina-se a ser utilizada pelo pessoal de apoio.

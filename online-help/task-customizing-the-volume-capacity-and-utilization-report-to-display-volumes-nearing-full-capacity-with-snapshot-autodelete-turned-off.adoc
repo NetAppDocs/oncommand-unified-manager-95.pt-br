@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-volumes-nearing-full-capacity-with-snapshot-autodelete-turned-off.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível personalizar o relatório capacidade de volume e utilização para exibir volumes classificados por ordem crescente de utilização da capacidade de volume. Isso permite que você exiba volumes que atingem sua capacidade total. 
+---
+= Personalizar o relatório de capacidade de volume e utilização para exibir volumes que se aproximam da capacidade total com o Snapshot Autodelete desativado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível personalizar o relatório capacidade de volume e utilização para exibir volumes classificados por ordem crescente de utilização da capacidade de volume. Isso permite que você exiba volumes que atingem sua capacidade total.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por SVM, cluster ou volume, execute o seguinte procedimento:
++
+.. Clique na coluna que precisa ser desagrupada.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para classificar volumes que estão próximos da capacidade total, clique na coluna *dias a completos* e clique no image:../media/sort-asc.gif[""] ícone.
+. Para filtrar volumes que têm o Snapshot Autodelete desativado, clique na coluna *Snapshot Autodelete* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista *condição*, selecione *igual a*.
+. Clique em *Select Values* (Selecionar valores) e selecione *Disabled* (Desativado).
+. Clique em *OK*.
+

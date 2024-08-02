@@ -1,0 +1,52 @@
+---
+permalink: online-help/reference-nvme-namespace-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Use a página informações do namespace para exibir uma lista dos atributos físicos e lógicos do namespace. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho. 
+---
+= Página de informações do namespace
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use a página informações do namespace para exibir uma lista dos atributos físicos e lógicos do namespace. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho.
+
+
+
+== Atributos do namespace
+
+* *Cluster*
++
+O nome do cluster ao qual o namespace pertence. Você pode clicar no nome para exibir os detalhes do cluster na página Performance/Cluster Explorer.
+
+* *Capacidade (grátis/total)*
++
+A capacidade total de storage do namespace e a quantidade de storage disponível atualmente.
+
+* *Nó*
++
+O nome do nó no qual o namespace reside. Você pode clicar no nome para exibir os detalhes do nó na página Performance/Node Explorer.
+
+* *Caminho*
++
+O caminho completo do namespace, por exemplo `/vol/vol1/namespace1`, .
+
+* *Estado*
++
+O estado do namespace. os estados válidos podem estar online, offline, nvfail e espaço-erro.
+
+* *Subsistema*
++
+O subsistema do namespace.
+
+* *Storage Virtual Machine*
++
+O nome do SVM ao qual o namespace pertence. Você pode clicar no nome para exibir os detalhes do SVM na página Performance/SVM Explorer.
+
+* *Volume*
++
+O nome do volume ao qual o namespace pertence. Pode clicar no nome para apresentar os detalhes do volume na página Explorador de desempenho/volume.
+
+

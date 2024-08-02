@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-clusters-and-cluster-object-health.html 
+sidebar: sidebar 
+keywords:  
+summary: O Unified Manager usa consultas periódicas de API e um mecanismo de coleta de dados para coletar dados dos clusters. Ao adicionar clusters ao banco de dados do Unified Manager, você pode monitorar e gerenciar esses clusters para verificar se há riscos de disponibilidade e capacidade. 
+---
+= Gerenciamento e monitoramento de clusters e integridade de objetos do cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager usa consultas periódicas de API e um mecanismo de coleta de dados para coletar dados dos clusters. Ao adicionar clusters ao banco de dados do Unified Manager, você pode monitorar e gerenciar esses clusters para verificar se há riscos de disponibilidade e capacidade.

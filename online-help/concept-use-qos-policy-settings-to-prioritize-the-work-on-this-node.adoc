@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-use-qos-policy-settings-to-prioritize-the-work-on-this-node.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode definir um limite em um grupo de políticas de QoS para controlar o limite de taxa de transferência de e/S por segundo (IOPS) ou Mbps para as cargas de trabalho que ele contém. Se as cargas de trabalho estiverem em um grupo de políticas sem limite definido, como o grupo de políticas padrão ou o limite definido não atender às suas necessidades, você poderá aumentar o limite definido ou mover as cargas de trabalho para um grupo de políticas novo ou existente que tenha o limite desejado.' 
+---
+= Use as configurações de política de QoS para priorizar o trabalho nesse nó
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode definir um limite em um grupo de políticas de QoS para controlar o limite de taxa de transferência de e/S por segundo (IOPS) ou Mbps para os workloads nele contidos. Se as cargas de trabalho estiverem em um grupo de políticas sem limite definido, como o grupo de políticas padrão ou o limite definido não atender às suas necessidades, você poderá aumentar o limite definido ou mover as cargas de trabalho para um grupo de políticas novo ou existente que tenha o limite desejado.
+
+Se um evento de desempenho em um nó for causado por cargas de trabalho que usam os recursos do nó, a descrição do evento na página de detalhes do evento exibirá um link para a lista de volumes envolvidos. Na página desempenho/volumes, você pode classificar os volumes afetados por IOPS e Mbps para ver quais workloads têm o uso mais alto que pode ter contribuído para o evento.
+
+Ao atribuir os volumes que estão sobreusando os recursos do nó a uma configuração de grupo de políticas mais restritiva, o grupo de políticas mantém as cargas de trabalho para restringir sua atividade, o que pode reduzir o uso dos recursos nesse nó.
+
+Você pode usar os comandos OnCommand System Manager ou ONTAP para gerenciar grupos de políticas, incluindo as seguintes tarefas:
+
+* Criando um grupo de políticas
+* Adição ou remoção de cargas de trabalho em um grupo de políticas
+* Movimentação de uma carga de trabalho entre grupos de políticas
+* Alterar o limite de taxa de transferência de um grupo de políticas
+

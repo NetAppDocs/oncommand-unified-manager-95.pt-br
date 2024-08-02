@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-impacting-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório Eventos para exibir eventos que são categorizados pela maioria dos incidentes e atribuídos ao administrador. Você pode filtrar o relatório pelo nível de impactos e pelo nome do administrador. 
+---
+= Personalizar o relatório Eventos para exibir eventos que afetam a disponibilidade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Eventos para exibir eventos que são categorizados pela maioria dos incidentes e atribuídos ao administrador. Você pode filtrar o relatório pelo nível de impactos e pelo nome do administrador.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para filtrar eventos de disponibilidade, clique na coluna *Área de impactos* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista suspensa *condição*, selecione *igual a*.
+. Clique em *Selecionar valores* e selecione *Incidente*.
+. Clique em *OK*.
+

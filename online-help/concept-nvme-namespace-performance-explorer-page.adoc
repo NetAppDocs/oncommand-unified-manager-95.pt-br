@@ -1,0 +1,35 @@
+---
+permalink: online-help/concept-nvme-namespace-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Explorador de namespace fornece uma visão geral detalhada do desempenho de todos os namespaces dentro de um cluster. 
+---
+= Página do Explorador de namespace
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Explorador de namespace fornece uma visão geral detalhada do desempenho de todos os namespaces dentro de um cluster.
+
+A página do Explorador de namespace permite rastrear e comparar o desempenho do namespace durante um período de tempo específico, o que ajuda você a solucionar problemas e ajustar o desempenho de seus namespaces.
+
+Usando a funcionalidade Ver e comparar, você pode comparar o desempenho deste namespace com:
+
+* O volume no qual o namespace reside
+* Outros namespaces que estão no mesmo volume
+* Outros namespaces que estão no mesmo SVM
+
+
+A página do Explorador de namespace permite:
+
+* Veja os problemas relacionados ao limite e seus detalhes
+* Acompanhe e compare dados de performance de namespace
+* Investigue e solucione problemas relacionados ao limite
+* Investigue e solucione problemas de desempenho
+* Inicie o System Manager para fazer uma alteração de configuração no namespace
++
+O botão *Configurar namespace* está disponível se você estiver conetado ao Gerenciador Unificado com a função Administrador do OnCommand ou Administrador do armazenamento e ao usar o ONTAP 9.5 ou superior.
+
+

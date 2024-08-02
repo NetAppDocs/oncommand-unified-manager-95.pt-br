@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-verify-whether-other-volumes-in-the-qos-policy-group-have-unusually-high-activity.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode analisar as cargas de trabalho no grupo de políticas qualidade do serviço (QoS) com a maior alteração na atividade para determinar se mais de um workload causou o evento. Você também pode ver se outros workloads ainda estão excedendo o limite de taxa de transferência definido ou se eles estão de volta ao intervalo de atividade esperado.' 
+---
+= Verifique se outros volumes no grupo de políticas de QoS têm atividade excepcionalmente alta
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode analisar os workloads no grupo de políticas de qualidade do serviço (QoS) que tem a alteração mais alta na atividade para determinar se mais de um workload causou o evento. Você também pode ver se outros workloads ainda estão excedendo o limite de taxa de transferência definido ou se eles estão de volta ao intervalo de atividade esperado.
+
+Na página de detalhes do evento, na seção Diagnóstico do sistema, você pode classificar as cargas de trabalho por desvio de pico na atividade para exibir as cargas de trabalho com a alteração mais alta na atividade na parte superior da tabela. Essas cargas de trabalho podem ser os "bullies" cuja atividade excedeu o limite definido e pode ter causado o evento.
+
+É possível navegar até a página Detalhes de desempenho/volume para cada workload de volume no gráfico para analisar a atividade de IOPS. Se a carga de trabalho tiver períodos de atividade de operações muito altas, ela pode ter contribuído para o evento. Você pode alterar as configurações do grupo de políticas para a carga de trabalho ou mover a carga de trabalho para um grupo de políticas diferente.
+
+Você pode usar os comandos OnCommand System Manager ou CLI do ONTAP para gerenciar grupos de políticas, da seguinte forma:
+
+* Crie um grupo de políticas.
+* Adicione ou remova cargas de trabalho em um grupo de políticas.
+* Mover uma carga de trabalho entre grupos de políticas.
+* Altere o limite de taxa de transferência de um grupo de políticas.
+

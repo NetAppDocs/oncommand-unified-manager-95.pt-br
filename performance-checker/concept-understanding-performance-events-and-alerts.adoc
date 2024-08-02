@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-understanding-performance-events-and-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de desempenho são notificações que o Unified Manager gera automaticamente quando ocorre uma condição predefinida ou quando um valor do contador de desempenho cruza um limite. Os eventos ajudam a identificar problemas de desempenho nos clusters monitorados. 
+---
+= Compreender eventos e alertas de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de desempenho são notificações que o Unified Manager gera automaticamente quando ocorre uma condição predefinida ou quando um valor do contador de desempenho cruza um limite. Os eventos ajudam a identificar problemas de desempenho nos clusters monitorados.
+
+Você pode configurar alertas para enviar notificações por e-mail automaticamente quando ocorrerem eventos de desempenho de determinados tipos de gravidade.

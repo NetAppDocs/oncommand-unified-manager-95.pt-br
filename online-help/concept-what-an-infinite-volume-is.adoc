@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-an-infinite-volume-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Um Infinite volume é um volume único e dimensionável que pode armazenar até 2 bilhões de arquivos e dezenas de petabytes de dados. 
+---
+= O que é um Infinite volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um Infinite volume é um volume único e dimensionável que pode armazenar até 2 bilhões de arquivos e dezenas de petabytes de dados.
+
+Com um Infinite volume, é possível gerenciar vários petabytes de dados em uma grande entidade lógica e os clientes podem recuperar vários petabytes de dados de um único caminho de junção para todo o volume.
+
+Um Infinite volume usa storage de vários agregados em vários nós. Você pode começar com um Small Infinite volume e expandi-lo sem interrupções, adicionando mais discos a seus agregados ou fornecendo mais agregados para usar.

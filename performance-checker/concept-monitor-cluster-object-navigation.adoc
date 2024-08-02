@@ -1,0 +1,22 @@
+---
+permalink: performance-checker/concept-monitor-cluster-object-navigation.html 
+sidebar: sidebar 
+keywords:  
+summary: O Unified Manager permite monitorar a performance de todos os objetos em qualquer cluster gerenciado pelo Unified Manager. O monitoramento de seus objetos de storage fornece uma visão geral do desempenho do cluster e do objeto, além de incluir o monitoramento de eventos de desempenho. Você pode visualizar o desempenho e os eventos em um alto nível, ou você pode investigar mais detalhes sobre o desempenho do objeto e eventos de desempenho. 
+---
+= Monitorar a navegação de objetos do cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager permite monitorar a performance de todos os objetos em qualquer cluster gerenciado pelo Unified Manager. O monitoramento de seus objetos de storage fornece uma visão geral do desempenho do cluster e do objeto, além de incluir o monitoramento de eventos de desempenho. Você pode visualizar o desempenho e os eventos em um alto nível, ou você pode investigar mais detalhes sobre o desempenho do objeto e eventos de desempenho.
+
+Este é um exemplo de muitas possíveis navegações de objetos de cluster:
+
+. Na página Dashboards/Performance, identifique um cluster que você deseja investigar e navegue até a página inicial do cluster selecionado.
+. Na página Resumo de desempenho/cluster, identifique o objeto de cluster que você deseja investigar e navegue até a página de inventário desse objeto. Neste exemplo, *volumes* é selecionado para exibir a página de inventário de desempenho/volumes.
+
+
+image::../media/monitor-cluster-object.gif[monitorar objeto de cluster]

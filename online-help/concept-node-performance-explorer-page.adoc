@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-node-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Performance/Node Explorer fornece uma visão geral detalhada do desempenho de todos os nós dentro de um cluster. 
+---
+= Página do Explorador de nós/desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Performance/Node Explorer fornece uma visão geral detalhada do desempenho de todos os nós dentro de um cluster.
+
+A página Performance/Node Explorer permite rastrear e comparar o desempenho dos nós durante um período de tempo específico, o que ajuda você a solucionar problemas e ajustar o desempenho dos nós.
+
+Usando a funcionalidade Ver e comparar, você pode comparar o desempenho deste nó com:
+
+* outros nós no mesmo cluster
+* os agregados no nó
+* as portas no nó
+
+
+A página Performance/Node Explorer permite:
+
+* Veja os problemas relacionados ao limite e seus detalhes
+* Acompanhe e compare os dados de desempenho dos nós
+* Investigue e solucione problemas relacionados ao limite
+* Investigue e solucione problemas de desempenho
+

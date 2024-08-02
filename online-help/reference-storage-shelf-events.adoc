@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-storage-shelf-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos do compartimento de armazenamento informam se o compartimento de armazenamento apresenta alterações anormais, para que você possa monitorar se há problemas em potencial. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de prateleira de armazenamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos do compartimento de armazenamento informam se o compartimento de armazenamento apresenta alterações anormais, para que você possa monitorar se há problemas em potencial. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Faixa de tensão anormal (ocumEvtShelfVoltageAbnormal)
+ a| 
+Risco
+ a| 
+Compartimento de armazenamento
+ a| 
+Aviso
+
+
+
+ a| 
+Faixa de corrente anormal (ocumEvtShelfCurrentAbnormal)
+ a| 
+Risco
+ a| 
+Compartimento de armazenamento
+ a| 
+Aviso
+
+
+
+ a| 
+Temperatura anormal (ocumEvtShelfTemperatureAbnormal)
+ a| 
+Risco
+ a| 
+Compartimento de armazenamento
+ a| 
+Aviso
+
+|===

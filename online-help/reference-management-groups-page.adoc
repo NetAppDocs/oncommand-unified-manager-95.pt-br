@@ -1,0 +1,186 @@
+---
+permalink: online-help/reference-management-groups-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A página Gerenciamento/grupos permite criar grupos no Unified Manager para gerenciar facilmente objetos de storage. Um grupo é uma coleção dinâmica de objetos de armazenamento (clusters, volumes e SVMs), que é definida pelas regras de grupo criadas para o grupo.' 
+---
+= Página Gestão/grupos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Gerenciamento/grupos permite criar grupos no Unified Manager para gerenciar facilmente objetos de storage. Um grupo é uma coleção dinâmica de objetos de storage (clusters, volumes e SVMs), que é definida pelas regras de grupo criadas para o grupo.
+
+A página Gerenciamento/grupos inclui guias que permitem adicionar, excluir ou editar um grupo, regras de grupo e ações de grupo. Quando iniciar sessão como operador, terá apenas acesso de leitura à página. Você pode acessar os botões adicionar, editar ou excluir em cada guia quando você fizer login como administrador de armazenamento ou administrador do Unified Manager.
+
+
+
+== Separador grupos
+
+A guia grupos exibe o nome e a descrição dos grupos criados. Você pode executar tarefas como adicionar, editar ou excluir um grupo. A guia também exibe o número de regras de grupo e ações de grupo associadas a um grupo, o número de clusters, SVMs e volumes no grupo.
+
+
+
+== Botões de comando
+
+* *Adicionar*
++
+Exibe a caixa de diálogo Adicionar grupo, que permite adicionar um grupo e fornecer um nome e uma descrição para o grupo.
+
++
+Você também pode aplicar regras de grupo mais tarde ao grupo para incluir objetos de armazenamento.
+
+* *Editar*
++
+Exibe a caixa de diálogo Editar grupo, que permite editar o nome e a descrição do grupo selecionado.
+
+* *Excluir*
++
+Elimina o grupo selecionado.
+
+
+
+
+
+== Vista de lista
+
+A exibição de lista exibe, em formato tabular, os grupos criados no Unified Manager. Você pode usar os filtros de coluna para personalizar os dados exibidos. Por padrão, a lista é ordenada por nome de grupo.
+
+* *Nome*
++
+Exibe o nome do grupo.
+
+* *Descrição*
++
+Exibe a descrição do grupo.
+
+* *Regras associadas*
++
+Exibe o número de regras adicionadas ao grupo.
+
+* *Ações associadas*
++
+Exibe o número de ações de grupo adicionadas ao grupo.
+
+* *Clusters aplicáveis*
++
+Exibe o número de clusters incluídos no grupo.
+
+* *SVMs aplicáveis*
++
+Exibe o número de SVMs incluídas no grupo.
+
+* *Volumes aplicáveis*
++
+Exibe o número de volumes incluídos no grupo.
+
+
+
+
+
+== Guia regras do grupo
+
+A guia regras de grupo exibe as regras de grupo criadas para que os grupos contenham objetos de armazenamento. Você pode executar tarefas como adicionar, editar ou excluir uma regra de grupo. A guia também exibe o nome do grupo para o qual a regra de grupo é criada e o objeto de armazenamento para o qual a regra é aplicada. Você também pode exibir o número de objetos de armazenamento que satisfazem a regra de grupo.
+
+
+
+== Botões de comando
+
+* *Adicionar*
++
+Exibe a caixa de diálogo Adicionar regra de grupo, que permite criar regras de grupo para objetos de armazenamento.
+
+* *Editar*
++
+Exibe a caixa de diálogo Editar regra de grupo, que permite reconfigurar regras de grupo configuradas anteriormente.
+
+* *Excluir*
++
+Exclui a regra de grupo selecionado.
+
+
+
+
+
+== Vista de lista
+
+A exibição de lista exibe, em formato tabular, as regras de grupo criadas para um objeto de armazenamento específico (clusters, volumes ou SVMs) e a contagem de objetos de armazenamento que atendem à regra de grupo definido.
+
+* *Nome*
++
+Exibe o nome da regra.
+
+* *Grupo associado*
++
+Exibe o nome do grupo para o qual a regra de grupo está definida.
+
+* * Tipo Objeto alvo*
++
+Exibe o tipo de objeto de armazenamento ao qual a regra de grupo é aplicada.
+
+* *Objetos aplicáveis*
++
+Exibe a contagem dos objetos de armazenamento incluídos no grupo com base na regra de grupo.
+
+
+
+
+
+== Guia ações do grupo
+
+A guia ações de grupo exibe o nome e o tipo de ações de grupo definidas para grupos. Você pode executar tarefas como adicionar, editar, excluir ou reordenar as ações do grupo. A guia também exibe o nome do grupo no qual a ação do grupo é aplicada.
+
+
+
+== Botões de comando
+
+* *Adicionar*
++
+Exibe a caixa de diálogo Adicionar ação, que permite criar ações de grupo para um grupo de objetos de armazenamento. Por exemplo, você pode definir os níveis de limite de objetos de armazenamento em um grupo.
+
+* *Editar*
++
+Exibe a caixa de diálogo Editar ação, que permite reconfigurar ações de grupo configuradas anteriormente.
+
+* *Excluir*
++
+Elimina a ação do grupo selecionado.
+
+* *Reordenar*
++
+Exibe a caixa de diálogo Reordenar ações de grupo para reorganizar a ordem das ações de grupo.
+
+
+
+
+
+== Vista de lista
+
+A exibição de lista exibe, em formato tabular, as ações de grupo criadas para os grupos no servidor do Unified Manager. Você pode usar os filtros de coluna para personalizar os dados exibidos.
+
+* *Classificação*
++
+Exibe a ordem das ações do grupo a serem aplicadas nos objetos de armazenamento em um grupo.
+
+* *Nome*
++
+Exibe o nome da ação do grupo.
+
+* *Grupo associado*
++
+Exibe o nome do grupo para o qual a ação do grupo está definida.
+
+* *Tipo de ação*
++
+Exibe o tipo de ação de grupo que você pode executar nos objetos de armazenamento em um grupo.
+
++
+Não é possível criar várias ações de grupo do mesmo tipo de ação para um grupo. Por exemplo, você pode criar uma ação de grupo para definir limites de volume para um grupo. No entanto, não é possível criar outra ação de grupo para que o mesmo grupo altere os limites de volume.
+
+* *Descrição*
++
+Exibe a descrição da ação do grupo.
+
+

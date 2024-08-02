@@ -1,0 +1,68 @@
+---
+permalink: config/task-subscribing-to-ontap-ems-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode se inscrever para receber eventos do sistema de Gerenciamento de Eventos (EMS) que são gerados por sistemas instalados com o software ONTAP. Um subconjunto de eventos EMS é relatado automaticamente ao Unified Manager, mas eventos EMS adicionais são relatados somente se você se inscreveu nesses eventos.' 
+---
+= Subscrever eventos ONTAP EMS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode se inscrever para receber eventos do sistema de Gerenciamento de Eventos (EMS) gerados por sistemas instalados com o software ONTAP. Um subconjunto de eventos EMS é relatado automaticamente ao Unified Manager, mas eventos EMS adicionais são relatados somente se você se inscreveu nesses eventos.
+
+
+
+== Antes de começar
+
+Não assine eventos EMS que já foram adicionados ao Unified Manager automaticamente, pois isso pode causar confusão ao receber dois eventos para o mesmo problema.
+
+
+
+== Sobre esta tarefa
+
+Você pode se inscrever em qualquer número de eventos EMS. Todos os eventos aos quais você se inscreve são validados e somente os eventos validados são aplicados aos clusters que você está monitorando no Unified Manager. O _Catálogo de Eventos do ONTAP 9 EMS_ fornece informações detalhadas para todas as mensagens do EMS para a versão especificada do software ONTAP 9. Localize a versão apropriada do Catálogo de Eventos _EMS_ na página Documentação do produto da ONTAP 9 para obter uma lista dos eventos aplicáveis.
+
+https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["Biblioteca de produtos ONTAP 9"]
+
+Você pode configurar alertas para os eventos do ONTAP EMS aos quais você se inscreve e criar scripts personalizados para serem executados para esses eventos.
+
+[NOTE]
+====
+Se você não receber os eventos do ONTAP EMS aos quais você se inscreveu, pode haver um problema com a configuração DNS do cluster que está impedindo que o cluster chegue ao servidor do Unified Manager. Para resolver esse problema, o administrador do cluster deve corrigir a configuração DNS do cluster e reiniciar o Unified Manager. Isso irá liberar os eventos EMS pendentes para o servidor do Unified Manager.
+
+====
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Configuração* > *Gerenciar eventos*.
+. Na página *Configuração/gerir eventos*, clique no botão *Subscrever a eventos EMS*.
+. Na caixa de diálogo *Inscrever-se para eventos EMS*, insira o nome do evento ONTAP EMS ao qual deseja se inscrever.
++
+Para ver os nomes dos eventos EMS aos quais você pode assinar, a partir do shell do cluster ONTAP, você pode usar o `event route show` comando (antes do ONTAP 9) ou o `event catalog show` comando (ONTAP 9 ou posterior).
+
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_ONTAP_EMS_Event_Subscriptions_in_OnCommand_Unified_Manager_%2F%2F_Active_IQ_Unified_Manager["Como configurar assinaturas de eventos do ONTAP EMS no Gerenciador Unificado / Active IQ Unified Manager da OnCommand"]
+
+. Clique em *Add*.
++
+O evento EMS é adicionado à lista de eventos EMS subscritos, mas a coluna aplicável ao cluster exibe o status como ""desconhecido"" para o evento EMS que você adicionou.
+
+. Clique em *Salvar e fechar* para Registrar a assinatura do evento EMS no cluster.
+. Clique em *Inscrever-se para eventos EMS* novamente.
++
+O status "'Sim'" aparece na coluna aplicável ao cluster para o evento EMS que você adicionou.
+
++
+Se o status não for "Sim", verifique a ortografia do nome do evento ONTAP EMS. Se o nome for inserido incorretamente, você deve remover o evento incorreto e adicionar o evento novamente.
+
+
+
+
+
+== Depois de terminar
+
+Quando o evento EMS do ONTAP ocorre, o evento é exibido na página Eventos. Pode selecionar o evento para ver detalhes sobre o evento EMS na página de detalhes do evento. Você também pode gerenciar a disposição do evento ou criar alertas para o evento.

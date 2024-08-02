@@ -1,0 +1,124 @@
+---
+permalink: performance-checker/reference-performance-statistics-displayed-in-the-data-breakdown-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: Pode utilizar os gráficos para ver as tendências de desempenho de um volume. Você também pode exibir estatísticas para leituras e gravações, atividade do protocolo de rede, o impactos da regulagem do grupo de políticas de QoS na latência, a proporção de leituras e gravações no storage de cache, o tempo total de CPU do cluster usado por um workload e componentes específicos do cluster. 
+---
+= Estatísticas de desempenho exibidas nos gráficos de detalhamento de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode utilizar os gráficos para ver as tendências de desempenho de um volume. Você também pode exibir estatísticas para leituras e gravações, atividade do protocolo de rede, o impactos da regulagem do grupo de políticas de QoS na latência, a proporção de leituras e gravações no storage de cache, o tempo total de CPU do cluster usado por um workload e componentes específicos do cluster.
+
+Estas vistas apresentam um máximo de 30 dias de estatísticas a partir do dia atual. No gráfico de dados históricos, se você selecionar um período de tempo de mais de 1 dia, dependendo da resolução da tela, os gráficos exibem os valores máximos de latência e IOPS no número de dias.
+
+[NOTE]
+====
+Você pode usar a caixa de seleção *Selecionar tudo* para selecionar ou desmarcar todas as opções de gráfico listadas.
+
+====
+* *Latência*
++
+Os gráficos a seguir detalham as informações de latência ou tempo de resposta da carga de trabalho selecionada:
+
++
+** *Componentes de cluster*
++
+Exibe um gráfico do tempo gasto em cada componente do cluster usado pelo volume selecionado.
+
++
+O gráfico ajuda você a determinar o impactos da latência por cada componente conforme se relaciona com a latência total. Você pode usar a caixa de seleção ao lado de cada componente para mostrar e ocultar seu gráfico.
+
++
+Para grupos de políticas de QoS, os dados são exibidos apenas para grupos de políticas definidos pelo usuário. Os zeros são exibidos para grupos de políticas definidos pelo sistema, como grupos de políticas padrão.
+
+** * Lê/grava latência*
++
+Exibe um gráfico das latências das solicitações de leitura e gravação bem-sucedidas do workload de volume selecionado no período de tempo selecionado.
+
++
+As solicitações de escrita são uma linha laranja e as solicitações de leitura são uma linha azul. As solicitações são específicas da latência para o workload de volume selecionado, e não para todos os workloads no cluster.
+
++
+[NOTE]
+====
+As estatísticas de leitura e gravação talvez nem sempre somem as estatísticas de latência totais exibidas no gráfico de latência. Esse comportamento é esperado com base em como o Unified Manager coleta e analisa as estatísticas de leitura e gravação de uma carga de trabalho.
+
+====
+** *Impacto do Grupo de políticas*
++
+Exibe um gráfico da porcentagem da latência para o workload de volume selecionado que é afetado pelo limite de taxa de transferência em seu grupo de políticas de QoS.
+
++
+Se a carga de trabalho for limitada, a porcentagem indica o quanto a limitação contribuiu para a latência em um ponto específico no tempo. Os valores percentuais indicam a quantidade de estrangulamento:
+
++
+*** 0%: sem limitação
+*** > 0%: limitação
+*** > 20%: Limitação crítica se o cluster puder lidar com mais trabalho, você poderá reduzir a limitação aumentando o limite do grupo de políticas. Outra opção é mover a carga de trabalho para um agregado menos ocupado.
+
+
+
+
++
+[NOTE]
+====
+O gráfico é exibido para workloads em um grupo de políticas de QoS definido pelo usuário com um limite definido de taxa de transferência apenas. Ele não será exibido se as cargas de trabalho estiverem em um grupo de políticas definido pelo sistema, como o grupo de políticas padrão ou um grupo de políticas que não tenha limite de QoS. Para um grupo de políticas de QoS, você pode apontar o cursor para o nome do grupo de políticas para exibir seu limite de taxa de transferência e a última vez que ele foi modificado. Se o grupo de políticas tiver sido modificado antes de o cluster associado ser adicionado ao Unified Manager, a última hora modificada será a data e a hora em que o Unified Manager descobriu o cluster pela primeira vez.
+
+====
+* *IOPS*
++
+Os gráficos a seguir detalham os dados de IOPS para a carga de trabalho selecionada:
+
++
+** * Lê/escreve/outro*
++
+Exibe um gráfico mostrando o número de IOPS de leitura e gravação e outros IOPS, por segundo, durante o período de tempo selecionado.
+
++
+Outros IOPS são atividades de protocolo iniciadas pelo cliente que não são leituras ou gravações. Por exemplo, em um ambiente NFS, isso pode ser operações de metadados como getattr, setattr ou fsstat. Em um ambiente CIFS, isso pode ser pesquisas de atributos, listas de diretórios ou verificações antivírus. Write IOPS são uma linha laranja e as solicitações de leitura são uma linha azul. As solicitações são específicas para todas as operações para a carga de trabalho de volume selecionada, e não para todas as operações no cluster.
+
+
+
+* *Mbps*
++
+Os gráficos a seguir detalham os dados de taxa de transferência para a carga de trabalho selecionada:
+
++
+** * Cache taxa de acerto*
++
+Exibe um gráfico da porcentagem de solicitações de leitura de aplicativos clientes satisfeitos pelo cache durante o período de tempo selecionado.
+
++
+O cache pode estar em placas Flash Cache ou em unidades de estado sólido (SSDs) em agregados Flash Pool. Um acerto de cache, em azul, é uma leitura do cache. Uma falta de cache, em laranja, é uma leitura de um disco no agregado. As solicitações são específicas para a carga de trabalho de volume selecionada, não para todas as cargas de trabalho no cluster.
+
++
+Você pode exibir informações mais detalhadas sobre o uso do cache de volume nas páginas de integridade do Gerenciador Unificado e no OnCommand System Manager.
+
+
+
+* *Componentes*
++
+Os gráficos a seguir detalham os dados por componente de cluster usado pela carga de trabalho selecionada:
+
++
+** *Tempo da CPU do cluster*
++
+Exibe um gráfico do tempo de uso da CPU, em ms, para todos os nós do cluster usados pela carga de trabalho selecionada.
+
++
+O gráfico exibe o tempo de uso combinado da CPU para processamento de rede e Data Processing. O tempo de CPU para cargas de trabalho definidas pelo sistema que estão associadas à carga de trabalho selecionada e que estão usando os mesmos nós para Data Processing também está incluído. Você pode usar o gráfico para determinar se a carga de trabalho é um alto consumidor dos recursos da CPU no cluster. Você também pode usar o gráfico, em combinação com o gráfico de latência de leitura/gravação no gráfico de latência, ou o gráfico de leituras/gravações/outro no gráfico de IOPS, para determinar como as alterações na atividade de workload ao longo do tempo afetam a utilização da CPU do cluster.
+
+** *Utilização do disco*
++
+Exibe um gráfico mostrando a porcentagem de utilização nos discos de dados no agregado de armazenamento durante o período de tempo selecionado.
+
++
+A utilização inclui solicitações de leitura e gravação de disco somente do workload de volume selecionado. As leituras do cache não estão incluídas. A utilização é específica para o workload de volume selecionado, não para todos os workloads nos discos. Se um volume monitorado estiver envolvido em uma movimentação de volume, os valores de utilização neste gráfico serão para o agregado de destino para o qual o volume foi movido.
+
+
+
+

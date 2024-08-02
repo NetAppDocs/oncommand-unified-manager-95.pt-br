@@ -1,0 +1,61 @@
+---
+permalink: online-help/task-reversing-protection-relationships-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Quando um desastre desativa o volume de origem em sua relação de proteção, você pode usar o volume de destino para servir dados convertendo-os para leitura/gravação enquanto você reparar ou substituir a origem. Quando a origem estiver novamente disponível para receber dados, você poderá usar a operação de ressincronização reversa para estabelecer a relação na direção inversa, sincronizando os dados na origem com os dados no destino de leitura/gravação. 
+---
+= Reverter relações de proteção a partir da página de detalhes de integridade/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando um desastre desativa o volume de origem em sua relação de proteção, você pode usar o volume de destino para servir dados convertendo-os para leitura/gravação enquanto você reparar ou substituir a origem. Quando a origem estiver novamente disponível para receber dados, você poderá usar a operação de ressincronização reversa para estabelecer a relação na direção inversa, sincronizando os dados na origem com os dados no destino de leitura/gravação.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter configurado o Workflow Automation.
+* O relacionamento não deve ser um relacionamento SnapVault.
+* Uma relação de proteção já deve existir.
+* A relação de proteção deve ser quebrada.
+* Tanto a origem como o destino devem estar online.
+* A origem não deve ser o destino de outro volume de proteção de dados.
+
+
+
+
+== Sobre esta tarefa
+
+* Quando você executa essa tarefa, os dados na fonte mais recente do que os dados na cópia Snapshot comum são excluídos.
+* As políticas e os horários criados na relação de ressincronização reversa são os mesmos que os da relação de proteção original.
++
+Se as políticas e agendas não existirem, elas são criadas.
+
+
+
+
+
+== Passos
+
+. Na guia *proteção* da página de detalhes *Saúde/volume*, localize na topologia a relação SnapMirror na qual você deseja reverter a origem e o destino e clique com o botão direito do Mouse nela.
+. Selecione *Reverse Resync* no menu.
++
+A caixa de diálogo Reverse Resync (Reverse Resync) é exibida.
+
+. Verifique se a relação exibida na caixa de diálogo *Reverse Resync* é aquela para a qual você deseja executar a operação de ressincronização reversa e clique em *Submit*.
++
+A caixa de diálogo Reverse Resync (Reverse Resync) é fechada e um link de tarefa é exibido na parte superior da página Health/volume details (Detalhes de integridade/volume).
+
+. Clique em *Exibir trabalhos* na página de detalhes *Saúde/volume* para rastrear o status de cada trabalho de ressincronização reversa.
++
+É apresentada uma lista filtrada de trabalhos.
+
+. Clique na seta para trás do seu navegador para retornar à página de detalhes *Saúde/volume*.
++
+A operação de ressincronização reversa é concluída quando todas as tarefas de trabalho são concluídas com êxito.
+
+

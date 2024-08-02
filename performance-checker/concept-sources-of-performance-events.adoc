@@ -1,0 +1,39 @@
+---
+permalink: performance-checker/concept-sources-of-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Eventos de performance são problemas relacionados à performance de workload em um cluster. Eles ajudam a identificar objetos de storage com tempos de resposta lentos, também conhecidos como alta latência. Juntamente com outros eventos de saúde que ocorreram ao mesmo tempo, você pode determinar os problemas que podem ter causado ou contribuído para os tempos de resposta lentos. 
+---
+= Fontes de eventos de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eventos de performance são problemas relacionados à performance de workload em um cluster. Eles ajudam a identificar objetos de storage com tempos de resposta lentos, também conhecidos como alta latência. Juntamente com outros eventos de saúde que ocorreram ao mesmo tempo, você pode determinar os problemas que podem ter causado ou contribuído para os tempos de resposta lentos.
+
+O Unified Manager recebe eventos de desempenho das seguintes fontes:
+
+* *Eventos de política de limite de desempenho definidos pelo usuário*
++
+Problemas de desempenho baseados em valores de limite personalizados definidos por você. Você configura políticas de limite de performance para objetos de storage, por exemplo, agregados e volumes, para que eventos sejam gerados quando um valor de limite para um contador de performance for violado.
+
++
+Você deve definir uma política de limite de desempenho e atribuí-la a um objeto de storage para receber esses eventos.
+
+* *Eventos de política de limite de desempenho definidos pelo sistema*
++
+Problemas de performance com base em valores de limite definidos pelo sistema. Essas políticas de limite são incluídas na instalação do Unified Manager para cobrir problemas comuns de desempenho.
+
++
+Essas políticas de limite são ativadas por padrão e você pode ver eventos pouco depois de adicionar um cluster.
+
+* *Eventos de limite de desempenho dinâmico*
++
+Problemas de performance resultantes de falhas ou erros em uma INFRAESTRUTURA DE TI ou de workloads que sobreutilizam recursos de cluster. A causa desses eventos pode ser um problema simples que se corrige ao longo de um período de tempo ou que pode ser resolvido com um reparo ou alteração de configuração. Um evento de limite dinâmico indica que os workloads de volume em um sistema ONTAP estão lentos devido a outros workloads com alta utilização de componentes de cluster compartilhados.
+
++
+Esses limites são ativados por padrão e você pode ver eventos após três dias de coleta de dados de um novo cluster.
+
+

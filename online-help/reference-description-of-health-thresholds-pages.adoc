@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-health-thresholds-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a página limites de configuração/integridade apropriada para configurar valores de limite de integridade globais para agregados e volumes e configurar valores de limite de erro e aviso de atraso global para relacionamentos de proteção não gerenciados. 
+---
+= Descrição das páginas de limites de integridade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a página limites de configuração/integridade apropriada para configurar valores de limite de integridade globais para agregados e volumes e configurar valores de limite de erro e aviso de atraso global para relacionamentos de proteção não gerenciados.

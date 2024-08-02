@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-using-the-performance-capacity-used-counter-to-manage-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: Em geral, as organizações querem operar com uma porcentagem de capacidade de performance usada abaixo de 100 para que os recursos estejam sendo usados com eficiência, reservando alguma capacidade de performance adicional para atender às demandas do período de pico. Você pode usar políticas de limite para personalizar quando os alertas são enviados para valores usados de capacidade de alta performance. 
+---
+= Usando o contador de capacidade de desempenho usado para gerenciar o desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Em geral, as organizações querem operar com uma porcentagem de capacidade de performance usada abaixo de 100 para que os recursos estejam sendo usados com eficiência, reservando alguma capacidade de performance adicional para atender às demandas do período de pico. Você pode usar políticas de limite para personalizar quando os alertas são enviados para valores usados de capacidade de alta performance.
+
+Você pode estabelecer metas específicas com base em seus requisitos de performance. Por exemplo, as empresas de serviços financeiros podem reservar mais capacidade de desempenho para garantir a execução oportuna de negociações. Essas empresas podem querer definir limites de capacidade de desempenho usados na faixa de 70-80%. Empresas de manufatura com margens menores podem optar por reservar menos capacidade de desempenho se estiverem dispostas a arriscar o desempenho para gerenciar melhor os custos DE TI. Essas empresas podem definir limites de capacidade de desempenho usados na faixa de 85-95%.
+
+Quando o valor da capacidade de performance usada excede a porcentagem definida em uma política de limite definida pelo usuário, o Unified Manager envia um e-mail de alerta e adiciona o evento à página Inventário de Eventos. Isso permite que você gerencie possíveis problemas antes que eles afetem o desempenho. Esses eventos também podem ser usados como indicadores de que você precisa para fazer mudanças e mudanças de workload em seus nós e agregados.

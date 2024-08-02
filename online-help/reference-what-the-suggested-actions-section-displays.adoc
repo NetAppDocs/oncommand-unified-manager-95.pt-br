@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-what-the-suggested-actions-section-displays.html 
+sidebar: sidebar 
+keywords:  
+summary: A seção ações sugeridas da página de detalhes do evento fornece possíveis razões para o evento e sugere algumas ações para que você possa tentar resolver o evento por conta própria. As ações sugeridas são personalizadas com base no tipo de evento ou tipo de limite que foi violado. 
+---
+= O que a seção ações sugeridas é exibida
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A seção ações sugeridas da página de detalhes do evento fornece possíveis razões para o evento e sugere algumas ações para que você possa tentar resolver o evento por conta própria. As ações sugeridas são personalizadas com base no tipo de evento ou tipo de limite que foi violado.
+
+Esta área é apresentada apenas para alguns tipos de eventos.
+
+Em alguns casos, há links *Ajuda* fornecidos na página que fazem referência a informações adicionais para muitas ações sugeridas, incluindo instruções para executar uma ação específica. Algumas ações podem envolver o uso dos comandos do Unified Manager, OnCommand System Manager, OnCommand Workflow Automation, ONTAP CLI ou uma combinação dessas ferramentas.
+
+Há também alguns links fornecidos neste tópico de ajuda.
+
+Você deve considerar as ações sugeridas aqui como apenas uma orientação para resolver este evento. A ação que você toma para resolver este evento deve ser baseada no contexto do seu ambiente.

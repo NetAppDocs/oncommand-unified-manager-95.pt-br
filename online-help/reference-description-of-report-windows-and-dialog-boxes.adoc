@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-report-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar as opções para agendar, compartilhar, gerenciar, salvar e importar os relatórios. 
+---
+= Descrição das janelas de relatório e caixas de diálogo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar as opções para agendar, compartilhar, gerenciar, salvar e importar os relatórios.

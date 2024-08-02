@@ -1,0 +1,47 @@
+---
+permalink: qsg-windows.html 
+sidebar: sidebar 
+keywords: quick start guide, getting started, QSG, Windows QSG, quick installation, Windows installer 
+summary: Guia de início rápido para Unified Manager na plataforma Linux. 
+---
+= Instruções de início rápido para instalações do Windows
+:allow-uri-read: 
+
+
+
+
+== Requisitos do sistema
+
+* Sistemas operacionais: Microsoft Windows Server 2012, 2012 R2 e edições Standard e Datacenter de 2016 64 bits
+* RAM: 12 GB
+* CPU: Total de 9572 MHz
+* Espaço livre em disco: 100 GB de espaço em disco para o diretório de instalação, 50 GB de espaço em disco para o diretório de dados MySQL
+
+
+Para obter os requisitos detalhados do sistema, link:install/reference-windows-software-and-installation-requirements.html["Requisitos de software e instalação do Windows"] consulte e link:http://mysupport.netapp.com/matrix["Matriz de interoperabilidade"].
+
+
+
+== Instalar o OnCommand Unified Manager
+
+
+
+=== Baixe o instalador
+
+. Baixe o `OnCommandUnifiedManager-9.5RC1.exes` pacote de instalação.
+. Copie o arquivo de instalação para um diretório no sistema de destino.
+
+
+
+
+=== Instale o Unified Manager
+
+O Microsoft .NET 4,5.2, ou superior, deve estar instalado. O Unified Manager instala outros pacotes de terceiros necessários como parte da instalação. Se precisar de mais informações sobre os pacotes de software dependentes, link:install/concept-installing-upgrading-and-removing-unified-manager-software.html["Instalação, atualização e remoção do software Unified Manager no Windows"]consulte .
+
+. Inicie sessão no Windows utilizando a conta de administrador local predefinida.
+. No diretório em que você baixou o arquivo de instalação, clique com o botão direito do Mouse e execute o arquivo executável do Unified Manager (.exe) como administrador.
+. Quando solicitado, insira o nome de usuário e a senha para criar o usuário de manutenção do Unified Manager.
+. No assistente conexão de banco de dados, insira a senha raiz do MySQL.
+. Siga as instruções restantes para concluir a instalação.
+. Clique em *Finish* no final da instalação e a IU da Web do Unified Manager será exibida.
+

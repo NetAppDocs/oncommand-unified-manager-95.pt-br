@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-service-processor-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos do processador de serviço fornecem informações sobre o status do processador para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos do processador de serviço
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos do processador de serviço fornecem informações sobre o status do processador para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Processador de Serviço não configurado (ocumEvtServiceProcessorNotConfigured)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Processador de Serviço Offline (ocumEvtServiceProcessorOffline)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+|===

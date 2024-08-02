@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-svm-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: O relatório do SVM Inventory permite que você analise os limites de configuração de volumes e a integridade geral do SVM para entender os riscos de disponibilidade de storage futura. 
+---
+= Relatório do SVM Inventory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O relatório do SVM Inventory permite que você analise os limites de configuração de volumes e a integridade geral do SVM para entender os riscos de disponibilidade de storage futura.
+
+
+
+== Vista tabular do relatório de inventário SVM
+
+* *Cluster*
++
+Exibe o nome do cluster que contém o SVM.
+
+* *Storage Virtual Machine*
++
+Exibe o nome do SVM.
+
+* *Estado*
++
+Exibe o estado administrativo atual do SVM. O estado pode ser em execução, parado, iniciando, parando, não mapeado, Inicializando ou excluindo.
+
+* *Contagem de volume*
++
+Exibe o número de volumes contidos pelo SVM.
+
+* *Volumes máximos permitidos*
++
+Exibe os volumes máximos permitidos que podem ser configurados no SVM.
+
+* *Volume raiz*
++
+Exibe o nome do volume raiz do SVM.
+
+* *Protocolos permitidos*
++
+Exibe o tipo de protocolos que podem ser configurados no SVM.
+
+* *Domínio DNS*
++
+Exibe o nome de domínio DNS.
+
+* *Domínio NIS*
++
+Exibe o nome de domínio do Serviço de informações de rede (NIS). Esta coluna fica em branco quando o servidor NIS (Network Information Service) está desativado ou não está configurado.
+
+* *LDAP ativado*
++
+É apresentado se o protocolo LDAP estiver ativado ou não.
+
+* * Nome do interrutor de Serviço*
++
+Exibe o tipo de informação coletado dos hosts. Os valores possíveis são arquivo, LDAP ou NIS.
+
+

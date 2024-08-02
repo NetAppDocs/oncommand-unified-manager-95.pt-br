@@ -1,0 +1,22 @@
+---
+permalink: performance-checker/concept-analyzing-events-from-system-defined-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos gerados a partir dos limites de desempenho definidos pelo sistema indicam que um contador de desempenho ou um conjunto de contadores de desempenho para um determinado objeto de storage ultrapassou o limite de uma política definida pelo sistema. Isso indica que o objeto de storage, por exemplo, um agregado ou nó, está enfrentando um problema de desempenho. 
+---
+= Analisando eventos a partir de limites de desempenho definidos pelo sistema
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos gerados a partir dos limites de desempenho definidos pelo sistema indicam que um contador de desempenho ou um conjunto de contadores de desempenho para um determinado objeto de storage ultrapassou o limite de uma política definida pelo sistema. Isso indica que o objeto de storage, por exemplo, um agregado ou nó, está enfrentando um problema de desempenho.
+
+Você usa a página de detalhes do evento para analisar o evento de desempenho e tomar medidas corretivas, se necessário, para retornar o desempenho ao normal.
+
+[NOTE]
+====
+As políticas de limite definidas pelo sistema não estão ativadas em sistemas Cloud Volumes ONTAP, ONTAP Edge ou ONTAP Select.
+
+====

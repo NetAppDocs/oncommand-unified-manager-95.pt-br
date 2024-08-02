@@ -1,0 +1,32 @@
+---
+permalink: online-help/task-creating-an-email-notification-format-for-user-and-user-group-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode criar um formato de notificação para os e-mails que são enviados para um usuário ou um grupo de usuários quando há um problema relacionado à cota (limite de software violado ou limite rígido atingido).' 
+---
+= Criando um formato de notificação por e-mail para cotas de usuários e grupos de usuários
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar um formato de notificação para os e-mails que são enviados para um usuário ou um grupo de usuários quando houver um problema relacionado à cota (limite de software violado ou limite rígido atingido).
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Email de quota* no menu Configuração à esquerda.
+. Na página de opções *Setup*, clique em *Notification Format* e, em seguida, insira ou modifique os detalhes nos campos *From*, *Subject* e *Email Details*.
+. Clique em *Preview* para visualizar a notificação por e-mail.
+. Clique em *Fechar* para fechar a janela de visualização.
+. Modifique o conteúdo da notificação por e-mail, se necessário.
+. Clique em *Salvar e fechar*.
+

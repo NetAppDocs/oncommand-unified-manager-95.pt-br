@@ -1,0 +1,105 @@
+---
+permalink: config/task-adding-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível adicionar um cluster ao Gerenciador Unificado do OnCommand para que você possa monitorar o cluster. Isso inclui a capacidade de obter informações de cluster, como integridade, capacidade, desempenho e configuração do cluster, para que você possa encontrar e resolver quaisquer problemas que possam ocorrer. 
+---
+= Adição de clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível adicionar um cluster ao Gerenciador Unificado do OnCommand para que você possa monitorar o cluster. Isso inclui a capacidade de obter informações de cluster, como integridade, capacidade, desempenho e configuração do cluster, para que você possa encontrar e resolver quaisquer problemas que possam ocorrer.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter as seguintes informações:
++
+** Nome do host ou endereço IP de gerenciamento de cluster
++
+O nome do host é o FQDN ou nome abreviado que o Unified Manager usa para se conetar ao cluster. O nome do host deve ser resolvido para o endereço IP de gerenciamento de cluster.
+
++
+O endereço IP de gerenciamento de cluster deve ser o LIF de gerenciamento de cluster da máquina virtual de storage administrativo (SVM). Se você usar um LIF de gerenciamento de nós, a operação falhará.
+
+** Nome de usuário e senha do administrador do Data ONTAP
++
+Essa conta deve ter a função _admin_ com acesso ao aplicativo definido como _ontapi_, _ssh_ e _http_.
+
+** Tipo de protocolo (HTTP ou HTTPS) que pode ser configurado no cluster e o número da porta usado para se conetar ao cluster
+
+
++
+[NOTE]
+====
+Você pode adicionar clusters que estão por trás de um NAT/firewall usando o endereço IP NAT do Unified Manager. Qualquer sistema de automação do fluxo de trabalho conetado ou SnapProtect também deve estar atrás do NAT/firewall, e as chamadas da API SnapProtect devem usar o endereço IP NAT para identificar o cluster.
+
+====
+* O FQDN do Gerenciador Unificado deve ser capaz de fazer ping no sistema ONTAP.
++
+Você pode verificar isso usando o seguinte comando ONTAP: `ping -node node_name -destination Unified_Manager_FQDN`.
+
+* Você precisa ter espaço adequado no servidor do Unified Manager. Você é impedido de adicionar um cluster ao servidor quando mais de 90% de espaço no diretório do banco de dados já estiver consumido.
+
+
+
+
+== Sobre esta tarefa
+
+Para uma configuração do MetroCluster, você deve adicionar clusters locais e remotos, e os clusters devem estar configurados corretamente.
+
+Você pode monitorar um único cluster por duas instâncias do Unified Manager desde que tenha configurado um segundo LIF de gerenciamento de cluster no cluster para que cada instância do Unified Manager se conete por meio de um LIF diferente.
+
+
+
+== Passos
+
+. No painel de navegação à esquerda, clique em *Configuração* > *fontes de dados do Cluster*.
+. Na página *Configuration/Cluster Data Sources* (fontes de dados de configuração/cluster), clique em *Add* (Adicionar).
+. Na caixa de diálogo *Adicionar cluster*, especifique os valores necessários, como o nome do host ou o endereço IP do cluster, nome de usuário, senha, protocolo de comunicação e número da porta.
++
+Por padrão, o protocolo HTTPS e a porta 443 são selecionados.
+
++
+Você pode alterar o endereço IP de gerenciamento de cluster de IPv6 para IPv4 ou de IPv4 para IPv6. O novo endereço IP é refletido na grade do cluster e na página de configuração do cluster após o próximo ciclo de monitoramento ser concluído.
+
+. Clique em *Enviar*.
+. Se o HTTPS estiver selecionado, execute as seguintes etapas:
++
+.. Na caixa de diálogo *autorizar Host*, clique em *Exibir certificado* para exibir as informações do certificado sobre o cluster.
+.. Clique em *Sim*.
++
+O Unified Manager verifica o certificado somente quando o cluster é adicionado inicialmente. O Unified Manager não verifica o certificado de cada chamada de API para o ONTAP.
+
++
+Se o certificado expirou, não é possível adicionar um novo cluster. Você deve primeiro renovar o certificado SSL e depois adicionar o cluster.
+
+
+
+
+
+
+
+== Resultados
+
+Depois que todos os objetos de um novo cluster forem descobertos (cerca de 15 minutos), o Unified Manager começa a coletar dados históricos de desempenho dos 15 dias anteriores. Essas estatísticas são coletadas usando a funcionalidade de coleta de continuidade de dados. Esse recurso fornece mais de duas semanas de informações de desempenho para um cluster imediatamente após ser adicionado. Após a conclusão do ciclo de coleta de continuidade de dados, os dados de desempenho do cluster em tempo real são coletados, por padrão, a cada cinco minutos.
+
+[NOTE]
+====
+Como a coleta de dados de desempenho de 15 dias é intensiva em CPU, sugere-se que você alterne a adição de novos clusters para que as pesquisas de coleta de continuidade de dados não sejam executadas em muitos clusters ao mesmo tempo. Além disso, se você reiniciar o Unified Manager durante o período de coleta de continuidade de dados, a coleta será interrompida e você verá lacunas nos gráficos de desempenho para o período de tempo em falta.
+
+====
+[TIP]
+====
+Se receber uma mensagem de erro que não pode adicionar o cluster, verifique se existem os seguintes problemas:
+
+* Se os relógios nos dois sistemas não estiverem sincronizados e a data de início do certificado HTTPS do Unified Manager for posterior à data no cluster. Você deve garantir que os relógios são sincronizados usando NTP ou um serviço similar.
+* Se o cluster tiver atingido o número máximo de destinos de notificação EMS, o endereço do Unified Manager não poderá ser adicionado. Por predefinição, apenas podem ser definidos 20 destinos de notificação EMS no cluster.
+
+
+====

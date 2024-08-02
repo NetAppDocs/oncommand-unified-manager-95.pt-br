@@ -1,0 +1,145 @@
+---
+permalink: online-help/reference-snapmirror-relationship-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de relacionamento do SnapMirror fornecem informações sobre o status de seus relacionamentos do SnapMirror para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de relacionamento do SnapMirror
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de relacionamento do SnapMirror fornecem informações sobre o status de seus relacionamentos do SnapMirror para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Proteção
+
+Um asterisco (*) identifica eventos EMS que foram convertidos para eventos do Unified Manager.
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Replicação de espelho não saudável (ocumEvtSnapmirrorRelacionaçãoDessaudável)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Aviso
+
+
+
+ a| 
+Replicação de espelho quebrado(ocumEvtSnapmirrorRelacionaçãoStateBrokenoff)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Erro
+
+
+
+ a| 
+Falha na inicialização da replicação do espelho(ocumEvtSnapmirrorRelationshipInitializeFailed)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Erro
+
+
+
+ a| 
+Falha na atualização de replicação do espelho(ocumEvtSnapmirrorRelationshUpdateFailed)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Erro
+
+
+
+ a| 
+Erro de atraso de replicação do espelho (ocumEvtSnapMirrorRelationshipLagError)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Erro
+
+
+
+ a| 
+Aviso de atraso de replicação do espelho (ocumEvtSnapMirrorRelationshipLagWarning)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Aviso
+
+
+
+ a| 
+Falha na ressincronização da replicação do espelho (ocumEvtSnapmirrorRelationshipResyncFailed)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Erro
+
+
+
+ a| 
+Replicação de espelho DeletedocumEvtSnapmirrorRelacionaçãoDelecionado
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Aviso
+
+
+
+ a| 
+Replicação síncrona fora de sincronização *
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Aviso
+
+
+
+ a| 
+Replicação síncrona restaurada *
+ a| 
+Evento
+ a| 
+Relação de SnapMirror
+ a| 
+Informações
+
+
+
+ a| 
+Falha na ressincronização automática de replicação síncrona *
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Erro
+
+|===

@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-troubleshooting-non-availability-of-cifs-shares.html 
+sidebar: sidebar 
+keywords:  
+summary: Talvez você não consiga acessar compartilhamentos CIFS se os objetos de storage que servem esses compartilhamentos não estiverem disponíveis. Você deve revisar eventos de disponibilidade, como volume Offline, caminho de junção Offline ou SVM CIFS Server Down, que são gerados quando esses objetos não estiverem disponíveis. 
+---
+= Solução de problemas de acesso a compartilhamentos CIFS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Talvez você não consiga acessar compartilhamentos CIFS se os objetos de storage que servem esses compartilhamentos não estiverem disponíveis. Você deve revisar eventos de disponibilidade, como volume Offline, caminho de junção Offline ou SVM CIFS Server Down, que são gerados quando esses objetos não estiverem disponíveis.
+
+
+
+== Antes de começar
+
+Você deve ter a função de Administrador de armazenamento para executar esta tarefa.
+
+
+
+== Sobre esta tarefa
+
+Se tiver configurado um alerta adequado, será notificado sobre o evento de disponibilidade através de um e-mail de alerta.
+
+
+
+== Passos
+
+. Na página *painéis/Visão geral*, clique no evento offline apropriado.
++
+Por exemplo, se você receber um evento de volume off-line, clique no *`Volume_name`evento volume off-line* no painel disponibilidade na área incidentes e riscos não resolvidos.
+
+. Na página de detalhes do *evento*, clique *`Volume_name`em * no campo *fonte*.
+. Na página de detalhes *Saúde/volume*, clique no número correspondente aos compartilhamentos CIFS no painel *dispositivos relacionados*.
+. Na página de detalhes *Health/Storage Virtual Machine*, clique na guia *compartilhamentos CIFS*.
++
+Você pode ver o número de compartilhamentos CIFS afetados.
+
+
+
+
+
+== Depois de terminar
+
+Para resolver as falhas, use o OnCommand System Manager ou a CLI do ONTAP.

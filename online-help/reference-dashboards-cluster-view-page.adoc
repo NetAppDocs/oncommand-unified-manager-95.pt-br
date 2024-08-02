@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-dashboards-cluster-view-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Dashboards/Cluster View exibe informações gerais sobre os clusters que você está gerenciando. 
+---
+= Página de painéis/visualização de cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Dashboards/Cluster View exibe informações gerais sobre os clusters que você está gerenciando.
+
+Clicar em *Manage clusters* leva-o para a página Configuration/Cluster Data Sources.
+
+Clicar em um cluster exibe informações gerais sobre o status do monitoramento, o status da capacidade e o status do desempenho do cluster.
+
+O painel de visualização de cluster consiste em duas seções principais: Clusters gerenciados (à esquerda) e Detalhes de cluster (à direita).
+
+
+
+== Seção clusters gerenciados
+
+Lista todos os clusters que o Unified Manager está monitorando. Os seguintes detalhes são fornecidos para cada cluster na lista:
+
+* Ícone de status do cluster: O status pode ser crítico (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"] ), erro (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ), Aviso (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"] ) ou normal (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]).
+* Endereço IP ou nome do host: Fornece o nome do host do cluster e o endereço IP ou FQDN.
+* Integridade do cluster: Fornece informações sobre a integridade do cluster, conforme monitorado pelo Unified Manager.
++
+O estado de saúde pode ter um dos seguintes valores: OK, OK com suprimido, degradado e componentes não alcançáveis.
+
+
+
+
+
+== Seção Detalhes do cluster
+
+Fornece informações sobre o status de monitoramento, a capacidade e o desempenho do cluster selecionado.
+
+* Status de monitoramento: Exibe o status de monitoramento de integridade e desempenho em andamento.
++
+O status de monitoramento pode ter os seguintes valores: Descoberta, sondagem concluída, sondagem falhou ou não disponível. O status de monitoramento exibe uma mensagem de erro quando o trabalho de monitoramento correspondente (integridade ou desempenho) falha.
+
+* Capacidade: Exibe a capacidade total, usada e livre de armazenamento do cluster selecionado.
+* Desempenho: Exibe a velocidade média de operação do cluster em número de IOPS (IOPS/IOPS) e a taxa de transferência média do cluster selecionado em Mbps (megabytes por segundo).
+
+
+A seção Detalhes também fornece links de navegação para as páginas de detalhes de cluster individuais dos aplicativos do Gerenciador Unificado do OnCommand:
+
+* O link Saúde navega para a página de detalhes de integridade/cluster do cluster selecionado.
+* O link desempenho navega para a página de detalhes de desempenho/cluster do cluster selecionado.
+* O link Gerenciador do sistema navega para a página de login do OnCommand System Manager para que você possa gerenciar as configurações do cluster.
+

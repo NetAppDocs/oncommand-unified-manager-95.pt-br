@@ -1,0 +1,164 @@
+---
+permalink: online-help/reference-what-the-event-information-section-displays.html 
+sidebar: sidebar 
+keywords:  
+summary: Você usa a seção informações do evento na página de detalhes do evento para exibir os detalhes sobre um evento selecionado, como a gravidade do evento, o nível de impactos, a área de impactos e a origem do evento. 
+---
+= O que a seção informações do evento exibe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você usa a seção informações do evento na página de detalhes do evento para exibir os detalhes sobre um evento selecionado, como a gravidade do evento, o nível de impactos, a área de impactos e a origem do evento.
+
+Os campos que não são aplicáveis ao tipo de evento estão ocultos. Você pode ver os seguintes detalhes do evento:
+
+* *Tempo de ativação do evento*
++
+O momento em que o evento foi gerado.
+
+* *Estado*
++
+O estado do evento: Novo, reconhecido, resolvido ou Obsoleto.
+
+* *Causa obsoleta*
++
+As ações que fizeram com que o evento fosse obsoleto, por exemplo, o problema foi corrigido.
+
+* *Duração do evento*
++
+Para eventos ativos (novos e reconhecidos), este é o tempo entre a deteção e o momento em que o evento foi analisado pela última vez. Para eventos obsoletos, este é o tempo entre a deteção e quando o evento foi resolvido.
+
++
+Este campo é exibido para todos os eventos de desempenho e para outros tipos de eventos somente depois que eles tiverem sido resolvidos ou obsoletos.
+
+* *Último visto*
++
+A data e hora em que o evento foi visto pela última vez como ativo.
+
++
+Para eventos de desempenho, este valor pode ser mais recente do que o tempo de disparo do evento, uma vez que este campo é atualizado após cada nova recolha de dados de desempenho, desde que o evento esteja ativo. Para outros tipos de eventos, quando no estado novo ou reconhecido, este conteúdo não é atualizado e o campo fica, portanto, oculto.
+
+* *Gravidade*
++
+Gravidade do evento: Crítica (image:../media/sev-critical-um60.png[""] ), erro (image:../media/sev-error-um60.png[""] ), Aviso (image:../media/sev-warning-um60.png[""]) e informações (image:../media/sev-information-um60.gif[""]).
+
+* *Nível de impactos*
++
+O nível de impacto do evento: Incidente, risco ou evento.
+
+* *Área de impactos*
++
+A área de impacto do evento: Disponibilidade, capacidade, desempenho, proteção ou Configuração.
+
+* *Fonte*
++
+O nome do objeto no qual o evento ocorreu.
+
++
+Ao exibir os detalhes de um evento de política de QoS compartilhada, até três dos objetos de workload que estão consumindo a maioria das IOPS ou Mbps são listados neste campo.
+
++
+Você pode clicar no link do nome da fonte para exibir a página de detalhes de integridade ou desempenho desse objeto.
+
+* *Anotações de origem*
++
+Apresenta o nome e o valor da anotação para o objeto ao qual o evento está associado.
+
++
+Esse campo é exibido apenas para eventos de integridade em clusters, SVMs e volumes.
+
+* *Grupos de origem*
++
+Exibe os nomes de todos os grupos dos quais o objeto impactado é membro.
+
++
+Esse campo é exibido apenas para eventos de integridade em clusters, SVMs e volumes.
+
+* *Tipo de fonte*
++
+O tipo de objeto (por exemplo, SVM, volume ou Qtree) ao qual o evento está associado.
+
+* *No Cluster*
++
+O nome do cluster no qual o evento ocorreu.
+
++
+Você pode clicar no link do nome do cluster para exibir a página de detalhes de integridade ou desempenho desse cluster.
+
+* *Contagem de objetos afetados*
++
+O número de objetos afetados pelo evento.
+
++
+Você pode clicar no link objeto para exibir a página de inventário preenchida com os objetos que estão atualmente afetados por este evento.
+
++
+Este campo é exibido apenas para eventos de desempenho.
+
+* *Volumes afetados*
++
+O número de volumes que estão sendo afetados por este evento.
+
++
+Este campo é exibido apenas para eventos de desempenho em nós ou agregados.
+
+* *Política acionada*
++
+O nome da política de limite que emitiu o evento.
+
++
+Você pode passar o cursor sobre o nome da política para ver os detalhes da política de limite. Para políticas de QoS adaptáveis, a política definida, o tamanho do bloco e o tipo de alocação (espaço alocado ou espaço usado) também são exibidos.
+
++
+Este campo é exibido apenas para eventos de desempenho.
+
+* *Reconhecido por*
++
+O nome da pessoa que reconheceu o evento e a hora em que o evento foi reconhecido.
+
+* *Resolvido por*
++
+O nome da pessoa que resolveu o evento e a hora em que o evento foi resolvido.
+
+* *Atribuído a*
++
+O nome da pessoa que está designada para trabalhar no evento.
+
+* *Configurações de alerta*
++
+As seguintes informações sobre alertas são exibidas:
+
++
+** Se não houver alertas associados ao evento selecionado, um link *Adicionar alerta* será exibido.
++
+Você pode abrir a caixa de diálogo Adicionar alerta clicando no link.
+
+** Se houver um alerta associado ao evento selecionado, o nome do alerta será exibido.
++
+Você pode abrir a caixa de diálogo Editar alerta clicando no link.
+
+** Se houver mais de um alerta associado ao evento selecionado, o número de alertas será exibido.
++
+Você pode abrir a página Configuração/alertas clicando no link para ver mais detalhes sobre esses alertas.
+
+
+
++
+Os alertas desativados não são exibidos.
+
+* *Última notificação enviada*
++
+A data e hora em que a notificação de alerta mais recente foi enviada.
+
+* *Enviado via*
++
+O mecanismo que foi usado para enviar a notificação de alerta: Email ou intercetação SNMP.
+
+* * Execução prévia de Script*
++
+O nome do script que foi executado quando o alerta foi gerado.
+
+

@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-understanding-the-user-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: A interface de usuário do Unified Manager consiste principalmente em um painel que fornece uma visualização rápida dos objetos monitorados. A interface do usuário também fornece acesso à visualização de todos os objetos do cluster. 
+---
+= Compreender a interface do utilizador
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A interface de usuário do Unified Manager consiste principalmente em um painel que fornece uma visualização rápida dos objetos monitorados. A interface do usuário também fornece acesso à visualização de todos os objetos do cluster.
+
+Pode selecionar uma vista preferida e utilizar os botões de ação, conforme necessário. A configuração da tela é salva em um espaço de trabalho para que toda a funcionalidade necessária esteja disponível quando você iniciar o Unified Manager. No entanto, quando você navega de uma exibição para outra e, em seguida, navega para trás, a exibição pode não ser a mesma.

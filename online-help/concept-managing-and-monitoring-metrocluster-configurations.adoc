@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: O suporte de monitoramento para configurações do MetroCluster na IU da Web do Unified Manager permite verificar se há problemas de conetividade na configuração do MetroCluster. Descobrir um problema de conetividade cedo permite que você gerencie suas configurações do MetroCluster com eficiência. 
+---
+= Gerenciamento e monitoramento de configurações do MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O suporte de monitoramento para configurações do MetroCluster na IU da Web do Unified Manager permite verificar se há problemas de conetividade na configuração do MetroCluster. Descobrir um problema de conetividade cedo permite que você gerencie suas configurações do MetroCluster com eficiência.

@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-analyzing-events-from-dynamic-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os eventos gerados a partir de limites dinâmicos indicam que o tempo de resposta real (latência) para uma carga de trabalho é muito alto ou muito baixo, em comparação com o intervalo de tempo de resposta esperado. Você usa a página de detalhes do evento para analisar o evento de desempenho e tomar medidas corretivas, se necessário, para retornar o desempenho ao normal.' 
+---
+= Analisando eventos a partir de limites dinâmicos de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos gerados a partir de limites dinâmicos indicam que o tempo de resposta (latência) real para uma carga de trabalho é muito alto ou muito baixo, em comparação com o intervalo de tempo de resposta esperado. Você usa a página de detalhes do evento para analisar o evento de desempenho e tomar medidas corretivas, se necessário, para retornar o desempenho ao normal.
+
+[NOTE]
+====
+Os limites de desempenho dinâmico não são ativados em sistemas Cloud Volumes ONTAP, ONTAP Edge ou ONTAP Select.
+
+====

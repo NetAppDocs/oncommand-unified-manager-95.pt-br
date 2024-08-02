@@ -1,0 +1,24 @@
+---
+permalink: performance-checker/concept-understanding-the-root-object.html 
+sidebar: sidebar 
+keywords:  
+summary: O objeto raiz é a linha de base contra a qual outras comparações de objetos são feitas. Isso permite visualizar e comparar os dados de outros objetos com o objeto raiz, fornecendo análise de dados de desempenho que ajuda você a solucionar problemas e melhorar o desempenho dos objetos. 
+---
+= Entendendo o objeto raiz
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O objeto raiz é a linha de base contra a qual outras comparações de objetos são feitas. Isso permite visualizar e comparar os dados de outros objetos com o objeto raiz, fornecendo análise de dados de desempenho que ajuda você a solucionar problemas e melhorar o desempenho dos objetos.
+
+O nome do objeto raiz é exibido na parte superior do painel de comparação. Objetos adicionais são exibidos abaixo do objeto raiz. Embora não haja limite para o número de objetos adicionais que você pode adicionar ao painel de comparação, apenas um objeto raiz é permitido. Os dados para o objeto raiz são exibidos automaticamente nos gráficos no painel Cartas Contadoras.
+
+Você não pode alterar o objeto raiz; ele é sempre definido para a página do objeto que você está visualizando. Por exemplo, se você abrir a página Explorador de desempenho de volume de Volume1, então Volume1 é o objeto raiz e não pode ser alterado. Se você quiser comparar com um objeto raiz diferente, então você deve clicar no link de um objeto e abrir sua página de destino.
+
+[NOTE]
+====
+Eventos e limites são exibidos apenas para objetos raiz.
+
+====

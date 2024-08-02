@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-resolving-a-protection-job-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: Esse fluxo de trabalho fornece um exemplo de como você pode identificar e resolver uma falha de tarefa de proteção no painel do Unified Manager. 
+---
+= Resolução de uma falha de trabalho de proteção
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Esse fluxo de trabalho fornece um exemplo de como você pode identificar e resolver uma falha de tarefa de proteção no painel do Unified Manager.
+
+
+
+== Antes de começar
+
+Como algumas tarefas nesse fluxo de trabalho exigem que você faça login usando a função Administrador do OnCommand, você deve estar familiarizado com as funções necessárias para usar várias funcionalidades, conforme descrito em xref:reference-unified-manager-roles-and-capabilities.adoc[Funções e recursos de usuário do Unified Manager].
+
+
+
+== Sobre esta tarefa
+
+Nesse cenário, você acessa a página Dashboards/Overview para ver se há algum problema com seus trabalhos de proteção. Na área Incidente de proteção, você percebe que há um incidente de trabalho terminado, mostrando um erro Falha no trabalho de proteção em um volume. Investigue este erro para determinar a possível causa e a possível resolução.
+
+
+
+== Passos
+
+. No painel *incidentes de proteção* da área Dashboard *incidentes e riscos não resolvidos*, você clica no evento *trabalho de proteção falhou*.
++
+[TIP]
+====
+O texto vinculado para o evento é escrito no formulário `object_name:/object_name - Error Name`, como `cluster2_src_svm:/cluster2_src_vol2 - Protection Job Failed` .
+
+====
++
+A página de detalhes do evento para o trabalho de proteção com falha é exibida.
+
+. Reveja a mensagem de erro no campo causa da área *Summary* para determinar o problema e avaliar potenciais ações corretivas.
++
+xref:task-identifying-the-problem-and-performing-corrective-actions-for-a-failed-protection-job.adoc[Identificar o problema e executar ações corretivas para um trabalho de proteção com falha]Consulte .
+
+

@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-editing-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode editar propriedades de alerta, como o recurso com o qual o alerta está associado, eventos, destinatários, opções de notificação, frequência de notificação e scripts associados. 
+---
+= Editar alertas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar propriedades de alerta, como o recurso com o qual o alerta está associado, eventos, destinatários, opções de notificação, frequência de notificação e scripts associados.
+
+
+
+== Antes de começar
+
+Tem de ter a função de Administrador do OnCommand.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Configuration* > *Alerting*.
+. Na página *Configuração/alertas*, selecione o alerta que deseja editar e clique em *Editar*.
+. Na caixa de diálogo *Editar alerta*, edite as seções nome, recursos, eventos e ações, conforme necessário.
++
+Você pode alterar ou remover o script associado ao alerta.
+
+. Clique em *Salvar*.
+

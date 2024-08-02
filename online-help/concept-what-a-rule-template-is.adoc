@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-what-a-rule-template-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Um modelo de regra é um modelo predefinido que pode ser usado para criar regras em uma política de dados. Um modelo de regra permite criar uma regra com base em três categorias: Proprietário, tipo de arquivo e caminho de diretório.' 
+---
+= O que é um modelo de regra
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um modelo de regra é um modelo predefinido que pode ser usado para criar regras em uma política de dados. Um modelo de regra permite criar uma regra com base em três categorias: Proprietário, tipo de arquivo e caminho de diretório.
+
+
+
+== Exemplo de um modelo de regra para tipos de arquivo
+
+O modelo de regra "'coloque todos os arquivos com as extensões especificadas em uma classe de armazenamento adequada'" coloca todos os arquivos .mp3 que são gravados no Infinite volume em uma classe de armazenamento especificada.

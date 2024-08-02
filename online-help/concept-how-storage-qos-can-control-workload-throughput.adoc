@@ -1,0 +1,35 @@
+---
+permalink: online-help/concept-how-storage-qos-can-control-workload-throughput.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode criar ou editar um grupo de políticas de qualidade do serviço (QoS) para controlar o limite de e/S por segundo (IOPS) ou taxa de transferência (Mbps) para as cargas de trabalho que ele contém. Se as cargas de trabalho estiverem em um grupo de políticas sem limite definido, como o grupo de políticas padrão ou o limite definido não atender às suas necessidades, você poderá aumentar o limite ou mover as cargas de trabalho para um grupo de políticas novo ou existente que tenha o limite desejado.' 
+---
+= Como a QoS do storage pode controlar a taxa de transferência de workload
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar ou editar um grupo de políticas de qualidade do serviço (QoS) para controlar o limite de e/S por segundo (IOPS) ou taxa de transferência (Mbps) para os workloads nele contidos. Se as cargas de trabalho estiverem em um grupo de políticas sem limite definido, como o grupo de políticas padrão ou o limite definido não atender às suas necessidades, você poderá aumentar o limite ou mover as cargas de trabalho para um grupo de políticas novo ou existente que tenha o limite desejado.
+
+Os grupos de política de QoS "'Standard'" podem ser atribuídos a cargas de trabalho individuais; por exemplo, um único volume ou LUN. Nesse caso, a carga de trabalho pode usar o limite de taxa de transferência completa. Grupos de política de QoS também podem ser atribuídos a vários workloads. Nesse caso, o limite de taxa de transferência é compartilhado entre os workloads. Por exemplo, um limite de QoS de 9.000 IOPS atribuído a três workloads restringiria o IOPS combinado de mais de 9.000 IOPS.
+
+Os grupos de política de QoS "adaptável" também podem ser atribuídos a workloads individuais ou vários workloads. No entanto, mesmo quando atribuído a vários workloads, cada workload recebe o limite de taxa de transferência completa em vez de compartilhar o valor da taxa de transferência com outros workloads. Além disso, as políticas de QoS adaptáveis ajustam automaticamente a configuração de taxa de transferência com base no tamanho do volume, por workload, mantendo a proporção de IOPS para terabytes à medida que o tamanho do volume muda. Por exemplo, se o pico estiver definido para 5.000 IOPS/TB na política de QoS adaptável, um volume de 10 TB terá um limite máximo de taxa de transferência de 50.000 IOPS. Se o volume for redimensionado posteriormente para 20 TB, o QoS adaptável ajusta o limite máximo para 100.000 IOPS.
+
+A partir do ONTAP 9.5, você pode incluir o tamanho do bloco ao definir uma política de QoS adaptável. Isso converte efetivamente a política de um limite de IOPS/TB para um limite de Mbps para casos em que as cargas de trabalho estão usando tamanhos de bloco muito grandes e, em última análise, usando uma grande porcentagem de taxa de transferência.
+
+Para políticas de QoS de grupo compartilhado, quando o IOPS ou Mbps de todos os workloads em um grupo de políticas excede o limite definido, o grupo de políticas mantém os workloads para restringir a atividade, o que pode diminuir a performance de todos os workloads no grupo de políticas. Se um evento de desempenho dinâmico for gerado pela limitação do grupo de políticas, a descrição do evento exibirá o nome do grupo de políticas envolvido.
+
+Na página de inventário desempenho/volumes, você pode classificar os volumes afetados por IOPS e Mbps para ver quais workloads têm o maior uso que pode ter contribuído para o evento. Na página Performance/volumes Explorer, é possível selecionar outros volumes ou LUNs para comparar com o workload afetado IOPS ou o uso da taxa de transferência em Mbps.
+
+Ao atribuir as cargas de trabalho que estão sobreusando os recursos do nó a uma configuração de grupo de políticas mais restritiva, o grupo de políticas mantém as cargas de trabalho para restringir sua atividade, o que pode reduzir o uso dos recursos nesse nó. No entanto, se você quiser que a carga de trabalho possa usar mais recursos do nó, você pode aumentar o valor do grupo de políticas.
+
+Você pode usar o Gerenciador do sistema ou os comandos ONTAP para gerenciar grupos de políticas, incluindo as seguintes tarefas:
+
+* Criando um grupo de políticas
+* Adição ou remoção de cargas de trabalho em um grupo de políticas
+* Movimentação de uma carga de trabalho entre grupos de políticas
+* Alterar o limite de taxa de transferência de um grupo de políticas
+* Mover um workload para um agregado e/ou nó diferente
+

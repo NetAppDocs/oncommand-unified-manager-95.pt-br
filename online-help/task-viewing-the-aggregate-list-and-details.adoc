@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-viewing-the-aggregate-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: Na página de inventário de integridade/agregados, você pode monitorar seu inventário de agregados. A página integridade/capacidade de agregados e utilização permite visualizar informações sobre a capacidade e a utilização de agregados em todos os clusters. 
+---
+= Exibindo a lista de agregados e os detalhes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Na página de inventário de integridade/agregados, você pode monitorar seu inventário de agregados. A página integridade/capacidade de agregados e utilização permite visualizar informações sobre a capacidade e a utilização de agregados em todos os clusters.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Você pode exibir detalhes como capacidade e configuração agregadas e informações de disco na página integridade/detalhes de agregados. Você pode usar esses detalhes antes de configurar as configurações de limite, se necessário.
+
+
+
+== Passos
+
+. No painel de navegação à esquerda, clique em *Saúde* > *agregados*.
+. Escolha uma das seguintes maneiras de exibir os detalhes agregados:
++
+** Para exibir informações sobre a capacidade e a utilização de todos os agregados em todos os clusters, no menu Exibir, selecione *capacidade agregada e utilização*.
+** Para exibir detalhes mínimos, posicione o cursor sobre o nome do agregado.
+** Para ver os detalhes completos, clique no nome do agregado.
++
+Você também pode visualizar os detalhes completos clicando em *Exibir detalhes* na caixa de diálogo Detalhes mínimos.
+
+
+
+. Visualize os objetos relacionados ao agregado clicando em *Exibir relacionado* na caixa de diálogo Detalhes mínimos.
+

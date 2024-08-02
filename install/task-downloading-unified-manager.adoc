@@ -1,0 +1,38 @@
+---
+permalink: install/task-downloading-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Você deve fazer download do arquivo do Unified Manager.zipG no site de suporte da NetApp para instalar o Unified Manager. 
+---
+= Download do Unified Manager para Red Hat Enterprise Linux ou CentOS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você deve fazer download do arquivo do Gerenciador Unificado``.zip`` no site de suporte da NetApp para instalar o Gerenciador unificado.
+
+
+
+== Antes de começar
+
+Você deve ter credenciais de login para o site de suporte da NetApp.
+
+
+
+== Sobre esta tarefa
+
+Faça o download do mesmo pacote de instalação do Unified Manager para os sistemas Red Hat Enterprise Linux e CentOS.
+
+
+
+== Passos
+
+. Faça login no site de suporte da NetApp e navegue até a página de download para instalar o Unified Manager na plataforma Red Hat Enterprise Linux.
++
+http://mysupport.netapp.com/NOW/cgi-bin/software["Downloads de NetApp: Software"]
+
+. Faça o download do arquivo do Unified Manager``.zip`` para um diretório no sistema de destino.
+. Verifique a soma de verificação para garantir que o software foi transferido corretamente.
+

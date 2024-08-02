@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-a-namespace-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Cada Infinite volume tem um único componente de namespace que mapeia informações de diretório e nomes de arquivos para a localização de dados físicos do arquivo dentro do Infinite volume. 
+---
+= O que é um componente de namespace
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cada Infinite volume tem um único componente de namespace que mapeia informações de diretório e nomes de arquivo para a localização de dados físicos do arquivo dentro do Infinite volume.
+
+Os clientes não estão cientes do componente do namespace e não interagem diretamente com ele. O componente do namespace é um componente interno do Infinite volume.

@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-creating-rules-to-generate-email-addresses.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode criar regras para especificar o endereço de e-mail com base na cota de usuário associada a clusters, máquinas virtuais de armazenamento (SVMs), volumes, qtrees, usuários ou grupos de usuários. Uma notificação é enviada para o endereço de e-mail especificado quando há uma violação de cota.' 
+---
+= Criando regras para gerar endereços de e-mail
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar regras para especificar o endereço de e-mail com base na cota de usuário associada a clusters, máquinas virtuais de armazenamento (SVMs), volumes, qtrees, usuários ou grupos de usuários. Uma notificação é enviada para o endereço de e-mail especificado quando há uma violação de cota.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter revisado as diretrizes na página regras para gerar Endereço de e-mail de cota de usuário e grupo.
+
+
+
+
+== Sobre esta tarefa
+
+Você deve definir as regras para endereços de e-mail de cota e inseri-los na ordem em que deseja executá-los. Por exemplo, se você quiser usar o endereço de e-mail qtree1@xyz.com para receber notificações sobre violações de cota para qtree1 e usar o endereço de e-mail admin@xyz.com para todos os outros qtrees, as regras devem ser listadas na seguinte ordem:
+
+* Se ("QTREE" qtree1), então qtree1@xyz.com
+* Se ("QTREE" * ), então admin@xyz.com
+
+
+Se nenhum dos critérios para as regras especificadas for atendido, a regra padrão será usada:
+
+SE ("USER_OR_GROUP" * ), ENTÃO O DOMÍNIO "USER_OR_GROUP"
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Email de quota* no menu Configuração à esquerda.
+. Na página de opções *Setup*, clique em *Address Rules* (regras de endereço) e, em seguida, insira a regra com base nos seus critérios.
+. Clique em *Validar* para validar a sintaxe da regra.
++
+Uma mensagem de erro é exibida se a sintaxe da regra estiver incorreta. Você deve corrigir a sintaxe e clicar em *Validar* novamente.
+
+. Clique em *Salvar e fechar*.
+. Verifique se o endereço de e-mail que você criou é exibido na guia *cotas de usuário e grupo* da página de detalhes *Health/Storage Virtual Machine*.
+

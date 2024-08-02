@@ -1,0 +1,52 @@
+---
+permalink: online-help/task-determining-whether-a-workload-has-a-performance-issue.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar o Unified Manager para determinar se um evento de desempenho detetado foi realmente causado por um problema de desempenho no cluster. O evento pode ter sido causado um pico na atividade, por exemplo, que aumentou seu tempo de resposta, mas agora o tempo de resposta voltou aos níveis habituais. 
+---
+= Determinando se um workload tem um problema de performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar o Unified Manager para determinar se um evento de desempenho detetado foi realmente causado por um problema de desempenho no cluster. O evento pode ter sido causado um pico na atividade, por exemplo, que aumentou seu tempo de resposta, mas agora o tempo de resposta voltou aos níveis habituais.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Você deve ter identificado o nome do volume ou LUN associado que deseja analisar.
+* O Unified Manager deve ter coletado e analisado no mínimo cinco dias de estatísticas de desempenho do cluster.
+
+
+
+
+== Sobre esta tarefa
+
+Se você estiver visualizando a página de detalhes do evento, clique no link de nome de um volume para ir diretamente para a página Detalhes do desempenho/volume.
+
+
+
+== Passos
+
+. Na barra *Search*, digite pelo menos os três primeiros carateres do nome do volume.
++
+O nome do volume é apresentado nos resultados da pesquisa.
+
+. Clique no nome do volume.
++
+O volume é apresentado na página Performance/volume Details (Detalhes de desempenho/volume).
+
+. No gráfico *dados históricos*, clique em *5D* para exibir os últimos cinco dias de dados históricos.
+. Revise o gráfico *latência* para responder às seguintes perguntas:
++
+** Existem novos eventos de desempenho?
+** Há eventos históricos de desempenho, indicando que o volume teve problemas no passado?
+** Há picos no tempo de resposta, mesmo que os picos estejam dentro do intervalo esperado?
+** Houve alterações de configuração no cluster que podem ter afetado o desempenho? Se o tempo de resposta do volume não exibir eventos de desempenho, picos de atividade ou alterações recentes de configuração que possam ter afetado o tempo de resposta, você poderá descartar o problema de desempenho causado pelo cluster.
+
+
+

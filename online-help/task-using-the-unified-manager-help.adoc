@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-using-the-unified-manager-help.html 
+sidebar: sidebar 
+keywords:  
+summary: A Ajuda inclui informações sobre todos os recursos incluídos no Gerenciador Unificado do OnCommand. Você pode usar o índice, o índice ou a ferramenta de pesquisa para encontrar informações sobre os recursos e como usá-los. 
+---
+= Usando a Ajuda do Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A Ajuda inclui informações sobre todos os recursos incluídos no Gerenciador Unificado do OnCommand. Você pode usar o índice, o índice ou a ferramenta de pesquisa para encontrar informações sobre os recursos e como usá-los.
+
+
+
+== Sobre esta tarefa
+
+A ajuda está disponível em cada guia e na barra de menus da interface do usuário do Unified Manager.
+
+A ferramenta de pesquisa na Ajuda não funciona para palavras parciais.
+
+
+
+== Opções
+
+* Para saber mais sobre campos ou parâmetros específicos, clique image:../media/helpicon-um60.gif["Ícone para ajuda sensível ao contexto"]em .
+* Para visualizar todo o conteúdo da Ajuda, clique em *image:../media/helpicon-um60.gif["Ícone para ajuda sensível ao contexto"] * > *Ajuda/Documentação* na barra de menus.
++
+Você pode encontrar informações mais detalhadas expandindo qualquer parte do conteúdo no painel de navegação.
+
+* Para pesquisar o conteúdo da Ajuda, clique na guia *pesquisar* no painel de navegação, digite a palavra ou série de palavras que deseja localizar e clique em *ir!*
+* Para imprimir tópicos da Ajuda, clique no ícone da impressora.
+

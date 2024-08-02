@@ -1,0 +1,39 @@
+---
+permalink: performance-checker/concept-setting-up-graphite-to-receive-performance-data-from-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Graphite é uma ferramenta de software aberto para coletar e grafar dados de desempenho de sistemas de computador. Seu servidor e software Graphite devem ser configurados corretamente para receber dados estatísticos do Unified Manager. 
+---
+= Configurando o Graphite para receber dados de desempenho do Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Graphite é uma ferramenta de software aberto para coletar e grafar dados de desempenho de sistemas de computador. Seu servidor e software Graphite devem ser configurados corretamente para receber dados estatísticos do Unified Manager.
+
+Depois de instalar o Graphite de acordo com as instruções de instalação, você precisa fazer as seguintes alterações para suportar a transferência de dados estatísticos do Unified Manager:
+
+* No `/opt/graphite/conf/carbon.conf` arquivo, o número máximo de arquivos que podem ser criados no servidor Graphite por minuto deve ser definido como _200_ (`MAX_CREATES_PER_MINUTE = 200`).
++
+Dependendo do número de clusters em sua configuração e dos objetos de estatísticas que você selecionou para enviar, pode haver milhares de novos arquivos que precisam ser criados inicialmente. Em 200 arquivos por minuto, pode levar 15 minutos ou mais antes que todos os arquivos de métrica sejam criados inicialmente. Depois de todos os arquivos de métrica exclusivos terem sido criados, esse parâmetro não é mais relevante.
+
+* Se você estiver executando o Graphite em um servidor implantado usando um endereço IPv6, o valor para LINE_RECEIVER_INTERFACE no `/opt/graphite/conf/carbon.conf` arquivo deve ser alterado de "'0,0.0,0" para "(`LINE_RECEIVER_INTERFACE = ::`":"" )
+*  `/opt/graphite/conf/storage-schemas.conf`No arquivo, o `retentions` parâmetro deve ser usado para definir a frequência para 5 minutos e o período de retenção para o número de dias relevantes para o seu ambiente.
++
+O período de retenção pode ser o tempo que o seu ambiente permite, mas o valor de frequência deve ser definido para 5 minutos para pelo menos uma configuração de retenção. No exemplo a seguir, uma seção é definida para o Unified Manager usando o `pattern` parâmetro e os valores definem a frequência inicial para 5 minutos e o período de retenção para 100 dias:
+
++
+[NOTE]
+====
+Se a tag de fornecedor padrão for alterada de "'NetApp-performance'" para algo diferente, essa alteração também deve ser refletida no `pattern` parâmetro.
+
+====
+
+
+[NOTE]
+====
+Se o servidor Graphite não estiver disponível quando o servidor Unified Manager estiver tentando enviar dados de desempenho, os dados não serão enviados e haverá uma lacuna nos dados coletados.
+
+====

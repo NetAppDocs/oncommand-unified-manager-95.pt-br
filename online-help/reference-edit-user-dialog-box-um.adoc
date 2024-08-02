@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-edit-user-dialog-box-um.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo Editar utilizador permite editar apenas determinadas definições, dependendo do utilizador selecionado. 
+---
+= Caixa de diálogo Edit User (Editar utilizador)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Editar utilizador permite editar apenas determinadas definições, dependendo do utilizador selecionado.
+
+
+
+== Detalhes
+
+A área Detalhes permite editar as seguintes informações sobre um utilizador selecionado:
+
+* *Tipo*
++
+Este campo não pode ser editado.
+
+* *Nome*
++
+Este campo não pode ser editado.
+
+* *Senha*
++
+Permite editar a palavra-passe quando o utilizador selecionado for um utilizador da base de dados.
+
+* *Confirme a senha*
++
+Permite editar a palavra-passe confirmada quando o utilizador selecionado for um utilizador da base de dados.
+
+* *Email*
++
+Permite editar o endereço de correio eletrónico do utilizador selecionado. Este campo pode ser editado quando o utilizador selecionado é um utilizador local, um utilizador LDAP ou um utilizador de manutenção.
+
+* *Função*
++
+Permite editar a função atribuída ao utilizador. Este campo pode ser editado quando o utilizador selecionado é um utilizador local, um utilizador remoto ou um grupo remoto.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Guardar*
++
+Salva as alterações e fecha a caixa de diálogo Editar usuário.
+
+* *Cancelar*
++
+Cancela as alterações e fecha a caixa de diálogo Editar utilizador.
+
+

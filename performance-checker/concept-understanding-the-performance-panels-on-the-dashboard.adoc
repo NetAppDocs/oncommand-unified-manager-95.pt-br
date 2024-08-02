@@ -1,0 +1,67 @@
+---
+permalink: performance-checker/concept-understanding-the-performance-panels-on-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: O dashboard de performance do Unified Manager fornece uma visão geral de alto nível do status de performance para todos os clusters que estão sendo monitorados no seu ambiente. Os clusters com problemas de desempenho são ordenados no topo da página por gravidade. As informações no painel são atualizadas automaticamente a cada período de coleta de desempenho de cinco minutos. 
+---
+= Compreender o painel desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O dashboard de performance do Unified Manager fornece uma visão geral de alto nível do status de performance para todos os clusters que estão sendo monitorados no seu ambiente. Os clusters com problemas de desempenho são ordenados no topo da página por gravidade. As informações no painel são atualizadas automaticamente a cada período de coleta de desempenho de cinco minutos.
+
+A imagem a seguir mostra um exemplo de um dashboard de desempenho do Unified Manager que monitora dois clusters:
+
+image::../media/opm-2-dashboard-overview.gif[descrição geral do painel do opm 2]
+
+Os ícones de status que representam os objetos de armazenamento podem estar nos seguintes estados, classificados de gravidade mais alta para gravidade mais baixa:
+
+* Crítico (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"] ): Um ou mais novos eventos críticos de desempenho foram relatados para o objeto.
+* Aviso (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"]): Um ou mais eventos de desempenho de aviso novos foram relatados para o objeto.
+* Normal (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]): Não foram comunicados novos eventos de desempenho para o objeto.
+
+
+[NOTE]
+====
+A cor indica se existem novos eventos para o objeto. Eventos que não estão mais ativos, chamados eventos obsoletos, não afetam a cor do ícone.
+
+====
+
+
+== Contadores de desempenho de cluster
+
+As seguintes categorias de desempenho são exibidas para cada cluster:
+
+* Latência
++
+Mostra a rapidez com que o cluster está respondendo às solicitações de aplicativos do cliente, em milissegundos por operação.
+
+* IOPS
++
+Mostra a velocidade de funcionamento do cluster, em número de operações de entrada/saída por segundo.
+
+* Mbps
++
+Mostra a quantidade de dados que estão sendo transferidos de e para o cluster, em megabytes por segundo.
+
+* Capacidade de performance utilizada
++
+Mostra se nós ou agregados estão sobreutilizando a capacidade de performance disponível.
+
+* Utilização
++
+Mostra se os recursos em quaisquer nós ou agregados estão sendo usados em excesso.
+
+
+
+Para analisar o desempenho do cluster e dos objetos de armazenamento, você pode executar uma das seguintes ações:
+
+* Você pode clicar em *Exibir Detalhes do cluster* para exibir a página de destino do cluster, onde você pode exibir informações detalhadas de desempenho e eventos para o cluster e objetos de armazenamento selecionados.
+* Você pode clicar em um dos ícones de status vermelho ou amarelo de um objeto para exibir a página Inventário desse objeto, onde você pode exibir detalhes sobre o objeto de armazenamento.
++
+Por exemplo, clicar em um ícone de volume exibe a página de inventário de desempenho/volume com uma lista de todos os volumes no cluster selecionado, classificados de pior desempenho para melhor desempenho.
+
+

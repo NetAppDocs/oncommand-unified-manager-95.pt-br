@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível criar grupos no Unified Manager para gerenciar objetos de storage. 
+---
+= Gerenciamento e monitoramento de grupos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível criar grupos no Unified Manager para gerenciar objetos de storage.

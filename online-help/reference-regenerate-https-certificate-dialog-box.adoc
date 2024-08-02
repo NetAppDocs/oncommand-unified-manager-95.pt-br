@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-regenerate-https-certificate-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo regenerar certificado HTTPS permite personalizar as informações de segurança e, em seguida, gerar um novo certificado HTTPS com essas informações. 
+---
+= Caixa de diálogo regenerar certificado HTTPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo regenerar certificado HTTPS permite personalizar as informações de segurança e, em seguida, gerar um novo certificado HTTPS com essas informações.
+
+As informações atuais do certificado são exibidas nesta página.
+
+A seleção ""regenerar usando atributos de certificado atuais"" e ""Atualizar os atributos de certificado atuais"" permite que você regenere o certificado com as informações atuais ou gere um certificado com novas informações.
+
+* *Nome comum*
++
+Obrigatório. O nome de domínio totalmente qualificado (FQDN) que você deseja proteger.
+
++
+Nas configurações de alta disponibilidade do Unified Manager, use o endereço IP virtual.
+
+* *Email*
++
+Opcional. Um endereço de e-mail para entrar em Contato com sua organização; normalmente, o endereço de e-mail do administrador de certificados ou do departamento DE TI.
+
+* *Empresa*
++
+Opcional. Normalmente, o nome incorporado da sua empresa.
+
+* *Departamento*
++
+Opcional. O nome do departamento em sua empresa.
+
+* *Cidade*
++
+Opcional. A localização da cidade da sua empresa.
+
+* *Estado*
++
+Opcional. A localização do estado ou da província, não abreviada, da sua empresa.
+
+* *País*
++
+Opcional. A localização do país da sua empresa. Este é normalmente um código ISO de duas letras do país.
+
+* *Nomes alternativos*
++
+Obrigatório. Nomes de domínio adicionais não primários que podem ser usados para acessar este servidor, além do localhost existente ou outros endereços de rede. Separe cada nome alternativo com uma vírgula.
+
++
+Marque a caixa de seleção "'Excluir informações de identificação local (por exemplo, localhost)" se quiser remover as informações de identificação local do campo nomes alternativos no certificado. Quando esta caixa de verificação está selecionada, apenas o que introduzir no campo é utilizado no campo nomes alternativos. Quando deixado em branco, o certificado resultante não terá um campo de nomes alternativos.
+
+

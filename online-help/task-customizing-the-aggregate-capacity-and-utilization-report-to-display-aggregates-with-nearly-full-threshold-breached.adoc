@@ -1,0 +1,52 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-nearly-full-threshold-breached.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório de capacidade agregada e utilização para exibir os principais agregados, classificados por ordem decrescente de porcentagem de sobrecarga de cópia Snapshot. Isso permite visualizar o espaço de storage ainda disponível nos agregados. 
+---
+= Personalização do relatório de capacidade agregada e utilização para exibir agregados com o limite quase total violado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório de capacidade agregada e utilização para exibir os principais agregados, classificados por ordem decrescente de porcentagem de sobrecarga de cópia Snapshot. Isso permite visualizar o espaço de storage ainda disponível nos agregados.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por cluster ou par de HA, execute as seguintes etapas:
++
+.. Clique na coluna que precisa ser desagrupada.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para exibir a diferença entre a porcentagem de dados usados e o limite quase completo, adicione uma nova coluna:
++
+.. Selecione uma coluna e clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *coluna* > *Nova coluna calculada*.
+.. Na caixa de diálogo *Nova coluna computada*, insira um rótulo de coluna.
+.. Na lista Selecionar categoria, selecione *Math*.
+.. Na lista *Selecionar função*, selecione *DIFERENÇA*.
+.. Na lista coluna 1, selecione *espaço quase limite completo (%)*.
+.. Na lista coluna 2, selecione *dados usados%*.
+.. Clique em *OK*.
+
+
+. Para filtrar os valores maiores que 0 na nova coluna, clique na *Nova coluna calculada* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista suspensa *condição*, selecione *maior que*.
+. No campo *value*, digite `0` e clique em *OK*.
+. Para classificar os valores, clique em *Nova coluna computada* e clique no image:../media/click-to-see-menu.gif[""] ícone.
+. Selecione *Filter* > *Top/Bottom N*.
+. Na caixa de diálogo *Top/Bottom N*, selecione *Top N* no campo *Filter* e insira um valor no campo de texto.
+. Clique em *OK*.
+

@@ -1,0 +1,51 @@
+---
+permalink: health-checker/task-adding-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode adicionar scripts no Unified Manager e associar os scripts a alertas. Esses scripts são executados automaticamente quando um alerta é gerado e permitem obter informações sobre objetos de armazenamento para os quais o evento é gerado. 
+---
+= Adicionando scripts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode adicionar scripts no Unified Manager e associar os scripts a alertas. Esses scripts são executados automaticamente quando um alerta é gerado e permitem obter informações sobre objetos de armazenamento para os quais o evento é gerado.
+
+
+
+== Antes de começar
+
+* Você deve ter criado e salvo os scripts que deseja adicionar ao servidor do Unified Manager.
+* Os formatos de arquivo suportados para scripts são Perl, Shell, PowerShell e `.bat` arquivos.
++
+** Para scripts Perl, Perl deve ser instalado no servidor Unified Manager. Se o Perl foi instalado após o Unified Manager, você deve reiniciar o servidor do Unified Manager.
+** Para scripts do PowerShell, a política de execução apropriada do PowerShell deve ser definida no servidor para que os scripts possam ser executados.
+
+
++
+[NOTE]
+====
+Se o script criar arquivos de log para acompanhar o andamento do script de alerta, você deve garantir que os arquivos de log não sejam criados em qualquer lugar na pasta de instalação do Unified Manager.
+
+====
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+
+== Sobre esta tarefa
+
+Você pode fazer upload de scripts personalizados e reunir detalhes do evento sobre o alerta.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Scripts* no menu Gerenciamento à esquerda.
+. Na página *Gerenciamento/Scripts* , clique em *Add*.
+. Na caixa de diálogo *Add Script*, clique em *Browse* para selecionar seu arquivo de script.
+. Insira uma descrição para o script selecionado.
+. Clique em *Add*.
+

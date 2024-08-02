@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-remove-inactive-volumes-and-luns.html 
+sidebar: sidebar 
+keywords:  
+summary: Quando o espaço livre agregado for identificado como um problema, você poderá pesquisar volumes e LUNs não utilizados e excluí-los do agregado. Isso pode ajudar a aliviar o problema de pouco espaço em disco. 
+---
+= Remover volumes inativos e LUNs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando o espaço livre agregado for identificado como um problema, você poderá pesquisar volumes e LUNs não utilizados e excluí-los do agregado. Isso pode ajudar a aliviar o problema de pouco espaço em disco.
+
+Se um evento de performance em um agregado for causado por pouco espaço em disco, há algumas maneiras de determinar quais volumes e LUNs não estão mais sendo usados.
+
+Para identificar volumes não utilizados:
+
+* Na página Detalhes do evento, o campo *contagem de objetos afetados* fornece um link que exibe a lista de volumes afetados.
++
+Clique no link para exibir os volumes na página desempenho/volumes. A partir daí, você pode classificar os volumes afetados por *IOPS* para ver quais volumes não estiveram ativos.
+
+
+
+Para identificar LUNs não utilizados:
+
+. Na página de detalhes do evento, anote o nome do agregado no qual o evento ocorreu.
+. No painel de navegação esquerdo, clique em *Performance* > *LUNs*.
+. Clique em *Filtering*, selecione *Aggregate* no menu suspenso à esquerda, digite o nome do agregado no campo de texto e clique em *Apply Filter*.
+. Classifique a lista resultante de LUNs afetados por *IOPS* para visualizar os LUNs que não estão ativos.
+
+
+Depois de identificar os volumes e LUNs não utilizados, você poderá usar os comandos OnCommand System Manager ou ONTAP para excluir esses objetos.

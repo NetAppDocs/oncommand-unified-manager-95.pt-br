@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-storage-services-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de serviços de armazenamento fornecem informações sobre a criação e subscrição de serviços de armazenamento para que possa monitorizar potenciais problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de serviços de armazenamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de serviços de armazenamento fornecem informações sobre a criação e subscrição de serviços de armazenamento para que possa monitorizar potenciais problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Configuração
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Serviço de armazenamento criado (não aplicável)
+ a| 
+Evento
+ a| 
+Serviço de storage
+ a| 
+Informações
+
+
+
+ a| 
+Serviço de armazenamento subscrito (não aplicável)
+ a| 
+Evento
+ a| 
+Serviço de storage
+ a| 
+Informações
+
+
+
+ a| 
+Serviço de armazenamento cancelado (não aplicável)
+ a| 
+Evento
+ a| 
+Serviço de storage
+ a| 
+Informações
+
+|===
+
+
+== Área de impactos: Proteção
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Exclusão inesperada da Relacionaçãodo SnapMirror gerenciado EvtStorageServiceUnsupported RelationshipDeletation
+ a| 
+Risco
+ a| 
+Serviço de storage
+ a| 
+Aviso
+
+
+
+ a| 
+Exclusão inesperada do volume de membro do serviço de armazenamento (ocumEvtStorageServiceUnexpectedVolumeDeletation)
+ a| 
+Incidente
+ a| 
+Serviço de storage
+ a| 
+Crítico
+
+|===

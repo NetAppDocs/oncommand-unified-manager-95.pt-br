@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-rbac-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'O RBAC (controle de acesso baseado em função) permite controlar quem tem acesso a vários recursos e recursos no servidor do Gerenciador Unificado do OnCommand.' 
+---
+= O que é RBAC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O RBAC (controle de acesso baseado em função) permite controlar quem tem acesso a vários recursos e recursos no servidor do OnCommand Unified Manager.

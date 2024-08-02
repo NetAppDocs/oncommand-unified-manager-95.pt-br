@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-snapvault-relationship-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de relacionamento do SnapVault fornecem informações sobre o status de seus relacionamentos do SnapVault para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de relacionamento do SnapVault
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de relacionamento do SnapVault fornecem informações sobre o status de seus relacionamentos do SnapVault para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Proteção
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Não saudável do cofre assíncrono(ocumEvtSnapVaultRelationshipUnHealthy)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Aviso
+
+
+
+ a| 
+Asynchronous Vault Broken-off(ocumEvtSnapVaultRelationshipStateBrokenoff)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Erro
+
+
+
+ a| 
+Falha na inicialização do cofre assíncrono(ocumEvtSnapVaultRelationshipInitializeFailed)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Erro
+
+
+
+ a| 
+Falha na Atualização assíncrona do Vault(ocumEvtSnapVaultRelationshUpdateFailed)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Erro
+
+
+
+ a| 
+Erro de lag do Vault assíncrono(ocumEvtSnapVaultRelationshipLagError)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Erro
+
+
+
+ a| 
+Aviso de lag do Vault assíncrono(ocumEvtSnapVaultRelationshipLagWarning)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Aviso
+
+
+
+ a| 
+Falha na ressincronização assíncrona do Vault(ocumEvtSnapvaultRelationshipResyncFailed)
+ a| 
+Risco
+ a| 
+Relação de SnapMirror
+ a| 
+Erro
+
+|===

@@ -1,0 +1,100 @@
+---
+permalink: online-help/reference-cluster-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: O relatório Resumo do storage permite exibir informações resumidas sobre a capacidade de storage nos pares de HA. Essas informações ajudam você a entender possíveis riscos de capacidade e a tomar as medidas apropriadas para rebalancear o workload. As informações do cluster de nó único não são visíveis no relatório. 
+---
+= Relatório de Resumo de armazenamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O relatório Resumo do storage permite exibir informações resumidas sobre a capacidade de storage nos pares de HA. Essas informações ajudam você a entender possíveis riscos de capacidade e a tomar as medidas apropriadas para rebalancear o workload. As informações do cluster de nó único não são visíveis no relatório.
+
+
+
+== Visualização do gráfico do relatório Resumo do armazenamento
+
+O relatório Resumo do armazenamento é exibido em dois formatos:
+
+* Visualização do gráfico do relatório Resumo do armazenamento
+* Visualização tabular do relatório de Resumo de armazenamento
+
+
+O gráfico mostra a tendência de capacidade da capacidade de dados usada e não utilizada dos agregados ao longo de um período de tempo. A capacidade total de dados é exibida no eixo vertical (y) e no nome do cluster no eixo horizontal (x). Portanto, cada barra no gráfico representa um cluster. Você pode visualizar os detalhes de pontos específicos no gráfico posicionando o cursor sobre um ponto específico.
+
+* *Nome do cluster*
++
+Exibe o nome do cluster.
+
+* *Par HA*
++
+Exibe o valor do par de HA obtido formando dois nós.
+
+* *Modelo*
++
+Apresenta o nome do modelo.
+
+* *Versão do SO*
++
+Apresenta a versão do ONTAP utilizada.
+
+* * Capacidade bruta total*
++
+Exibe a capacidade física total de todos os discos no array.
+
+* *Capacidade bruta não configurada*
++
+Exibe a capacidade não configurada dos discos cujo tipo de contentor é diferente de agregado, quebrado, sobressalente ou compartilhado. Essa capacidade é sempre maior do que a capacidade física do disco no ONTAP. Por exemplo, considere um disco de 2 TB. A capacidade física do disco é de 1,6 TB no ONTAP, enquanto a capacidade bruta não configurada no Unified Manager é de 1,8 TB.
+
+* *Capacidade total agregada*
++
+Exibe o tamanho total dos agregados disponíveis para o usuário. Isso inclui a reserva de cópia Snapshot.
+
+* *Capacidade usada agregada*
++
+Exibe a capacidade já em uso em agregados. Isso inclui a capacidade consumida por volumes, LUNs e outras despesas gerais de tecnologia de eficiência de storage.
+
+* *Agregar capacidade não utilizada*
++
+Exibe a capacidade que pode estar disponível para armazenar dados adicionais no agregado. Isso inclui a reserva de cópia Snapshot.
+
+* *Capacidade LUN alocada*
++
+Exibe a capacidade dos LUNs mapeados.
+
+* *Capacidade LUN não alocada*
++
+Exibe a capacidade de todos os LUNs não mapeados para o host.
+
+* * Volume capacidade total*
++
+Exibe a capacidade total dos volumes (usados mais não utilizados).
+
+* *Volume utilizado capacidade*
++
+Apresenta a capacidade utilizada dos volumes.
+
+* * Volume de capacidade não utilizada*
++
+Exibe a capacidade não utilizada dos volumes.
+
+* * Capacidade de proteção de volume*
++
+Exibe a capacidade dos volumes que têm o SnapMirror e o SnapVault ativados.
+
+* *Total do nível de nuvem licenciado por Cluster*
++
+Exibe a capacidade total licenciada na camada de nuvem. Esse campo é exibido para fornecedores de storage que exigem licença do FabricPool, por exemplo, Amazon S3, IBM Cloud Object Storage, Microsoft Azure Cloud ou Alibaba Cloud Object Storage.
+
+* *Cluster Licensed Cloud Tier usado*
++
+Exibe o espaço usado pelos dados na camada de nuvem para fornecedores de storage que exigem uma licença FabricPool.
+
+* *Cluster StorageGRID capacidade utilizada*
++
+Exibe o espaço usado pelos dados na camada de nuvem para fornecedores de storage que não exigem licença FabricPool, por exemplo, StorageGRID.
+
+

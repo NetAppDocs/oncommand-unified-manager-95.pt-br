@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-clusters-reaching-svm-count-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório Inventário de clusters para exibir clusters, classificados por ordem decrescente de sua contagem de SVM. 
+---
+= Personalização do relatório Cluster Inventory para exibir clusters que atingem o limite de contagem de SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Inventário de clusters para exibir clusters, classificados por ordem decrescente de sua contagem de SVM.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por cluster ou nó, execute as seguintes etapas:
++
+.. Clique na coluna que precisa ser desagrupada.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para classificar clusters por contagem de SVM, execute as seguintes etapas:
++
+.. Clique na coluna *SVM Count*.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group Option*.
+
+
+. Selecione *Filter* > *Top/Bottom N*.
+. Na caixa de diálogo *Top/Bottom N*, selecione *Top N* no campo *Filter* e insira um valor no campo de texto.
+. Clique em *OK*.
+

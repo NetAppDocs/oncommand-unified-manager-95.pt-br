@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-nfs-export-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar relatórios de exportação NFS para analisar informações sobre políticas e regras de exportação NFS para volumes em seus sistemas de storage. Por exemplo, você pode personalizar relatórios para exibir volumes com caminhos de junção inacessíveis e volumes com a política de exportação padrão. 
+---
+= Personalizações do relatório de exportação de NFS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar relatórios de exportação NFS para analisar informações sobre políticas e regras de exportação NFS para volumes em seus sistemas de storage. Por exemplo, você pode personalizar relatórios para exibir volumes com caminhos de junção inacessíveis e volumes com a política de exportação padrão.

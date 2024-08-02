@@ -1,0 +1,63 @@
+---
+permalink: health-checker/concept-common-unified-manager-administrative-workflows-and-tasks.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Alguns fluxos de trabalho administrativos e tarefas comuns associados ao Unified Manager incluem a seleção dos clusters de armazenamento a serem monitorados; diagnosticar condições que afetam negativamente a disponibilidade, capacidade e proteção dos dados; criar relacionamentos de proteção; restaurar dados perdidos; configurar e gerenciar Infinite volumes; e agrupar e enviar dados de diagnóstico para suporte técnico (quando necessário).' 
+---
+= Tarefas e workflows de integridade do Unified Manager comuns
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Alguns fluxos de trabalho administrativos e tarefas comuns associados ao Unified Manager incluem a seleção dos clusters de storage que devem ser monitorados; o diagnóstico de condições que afetam negativamente a disponibilidade, a capacidade e a proteção dos dados; a criação de relacionamentos de proteção; a restauração de dados perdidos; a configuração e o gerenciamento de Infinite volumes; e a agregação e o envio de dados de diagnóstico para o suporte técnico (quando necessário).
+
+Com o Unified Manager, os administradores de storage podem visualizar um dashboard, avaliar a capacidade geral, a disponibilidade e a integridade de proteção dos clusters de storage gerenciado e identificar, localizar, diagnosticar e atribuir rapidamente problemas específicos que possam surgir.
+
+Os problemas mais importantes relacionados a um cluster, máquina virtual de armazenamento (SVM), volume, volume FlexGroup ou relação de proteção que afetam a capacidade de armazenamento, disponibilidade de dados ou confiabilidade de proteção de seus objetos de armazenamento gerenciados são exibidos nos gráficos e eventos de integridade do sistema na página Dashboards/Visão geral. Quando problemas críticos são identificados, a página esta fornece links para suportar fluxos de trabalho de solução de problemas apropriados.
+
+O Unified Manager também pode ser incluído em fluxos de trabalho que incluem ferramentas de gerenciamento relacionadas, como o OnCommand Workflow Automation (WFA), para oferecer suporte à configuração direta de recursos de storage.
+
+Fluxos de trabalho comuns relacionados às seguintes tarefas administrativas são descritos neste documento:
+
+* Diagnosticar e gerenciar problemas de disponibilidade
++
+Se problemas de configuração de recursos de armazenamento ou falha de hardware causarem a exibição de eventos de disponibilidade de dados na página Dashboards/Overview, os administradores de armazenamento podem seguir os links incorporados para exibir informações de conetividade sobre o recurso de armazenamento afetado, exibir conselhos de solução de problemas e atribuir resolução de problemas a outros administradores.
+
+* Configuração e monitoramento de incidentes de desempenho
++
+O administrador do OnCommand pode monitorar e gerenciar o desempenho dos recursos do sistema de storage que estão sendo monitorados. Consulte o _Unified Manager Workflow Guide for Managing Cluster Performance_ para obter mais informações.
+
+* Diagnósticos e gerenciamento de problemas de capacidade de volume
++
+Se os problemas de capacidade de armazenamento de volume forem exibidos na página Dashboards/Overview, os administradores de armazenamento poderão seguir os links incorporados para exibir as tendências atuais e históricas relacionadas à capacidade de armazenamento do volume afetado, exibir conselhos de solução de problemas e atribuir resolução de problemas a outros administradores.
+
+* Configuração, monitoramento e diagnóstico de problemas de relacionamento de proteção
++
+Depois de criar e configurar relacionamentos de proteção, os administradores de armazenamento podem visualizar os possíveis problemas relacionados às relações de proteção na página Dashboards/Visão geral, e podem seguir os links incorporados para visualizar o estado atual das relações de proteção, as informações de sucesso da tarefa de proteção atual e histórica sobre as relações afetadas, e conselhos sobre solução de problemas, e atribuir resolução de problemas a outros administradores. Os administradores de storage também podem configurar e gerenciar relacionamentos SnapMirror e SnapVault.
+
+* Criar arquivos de backup e restaurar dados de arquivos de backup.
+* Associar objetos de armazenamento a anotações
++
+Ao associar objetos de storage a anotações, os administradores de storage podem filtrar e exibir os eventos relacionados aos objetos de storage, o que permite que os administradores de storage priorizem e resolvam os problemas associados aos eventos.
+
+* Envio de um pacote de suporte ao suporte técnico
++
+Os administradores de armazenamento podem recuperar e enviar um pacote de suporte ao suporte técnico usando o console de manutenção. Os pacotes de suporte devem ser enviados para o suporte técnico quando o problema exigir diagnóstico e solução de problemas mais detalhados do que o que uma mensagem do AutoSupport fornece.
+
+* Criando novos relatórios para importação
++
+Os administradores de armazenamento podem criar novos `.rptdesign` arquivos usando o plug-in Eclipse para Business Intelligence and Reporting Tools (BIRT). Esses relatórios podem ser importados para a IU do Unified Manager e exibidos na página relatórios.
+
++
+Os relatórios exibidos na página relatórios fornecem o status atual dos objetos de armazenamento. Você pode tomar decisões importantes, como decisões sobre a aquisição de storage, com base no uso atual. Esses relatórios fornecem uma visão detalhada de objetos de storage, como volumes, compartimentos de disco e agregados.
+
++
+A página relatórios na IU do Unified Manager permite exibir informações detalhadas sobre os relatórios gerados. Você pode pesquisar um relatório específico, salvar um relatório e excluir um relatório da página relatórios. Você também pode agendar, compartilhar e importar um relatório desta página.
+
+* Criação, configuração, monitoramento e proteção de Infinite volumes
++
+Depois de usar a ferramenta Workflow Automation para criar, configurar e definir classes de storage para um Infinite volume, os administradores de storage podem usar o Unified Manager para monitorar, definir limites de notificação e definir a política de dados para esse volume e suas classes de storage. Opcionalmente, os administradores de storage podem usar O WFA e o Unified Manager para configurar a proteção de dados para o Infinite volume.
+
+

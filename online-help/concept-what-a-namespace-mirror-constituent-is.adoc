@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-a-namespace-mirror-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Um componente de espelho de namespace é uma cópia espelhada de proteção de dados entre clusters do componente de namespace em um Infinite volume. O componente do espelho do namespace executa duas funções: Ele fornece proteção de dados do componente do namespace e suporta SnapDiff para backup incremental em fita de Infinite volumes.' 
+---
+= O que é um componente de espelho de namespace
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um componente de espelho de namespace é uma cópia espelhada de proteção de dados entre clusters do componente de namespace em um Infinite volume. O componente do espelho do namespace executa duas funções: Ele fornece proteção de dados do componente do namespace e suporta SnapDiff para backup incremental em fita de Infinite volumes.

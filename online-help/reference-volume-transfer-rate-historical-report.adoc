@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-volume-transfer-rate-historical-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 'O relatório taxa de transferência de volume (Histórico) permite analisar a quantidade de volume de dados que é transferido diariamente. O relatório também fornece detalhes sobre transferências diárias de volume e o tempo necessário para concluir a operação de transferência.' 
+---
+= Relatório de taxa de transferência de volume (Histórico)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O relatório de taxa de transferência de volume (Histórico) permite analisar a quantidade de volume de dados que é transferido diariamente. O relatório também fornece detalhes sobre transferências diárias de volume e o tempo necessário para concluir a operação de transferência.
+
+O relatório de taxa de transferência de volume (Histórico) é exibido em dois formatos:
+
+* Gráfico de barras da taxa de transferência de volume
+* Vista tabular da taxa de transferência de volume
+
+
+
+
+== Gráfico de barras da taxa de transferência de volume
+
+Exibe os detalhes da taxa de transferência de volume, traçando o tamanho total da transferência em relação ao número de horas. Você também pode visualizar os detalhes da quantidade de dados que é transferida diariamente.
+
+
+
+== Vista tabular da taxa de transferência de volume
+
+* * Tamanho total da transferência (GB)*
++
+Exibe o tamanho total da transferência de volume em gigabytes.
+
+* *Dia*
++
+Apresenta o dia em que a transferência de volume foi iniciada.
+
+* *Hora de fim*
++
+Exibe a hora de término da transferência de volume com a data.
+
+

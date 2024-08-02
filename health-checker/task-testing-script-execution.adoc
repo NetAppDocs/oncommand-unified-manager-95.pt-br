@@ -1,0 +1,58 @@
+---
+permalink: health-checker/task-testing-script-execution.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode verificar se o script é executado corretamente quando um alerta é gerado para um objeto de armazenamento. 
+---
+= Testando a execução de script
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode verificar se o script é executado corretamente quando um alerta é gerado para um objeto de armazenamento.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter carregado um script no formato de arquivo suportado para o Unified Manager.
+
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Scripts* no menu Gerenciamento à esquerda.
+. Na página *Gerenciamento/Scripts*, adicione seu script de teste.
+. Na página *Configuration/Alerting*, execute uma das seguintes ações:
++
+|===
+| Para... | Faça isso... 
+
+
+ a| 
+Adicione um alerta
+ a| 
+.. Na página Configuração/alertas, clique em *Adicionar*.
+.. Na seção ações, associe o alerta ao script de teste.
+
+
+
+
+ a| 
+Edite um alerta
+ a| 
+.. Na página Configuração/alertas, selecione um alerta e clique em *Editar*.
+.. Na seção ações, associe o alerta ao script de teste.
+
+
+|===
+. Clique em *Salvar*.
+. Na página *Configuração/alertas*, selecione o alerta que você adicionou ou modificou e clique em *Teste*.
++
+O script é executado com o argumento "'-teSt", e um alerta de notificação é enviado para os endereços de e-mail que foram especificados quando o alerta foi criado.
+
+

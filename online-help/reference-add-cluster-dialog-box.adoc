@@ -1,0 +1,38 @@
+---
+permalink: online-help/reference-add-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível adicionar um cluster existente para que você possa monitorar o cluster e obter informações sobre sua integridade, capacidade, configuração e performance. 
+---
+= Caixa de diálogo Adicionar cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível adicionar um cluster existente para que você possa monitorar o cluster e obter informações sobre sua integridade, capacidade, configuração e performance.
+
+Você pode adicionar um cluster especificando os seguintes valores:
+
+* *Nome do host ou endereço IP*
++
+Permite especificar o nome do host (preferido) ou o endereço IP (IPv4 ou IPv6) do LIF de gerenciamento de cluster usado para se conetar ao cluster. Ao especificar o nome do host, você será capaz de corresponder o nome do cluster na IU da Web, em vez de tentar correlacionar um endereço IP em uma página com um nome de host em outra página.
+
+* *Nome de usuário*
++
+Permite especificar um nome de utilizador que pode ser utilizado para iniciar sessão no cluster.
+
+* *Senha*
++
+Permite especificar uma palavra-passe para o nome de utilizador especificado.
+
+* *Protocolo*
++
+Permite especificar o tipo de protocolo que pode ser configurado no cluster. Você pode ativar HTTP ou HTTPS (para uma conexão segura). A conexão é estabelecida com o cluster usando ambos os protocolos e HTTPS é escolhido em HTTP. Por padrão, o HTTPS é habilitado com a porta padrão 443.
+
+* *Porto*
++
+Permite especificar o número da porta utilizada para ligar ao cluster. Se a porta não for especificada, a porta padrão para o protocolo selecionado será usada (80 para HTTP ou 443 para HTTPS).
+
+

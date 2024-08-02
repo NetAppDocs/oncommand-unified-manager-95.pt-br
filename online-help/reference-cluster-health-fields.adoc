@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-cluster-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: O relatório de inventário de cluster fornece informações sobre os recursos disponíveis para componentes de cluster com o objetivo de compreender possíveis riscos causados por recursos insuficientes. 
+---
+= Relatório de inventário de cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O relatório de inventário de cluster fornece informações sobre os recursos disponíveis para componentes de cluster com o objetivo de compreender possíveis riscos causados por recursos insuficientes.
+
+
+
+== Vista tabular do relatório de inventário de cluster
+
+* *Cluster*
++
+Exibe o nome do cluster.
+
+* *Par HA*
++
+Exibe o valor do par de HA obtido formando dois nós.
+
+* *Nó*
++
+Exibe o nome dos nós.
+
+* *Modelo*
++
+Apresenta o nome do modelo.
+
+* *Versão do SO*
++
+Apresenta a versão do ONTAP utilizada.
+
+* *Todos os flash otimizados*
++
+Exibe se o nó está configurado para suportar somente unidades de estado sólido (SSDs).
+
+* *Número de série*
++
+Exibe o número de série do nó.
+
+* *Versão do firmware*
++
+Apresenta a versão do firmware do nó.
+
+* *SVM Count*
++
+Exibe o número de SVM contido no cluster.
+
+* *Contagem de portas FC*
++
+Exibe o número de portas FC contidas pelo nó.
+
+* *Contagem de portas FCoE*
++
+Exibe o número de portas FCoE contidas pelo nó.
+
+* *Contagem de portas Ethernet*
++
+Exibe o número de portas ethernet contidas pelo nó.
+
+* * Contagem de cartões Flash*
++
+Exibe o número de cartões flash instalados nos nós do data center para que você possa monitorar possíveis problemas.
+
+* *Tamanho do cartão Flash (GB)*
++
+Exibe o tamanho das placas flash instaladas nos nós.
+
+* *Contagem de prateleiras de disco*
++
+Exibe o número de compartimentos de disco contidos pelo nó.
+
+* *Contagem de discos*
++
+Exibe o número de discos em um nó.
+
+

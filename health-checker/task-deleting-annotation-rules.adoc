@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-deleting-annotation-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode excluir regras de anotação do Gerenciador Unificado do OnCommand quando as regras não forem mais necessárias. 
+---
+= Eliminar regras de anotação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir regras de anotação do Gerenciador Unificado do OnCommand quando as regras não forem mais necessárias.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Quando elimina uma regra de anotação, a anotação é desassociada e removida dos objetos de armazenamento.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Anotações* no menu Gestão à esquerda.
+. Na guia *regras de anotação*, selecione a regra de anotação que deseja excluir e clique em *Excluir*.
+. Na caixa de diálogo *Aviso*, clique em *Sim* para confirmar a exclusão.
+

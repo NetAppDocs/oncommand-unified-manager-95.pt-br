@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar scripts para modificar ou atualizar automaticamente vários objetos de armazenamento no Unified Manager. O script está associado a um alerta. Quando um evento aciona um alerta, o script é executado. Você pode carregar scripts personalizados e testar sua execução quando um alerta é gerado. 
+---
+= Gerenciamento de scripts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar scripts para modificar ou atualizar automaticamente vários objetos de armazenamento no Unified Manager. O script está associado a um alerta. Quando um evento aciona um alerta, o script é executado. Você pode carregar scripts personalizados e testar sua execução quando um alerta é gerado.

@@ -1,0 +1,51 @@
+---
+permalink: online-help/task-customizing-the-svm-inventory-report-to-display-a-list-of-svms-reaching-maximum-volume-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório SVM Inventory para exibir uma lista de SVMs que estão atingindo o limite máximo de volume, classificando os volumes em ordem crescente. 
+---
+= Personalizar o relatório SVM Inventory para exibir uma lista de SVMs que atingem o limite máximo de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório SVM Inventory para exibir uma lista de SVMs que estão atingindo o limite máximo de volume, classificando os volumes em ordem crescente.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por cluster, execute as seguintes etapas:
++
+.. Clique dentro da coluna que precisa ser desagrupada.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para filtrar SVMs que não têm volumes permitidos ilimitados, clique na coluna *volumes máximos permitidos* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. No campo *Data type*, selecione *String* e clique em *OK*.
+. Na lista suspensa *condição*, selecione *não igual a*.
+. Clique em *Select Values* e selecione *Unlimited*.
+. Para adicionar uma nova coluna computada, execute as seguintes etapas:
++
+.. Selecione uma coluna, clique no image:../media/click-to-see-menu.gif[""] ícone e selecione *coluna* > *Nova coluna calculada*.
+.. Na caixa de diálogo *Nova coluna computada*, digite `Available Volume` o campo *rótulo da coluna*.
+.. Na lista Selecionar categoria, selecione *Math*.
+.. Na lista suspensa *Selecionar função*, selecione *Avançado*.
+.. No campo *Enter Expression*, `[maximumVolumes]-[volumeCount]` digite .
+.. Clique em *OK*.
+
+
+. Para classificar SVMs em ordem crescente, clique na coluna *volume disponível* e clique no image:../media/click-to-see-menu.gif[""] ícone.
+. Selecione *Filter* > *Top/Bottom N*.
+. Na caixa de diálogo *N* superior/inferior, selecione *N inferior* no campo *filtro* e insira um valor no campo de texto.
+. Clique em *OK*.
+

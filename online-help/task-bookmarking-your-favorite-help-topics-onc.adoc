@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-bookmarking-your-favorite-help-topics-onc.html 
+sidebar: sidebar 
+keywords:  
+summary: Na guia Favoritos da Ajuda, você pode marcar os tópicos da Ajuda que você usa com frequência. Os marcadores de ajuda fornecem acesso rápido aos seus tópicos favoritos. 
+---
+= Marcar os seus tópicos de Ajuda favoritos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Na guia Favoritos da Ajuda, você pode marcar os tópicos da Ajuda que você usa com frequência. Os marcadores de ajuda fornecem acesso rápido aos seus tópicos favoritos.
+
+
+
+== Passos
+
+. Navegue até o tópico Ajuda que você deseja adicionar como favorito.
+. Clique em *Favoritos* e, em seguida, clique em *Adicionar*.
+

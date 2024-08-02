@@ -1,0 +1,63 @@
+---
+permalink: online-help/reference-qtree-thresholds-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página limites de configuração/integridade para Qtrees permite configurar valores de limite de integridade global para qtrees monitorados. Os eventos são gerados para uma qtree somente quando uma cota Qtree ou uma cota padrão tiver sido definida na qtree. Os eventos não são gerados se o espaço definido em uma cota de usuário ou cota de grupo tiver excedido o limite. 
+---
+= Página de limites de configuração/integridade para Qtrees
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página limites de configuração/integridade para Qtrees permite configurar valores de limite de integridade global para qtrees monitorados. Os eventos são gerados para uma qtree somente quando uma cota Qtree ou uma cota padrão tiver sido definida na qtree. Os eventos não são gerados se o espaço definido em uma cota de usuário ou cota de grupo tiver excedido o limite.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+Os eventos são gerados quando um limite é violado. Você pode tomar ações corretivas para tais eventos.
+
+
+
+== Área de capacidade
+
+A área capacidade permite definir as seguintes condições de limite de capacidade de qtree.
+
+* *Espaço quase cheio*
++
+Especifica a porcentagem em que uma qtree é considerada quase cheia:
+
++
+** Valor padrão: 80 por cento
++
+O valor para este limiar deve ser inferior ao valor para o limiar Qtree Full.
+
+** Evento gerado: Qtree quase cheio
+** Gravidade do evento: Aviso
+
+
+* *Espaço cheio*
++
+Especifica a porcentagem em que uma qtree é considerada cheia:
+
++
+** Valor padrão: 90 por cento
+** Evento gerado: Qtree Full
+** Gravidade do evento: Erro
+
+
+
+
+
+
+== Botões de comando
+
+* *Restaurar para padrões de fábrica*
++
+Permite restaurar as definições de configuração para os valores predefinidos de fábrica.
+
+* *Guardar*
++
+Guarda as definições de configuração para a opção selecionada.
+
+

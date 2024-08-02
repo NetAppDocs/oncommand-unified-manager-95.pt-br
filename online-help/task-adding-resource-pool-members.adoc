@@ -1,0 +1,46 @@
+---
+permalink: online-help/task-adding-resource-pool-members.html 
+sidebar: sidebar 
+keywords:  
+summary: Um pool de recursos consiste em vários agregados de membros. Você pode adicionar agregados a pools de recursos existentes para aumentar a quantidade de espaço disponível para o provisionamento de volume secundário. 
+---
+= Adicionando membros do pool de recursos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um pool de recursos consiste em vários agregados de membros. Você pode adicionar agregados a pools de recursos existentes para aumentar a quantidade de espaço disponível para o provisionamento de volume secundário.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Você não pode adicionar mais de 200 agregados a um pool de recursos de uma só vez. Os agregados mostrados na caixa de diálogo agregados não pertencem a nenhum outro pool de recursos.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *proteção* > *pools de recursos*.
+. Selecione um pool de recursos na lista *pools de recursos*.
++
+Os membros do pool de recursos são exibidos na área abaixo da lista de pool de recursos.
+
+. Na área de membro do pool de recursos, clique em *Add*.
++
+A caixa de diálogo agregados é exibida.
+
+. Selecione um ou mais agregados.
+. Clique em *Add*.
++
+A caixa de diálogo é fechada e os agregados são exibidos na lista de membros do pool de recursos selecionado.
+
+

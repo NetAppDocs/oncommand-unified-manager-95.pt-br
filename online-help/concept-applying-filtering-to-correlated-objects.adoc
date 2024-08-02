@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-applying-filtering-to-correlated-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: A filtragem permite exibir um subconjunto menor e mais bem definido de objetos na grade. Por exemplo, se você tiver 25 volumes na grade, a filtragem permite exibir somente os volumes que têm taxa de transferência inferior a 90 Mbps ou latência superior a 1 ms/op. 
+---
+= Aplicar filtragem para reduzir a lista de objetos correlacionados na grade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A filtragem permite exibir um subconjunto menor e mais bem definido de objetos na grade. Por exemplo, se você tiver 25 volumes na grade, a filtragem permite exibir somente os volumes que têm taxa de transferência inferior a 90 Mbps ou latência superior a 1 ms/op.

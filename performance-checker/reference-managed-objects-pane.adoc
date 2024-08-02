@@ -1,0 +1,50 @@
+---
+permalink: performance-checker/reference-managed-objects-pane.html 
+sidebar: sidebar 
+keywords:  
+summary: O painel objetos gerenciados na guia Resumo de desempenho fornece uma visão geral de nível superior dos tipos e contagens de objetos de storage para o cluster. Esse painel permite rastrear o status dos objetos em cada cluster. 
+---
+= Painel objetos gerenciados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O painel objetos gerenciados na guia Resumo de desempenho fornece uma visão geral de nível superior dos tipos e contagens de objetos de storage para o cluster. Esse painel permite rastrear o status dos objetos em cada cluster.
+
+A contagem de objetos gerenciados é de dados pontuais a partir do último período de coleta. Novos objetos são descobertos em intervalos de 15 minutos.
+
+Clicar no número vinculado para qualquer tipo de objeto exibe a página de inventário de desempenho do objeto para esse tipo de objeto. A página de inventário de objetos é filtrada para mostrar apenas os objetos neste cluster.
+
+Os objetos gerenciados são:
+
+* * Nós*
++
+Um sistema físico em um cluster.
+
+* *Agregados*
++
+Um conjunto de vários grupos de matriz redundante de discos independentes (RAID) que podem ser gerenciados como uma única unidade para proteção e provisionamento.
+
+* *Portos*
++
+Um ponto de conexão físico em nós que é usado para se conetar a outros dispositivos em uma rede.
+
+* *SVMs*
++
+Uma máquina virtual que fornece acesso à rede através de endereços de rede exclusivos. Um SVM pode servir dados a partir de um namespace distinto e pode ser administrado separadamente do resto do cluster.
+
+* *Volumes*
++
+Uma entidade lógica que contém dados de usuário acessíveis por meio de um ou mais protocolos de acesso suportados. A contagem inclui volumes FlexVol e volumes FlexGroup; ela não inclui componentes FlexGroup ou Infinite volumes.
+
+* *LUNs*
++
+O identificador de uma unidade lógica Fibre Channel (FC) ou de uma unidade lógica iSCSI. Uma unidade lógica normalmente corresponde a um volume de armazenamento e é representada dentro de um sistema operacional de computador como um dispositivo.
+
+* *LIFs*
++
+Uma interface de rede lógica que representa um ponto de acesso à rede para um nó. A contagem inclui todos os tipos de LIF.
+
+

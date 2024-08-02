@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-analyzing-the-capacity-of-the-top-most-unassigned-luns.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível personalizar o relatório Resumo do storage para analisar a utilização do storage de clusters, o que permite localizar os LUNs com a capacidade mais não alocada. 
+---
+= Personalizar o relatório Resumo do armazenamento para analisar clusters com a capacidade de LUN mais não alocada
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível personalizar o relatório Resumo do storage para analisar a utilização do storage de clusters, o que permite localizar os LUNs com a capacidade mais não alocada.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por cluster, execute as seguintes etapas:
++
+.. Clique na coluna que precisa ser desagrupada.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para classificar os pares de HA que têm a capacidade LUN mais não alocada, clique na coluna *capacidade LUN não alocada (TB)* e clique no image:../media/click-to-see-menu.gif[""] ícone.
+. Selecione *Filter* > *Top/Bottom N*.
+. Na caixa de diálogo *Top/Bottom N*, selecione *Top N* no campo *Filter* e insira um valor no campo de texto.
+. Clique em *OK*.
+

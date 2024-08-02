@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-page-descriptions-for-cluster-management.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode visualizar e gerenciar clusters, incluindo adicionar, editar, redescobrir e remover clusters a partir de uma única página. 
+---
+= Descrições de páginas para gerenciamento de fontes de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode visualizar e gerenciar clusters, incluindo adicionar, editar, redescobrir e remover clusters a partir de uma única página.

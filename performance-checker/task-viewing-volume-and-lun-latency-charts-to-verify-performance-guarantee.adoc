@@ -1,0 +1,32 @@
+---
+permalink: performance-checker/task-viewing-volume-and-lun-latency-charts-to-verify-performance-guarantee.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode visualizar os volumes e LUNs inscritos no programa "Garantia de desempenho" para verificar se a latência não excedeu o nível garantido.' 
+---
+= Visualização de gráficos de latência de volume e LUN para verificar a garantia de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode ver os volumes e LUNs que você assinou no programa "Garantia de desempenho" para verificar se a latência não excedeu o nível que você foi garantido.
+
+
+
+== Sobre esta tarefa
+
+A garantia de desempenho de latência é de um milissegundo por valor de operação que não deve ser excedido. Ele é baseado em uma média horária, não no período padrão de coleta de desempenho de cinco minutos.
+
+
+
+== Passos
+
+. Na página de inventário *volumes de desempenho* ou *LUNs de desempenho*, selecione o volume ou LUN em que você está interessado.
+. Na página *Explorador de desempenho* para o volume ou LUN selecionado, escolha *média horária* no seletor *Ver estatísticas em*.
++
+A linha horizontal no gráfico de latência mostrará uma linha mais suave à medida que as coleções de cinco minutos são substituídas pela média horária.
+
+. Se você tiver outros volumes no mesmo agregado que estão sob a garantia de desempenho, poderá adicionar esses volumes para visualizar o valor de latência no mesmo gráfico.
+

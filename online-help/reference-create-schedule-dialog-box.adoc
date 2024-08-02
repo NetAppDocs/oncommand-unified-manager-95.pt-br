@@ -1,0 +1,74 @@
+---
+permalink: online-help/reference-create-schedule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo criar agendamento permite criar um cronograma de proteção básico ou avançado para transferências de relacionamento do SnapMirror e do SnapVault. Você pode criar uma nova programação para aumentar a frequência de transferências de dados devido a atualizações de dados frequentes ou pode criar uma programação menos frequente quando os dados são alterados com pouca frequência. 
+---
+= Caixa de diálogo criar Agendamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo criar agendamento permite criar um cronograma de proteção básico ou avançado para transferências de relacionamento do SnapMirror e do SnapVault. Você pode criar uma nova programação para aumentar a frequência de transferências de dados devido a atualizações de dados frequentes ou pode criar uma programação menos frequente quando os dados são alterados com pouca frequência.
+
+As programações não podem ser configuradas para relacionamentos síncronos do SnapMirror.
+
+* *Cluster de destino*
++
+O nome do cluster selecionado na guia SnapVault (Configuração) ou SnapMirror (Configuração de proteção) da caixa de diálogo Configurar proteção.
+
+* *Nome da programação*
++
+O nome que você fornece para a programação. Os nomes de programação podem consistir nos carateres A A Z, a a z, 0 a 9, bem como em qualquer um dos seguintes carateres especiais: ! * ( ) _ -. Os nomes de programação podem não incluir os seguintes carateres: >.
+
+* *Básico ou Avançado*
++
+O modo de programação que pretende utilizar.
+
++
+O modo básico inclui os seguintes elementos:
+
++
+** Repita
++
+Com que frequência ocorre uma transferência agendada. As opções incluem horário, diário e semanal.
+
+** Dia
++
+Quando uma repetição semanal é selecionada, o dia da semana uma transferência ocorre.
+
+** Tempo
++
+Quando Daily (Diário) ou Weekly (semanal) é selecionado, a hora do dia em que ocorre uma transferência.
+
+
+
++
+O modo avançado inclui os seguintes elementos:
+
++
+** Meses
++
+Uma lista numérica separada por vírgulas que representa os meses do ano. Os valores válidos são de 0 a 11, com zero representando janeiro, e assim por diante. Este elemento é opcional. Deixar o campo em branco implica que as transferências ocorrem todos os meses.
+
+** Dias
++
+Uma lista numérica separada por vírgulas que representa o dia do mês. Os valores válidos são de 1 a 31. Este elemento é opcional. Deixar o campo em branco implica que uma transferência ocorre todos os dias do mês.
+
+** Dias úteis
++
+Uma lista numérica separada por vírgulas que representa os dias da semana. Os valores válidos são de 0 a 6, com 0 representando domingo, e assim por diante. Este elemento é opcional. Deixar o campo em branco implica que uma transferência ocorre todos os dias da semana. Se um dia da semana for especificado, mas um dia do mês não for especificado, uma transferência ocorre apenas no dia especificado da semana e não todos os dias.
+
+** Horas
++
+Uma lista numérica separada por vírgulas que representa o número de horas em um dia. Os valores válidos são de 0 a 23, com 0 representando meia-noite. Este elemento é opcional.
+
+** Minutos
++
+Uma lista numérica separada por vírgulas que representa os minutos em uma hora. Os valores válidos são de 0 a 59. Este elemento é necessário.
+
+
+
+

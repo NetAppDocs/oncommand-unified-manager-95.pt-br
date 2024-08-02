@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-understanding-more-about-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: Entender os conceitos sobre anotações ajuda você a gerenciar os eventos relacionados aos objetos de armazenamento em seu ambiente. 
+---
+= Compreender mais sobre anotações
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Entender os conceitos sobre anotações ajuda você a gerenciar os eventos relacionados aos objetos de armazenamento em seu ambiente.

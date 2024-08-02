@@ -1,0 +1,44 @@
+---
+permalink: install/task-configuring-existing-unified-manager-setup-to-high-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode atualizar sua instalação do Unified Manager existente e configurar seu ambiente de configuração para alta disponibilidade. 
+---
+= Atualização de uma configuração existente do Unified Manager para alta disponibilidade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode atualizar sua instalação do Unified Manager existente e configurar seu ambiente de configuração para alta disponibilidade.
+
+
+
+== Antes de começar
+
+* Você precisa ter criado um pacote de backup e suporte de seus dados existentes.
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter adicionado um segundo nó ao cluster e instalado o Veritas Cluster Server (VCS) no segundo nó.
++
+Consulte o _Veritas Cluster Server 6.2.1 Installation Guide_.
+
+* O nó recém-adicionado deve ser configurado para acessar o mesmo local compartilhado que o do nó existente na configuração de alta disponibilidade.
+
+
+
+
+== Passos
+
+. Faça login no novo nó do cluster.
+. Instale o Unified Manager no nó.
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Instalação do Unified Manager no Red Hat Enterprise Linux ou CentOS]
+
+. Configure o servidor do Unified Manager usando scripts de configuração no nó existente com dados.
+. Inicie o failover manual para o segundo nó.
+. Execute o `perl ha_setup.pl --join -t vcs -f``mount_path` comando no segundo nó do cluster para que os dados do servidor Unified Manager apontem para o LUN compartilhado.
+. Se o OnCommand Workflow Automation (WFA) estiver configurado para o Unified Manager, desative e reconfigure a conexão WFA.
+. Se o SnapProtect estiver configurado com o Unified Manager, reconfigure o SnapProtect com um novo endereço IP de cluster e as políticas de storage existentes.
+. Regenere os relatórios personalizados e adicione esses relatórios ao Unified Manager com o novo endereço IP do cluster.
+

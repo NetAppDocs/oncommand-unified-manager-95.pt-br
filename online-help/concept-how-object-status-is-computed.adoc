@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-how-object-status-is-computed.html 
+sidebar: sidebar 
+keywords:  
+summary: O status do objeto é determinado pelo evento mais grave que atualmente detém um estado novo ou reconhecido. Por exemplo, se um status de objeto for erro, um dos eventos do objeto tem um tipo de gravidade de erro. Quando a ação corretiva tiver sido tomada, o estado do evento passa para resolvido. 
+---
+= Como o status do objeto é calculado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O status do objeto é determinado pelo evento mais grave que atualmente detém um estado novo ou reconhecido. Por exemplo, se um status de objeto for erro, um dos eventos do objeto tem um tipo de gravidade de erro. Quando a ação corretiva tiver sido tomada, o estado do evento passa para resolvido.

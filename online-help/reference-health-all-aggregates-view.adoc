@@ -1,0 +1,285 @@
+---
+permalink: online-help/reference-health-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: A página de inventário de integridade/agregados exibe informações sobre os agregados que são monitorados e permite exibir e modificar as configurações de limite. 
+---
+= Página de inventário de integridade/agregados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página de inventário de integridade/agregados exibe informações sobre os agregados que são monitorados e permite exibir e modificar as configurações de limite.
+
+
+
+== Botões de comando
+
+* *Editar limites*
++
+Exibe a caixa de diálogo Editar limites de agregados, que permite editar as configurações de limites para um ou mais agregados.
+
+* * Exportação*
++
+Permite exportar os detalhes de todos os agregados monitorados para um (`.csv`arquivo de valores separados por vírgula ).
+
+
+
+
+
+== Lista de agregados
+
+Exibe, em formato tabular, as propriedades de todos os agregados descobertos. Você pode usar os filtros de coluna para personalizar os dados exibidos:
+
+* *Status*
++
+O status atual do agregado. O status pode ser crítico (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"] ), erro (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ), Aviso (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"] ) ou normal (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]).
+
++
+Você pode mover o ponteiro sobre o status para exibir mais informações sobre o evento ou eventos gerados para o agregado.
+
++
+Se o status do agregado for determinado por um único evento, você poderá exibir informações como o nome do evento, a hora e a data em que o evento foi acionado, o nome do administrador a quem o evento foi atribuído e a causa do evento. Você pode clicar no botão *Exibir detalhes* para ver mais informações sobre o evento.
+
++
+Se o status do agregado for determinado por vários eventos da mesma gravidade, os três principais eventos serão exibidos com informações como o nome do evento, a hora e a data em que os eventos são acionados e o nome do administrador a quem o evento é atribuído. Você pode ver mais detalhes sobre cada um desses eventos clicando no nome do evento. Você também pode clicar no link *Exibir todos os eventos* para visualizar a lista de eventos gerados.
+
+* *Agregado*
++
+O nome do agregado.
+
++
+Você pode mover o ponteiro sobre um agregado para exibir informações como o último evento gerado, nó que contém o agregado, tipo RAID, reserva Snapshot, cópias Snapshot e espaço alocado no agregado. Você também pode exibir o número de operações de movimentação de volume que estão atualmente em andamento.
+
+* *Estado*
++
+O estado atual do agregado:
+
++
+** Offline
++
+Acesso de leitura ou gravação não é permitido.
+
+** Online
++
+O acesso de leitura e gravação a volumes hospedados neste agregado é permitido.
+
+** Restrito
++
+Operações limitadas, como reconstrução de paridade, são permitidas, mas o acesso aos dados não é permitido.
+
+** A criar
++
+O agregado está sendo criado.
+
+** Destruindo
++
+O agregado está sendo destruído.
+
+** Falha
++
+O agregado não pode ser colocado online.
+
+** Congelado
++
+O agregado não está (temporariamente) atendendo solicitações.
+
+** Inconsistente
++
+O agregado foi marcado como corrompido; entre em Contato com o suporte técnico.
+
+** Ferro restrito
++
+As ferramentas de diagnóstico não podem ser executadas no agregado.
+
+** Montagem
++
+O agregado está sendo montado.
+
+** Parcial
++
+Pelo menos um disco foi encontrado para o agregado, mas dois ou mais discos estão faltando.
+
+** Quiesced
++
+O agregado é aquiesced.
+
+** Quiescing
++
+O agregado está sendo silenciado.
+
+** Revertido
++
+A operação de reversão do agregado está concluída.
+
+** Desmontado
++
+O agregado está offline.
+
+** Desmontagem
++
+O agregado está sendo colocado off-line.
+
+** Desconhecido
++
+Especifica que o agregado é descoberto, mas as informações agregadas ainda não são recuperadas pelo servidor do Unified Manager.
+
+
+
+* *Nó*
++
+O nome do controlador de armazenamento que contém o agregado.
+
+* *Status do espelho*
++
+O status do espelho do agregado:
+
++
+** Espelhado
++
+Os dados agregados Plex são espelhados.
+
+** Espelho degradado
++
+Os dados agregados Plex não podem ser espelhados.
+
+** Ressincronização do espelho
++
+Os dados agregados de Plex estão sendo espelhados.
+
+** Falha
++
+O espelhamento de dados Plex agregado falhou.
+
+** Configuração inválida
++
+O estado inicial antes de um agregado é criado.
+
+** Não inicializado
++
+O agregado está sendo criado.
+
+** Não espelhado
++
+O agregado não é espelhado.
+
+** Verificação da contagem de CP em curso
++
+O agregado foi assimilado e o Unified Manager está validando que a contagem de CP para os plexes é semelhante.
+
+** Limbo
++
+Há um problema com os rótulos agregados. O sistema ONTAP identifica o agregado, mas não consegue assimilar com precisão o agregado.
+
+** Necessita de verificação da contagem de CP
++
+O agregado é assimilado, mas as contagens de CP em ambos os plexos ainda não são validadas para serem semelhantes.
+
+
+
++
+Quando um agregado está no estado mirror_resynchronizing, então a porcentagem de ressincronização também é mostrada.
+
+* *Em transição*
++
+Se o agregado concluiu ou não a transição.
+
+* *Tipo*
++
+O tipo de agregado:
+
++
+** HDD
+** Híbrida
++
+Combina HDDs e SSDs, mas o Flash Pool não foi ativado.
+
+** Híbrido (Flash Pool)
++
+Combina HDDs e SSDs e o Flash Pool foi ativado.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSDs e uma camada de nuvem
+
+** VMDisk (SDS)
++
+Discos virtuais dentro de uma máquina virtual
+
+** VMDisk (FabricPool)
++
+Combina discos virtuais e uma camada de nuvem
+
+** LUN (FlexArray) para discos padrão e discos SSD, esta coluna fica em branco quando o sistema de armazenamento monitorado está executando uma versão do ONTAP anterior a 8,3.
+
+
+* *Tipo SnapLock*
++
+O tipo SnapLock agregado. Os valores possíveis são Compliance, Enterprise, Non-SnapLock.
+
+* * Capacidade de dados usados*
++
+A quantidade de espaço usada para dados no agregado.
+
+* *Dados usados %*
++
+A porcentagem de espaço usado para dados no agregado.
+
+* *Capacidade de dados disponível*
++
+A quantidade de espaço disponível para os dados no agregado.
+
+* *Dados disponíveis %*
++
+A porcentagem de espaço disponível para os dados no agregado.
+
+* *Capacidade total de dados*
++
+O tamanho total dos dados do agregado.
+
+* *Capacidade comprometida*
++
+O espaço total comprometido para todos os volumes no agregado.
+
++
+Quando o crescimento automático é ativado em volumes que residem no agregado, a capacidade comprometida é baseada no tamanho máximo do volume definido pelo crescimento automático, não com base no tamanho do volume original. Para agregados FabricPool, esse valor é relevante apenas para a capacidade local ou em camada de performance. A quantidade de espaço disponível na camada de nuvem não se reflete nesse valor.
+
+* *Economia de espaço*
++
+A taxa de eficiência de storage baseada no espaço lógico total que está sendo usado para armazenar os dados e o espaço físico total necessário para armazenar os dados sem usar as tecnologias de eficiência de storage da ONTAP.
+
++
+Esse campo é preenchido somente quando o sistema de storage monitorado está executando o ONTAP versão 9,0 ou superior e apenas para agregados que não sejam raiz.
+
+* *Tipo RAID*
++
+O tipo de configuração RAID:
+
++
+** RAID 0: Todos os grupos RAID são do tipo RAID 0.
+** RAID 4: Todos os grupos RAID são do tipo RAID 4.
+** RAID-DP: Todos os grupos RAID são do tipo RAID-DP.
+** RAID-TEC: Todos os grupos RAID são do tipo RAID-TEC.
+** RAID misto: O agregado contém grupos RAID de diferentes tipos de RAID (RAID 0, RAID 4, RAID-DP e RAID-TEC).
+
+
+* *Espaço de camada de nuvem usado*
++
+A quantidade de espaço que está sendo usada na camada de nuvem; se o agregado for um agregado FabricPool.
+
+
+
+
+
+== Painel de filtros
+
+Permite definir filtros para personalizar a forma como as informações são apresentadas na lista de agregados. Você pode selecionar filtros relacionados à coluna Status.
+
+[NOTE]
+====
+Os filtros especificados no painel filtros substituem os filtros especificados para as colunas na lista agregados.
+
+====

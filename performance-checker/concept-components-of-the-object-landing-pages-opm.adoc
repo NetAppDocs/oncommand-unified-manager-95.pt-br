@@ -1,0 +1,53 @@
+---
+permalink: performance-checker/concept-components-of-the-object-landing-pages-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: As páginas de destino do objeto fornecem detalhes sobre todos os eventos críticos, de aviso e informativos. Eles fornecem uma visão detalhada do desempenho de todos os objetos de cluster, permitindo que você selecione e compare objetos individuais em vários períodos de tempo. 
+---
+= Componentes das páginas de destino do objeto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+As páginas de destino do objeto fornecem detalhes sobre todos os eventos críticos, de aviso e informativos. Eles fornecem uma visão detalhada do desempenho de todos os objetos de cluster, permitindo que você selecione e compare objetos individuais em vários períodos de tempo.
+
+As páginas de destino do objeto permitem examinar o desempenho geral de todos os objetos e comparar os dados de desempenho do objeto em um formato lado a lado. Isso é benéfico ao avaliar o desempenho e ao solucionar problemas de eventos.
+
+[NOTE]
+====
+Os dados apresentados nos painéis de resumo do contador e nos gráficos do contador baseiam-se num intervalo de amostragem de cinco minutos. Os dados exibidos na grade de inventário de objetos no lado esquerdo da página são baseados em um intervalo de amostragem de uma hora.
+
+====
+A imagem a seguir mostra um exemplo de uma página de destino de objeto que exibe as informações do Explorer:
+
+image::../media/perf-manager-page-1.gif[perf manager página 1]
+
+Dependendo do objeto de armazenamento que está sendo visualizado, a página de destino do objeto pode ter as seguintes guias que fornecem dados de desempenho sobre o objeto:
+
+* Resumo
++
+Exibe três ou quatro gráficos de contador contendo os eventos e o desempenho por objeto para o período de 72 horas anterior, incluindo uma linha de tendência que mostra os valores alto e baixo durante esse período.
+
+* Explorador
++
+Exibe uma grade de objetos de armazenamento relacionados ao objeto atual, o que permite comparar os valores de desempenho do objeto atual com os dos objetos relacionados. Este separador inclui até onze gráficos de contador e um seletor de intervalo de tempo, que lhe permitem efetuar uma variedade de comparações.
+
+* Informações
++
+Exibe valores para atributos de configuração que não são de performance sobre o objeto de storage, incluindo a versão instalada do software ONTAP, o nome do parceiro de HA e o número de portas e LIFs.
+
+* Top performers
++
+Para clusters: Exibe os objetos de armazenamento que têm o desempenho mais alto ou o desempenho mais baixo, com base no contador de desempenho selecionado.
+
+* Planejamento de failover
++
+Para nós: Exibe a estimativa do impacto na performance em um nó se o parceiro de HA do nó falhar.
+
+* Detalhes
++
+Para volumes: Exibe estatísticas detalhadas de desempenho para todas as atividades de e/S e operações para o workload de volume selecionado. Esta guia está disponível para volumes FlexVol, volumes FlexGroup e componentes de FlexGroups.
+
+

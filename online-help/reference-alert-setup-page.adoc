@@ -1,0 +1,122 @@
+---
+permalink: online-help/reference-alert-setup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Configuração/alertas exibe uma lista de alertas e fornece informações sobre o nome, status, método de notificação e frequência de notificação do alerta. Você também pode adicionar, editar, remover, ativar ou desativar alertas desta página. 
+---
+= Página de configuração/alertas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Configuração/alertas exibe uma lista de alertas e fornece informações sobre o nome, status, método de notificação e frequência de notificação do alerta. Você também pode adicionar, editar, remover, ativar ou desativar alertas desta página.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Botões de comando
+
+* *Adicionar*
++
+Exibe a caixa de diálogo Adicionar alerta, que permite adicionar novos alertas.
+
+* *Editar*
++
+Exibe a caixa de diálogo Editar alerta, que permite editar alertas selecionados.
+
+* *Excluir*
++
+Elimina os alertas selecionados.
+
+* *Ativar*
++
+Ativa os alertas selecionados para enviar notificações.
+
+* *Desativar*
++
+Desativa os alertas selecionados quando você deseja interromper temporariamente o envio de notificações.
+
+* *Teste*
++
+Testa os alertas selecionados para verificar sua configuração depois de serem adicionados ou editados.
+
+
+
+
+
+== Vista de lista
+
+A exibição de lista exibe, em formato tabular, informações sobre os alertas criados. Você pode usar os filtros de coluna para personalizar os dados exibidos. Você também pode selecionar um alerta para exibir mais informações sobre ele na área de detalhes.
+
+* *Status*
++
+Especifica se um alerta está ativado (image:../media/alert-status-enabled.gif[""] ) ou desativado (image:../media/alert-status-disabled.gif[""]).
+
+* *Alerta*
++
+Exibe o nome do alerta.
+
+* *Descrição*
++
+Exibe uma descrição para o alerta.
+
+* *Método de notificação*
++
+Exibe o método de notificação selecionado para o alerta. Você pode notificar os usuários através de traps de e-mail ou SNMP.
+
+* *Frequência de notificação*
++
+Especifica a frequência (em minutos) com a qual o servidor de gerenciamento continua a enviar notificações até que o evento seja reconhecido, resolvido ou movido para o estado Obsoleto.
+
+
+
+
+
+== Área de detalhes
+
+A área de detalhes fornece mais informações sobre o alerta selecionado.
+
+* *Nome do alerta*
++
+Exibe o nome do alerta.
+
+* *Descrição do alerta*
++
+Exibe uma descrição para o alerta.
+
+* *Eventos*
++
+Exibe os eventos para os quais você deseja acionar o alerta.
+
+* *Recursos*
++
+Exibe os recursos para os quais você deseja acionar o alerta.
+
+* *Inclui*
++
+Exibe o grupo de recursos para os quais você deseja acionar o alerta.
+
+* *Exclui*
++
+Exibe o grupo de recursos para os quais você não deseja acionar o alerta.
+
+* *Método de notificação*
++
+Exibe o método de notificação para o alerta.
+
+* *Frequência de notificação*
++
+Exibe a frequência com que o servidor de gerenciamento continua a enviar notificações de alerta até que o evento seja reconhecido, resolvido ou movido para o estado Obsoleto.
+
+* *Nome do Script*
++
+Exibe o nome do script associado ao alerta selecionado. Este script é executado quando um alerta é gerado.
+
+* *Destinatários de e-mail*
++
+Exibe os endereços de e-mail dos usuários que recebem a notificação de alerta.
+
+

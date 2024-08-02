@@ -1,0 +1,40 @@
+---
+permalink: online-help/task-editing-user-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode editar as configurações do usuário, como o endereço de e-mail e a função, que são especificadas em cada usuário. Por exemplo, talvez você queira alterar a função de um usuário que é um operador de armazenamento e atribuir Privileges ao usuário do administrador de armazenamento. 
+---
+= Editar as definições do utilizador
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar as configurações do usuário - como o endereço de e-mail e a função - que são especificadas cada usuário. Por exemplo, talvez você queira alterar a função de um usuário que é um operador de armazenamento e atribuir Privileges ao usuário do administrador de armazenamento.
+
+
+
+== Antes de começar
+
+Tem de ter a função de Administrador do OnCommand.
+
+
+
+== Sobre esta tarefa
+
+Quando você modifica a função atribuída a um usuário, as alterações são aplicadas quando uma das seguintes ações ocorre:
+
+* O usuário faz logout e faz login novamente no Unified Manager.
+* O tempo limite da sessão de 24 horas é atingido.
+
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Users* (usuários) no menu Left Management (Gerenciamento à esquerda).
+. Na página *Gerenciamento/usuários*, selecione o usuário para o qual deseja editar as configurações e clique em *Editar*.
+. Na caixa de diálogo *Editar usuário*, edite as configurações apropriadas especificadas para o usuário.
+. Clique em *Salvar*.
+

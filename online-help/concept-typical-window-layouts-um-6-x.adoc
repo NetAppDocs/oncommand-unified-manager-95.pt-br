@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-typical-window-layouts-um-6-x.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Compreender os layouts típicos de janelas ajuda você a navegar e usar o Gerenciador Unificado do OnCommand de forma eficaz. A maioria das janelas do Unified Manager é semelhante a um dos dois layouts gerais: Lista de objetos ou detalhes. A configuração de exibição recomendada é de pelo menos 1280 por 1024 pixels.' 
+---
+= Layouts de janela típicos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Compreender os layouts típicos de janelas ajuda você a navegar e usar o Gerenciador Unificado do OnCommand de forma eficaz. A maioria das janelas do Unified Manager é semelhante a um dos dois layouts gerais: Lista de objetos ou detalhes. A configuração de exibição recomendada é de pelo menos 1280 por 1024 pixels.
+
+Nem todas as janelas contêm todos os elementos nos diagramas a seguir.
+
+
+
+== Layout da janela da lista de objetos
+
+image::../media/object-list.gif[lista de objetos]
+
+
+
+== Layout da janela de detalhes do objeto
+
+image::../media/object-details.gif[detalhes do objeto]

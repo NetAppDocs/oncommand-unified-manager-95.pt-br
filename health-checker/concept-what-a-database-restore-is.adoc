@@ -1,0 +1,34 @@
+---
+permalink: health-checker/concept-what-a-database-restore-is.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: A restauração do banco de dados é o processo de restauração de um arquivo de backup do Unified Manager existente no mesmo ou em um servidor do Unified Manager diferente. Você executa a operação de restauração a partir do console do Unified Manager. 
+---
+= O que é uma restauração de banco de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A restauração do banco de dados é o processo de restauração de um arquivo de backup do Unified Manager existente no mesmo ou em um servidor do Unified Manager diferente. Você executa a operação de restauração a partir do console do Unified Manager.
+
+Se estiver a executar uma operação de restauro no mesmo sistema (local) e os ficheiros de cópia de segurança estiverem todos armazenados localmente, pode executar o comando Restore utilizando a localização predefinida. Se você estiver executando uma operação de restauração em um sistema Unified Manager diferente (um sistema remoto), copie o arquivo de backup ou arquivos do armazenamento secundário para o disco local antes de executar o comando Restore.
+
+Durante o processo de restauração, você será desconetado do Unified Manager. Pode iniciar sessão no sistema após o processo de restauro estar concluído.
+
+O recurso de restauração é específico da versão e específico da plataforma. Você pode restaurar um backup do Unified Manager somente na mesma versão do Unified Manager. O Unified Manager é compatível com backup e restauração nos seguintes cenários de plataforma:
+
+* Dispositivo virtual para dispositivo virtual
+* Dispositivo virtual para Red Hat Enterprise Linux ou CentOS
+* Red Hat Enterprise Linux para Red Hat Enterprise Linux ou CentOS
+* Windows para Windows
+
+
+Se você estiver restaurando a imagem de backup para um novo servidor, após a conclusão da operação de restauração, será necessário gerar um novo certificado de segurança HTTPS e reiniciar o servidor do Unified Manager. Você também precisará reconfigurar as configurações de autenticação SAML, se forem necessárias, ao restaurar a imagem de backup para um novo servidor.
+
+[NOTE]
+====
+Os ficheiros de cópia de segurança antigos não podem ser utilizados para restaurar uma imagem depois de o Unified Manager ter sido atualizado para uma versão mais recente do software. Para economizar espaço, todos os arquivos de backup antigos, exceto o arquivo mais recente, são removidos automaticamente quando você atualiza o Unified Manager.
+
+====

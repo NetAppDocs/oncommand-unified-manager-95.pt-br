@@ -1,0 +1,25 @@
+---
+permalink: health-checker/concept-maintenance-console-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: O console de manutenção consiste em diferentes menus que permitem manter e gerenciar recursos especiais e configurações do servidor do Unified Manager. 
+---
+= Menus da consola de manutenção
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O console de manutenção consiste em diferentes menus que permitem manter e gerenciar recursos especiais e configurações do servidor do Unified Manager.
+
+Dependendo do sistema operacional no qual você instalou o Unified Manager, o console de manutenção consiste nos seguintes menus:
+
+* Atualizar o Unified Manager (somente VMware)
+* Configuração de rede (somente VMware)
+* Configuração do sistema (somente VMware)
+* Suporte/ Diagnóstico
+* Repor certificado de servidor
+* Fornecedor de dados externo
+* Configuração do intervalo de polling de desempenho
+

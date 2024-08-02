@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/reference-understanding-and-using-the-node-failover-planning-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A página Planejamento de failover de Performance/nó estima o impactos no desempenho em um nó se o nó de parceiro de alta disponibilidade do nó (HA) falhar. O Unified Manager baseia as estimativas no desempenho histórico dos nós no par de HA.' 
+---
+= Compreender e utilizar a página Planeamento de failover de nó
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Planejamento de failover de nó/desempenho estima o impactos no desempenho em um nó se o nó de parceiro de alta disponibilidade (HA) do nó falhar. O Unified Manager baseia as estimativas no desempenho histórico dos nós no par de HA.
+
+Estimar o impactos de desempenho de um failover ajuda você a Planejar nos seguintes cenários:
+
+* Se um failover degradar consistentemente o desempenho estimado do nó de takeover para um nível inaceitável, você pode considerar tomar ações corretivas para reduzir o impacto no desempenho devido a um failover.
+* Antes de iniciar um failover manual para executar tarefas de manutenção de hardware, você pode estimar como o failover afeta o desempenho do nó de aquisição, a fim de determinar o melhor momento para executar a tarefa.
+

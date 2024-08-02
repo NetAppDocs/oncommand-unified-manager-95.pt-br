@@ -1,0 +1,52 @@
+---
+permalink: config/task-performing-the-initial-setup-of-the-unified-manager-web-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: Para usar o Unified Manager, você deve primeiro configurar as opções de configuração inicial, incluindo o servidor NTP, o endereço de e-mail do usuário de manutenção e o nome e as opções do host do servidor SMTP. 
+---
+= Executando a configuração inicial da IU da Web do Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para usar o Unified Manager, você deve primeiro configurar as opções de configuração inicial, incluindo o servidor NTP, o endereço de e-mail do usuário de manutenção e o nome e as opções do host do servidor SMTP.
+
+
+
+== Antes de começar
+
+Você deve ter realizado as seguintes operações:
+
+* Inicie a IU da Web do Unified Manager usando o URL fornecido após a instalação
+* Logado usando o nome de usuário de manutenção e senha (usuário umadmin para instalações Linux) criados durante a instalação
+
+
+
+
+== Sobre esta tarefa
+
+A página Configuração inicial do Gerenciador Unificado do OnCommand é exibida somente quando você acessa pela primeira vez a IU da Web. A página abaixo é de uma instalação na VMware.
+
+image::../media/first-experience-wizard.gif[assistente de primeira experiência]
+
+Se você quiser alterar qualquer uma dessas opções posteriormente, use as opções Administração, que podem ser acessadas clicando no *image:../media/clusterpage-settings-icon.gif[""]* na barra de ferramentas do Unified Manager.
+
+
+
+== Passos
+
+. Na janela *Configuração inicial do Gerenciador Unificado do OnCommand*, insira o endereço de e-mail do usuário de manutenção, o nome do host do servidor SMTP e quaisquer opções adicionais de SMTP e o servidor NTP (somente instalações VMware). Em seguida, clique em *seguinte*.
+. Na página *AutoSupport*, clique em *Concordo e continue* para ativar o AutoSupport.
++
+Se você precisar designar um proxy para fornecer acesso à Internet para enviar conteúdo do AutoSupport para suporte, ou se quiser desativar o AutoSupport, use as opções Administração.
+
+. Nos sistemas Red Hat e CentOS, você pode optar por alterar a senha do usuário umadmin da cadeia de carateres padrão "'admin'" para uma cadeia de carateres personalizada.
+
+
+
+
+== Resultados
+
+A janela Configuração inicial é fechada e a IU da Web do Unified Manager é exibida. A página Configuration/Cluster Data Sources (fontes de dados de configuração/cluster) é exibida para que você possa adicionar clusters ao sistema.

@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/concept-performance-monitoring-of-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: Com o Unified Manager, você monitora a taxa de transferência de gravação entre clusters em uma configuração do MetroCluster para identificar workloads com uma taxa de transferência de gravação alta. Se esses workloads de alta performance fizerem com que outros volumes no cluster local tenham tempos de resposta de e/S altos, o Unified Manager acionará eventos de desempenho para notificá-lo. 
+---
+= Monitoramento de desempenho das configurações do MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Com o Unified Manager, você monitora a taxa de transferência de gravação entre clusters em uma configuração do MetroCluster para identificar workloads com uma taxa de transferência de gravação alta. Se esses workloads de alta performance fizerem com que outros volumes no cluster local tenham tempos de resposta de e/S altos, o Unified Manager acionará eventos de desempenho para notificá-lo.
+
+Quando um cluster local em uma configuração do MetroCluster espelha seus dados em seu cluster de parceiros, os dados são gravados no NVRAM e transferidos pelos links de interswitch (ISLs) para os agregados remotos. O Unified Manager analisa o NVRAM para identificar workloads cuja alta taxa de transferência de gravação sobreutiliza o NVRAM, colocando o NVRAM na contenção.
+
+Cargas de trabalho cujo desvio no tempo de resposta excedeu o limite de desempenho são chamadas _vítimas_ e cargas de trabalho cujo desvio no throughput de gravação para o NVRAM é maior do que o habitual, causando a contenção, são chamadas _bullies_. Como apenas as solicitações de gravação são espelhadas no cluster de parceiros, o Unified Manager não analisa a taxa de transferência de leitura.
+
+O Unified Manager trata os clusters em uma configuração do MetroCluster como clusters individuais. Isso não faz distinção entre clusters que são parceiros ou correlacionam a taxa de transferência de gravação de cada cluster.

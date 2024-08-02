@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-deleting-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode excluir um servidor de autenticação se quiser impedir que o servidor do Unified Manager se comunique com o servidor de autenticação. Por exemplo, se pretender alterar um servidor de autenticação com o qual o servidor de gestão está a comunicar, pode eliminar o servidor de autenticação e adicionar um novo servidor de autenticação. 
+---
+= Eliminar servidores de autenticação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir um servidor de autenticação se quiser impedir que o servidor do Unified Manager se comunique com o servidor de autenticação. Por exemplo, se pretender alterar um servidor de autenticação com o qual o servidor de gestão está a comunicar, pode eliminar o servidor de autenticação e adicionar um novo servidor de autenticação.
+
+
+
+== Antes de começar
+
+Tem de ter a função de Administrador do OnCommand.
+
+
+
+== Sobre esta tarefa
+
+Quando você exclui um servidor de autenticação, usuários remotos ou grupos do servidor de autenticação não poderão mais acessar o Unified Manager.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Autenticação* no menu Configuração à esquerda.
+. Na página *Configuração/Autenticação*, selecione um ou mais servidores de autenticação que deseja excluir e clique em *Excluir*.
+. Clique em *Yes* para confirmar a solicitação de exclusão.
++
+Se a opção *usar conexão segura* estiver ativada, os certificados associados ao servidor de autenticação serão excluídos juntamente com o servidor de autenticação.
+
+

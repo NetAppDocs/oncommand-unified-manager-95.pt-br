@@ -1,0 +1,146 @@
+---
+permalink: online-help/reference-logical-interface-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de LIF fornecem informações sobre o status de seus LIFs, para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de interface lógica (LIF)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de LIF fornecem informações sobre o status de seus LIFs, para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Status de LIF para baixo (ocumEvtLifStatusDown)
+ a| 
+Risco
+ a| 
+Interface
+ a| 
+Erro
+
+
+
+ a| 
+Failover de LIF não possível (ocumEvtLifFailoverNotPossible)
+ a| 
+Risco
+ a| 
+Interface
+ a| 
+Aviso
+
+
+
+ a| 
+LIF não está na porta de casa(ocumEvtLifNotAtHomePort)
+ a| 
+Risco
+ a| 
+Interface
+ a| 
+Aviso
+
+|===
+
+
+== Área de impactos: Configuração
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Rota LIF não configurada (não aplicável)
+ a| 
+Evento
+ a| 
+Interface
+ a| 
+Informações
+
+|===
+
+
+== Área de impactos: Desempenho
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Limite crítico de Mbps de LIF de rede violado (ocumNetworkLifMbpsIncident)
+ a| 
+Incidente
+ a| 
+Interface
+ a| 
+Crítico
+
+
+
+ a| 
+Limite de aviso de rede de LIF Mbps violado (ocumNetworkLifMbpsWarning)
+ a| 
+Risco
+ a| 
+Interface
+ a| 
+Aviso
+
+
+
+ a| 
+Limite crítico de Mbps de LIF entre FCP violado (ocumFcpLifMbpsIncident)
+ a| 
+Incidente
+ a| 
+Interface
+ a| 
+Crítico
+
+
+
+ a| 
+Limite de aviso de MbpsWarning (ocumFcpLifMbpsWarning)
+ a| 
+Risco
+ a| 
+Interface
+ a| 
+Aviso
+
+
+
+ a| 
+Limite crítico de LIF entre MbpsIncidente e MbpsIncidente (ocumNvmfFcLifMbpsIncident)
+ a| 
+Incidente
+ a| 
+Interface
+ a| 
+Crítico
+
+
+
+ a| 
+Limite de aviso de MbpsWarning de MbpsWarning (ocumNvmfFcLifMbpsWarning)
+ a| 
+Risco
+ a| 
+Interface
+ a| 
+Aviso
+
+|===

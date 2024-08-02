@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-lag-thresholds-for-unmanaged-relationships-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página limites de atraso para relacionamentos não gerenciados permite que você configure os valores de aviso de atraso global e limite de erro para relacionamentos de proteção não gerenciados para que você seja notificado e possa agir quando ocorrerem erros de atraso ou limite. As alterações a estas definições são aplicadas durante a próxima atualização agendada. 
+---
+= Limites de atraso para a página relacionamentos não gerenciados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página limites de atraso para relacionamentos não gerenciados permite que você configure os valores de aviso de atraso global e limite de erro para relacionamentos de proteção não gerenciados para que você seja notificado e possa agir quando ocorrerem erros de atraso ou limite. As alterações a estas definições são aplicadas durante a próxima atualização agendada.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+Os eventos são gerados quando um limite é violado. Você pode tomar ações corretivas para tais eventos. As configurações de limite de atraso para relacionamentos não gerenciados são ativadas por padrão.
+
+O limite de atraso especifica uma porcentagem que o tempo de atraso não deve exceder. Usando um exemplo de uma hora, se o limite de atraso for definido como 150%, você receberá um evento quando o tempo de atraso for superior a 1,5 horas.
+
+
+
+== Limites de atraso para a área relacionamentos não gerenciados
+
+A área de atraso permite definir limites de atraso de relacionamento não gerenciados para as seguintes condições:
+
+* *Aviso*
++
+Especifica a porcentagem em que a duração do atraso é igual ou superior ao limite de aviso de atraso:
+
++
+** Valor padrão: 150 por cento
+** Eventos gerados: Aviso de atraso de relação do SnapMirror ou Aviso de atraso de relação do SnapVault
+** Gravidade do evento: Aviso
+
+
+* *Erro*
++
+Especifica a porcentagem em que a duração do atraso é igual ou superior ao limite de erro de atraso:
+
++
+** Valor padrão: 250 por cento
+** Eventos gerados: Erro de atraso de relação do SnapMirror ou erro de atraso de relação do SnapVault
+** Gravidade do evento: Erro
+
+
+
+
+
+
+== Botões de comando
+
+* *Restaurar para padrões de fábrica*
++
+Permite restaurar as definições de configuração para os valores predefinidos de fábrica.
+
+* *Guardar*
++
+Guarda as definições de configuração para a opção selecionada.
+
+

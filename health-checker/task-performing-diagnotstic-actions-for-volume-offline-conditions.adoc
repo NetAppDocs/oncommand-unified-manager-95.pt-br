@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-performing-diagnotstic-actions-for-volume-offline-conditions.html 
+sidebar: sidebar 
+keywords:  
+summary: Depois de navegar para a página de detalhes do volume/saúde de um volume relatado estar offline, você pode procurar informações adicionais úteis para diagnosticar a condição offline do volume. 
+---
+= Executar ações de diagnóstico para condições off-line de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de navegar para a página de detalhes do volume/saúde de um volume relatado estar offline, você pode procurar informações adicionais úteis para diagnosticar a condição offline do volume.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Se o volume que é relatado off-line não foi colocado off-line deliberadamente, esse volume pode estar off-line por vários motivos.
+
+A partir da página de detalhes de integridade/volume do volume off-line, você pode navegar para outras páginas e painéis para confirmar ou eliminar possíveis causas:
+
+
+
+== Opções
+
+* Clique nos links da página de detalhes de *Saúde/volume* para determinar se o volume está off-line porque seu nó de host está inativo e o failover de armazenamento para seu parceiro de par de HA também falhou.
++
+xref:task-determining-if-a-volume-offline-condition-is-caused-by-a-down-cluster-node.adoc[Determinando se uma condição offline de volume é causada por um nó inativo]Consulte .
+
+* Clique nos links da página de detalhes de *Saúde/volume* para determinar se o volume está off-line e sua máquina virtual de armazenamento de host (SVM) é interrompida porque o nó que hospeda o volume raiz desse SVM está inativo.
++
+xref:task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.adoc[Determinando se um volume está off-line e o SVM é interrompido porque um nó está inativo]Consulte .
+
+* Clique nos links da página de detalhes de *Saúde/volume* para determinar se o volume está off-line devido a discos quebrados em seu agregado de host.
++
+xref:task-determining-if-a-volume-is-offline-because-of-broken-disks-in-an-aggregate.adoc[Determinando se um volume está offline por causa de discos quebrados em um agregado]Consulte .
+
+

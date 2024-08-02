@@ -1,0 +1,38 @@
+---
+permalink: online-help/concept-aggregate-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Performance/Aggregate Explorer fornece uma visão geral detalhada do desempenho de todos os agregados em um cluster. 
+---
+= Página de Explorador de desempenho/agregado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Performance/Aggregate Explorer fornece uma visão geral detalhada do desempenho de todos os agregados em um cluster.
+
+A página Performance/Aggregate Explorer permite rastrear e comparar o desempenho agregado durante um período de tempo específico, o que ajuda na solução de problemas e no ajuste fino do desempenho de um agregado.
+
+[NOTE]
+====
+Agregados de raiz não são exibidos nesta página.
+
+====
+Usando a funcionalidade Ver e comparar, você pode comparar o desempenho deste agregado com:
+
+* outros agregados no mesmo nó
+* outros agregados no mesmo cluster
+* o nó no qual o agregado reside
+* todos os nós no cluster que está usando esse agregado
+* os volumes que residem nesse agregado
+
+
+A página Performance/Aggregate Explorer permite:
+
+* Veja os problemas relacionados ao limite e seus detalhes
+* Acompanhe e compare dados de desempenho agregados
+* Investigue e solucione problemas relacionados ao limite
+* Investigue e solucione problemas de desempenho
+

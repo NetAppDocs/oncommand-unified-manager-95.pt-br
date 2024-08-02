@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-importing-a-data-policy-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode importar uma configuração de política de dados de um arquivo, modificar a política de dados e, em seguida, ativar as alterações no SVM com Infinite volume. Por exemplo, no caso de um desastre, você pode importar uma política de dados já definida para o secundário e modificar a política conforme necessário. 
+---
+= Importar uma configuração de política de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode importar uma configuração de política de dados de um arquivo, modificar a política de dados e, em seguida, ativar as alterações no SVM com Infinite volume. Por exemplo, no caso de um desastre, você pode importar uma política de dados já definida para o secundário e modificar a política conforme necessário.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Quando você importa uma configuração de política de dados, suas regras existentes são sobrescritas.
+
+A guia Política de dados é exibida somente para SVMs com Infinite volume.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Na página de inventário *máquinas virtuais de integridade/storage*, selecione o SVM apropriado.
+. Clique em *Política de dados*.
++
+A lista de regras na política de dados para o SVM selecionado com Infinite volume é exibida.
+
+. Clique em *Importar*.
+. Na caixa de diálogo *Importar política de dados*, especifique a política de dados que deseja importar fornecendo o caminho absoluto do arquivo de política de dados.
+. Clique em *Importar*.
+. Clique em *Ativar* para ativar as regras importadas no SVM.
+

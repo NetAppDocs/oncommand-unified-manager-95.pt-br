@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-create-or-clone-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a página criar política de limite ou a página Clone política de limite para criar uma nova política de limite de desempenho. 
+---
+= Criar ou clonar a página Política de limite de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a página criar política de limite ou a página Clone política de limite para criar uma nova política de limite de desempenho.
+
+Você pode preencher os campos nesta página e clicar em *Salvar* para adicionar uma política de limite de desempenho.
+
+* *Para tipo de objeto*
++
+Selecione o tipo de objeto de armazenamento para o qual você deseja criar uma política de limite.
+
+* *Nome da política*
++
+Introduza o nome da política de limites. O nome aparece em outras páginas do Unified Manager e deve fornecer uma breve descrição da política.
+
+* *Descrição*
++
+(Opcional) Introduza uma descrição detalhada da política de limites.
+
+* *Valores de limiar*
++
+Defina a condição principal e, opcionalmente, a condição secundária do contador de limites. A inclusão de um contador secundário exige que ambos os contadores excedam os valores-limite antes que o limite seja considerado violado.
+
++
+** *Selecione um contador*
++
+Selecione o contador no qual deseja definir um limite de desempenho.
+
+** *Aviso*
++
+Introduza o valor limite para o contador que é considerado um aviso.
+
+** *Crítica*
++
+Introduza o valor limite para o contador que é considerado crítico.
+
+
+
++
+Os valores-limite válidos são de 0,001 a 10.000.000 para números, 0.001-100 para porcentagens e 0.001-200 para porcentagens de capacidade de desempenho usada.
+
+* *Duração*
++
+Selecione o número de minutos em que o valor do contador deve ser superior ao valor de aviso ou limite crítico. Como o Unified Manager coleta novos valores de contador de desempenho a cada cinco minutos, o menu fornece valores em múltiplos de cinco com base no intervalo de atualização.
+
+

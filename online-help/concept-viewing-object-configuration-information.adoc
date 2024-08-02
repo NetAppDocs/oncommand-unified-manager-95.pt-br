@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-viewing-object-configuration-information.html 
+sidebar: sidebar 
+keywords:  
+summary: As páginas de informações do objeto, localizadas na página inicial de cada objeto, exibem os valores dos atributos de configuração que não são de performance de cada objeto de storage. Alguns dos atributos são configurações físicas, enquanto outros atributos podem afetar o desempenho do objeto. 
+---
+= Exibindo informações de configuração do objeto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+As páginas de informações do objeto - localizadas na página inicial de cada objeto - exibem os valores para os atributos de configuração não-desempenho de cada objeto de armazenamento. Alguns dos atributos são configurações físicas, enquanto outros atributos podem afetar o desempenho do objeto.
+
+Por exemplo, é útil saber a quantidade de espaço disponível para um agregado ou para um nó. Conhecer a definição de velocidade de uma porta específica pode ajudar quando está a diagnosticar um problema de desempenho.

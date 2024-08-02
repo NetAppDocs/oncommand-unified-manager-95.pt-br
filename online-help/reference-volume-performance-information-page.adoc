@@ -1,0 +1,81 @@
+---
+permalink: online-help/reference-volume-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Utilize esta página para ver uma lista dos atributos físicos e lógicos do volume. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho. O título desta página depende se você está visualizando um volume FlexVol volume ou FlexGroup. 
+---
+= Página de informações de desempenho/volume ou desempenho/FlexGroup
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilize esta página para ver uma lista dos atributos físicos e lógicos do volume. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho. O título desta página depende se você está visualizando um volume FlexVol volume ou FlexGroup.
+
+
+
+== Atributos de volume
+
+* *Tipo*
++
+O tipo do volume; leitura-gravação (RW) ou proteção de dados (DP).
+
+* *Estilo*
++
+O estilo do volume; FlexVol ou FlexGroup.
+
++
+[NOTE]
+====
+As páginas de performance do Unified Manager não são compatíveis com Infinite volumes.
+
+====
+* *Cluster*
++
+O nome do cluster ao qual pertence este volume FlexVol volume ou FlexGroup. Você pode clicar no nome para exibir os detalhes do cluster na página Performance/Cluster Explorer.
+
+* *Agregados*
++
+O nome do agregado no qual esse FlexVol volume reside, ou o número de agregados nos quais esse volume FlexGroup reside.
+
++
+Para volumes FlexVol, você pode clicar no nome para exibir detalhes agregados na página Explorador de desempenho/agregado. Para volumes FlexGroup, você pode clicar no número para exibir os agregados usados neste volume FlexGroup na página Inventário de desempenho/agregado.
+
+* *Storage Virtual Machine*
++
+O nome do SVM a que pertence este volume FlexVol volume ou FlexGroup. Você pode clicar no nome para exibir os detalhes do SVM na página Performance/SVM Explorer.
+
+* *Política de disposição em camadas*
++
+A política de disposição em categorias definida no volume. A política afeta somente quando o volume é implantado em um agregado FabricPool. As políticas disponíveis são:
+
++
+** Nenhum. Os dados desse volume sempre permanecem na camada de performance.
+** Apenas Snapshot. Somente os dados do Snapshot são movidos automaticamente para a categoria de nuvem. Todos os outros dados permanecem na camada de performance.
+** Backup. Em volumes de proteção de dados, todos os dados de usuário transferidos começam na camada de nuvem, mas leituras posteriores de clientes podem fazer com que os dados ativos sejam movidos para a categoria de performance.
+** Auto. Os dados desse volume são movidos automaticamente entre a camada de desempenho e a camada de nuvem quando o ONTAP determina que os dados estão "quentes" ou "frios".
+
+
+* *Tipo RAID*
++
+O tipo de redundância que está sendo usado na camada de desempenho do agregado onde esse volume reside. Tipos possíveis:
+
++
+** RAID0
+** RAID4
+** RAID-DP
+** RAID-TEC
+
+
++
+[NOTE]
+====
+O valor "não aplicável" é exibido para volumes FlexGroup porque os volumes constituintes podem estar em agregados de diferentes tipos de RAID.
+
+====
+* *Capacidade (grátis/total)*
++
+O armazenamento total disponível no volume, em gigabytes, e a quantidade de armazenamento atualmente disponível.
+
+

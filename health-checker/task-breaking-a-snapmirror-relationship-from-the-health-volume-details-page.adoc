@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode quebrar uma relação de proteção da página de detalhes de integridade/volume e interromper as transferências de dados entre um volume de origem e destino em uma relação do SnapMirror. Você pode interromper um relacionamento quando quiser migrar dados, para recuperação de desastres ou para teste de aplicações. O volume de destino é alterado para um volume de leitura e gravação. Você não pode quebrar um relacionamento SnapVault. 
+---
+= Quebrar uma relação de SnapMirror a partir da página de detalhes de Saúde/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode quebrar uma relação de proteção da página de detalhes de integridade/volume e interromper as transferências de dados entre um volume de origem e destino em uma relação do SnapMirror. Você pode interromper um relacionamento quando quiser migrar dados, para recuperação de desastres ou para teste de aplicações. O volume de destino é alterado para um volume de leitura e gravação. Você não pode quebrar um relacionamento SnapVault.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter configurado o Workflow Automation.
+
+
+
+
+== Passos
+
+. Na guia *proteção* da página de detalhes *Saúde/volume*, selecione na topologia a relação do SnapMirror que deseja quebrar.
+. Clique com o botão direito do rato no destino e selecione *Break* no menu.
++
+É apresentada a caixa de diálogo Break Relationship (interromper relação).
+
+. Clique em *continuar* para quebrar o relacionamento.
+. Na topologia, verifique se o relacionamento está quebrado.
+

@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-managing-performance-using-perf-capacity-and-available-iops-information.html 
+sidebar: sidebar 
+keywords:  
+summary: A capacidade de desempenho indica quanto rendimento você pode obter de um recurso sem superar o desempenho útil desse recurso. Quando vista usando contadores de performance existentes, a capacidade de performance é o ponto em que você obtém a utilização máxima de um nó ou agregado antes que a latência se torne um problema. 
+---
+= Gerenciamento da performance com a capacidade de performance e as informações de IOPS disponíveis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+_Capacidade de desempenho_ indica quanto throughput você pode obter de um recurso sem superar o desempenho útil desse recurso. Quando vista usando contadores de performance existentes, a capacidade de performance é o ponto em que você obtém a utilização máxima de um nó ou agregado antes que a latência se torne um problema.
+
+O Unified Manager coleta estatísticas de capacidade de performance de nós e agregados em cada cluster. _Capacidade de desempenho usada_ é a porcentagem de capacidade de desempenho que está sendo usada atualmente, e _capacidade de desempenho livre_ é a porcentagem de capacidade de desempenho que ainda está disponível.
+
+Embora a capacidade de desempenho livre forneça uma porcentagem do recurso que ainda está disponível, _IOPS disponível_ informa o número de IOPS que podem ser adicionados ao recurso antes de atingir a capacidade máxima de desempenho. Usando essa métrica, você pode ter certeza de que pode adicionar workloads de um número predeterminado de IOPS a um recurso.
+
+O monitoramento das informações de capacidade de desempenho tem os seguintes benefícios:
+
+* Auxilia no provisionamento e balanceamento de fluxo de trabalho.
+* Ajuda a evitar sobrecarregar um nó ou empurrar seus recursos para além do ponto ideal, reduzindo assim a necessidade de solucionar problemas.
+* Ajuda você a determinar com maior precisão onde equipamentos de armazenamento adicionais podem ser necessários.
+

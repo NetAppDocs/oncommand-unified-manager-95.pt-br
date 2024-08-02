@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-aborting-jobs.html 
+sidebar: sidebar 
+keywords:  
+summary: Pode utilizar a página proteção/trabalhos para abortar um trabalho se estiver a demorar demasiado tempo a terminar, se encontrar demasiados erros ou se já não for necessário. Só é possível cancelar um trabalho se o seu estado e tipo permitir. Pode cancelar qualquer trabalho em execução. 
+---
+= A abortar trabalhos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode utilizar a página proteção/trabalhos para abortar um trabalho se estiver a demorar demasiado tempo a terminar, se encontrar demasiados erros ou se já não for necessário. Só é possível cancelar um trabalho se o seu estado e tipo permitir. Pode cancelar qualquer trabalho em execução.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *proteção* > *empregos*.
+. Na lista de trabalhos, selecione um trabalho e, em seguida, clique em *Abortar*.
+. No prompt de confirmação, clique em *Yes* para cancelar o trabalho selecionado.
+

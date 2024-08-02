@@ -1,0 +1,135 @@
+---
+permalink: online-help/concept-how-group-rules-work-for-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Uma regra de grupo é um critério que você define para permitir que objetos de armazenamento (volumes, clusters ou SVMs) sejam incluídos em um grupo específico. Você pode usar grupos de condições ou condições para definir a regra de grupo para um grupo.' 
+---
+= Como as regras de grupo funcionam para grupos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Uma regra de grupo é um critério que você define para permitir que objetos de armazenamento (volumes, clusters ou SVMs) sejam incluídos em um grupo específico. Você pode usar grupos de condições ou condições para definir a regra de grupo para um grupo.
+
+* Você deve associar uma regra de grupo a um grupo.
+* Você deve associar um tipo de objeto para uma regra de grupo; somente um tipo de objeto está associado a uma regra de grupo.
+* Objetos de armazenamento são adicionados ou removidos do grupo após cada ciclo de monitoramento ou quando uma regra é criada, editada ou excluída.
+* Uma regra de grupo pode ter um ou mais grupos de condição e cada grupo de condição pode ter uma ou mais condições.
+* Os objetos de armazenamento podem pertencer a vários grupos com base nas regras de grupo criadas.
+
+
+
+
+== Condições
+
+Você pode criar vários grupos de condições e cada grupo de condições pode ter uma ou mais condições. Você pode aplicar todos os grupos de condição definidos em uma regra de grupo para grupos, a fim de especificar quais objetos de armazenamento estão incluídos no grupo.
+
+As condições dentro de um grupo de condições são executadas usando LÓGICA e. Todas as condições de um grupo de condições devem ser atendidas. Quando você cria ou modifica uma regra de grupo, uma condição é criada que aplica, seleciona e agrupa apenas os objetos de armazenamento que satisfazem todas as condições no grupo condição. Você pode usar várias condições em um grupo de condições quando quiser restringir o escopo de quais objetos de armazenamento incluir em um grupo.
+
+Você pode criar condições com objetos de armazenamento usando os seguintes operandos e operador e especificando o valor necessário.
+
+|===
+| Tipo de objeto de storage | Operandos aplicáveis 
+
+
+ a| 
+Volume
+ a| 
+* Nome do objeto
+* Nome do cluster proprietário
+* Possuir nome SVM
+* Anotações
+
+
+
+
+ a| 
+SVM
+ a| 
+* Nome do objeto
+* Nome do cluster proprietário
+* Anotações
+
+
+
+
+ a| 
+Cluster
+ a| 
+* Nome do objeto
+* Anotações
+
+
+|===
+Quando você seleciona a anotação como um operando para qualquer objeto de armazenamento, o operador "is" está disponível. Para todos os outros operandos, você pode selecionar "is" ou "contains" como operador.
+
+* Operando
++
+A lista de operandos no Unified Manager muda com base no tipo de objeto selecionado. A lista inclui o nome do objeto, o nome do cluster proprietário, o nome do SVM e as anotações definidas no Unified Manager.
+
+* Operador
++
+A lista de operadores muda com base no operando selecionado para uma condição. Os operadores suportados no Unified Manager são "is" e "contém".
+
++
+Quando você seleciona o operador "'is'", a condição é avaliada para correspondência exata do valor do operando com o valor fornecido para o operando selecionado.
+
++
+Quando você seleciona o operador "'contém'", a condição é avaliada para atender a um dos seguintes critérios:
+
++
+** O valor do operando é uma correspondência exata com o valor fornecido para o operando selecionado
+** O valor do operando contém o valor fornecido para o operando selecionado
+
+
+* Valor
++
+O campo valor muda com base no operand selecionado.
+
+
+
+
+
+== Exemplo de uma regra de grupo com condições
+
+Considere um grupo de condições para um volume com as duas seguintes condições:
+
+* O nome contém "vol"
+* O nome da SVM é "dATA_svm"
+
+
+Esse grupo de condição seleciona todos os volumes que incluem "'vol'" em seus nomes e que são hospedados em SVMs com o nome "dATA_svm".
+
+
+
+== Grupos de condições
+
+Os grupos de condição são executados usando OU lógico e, em seguida, aplicados a objetos de armazenamento. Os objetos de armazenamento devem satisfazer um dos grupos de condições a serem incluídos em um grupo. Os objetos de armazenamento de todos os grupos de condições são combinados. Você pode usar grupos de condições para aumentar o escopo dos objetos de armazenamento a serem incluídos em um grupo.
+
+
+
+== Exemplo de uma regra de grupo com grupos de condição
+
+Considere dois grupos de condições para um volume, com cada grupo contendo as seguintes duas condições:
+
+* Grupo de condições 1
++
+** O nome contém "vol"
+** O nome do SVM é "dATA_svm" grupo de condições 1 seleciona todos os volumes que incluem "'vol'" em seus nomes e que são hospedados em svms com o nome "dATA_svm".
+
+
+* Grupo de condições 2
++
+** O nome contém "vol"
+** O valor de anotação da prioridade de dados é o grupo de condições "'crítico'" 2 seleciona todos os volumes que incluem "'vol'" em seus nomes e que são anotados com o valor de anotação de prioridade de dados como "'crítico'".
+
+
+
+
+Quando uma regra de grupo contendo esses dois grupos de condições é aplicada em objetos de armazenamento, os seguintes objetos de armazenamento são adicionados a um grupo selecionado:
+
+* Todos os volumes que incluem "'vol'" em seus nomes e que são hospedados no SVM com o nome "dATA_svm".
+* Todos os volumes que incluem "'vol'" em seus nomes e que são anotados com o valor de anotação de prioridade de dados "'crítico'".
+

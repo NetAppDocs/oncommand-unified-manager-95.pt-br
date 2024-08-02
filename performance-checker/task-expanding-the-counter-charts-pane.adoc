@@ -1,0 +1,45 @@
+---
+permalink: performance-checker/task-expanding-the-counter-charts-pane.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode expandir o painel gráficos de contador para que os gráficos sejam maiores e mais legíveis. 
+---
+= Expandir o painel Cartas de contagem
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode expandir o painel gráficos de contador para que os gráficos sejam maiores e mais legíveis.
+
+
+
+== Sobre esta tarefa
+
+Depois de definir os objetos de comparação e o intervalo de tempo para contadores, você pode exibir um painel de gráficos de contador maior. Você usa o botão * no meio da janela do Performance Explorer para expandir o painel.
+
+
+
+== Passos
+
+. Expanda ou reduza o painel *Counter Charts*.
++
+|===
+| Para... | Faça isso... 
+
+
+ a| 
+Expanda o painel gráficos de contador para ajustar a largura da página
+ a| 
+Clique no botão *
+
+
+
+ a| 
+Reduza o painel gráficos de contador para a metade direita da página
+ a| 
+Clique no botão *>*
+
+|===
+

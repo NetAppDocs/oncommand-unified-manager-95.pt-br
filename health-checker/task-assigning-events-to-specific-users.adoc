@@ -1,0 +1,61 @@
+---
+permalink: health-checker/task-assigning-events-to-specific-users.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode atribuir eventos não atribuídos a você mesmo ou a outros usuários, incluindo usuários remotos. Você pode reatribuir eventos atribuídos a outro usuário, se necessário. Por exemplo, quando ocorrem problemas frequentes em um objeto de storage, você pode atribuir os eventos para esses problemas ao usuário que gerencia esse objeto. 
+---
+= Atribuindo eventos a usuários específicos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode atribuir eventos não atribuídos a você mesmo ou a outros usuários, incluindo usuários remotos. Você pode reatribuir eventos atribuídos a outro usuário, se necessário. Por exemplo, quando ocorrem problemas frequentes em um objeto de storage, você pode atribuir os eventos para esses problemas ao usuário que gerencia esse objeto.
+
+
+
+== Antes de começar
+
+* O nome e o ID de e-mail do usuário devem estar configurados corretamente.
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Eventos*.
+. Na página de inventário *Eventos*, selecione um ou mais eventos que você deseja atribuir.
+. Atribua o evento escolhendo uma das seguintes opções:
++
+|===
+| Se quiser atribuir o evento a... | Então faça isso... 
+
+
+ a| 
+Você mesmo
+ a| 
+Clique em *Assign to* > *me*.
+
+
+
+ a| 
+Outro utilizador
+ a| 
+.. Clique em *Assign to* > *Other user* (atribuir a).
+.. Na caixa de diálogo atribuir proprietário, insira o nome de usuário ou selecione um usuário na lista suspensa.
+.. Clique em *Assign*.
++
+Uma notificação por e-mail é enviada ao usuário.
+
++
+[NOTE]
+====
+Se você não inserir um nome de usuário ou selecionar um usuário na lista suspensa e clicar em *Assign*, o evento permanecerá não atribuído.
+
+====
+
+
+|===
+

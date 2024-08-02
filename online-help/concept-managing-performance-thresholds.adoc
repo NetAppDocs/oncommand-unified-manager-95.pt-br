@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-managing-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: As políticas de limite de performance permitem determinar o ponto em que o Unified Manager gera um evento para informar os administradores de sistema sobre problemas que podem estar afetando a performance do workload. Essas políticas de limite são conhecidas como limites de desempenho definidos pelo usuário. 
+---
+= Gerenciamento de limites de performance definidos pelo usuário
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+As políticas de limite de performance permitem determinar o ponto em que o Unified Manager gera um evento para informar os administradores de sistema sobre problemas que podem estar afetando a performance do workload. Essas políticas de limite são conhecidas como limites de desempenho _definidos pelo usuário_.
+
+Esta versão é compatível com limites de desempenho dinâmico, definido pelo sistema e definido pelo usuário. Com limites de performance dinâmicos e definidos pelo sistema, o Unified Manager analisa a atividade do workload para determinar o valor de limite apropriado. Com limites definidos pelo usuário, você pode definir os limites de desempenho superiores para muitos contadores de performance e para muitos objetos de storage.
+
+[NOTE]
+====
+Os limites de performance definidos pelo sistema e os limites de performance dinâmica são definidos pelo Unified Manager e não são configuráveis. Se estiver a receber eventos desnecessários de quaisquer políticas de limite de desempenho definidas pelo sistema, pode desativar políticas individuais a partir da página Configuração/gerir Eventos.
+
+====

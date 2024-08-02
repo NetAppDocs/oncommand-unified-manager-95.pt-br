@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-saml-authentication-page-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode usar a página Autenticação SAML para configurar o Unified Manager para autenticar usuários remotos usando SAML por meio de um provedor de identidade seguro (IDP) antes que eles possam fazer login na IU da Web do Unified Manager.' 
+---
+= Página Autenticação SAML
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a página Autenticação SAML para configurar o Unified Manager para autenticar usuários remotos usando SAML por meio de um provedor de identidade seguro (IDP) antes que eles possam fazer login na IU da Web do Unified Manager.
+
+* Você deve ter a função Administrador do OnCommand para criar ou modificar a configuração SAML.
+* Tem de ter configurado a autenticação remota.
+* Você deve ter configurado pelo menos um usuário remoto ou grupo remoto.
+
+
+Depois que a autenticação remota e os usuários remotos tiverem sido configurados, você poderá selecionar a caixa de seleção Habilitar autenticação SAML para habilitar a autenticação usando um provedor de identidade seguro.
+
+* * IDP URI*
++
+O URI para acessar o IDP a partir do servidor do Unified Manager. Exemplos de URIs estão listados abaixo.
+
++
+Exemplo de URI de ADFS:
+
++
+`+https://win2016-dc.ntap2016.local/federationmetadata/2007-06/federationmetadata.xml+`
+
++
+Exemplo de Shibboleth URI:
+
++
+`+https://centos7.ntap2016.local/idp/shibboleth+`
+
+* *Metadados IDP*
++
+Os metadados IDP em formato XML.
+
++
+Se o URL de IDP estiver acessível a partir do servidor do Unified Manager, você pode clicar no botão *obter metadados de IDP* para preencher este campo.
+
+* *Sistema anfitrião (FQDN)*
++
+O FQDN do sistema host do Unified Manager, conforme definido durante a instalação. Você pode alterar esse valor, se necessário.
+
+* * Host URI*
++
+O URI para acessar o sistema host do Unified Manager a partir do IDP.
+
+* *Metadados do host*
++
+Os metadados do sistema anfitrião em formato XML.
+
+

@@ -1,0 +1,41 @@
+---
+permalink: health-checker/reference-description-of-event-severity-types.html 
+sidebar: sidebar 
+keywords:  
+summary: Cada evento é associado a um tipo de gravidade para ajudá-lo a priorizar os eventos que exigem ação corretiva imediata. 
+---
+= Descrição dos tipos de gravidade do evento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cada evento é associado a um tipo de gravidade para ajudá-lo a priorizar os eventos que exigem ação corretiva imediata.
+
+* *Crítica*
++
+Ocorreu um problema que pode levar à interrupção do serviço se não forem tomadas medidas corretivas imediatamente.
+
++
+Eventos críticos de desempenho são enviados apenas a partir de limites definidos pelo usuário.
+
+* *Erro*
++
+A origem do evento ainda está em execução; no entanto, é necessária uma ação corretiva para evitar interrupção do serviço.
+
+* *Aviso*
++
+A origem do evento experimentou uma ocorrência que você deve estar ciente ou um contador de desempenho de um objeto de cluster está fora do intervalo normal e deve ser monitorado para garantir que ele não atinja a gravidade crítica. Os eventos desta gravidade não causam interrupções no serviço e podem não ser necessárias ações corretivas imediatas.
+
++
+Os eventos de aviso de desempenho são enviados a partir de limites definidos pelo usuário, definidos pelo sistema ou dinâmicos.
+
+* *Informação*
++
+O evento ocorre quando um novo objeto é descoberto ou quando uma ação do usuário é executada. Por exemplo, quando qualquer objeto de armazenamento é excluído ou quando há alterações de configuração, o evento com informações de tipo de gravidade é gerado.
+
++
+Os eventos de informação são enviados diretamente do ONTAP quando deteta uma alteração de configuração.
+
+

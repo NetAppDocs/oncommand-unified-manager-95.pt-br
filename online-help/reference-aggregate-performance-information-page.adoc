@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-aggregate-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Use a página informações de desempenho/agregado para exibir uma lista dos atributos físicos e lógicos do agregado. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho. 
+---
+= Página de informações de desempenho/agregado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use a página informações de desempenho/agregado para exibir uma lista dos atributos físicos e lógicos do agregado. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho.
+
+
+
+== Agregar atributos
+
+* *Tipo agregado*
++
+O tipo de agregado:
+
++
+** HDD
+** Híbrida
++
+Combina HDDs e SSDs, mas o Flash Pool não foi ativado.
+
+** Híbrido (Flash Pool)
++
+Combina HDDs e SSDs e o Flash Pool foi ativado.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSDs e uma camada de nuvem
+
+** VMDisk (SDS)
++
+Discos virtuais dentro de uma máquina virtual
+
+** VMDisk (FabricPool)
++
+Combina discos virtuais e uma camada de nuvem
+
+** LUN (FlexArray)
+
+
+* *Cluster*
++
+O nome do cluster ao qual o agregado pertence. Você pode clicar no nome para exibir os detalhes do cluster na página Performance/Cluster Explorer.
+
+* *Nó*
++
+O nome do nó ao qual pertencem os discos do agregado. Você pode clicar no nome para exibir os detalhes do nó na página Performance/Node Explorer.
+
+* *Flash Pool*
++
+Se este é um agregado de Flash Pool: Sim ou não
+
++
+Um agregado de Flash Pool é um agregado híbrido que consiste em SSDs e HDDs.
+
+* *FabricPool*
++
+Se este é um agregado FabricPool: Sim ou não
+
++
+Um agregado da FabricPool é um agregado que consiste em SSDs e uma camada de nuvem.
+
+* *Relatórios de dados inativos*
++
+Se a capacidade de relatórios de dados inativos está ativada ou desativada neste agregado. Quando ativado, os volumes desse agregado exibem a quantidade de dados inativos na página de inventário desempenho/volumes.
+
++
+O valor neste campo é "N/A" quando a versão do ONTAP não suporta relatórios de dados inativos.
+
+

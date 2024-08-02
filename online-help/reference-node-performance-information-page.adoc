@@ -1,0 +1,117 @@
+---
+permalink: online-help/reference-node-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Use a página informações de desempenho/nó para exibir uma lista dos atributos físicos e lógicos do nó. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho. 
+---
+= Página de informações sobre performance/nó
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use a página informações de desempenho/nó para exibir uma lista dos atributos físicos e lógicos do nó. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho.
+
+
+
+== Atributos do nó
+
+* *Endereço IP*
++
+O endereço IPv4 ou IPv6 do LIF de gerenciamento de nós.
+
+* *FQDN*
++
+O nome de domínio totalmente qualificado (FQDN) do LIF de gerenciamento de nós.
+
+* *Versão do SO*
++
+A versão do software ONTAP instalada no nó.
+
+* *Modelo / Família*
++
+O número do modelo da plataforma do nó.
+
+* *Capacidade (grátis/total)*
++
+O armazenamento total disponível para o nó, em gigabytes, e a quantidade de armazenamento atualmente disponível.
+
+* *Cluster*
++
+O nome do cluster ao qual esse nó pertence. Você pode clicar no nome para exibir os detalhes do cluster na página Performance/Cluster Explorer.
+
+* *Parceiro HA*
++
+O nome do nó do parceiro de HA, se aplicável. Você pode clicar no nome para exibir os detalhes do nó do parceiro na página Performance/Node Explorer.
+
+* *Agregados*
++
+O número de agregados neste nó. Você pode clicar no número para exibir os agregados na página Inventário de desempenho/agregados.
+
++
+[NOTE]
+====
+O número listado aqui pode não corresponder ao número na página Inventário de desempenho/agregados porque a página de inventário não inclui agregados raiz.
+
+====
+* *Portos*
++
+O número de portas neste nó. Você pode clicar no número para exibir as portas na página Inventário de desempenho/portas.
+
++
+[NOTE]
+====
+O número listado aqui pode não corresponder ao número na página Inventário de desempenho/portas porque a página de inventário não inclui portas de gerenciamento de nós.
+
+====
+* *Contato / localização*
++
+Se disponível, o nome do administrador a contactar relativamente a este nó e a localização do nó.
+
+* * Número de núcleos / velocidade*
++
+Se disponível, o número de núcleos da CPU no controlador e a velocidade dos núcleos da CPU.
+
+* *RAM*
++
+Se disponível, a memória total disponível no controlador.
+
+
+
+
+
+== Dispositivos flash
+
+[NOTE]
+====
+Os dados do Flash Cache são exibidos somente para nós e somente quando um módulo Flash Cache é instalado no nó.
+
+====
+* *Número do slot*
++
+O número do slot no qual o módulo Flash Cache está instalado.
+
+* *Status*
++
+O estado operacional do módulo. Valores válidos:
+
++
+** Online
+** Offline_failed
+** Offline_threshold
+
+
+* *Modelo / Família*
++
+O número do modelo do módulo.
+
+* *Rev de firmware*
++
+A versão do firmware instalada no módulo.
+
+* *Capacidade*
++
+O tamanho do módulo Flash Cache instalado.
+
+

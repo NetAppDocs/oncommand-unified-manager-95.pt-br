@@ -1,0 +1,59 @@
+---
+permalink: online-help/reference-port-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Use a página informações de desempenho/porta para exibir uma lista dos atributos físicos e lógicos da porta. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho. 
+---
+= Página de informações de desempenho/porta
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use a página informações de desempenho/porta para exibir uma lista dos atributos físicos e lógicos da porta. Essas informações podem ajudar a responder perguntas relacionadas ao desempenho.
+
+
+
+== Atributos da porta
+
+* * WWN*
++
+A WWN (World Wide Name) do porto.
+
+* *Nó*
++
+O nome do nó no qual reside a porta física. Você pode clicar no nome para exibir os detalhes do nó na página Performance/Node Explorer.
+
+* *Cluster*
++
+O nome do cluster ao qual a porta pertence. Você pode clicar no nome para exibir os detalhes do cluster na página Performance/Cluster Explorer.
+
+* *Velocidade operacional*
++
+A velocidade real na qual a porta está configurada para ser executada.
+
++
+As portas FCP são auto-sensing e são exibidas como "Auto".
+
+* *Função*
++
+A função de porta de rede: Dados ou Cluster.
+
++
+As portas FCP não podem ter uma função e este campo não é exibido.
+
+* *Tipo*
++
+O tipo de porta: Rede ou FCP (Fibre Channel Protocol).
+
+* *Estado*
++
+O status do link da porta.
+
++
+** Para portas de rede, uma porta ativa é listada como "'Up'" e uma porta inativa é listada como "'down'".
+** Para portas FCP, uma porta ativa é listada como ""Online"" e uma porta inativa é listada como ""Link não conetado"".
+
+
+

@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-capacity-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Resumo do storage de clusters/integridade permite visualizar informações resumidas sobre capacidade de storage e utilização em todos os clusters. Essas informações ajudam você a entender possíveis riscos de capacidade e a tomar as medidas apropriadas para rebalancear os workloads. 
+---
+= Página Resumo do storage de clusters/integridade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Resumo do storage de clusters/integridade permite visualizar informações resumidas sobre capacidade de storage e utilização em todos os clusters. Essas informações ajudam você a entender possíveis riscos de capacidade e a tomar as medidas apropriadas para rebalancear os workloads.
+
+Use o botão *Export* para exportar os detalhes de todos os clusters monitorados para um (`.csv`arquivo de valores separados por vírgulas ).
+
+* *Cluster*
++
+O nome do cluster.
+
+* *Par HA*
++
+O valor de par de HA obtido pela formação de dois nós.
+
+* *Modelo/Família*
++
+O modelo ou nome da família do cluster.
+
+* *Versão do SO*
++
+A versão do ONTAP instalada no sistema.
+
+* * Capacidade bruta total*
++
+Exibe a capacidade física total de todos os discos no array.
+
+* *Capacidade bruta não configurada*
++
+A capacidade não configurada dos discos cujo tipo de contentor é diferente de agregado, quebrado, sobressalente ou compartilhado. Essa capacidade é sempre maior do que a capacidade física do disco no ONTAP. Por exemplo, considere um disco de 2 TB. A capacidade física do disco é de 1,6 TB no ONTAP, enquanto a capacidade bruta não configurada no Unified Manager é de 1,8 TB.
+
+* *Capacidade total agregada*
++
+O tamanho total dos agregados disponíveis para o usuário. Isso inclui a reserva de cópia Snapshot.
+
+* *Capacidade usada agregada*
++
+A capacidade já em uso em agregados. Isso inclui a capacidade consumida por volumes, LUNs e outras despesas gerais de tecnologia de eficiência de storage.
+
+* *Agregar capacidade não utilizada*
++
+A capacidade que pode estar disponível para armazenar dados adicionais no agregado. Isso inclui a reserva de cópia Snapshot.
+
+* *Capacidade LUN alocada*
++
+A capacidade dos LUNs mapeados.
+
+* *Capacidade LUN não alocada*
++
+A capacidade de todos os LUNs não mapeados para o host.
+
+* * Volume capacidade total*
++
+A capacidade total dos volumes (utilizados mais não utilizados).
+
+* *Volume utilizado capacidade*
++
+A capacidade utilizada dos volumes.
+
+* * Volume de capacidade não utilizada*
++
+A capacidade não utilizada dos volumes.
+
+* * Capacidade de proteção de volume*
++
+A capacidade de volumes com o SnapMirror e o SnapVault ativados.
+
+* *Total do nível de nuvem licenciado por Cluster*
++
+A capacidade total licenciada na camada de nuvem. Esse campo é exibido para fornecedores de storage que exigem licença do FabricPool, por exemplo, Amazon S3, Microsoft Azure Cloud, IBM Cloud Object Storage ou Alibaba Cloud Object Storage.
+
+* *Cluster Licensed Cloud Tier usado*
++
+O espaço usado pelos dados na camada de nuvem para fornecedores de storage que exigem licença FabricPool.
+
+* *Cluster StorageGRID capacidade utilizada*
++
+O espaço usado pelos dados na camada de nuvem para fornecedores de storage que não exigem licença FabricPool, por exemplo, StorageGRID.
+
+

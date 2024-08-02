@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-rate-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode personalizar o relatório taxa de transferência de volume (Histórico) para exibir os detalhes da transferência de volume com base no tamanho total da transferência do volume. Você também pode ver as transferências de volume para um dia específico da semana.' 
+---
+= Personalizações do relatório de taxa de transferência de volume (Histórico)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório taxa de transferência de volume (Histórico) para exibir os detalhes da transferência de volume com base no tamanho total da transferência do volume. Você também pode ver as transferências de volume para um dia específico da semana.

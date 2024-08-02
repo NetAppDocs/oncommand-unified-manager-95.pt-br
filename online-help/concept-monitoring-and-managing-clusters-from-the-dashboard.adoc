@@ -1,0 +1,21 @@
+---
+permalink: online-help/concept-monitoring-and-managing-clusters-from-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: Os painéis fornecem informações cumulativas sobre a integridade do seu sistema. Os painéis permitem que você avalie a disponibilidade geral, a capacidade, a performance e a integridade da proteção dos clusters gerenciados e anote, localize, diagnostique ou atribua rapidamente para resolução quaisquer problemas específicos que possam ocorrer. 
+---
+= Monitorar a integridade e o desempenho do cluster a partir dos painéis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os painéis fornecem informações cumulativas sobre a integridade do seu sistema. Os painéis permitem que você avalie a disponibilidade geral, a capacidade, a performance e a integridade da proteção dos clusters gerenciados e anote, localize, diagnostique ou atribua rapidamente para resolução quaisquer problemas específicos que possam ocorrer.
+
+Três dashboards fornecem visualizações exclusivas sobre a integridade e a performance dos clusters:
+
+* A página Dashboards/Overview fornece informações sobre a integridade e o desempenho de seus objetos de armazenamento.
+* A página Dashboards/Performance fornece status de desempenho de alto nível de todos os clusters que estão sendo monitorados.
+* A página Dashboards/Cluster View fornece informações sobre clusters individuais.
+

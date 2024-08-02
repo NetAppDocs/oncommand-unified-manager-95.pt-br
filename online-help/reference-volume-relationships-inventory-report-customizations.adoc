@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-relationships-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório Inventário de relacionamentos de volume para exibir os detalhes do volume filtrados com base na origem da falha. Você pode usar filtros para exibir detalhes de inventário de relacionamentos de volume com base em agendas e para agrupar detalhes de inventário de volume com base em problemas. 
+---
+= Personalizações do relatório de inventário de relacionamentos de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Inventário de relacionamentos de volume para exibir os detalhes do volume filtrados com base na origem da falha. Você pode usar filtros para exibir detalhes de inventário de relacionamentos de volume com base em agendas e para agrupar detalhes de inventário de volume com base em problemas.

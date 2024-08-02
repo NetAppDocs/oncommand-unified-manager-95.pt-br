@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-understanding-node-root-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode monitorar o volume raiz do nó usando o Unified Manager. A prática recomendada é que o volume raiz do nó deve ter capacidade suficiente para impedir que o nó caia. 
+---
+= Compreendendo os volumes raiz dos nós
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode monitorar o volume raiz do nó usando o Unified Manager. A prática recomendada é que o volume raiz do nó deve ter capacidade suficiente para impedir que o nó caia.
+
+Quando a capacidade usada do volume raiz do nó excede 80% da capacidade total do volume raiz do nó, o evento espaço quase cheio do volume raiz do nó é gerado. Você pode configurar um alerta para o evento para receber uma notificação. Você pode tomar as medidas apropriadas para impedir que o nó fique inativo usando o OnCommand System Manager ou a CLI do ONTAP.

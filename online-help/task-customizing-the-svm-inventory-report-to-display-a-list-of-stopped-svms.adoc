@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-svm-inventory-report-to-display-a-list-of-stopped-svms.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório SVM Inventory para exibir uma lista de SVMs paradas. O relatório filtra os SVMs por seu status. 
+---
+= Personalizar o relatório SVM Inventory para exibir uma lista de SVMs paradas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório SVM Inventory para exibir uma lista de SVMs paradas. O relatório filtra os SVMs por seu status.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para filtrar SVMs por status, clique na coluna *Estado* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista *condição*, selecione *igual a*.
+. Clique em *Select values* (Selecionar valores) e selecione *stopped* (interrompido).
+. Clique em *OK*.
+

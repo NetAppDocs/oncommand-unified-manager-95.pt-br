@@ -1,0 +1,46 @@
+---
+permalink: online-help/concept-guidelines-for-adding-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode adicionar alertas com base em um recurso, como um cluster, nó, agregado ou volume, e eventos de um tipo de gravidade específico. Como prática recomendada, você pode adicionar um alerta para qualquer um dos seus objetos críticos depois de adicionar o cluster ao qual o objeto pertence. 
+---
+= Diretrizes para adicionar alertas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode adicionar alertas com base em um recurso, como um cluster, nó, agregado ou volume, e eventos de um tipo de gravidade específico. Como prática recomendada, você pode adicionar um alerta para qualquer um dos seus objetos críticos depois de adicionar o cluster ao qual o objeto pertence.
+
+Você pode usar as seguintes diretrizes e considerações para criar alertas para gerenciar seus sistemas de forma eficaz:
+
+* Descrição do alerta
++
+Você deve fornecer uma descrição para o alerta para que ele o ajude a rastrear seus alertas de forma eficaz.
+
+* Recursos
++
+Você deve decidir qual recurso físico ou lógico requer um alerta. Você pode incluir e excluir recursos, conforme necessário. Por exemplo, se você quiser monitorar de perto seus agregados configurando um alerta, selecione os agregados necessários na lista de recursos.
+
+* Gravidade do evento
++
+Você deve decidir se um evento de um tipo de gravidade especificado (crítico, erro, aviso) deve acionar o alerta e, em caso afirmativo, qual tipo de gravidade.
+
+* Nome do evento
++
+Se você adicionar um alerta com base no tipo de evento gerado, você deve decidir quais eventos exigem um alerta
+
+* Ações
++
+Você deve fornecer os nomes de usuário e endereços de e-mail dos usuários que recebem a notificação. Você também pode especificar uma trap SNMP como um modo de notificação. Você pode associar seus scripts a um alerta para que eles sejam executados quando um alerta é gerado.
+
+* Frequência da notificação
++
+Você pode configurar um alerta para enviar notificações repetidamente aos destinatários por um tempo especificado. Você deve determinar a hora a partir da qual a notificação de evento está ativa para o alerta. Se você quiser que a notificação de evento seja repetida até que o evento seja reconhecido, você deve determinar com que frequência deseja que a notificação seja repetida.
+
+* Execute Script
++
+Você pode associar seu script a um alerta. Seu script é executado quando o alerta é gerado.
+
+

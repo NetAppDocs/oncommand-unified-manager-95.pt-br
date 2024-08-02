@@ -1,0 +1,48 @@
+---
+permalink: online-help/reference-edit-group-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode editar as regras de grupo criadas para incluir o número máximo de objetos de armazenamento em um grupo. 
+---
+= Caixa de diálogo Editar regra de grupo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar as regras de grupo criadas para incluir o número máximo de objetos de armazenamento em um grupo.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+* *Nome da regra*
++
+Exibe o nome da regra.
+
+* * Tipo Objeto alvo*
++
+Exibe o objeto de armazenamento a ser adicionado a um grupo selecionado. Não é possível alterar o tipo de objeto.
+
+* *Grupo associado*
++
+Exibe o grupo associado. Você pode selecionar um grupo diferente para a regra de grupo.
+
+* *Condição*
++
+Apresenta a lista de condições para um grupo selecionado. Pode editar as condições. Os objetos de armazenamento são removidos ou adicionados a um grupo selecionado com base nas alterações.
+
+
+
+
+
+== Botões de comando
+
+* *Guardar*
++
+Salva as alterações feitas e fecha a caixa de diálogo.
+
+* *Cancelar*
++
+Fecha a caixa de diálogo Editar regra de grupo sem salvar as alterações.
+
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-more-about-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: Entender os conceitos sobre cotas ajuda você a gerenciar suas cotas de usuário e cotas de grupo de usuários de forma eficiente. 
+---
+= Compreender mais sobre quotas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Entender os conceitos sobre cotas ajuda você a gerenciar suas cotas de usuário e cotas de grupo de usuários de forma eficiente.

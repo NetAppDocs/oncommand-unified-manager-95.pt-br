@@ -1,0 +1,39 @@
+---
+permalink: health-checker/task-editing-annotation-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Pode editar regras de anotação para modificar os grupos de condições e condições dentro do grupo de condições para adicionar anotações ou remover anotações de objetos de armazenamento. 
+---
+= Editar regras de anotação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode editar regras de anotação para modificar os grupos de condições e condições dentro do grupo de condições para adicionar anotações ou remover anotações de objetos de armazenamento.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+As anotações são dissociadas de objetos de armazenamento quando você edita as regras de anotação associadas.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Anotações* no menu Gestão à esquerda.
+. Na guia *regras de anotação*, selecione a regra de anotação que deseja editar e clique em *ações* > *Editar*.
+. Na caixa de diálogo *Edit Annotation Rule* (Editar regra de anotação), altere o nome da regra, o nome e o valor da anotação, os grupos de condição e as condições conforme necessário.
++
+Não é possível alterar o tipo de objeto alvo para uma regra de anotação.
+
+. Clique em *Salvar*.
+

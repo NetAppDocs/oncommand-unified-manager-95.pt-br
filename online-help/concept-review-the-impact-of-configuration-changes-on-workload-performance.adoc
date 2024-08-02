@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-review-the-impact-of-configuration-changes-on-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: Alterações de configuração no cluster, como um disco com falha, failover de HA ou um volume movido, podem afetar negativamente a performance do volume e causar maior latência. 
+---
+= Analisar o impacto das alterações de configuração na performance do workload
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Alterações de configuração no cluster, como um disco com falha, failover de HA ou um volume movido, podem afetar negativamente a performance do volume e causar maior latência.
+
+No Unified Manager, você pode revisar a página Detalhes de desempenho/volume para ver quando ocorreu uma alteração de configuração recente e compará-la com as operações e a latência (tempo de resposta) para ver se houve uma alteração na atividade para o workload de volume selecionado.
+
+As páginas de desempenho do Unified Manager só podem detetar um número limitado de eventos de mudança. As páginas de integridade fornecem alertas para outros eventos causados por alterações de configuração. Você pode pesquisar o volume no Unified Manager para ver o histórico de eventos.

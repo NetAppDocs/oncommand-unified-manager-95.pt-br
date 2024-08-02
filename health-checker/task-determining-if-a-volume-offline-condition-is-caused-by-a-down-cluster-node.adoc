@@ -1,0 +1,61 @@
+---
+permalink: health-checker/task-determining-if-a-volume-offline-condition-is-caused-by-a-down-cluster-node.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a IU da Web do Unified Manager para confirmar ou eliminar a possibilidade de um volume estar offline porque o nó do host está inativo e o failover de storage para seu parceiro de par de HA não tem êxito. 
+---
+= Determinando se um volume está offline porque seu nó de host está inativo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a IU da Web do Unified Manager para confirmar ou eliminar a possibilidade de um volume estar offline porque o nó do host está inativo e o failover de storage para seu parceiro de par de HA não tem êxito.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Para determinar se a condição de volume off-line é causada por falha do nó de hospedagem e subsequente failover de armazenamento mal-sucedido, execute as seguintes ações:
+
+
+
+== Passos
+
+. Localize e clique no link de hipertexto exibido em SVM no painel *Related Devices* da página de detalhes *Health/volume* do volume off-line.
++
+A página de detalhes da Máquina Virtual de Saúde/armazenamento exibe informações sobre a máquina virtual de armazenamento (SVM) do volume off-line.
+
+. No painel *Related Devices* (dispositivos relacionados) da página *Health/Storage Virtual Machine* details (Detalhes da máquina virtual de armazenamento/saúde*), localize e clique no link de hipertexto exibido em volumes.
++
+A página de inventário de integridade/volumes exibe uma tabela de informações sobre todos os volumes hospedados pelo SVM.
+
+. No cabeçalho da coluna Estado da página de inventário *Saúde/volumes*, clique no símbolo do filtro image:../media/filtericon-um60.png["Ícone para filtro de coluna"]e selecione a opção *Offline*.
++
+Somente os volumes SVM que estão no estado offline são listados.
+
+. Na página de inventário *Saúde/volumes*, clique no símbolo da grade image:../media/gridviewicon.gif["Ícone para visualização em grelha"]e selecione a opção *Cluster Nodes*.
++
+Talvez seja necessário rolar na caixa de seleção de grade para localizar a opção *Cluster Nodes*.
+
++
+A coluna Cluster Nodes é adicionada ao inventário de volumes e exibe o nome do nó que hospeda cada volume off-line.
+
+. Na página de inventário *Health/volumes*, localize a listagem do volume off-line e, em sua coluna Cluster Node, clique no nome de seu nó de hospedagem.
++
+A guia nós na página de detalhes de integridade/cluster exibe o estado do par de nós de HA ao qual o nó de hospedagem pertence. O estado do nó de hospedagem e o sucesso de qualquer operação de failover de cluster são indicados no visor.
+
+
+
+
+
+== Depois de terminar
+
+Depois de confirmar que a condição de volume off-line existe porque o nó de host está inativo e o failover de armazenamento para o parceiro de par de HA falhou, entre em Contato com o administrador ou operador apropriado para reiniciar manualmente o nó de entrada e corrigir o problema de failover de armazenamento.

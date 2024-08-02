@@ -1,0 +1,45 @@
+---
+permalink: health-checker/task-resolving-a-flashcard-offline-condition.html 
+sidebar: sidebar 
+keywords:  
+summary: Este fluxo de trabalho fornece um exemplo de como você pode resolver uma condição off-line de cartão flash. Nesse cenário, você é um administrador ou operador monitorando o painel para verificar se há problemas com a disponibilidade. Você vê uma condição off-line do cartão flash e deseja determinar a possível causa e resolução do problema. 
+---
+= Resolver uma condição offline do cartão flash
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Este fluxo de trabalho fornece um exemplo de como você pode resolver uma condição off-line de cartão flash. Nesse cenário, você é um administrador ou operador monitorando o painel para verificar se há problemas com a disponibilidade. Você vê uma condição off-line do cartão flash e deseja determinar a possível causa e resolução do problema.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+As informações de eventos e os links exibidos na área de disponibilidade da página Unified ManagerDashboards/Overview monitoram a disponibilidade geral dos recursos de armazenamento de dados nos clusters monitorados permitem diagnosticar eventos específicos que possam afetar essa disponibilidade.
+
+Nesse cenário, a página Dashboards/Visão geral exibe os cartões Flash de evento off-line em sua seção incidentes de disponibilidade. Se um cartão flash estiver off-line, a disponibilidade dos dados armazenados é impedida porque o desempenho do nó do cluster no qual ele está instalado é prejudicado. Você pode executar as seguintes etapas para localizar e identificar o problema potencial:
+
+
+
+== Passos
+
+. No painel *disponibilidade* na seção *incidentes e riscos não resolvidos*, clique no link de hipertexto exibido para Flash Cards Offline.
++
+A página de detalhes do evento para o incidente de disponibilidade é exibida.
+
+. Na página de detalhes *evento*, você pode revisar as informações exibidas no campo causa e executar uma ou mais das seguintes tarefas:
++
+** Atribua o evento a um administrador. xref:task-assigning-events-to-specific-users.adoc[Atribuindo eventos]
+** Clique na origem do evento, neste caso o nó do cluster no qual o cartão flash offline está localizado, para obter mais informações sobre esse nó. xref:task-performing-corrective-action-for-a-flashcard-offline.adoc[Execução de ações corretivas para um cartão flash offline]
+** Confirme o evento. xref:task-acknowledging-and-resolving-events.adoc[Reconhecer e resolver eventos]
+
+
+

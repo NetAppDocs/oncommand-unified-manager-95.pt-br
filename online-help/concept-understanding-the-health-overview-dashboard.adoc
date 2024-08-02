@@ -1,0 +1,44 @@
+---
+permalink: online-help/concept-understanding-the-health-overview-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: O painel de visão geral de integridade do Unified Manager fornece informações gerais cumulativas sobre a integridade do seu storage e ambiente virtualizado. A página Dashboards/Overview fornece informações de integridade sobre seus objetos de armazenamento separados em quatro categorias de integridade; disponibilidade, capacidade, desempenho e proteção dos objetos de armazenamento. 
+---
+= Compreender o painel de visão geral de saúde
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O painel de visão geral de integridade do Unified Manager fornece informações gerais cumulativas sobre a integridade do seu storage e ambiente virtualizado. A página Dashboards/Overview fornece informações de integridade sobre seus objetos de armazenamento separados em quatro categorias de integridade; disponibilidade, capacidade, desempenho e proteção dos objetos de armazenamento.
+
+A imagem a seguir ilustra os painéis exibidos na página Dashboards/Overview:
+
+image::../media/dashboard-um72.gif[painel de instrumentos um72]
+
+
+
+== Área de visão geral de saúde
+
+Exibe, como gráfico, informações sobre a integridade dos objetos de storage, como clusters, agregados e máquinas virtuais de storage (SVMs), bem como a integridade dos relacionamentos de proteção. A página Dashboards/Overview exibe eventos gerados para as seguintes categorias:
+
+Clicando no número acima de qualquer um dos gráficos de barras amarelo ou vermelho exibe a página de inventário de eventos, incluindo apenas esses eventos. Clicando no número abaixo de qualquer um dos gráficos exibe a página de inventário de objetos, incluindo apenas esses objetos.
+
+* *Disponibilidade*
++
+Exibe informações sobre a disponibilidade de clusters, SVMs e agregados monitorados pelo Unified Manager. Com base nos eventos relacionados à disponibilidade gerados, os objetos de armazenamento são categorizados como íntegros, em risco ou com incidentes.
+
+* *Capacidade*
++
+Exibe informações sobre a capacidade de SVMs e agregados monitorados pelo Unified Manager. Com base nos eventos relacionados à capacidade gerados, os objetos de armazenamento são categorizados como íntegros, em risco ou com incidentes.
+
+* *Desempenho*
++
+Exibe informações sobre a performance de clusters, SVMs e volumes monitorados pelo Unified Manager. Com base nos incidentes relacionados ao desempenho que são gerados, os objetos de armazenamento são categorizados como íntegros, em risco ou com incidentes.
+
+* *Proteção*
++
+Exibe informações sobre os relacionamentos de proteção monitorados pelo Unified Manager. Com base nos eventos relacionados à proteção que são gerados, as relações de proteção são categorizadas como saudável, Aviso ou erro.
+
+

@@ -1,0 +1,54 @@
+---
+permalink: online-help/reference-definitions-of-user-roles.html 
+sidebar: sidebar 
+keywords:  
+summary: O usuário de manutenção ou o administrador do OnCommand atribui uma função a cada usuário. Cada função contém determinados Privileges. O escopo das atividades que você pode executar no Unified Manager depende da função atribuída e de qual Privileges a função contém. 
+---
+= Definições de funções de utilizador
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O usuário de manutenção ou o administrador do OnCommand atribui uma função a cada usuário. Cada função contém determinados Privileges. O escopo das atividades que você pode executar no Unified Manager depende da função atribuída e de qual Privileges a função contém.
+
+O Unified Manager inclui as seguintes funções de usuário predefinidas:
+
+* *Operador*
++
+Exibe informações do sistema de storage e outros dados coletados pelo Unified Manager, incluindo históricos e tendências de capacidade. Essa função permite que o operador de armazenamento exiba, atribua, reconheça, resolva e adicione notas para os eventos.
+
+* *Administrador de armazenamento*
++
+Configura as operações de gerenciamento de storage no Unified Manager. Essa função permite que o administrador de storage configure limites e crie alertas e outras opções e políticas específicas de gerenciamento de storage.
+
+* *Administrador OnCommand*
++
+Configura configurações não relacionadas ao gerenciamento de armazenamento. Essa função permite o gerenciamento de usuários, certificados de segurança, acesso a banco de dados e opções administrativas, incluindo autenticação, SMTP, rede e AutoSupport.
+
++
+[NOTE]
+====
+Quando o Unified Manager é instalado em sistemas Linux, o usuário inicial com a função Administrador do OnCommand é automaticamente chamado de "umadmin".
+
+====
+* *Esquema de integração*
++
+Essa função permite o acesso somente leitura às visualizações do banco de dados do Unified Manager para integrar o Unified Manager ao OnCommand Workflow Automation (WFA).
+
+* *Esquema Relatório*
++
+Essa função permite o acesso somente leitura a relatórios e outras visualizações de banco de dados diretamente do banco de dados do Unified Manager. Os bancos de dados que podem ser visualizados incluem:
+
++
+** NetApp_model_view
+** NetApp_performance
+** ocum
+** ocum_report
+** ocum_report_birt
+** opm
+** scalemonitor
+
+
+

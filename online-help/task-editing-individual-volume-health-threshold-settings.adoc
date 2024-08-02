@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-editing-individual-volume-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode editar as configurações de limite de integridade para capacidade de volume, crescimento, cota e reserva de espaço de um ou mais volumes. Quando um limite é cruzado, os alertas são gerados e você recebe notificações. Essas notificações ajudam você a tomar medidas preventivas com base no evento gerado. 
+---
+= Editar definições individuais de limite de integridade do volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar as configurações de limite de integridade para capacidade de volume, crescimento, cota e reserva de espaço de um ou mais volumes. Quando um limite é cruzado, os alertas são gerados e você recebe notificações. Essas notificações ajudam você a tomar medidas preventivas com base no evento gerado.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Com base nas alterações nos valores de limite, os eventos são gerados ou obsoletos no próximo ciclo de monitoramento.
+
+Observe que, quando o crescimento automático está ativado em um volume, os limites de capacidade são considerados violados com base no tamanho máximo do volume definido pelo crescimento automático, não com base no tamanho do volume original.
+
+
+
+== Passos
+
+. No painel de navegação à esquerda, clique em *Health* > *volumes*.
+. Na página de inventário *Saúde/volumes*, selecione um ou mais volumes e clique em *Editar limites*.
+. Na caixa de diálogo *Editar limites de volume*, edite as configurações de limite de uma das seguintes opções: Capacidade, cópias Snapshot, cota de qtree, crescimento ou inodes selecionando a caixa de seleção apropriada e modificando as configurações.
+. Clique em *Salvar*.
+

@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Há duas interfaces de usuário fornecidas pelo OnCommand Unified Manager para monitorar e solucionar problemas de performance de storage de dados: A interface de usuário da Web e o console de manutenção.' 
+---
+= Interfaces do Unified Manager usadas para gerenciar a performance do sistema de storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Há duas interfaces de usuário fornecidas pelo OnCommand Unified Manager para monitorar e solucionar problemas de performance de storage de dados: A interface de usuário da Web e o console de manutenção.
+
+
+
+== IU da Web do Unified Manager
+
+A IU da Web do Unified Manager permite que um administrador monitore e solucione problemas no sistema de storage relacionados ao desempenho.
+
+Esta seção descreve alguns fluxos de trabalho comuns que um administrador pode seguir para solucionar problemas de desempenho de storage exibidos na IU da Web do Unified Manager.
+
+
+
+== Consola de manutenção
+
+O console de manutenção permite que um administrador monitore, diagnostique e solucione problemas do sistema operacional, problemas de atualização de versão, problemas de acesso do usuário e problemas de rede relacionados ao próprio servidor do Unified Manager. Se a IU da Web do Unified Manager não estiver disponível, o console de manutenção será a única forma de acesso ao Unified Manager.
+
+Esta seção fornece instruções para acessar o console de manutenção e usá-lo para resolver problemas relacionados ao funcionamento do servidor do Unified Manager.

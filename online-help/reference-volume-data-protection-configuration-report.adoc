@@ -1,0 +1,157 @@
+---
+permalink: online-help/reference-volume-data-protection-configuration-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 'O relatório Configuração de proteção de dados de volume permite visualizar os volumes desprotegidos e as máquinas virtuais de armazenamento (SVMs) que são usadas em um nó ou em um cluster. Essas informações permitem que você entenda os riscos de proteção de dados do sistema e visualize os detalhes dos volumes protegidos e dos volumes não protegidos no sistema.' 
+---
+= Relatório de Configuração de proteção de dados de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O relatório Configuração de proteção de dados de volume permite visualizar os volumes desprotegidos e as máquinas virtuais de armazenamento (SVMs) que são usadas em um nó ou cluster. Essas informações permitem que você entenda os riscos de proteção de dados do sistema e visualize os detalhes dos volumes protegidos e dos volumes não protegidos no sistema.
+
+O relatório Configuração da proteção de dados de volume é apresentado em dois formatos:
+
+* Gráfico de pizza de volumes protegidos e desprotegidos
+* Vista tabular de dados de volume desprotegidos
+
+
+
+
+== Gráfico de pizza de volumes protegidos e desprotegidos
+
+Exibe a porcentagem relativa dos volumes protegidos e dos volumes desprotegidos no sistema.
+
+
+
+== Vista tabular de dados de volume desprotegidos
+
+* *Cluster*
++
+Exibe o nome do cluster.
+
+* *Storage Virtual Machine*
++
+Exibe o nome da máquina virtual de storage (SVM) que contém o volume.
+
+* *Volume*
++
+Exibe o nome do volume.
+
+* *Capacidade total de dados (GB)*
++
+Exibe a capacidade total de dados (usada mais disponível) em GB.
+
+* * Capacidade de dados usados (GB)*
++
+Exibe a capacidade de dados usada (em GB).
+
+* *Dados usados %*
++
+Apresenta a capacidade de dados utilizada como percentagem.
+
+* *Capacidade de dados disponível (GB)*
++
+Exibe a capacidade de dados disponível (em GB).
+
+* *Dados disponíveis %*
++
+Exibe a capacidade de dados disponível como uma porcentagem.
+
+* *Reserva de snapshot capacidade utilizada (GB)*
++
+Exibe a quantidade de espaço usada pelas cópias Snapshot da reserva Snapshot (em GB).
+
+* *Reserva Snapshot utilizada %*
++
+Exibe a quantidade de espaço usada pelas cópias Snapshot da reserva Snapshot como porcentagem.
+
+* *Capacidade disponível de reserva instantânea (GB)*
++
+Exibe a quantidade de espaço disponível para cópias Snapshot (em GB).
+
+* *Reserva de snapshot disponível %*
++
+Exibe a quantidade de espaço disponível para cópias Snapshot como porcentagem.
+
+* *Capacidade total de reserva de instantâneo (GB)*
++
+Exibe a capacidade total de reserva de snapshot do agregado (em GB).
+
+* *Dias completos*
++
+Exibe o número estimado de dias restantes antes que o agregado atinja a capacidade total.
+
+* *Limite máximo de espaço %*
++
+Exibe a porcentagem na qual um agregado está cheio.
+
+* *Espaço quase limite máximo %*
++
+Exibe a porcentagem em que um agregado está quase cheio.
+
+* *Taxa diária de crescimento %*
++
+Apresenta a taxa de crescimento que ocorre a cada 24 horas no volume.
+
+* *Número total de inodes*
++
+Exibe o número total de inodes no volume.
+
+* *Utilização de inode*
++
+Especifica o espaço do inode que é usado no volume.
+
+* * Quota de capacidade comprometida*
++
+Exibe o espaço reservado nos volumes.
+
+* * Quota de capacidade sobrecomprometida (GB)*
++
+Exibe a quantidade de espaço que pode ser usada (em GB) antes que o sistema gere o evento de excesso de cota de volume.
+
+* *Snapshot Autodelete*
++
+Exibe se a exclusão automática de cópias Snapshot está ativada ou desativada.
+
+* *Desduplicação*
++
+Exibe se a deduplicação está ativada ou desativada para o volume.
+
+* *Economia de espaço de deduplicação (GB)*
++
+Exibe a quantidade de espaço que é salva em um volume usando deduplicação (em GB).
+
+* *Compressão*
++
+Exibe se a compactação está ativada ou desativada para o volume.
+
+* *Economia de espaço de compressão (GB)*
++
+Exibe a quantidade de espaço que é salva em um volume usando compactação (em GB).
+
+* *Thin Provisioning*
++
+Indica se a garantia de espaço está definida para o volume selecionado. Os valores válidos são Sim e não
+
+* *Autowore*
++
+Mostra se o FlexVol volume cresce automaticamente em tamanho quando está fora do espaço.
+
+* *Garantia de espaço*
++
+Exibe o controle de configuração FlexVol volume quando um volume remove blocos livres de um agregado.
+
+* *Estado*
++
+Exibe o estado do volume que está sendo exportado.
+
+* *Tipo SnapLock*
++
+Indica se o volume é um volume SnapLock ou não SnapLock.
+
+* *Data de validade*
+

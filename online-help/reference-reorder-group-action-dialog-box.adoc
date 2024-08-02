@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-reorder-group-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo Reordenar ações de grupo para alterar as classificações de uma ou mais ações de grupo. A posição de uma ação de grupo na grade determina a classificação para a ação de grupo. 
+---
+= Caixa de diálogo Reorder Group Actions (Reordenar ações de grupo)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo Reordenar ações de grupo para alterar as classificações de uma ou mais ações de grupo. A posição de uma ação de grupo na grade determina a classificação para a ação de grupo.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+* *Classificação*
++
+Especifica a ordem da ação de grupo a ser aplicada em objetos de armazenamento em um grupo.
+
+* *Nome*
++
+Especifica o nome da ação do grupo.
+
+* *Tipo de ação*
++
+Especifica o tipo de ação que você pode executar nos objetos de armazenamento em um grupo.
+
+* *Grupo associado*
++
+Especifica o nome do grupo para o qual as ações do grupo são definidas.
+
+

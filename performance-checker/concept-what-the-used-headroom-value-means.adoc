@@ -1,0 +1,38 @@
+---
+permalink: performance-checker/concept-what-the-used-headroom-value-means.html 
+sidebar: sidebar 
+keywords:  
+summary: O valor da capacidade de desempenho usado ajuda a identificar os nós e agregados que estão sendo sobreutilizados ou subutilizados atualmente. Isso permite redistribuir workloads para aumentar a eficiência dos recursos de storage. 
+---
+= O que significa o valor da capacidade de desempenho utilizada
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O valor da capacidade de desempenho usado ajuda a identificar os nós e agregados que estão sendo sobreutilizados ou subutilizados atualmente. Isso permite redistribuir workloads para aumentar a eficiência dos recursos de storage.
+
+A figura a seguir mostra a curva de latência versus utilização de um recurso e identifica, com pontos coloridos, três áreas onde o ponto operacional atual poderia estar localizado.
+
+image::../media/headroom-chart-over-under.gif[tabela da cabeceira sobre sob]
+
+* Uma porcentagem de capacidade de desempenho usada igual a 100 está no ponto ideal.
++
+Os recursos estão sendo usados de forma eficiente neste momento.
+
+* Uma porcentagem de capacidade de desempenho usada acima de 100 indica que o nó ou o agregado está sobreutilizado e que as cargas de trabalho estão recebendo desempenho abaixo do ideal.
++
+Nenhuma nova carga de trabalho deve ser adicionada ao recurso, e as cargas de trabalho existentes podem precisar ser redistribuídas.
+
+* Uma porcentagem de capacidade de desempenho usada abaixo de 100 indica que o nó ou o agregado está subutilizado e que os recursos não estão sendo usados com eficiência.
++
+Mais workloads podem ser adicionados ao recurso.
+
+
+
+[NOTE]
+====
+Diferentemente da utilização, a porcentagem de capacidade de performance usada pode estar acima de 100%. Não há porcentagem máxima, mas os recursos geralmente estarão na faixa de 110% a 140% quando estiverem sendo sobreutilizados. Percentagens mais elevadas indicariam um recurso com problemas graves.
+
+====

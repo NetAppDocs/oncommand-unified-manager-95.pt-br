@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-import-report-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo Importar relatório para importar relatórios de arquivos .rptdesign. 
+---
+= Caixa de diálogo Importar relatório
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo Importar relatório para importar relatórios de `.rptdesign` arquivos.
+
+
+
+== Propriedades
+
+Você pode importar um relatório especificando o nome do arquivo do relatório, o nome do relatório e a descrição do relatório.
+
+* *Selecione Arquivo de Relatório*
++
+Permite-lhe selecionar o `.rptdesign` ficheiro que pretende importar.
+
++
+[NOTE]
+====
+No Google Chrome, é apresentado o `fakepath` do `.rptdesign` ficheiro. No Mozilla Firefox, apenas o `.rptdesign` nome do arquivo é exibido. No Internet Explorer, é apresentado o caminho completo `.rptdesign` do ficheiro.
+
+====
+* *Nome*
++
+Exibe o nome do relatório. Por padrão, este campo está vazio. Pode introduzir um nome para o relatório importado.
+
+* *Descrição*
++
+Especifica a descrição do relatório importado. A descrição não pode exceder 150 carateres.
+
+* *Selecione o usuário do banco de dados com função de esquema de relatório*
++
+Selecione ou crie um usuário de banco de dados se estiver importando relatórios do repositório de automação do storage.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Importação*
++
+Valida o arquivo selecionado `.rptdesign` e importa o relatório.
+
+* *Cancelar*
++
+Cancela a operação de importação e fecha a caixa de diálogo Importar relatório.
+
+

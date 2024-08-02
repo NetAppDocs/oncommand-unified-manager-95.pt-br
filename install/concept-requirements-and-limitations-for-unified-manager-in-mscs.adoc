@@ -1,0 +1,38 @@
+---
+permalink: install/concept-requirements-and-limitations-for-unified-manager-in-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: Antes de instalar o Unified Manager em um ambiente de cluster de failover, você deve garantir que os nós de cluster estejam configurados corretamente para oferecer suporte ao Unified Manager. 
+---
+= Requisitos para o Unified Manager em um ambiente de cluster de failover
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de instalar o Unified Manager em um ambiente de cluster de failover, você deve garantir que os nós de cluster estejam configurados corretamente para oferecer suporte ao Unified Manager.
+
+Você deve garantir que a configuração do cluster de failover atenda aos seguintes requisitos:
+
+* Ambos os nós de cluster devem estar executando a mesma versão do Microsoft Windows Server.
+* A mesma versão do Unified Manager deve ser instalada usando o mesmo caminho nos nós de cluster.
+* O cluster de failover deve ser instalado e ativado em ambos os nós.
++
+Consulte a documentação da Microsoft para obter instruções.
+
+* Você precisa ter usado a malha comutada Fibre Channel ou o storage baseado em iSCSI para criar disco de dados compartilhados como back-end de storage
+* Opcional: Usando o SnapDrive para Windows, um local compartilhado deve ser criado que seja acessível a ambos os nós na configuração de alta disponibilidade.
++
+Consulte o _SnapDrive para o Guia de Instalação do Windows_ para obter informações sobre como instalar e criar um local compartilhado.
+
++
+Você também pode gerenciar LUNs usando a interface de linha de comando do sistema de storage. Consulte a matriz de compatibilidade do SnapDrive para Windows para obter mais informações.
+
+* Você deve ter o Perl instalado com `XML::LibXML` módulos e `File::chdir` para scripts funcionarem.
+* Deve haver apenas dois nós na configuração do cluster.
+* O tipo de quorum "'nó e maioria de disco'" deve ser usado para cluster de failover.
+* Você deve ter configurado um endereço IP compartilhado com um FQDN correspondente para ser usado como o endereço IP global do cluster para acessar o Unified Manager.
+* A senha do usuário de manutenção do Unified Manager nos dois nós deve ser a mesma.
+* Você deve ter usado apenas IPv4 endereço IP.
+

@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-analyze-cluster-capacity-based-on-the-ontap-version.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório Resumo do storage para agrupar clusters por versão do ONTAP e visualizar agregados relacionados à sua capacidade bruta total. 
+---
+= Personalizar o relatório Resumo do armazenamento para analisar a capacidade do cluster com base na versão do ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Resumo do storage para agrupar clusters por versão do ONTAP e visualizar agregados relacionados à sua capacidade bruta total.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por cluster, execute as seguintes etapas:
++
+.. Clique na coluna que precisa ser desagrupada.
+.. Clique image:../media/click-to-see-menu.gif[""] em (ícone do menu).
+.. Selecione *Group* > *Delete Inner Group Option*.
+
+
+. Para agrupar o relatório pela versão do ONTAP, execute as seguintes etapas:
++
+.. Clique na coluna *versão do sistema operacional* e selecione o image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Grupo* > *Adicionar grupo*.
+
+
+. Para adicionar agregados à capacidade bruta total, execute as seguintes etapas:
++
+.. Clique na coluna *capacidade bruta total* e clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *agregação*.
+.. Na caixa de diálogo *agregação*, desmarque a caixa de seleção *nível de tabela* e marque a caixa de seleção *nível de grupo*.
+.. Digite um nome de rótulo no campo *Inserir rótulo*, se necessário.
+
+
+. Clique em *OK*.
+

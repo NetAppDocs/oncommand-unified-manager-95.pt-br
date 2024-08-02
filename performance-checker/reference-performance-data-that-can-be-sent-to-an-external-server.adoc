@@ -1,0 +1,80 @@
+---
+permalink: performance-checker/reference-performance-data-that-can-be-sent-to-an-external-server.html 
+sidebar: sidebar 
+keywords:  
+summary: O Unified Manager coleta uma variedade de dados de performance de todos os clusters que ele está monitorando. Você pode enviar grupos específicos de dados para um servidor externo. 
+---
+= Dados de desempenho que podem ser enviados para um servidor externo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager coleta uma variedade de dados de performance de todos os clusters que ele está monitorando. Você pode enviar grupos específicos de dados para um servidor externo.
+
+Dependendo dos dados de desempenho que você deseja mapear, você pode optar por enviar um dos seguintes grupos de estatísticas:
+
+|===
+| Grupo de estatísticas | Dados incluídos | Detalhes 
+
+
+ a| 
+Monitor de desempenho
+ a| 
+Estatísticas de desempenho de alto nível para os seguintes objetos:
+
+* LUNs
+* Volumes
+
+ a| 
+Esse grupo fornece IOPS total ou latência para todos os LUNs e volumes em todos os clusters monitorados.
+
+Este grupo fornece o menor número de estatísticas.
+
+
+
+ a| 
+Utilização de recursos
+ a| 
+Estatísticas de utilização de recursos para os seguintes objetos:
+
+* Nós
+* Agregados
+
+ a| 
+Esse grupo fornece estatísticas de utilização do nó e agrega recursos físicos em todos os clusters monitorados.
+
+Ele também fornece as estatísticas coletadas no grupo Monitor de desempenho.
+
+
+
+ a| 
+Perfure
+ a| 
+Estatísticas de leitura/gravação e por protocolo de baixo nível para todos os objetos rastreados:
+
+* Nós
+* Agregados
+* LUNs
+* Volumes
+* Discos
+* LIFs
+* Portas/NICs
+
+ a| 
+Esse grupo fornece quebras de leitura/gravação e por protocolo para todos os sete tipos de objetos rastreados em todos os clusters monitorados.
+
+Ele também fornece as estatísticas coletadas no grupo Monitor de desempenho e no grupo utilização de recursos.
+
+Este grupo fornece o maior número de estatísticas.
+
+|===
+[NOTE]
+====
+Se o nome de um cluster, ou objeto de cluster, for alterado no sistema de armazenamento, ambos os objetos antigos e novos conterão dados de desempenho no servidor externo (chamado de "caminho_métrico"). Os dois objetos não estão correlacionados com o mesmo objeto. Por exemplo, se você alterar o nome de um volume de ""volume1_acct"" para ""acct_vol1"", você verá dados de desempenho antigos para o volume antigo e novos dados de desempenho para o novo volume.
+
+====
+Consulte o artigo da base de dados de Conhecimento para obter a lista de todos os contadores de desempenho que podem ser enviados para um fornecedor de dados externo.
+
+https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Infrastructure_Management%2FActive_IQ_Unified_Manager%2FWhat_are_the_ActiveIQ_Unified_Manager_performance_counters_that_can_be_exported_to_an_External_Data_Provider%253F["Contadores de desempenho do Unified Manager que podem ser exportados para um Fornecedor de dados Externo"]

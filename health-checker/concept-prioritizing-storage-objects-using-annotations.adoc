@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-prioritizing-storage-objects-using-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode criar e aplicar regras de anotação a objetos de armazenamento para que você possa identificar e filtrar esses objetos com base no tipo de anotação aplicada e sua prioridade. 
+---
+= Priorizando eventos de objetos de armazenamento usando anotações
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar e aplicar regras de anotação a objetos de armazenamento para que você possa identificar e filtrar esses objetos com base no tipo de anotação aplicada e sua prioridade.

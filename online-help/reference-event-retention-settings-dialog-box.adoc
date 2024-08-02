@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-event-retention-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode configurar as configurações de evento para excluir automaticamente eventos (informações, resolvidas ou obsoletas) após um horário especificado e em uma frequência especificada. Você também pode excluir esses eventos manualmente.' 
+---
+= Caixa de diálogo Configurações de retenção de eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar as configurações de evento para excluir automaticamente eventos (informações, resolvidos ou obsoletos) após um horário especificado e em uma frequência especificada. Você também pode excluir esses eventos manualmente.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Definições do evento
+
+Você pode configurar as seguintes opções:
+
+* *Excluir informações, Eventos resolvidos e obsoletos com mais de*
++
+Permite especificar o período de retenção após o qual os eventos marcados como informações, resolvidos ou obsoletos são removidos do servidor de gerenciamento.
+
++
+O valor padrão é de 180 dias. Manter os eventos por mais de 180 dias afeta o desempenho e não é recomendado. O limite inferior para o período de retenção de eventos é de 7 dias, embora não haja limite superior.
+
+* *Excluir horário*
++
+Permite especificar a frequência com que todos os eventos marcados como informações, resolvidos ou obsoletos e que excederam o limite de idade são automaticamente eliminados do servidor de gestão. Os valores possíveis são diariamente, semanal ou mensal.
+
++
+O valor padrão é diariamente.
+
+* *Excluir agora*
++
+Permite que você exclua manualmente todas as informações, eventos resolvidos e obsoletos que excederam o período de retenção especificado.
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem guardar ou cancelar as opções de configuração:
+
+* *Salvar e fechar*
++
+Guarda as definições de configuração da opção selecionada e fecha a caixa de diálogo.
+
+* *Cancelar*
++
+Cancela as alterações recentes e fecha a caixa de diálogo.
+
+

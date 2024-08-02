@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-what-health-events-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Eventos de integridade são notificações que são geradas automaticamente quando ocorre uma condição predefinida ou quando um objeto atravessa um limite de integridade. Esses eventos permitem que você tome medidas para evitar problemas que podem levar a um desempenho ruim e à indisponibilidade do sistema. Os eventos incluem uma área de impactos, gravidade e nível de impactos. 
+---
+= Quais são os eventos de saúde
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eventos de integridade são notificações que são geradas automaticamente quando ocorre uma condição predefinida ou quando um objeto atravessa um limite de integridade. Esses eventos permitem que você tome medidas para evitar problemas que podem levar a um desempenho ruim e à indisponibilidade do sistema. Os eventos incluem uma área de impactos, gravidade e nível de impactos.
+
+Os eventos de integridade são categorizados pelo tipo de área de impactos, como disponibilidade, capacidade, configuração ou proteção. Os eventos também recebem um tipo de gravidade e um nível de impactos que o ajudam a determinar se uma ação imediata é necessária.
+
+Você pode configurar alertas para enviar notificações automaticamente quando eventos ou eventos específicos de uma gravidade específica ocorrerem.
+
+Eventos obsoletos, resolvidos e informativos são automaticamente registrados e mantidos por um padrão de 180 dias.
+
+É importante que você tome medidas corretivas imediatas para eventos com erro de nível de gravidade ou crítico.

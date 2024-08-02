@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-monitoring-jobs.html 
+sidebar: sidebar 
+keywords:  
+summary: Pode utilizar a página proteção/trabalhos para monitorizar o estado da tarefa e para ver as propriedades da tarefa, tais como tipo de serviço de armazenamento, estado, tempo de envio e tempo de conclusão, para determinar se uma tarefa foi concluída com êxito ou não. 
+---
+= Tarefas de monitorização
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode utilizar a página proteção/trabalhos para monitorizar o estado da tarefa e para ver as propriedades da tarefa, tais como tipo de serviço de armazenamento, estado, tempo de envio e tempo de conclusão, para determinar se uma tarefa foi concluída com êxito ou não.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *proteção* > *empregos*.
++
+É apresentada a página proteção/trabalhos.
+
+. Exiba a coluna *Estado* para determinar o status dos trabalhos atualmente em execução.
+. Clique no nome de um trabalho para ver detalhes sobre esse trabalho específico.
++
+É apresentada a página proteção/detalhes do trabalho.
+
+

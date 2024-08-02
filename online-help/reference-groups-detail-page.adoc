@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-groups-detail-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Na página Detalhes de grupos, você pode exibir os detalhes de um grupo selecionado. Você também pode exibir informações adicionais, como regras de grupo e ações de grupo associadas ao grupo selecionado. 
+---
+= Página de detalhes dos grupos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Na página Detalhes de grupos, você pode exibir os detalhes de um grupo selecionado. Você também pode exibir informações adicionais, como regras de grupo e ações de grupo associadas ao grupo selecionado.
+
+
+
+== Botões de comando
+
+* *Ver grupos*
++
+Permite-lhe navegar para a página grupos.
+
+* *Ações*
++
+Permite editar ou eliminar o grupo, com base na sua função. Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+* *Gerenciar regras de Grupo*
++
+Permite-lhe navegar para a página regras de grupo, que apresenta regras para este grupo.
+
+* *Gerenciar ações de Grupo*
++
+Permite navegar para a página ações de grupo, que exibe ações para este grupo.
+
+
+
+
+
+== Área de resumo
+
+Você pode exibir os seguintes detalhes do grupo:
+
+* *Descrição*
++
+Exibe a descrição fornecida para o grupo.
+
+* *Criado por*
++
+Exibe o nome do usuário que criou o grupo.
+
+* *Data de criação*
++
+Exibe a data em que o grupo foi criado.
+
+* *Regras associadas*
++
+Exibe todas as regras de grupo criadas para um grupo, em formato tabular. Você pode exibir os detalhes de cada regra de grupo, como o nome da regra, o tipo de objeto associado e a contagem de objetos de armazenamento do tipo de objeto associado.
+
+* *Ações associadas*
++
+Exibe todas as ações de grupo, configuradas para um grupo, em formato tabular. Você pode exibir os detalhes de cada ação de grupo, como a classificação, nome, tipo de ação e descrição.
+
+

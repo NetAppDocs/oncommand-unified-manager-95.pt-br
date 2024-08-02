@@ -1,0 +1,66 @@
+---
+permalink: online-help/task-creating-storage-virtual-machine-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'O assistente criar associações de máquinas virtuais de storage permite que aplicativos de proteção de parceiros associem uma máquina virtual de armazenamento de origem (SVM) a um SVM de destino para uso com relacionamentos SnapMirror e SnapVault. Os aplicativos de parceiros usam essas associações no momento do provisionamento inicial de volumes de destino para determinar quais recursos selecionar.' 
+---
+= Criação de associações SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O assistente criar associações de máquinas virtuais de storage permite que aplicativos de proteção de parceiros associem uma máquina virtual de storage de origem (SVM) a um SVM de destino para uso com relacionamentos SnapMirror e SnapVault. Os aplicativos de parceiros usam essas associações no momento do provisionamento inicial de volumes de destino para determinar quais recursos selecionar.
+
+
+
+== Antes de começar
+
+* O SVM que você está associando já deve existir.
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+
+== Sobre esta tarefa
+
+Para qualquer SVM de origem e tipo de relação, você pode escolher apenas um SVM de destino em cada cluster de destino.
+
+Alterar associações usando as funções delete e create afeta apenas operações futuras de provisionamento. Ele não move volumes de destino existentes.
+
+
+
+== Passos
+
+. No painel de navegação à esquerda, clique em *proteção* > *associações SVM*.
+. Na página *associações de máquinas virtuais de proteção/armazenamento*, clique em *criar*.
++
+O assistente criar associações de máquinas virtuais de armazenamento é iniciado.
+
+. Selecione uma das seguintes fontes:
++
+** * Qualquer *
++
+Escolha essa opção quando quiser criar uma associação entre qualquer fonte SVM principal a um ou mais SVM de destino. Isso significa que todos os SVMs que atualmente exigem proteção, bem como quaisquer SVMs que forem criadas no futuro, estão associados ao SVM de destino especificado. Por exemplo, é possível que aplicativos de várias fontes diferentes em locais diferentes façam backup de um ou mais SVM de destino em um local.
+
+** *Single*
++
+Escolha essa opção quando quiser selecionar uma fonte específica SVM associada a um ou mais SVMs de destino. Por exemplo, se você estiver fornecendo serviços de storage para muitos clientes cujos dados precisam estar separados um do outro, escolha essa opção para associar uma fonte específica da SVM a um destino específico atribuído somente a esse cliente.
+
+** *Nenhuma (externa)*
++
+Escolha essa opção quando quiser criar uma associação entre uma SVM de origem e um volume flexível externo de um SVM de destino.
+
+
+
+. Selecione um ou ambos os tipos de relação de proteção que deseja criar:
++
+** *SnapMirror*
+** *SnapVault*
+
+
+. Clique em *seguinte*.
+. Selecione um ou mais destinos de proteção da SVM.
+. Clique em *Finish*.
+

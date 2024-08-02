@@ -1,0 +1,60 @@
+---
+permalink: performance-checker/task-investigating-perceived-slow-response-time-for-a-workload.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode usar o Unified Manager para determinar se as operações no cluster podem ter contribuído para o tempo de resposta lento (latência) para uma carga de trabalho de volume.' 
+---
+= Investigando um tempo de resposta lento percebido para uma carga de trabalho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar o Unified Manager para determinar se as operações no cluster podem ter contribuído para o tempo de resposta lento (latência) de um workload de volume.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Você deve ter identificado o nome do volume ou LUN associado que deseja analisar.
+* O Unified Manager deve ter coletado e analisado no mínimo cinco dias de estatísticas de desempenho do cluster.
+
+
+
+
+== Sobre esta tarefa
+
+Se estiver a visualizar a página de detalhes do evento, pode clicar no nome de um volume para ir diretamente para a página Detalhes do desempenho/volume.
+
+
+
+== Passos
+
+. Na barra *pesquisar*, digite o nome do volume.
++
+O nome do volume é apresentado nos resultados da pesquisa.
+
+. Clique no nome do volume.
++
+O volume é apresentado na página Performance/volume Details (Detalhes de desempenho/volume).
+
+. No gráfico de dados históricos, clique em *5D* para exibir os últimos cinco dias de dados históricos.
+. Revise o gráfico *IOPS* para responder às seguintes perguntas:
++
+** Há picos dramáticos na atividade?
+** Há quedas dramáticas na atividade?
+** Existem alterações anormais no padrão de operações? Se as operações não exibirem picos ou quedas drásticas na atividade e não houver alterações na configuração do cluster durante esse período, o administrador de storage poderá confirmar que outras cargas de trabalho não afetaram o desempenho do volume.
+
+
+. No menu *Breakdown data by*, em *IOPS*, selecione ***reads/Write/other***.
+. Clique em *Enviar*.
++
+O gráfico de leituras/gravações/outros é exibido abaixo do gráfico de IOPS.
+
+. Revise o gráfico *reads/Write/Other* para identificar picos ou quedas drásticas na quantidade de leituras ou gravações para o volume.
++
+Se não houver picos ou quedas drásticas nas leituras ou gravações, o administrador de storage poderá confirmar que a e/S no cluster está operando normalmente. Quaisquer problemas de desempenho podem estar na rede ou nos clientes conetados.
+
+

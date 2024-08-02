@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-what-the-timestamp-means-in-collected-data-and-events.html 
+sidebar: sidebar 
+keywords:  
+summary: O carimbo de data/hora que aparece nos dados de integridade e desempenho coletados, ou que aparece como hora de deteção de um evento, é baseado na hora do cluster do ONTAP, ajustada ao fuso horário definido no navegador da Web. 
+---
+= O que significa o timestamp em dados e eventos coletados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O carimbo de data/hora que aparece nos dados de integridade e desempenho coletados, ou que aparece como hora de deteção de um evento, é baseado na hora do cluster do ONTAP, ajustada ao fuso horário definido no navegador da Web.
+
+É altamente recomendável que você use um servidor NTP (Network Time Protocol) para sincronizar a hora em seus servidores Unified Manager, clusters ONTAP e navegadores da Web.
+
+[NOTE]
+====
+Se você vir carimbos de data/hora incorretos para um cluster específico, talvez queira verificar se a hora do cluster foi definida corretamente.
+
+====

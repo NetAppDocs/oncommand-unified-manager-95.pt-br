@@ -1,0 +1,101 @@
+---
+permalink: online-help/reference-enclosures-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de compartimentos fornecem informações sobre o status dos compartimentos de gaveta de disco em seu data center para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de cercos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de compartimentos fornecem informações sobre o status dos compartimentos de gaveta de disco em seu data center para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Ventiladores de prateleira de disco falharam (ocumEvtShelfFanFailed)
+ a| 
+Incidente
+ a| 
+Compartimento de armazenamento
+ a| 
+Crítico
+
+
+
+ a| 
+Falha nas fontes de alimentação da prateleira de disco (ocumEvtShelfPowerSupplyFailed)
+ a| 
+Incidente
+ a| 
+Compartimento de armazenamento
+ a| 
+Crítico
+
+
+
+ a| 
+Multipath não configurado (ocumDiskShelfConnectivityNotInMultiPath)
+
+Este evento não se aplica a:
+
+* Clusters que estão em uma configuração MetroCluster
+* As seguintes plataformas: FAS2554, FAS2552, FAS2520 e FAS2240
+
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+Falha do caminho da prateleira de disco (ocumDiskShelfConnectivityPathFailure)
+ a| 
+Risco
+ a| 
+Compartimento de armazenamento
+ a| 
+Aviso
+
+|===
+
+
+== Área de impactos: Configuração
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Compartimento de disco descoberto (não aplicável)
+ a| 
+Evento
+ a| 
+Nó
+ a| 
+Informações
+
+
+
+ a| 
+Compartimentos de disco removidos (não aplicável)
+ a| 
+Evento
+ a| 
+Nó
+ a| 
+Informações
+
+|===

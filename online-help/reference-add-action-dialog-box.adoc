@@ -1,0 +1,51 @@
+---
+permalink: online-help/reference-add-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo Adicionar ação de grupo permite configurar ações de grupo que podem ser aplicadas a objetos de armazenamento de um grupo selecionado. 
+---
+= Caixa de diálogo Add Group Action (Adicionar ação de grupo)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Adicionar ação de grupo permite configurar ações de grupo que podem ser aplicadas a objetos de armazenamento de um grupo selecionado.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+* *Nome*
++
+Especifica o nome da ação.
+
+* *Descrição*
++
+Especifica a descrição da ação.
+
+* *Grupo*
++
+Especifica o grupo para o qual a ação está configurada.
+
+* *Tipo de ação*
++
+Especifica o tipo de ação configurada. Com base no tipo de ação selecionado, a caixa de diálogo Adicionar ação de grupo se expande, permitindo que você configure uma ação de grupo fornecendo os valores necessários.
+
++
+Atualmente, o Unified Manager só oferece suporte ao tipo de ação de limite de volume.
+
+
+
+
+
+== Botões de comando
+
+* *Adicionar*
++
+Adiciona a nova ação e fecha a caixa de diálogo.
+
+* *Cancelar*
++
+Fecha a caixa de diálogo Adicionar ação de grupo sem salvar as alterações.
+
+

@@ -1,0 +1,22 @@
+---
+permalink: health-checker/reference-support-and-diagnostics-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: O menu suporte e Diagnóstico permite gerar um pacote de suporte. 
+---
+= Menu suporte e Diagnóstico
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O menu suporte e Diagnóstico permite gerar um pacote de suporte.
+
+A seguinte opção de menu está disponível:
+
+* *Gerar Pacote de suporte*
++
+Permite criar um ficheiro 7-Zip com informações completas de diagnóstico no diretório inicial do utilizador de diagnóstico. O arquivo inclui informações geradas por uma mensagem do AutoSupport, o conteúdo do banco de dados do Gerenciador Unificado, dados detalhados sobre os componentes internos do servidor do Gerenciador Unificado e logs de nível detalhado não incluídos normalmente nas mensagens do AutoSupport.
+
+

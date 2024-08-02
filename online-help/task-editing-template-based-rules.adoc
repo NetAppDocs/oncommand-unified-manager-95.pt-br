@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-editing-template-based-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode editar uma regra que foi criada usando os modelos de regra na caixa de diálogo Editar regra. Você pode adicionar, modificar ou excluir propriedades de regras, como caminhos de diretório, tipos de arquivo e proprietários. Você também pode modificar o nome da regra e a classe de armazenamento associada à regra. 
+---
+= Editando regras baseadas em modelos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar uma regra que foi criada usando os modelos de regra na caixa de diálogo Editar regra. Você pode adicionar, modificar ou excluir propriedades de regras, como caminhos de diretório, tipos de arquivo e proprietários. Você também pode modificar o nome da regra e a classe de armazenamento associada à regra.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Na página de inventário *máquinas virtuais de integridade/storage*, selecione um SVM apropriado.
+. Clique em *Política de dados*.
++
+A lista de regras na política de dados para o SVM selecionado com Infinite volume é exibida.
+
+. Selecione a regra para a qual deseja incluir novas condições ou conjuntos de condições.
+. Clique em *Editar*.
+. Na caixa de diálogo *Editar regra*, edite a regra conforme necessário:
++
+|===
+| Se você quiser... | Faça isso... 
+
+
+ a| 
+Adicione uma nova propriedade de regra
+ a| 
+Clique em *Add*.
+
+
+
+ a| 
+Excluir uma propriedade de regra
+ a| 
+Clique em *Excluir* selecionando a propriedade de regra apropriada.
+
+
+
+ a| 
+Modificar uma propriedade de regra
+ a| 
+Clique duas vezes na propriedade de regra apropriada e, em seguida, modifique conforme necessário.
+
+|===
+. Clique em *Atualizar*.
+. Verifique se suas modificações são aplicadas à regra expandindo a regra na guia *Política de dados*.
+. Visualize quaisquer outras alterações feitas à política de dados.
+. Clique em *Ativar* para ativar as alterações nas propriedades da regra no SVM.
+

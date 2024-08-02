@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-creating-custom-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Com base nos requisitos do data center, você pode criar regras personalizadas e adicioná-las a uma política de dados para determinar o posicionamento dos dados gravados no SVM com Infinite volume. Você pode criar regras personalizadas a partir da caixa de diálogo criar regra sem usar qualquer modelo existente. 
+---
+= Criando regras personalizadas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Com base nos requisitos do data center, você pode criar regras personalizadas e adicioná-las a uma política de dados para determinar o posicionamento dos dados gravados no SVM com Infinite volume. Você pode criar regras personalizadas a partir da caixa de diálogo criar regra sem usar qualquer modelo existente.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* O cluster que contém o SVM com Infinite volume com classes de storage deve ser adicionado ao banco de dados do Unified Manager.
+
+
+
+
+== Sobre esta tarefa
+
+A guia Política de dados fica visível apenas para uma SVM com Infinite volume.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Na página de inventário *máquinas virtuais de integridade/storage*, selecione o SVM apropriado.
+. Clique em *Política de dados*.
+. Clique em *criar*.
+. Na caixa de diálogo *criar regra*, selecione *regra personalizada* na lista *modelo*.
+. Na área *critérios de correspondência*, adicione condições conforme necessário.
++
+As condições permitem criar uma regra com base em tipos de arquivo, caminhos de diretório ou proprietários. Uma combinação dessas condições são os conjuntos de condições. Por exemplo, você pode ter uma regra: ""coloque todos .mp3 de propriedade de John na classe de armazenamento de bronze.""
+
+. Selecione uma classe de armazenamento apropriada na lista suspensa *coloque o conteúdo correspondente na Classe de armazenamento*.
+. Clique em *criar*.
++
+A regra recém-criada é exibida na guia Política de dados.
+
+. Visualize quaisquer outras alterações feitas à política de dados.
+. Clique em *Ativar* para ativar as alterações nas propriedades da regra no SVM.
+

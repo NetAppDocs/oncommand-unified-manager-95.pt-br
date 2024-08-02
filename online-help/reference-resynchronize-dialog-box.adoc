@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-resynchronize-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo Resincronizar permite que você sincronize novamente os dados em um relacionamento SnapMirror ou SnapVault que foi quebrado anteriormente e, em seguida, o destino foi feito um volume de leitura/gravação. Você também pode ressincronizar quando uma cópia Snapshot comum necessária no volume de origem for excluída, causando falha nas atualizações do SnapMirror ou do SnapVault. 
+---
+= Ressincronizar a caixa de diálogo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Resincronizar permite que você sincronize novamente os dados em um relacionamento SnapMirror ou SnapVault que foi quebrado anteriormente e, em seguida, o destino foi feito um volume de leitura/gravação. Você também pode ressincronizar quando uma cópia Snapshot comum necessária no volume de origem for excluída, causando falha nas atualizações do SnapMirror ou do SnapVault.
+
+
+
+== Guia Opções de ressincronização
+
+A guia Opções de ressincronização permite definir a prioridade de transferência e a taxa máxima de transferência para a relação de proteção que você está ressincronizando.
+
+* *Prioridade de transferência*
++
+A prioridade na qual a transferência é executada. Pode selecionar normal ou baixo. Relacionamentos com políticas que especificam uma prioridade de transferência normal são executados antes daqueles com políticas que especificam uma prioridade de transferência baixa.
+
+* *Taxa de transferência máxima*
++
+Especifica a taxa máxima na qual os dados são transferidos entre clusters pela rede. Quando selecionada, a largura de banda da rede é limitada ao valor especificado. Você pode inserir um valor numérico e selecionar kilobytes por segundo (kbps), megabytes por segundo (Mbps), gigabytes por segundo (Gbps) ou Tbps. Se você optar por não usar uma taxa de transferência máxima, a transferência de linha de base entre relacionamentos é ilimitada. No entanto, se você estiver executando o ONTAP 8,2 e o cluster primário e o cluster secundário forem os mesmos, essa configuração será desativada.
+
+
+
+
+
+== Guia cópias Snapshot de origem
+
+A guia cópias Snapshot de origem exibe as seguintes informações sobre a cópia Snapshot de origem usada para a transferência da linha de base:
+
+* *Volume da fonte*
++
+Exibe os nomes dos volumes de origem correspondentes.
+
+* *Volume de destino*
++
+Apresenta os nomes dos volumes de destino selecionados.
+
+* *Tipo de fonte*
++
+Exibe o tipo de volume: Leitura/gravação ou proteção de dados.
+
+* *Cópia Snapshot*
++
+Exibe a cópia Snapshot usada para a transferência de dados. Clicar no valor cópia Instantânea exibe a caixa de diálogo Selecionar cópia Instantânea de origem, na qual pode selecionar uma cópia Snapshot específica para sua transferência, dependendo do tipo de relação de proteção que você tem e da operação que está executando.
+
+
+
+
+
+== Botões de comando
+
+* *Submeter*
++
+Inicia o processo de ressincronização e fecha a caixa de diálogo Resyncronizar.
+
+* *Cancelar*
++
+Cancela suas seleções e fecha a caixa de diálogo Resyncronizar.
+
+

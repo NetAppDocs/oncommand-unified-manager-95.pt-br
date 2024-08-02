@@ -1,0 +1,33 @@
+---
+permalink: online-help/concept-storage-virtual-machine-and-resource-pool-requirements-to-support-storage-services.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você garante a conformidade nas aplicações de parceiros se observar alguns requisitos de associação SVM e pool de recursos específicos aos serviços de storage: Por exemplo, quando você associa SVM e cria pools de recursos no Unified Manager a fim de dar suporte a uma topologia de proteção em um serviço de storage fornecido por uma aplicação de parceiro.' 
+---
+= Requisitos de SVM e pool de recursos para dar suporte a serviços de storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você garante a conformidade nas aplicações de parceiros se observar alguns requisitos de associação SVM e pool de recursos específicos aos serviços de storage: Por exemplo, quando você associa SVM e cria pools de recursos no Unified Manager a fim de dar suporte a uma topologia de proteção em um serviço de storage fornecido por uma aplicação de parceiro.
+
+Algumas aplicações fazem parceria com o servidor do Unified Manager para fornecer serviços que configuram e executam automaticamente proteção de backup SnapMirror ou SnapVault entre volumes de origem e volumes de proteção em locais secundários ou terciários. Para dar suporte a esses serviços de storage de proteção, use o Unified Manager para configurar as associações e os pools de recursos necessários à SVM.
+
+Para oferecer suporte à proteção de salto único ou em cascata do serviço de storage, incluindo replicação de uma fonte SnapMirror ou volume primário SnapVault para o SnapMirror de destino ou para volumes de backup do SnapVault que residem em locais secundários ou terciários, observe os seguintes requisitos:
+
+* As associações do SVM devem ser configuradas entre o SVM que contém a fonte SnapMirror ou o volume primário SnapVault e qualquer SVM em que residam um volume secundário ou um volume terciário.
++
+** Por exemplo, para oferecer suporte a uma topologia de proteção na qual o volume de origem vol_A reside no SVM_1 3, e o volume de destino secundário vol_B do SnapMirror reside no SVM_2, e o volume de backup terciário SnapVault vol_ C reside no SVM_3, você deve usar a IU da Web do Unified Manager para configurar uma associação de SnapMirror entre SVM_1 e SVM_2 e uma associação de backup do SnapVault entre SVM_1.
++
+Neste exemplo, qualquer associação SnapMirror ou associação de backup do SnapVault entre SVM_2 e SVM_3 não é necessária e não é usada.
+
+** Para dar suporte a uma topologia de proteção na qual o volume de origem vol_A e o volume de destino do SnapMirror vol_B estejam na SVM_1, você deve configurar uma associação SnapMirror entre o SVM_1 e o SVM_1.
+
+
+* Os pools de recursos devem incluir recursos agregados de cluster disponíveis para os SVMs associados.
++
+Você configura pools de recursos por meio da IU da Web do Unified Manager e atribui, por meio da aplicação de parceiro, os nós de destino secundário e terciário.
+
+

@@ -1,0 +1,51 @@
+---
+permalink: online-help/task-resuming-scheduled-transfers-on-a-quiesced-relationship.html 
+sidebar: sidebar 
+keywords:  
+summary: Depois de ter silenciado uma relação para impedir que as transferências agendadas ocorram, você pode usar Retomar para reativar as transferências agendadas para que os dados no volume de origem ou principal estejam protegidos. As transferências são retomadas a partir de um ponto de verificação, se houver, no próximo intervalo de transferência programado. 
+---
+= Retomar as transferências agendadas em um relacionamento silencioso na página relacionamentos de proteção/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de ter concluído um relacionamento para impedir que as transferências agendadas ocorram, você pode usar *Resume* para reativar as transferências agendadas para que os dados na origem ou no volume primário sejam protegidos. As transferências são retomadas a partir de um ponto de verificação, se houver, no próximo intervalo de transferência programado.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter configurado o Workflow Automation.
+
+
+
+
+== Sobre esta tarefa
+
+Você não pode selecionar mais de 10 relacionamentos quiesced nos quais retomar as transferências.
+
+
+
+== Passos
+
+. Na página *relacionamentos de proteção/volume*, selecione um ou mais volumes com relações quiçadas e, na barra de ferramentas, clique em *Resume*.
+. Na caixa de diálogo *Resume*, clique em *Continue*.
++
+Você será retornado à página relacionamentos de proteção/volume.
+
+. Para visualizar as tarefas relacionadas e acompanhar o seu progresso, clique no link da tarefa que é exibido na parte superior da página *relacionamentos de proteção/volume*.
+. Execute um dos seguintes procedimentos:
++
+** Se for apresentado apenas um trabalho, na página proteção/detalhes do trabalho, clique em *Atualizar* para atualizar a lista de tarefas e os detalhes da tarefa associados ao trabalho de configuração de proteção e para determinar quando o trabalho está concluído.
+** Se for apresentado mais de um trabalho,
++
+... Na página proteção/trabalhos, clique no trabalho para o qual deseja exibir os detalhes.
+... Na página proteção/detalhes do trabalho, clique em *Atualizar* para atualizar a lista de tarefas e os detalhes da tarefa associados ao trabalho de configuração de proteção e para determinar quando o trabalho está concluído. Após o término dos trabalhos, as transferências de dados são retomadas no próximo intervalo de transferência programado.
+
+
+
+
+

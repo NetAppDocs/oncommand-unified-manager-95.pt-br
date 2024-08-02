@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-scheduling-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode agendar seus relatórios na página Detalhes do Relatório e enviar os relatórios programados por e-mail para um ou mais destinatários em um formato específico, em uma frequência especificada. Por exemplo, você pode agendar um relatório para ser enviado como e-mail, no formato PDF, todas as segundas-feiras. 
+---
+= Agendar relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode agendar seus relatórios na página Detalhes do Relatório e enviar os relatórios programados por e-mail para um ou mais destinatários em um formato específico, em uma frequência especificada. Por exemplo, você pode agendar um relatório para ser enviado como e-mail, no formato PDF, todas as segundas-feiras.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *relatórios* e, em seguida, clique em *Executar relatório* para o relatório desejado.
++
+É apresentada a página de detalhes do relatório.
+
+. Clique em *ações* > *Relatório de Agendamento*.
+. Na caixa de diálogo *Relatório de Agendamento*, selecione uma das programações preferidas para o seu relatório:
++
+|===
+| Se você quiser... | Então... 
+
+
+ a| 
+Selecione uma agenda na lista existente de programações
+ a| 
+Clique em *usar Agendamento existente* e selecione o agendamento.
+
+
+
+ a| 
+Crie uma nova agenda
+ a| 
+Clique em *criar novo horário* e, em seguida, insira o nome do agendamento, especifique o endereço de e-mail, selecione o formato e a frequência do relatório e insira uma hora ou dia em que o relatório será executado. Você pode especificar um ou mais endereços de e-mail, separados por vírgulas. A opção _PDF_ é selecionada como o formato de relatório padrão. A opção _Hourly_ é selecionada como a frequência padrão.
+
+|===
+. Clique em *Agendar*.
+

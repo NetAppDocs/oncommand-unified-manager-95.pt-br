@@ -1,0 +1,61 @@
+---
+permalink: health-checker/task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode usar a IU da Web do Unified Manager para confirmar ou eliminar a possibilidade de que um volume esteja off-line porque sua máquina virtual de armazenamento de host (SVM) é interrompida devido ao nó que hospeda o volume raiz desse SVM estar inativo.' 
+---
+= Determinando se um volume está off-line e sua SVM é interrompida porque um nó está inativo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a IU da Web do Unified Manager para confirmar ou eliminar a possibilidade de um volume ficar off-line, pois sua máquina virtual de storage de host (SVM) é interrompida devido ao nó que hospeda o volume raiz desse SVM estar inativo.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Para determinar se a condição de volume off-line está interrompida porque o nó que hospeda o volume raiz do SVM está inativo, execute as seguintes ações:
+
+
+
+== Passos
+
+. Localize e clique no link de hipertexto exibido em SVM no painel *Related Devices* da página de detalhes *Health/volume* do volume off-line.
+. Localize e clique no link de hipertexto exibido sob o SVM no painel *Related Devices* da página de detalhes *Health/volume* do volume off-line.
++
+A página de detalhes da Máquina Virtual de Saúde/armazenamento exibe o status "em execução" ou o status "coberto" do SVM de hospedagem. Se o status SVM estiver em execução, a condição de volume off-line não será causada pelo nó que hospeda o volume raiz do SVM inativo.
+
+. Se o status SVM for interrompido, clique em *Exibir SVMs* para identificar ainda mais a causa da interrupção do SVM de hospedagem.
+. No cabeçalho da coluna *Health/Storage Virtual Machines* Inventory pageSVM, clique no símbolo do filtro image:../media/filtericon-um60.png["Ícone para filtro de coluna"]e digite o nome do SVM parado.
++
+As informações desse SVM são mostradas em uma tabela.
+
+. Na página de inventário de máquinas virtuais de Saúde/armazenamento**, clique image:../media/gridviewicon.gif["Ícone para visualização em grelha"] e selecione a opção *volume raiz*.
++
+A coluna volume raiz é adicionada ao inventário SVM e exibe o nome do volume raiz do SVM parado.
+
+. Na coluna volume raiz, clique no nome do volume raiz para exibir a página de detalhes *Health/Storage Virtual Machine* para esse volume.
++
+Se o status do volume raiz do SVM for (Online), a condição de volume off-line original não será causada porque o nó que hospeda o volume raiz desse SVM está inativo.
+
+. Se o status do volume raiz da SVM for (Offline), localize e clique no link de hipertexto exibido em agregado no painel *dispositivos relacionados* da página de detalhes *Saúde/volume* do volume raiz da SVM.
+. Localize e clique no link de hipertexto exibido em nó no painel *Related Devices* da página de detalhes *Health/Aggregate* do agregado.
++
+A guia nós na página de detalhes de integridade/cluster exibe o estado do par de nós de HA ao qual pertence o nó de hospedagem do volume raiz da SVM. O estado do nó é indicado no visor.
+
+
+
+
+
+== Depois de terminar
+
+Depois de confirmar que a condição de volume off-line é causada pela condição off-line SVM do host desse volume, o que por si só é causado pelo nó que hospeda o volume raiz do SVM inativo, entre em Contato com o administrador ou operador apropriado para reiniciar manualmente o nó inativo.

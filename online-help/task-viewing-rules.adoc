@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-viewing-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível exibir a lista de regras criadas na guia Política de dados antes de modificar a política de dados do SVM com Infinite volume. 
+---
+= Visualização de regras
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível exibir a lista de regras criadas na guia Política de dados antes de modificar a política de dados do SVM com Infinite volume.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* O cluster que contém o SVM com Infinite volume com classes de storage deve ser adicionado ao banco de dados do Unified Manager.
+
+
+
+
+== Sobre esta tarefa
+
+A guia Política de dados fica visível apenas para uma SVM com Infinite volume.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Na página de inventário *máquinas virtuais de integridade/storage*, selecione o SVM apropriado.
+. Clique em *Política de dados*.
+
+
+
+
+== Resultados
+
+A lista de regras na política de dados para o SVM selecionado é exibida. Você pode usar filtro por classe de armazenamento para exibir regras sobre uma classe de armazenamento específica.

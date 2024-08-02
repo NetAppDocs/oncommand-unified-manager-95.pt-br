@@ -1,0 +1,50 @@
+---
+permalink: performance-checker/concept-what-happens-to-performance-threshold-policies-when-an-object-is-moved-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Como as políticas de limite de performance são atribuídas a objetos de storage, se você mover um objeto, todas as políticas de limite atribuídas permanecerão anexadas ao objeto após a conclusão da migração. Por exemplo, se você mover um volume ou LUN para um agregado diferente, as políticas de limite ainda estarão ativas para o volume ou LUN no novo agregado. 
+---
+= O que acontece com as políticas de limite de performance quando um objeto é movido
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Como as políticas de limite de performance são atribuídas a objetos de storage, se você mover um objeto, todas as políticas de limite atribuídas permanecerão anexadas ao objeto após a conclusão da migração. Por exemplo, se você mover um volume ou LUN para um agregado diferente, as políticas de limite ainda estarão ativas para o volume ou LUN no novo agregado.
+
+Se existir uma condição de contador secundário para a política de limite (uma política de combinação)--por exemplo, se uma condição adicional for atribuída a um agregado ou a um nó--a condição de contador secundário é aplicada ao novo agregado ou nó para o qual o volume ou LUN foi movido.
+
+Se houver novos eventos ativos para objetos que estejam usando a política de limite alterada, os eventos serão marcados como obsoletos e a política de limite começará a monitorar o contador como uma política de limite recém-definida.
+
+Uma operação de movimentação de volume faz com que o ONTAP envie um evento de mudança informativa. Um ícone de evento de mudança é exibido na linha do tempo de eventos na página Performance Explorer e na página Performance/volume Details para indicar a hora em que a operação de mudança foi concluída.
+
+[NOTE]
+====
+Se você mover um objeto para um cluster diferente, a política de limite definida pelo usuário será removida do objeto. Se necessário, você deve atribuir uma política de limite ao objeto depois que a operação mover for concluída. No entanto, as políticas de limite dinâmicas e definidas pelo sistema são aplicadas automaticamente a um objeto depois que ele é movido para um novo cluster.
+
+====
+
+
+== Funcionalidade de política de limite durante o takeover de HA e a giveback
+
+Quando uma operação de takeover ou giveback ocorre em uma configuração de alta disponibilidade (HA), os objetos movidos de um nó para o outro nó mantêm suas políticas de limite da mesma maneira que nas operações de movimentação manual. Como o Unified Manager verifica se há alterações na configuração do cluster a cada 15 minutos, o impacto do switchover para o novo nó não é identificado até a próxima votação da configuração de cluster.
+
+[NOTE]
+====
+Se uma operação de aquisição e giveback ocorrerem dentro do período de coleta de alterações de configuração de 15 minutos, talvez as estatísticas de desempenho não sejam exibidas de um nó para o outro.
+
+====
+
+
+== Funcionalidade de política de limite durante a realocação de agregados
+
+Se você mover um agregado de um nó para outro usando o `aggregate relocation start` comando, as políticas de limite único e de combinação serão mantidas em todos os objetos e a parte do nó da política de limite será aplicada ao novo nó.
+
+
+
+== Funcionalidade de política de limite durante o switchover do MetroCluster
+
+Os objetos que se movem de um cluster para outro cluster em uma configuração do MetroCluster não mantêm suas configurações de política de limite definidas pelo usuário. Se necessário, você pode aplicar políticas de limite nos volumes e LUNs movidos para o cluster de parceiros. Depois que um objeto é movido de volta para o cluster original, a política de limite definida pelo usuário é reaplicada automaticamente.
+
+xref:concept-volume-behavior-during-switchover-and-switchback.adoc[Comportamento do volume durante o switchover e o switchback]

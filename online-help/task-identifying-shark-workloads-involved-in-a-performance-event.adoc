@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-identifying-shark-workloads-involved-in-a-performance-event.html 
+sidebar: sidebar 
+keywords:  
+summary: No Unified Manager, você pode identificar quais workloads têm o maior desvio no uso de um componente de storage em contenção. A identificação desses workloads ajuda a determinar se esses workloads devem ser movidos para um cluster menos utilizado. 
+---
+= Identificação de cargas de trabalho do SHARK envolvidas em um evento de desempenho dinâmico
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+No Unified Manager, você pode identificar quais workloads têm o maior desvio no uso de um componente de storage em contenção. A identificação desses workloads ajuda a determinar se esses workloads devem ser movidos para um cluster menos utilizado.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Há um evento dinâmico de desempenho novo, reconhecido ou obsoleto.
+
+
+
+
+== Sobre esta tarefa
+
+A página de detalhes do evento exibe uma lista das cargas de trabalho definidas pelo usuário e definidas pelo sistema classificadas pelo uso mais alto do componente ou mais afetadas pelo evento. Os valores são baseados nos picos identificados pelo Unified Manager quando o evento foi detetado e analisado pela última vez.
+
+
+
+== Passos
+
+. Exiba a página *Detalhes do evento* para exibir informações sobre o evento.
+. Nos gráficos de latência de workload e atividade de workload, selecione *cargas de trabalho Shark*.
+. Passe o cursor sobre os gráficos para ver as principais cargas de trabalho definidas pelo usuário que estão afetando o componente e o nome da carga de trabalho do SHARK.
+

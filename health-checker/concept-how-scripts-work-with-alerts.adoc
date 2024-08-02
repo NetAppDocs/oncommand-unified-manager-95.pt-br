@@ -1,0 +1,47 @@
+---
+permalink: health-checker/concept-how-scripts-work-with-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode associar um alerta ao script para que o script seja executado quando um alerta for gerado para um evento no Unified Manager. Você pode usar os scripts para resolver problemas com objetos de armazenamento ou identificar quais objetos de armazenamento estão gerando os eventos. 
+---
+= Como os scripts funcionam com alertas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode associar um alerta ao script para que o script seja executado quando um alerta for gerado para um evento no Unified Manager. Você pode usar os scripts para resolver problemas com objetos de armazenamento ou identificar quais objetos de armazenamento estão gerando os eventos.
+
+Quando um alerta é gerado para um evento no Unified Manager, um e-mail de alerta é enviado aos destinatários especificados. Se você associou um alerta a um script, o script será executado. Você pode obter os detalhes dos argumentos passados para o script a partir do e-mail de alerta.
+
+O script usa os seguintes argumentos para execução:
+
+* -`eventID`
+* -`eventName`
+* -`eventSeverity`
+* -`eventSourceID`
+* -`eventSourceName`
+* -`eventSourceType`
+* -`eventState`
+* -`eventArgs`
+
+
+Você pode usar os argumentos em seus scripts e coletar informações de eventos relacionados ou modificar objetos de armazenamento.
+
+
+
+== Exemplo para obter argumentos de scripts
+
+[listing]
+----
+print "$ARGV[0] : $ARGV[1]\n"
+print "$ARGV[7] : $ARGV[8]\n"
+----
+Quando um alerta é gerado, este script é executado e a seguinte saída é exibida:
+
+[listing]
+----
+-eventID : 290
+-eventSourceID : 4138
+----

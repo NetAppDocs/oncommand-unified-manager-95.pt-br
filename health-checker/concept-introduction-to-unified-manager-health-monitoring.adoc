@@ -1,0 +1,22 @@
+---
+permalink: health-checker/concept-introduction-to-unified-manager-health-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: O Unified Manager ajuda você a monitorar um grande número de sistemas que executam o software ONTAP por meio de uma interface de usuário centralizada. A infraestrutura de servidor do Unified Manager oferece escalabilidade, capacidade de suporte e recursos aprimorados de monitoramento e notificação. 
+---
+= Introdução ao monitoramento de integridade do OnCommand Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager ajuda você a monitorar um grande número de sistemas que executam o software ONTAP por meio de uma interface de usuário centralizada. A infraestrutura de servidor do Unified Manager oferece escalabilidade, capacidade de suporte e recursos aprimorados de monitoramento e notificação.
+
+Os principais recursos do Unified Manager incluem monitoramento, alerta, gerenciamento de disponibilidade e capacidade dos clusters, gerenciamento de recursos de proteção, monitoramento de performance, configuração e gerenciamento de Infinite volumes, anotação de objetos de storage e agrupamento de dados de diagnóstico e envio para suporte técnico.
+
+Você pode usar o Unified Manager para monitorar os clusters. Quando ocorrem problemas no cluster, o Unified Manager notifica você sobre os detalhes de tais problemas por meio de eventos. Alguns eventos também fornecem uma ação corretiva que você pode tomar para corrigir os problemas. Você pode configurar alertas para eventos para que, quando os problemas ocorrem, você seja notificado por e-mail e traps SNMP.
+
+Você pode usar o Unified Manager para gerenciar objetos de storage em seu ambiente associando-os a anotações. Você pode criar anotações personalizadas e associar dinamicamente clusters, máquinas virtuais de armazenamento (SVMs) e volumes às anotações por meio de regras.
+
+Você também pode Planejar os requisitos de armazenamento dos objetos de cluster usando as informações fornecidas nos gráficos de capacidade e integridade para o respetivo objeto de cluster.

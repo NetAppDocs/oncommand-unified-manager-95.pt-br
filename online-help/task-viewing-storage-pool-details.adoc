@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-viewing-storage-pool-details.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode visualizar os detalhes do pool de storage para monitorar a integridade do pool de storage, o cache total e disponível e as alocações usadas e disponíveis. 
+---
+= Visualização dos detalhes do pool de armazenamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode visualizar os detalhes do pool de storage para monitorar a integridade do pool de storage, o cache total e disponível e as alocações usadas e disponíveis.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Passos
+
+. No painel de navegação à esquerda, clique em *Saúde* > *agregados*.
+. Clique em um nome de agregado.
++
+Os detalhes do agregado selecionado são exibidos.
+
+. Clique na guia *informações do disco*.
++
+São apresentadas informações detalhadas sobre o disco.
+
++
+[NOTE]
+====
+A tabela Cache é exibida somente quando o agregado selecionado estiver usando um pool de armazenamento.
+
+====
+. Na tabela Cache, mova o ponteiro sobre o nome do pool de armazenamento necessário.
++
+Os detalhes do pool de armazenamento são exibidos.
+
+

@@ -1,0 +1,54 @@
+---
+permalink: online-help/reference-add-annotation-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A caixa de diálogo Add Annotation (Adicionar anotação) permite criar anotações personalizadas que podem ser associadas a clusters, volumes e máquinas virtuais de armazenamento (SVMs) através de regras de anotação.' 
+---
+= Caixa de diálogo Add Annotation (Adicionar anotação)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Adicionar anotação permite criar anotações personalizadas que podem ser associadas a clusters, volumes e máquinas virtuais de armazenamento (SVMs) através de regras de anotação.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+* *Nome da anotação*
++
+Especifica o nome da anotação. Tem de introduzir um nome exclusivo para a anotação.
+
+* *Descrição*
++
+Especifica uma descrição significativa da anotação.
+
+
+
+
+
+== Valores de anotação
+
+* *Adicionar*
++
+Adiciona um novo valor à anotação selecionada.
+
+* *Excluir*
++
+Elimina o valor selecionado para uma anotação.
+
+
+
+
+
+== Botões de comando
+
+* *Salvar e fechar*
++
+Guarda a nova anotação e fecha a caixa de diálogo Adicionar anotação.
+
+* *Cancelar*
++
+Fecha a caixa de diálogo Adicionar anotação sem salvar as alterações.
+
+

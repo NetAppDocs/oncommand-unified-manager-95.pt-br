@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-introduction-to-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: O OnCommand Unified Manager permite que você monitore e gerencie a integridade e a performance dos sistemas de storage da ONTAP com uma única interface. 
+---
+= Introdução ao OnCommand Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O OnCommand Unified Manager permite que você monitore e gerencie a integridade e a performance dos sistemas de storage da ONTAP com uma única interface.
+
+O Unified Manager oferece os seguintes recursos:
+
+* Detecção, monitoramento e notificações de sistemas instalados com o software ONTAP.
+* Painéis para mostrar a capacidade, disponibilidade, proteção e integridade de performance do ambiente.
+* Infraestrutura de alertas, eventos e limites aprimorados.
+* Exibe gráficos detalhados que plotam a atividade do workload ao longo do tempo, incluindo IOPS (operações), Mbps (taxa de transferência), latência (tempo de resposta), utilização, capacidade de performance e taxa de cache.
+* Identifica cargas de trabalho que estão sobreusando componentes do cluster e as cargas de trabalho cujo desempenho é afetado pelo aumento da atividade.
+* Fornece ações corretivas sugeridas que podem ser executadas para resolver determinados incidentes e eventos.
+* Integra-se ao OnCommand Workflow Automation para executar fluxos de trabalho automatizados.
+

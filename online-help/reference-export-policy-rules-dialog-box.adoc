@@ -1,0 +1,36 @@
+---
+permalink: online-help/reference-export-policy-rules-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A caixa de diálogo Exportar regras de política exibe detalhes sobre as políticas de exportação, protocolos de autenticação e acesso ativados nos volumes que pertencem à máquina virtual de armazenamento (SVM). Você pode usar os filtros para personalizar a exibição de informações na lista de regras de política de exportação. Por padrão, as informações são classificadas com base na coluna de índice.' 
+---
+= Caixa de diálogo Exportar regras de política
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Exportar regras de política exibe detalhes sobre as políticas de exportação, protocolos de autenticação e acesso habilitados nos volumes que pertencem à máquina virtual de armazenamento (SVM). Você pode usar os filtros para personalizar a exibição de informações na lista de regras de política de exportação. Por padrão, as informações são classificadas com base na coluna de índice.
+
+* *Índice*
++
+Exibe o índice atribuído às regras de política de exportação. É um número único.
+
+* *Protocolos de Acesso*
++
+Exibe os protocolos ativados para as regras de política de exportação.
+
+* *Correspondência do cliente*
++
+Exibe os clientes que têm permissão para acessar dados nos volumes que pertencem ao SVM.
+
+* *Acesso somente leitura*
++
+Exibe o protocolo de autenticação usado para ler dados nos volumes que pertencem ao SVM.
+
+* *Acesso de leitura de escrita*
++
+Exibe o protocolo de autenticação usado para ler ou gravar dados nos volumes que pertencem ao SVM.
+
+

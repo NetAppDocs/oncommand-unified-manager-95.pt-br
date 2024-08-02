@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-analyzing-a-performance-incident-on-a-remote-cluster-in-a-metrocluster-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar o Unified Manager para analisar eventos dinâmicos de desempenho em um cluster remoto em uma configuração do MetroCluster. A análise ajuda a determinar se um evento no cluster remoto causou um evento no cluster de parceiros. 
+---
+= Analisando um evento de desempenho dinâmico para um cluster remoto em uma configuração do MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar o Unified Manager para analisar eventos dinâmicos de desempenho em um cluster remoto em uma configuração do MetroCluster. A análise ajuda a determinar se um evento no cluster remoto causou um evento no cluster de parceiros.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Você deve ter analisado um evento de desempenho em um cluster local em uma configuração do MetroCluster e obtido o tempo de deteção de eventos.
+* Você deve ter verificado a integridade do cluster local e do cluster de parceiros envolvidos no evento de desempenho e obtido o nome do cluster de parceiros.
+
+
+
+
+== Passos
+
+. Faça login na instância do Unified Manager que está monitorando o cluster de parceiros.
+. No painel de navegação esquerdo, clique em *Eventos* para exibir a lista de eventos.
+. No seletor *intervalo de tempo*, selecione *hora anterior* e, em seguida, clique em *aplicar intervalo*.
+. No seletor *Filtering*, selecione *Cluster* no menu suspenso à esquerda, digite o nome do cluster de parceiros no campo de texto e clique em *Apply Filter*.
++
+Se não houver eventos para o cluster selecionado na última hora, isso indica que o cluster não sofreu nenhum problema de desempenho durante o momento em que o evento foi detetado em seu parceiro.
+
+. Se o cluster selecionado tiver eventos detetados durante a última hora, compare a hora de deteção de eventos com a hora de deteção de eventos para o evento no cluster local.
++
+Se esses eventos envolverem cargas de trabalho bully causando contenção no componente Data Processing, um ou mais desses bullies podem ter causado o evento no cluster local. Você pode clicar no evento para analisá-lo e revisar as ações sugeridas para resolvê-lo na página de detalhes do evento.
+
++
+Se esses eventos não envolverem cargas de trabalho bully, eles não causarão o evento de desempenho no cluster local.
+
+

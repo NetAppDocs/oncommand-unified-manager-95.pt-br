@@ -1,0 +1,20 @@
+---
+permalink: install/concept-setting-up-unified-manager-for-high-availability-rhel.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode criar uma configuração de alta disponibilidade usando o Veritas Cluster Server (VCS). A configuração de alta disponibilidade fornece capacidade de failover e ajuda na recuperação de desastres.' 
+---
+= Configuração do Unified Manager para alta disponibilidade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar uma configuração de alta disponibilidade usando o Veritas Cluster Server (VCS). A configuração de alta disponibilidade fornece capacidade de failover e ajuda na recuperação de desastres.
+
+Em uma configuração de alta disponibilidade, apenas um nó permanece ativo de cada vez. Quando um nó falha, o serviço VCS reconhece esse evento e transfere imediatamente o controle para o outro nó. O segundo nó na configuração fica ativo e começa a fornecer serviços. O processo de failover é automático.
+
+Um cluster VCS configurado com o servidor Unified Manager consiste em dois nós, com cada nó executando a mesma versão do Unified Manager. Todos os dados do servidor do Unified Manager devem ser configurados para acesso a partir de um disco de dados compartilhado.
+
+Depois de instalar o Unified Manager no VCS, você deve configurar o Unified Manager para funcionar no ambiente VCS. Você pode usar scripts de configuração para configurar o Unified Manager para funcionar em ambientes VCS.

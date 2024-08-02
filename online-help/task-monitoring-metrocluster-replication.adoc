@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-monitoring-metrocluster-replication.html 
+sidebar: sidebar 
+keywords: MetroCluster Replication,Mirroring 
+summary: Você pode monitorar e diagnosticar a condição geral de integridade das conexões lógicas enquanto espelha os dados. Você pode identificar os problemas ou qualquer risco que interrompe o espelhamento de componentes de cluster, como agregados, nós e máquinas virtuais de storage. 
+---
+= Monitoramento da replicação do MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode monitorar e diagnosticar a condição geral de integridade das conexões lógicas enquanto espelha os dados. Você pode identificar os problemas ou qualquer risco que interrompe o espelhamento de componentes de cluster, como agregados, nós e máquinas virtuais de storage.
+
+
+
+== Antes de começar
+
+O cluster local e remoto na configuração do MetroCluster deve ser adicionado ao Unified Manager
+
+
+
+== Sobre esta tarefa
+
+Pode utilizar as informações apresentadas na página de detalhes do estado/cluster para corrigir quaisquer problemas de replicação.
+
+Se mover o ponteiro sobre o ícone, poderá visualizar informações detalhadas sobre o evento gerado.
+
+O Unified Manager usa alertas de integridade do sistema para monitorar o status dos componentes e a conectividade na configuração do MetroCluster.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *clusters*.
++
+É apresentada uma lista dos clusters monitorizados.
+
+. Na página de inventário *Saúde/clusters*, clique no nome do cluster para o qual deseja exibir os detalhes da replicação do MetroCluster e, em seguida, clique na guia *replicação MetroCluster*.
++
+A topologia da configuração do MetroCluster a ser replicada é exibida no local local na área de objeto do cluster correspondente com as informações sobre o local remoto onde os dados estão sendo espelhados.
+
+
+
+
+
+== Depois de terminar
+
+Se você descobrir problemas de espelhamento na configuração do MetroCluster, faça login no Gerenciador de sistema ou acesse a CLI do ONTAP para resolver os problemas.

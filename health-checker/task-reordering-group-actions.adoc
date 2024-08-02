@@ -1,0 +1,36 @@
+---
+permalink: health-checker/task-reordering-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode alterar a ordem das ações de grupo que devem ser aplicadas aos objetos de armazenamento em um grupo. As ações de grupo são aplicadas a objetos de armazenamento sequencialmente com base em sua classificação. A classificação mais baixa é atribuída à ação de grupo que você configurou por último. Você pode alterar a classificação da ação do grupo dependendo de seus requisitos. 
+---
+= Reordenar ações de grupo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar a ordem das ações de grupo que devem ser aplicadas aos objetos de armazenamento em um grupo. As ações de grupo são aplicadas a objetos de armazenamento sequencialmente com base em sua classificação. A classificação mais baixa é atribuída à ação de grupo que você configurou por último. Você pode alterar a classificação da ação do grupo dependendo de seus requisitos.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Você pode selecionar uma única linha ou várias linhas e, em seguida, executar várias operações de arrastar e soltar para alterar a classificação das ações de grupo. No entanto, você deve salvar as alterações para que a nova priorização seja refletida na grade de ações do grupo.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Gestão* > *grupos*.
+. Na guia *ações de grupo*, clique em *Reordenar*.
+. Na caixa de diálogo *Reordenar ações de grupo*, arraste e solte as linhas para reorganizar a sequência de ações de grupo conforme necessário.
+. Clique em *Salvar*.
+

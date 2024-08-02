@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-protection-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de proteção informam se um trabalho falhou ou foi abortado para que você possa monitorar problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de proteção
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de proteção informam se um trabalho falhou ou foi abortado para que você possa monitorar problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Proteção
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Falha no trabalho de proteção (ocumEvtProtectionJobTaskFailed)
+ a| 
+Incidente
+ a| 
+Serviço de volume ou storage
+ a| 
+Crítico
+
+
+
+ a| 
+Trabalho de proteção abortado(ocumEvtProtectionJobAborted)
+ a| 
+Risco
+ a| 
+Serviço de volume ou storage
+ a| 
+Aviso
+
+|===

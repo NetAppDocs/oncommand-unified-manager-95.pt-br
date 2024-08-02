@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-selecting-performance-charts-to-display.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A lista suspensa Choose charts (escolher gráficos) permite selecionar os tipos de gráficos de contador de desempenho a serem exibidos no painel Counter Charts (gráficos de contador). Isso permite que você visualize dados e contadores específicos, com base em seus requisitos de desempenho.' 
+---
+= Selecionar gráficos de desempenho a apresentar
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A lista suspensa Choose charts (escolher gráficos) permite selecionar os tipos de gráficos de contador de desempenho a serem exibidos no painel Counter Charts (gráficos de contador). Isso permite que você visualize dados e contadores específicos, com base em seus requisitos de desempenho.
+
+
+
+== Passos
+
+. No painel *Counter Charts*, clique na lista suspensa *Choose Charts*.
+. Adicionar ou remover gráficos:
++
+|===
+| Para... | Faça isso... 
+
+
+ a| 
+Adicionar ou remover gráficos individuais
+ a| 
+Clique nas caixas de seleção ao lado dos gráficos que deseja exibir ou ocultar
+
+
+
+ a| 
+Adicione todos os gráficos
+ a| 
+Clique em *Selecionar tudo*
+
+
+
+ a| 
+Remova todos os gráficos
+ a| 
+Clique em *Unselect All*
+
+|===
++
+Suas seleções de gráfico são exibidas no painel Cartas Contadoras. Observe que, à medida que você adiciona gráficos, os novos gráficos são inseridos no painel gráficos de contador para corresponder à ordem dos gráficos listados na lista suspensa escolher gráficos. A seleção de gráficos adicionais pode exigir rolagem adicional.
+
+

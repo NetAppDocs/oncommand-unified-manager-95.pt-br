@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-annotations-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Pode visualizar e gerir todas as suas anotações a partir da página Gestão/Anotações. Também pode configurar regras de anotação para os objetos de armazenamento a partir do separador regras de anotação. 
+---
+= Descrição das janelas de Anotações e caixas de diálogo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode visualizar e gerir todas as suas anotações a partir da página Gestão/Anotações. Também pode configurar regras de anotação para os objetos de armazenamento a partir do separador regras de anotação.

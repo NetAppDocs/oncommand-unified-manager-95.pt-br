@@ -1,0 +1,65 @@
+---
+permalink: online-help/reference-latency-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: Os gráficos de contador de latência do Performance Explorer exibem o número de milissegundos necessários para que o objeto de armazenamento selecionado responda às solicitações do aplicativo. 
+---
+= Gráficos de contador de desempenho de latência
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os gráficos de contador de latência do Performance Explorer exibem o número de milissegundos necessários para que o objeto de armazenamento selecionado responda às solicitações do aplicativo.
+
+A janela pop-up que é exibida quando o cursor está na área do gráfico mostra os valores específicos do contador em momentos específicos.
+
+A parte inferior da página do gráfico exibe informações sobre a latência mínima, máxima, média e percentil 95th para o intervalo de tempo selecionado.
+
+Há três tipos de gráficos de latência disponíveis:
+
+
+
+== Latência - Gráfico de contador total
+
+Exibe o número de milissegundos necessários para responder às solicitações do aplicativo. Os valores médios de latência são ponderados por e/S.
+
+
+
+== Latência - Gráfico do contador de avarias
+
+Exibe os mesmos dados de latência separados em leitura, gravação e outra latência.
+
+Essa opção de gráfico se aplica quando o objeto selecionado é SVM, nó, agregado, volume ou LUN.
+
+
+
+== Latência - Gráfico do contador de componentes do cluster
+
+Exibe os dados de latência por componente do cluster. Isso permite identificar o componente do cluster responsável pela latência. Ao passar o cursor no gráfico, você pode visualizar a contribuição exata de latência para cada componente.
+
+Essa opção de gráfico se aplica quando o objeto selecionado é SVM, nó, agregado, volume ou LUN.
+
+
+
+== *Botão Zoom View*
+
+Apresenta uma vista ampliada dos dados da carta de contador.
+
+* Eventos
++
+A ocorrência de eventos críticos, de aviso e informativos é indicada nas linhas de tempo acima dos gráficos.
+
+* Limites
++
+A linha horizontal tracejada indica o valor limite de aviso de utilização definido no Unified Manager.
+
++
+A linha vermelha contínua indica o valor de limite crítico de utilização definido no Unified Manager.
+
+* Contadores
++
+Os contadores no painel esquerdo mostram quais valores de contador estão sendo exibidos. Desmarcar ou selecionar o image:../media/eye-icon.gif[""] que está associado a um contador oculta e mostra as informações do contador do gráfico e pode ajudar ao comparar a latência do objeto.
+
+

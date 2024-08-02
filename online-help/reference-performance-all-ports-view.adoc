@@ -1,0 +1,75 @@
+---
+permalink: online-help/reference-performance-all-ports-view.html 
+sidebar: sidebar 
+keywords:  
+summary: A página de inventário de desempenho/portas exibe uma visão geral dos eventos de desempenho, dados e informações de configuração de cada porta que está sendo monitorada por uma instância do Unified Manager. Isso permite que você monitore rapidamente o desempenho de suas portas e solucione problemas de desempenho e eventos de limite. 
+---
+= Página de inventário de desempenho/portas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página de inventário de desempenho/portas exibe uma visão geral dos eventos de desempenho, dados e informações de configuração de cada porta que está sendo monitorada por uma instância do Unified Manager. Isso permite que você monitore rapidamente o desempenho de suas portas e solucione problemas de desempenho e eventos de limite.
+
+[NOTE]
+====
+Os valores do contador de desempenho são exibidos apenas para portas físicas. Os valores de contador não são exibidos para VLANs ou grupos de interface.
+
+====
+Dependendo de como você navega para esta página, o topo da página pode exibir um título diferente para indicar se a lista foi filtrada. Por exemplo, ao exibir todas as portas, o título é "portas". Ao exibir um subconjunto de portas retornadas da página políticas de limite, o título é "'portas nas quais a política: Port_IOPS é aplicada".
+
+Os botões ao longo da parte superior da página permitem que você realize pesquisas para localizar dados específicos, criar e aplicar filtros para restringir a lista de dados exibidos, exportar os dados da página para um `.csv` arquivo e adicionar ou remover colunas da página.
+
+Por padrão, os objetos nas páginas de inventário de objetos são classificados com base na criticidade do evento de desempenho do objeto. Os objetos com eventos críticos são listados primeiro e os objetos com eventos de aviso são listados em segundo lugar. Isso fornece uma indicação visual imediata dos problemas que devem ser resolvidos. Os valores dos contadores de desempenho baseiam-se numa média das 72 horas anteriores ou mais de dados, conforme indicado na página. Você pode clicar no botão Atualizar para atualizar os dados de inventário de objetos.
+
+Você pode atribuir políticas de limite de desempenho a, ou limpar políticas de limite de, qualquer objeto nas páginas de inventário de objetos usando os botões *Assign Performance Threshold Policy* e *Clear PerformanceThreshold Policy*.
+
+
+
+== Colunas da página de inventário de portas
+
+A página de inventário de desempenho/portas contém as seguintes colunas para cada porta:
+
+* *Status*
++
+Um objeto saudável sem eventos ativos exibe um ícone de marca de seleção verde (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]). Se o objeto tiver um evento ativo, o ícone do indicador de evento identifica a gravidade do evento: Os eventos críticos são vermelhos (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"]), os eventos de erro são laranja (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ) e os eventos de aviso são amarelos (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"]).
+
+* *Porto*
++
+Você pode clicar no nome da porta para navegar até a página de detalhes de desempenho dessa porta.
+
+* *Tipo*
++
+O tipo de porta é Network (rede) ou Fibre Channel Protocol (FCP).
+
+* *Mbps*
++
+A taxa de transferência na porta, medida em megabytes por segundo.
+
+* *Utilização*
++
+A porcentagem da largura de banda disponível da porta que está sendo usada atualmente.
+
+* *Cluster*
++
+O cluster ao qual a porta pertence. Você pode clicar no nome do cluster para navegar até a página de detalhes do cluster.
+
+* *Nó*
++
+O nó ao qual a porta pertence. Você pode clicar no nome do nó para navegar até a página de detalhes desse nó.
+
+* *Velocidade*
++
+A taxa máxima de transferência de dados para a porta.
+
+* *Função*
++
+A função de porta de rede: Dados ou Cluster. As portas FCP não podem ter uma função e a função é exibida como N/A.
+
+* *Política de limite*
++
+A política de limite de performance definida pelo usuário, ou políticas, que estão ativas neste objeto de storage. Você pode posicionar o cursor sobre os nomes de políticas que contêm uma elipse (...) para exibir o nome completo da política ou a lista de nomes de políticas atribuídos. Os botões *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* permanecem desativados até selecionar um ou mais objetos clicando nas caixas de seleção localizadas à esquerda.
+
+

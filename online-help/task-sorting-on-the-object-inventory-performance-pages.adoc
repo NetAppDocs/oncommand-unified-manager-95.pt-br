@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-sorting-on-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode classificar todos os dados em páginas de desempenho de inventário de objetos por qualquer coluna em ordem crescente ou decrescente. Isso permite localizar rapidamente dados de inventário de objetos, o que é útil ao examinar o desempenho ou iniciar um processo de solução de problemas. 
+---
+= Classificação nas páginas desempenho do inventário de objetos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode classificar todos os dados em páginas de desempenho de inventário de objetos por qualquer coluna em ordem crescente ou decrescente. Isso permite localizar rapidamente dados de inventário de objetos, o que é útil ao examinar o desempenho ou iniciar um processo de solução de problemas.
+
+
+
+== Sobre esta tarefa
+
+A coluna selecionada para classificação é indicada por um nome de cabeçalho de coluna realçado e por um ícone de seta que indica a direção de classificação à direita do nome. Uma seta para cima indica a ordem ascendente; uma seta para baixo indica a ordem descendente. A ordem de classificação padrão é por *Status* (criticidade do evento) em ordem decrescente, com os eventos de desempenho mais críticos listados primeiro.
+
+
+
+== Passos
+
+. Você pode clicar no nome de uma coluna para alternar a ordem de classificação da coluna em ordem ascendente ou descendente.
++
+O conteúdo da página desempenho de inventário de objetos é classificado em ordem crescente ou decrescente, com base na coluna selecionada.
+
+

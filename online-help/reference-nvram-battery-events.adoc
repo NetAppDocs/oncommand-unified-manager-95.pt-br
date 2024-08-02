@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-nvram-battery-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de bateria NVRAM fornecem informações sobre o estado das suas baterias para que possa monitorizar potenciais problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos da bateria do NVRAM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de bateria NVRAM fornecem informações sobre o estado das suas baterias para que possa monitorizar potenciais problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Bateria de NVRAM baixa (ocumEvtNvramBatteryLow)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Aviso
+
+
+
+ a| 
+NVRAM bateria descarregada (ocumEvtNvramBatteryDischarted)
+ a| 
+Risco
+ a| 
+Nó
+ a| 
+Erro
+
+
+
+ a| 
+NVRAM bateria excessivamente carregada (ocumEvtNvramBatteryOverCharged)
+ a| 
+Incidente
+ a| 
+Nó
+ a| 
+Crítico
+
+|===

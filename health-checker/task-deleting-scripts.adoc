@@ -1,0 +1,31 @@
+---
+permalink: health-checker/task-deleting-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode excluir um script do Unified Manager quando o script não for mais necessário ou válido. 
+---
+= Eliminar scripts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir um script do Unified Manager quando o script não for mais necessário ou válido.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* O script não deve estar associado a um alerta.
+
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Scripts* no menu Gerenciamento à esquerda.
+. Na página *Gerenciamento/Scripts* , selecione o script que deseja excluir e clique em *Excluir*.
+. Na caixa de diálogo *Aviso*, confirme a exclusão clicando em *Sim*.
+

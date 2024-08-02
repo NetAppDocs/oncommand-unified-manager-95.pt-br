@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-infinite-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: Um Infinite volume é uma unidade de armazenamento lógico que você pode usar para fornecer um contentor de dados grande e dimensionável com um namespace único e um único ponto de montagem. Entender alguns dos conceitos básicos do Infinite volumes ajuda você a monitorar e gerenciar seus SVMs com Infinite volume. 
+---
+= Entendendo Infinite volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um Infinite volume é uma unidade de armazenamento lógico que você pode usar para fornecer um contentor de dados grande e dimensionável com um namespace único e um único ponto de montagem. Entender alguns dos conceitos básicos do Infinite volumes ajuda você a monitorar e gerenciar seus SVMs com Infinite volume.

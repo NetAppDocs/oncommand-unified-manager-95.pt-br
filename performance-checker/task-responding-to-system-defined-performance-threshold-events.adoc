@@ -1,0 +1,39 @@
+---
+permalink: performance-checker/task-responding-to-system-defined-performance-threshold-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar o Unified Manager para investigar eventos de desempenho causados por um contador de desempenho que cruza um limite de aviso definido pelo sistema. Você também pode usar o Unified Manager para verificar a integridade do componente do cluster para ver se os eventos recentes detetados no componente contribuíram para o evento de desempenho. 
+---
+= Resposta a eventos de limite de desempenho definido pelo sistema
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar o Unified Manager para investigar eventos de desempenho causados por um contador de desempenho que cruza um limite de aviso definido pelo sistema. Você também pode usar o Unified Manager para verificar a integridade do componente do cluster para ver se os eventos recentes detetados no componente contribuíram para o evento de desempenho.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Deve haver eventos de desempenho novos ou obsoletos.
+
+
+
+
+== Passos
+
+. Exiba a página de detalhes do *evento* para exibir informações sobre o evento.
+. Revise a *Descrição*, que descreve a violação de limite que causou o evento.
++
+Por exemplo, a mensagem "'valor de utilização do nó de 90 % desencadeou um evento DE AVISO baseado na definição de limite de 85 %'" indica que ocorreu um evento de aviso de utilização do nó para o objeto de cluster.
+
+. Anote o *Event Trigger Time* para que você possa investigar se outros eventos podem ter ocorrido ao mesmo tempo que poderiam ter contribuído para este evento.
+. Em *Diagnóstico do sistema*, reveja a breve descrição do tipo de análise que a política definida pelo sistema está a executar no objeto de cluster.
++
+Para alguns eventos, é apresentado um ícone verde ou vermelho junto do diagnóstico para indicar se foi encontrado um problema nesse diagnóstico específico. Para outros tipos de gráficos de contador de eventos definidos pelo sistema, é apresentado o desempenho do objeto.
+
+. Em *ações sugeridas*, clique no link *Ajude-me a fazer isso* para exibir as ações sugeridas que você pode executar para tentar resolver o evento de desempenho por conta própria.
+

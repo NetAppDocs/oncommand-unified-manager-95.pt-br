@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-customizing-the-qtree-capacity-and-utilization-report-to-display-qtrees-that-have-breached-the-disk-soft-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar o relatório de capacidade e utilização do Qtree para exibir qtrees que violaram o limite de software do disco. Você pode filtrar e classificar por disco usado, limite de disco rígido e limite de software do disco. 
+---
+= Personalizar o relatório de capacidade e utilização do Qtree para exibir qtrees que violaram o limite de software do disco
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório de capacidade e utilização do Qtree para exibir qtrees que violaram o limite de software do disco. Você pode filtrar e classificar por disco usado, limite de disco rígido e limite de software do disco.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por SVM, cluster ou volume, execute o seguinte procedimento:
++
+.. Clique nas colunas que precisam ser desagrupadas.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para filtrar qtrees que não têm um limite de disco rígido ilimitado, clique na coluna *limite de disco rígido* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
++
+.. Na lista suspensa *condição*, selecione *não igual a*.
+.. Clique em *Select Values* e selecione *Unlimited*.
+.. Clique em *OK*.
+
+
+. Para filtrar qtrees que não têm um limite de software de disco ilimitado, clique na coluna *Disk Soft Limit* e abra a caixa de diálogo *Filter* clicando no image:../media/click-to-filter.gif[""] ícone.
++
+.. Na lista suspensa *condição*, selecione *não igual a*.
+.. Clique em *Select Values* e selecione *Unlimited*.
+.. Clique em *OK*.
+
+
+. Para adicionar uma coluna para qtrees que violaram o limite de software do disco, execute as seguintes etapas:
++
+.. Clique na coluna *limite de software do disco*, clique no image:../media/click-to-see-menu.gif[""] ícone e selecione *coluna* > *Nova coluna calculada*
+.. Na caixa de diálogo *Nova coluna computada*, digite `Breached Disk Soft Limit Capacity` o campo *rótulo da coluna*.
+.. Na lista Selecionar categoria, selecione *texto*.
+.. Na lista suspensa *Selecionar função*, selecione *Avançado*.
+.. No campo *Enter Expression*, `IF(([qtreeDiskUsedPercent] *[diskLimit]/100 > [softDiskLimit]), "Yes", "No")` digite .
+.. Clique em *OK*.
+
+
+. Para filtrar qtrees que violaram o limite do disco flexível, clique na coluna *capacidade de limite flexível do disco violado* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
++
+.. Na lista suspensa *condição*, selecione *igual a*.
+.. Clique em *Select values* (Selecionar valores) e selecione *Yes* (Sim).
+.. Clique em *OK*.
+
+
+

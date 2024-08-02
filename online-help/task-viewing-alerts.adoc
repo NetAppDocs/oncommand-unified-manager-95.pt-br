@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: Pode ver a lista de alertas criados para vários eventos a partir da página Configuração/alertas. Você também pode exibir propriedades de alerta, como a descrição do alerta, o método e a frequência da notificação, os eventos que acionam o alerta, os destinatários de e-mail dos alertas e os recursos afetados, como clusters, agregados e volumes. 
+---
+= Visualização de alertas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode ver a lista de alertas criados para vários eventos a partir da página Configuração/alertas. Você também pode exibir propriedades de alerta, como a descrição do alerta, o método e a frequência da notificação, os eventos que acionam o alerta, os destinatários de e-mail dos alertas e os recursos afetados, como clusters, agregados e volumes.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Configuration* > *Alerting*.
++
+A lista de alertas é exibida na página Configuração/alertas.
+
+

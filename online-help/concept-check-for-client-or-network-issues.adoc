@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-check-for-client-or-network-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: Quando os clientes conectados a volumes em um cluster aumentam suas solicitações de e/S, o cluster precisa trabalhar mais para atender à demanda. O aumento da demanda no cluster pode colocar um componente na contenção, aumentar a latência dos workloads que o usam e acionar um evento no Unified Manager. 
+---
+= Verifique se há problemas de cliente ou rede
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando os clientes conectados a volumes em um cluster aumentam suas solicitações de e/S, o cluster precisa trabalhar mais para atender à demanda. O aumento da demanda no cluster pode colocar um componente na contenção, aumentar a latência dos workloads que o usam e acionar um evento no Unified Manager.
+
+Na página de detalhes do evento, a seção Diagnóstico do sistema exibe as cargas de trabalho de volume superior usando o componente em contenção. Se você sabe qual cliente está acessando um volume específico, você pode ir para o cliente para determinar se o hardware do cliente ou um aplicativo não está operando como esperado ou está fazendo mais trabalho do que o habitual. Poderá ser necessário contactar o administrador do cliente ou o fornecedor da aplicação para obter assistência.
+
+Você pode verificar sua infraestrutura de rede para determinar se há problemas de hardware, gargalos ou cargas de trabalho concorrentes que podem ter causado solicitações de e/S entre o cluster e os clientes conetados a um desempenho mais lento do que o esperado. Poderá ser necessário contactar o administrador da rede para obter assistência.

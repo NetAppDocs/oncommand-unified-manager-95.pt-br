@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-snapshot-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos de snapshot fornecem informações sobre o status dos snapshots, o que permite monitorar os snapshots em busca de possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento, o nome da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Eventos de snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos de snapshot fornecem informações sobre o status dos snapshots, o que permite monitorar os snapshots em busca de possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento, o nome da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Disponibilidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Eliminação automática de instantâneos desativada (não aplicável)
+ a| 
+Evento
+ a| 
+Volume
+ a| 
+Informações
+
+
+
+ a| 
+Eliminação automática de instantâneos ativada (não aplicável)
+ a| 
+Evento
+ a| 
+Volume
+ a| 
+Informações
+
+
+
+ a| 
+Configuração de eliminação automática de instantâneos Modificada (não aplicável)
+ a| 
+Evento
+ a| 
+Volume
+ a| 
+Informações
+
+|===

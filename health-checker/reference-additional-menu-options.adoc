@@ -1,0 +1,54 @@
+---
+permalink: health-checker/reference-additional-menu-options.html 
+sidebar: sidebar 
+keywords:  
+summary: As opções de menu a seguir permitem executar várias tarefas administrativas no servidor do Unified Manager. 
+---
+= Opções de menu adicionais
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+As opções de menu a seguir permitem executar várias tarefas administrativas no servidor do Unified Manager.
+
+Estão disponíveis as seguintes opções de menu:
+
+* *Redefinir certificado de servidor*
++
+Regenera o certificado do servidor HTTPS.
+
++
+Você pode regenerar o certificado do servidor na GUI do Unified Manager clicando em *image:../media/clusterpage-settings-icon.gif[""] > *certificado HTTPS* > *Regenerate HTTPS Certificate*.
+
+* * Desativar autenticação SAML*
++
+Desativa a autenticação SAML para que o provedor de identidade (IDP) não forneça mais autenticação de logon para usuários que acessam a GUI do Unified Manager. Essa opção de console geralmente é usada quando um problema com o servidor IDP ou a configuração SAML impede que os usuários acessem a GUI do Unified Manager.
+
+* *Fornecedor de dados Externo*
++
+Fornece opções para conetar o Unified Manager a um provedor de dados externo. Depois de estabelecer a conexão, os dados de desempenho são enviados para um servidor externo para que os especialistas em desempenho de storage possam traçar as métricas de desempenho usando software de terceiros. São apresentadas as seguintes opções:
+
++
+** *Configuração do servidor de exibição*--exibe as configurações atuais de conexão e configuração para um provedor de dados externo.
+** *Adicionar / Modificar conexão do servidor*--permite que você insira novas configurações de conexão para um provedor de dados externo ou altere as configurações existentes.
+** *Modificar configuração do servidor*--permite que você insira novas configurações para um provedor de dados externo ou altere as configurações existentes.
+** *Excluir conexão do servidor*--exclui a conexão com um provedor de dados externo.
++
+Depois que a conexão é excluída, o Unified Manager perde sua conexão com o servidor externo.
+
+
+
+* *Configuração do intervalo de polling de desempenho*
++
+Fornece uma opção para configurar com que frequência o Unified Manager coleta dados estatísticos de desempenho dos clusters. O intervalo de coleta padrão é de cinco minutos.
+
++
+Você pode alterar esse intervalo para dez ou quinze minutos se descobrir que coleções de clusters grandes não estão sendo concluídas no tempo.
+
+* *Saída*
++
+Sai do menu da consola de manutenção.
+
+

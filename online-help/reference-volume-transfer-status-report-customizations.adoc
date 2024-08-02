@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-status-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode personalizar o relatório Status da transferência de volume (Histórico) para exibir e analisar informações sobre transferências de volume em intervalos de tempo específicos. Você pode usar filtros para exibir detalhes de transferência de volume entre duas datas.' 
+---
+= Personalizações do relatório de Status da transferência de volume (Histórico)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório Status da transferência de volume (Histórico) para exibir e analisar informações sobre transferências de volume em intervalos de tempo específicos. Você pode usar filtros para exibir detalhes de transferência de volume entre duas datas.

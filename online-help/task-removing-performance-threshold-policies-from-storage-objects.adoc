@@ -1,0 +1,75 @@
+---
+permalink: online-help/task-removing-performance-threshold-policies-from-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode remover uma política de limite de performance definida pelo usuário de um objeto de storage quando não quiser mais que o Unified Manager monitore o valor do contador de performance. 
+---
+= Remoção de políticas de limite de performance de objetos de storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode remover uma política de limite de performance definida pelo usuário de um objeto de storage quando não quiser mais que o Unified Manager monitore o valor do contador de performance.
+
+
+
+== Antes de começar
+
+Tem de ter a função de Administrador do OnCommand.
+
+
+
+== Sobre esta tarefa
+
+Você pode remover apenas uma política de cada vez de um objeto selecionado.
+
+Você pode remover uma política de limite de vários objetos de armazenamento selecionando mais de um objeto na lista.
+
+
+
+== Passos
+
+. Na página *inventário* de qualquer objeto de armazenamento, selecione um ou mais objetos que tenham pelo menos uma política de limite de desempenho aplicada.
++
+|===
+| Para limpar limites de... | Faça isso... 
+
+
+ a| 
+Um único objeto
+ a| 
+Marque a caixa de seleção à esquerda desse objeto.
+
+
+
+ a| 
+Vários objetos
+ a| 
+Marque a caixa de seleção à esquerda de cada objeto.
+
+
+
+ a| 
+Todos os objetos na página
+ a| 
+Clique image:../media/select-dropdown-65-png.gif[""] e selecione *Selecionar todos os objetos nesta página*.
+
+
+
+ a| 
+Todos os objetos do mesmo tipo
+ a| 
+Clique image:../media/select-dropdown-65-png.gif[""] e selecione *Selecionar todos os objetos*.
+
+|===
+. Clique em *Limpar política de limite de desempenho*.
++
+A página Limpar política de limite é exibida, mostrando uma lista de políticas de limite que estão atualmente atribuídas aos objetos de armazenamento.
+
+. Selecione a política de limite que deseja remover dos objetos e clique em *Limpar Política*.
++
+Quando você seleciona uma política de limite, os detalhes da política são exibidos para que você possa confirmar que selecionou a política apropriada.
+
+

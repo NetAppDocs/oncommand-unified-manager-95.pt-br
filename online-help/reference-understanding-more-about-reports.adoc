@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-understanding-more-about-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Pode utilizar a opção para executar, eliminar, exportar e importar relatórios. Você também pode criar relatórios personalizados e salvar o relatório personalizado. Você pode executar operações adicionais, como filtragem, classificação, agrupamento e formatação. 
+---
+= Compreender mais sobre relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode utilizar a opção para executar, eliminar, exportar e importar relatórios. Você também pode criar relatórios personalizados e salvar o relatório personalizado. Você pode executar operações adicionais, como filtragem, classificação, agrupamento e formatação.

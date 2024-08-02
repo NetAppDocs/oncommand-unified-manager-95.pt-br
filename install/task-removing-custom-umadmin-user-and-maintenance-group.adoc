@@ -1,0 +1,29 @@
+---
+permalink: install/task-removing-custom-umadmin-user-and-maintenance-group.html 
+sidebar: sidebar 
+keywords:  
+summary: Se você criou um diretório inicial personalizado para definir seu próprio usuário umadmin e conta de manutenção antes de instalar o Unified Manager, remova esses itens depois de desinstalar o Unified Manager. 
+---
+= Removendo o usuário personalizado umadmin e o grupo de manutenção
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você criou um diretório inicial personalizado para definir seu próprio usuário umadmin e conta de manutenção antes de instalar o Unified Manager, remova esses itens depois de desinstalar o Unified Manager.
+
+
+
+== Sobre esta tarefa
+
+A desinstalação padrão do Unified Manager não remove uma conta de usuário e manutenção personalizada do umadmin. Você deve excluir esses itens manualmente.
+
+
+
+== Passos
+
+. Faça login como usuário raiz no servidor Red Hat Enterprise Linux.
+. Excluir o usuário umadmin:``userdel umadmin``
+. Eliminar o grupo de manutenção:``groupdel maintenance``
+

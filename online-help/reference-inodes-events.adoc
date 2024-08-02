@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-inodes-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Os eventos do inode fornecem informações quando o inode está cheio ou quase cheio para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade. 
+---
+= Inodes eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos do inode fornecem informações quando o inode está cheio ou quase cheio para que você possa monitorar possíveis problemas. Os eventos são agrupados por área de impactos e incluem o nome do evento e da armadilha, o nível de impactos, o tipo de origem e a gravidade.
+
+
+
+== Área de impactos: Capacidade
+
+|===
+| Nome do evento (Nome da armadilha) | Nível de impactos | Tipo de origem | Gravidade 
+
+
+ a| 
+Inodes quase Full (ocumEvtInodesAlmostFull)
+ a| 
+Risco
+ a| 
+Volume
+ a| 
+Aviso
+
+
+
+ a| 
+Inodes Full (ocumEvtInodesFull)
+ a| 
+Risco
+ a| 
+Volume
+ a| 
+Erro
+
+|===

@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-how-the-discovery-process-works.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Depois de adicionar um cluster ao Unified Manager, o servidor descobre os objetos do cluster e os adiciona ao banco de dados. Entender como funciona o processo de descoberta ajuda você a gerenciar os clusters da sua organização e seus objetos. 
+---
+= Como funciona o processo de descoberta de cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de adicionar um cluster ao Unified Manager, o servidor descobre os objetos do cluster e os adiciona ao banco de dados. Entender como funciona o processo de descoberta ajuda você a gerenciar os clusters da sua organização e seus objetos.
+
+O intervalo de monitorização para a recolha de informações de configuração do cluster é de 15 minutos. Por exemplo, depois de adicionar um cluster, leva 15 minutos para exibir os objetos de cluster na IU do Unified Manager. Esse período de tempo também é verdadeiro ao fazer alterações em um cluster. Por exemplo, se você adicionar dois novos volumes a um SVM em um cluster, verá esses novos objetos na IU após o próximo intervalo de polling, que pode ser de até 15 minutos.
+
+A imagem a seguir ilustra o processo de descoberta:
+
+image::../media/oncommand-discovery-process.png[Processo de descoberta de cluster para um aplicativo OnCommand]
+
+Depois que todos os objetos de um novo cluster forem descobertos, o Unified Manager começará a coletar dados históricos de desempenho dos 15 dias anteriores. Essas estatísticas são coletadas usando a funcionalidade de coleta de continuidade de dados. Esse recurso fornece mais de duas semanas de informações de desempenho para um cluster imediatamente após ser adicionado. Após a conclusão do ciclo de coleta de continuidade de dados, os dados de desempenho do cluster em tempo real são coletados, por padrão, a cada cinco minutos.
+
+[NOTE]
+====
+Como a coleta de dados de desempenho de 15 dias é intensiva em CPU, sugere-se que você alterne a adição de novos clusters para que as pesquisas de coleta de continuidade de dados não sejam executadas em muitos clusters ao mesmo tempo.
+
+====

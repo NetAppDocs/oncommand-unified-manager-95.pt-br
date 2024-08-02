@@ -1,0 +1,32 @@
+---
+permalink: online-help/reference-advanced-destination-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo Configurações avançadas de destino para ativar as configurações de garantia de espaço em um volume de destino. Você pode selecionar configurações avançadas quando a garantia de espaço estiver desativada na origem, mas deseja que ela seja ativada no destino. As configurações de deduplicação, compactação e crescimento automático em um relacionamento SnapMirror são herdadas do volume de origem e não podem ser alteradas. 
+---
+= Caixa de diálogo Configurações avançadas de destino
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo Configurações avançadas de destino para ativar as configurações de garantia de espaço em um volume de destino. Você pode selecionar configurações avançadas quando a garantia de espaço estiver desativada na origem, mas deseja que ela seja ativada no destino. As configurações de deduplicação, compactação e crescimento automático em um relacionamento SnapMirror são herdadas do volume de origem e não podem ser alteradas.
+
+
+
+== Garantia de espaço
+
+Garante que espaço suficiente seja alocado no volume de destino para que as transferências de dados sejam sempre bem-sucedidas. A configuração de garantia de espaço pode ser uma das seguintes:
+
+* Ficheiro
++
+A garantia de espaço para arquivos não está disponível no ONTAP 8,3.
+
+* Volume
+* Nenhum
+
+
+Por exemplo, você pode ter um volume de 200 GB que contém arquivos totalizando 50 GB; no entanto, esses arquivos contêm apenas 10 GB de dados. A garantia de volume aloca 200 GB para o volume de destino, independentemente do conteúdo na origem. Garantia de arquivo aloca 50 GB para garantir que espaço suficiente seja reservado para arquivos de origem no destino; selecionar *nenhum* neste cenário significa que apenas 10 GB é alocado no destino para o espaço real usado pelos dados de arquivo na origem.
+
+A garantia de espaço é definida como volume por padrão.

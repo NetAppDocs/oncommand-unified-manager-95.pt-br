@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-volumes-with-noncompliant-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: É possível personalizar o relatório capacidade de volume e utilização para exibir volumes que não estejam em conformidade com as políticas da empresa. Por exemplo, se você precisar ter a deduplicação ativada em todos os volumes, poderá criar um relatório listando todos os volumes em que a deduplicação está desativada. 
+---
+= Personalizar o relatório de capacidade de volume e utilização para exibir volumes com configuração não compatível
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível personalizar o relatório capacidade de volume e utilização para exibir volumes que não estejam em conformidade com as políticas da empresa. Por exemplo, se você precisar ter a deduplicação ativada em todos os volumes, poderá criar um relatório listando todos os volumes em que a deduplicação está desativada.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Para remover o agrupamento por SVM, cluster ou volume, execute o seguinte procedimento:
++
+.. Clique na coluna que precisa ser desagrupada.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Ocultar todas as colunas, exceto as colunas Cluster, Storage Virtual Machine, volume, deduplicação e economia de espaço de deduplicação (GB):
++
+.. Clique na coluna e clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. No menu, selecione *coluna* > *Ocultar coluna*.
+
+
+. Para filtrar volumes que a desduplicação foi desativada, clique na coluna *desduplicação* e abra a caixa de diálogo *filtro* clicando no image:../media/click-to-filter.gif[""] ícone.
+. Na lista *condição*, selecione *igual a*.
+. Clique em *Select Values* (Selecionar valores) e selecione *Disabled* (Desativado).
+. Clique em *OK*.
+. Para classificar volumes com base na economia de espaço de deduplicação, clique na coluna *economia de espaço de deduplicação (GB)* e clique no image:../media/sort-desc.gif[""] ícone.
+

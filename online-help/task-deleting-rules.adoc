@@ -1,0 +1,47 @@
+---
+permalink: online-help/task-deleting-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode excluir uma regra de uma política de dados quando ela não for mais necessária. Por exemplo, você pode querer excluir uma regra em um diretório específico que não é mais válida. 
+---
+= Eliminar regras
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir uma regra de uma política de dados quando ela não for mais necessária. Por exemplo, você pode querer excluir uma regra em um diretório específico que não é mais válida.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+A guia Política de dados fica visível apenas para uma SVM com Infinite volume.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Na página de inventário *máquinas virtuais de integridade/storage*, selecione um SVM apropriado.
+. Clique em *Política de dados*.
++
+A lista de regras na política de dados para o SVM selecionado com Infinite volume é exibida.
+
+. Selecione a regra que deseja excluir e clique em *Excluir*.
++
+[NOTE]
+====
+Não é possível excluir a regra padrão.
+
+====
+. Visualize quaisquer outras alterações feitas à política de dados.
+. Clique em *Ativar* para ativar as alterações nas propriedades da regra no SVM.
+

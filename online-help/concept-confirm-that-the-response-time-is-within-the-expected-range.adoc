@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-confirm-that-the-response-time-is-within-the-expected-range.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Quando um componente de cluster está na contenção, as cargas de trabalho de volume que o usam podem ter reduzido o tempo de resposta (latência). Você pode analisar a latência de cada workload de vítima no componente em contenção para confirmar que sua latência real está dentro do intervalo esperado. Você também pode clicar em um nome de volume para exibir os dados históricos do volume.' 
+---
+= Confirmando que a latência está dentro do intervalo esperado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando um componente do cluster está na contenção, os workloads de volume que o usam podem ter reduzido o tempo de resposta (latência). Você pode analisar a latência de cada workload de vítima no componente em contenção para confirmar que sua latência real está dentro do intervalo esperado. Você também pode clicar em um nome de volume para exibir os dados históricos do volume.
+
+Se o evento de desempenho estiver no estado obsoleto, a latência de cada vítima envolvida no evento pode ter retornado dentro de seu intervalo esperado.

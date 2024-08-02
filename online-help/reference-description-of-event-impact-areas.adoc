@@ -1,0 +1,36 @@
+---
+permalink: online-help/reference-description-of-event-impact-areas.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Os eventos são categorizados em cinco áreas de impactos (disponibilidade, capacidade, configuração, desempenho e proteção) para permitir que você se concentre nos tipos de eventos pelos quais você é responsável.' 
+---
+= Descrição das áreas de impactos de eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os eventos são categorizados em cinco áreas de impactos (disponibilidade, capacidade, configuração, desempenho e proteção) para que você se concentre nos tipos de eventos pelos quais você é responsável.
+
+* *Disponibilidade*
++
+Os eventos de disponibilidade notificam se um objeto de armazenamento ficar offline, se um serviço de protocolo ficar inativo, se ocorrer um problema com failover de armazenamento ou se ocorrer um problema com hardware.
+
+* *Capacidade*
++
+Os eventos de capacidade notificam você se agregados, volumes, LUNs ou namespaces estão próximos ou atingiram um limite de tamanho, ou se a taxa de crescimento é incomum para o seu ambiente.
+
+* *Configuração*
++
+Os eventos de configuração informam sobre a descoberta, exclusão, adição, remoção ou renomeação de seus objetos de armazenamento. Os eventos de configuração têm um nível de impactos de evento e um tipo de informação de gravidade.
+
+* *Desempenho*
++
+Os eventos de desempenho notificam você sobre as condições de recursos, configuração ou atividade no cluster que podem afetar negativamente a velocidade de entrada ou recuperação de armazenamento de dados em seus objetos de armazenamento monitorados.
+
+* *Proteção*
++
+Eventos de proteção notificam você sobre incidentes ou riscos envolvendo relacionamentos do SnapMirror, problemas com a capacidade de destino, problemas com relacionamentos do SnapVault ou problemas com tarefas de proteção. Todos os objetos ONTAP (especialmente agregados, volumes e SVMs) que hospedam volumes secundários e relacionamentos de proteção são categorizados na área de impacto de proteção.
+
+

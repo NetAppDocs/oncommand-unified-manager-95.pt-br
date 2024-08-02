@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-data-constituents-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Em um Infinite volume, os dados são armazenados em vários componentes de dados separados. Os constituintes de dados armazenam apenas os dados de um arquivo, não o nome do arquivo. 
+---
+= Quais são os componentes de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Em um Infinite volume, os dados são armazenados em vários componentes de dados separados. Os constituintes de dados armazenam apenas os dados de um arquivo, não o nome do arquivo.
+
+Os clientes não estão cientes dos componentes de dados. Quando um cliente solicita um arquivo de um Infinite volume, o nó recupera os dados do arquivo de um componente de dados e retorna o arquivo ao cliente.
+
+Cada Infinite volume normalmente tem dezenas de constituintes de dados. Por exemplo, um Infinite volume de 6 PB que contém 1 bilhões de arquivos pode ter 60 constituintes de dados localizados em agregados de 6 nós.

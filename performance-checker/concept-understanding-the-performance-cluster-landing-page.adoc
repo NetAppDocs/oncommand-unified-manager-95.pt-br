@@ -1,0 +1,26 @@
+---
+permalink: performance-checker/concept-understanding-the-performance-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página de destino do cluster de desempenho fornece uma visão geral de desempenho de alto nível de um cluster selecionado, com ênfase no status de desempenho dos 10 principais objetos dentro do cluster. Os problemas de desempenho são exibidos na parte superior da página, no painel todos os eventos neste cluster. 
+---
+= Compreender a página de destino do cluster de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página de destino do cluster de desempenho fornece uma visão geral de desempenho de alto nível de um cluster selecionado, com ênfase no status de desempenho dos 10 principais objetos dentro do cluster. Os problemas de desempenho são exibidos na parte superior da página, no painel todos os eventos neste cluster.
+
+A página de destino do cluster de desempenho fornece uma visão geral de alto nível de cada cluster gerenciado por uma instância do Unified Manager. Esta página fornece informações sobre eventos e performance, além de permitir que você monitore e solucione problemas de clusters. A imagem a seguir mostra um exemplo da página de destino do cluster de desempenho para o cluster chamado opm-mobilidade:
+
+image::../media/opm-cluster-landing-page-draft.gif[rascunho da página inicial do cluster do opm]
+
+A contagem de eventos na página Resumo do cluster pode não corresponder à contagem de eventos na página Inventário de Eventos de desempenho. Isso ocorre porque a página Resumo do cluster pode mostrar um evento cada nas barras de latência e utilização quando as políticas de limite de combinação foram violadas, enquanto a página Inventário de Eventos de desempenho mostra apenas um evento quando uma diretiva de combinação foi violada.
+
+[NOTE]
+====
+Se um cluster foi removido de ser gerenciado pelo Unified Manager, o status *removido* é exibido à direita do nome do cluster na parte superior da página.
+
+====

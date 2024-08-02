@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode alterar a porta que o servidor do Unified Manager usa para se comunicar com o servidor de autenticação. 
+---
+= Editando servidores de autenticação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar a porta que o servidor do Unified Manager usa para se comunicar com o servidor de autenticação.
+
+
+
+== Antes de começar
+
+Tem de ter a função de Administrador do OnCommand.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Autenticação* no menu Configuração à esquerda.
+. Na página *Configuração/Autenticação*, marque a caixa *Desativar pesquisa de grupo aninhado*.
+. Na área *servidores de autenticação*, selecione o servidor de autenticação que deseja editar e clique em *Editar*.
+. Na caixa de diálogo *Editar servidor de autenticação*, edite os detalhes da porta.
+. Clique em *Salvar*.
+

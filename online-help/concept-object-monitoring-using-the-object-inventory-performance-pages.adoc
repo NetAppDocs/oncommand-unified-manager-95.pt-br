@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-object-monitoring-using-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: As páginas de inventário de objetos Performance permitem monitorar o desempenho do objeto com base nos valores de contadores de desempenho específicos ou com base em eventos de desempenho. Isso é benéfico porque a identificação de objetos com eventos de desempenho permite que você investigue a causa dos problemas de desempenho do cluster. 
+---
+= Monitoramento de objetos usando as páginas de inventário de objetos Performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+As páginas de inventário de objetos Performance permitem monitorar o desempenho do objeto com base nos valores de contadores de desempenho específicos ou com base em eventos de desempenho. Isso é benéfico porque a identificação de objetos com eventos de desempenho permite que você investigue a causa dos problemas de desempenho do cluster.
+
+As páginas de inventário de objetos Performance exibem os contadores associados, objetos associados e políticas de limite de desempenho para todos os objetos em todos os clusters. Essas páginas também permitem que você aplique políticas de limite de desempenho a objetos. Você pode classificar a página com base em qualquer coluna e pode pesquisar todos os nomes de objetos ou dados.
+
+Você pode exportar dados dessas páginas para um (`.csv`arquivo de valores separados por vírgula ) usando o botão *Exportar* e, em seguida, usar os dados exportados para criar relatórios.

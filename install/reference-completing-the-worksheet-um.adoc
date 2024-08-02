@@ -1,0 +1,222 @@
+---
+permalink: install/reference-completing-the-worksheet-um.html 
+sidebar: sidebar 
+keywords:  
+summary: Antes de instalar e configurar o Unified Manager, você deve ter informações específicas sobre seu ambiente prontamente disponíveis. Pode registar as informações na folha de trabalho. 
+---
+= Completar a folha de trabalho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de instalar e configurar o Unified Manager, você deve ter informações específicas sobre seu ambiente prontamente disponíveis. Pode registar as informações na folha de trabalho.
+
+
+
+== Informações de instalação do Unified Manager
+
+Os detalhes necessários para instalar o Unified Manager.
+
+|===
+| Sistema no qual o software é implantado | O seu valor 
+
+
+ a| 
+Endereço IP do servidor ESXi (somente VMware)
+ a| 
+
+
+
+ a| 
+Host nome de domínio totalmente qualificado
+ a| 
+
+
+
+ a| 
+Endereço IP do host
+ a| 
+
+
+
+ a| 
+Máscara de rede
+ a| 
+
+
+
+ a| 
+Endereço IP do gateway
+ a| 
+
+
+
+ a| 
+Endereço DNS primário
+ a| 
+
+
+
+ a| 
+Endereço DNS secundário
+ a| 
+
+
+
+ a| 
+Pesquisar domínios
+ a| 
+
+
+
+ a| 
+Nome de utilizador de manutenção
+ a| 
+
+
+
+ a| 
+Palavra-passe do utilizador de manutenção
+ a| 
+
+|===
+
+
+== Informações de configuração do Unified Manager
+
+Os detalhes para configurar o Unified Manager após a instalação. Alguns valores são opcionais, dependendo da configuração.
+
+|===
+| Definição | O seu valor 
+
+
+ a| 
+Endereço de e-mail do usuário de manutenção
+ a| 
+
+
+
+ a| 
+Servidor NTP (somente VMware)
+ a| 
+
+
+
+ a| 
+Nome do host do servidor SMTP ou endereço IP
+ a| 
+
+
+
+ a| 
+Nome de utilizador SMTP
+ a| 
+
+
+
+ a| 
+Palavra-passe SMTP
+ a| 
+
+
+
+ a| 
+Porta de SMTP
+ a| 
+25 (valor padrão)
+
+
+
+ a| 
+E-mail a partir do qual as notificações de alerta são enviadas
+ a| 
+
+
+
+ a| 
+Nome do host ou endereço IP do servidor de autenticação
+ a| 
+
+
+
+ a| 
+Nome de administrador do ative Directory ou nome distinto de associação LDAP
+ a| 
+
+
+
+ a| 
+Palavra-passe do ative Directory ou palavra-passe LDAP BIND
+ a| 
+
+
+
+ a| 
+Nome distinto da base do servidor de autenticação
+ a| 
+
+
+
+ a| 
+URL do provedor de identidade (IDP)
+ a| 
+
+
+
+ a| 
+Metadados do provedor de identidade (IDP)
+ a| 
+
+
+
+ a| 
+Endereço IP do host de destino de trap SNMP
+ a| 
+
+
+
+ a| 
+Porta de SNMP
+ a| 
+
+|===
+
+
+== Informações do cluster
+
+Os detalhes dos sistemas de storage que você gerenciará usando o Unified Manager.
+
+|===
+| Cluster 1 de N | O seu valor 
+
+
+ a| 
+Nome do host ou endereço IP de gerenciamento de cluster
+ a| 
+
+
+
+ a| 
+Nome de usuário do administrador do ONTAP
+
+[NOTE]
+====
+O administrador deve ter sido atribuído a função "admin".
+
+==== a| 
+
+
+
+ a| 
+Senha do administrador do ONTAP
+ a| 
+
+
+
+ a| 
+Protocolo (HTTP ou HTTPS)
+ a| 
+
+|===

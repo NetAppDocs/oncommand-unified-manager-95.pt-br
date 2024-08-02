@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-quota-limits-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Limites de cota de usuário são valores que o servidor do Unified Manager usa para avaliar se o consumo de espaço por um usuário está se aproximando do limite ou atingiu o limite definido pela cota do usuário. Se o limite de software for cruzado ou se o limite rígido for atingido, o servidor do Unified Manager gera eventos de cota de usuário. 
+---
+= Quais são os limites de cota
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Limites de cota de usuário são valores que o servidor do Unified Manager usa para avaliar se o consumo de espaço por um usuário está se aproximando do limite ou atingiu o limite definido pela cota do usuário. Se o limite de software for cruzado ou se o limite rígido for atingido, o servidor do Unified Manager gera eventos de cota de usuário.
+
+Por padrão, o servidor do Unified Manager envia um e-mail de notificação aos usuários que cruzaram o limite de cota ou atingiram o limite rígido da cota e para os quais eventos de cota de usuário estão configurados. O Administrador do OnCommand pode configurar alertas que notificam os destinatários especificados dos eventos de quota de usuário ou grupo de usuários.
+
+Você pode especificar limites de cota usando o OnCommand System Manager ou a CLI do ONTAP.

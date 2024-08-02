@@ -1,0 +1,64 @@
+---
+permalink: health-checker/task-creating-a-jdbc-data-source-using-birt.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Depois de criar o novo relatório usando o BIRT, você deve criar uma fonte de dados para conetar o relatório ao Unified Manager. 
+---
+= Criando uma fonte de dados JDBC usando BIRT
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de criar o novo relatório usando o BIRT, você deve criar uma fonte de dados para conetar o relatório ao Unified Manager.
+
+
+
+== Antes de começar
+
+Você deve ter criado um relatório usando BIRT.
+
+Você deve ter baixado e instalado MySQL Connector/J.
+
+Você deve ter criado um usuário de banco de dados com a função Esquema de Relatório.
+
+
+
+== Passos
+
+. No Eclipse, selecione *Data Explorer* > *Data Sources* > *New Data Source*.
+. Selecione *criar a partir de um tipo de fonte de dados na lista a seguir*.
+. Selecione *fonte de dados JDBC* e, em seguida, clique em *seguinte*.
+. Na caixa de diálogo *New JDBC Data Source Profile*, selecione *com.mysql.jdbc.Driver(v5,1)*.
++
+.. Se o driver MySQL não aparecer, clique em *Gerenciar drivers*.
+.. Na caixa de diálogo *Manage JDBC Drivers*, clique em *Add*.
+.. Navegue até o local onde o arquivo MySQL Connector/J `.jar` foi instalado e selecione o arquivo.
+.. Clique em *OK*.
++
+Você deve ser capaz de visualizar e selecionar o driver MySQL.
+
+
+
+. Insira o nome do host totalmente qualificado ou o endereço IP da instância do Unified Manager usando o formato apropriado:
++
+|===
+| Tipo de endereço | Formato 
+
+
+ a| 
+IPv4
+ a| 
+`jdbc:mysql://xx.xx.xx.xx:3306/ocum_report`
+
+
+
+ a| 
+IPv6
+ a| 
+`jdbc:mysql://address=(protocol=tcp)(host=xx:xx:xx:xx:xx:xx:xx:xx)(port=3306)/ocum_report`
+
+|===
+. Introduza o nome de utilizador do utilizador da base de dados, introduza a palavra-passe e, em seguida, clique em *Finish*.
+

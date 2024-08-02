@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-quiescing-a-protection-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode silenciar uma relação de proteção para impedir temporariamente a ocorrência de transferências de dados. Você pode desativar um relacionamento quando quiser criar uma cópia Snapshot de um volume de destino do SnapMirror que contém um banco de dados e deseja garantir que seu conteúdo esteja estável durante a cópia Snapshot. 
+---
+= Mantendo uma relação de proteção na página de detalhes de Saúde/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode silenciar uma relação de proteção para impedir temporariamente a ocorrência de transferências de dados. Você pode desativar um relacionamento quando quiser criar uma cópia Snapshot de um volume de destino do SnapMirror que contém um banco de dados e deseja garantir que seu conteúdo esteja estável durante a cópia Snapshot.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+* Você deve ter configurado o Workflow Automation.
+
+
+
+
+== Sobre esta tarefa
+
+A ação quiesce não é exibida nos seguintes casos:
+
+* Se as configurações RBAC não permitirem essa ação, por exemplo, se você tiver apenas Privileges de operador
+* Quando o ID do volume é desconhecido, por exemplo, quando você tem uma relação entre clusters e o cluster de destino ainda não foi descoberto
+* Quando você não emparelhou o Workflow Automation e o Unified Manager
+
+
+
+
+== Passos
+
+. Na guia *proteção* da página de detalhes *Saúde/volume*, clique com o botão direito do Mouse na relação na exibição de topologia para a relação de proteção que você deseja silenciar.
+. Selecione *quiesce* no menu.
+. Clique em *Yes* para continuar.
++
+O estado do trabalho quiesce é apresentado na parte superior da página de detalhes de Saúde/volume, juntamente com uma ligação para os detalhes do trabalho.
+
+. Clique no link *Exibir detalhes* para ir para a página de detalhes *proteção/trabalho* para obter detalhes adicionais e progresso do trabalho.
+. Clique na seta para trás do seu navegador para retornar à página de detalhes *Saúde/volume*.
++
+O trabalho quiesce é concluído quando todas as tarefas de trabalho são concluídas com êxito.
+
+

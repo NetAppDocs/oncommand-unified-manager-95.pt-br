@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-adding-and-reviewing-notes-about-an-event.html 
+sidebar: sidebar 
+keywords:  
+summary: Ao abordar eventos, você pode adicionar informações sobre como o problema está sendo resolvido usando a área Notas e atualizações na página de detalhes do evento. Essas informações podem habilitar outro usuário atribuído para abordar o evento. Você também pode exibir informações que foram adicionadas pelo usuário que abordou um evento pela última vez, com base no carimbo de data/hora recente. 
+---
+= Adicionar e rever notas sobre um evento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ao abordar eventos, você pode adicionar informações sobre como o problema está sendo resolvido usando a área Notas e atualizações na página de detalhes do evento. Essas informações podem habilitar outro usuário atribuído para abordar o evento. Você também pode exibir informações que foram adicionadas pelo usuário que abordou um evento pela última vez, com base no carimbo de data/hora recente.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Eventos*.
+. Na página de inventário *Eventos*, clique no evento para o qual você deseja adicionar as informações relacionadas ao evento.
+. Na página de detalhes *evento*, adicione as informações necessárias na área *Notas e atualizações*.
+. Clique em *Post*.
+

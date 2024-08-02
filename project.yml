@@ -1,0 +1,31 @@
+---
+settings:
+  name: OnCommand Unified Manager 9.5
+  downlevel: true
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: pt-br,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: Documentos do OnCommand Unified Manager 9,5
+    url: "/index.html"
+  - title: Notas de lançamento
+    url: "/release-notes.html"
+  - title: Comece agora
+    entries:
+    - title: Instalação rápida do VMware vSphere
+      url: "/qsg-vapp.html"
+    - title: Instalação rápida para Linux
+      url: "/qsg-linux.html"
+    - title: Instalação rápida para Windows
+      url: "/qsg-windows.html"
+  - section: install
+  - section: config
+  - section: online-help
+  - section: performance-checker
+  - section: health-checker
+  - title: Avisos legais
+    url: "/legal-notices.html"

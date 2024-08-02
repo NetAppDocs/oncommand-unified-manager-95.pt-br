@@ -1,0 +1,151 @@
+---
+permalink: online-help/reference-health-all-nodes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: A página de inventário de integridade/nós permite exibir informações detalhadas sobre os nós em um cluster selecionado. 
+---
+= Página de inventário de integridade/nós
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página de inventário de integridade/nós permite exibir informações detalhadas sobre os nós em um cluster selecionado.
+
+
+
+== Botão de comando
+
+* * Exportação*
++
+Permite exportar os detalhes de todos os nós monitorados para um (`.csv`arquivo de valores separados por vírgulas ).
+
+
+
+
+
+== Lista de nós
+
+A lista de nós exibe as propriedades de todos os nós descobertos em um cluster. Você pode usar os filtros de coluna para personalizar os dados exibidos.
+
+* *Status*
++
+Um ícone que identifica o status atual do nó. O status pode ser crítico (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"] ), erro (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ), Aviso (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"] ) ou normal (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]).
+
++
+Você pode posicionar o cursor sobre o ícone para exibir mais informações sobre o evento ou eventos gerados para o nó.
+
+* *Nó*
++
+O nome do nó.
+
+* *Estado*
++
+O estado do nó. O estado pode ser para cima ou para baixo.
+
+* *Estado HA*
++
+O estado do par de HA. O estado pode ser erro, Aviso, normal ou não aplicável.
+
+* *Tempo de inatividade*
++
+O tempo decorrido ou o carimbo de data/hora desde que o nó está offline. Se o tempo decorrido exceder uma semana, o carimbo de data/hora quando o nó ficou offline é exibido.
+
+* *Cluster*
++
+O nome do cluster ao qual o nó pertence.
+
+* *Modelo*
++
+O modelo do nó.
+
+* *Versão do SO*
++
+A versão do software ONTAP em que o nó está sendo executado.
+
+* *Todos os flash otimizados*
++
+Se o nó é otimizado para dar suporte apenas a unidades de estado sólido (SSDs).
+
+* *Número de série*
++
+O número de série do nó.
+
+* *Versão do firmware*
++
+O número da versão do firmware do nó.
+
+* *Proprietário*
++
+O nome do proprietário do nó.
+
+* *Localização*
++
+A localização do nó.
+
+* *Capacidade usada agregada*
++
+A quantidade de espaço usada para dados nos agregados do nó.
+
+* *Capacidade total agregada*
++
+O espaço total disponível para dados nos agregados do nó.
+
+* * Capacidade extra utilizável*
++
+A quantidade de espaço disponível no nó que pode ser usada para aprimorar a capacidade agregada.
+
+* * Capacidade bruta utilizável*
++
+A quantidade de espaço utilizável no nó.
+
+* * Capacidade bruta total*
++
+A capacidade de cada disco não formatado no nó antes do dimensionamento correto e da configuração RAID.
+
+* *SVM Count*
++
+O número de SVMs contidas pelo cluster.
+
+* *Contagem de portas FC*
++
+O número de portas FC contido pelo nó.
+
+* *Contagem de portas FCoE*
++
+O número de portas FCoE contidas pelo nó.
+
+* *Contagem de portas Ethernet*
++
+O número de portas ethernet contidas pelo nó.
+
+* * Tamanho do cartão Flash*
++
+O tamanho das placas flash instaladas no nó.
+
+* * Contagem de cartões Flash*
++
+O número de cartões flash instalados no nó.
+
+* *Contagem de prateleiras de disco*
++
+O número de compartimentos de disco contido pelo nó.
+
+* *Contagem de discos*
++
+O número de discos no nó.
+
+
+
+
+
+== Painel de filtros
+
+O painel filtros permite definir filtros para personalizar a forma como as informações são exibidas na lista de nós. Você pode selecionar filtros relacionados às colunas Status, State e HA State.
+
+[NOTE]
+====
+Os filtros especificados no painel filtros substituem os filtros especificados para as colunas na lista nós.
+
+====

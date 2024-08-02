@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-the-infinite-volume-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Quando você precisar resolver quaisquer problemas no espaço de armazenamento do Infinite volume, você pode editar as configurações de limite da capacidade do Infinite volume com base nos requisitos da sua organização. Quando um limite é cruzado, os eventos são gerados e você recebe notificações se tiver configurado alertas para tais eventos. 
+---
+= Editar as definições de limite de volume infinito
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando você precisar resolver quaisquer problemas no espaço de armazenamento do Infinite volume, você pode editar as configurações de limite da capacidade do Infinite volume com base nos requisitos da sua organização. Quando um limite é cruzado, os eventos são gerados e você recebe notificações se tiver configurado alertas para tais eventos.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Health* > *SVMs*.
+. Na página de inventário *máquinas virtuais de integridade/storage*, selecione um SVM com Infinite volume.
+. Na página de detalhes *Health/Storage Virtual Machine*, clique em *Actions* > *Edit thresholds* (ações* > Editar limites*).
+. Na caixa de diálogo *Edit SVM with Infinite volume Thresholds* (Editar SVM com Infinite volume Thresholds*), modifique os limites conforme necessário.
+. Clique em *Salvar e fechar*.
+

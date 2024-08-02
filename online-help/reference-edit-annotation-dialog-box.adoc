@@ -1,0 +1,40 @@
+---
+permalink: online-help/reference-edit-annotation-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: A caixa de diálogo Editar anotação permite alterar a descrição de uma anotação existente. 
+---
+= Caixa de diálogo Edit Annotation (Editar anotação)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A caixa de diálogo Editar anotação permite alterar a descrição de uma anotação existente.
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+* *Nome da anotação*
++
+Apresenta o nome da anotação. Este campo não pode ser editado.
+
+* *Descrição*
++
+Fornece uma descrição significativa da anotação. Pode editar este campo quando pretender alterar a descrição atual da anotação.
+
+
+
+
+
+== Botões de comando
+
+* *Salvar e fechar*
++
+Guarda as alterações na descrição da anotação e fecha a caixa de diálogo.
+
+* *Cancelar*
++
+Fecha a caixa de diálogo Editar anotação sem salvar as alterações.
+
+

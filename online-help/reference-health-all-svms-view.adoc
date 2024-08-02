@@ -1,0 +1,134 @@
+---
+permalink: online-help/reference-health-all-svms-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A página de inventário de máquinas virtuais de Saúde/armazenamento permite visualizar informações detalhadas sobre as máquinas virtuais de armazenamento (SVMs) que você está monitorando.' 
+---
+= Página de inventário de máquinas virtuais de integridade/armazenamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página de inventário de máquinas virtuais de integridade/armazenamento permite visualizar informações detalhadas sobre as máquinas virtuais de armazenamento (SVMs) que você está monitorando.
+
+
+
+== Botões de comando
+
+* * Exportação*
++
+Permite exportar os detalhes de todas as SVMs monitoradas para um (`.csv`arquivo de valores separados por vírgulas ).
+
+* *Annotate*
++
+Permite anotar a máquina virtual de armazenamento (SVM) selecionada.
+
+
+
+
+
+== Lista de SVMs
+
+A lista SVMs exibe, em formato tabular, as propriedades de todos os SVMs descobertos. Você pode usar os filtros de coluna para personalizar os dados exibidos:
+
+* *Status*
++
+O status atual do SVM. O status pode ser crítico (image:../media/sev-critical-um60.png["Ícone para gravidade do evento – crítico"] ), erro (image:../media/sev-error-um60.png["Ícone de gravidade do evento – erro"] ), Aviso (image:../media/sev-warning-um60.png["Ícone de gravidade do evento – aviso"] ) ou normal (image:../media/sev-normal-um60.png["Ícone de gravidade do evento – normal"]).
+
++
+Você pode mover o ponteiro sobre o status para exibir mais informações sobre o evento ou eventos gerados para o SVM.
+
++
+Se o status do SVM for determinado por um único evento, você poderá exibir informações como o nome do evento, a hora e a data em que o evento foi acionado, o nome do administrador a quem o evento foi atribuído e a causa do evento. Você pode clicar no botão Exibir detalhes para ver mais informações sobre o evento.
+
++
+Se o status do SVM for determinado por vários eventos da mesma gravidade, os três principais eventos serão exibidos com informações como o nome do evento, a hora e a data em que os eventos são acionados e o nome do administrador a quem o evento é atribuído. Você pode ver mais detalhes sobre cada um desses eventos clicando no nome do evento. Você também pode clicar no link Exibir todos os eventos para exibir a lista de eventos gerados.
+
+* *Storage Virtual Machine*
++
+O nome do SVM.
+
++
+É possível mover o ponteiro sobre cada SVM para exibir informações como o último evento gerado, cluster ao qual o SVM pertence, tipo de volume do SVM, protocolos permitidos e espaço alocado no SVM. Também é possível visualizar os detalhes de objetos relacionados, como o cluster ao qual o SVM pertence, todos os SVMs que pertencem ao cluster e os volumes pertencentes ao SVM.
+
+* *Estado*
++
+O estado administrativo atual do SVM. O estado pode ser Running (execução), Stopped (parado), start (arranque) ou stop (paragem).
+
+* *Cluster*
++
+O nome do cluster ao qual o SVM pertence.
+
+* *Tipo de volume permitido*
++
+O tipo de volume que pode ser criado no SVM. O tipo pode ser InfiniteVol, FlexVol ou FlexVol/FlexGroup.
+
++
+[NOTE]
+====
+O tipo FlexGroup é permitido ao usar o ONTAP 9.1 ou posterior.
+
+====
+* *Capacidade de dados disponível*
++
+Capacidade de dados disponível de todos os volumes no SVM.
+
+* *Capacidade total de dados*
++
+Capacidade total de dados de todos os volumes no SVM.
+
+* *Volume raiz*
++
+O nome do volume raiz do SVM.
+
+* *Estado NIS*
++
+O estado do Serviço de Informação de rede (NIS). O estado pode ser ativado, Desativado ou não configurado.
+
+* *Domínio NIS*
++
+O nome de domínio NIS. Esta coluna fica em branco quando o servidor NIS está desativado ou não está configurado.
+
+* *Estado DNS*
++
+O estado do sistema de nomes de domínio (DNS). O estado pode ser ativado, Desativado ou não configurado.
+
+* *Domínio DNS*
++
+O nome de domínio DNS.
+
+* * Nome do interrutor de Serviço*
++
+O tipo de informação recolhida a partir dos anfitriões. Os valores possíveis são arquivo, LDAP ou NIS.
+
+* *LDAP ativado*
++
+Se o protocolo LDAP está ativado ou não.
+
+* *Protocolos permitidos*
++
+O tipo de protocolos que podem ser configurados no SVM. Os protocolos disponíveis são FC/FCoE, iSCSI, HTTP, NDMP, NVMe, NFS e CIFS.
+
+* *Volumes máximos permitidos*
++
+Os volumes máximos permitidos que podem ser configurados no SVM.
+
+* *Contagem de volume*
++
+O número de volumes contido pelo SVM.
+
+
+
+
+
+== Painel de filtros
+
+O painel filtros permite definir filtros para personalizar a forma como as informações são exibidas na lista SVMs. Pode selecionar filtros relacionados com as colunas Estado, Estado e Anotação.
+
+[NOTE]
+====
+Os filtros especificados no painel filtros substituem os filtros especificados para as colunas na lista SVMs.
+
+====

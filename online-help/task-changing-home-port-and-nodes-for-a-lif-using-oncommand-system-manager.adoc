@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-changing-home-port-and-nodes-for-a-lif-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode alterar o local preferido de um LIF modificando sua porta inicial e o nó inicial. Esta é uma configuração mais duradoura do que a migração de um LIF, que normalmente é usada para realocar temporariamente um LIF para um nó diferente durante a manutenção programada. 
+---
+= Alteração da porta inicial e dos nós para um LIF usando o OnCommand System Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar o local preferido de um LIF modificando sua porta inicial e o nó inicial. Esta é uma configuração mais duradoura do que a migração de um LIF, que normalmente é usada para realocar temporariamente um LIF para um nó diferente durante a manutenção programada.
+
+
+
+== Sobre esta tarefa
+
+A imagem a seguir mostra a porta inicial e o nó do LIF original e a porta inicial e o nó após a alteração. A porta inicial original de LIF1 foi alterada de e1a para E3A e LIF2 foi alterada de e4a para E2A.
+
+image::../media/diagram-cluster-lifs-move-jpg.gif[Alteração da porta inicial e do nó do LIF]
+
+
+
+== Passos
+
+. Abra o OnCommand System Manager.
+. Na guia *Home*, clique duas vezes no sistema de armazenamento.
+. No painel de navegação, expanda a hierarquia *SVMs*.
+. No painel de navegação, selecione os SVMs e clique em *Configuração* > *interfaces de rede*.
+. Selecione o LIF e clique em *Editar*.
+. Na caixa de diálogo Editar interface**, insira a porta inicial e o endereço de rede da porta de destino.
++
+image::../media/systemmgr-lif-edit-jpg.gif[Caixa de diálogo Editar interface]
+
++
+[NOTE]
+====
+No ONTAP 8,2.1, o campo porta inicial é desativado.
+
+====
+. Clique em *Salvar e fechar*.
+

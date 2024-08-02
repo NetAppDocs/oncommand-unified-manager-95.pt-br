@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-monitoring-cluster-performance-from-the-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página de destino do cluster de desempenho exibe o status de desempenho de alto nível de um cluster selecionado que está sendo monitorado por uma instância do Unified Manager. Esta página permite avaliar o desempenho geral de um cluster específico e anotar, localizar ou atribuir rapidamente para resolução quaisquer eventos específicos de cluster identificados. 
+---
+= Monitoramento do desempenho do cluster na página de destino do cluster de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página de destino do cluster de desempenho exibe o status de desempenho de alto nível de um cluster selecionado que está sendo monitorado por uma instância do Unified Manager. Esta página permite avaliar o desempenho geral de um cluster específico e anotar, localizar ou atribuir rapidamente para resolução quaisquer eventos específicos de cluster identificados.

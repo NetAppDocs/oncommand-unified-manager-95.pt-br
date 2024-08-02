@@ -1,0 +1,28 @@
+---
+permalink: online-help/reference-user-not-found.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Utilizador não encontrado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* *Emissão*
++
+Quando você está executando uma operação relacionada à autenticação, como adicionar, editar, excluir ou testar usuários ou grupos remotos, a seguinte mensagem de erro é exibida: `User not found`.
+
+* *Causa*
++
+Este problema pode ocorrer se o utilizador existir no servidor AD ou no servidor LDAP e se tiver definido o nome distinto base para um valor incorreto.
+
+* *Ações corretivas*
++
+.. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Configuração* > *Autenticação*.
+.. Introduza as informações adequadas para o nome distinto da base.
+.. Clique em *Salvar e fechar*.
+
+
+

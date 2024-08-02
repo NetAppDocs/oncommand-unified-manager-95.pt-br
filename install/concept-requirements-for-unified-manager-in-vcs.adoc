@@ -1,0 +1,37 @@
+---
+permalink: install/concept-requirements-for-unified-manager-in-vcs.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Antes de instalar o Unified Manager em um ambiente Veritas Cluster Server (VCS), você deve garantir que os nós de cluster estejam configurados corretamente para oferecer suporte ao Unified Manager.' 
+---
+= Requisitos para o Unified Manager no VCS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de instalar o Unified Manager em um ambiente do Veritas Cluster Server (VCS), você deve garantir que os nós do cluster estejam configurados corretamente para oferecer suporte ao Unified Manager.
+
+Você deve garantir que a configuração VCS atenda aos seguintes requisitos:
+
+* Ambos os nós de cluster devem estar executando uma versão de sistema operacional suportada.
+* A mesma versão do Unified Manager deve ser instalada usando o mesmo caminho nos nós de cluster.
+* O usuário MySQL em ambos os nós deve ter o mesmo ID de usuário e ID de grupo.
+* Devem ser utilizados sistemas de ficheiros ext3, ext4 e Logical volume Manager (LVM).
+* O Unified Manager deve ser conetado ao sistema de storage por meio de Fibre Channel (FC) ou iSCSI.
++
+Você também deve garantir que o link FC esteja ativo e que as LUNs criadas nos sistemas de storage estejam acessíveis para ambos os nós do cluster.
+
+* O disco de dados compartilhados deve ter espaço suficiente (mínimo de 80 GB) para o banco de dados do Unified Manager, relatórios, certificados e pastas de plug-in de script.
+* Um mínimo de duas interfaces de rede deve ser configurado em cada sistema: Uma para comunicação nó a nó e outra para comunicação nó a cliente.
++
+O nome da interface de rede usada para comunicação nó-a-cliente deve ser o mesmo em ambos os sistemas.
+
+* Um link de heartbeat separado deve ser estabelecido entre os nós do cluster; caso contrário, a interface de rede é usada para se comunicar entre os nós do cluster.
+* Opcional: O SnapDrive para UNIX deve ser usado para criar um local compartilhado que seja acessível a ambos os nós em uma configuração de alta disponibilidade.
++
+Consulte o Guia de Instalação e Administração _SnapDrive para UNIX_ para obter informações sobre como instalar e criar um local compartilhado. Você também pode gerenciar LUNs usando o SnapDrive ou a interface de linha de comando do sistema de storage. Consulte a matriz de compatibilidade SnapDrive para UNIX para obter mais informações.
+
+* RAM adicional deve estar disponível para os aplicativos SnapDrive e VCS.
+

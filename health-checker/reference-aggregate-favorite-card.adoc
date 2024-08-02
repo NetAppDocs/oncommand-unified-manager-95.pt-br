@@ -1,0 +1,59 @@
+---
+permalink: health-checker/reference-aggregate-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: A placa favorita agregada permite visualizar os detalhes de capacidade e desempenho dos agregados marcados como favoritos. 
+---
+= Agregar cartão favorito
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A placa favorita agregada permite visualizar os detalhes de capacidade e desempenho dos agregados marcados como favoritos.
+
+
+
+== Agregar atributos
+
+O cartão favorito agregado exibe os seguintes atributos agregados:
+
+* *Estado de saúde agregado*
++
+Um ícone que indica a integridade do agregado. Os valores possíveis são normal, Aviso, erro e crítico.
+
+* *Nome agregado*
++
+Nome do agregado.
+
++
+Posicione o cursor sobre o nome do agregado para exibir o nome do cluster ao qual o agregado pertence.
+
+* *Capacidade*
++
+Porcentagem de espaço livre disponível no agregado, e o número estimado de dias até o agregado ficar cheio.
+
++
+Observe que, para o FabricPool, essas informações refletem apenas a capacidade na categoria de performance local. Clique no bloco capacidade para exibir informações detalhadas na página integridade/detalhes do agregado.
+
+* *Desempenho*
++
+Detalhes de desempenho do agregado.
+
++
+** *IOPS*
++
+Número médio de operações de e/S por segundo nas últimas 72 horas.
+
+** *Taxa de transferência*
++
+Taxa de transferência média nas últimas 72 horas, em Mbps .
+
+** *Latência*
++
+Tempo médio de resposta necessário para uma operação, em milissegundos.
+
+
+
+

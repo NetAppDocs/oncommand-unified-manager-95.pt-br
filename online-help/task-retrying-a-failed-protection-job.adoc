@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-retrying-a-failed-protection-job.html 
+sidebar: sidebar 
+keywords:  
+summary: Depois de tomar medidas para corrigir um trabalho de proteção com falha, você pode usar tentar novamente para executar o trabalho novamente. Tentar novamente um trabalho cria um novo trabalho usando o ID do trabalho original. 
+---
+= Tentar novamente um trabalho de proteção com falha
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de tomar medidas para corrigir um trabalho de proteção com falha, você pode usar *Repetir* para executar o trabalho novamente. Tentar novamente um trabalho cria um novo trabalho usando o ID do trabalho original.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Você pode tentar novamente apenas um trabalho com falha de cada vez. Selecionar mais de um trabalho desativa o botão *Repetir*. Apenas os trabalhos do tipo Configuração de proteção e operação de relação de proteção podem ser tentados novamente.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *proteção* > *empregos*.
+. Na lista de trabalhos, selecione uma única tarefa de tipo de operação de relação de proteção ou Configuração de proteção com falha.
++
+O botão *Repetir* está ativado.
+
+. Clique em *Repetir*.
++
+O trabalho é reiniciado.
+
+

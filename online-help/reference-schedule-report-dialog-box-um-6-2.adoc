@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-schedule-report-dialog-box-um-6-2.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode programar os relatórios para serem gerados de forma recorrente em uma frequência especificada na caixa de diálogo Agendar relatório. O relatório é enviado por e-mail para um ou mais usuários especificados na caixa de diálogo Agendar relatório. 
+---
+= Caixa de diálogo Programar Relatório
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode programar os relatórios para serem gerados de forma recorrente em uma frequência especificada na caixa de diálogo Agendar relatório. O relatório é enviado por e-mail para um ou mais usuários especificados na caixa de diálogo Agendar relatório.
+
+
+
+== Propriedades
+
+Você pode agendar um relatório especificando propriedades como o endereço de e-mail do usuário, o formato do relatório e a frequência com que o relatório é gerado.
+
+* *Usando Agendamento existente*
++
+** *Nome da programação*
++
+Exibe todos os nomes de programação existentes. Você pode selecionar uma agenda existente para seus relatórios aqui.
+
+
+
+* *Criar novo horário*
++
+** *Nome da programação*
++
+Permite-lhe introduzir o nome da agenda enquanto cria uma nova agenda.
+
+** *Endereço de e-mail do destinatário*
++
+Especifica o endereço de e-mail do usuário para o qual você deseja enviar o relatório. Você pode especificar uma ou mais entradas, separadas por vírgulas. Este é um campo obrigatório.
+
+** *Formato do relatório*
++
+Especifica o formato no qual você deseja agendar o relatório. A opção _PDF_ está selecionada por padrão.
+
+** *Frequência*
++
+Especifica a frequência na qual você deseja agendar o relatório. A opção _Hourly_ está selecionada por padrão.
+
+
+
+
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas:
+
+* *Programação*
++
+Agenda o relatório com o modelo salvo ou atualizado e fecha a caixa de diálogo Relatório de Agendamento.
+
+* *Cancelar*
++
+Fecha a caixa de diálogo Relatório de Agendamento enquanto exibe uma mensagem para salvar o modelo de relatório de agendamento.
+
+

@@ -1,0 +1,30 @@
+---
+permalink: online-help/concept-viewing-node-and-aggregate-performance-capacity-used-values.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode monitorar os valores de capacidade de performance usados para todos os nós ou para todos os agregados em um cluster, ou visualizar detalhes de um único nó ou agregado. 
+---
+= Exibindo valores de capacidade de desempenho agregado e nó usados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode monitorar os valores de capacidade de performance usados para todos os nós ou para todos os agregados em um cluster, ou visualizar detalhes de um único nó ou agregado.
+
+Os valores de capacidade de desempenho usados aparecem no Painel de desempenho, nas páginas de inventário de desempenho, na página de principais artistas, na página criar política de limite, nas páginas do Performance Explorer e nos gráficos detalhados. Por exemplo, a página Inventário de desempenho/agregado fornece uma coluna Perf. Capacidade utilizada para visualizar o valor da capacidade de desempenho utilizada para todos os agregados.
+
+image::../media/node-inventory-used-headroom.gif[inventário do nó usado headroom]
+
+O status "'N/A" é exibido quando os nós não são instalados com o software ONTAP 9.0 ou posterior.
+
+O monitoramento do contador de capacidade de desempenho usado permite identificar o seguinte:
+
+* Independentemente de nós ou agregados em qualquer cluster terem um valor usado de alta capacidade de performance
+* Mesmo que nós ou agregados em qualquer cluster tenham eventos usados de capacidade de performance ativa
+* Os nós e agregados que têm o valor mais alto e mais baixo da capacidade de performance usada em um cluster
+* Valores de contador de latência e utilização em conjunto com nós ou agregados que têm valores de capacidade de alta performance usados
+* Como os valores da capacidade de performance usada para nós em um par de HA serão afetados se um dos nós falhar
+* Os volumes e LUNs mais ativos em um agregado que tenha um valor de capacidade de alta performance usada
+

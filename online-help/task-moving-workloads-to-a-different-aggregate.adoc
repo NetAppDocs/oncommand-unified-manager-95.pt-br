@@ -1,0 +1,86 @@
+---
+permalink: online-help/task-moving-workloads-to-a-different-aggregate.html 
+sidebar: sidebar 
+keywords:  
+summary: Use o Unified Manager para ajudar a identificar um agregado que está menos ocupado do que o agregado onde seus workloads atualmente residem e, em seguida, você pode mover volumes selecionados ou LUNs para esse agregado. Mover workloads de alta performance para um agregado menos ocupado ou um agregado com storage flash ativado permite que o workload execute com mais eficiência. 
+---
+= Movimentação de workloads para um agregado diferente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use o Unified Manager para ajudar a identificar um agregado que está menos ocupado do que o agregado onde seus workloads atualmente residem e, em seguida, você pode mover volumes selecionados ou LUNs para esse agregado. Mover workloads de alta performance para um agregado menos ocupado ou um agregado com storage flash ativado permite que o workload execute com mais eficiência.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Você deve ter registrado o nome do agregado que está tendo um problema de desempenho no momento.
+* Você deve ter registrado a data e a hora em que o agregado recebeu o evento.
+* Deve ter registado o ID do evento, por exemplo" p-sdt-clus1-AG-2542».
+* O Unified Manager precisa ter coletado e analisado um mês ou mais dos dados de desempenho.
+
+
+
+
+== Sobre esta tarefa
+
+Essas etapas ajudam a identificar os recursos a seguir para que você possa mover workloads de alta performance para um agregado de menor utilização:
+
+* Os agregados no mesmo cluster que são menos utilizados
+* Os volumes de maior desempenho no agregado atual
+
+
+
+
+== Passos
+
+. Identifique o agregado no cluster que é o menos utilizado:
++
+.. Na página de detalhes do *evento*, clique no nome do cluster no qual o agregado reside.
++
+Os detalhes do cluster são exibidos na página Performance/Cluster Landing.
+
+.. Na página *Resumo*, clique em *agregados* no painel *objetos gerenciados*.
++
+A lista de agregados neste cluster é exibida.
+
+.. Clique na coluna *utilização* para classificar os agregados pelo menos utilizado.
++
+Você também pode identificar aqueles agregados que têm a maior capacidade *Free*. Isso fornece uma lista de agregados potenciais aos quais você pode querer mover workloads.
+
+.. Anote o nome do agregado para o qual você deseja mover as cargas de trabalho.
+
+
+. Identifique os volumes de alto desempenho do agregado que recebeu o evento:
++
+.. Clique no agregado que está tendo o problema de desempenho.
++
+Os detalhes agregados são exibidos na página Explorador de desempenho/agregado.
+
+.. No seletor *intervalo de tempo*, selecione *últimos 30 dias* e, em seguida, clique em *aplicar intervalo*.
++
+Isso permite que você visualize um período de histórico de desempenho mais longo do que o padrão de 72 horas. Você quer mover um volume que esteja usando muitos recursos de forma consistente, não apenas nas últimas 72 horas.
+
+.. No controle *Exibir e comparar*, selecione *volumes neste agregado*.
++
+Uma lista de volumes FlexVol e volumes constituintes FlexGroup neste agregado é exibida.
+
+.. Classifique os volumes por Mbps mais altos e, em seguida, por IOPS mais alto, para ver os volumes com melhor desempenho.
+.. Anote os nomes dos volumes que você deseja mover para um agregado diferente.
+
+
+. Mova os volumes de alto desempenho para o agregado que você identificou como tendo baixa utilização.
++
+Você pode executar a operação mover usando os comandos OnCommand System Manager, OnCommand Workflow Automation, ONTAP ou uma combinação dessas ferramentas.
+
+
+
+
+
+== Depois de terminar
+
+Após alguns dias, verifique se você está recebendo o mesmo tipo de eventos desse nó ou agregado.

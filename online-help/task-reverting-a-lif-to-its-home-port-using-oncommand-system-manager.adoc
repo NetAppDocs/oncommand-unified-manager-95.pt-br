@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-reverting-a-lif-to-its-home-port-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode reverter um LIF de sua porta atual para sua porta inicial depois que ele falha ou é migrado para uma porta diferente manualmente ou automaticamente. Você pode fazer isso usando o OnCommand System Manager. 
+---
+= Revertendo um LIF para sua porta inicial usando o OnCommand System Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode reverter um LIF de sua porta atual para sua porta inicial depois que ele falha ou é migrado para uma porta diferente manualmente ou automaticamente. Você pode fazer isso usando o OnCommand System Manager.
+
+
+
+== Sobre esta tarefa
+
+Ao criar um LIF, o administrador especifica uma porta inicial e um nó inicial a serem usados como o local preferido do LIF. Se o nó inicial não estiver disponível ou a porta inicial sofrer uma interrupção de link físico, o LIF é migrado automaticamente para um novo local. O novo local é relatado, por exemplo, no OnCommand System Manager como a porta atual para o LIF. A menos que a opção de reversão automática esteja ativada, o LIF permanecerá nesse novo local até que seja revertido.
+
+
+
+== Passos
+
+. Abra o OnCommand System Manager.
+. Na guia *Home*, clique duas vezes no sistema de armazenamento.
+. No painel de navegação, expanda a hierarquia *Storage Virtual Machines*.
+. No painel de navegação, selecione o SVM e clique em *Configuração* > *interfaces de rede*.
+. Procure LIFs de dados que exibam um ícone de casa com uma marca cruzada vermelha, na coluna *porta atual*, como na imagem a seguir.
++
+image::../media/systemmgr-lifs-networkinterfaces-jpg.gif[Visualização de interfaces de rede]
+
+. Selecione o LIF e clique em *Send to Home*.
++
+Esta opção só é ativada quando a interface selecionada está hospedada em uma porta não doméstica e quando a porta inicial está disponível.
+
+

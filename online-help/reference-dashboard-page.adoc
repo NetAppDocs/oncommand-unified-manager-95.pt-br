@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-dashboard-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A página Dashboards/Visão geral exibe, como um gráfico, a integridade dos objetos de storage, como clusters, agregados e máquinas virtuais de storage (SVMs). Com base na disponibilidade, capacidade, desempenho e eventos relacionados à proteção que são gerados, esses objetos de armazenamento são categorizados como saudáveis, em risco ou com incidentes, ou como saudável, Aviso ou erro para eventos relacionados à proteção.' 
+---
+= Página de dashboards/Visão geral
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Dashboards/Visão geral exibe, como um gráfico, a integridade dos objetos de storage, como clusters, agregados e máquinas virtuais de storage (SVMs). Com base na disponibilidade, capacidade, desempenho e eventos relacionados à proteção que são gerados, esses objetos de armazenamento são categorizados como saudáveis, em risco ou com incidentes, ou como saudável, Aviso ou erro para eventos relacionados à proteção.
+
+
+
+== Barra de cluster não alcançável
+
+Quando um cluster não é acessível, o Unified Manager exibe os detalhes em uma barra na parte superior de cada página. Se todos os clusters estiverem acessíveis, esse painel ficará oculto.
+
+Pode atualizar as informações apresentadas no painel premindo F5. Essa ação garante que o painel exiba as informações mais recentes sobre clusters que atualmente não estão acessíveis. Por exemplo, se um cluster com um evento Cluster Not reachable for removido ou se o estado de um evento for Obsoleto, as informações sobre o evento serão removidas quando você atualizar o painel.
+
+Você pode visualizar informações detalhadas sobre um cluster que não é acessível clicando no botão *Detalhes*. Esta ação abre a página de inventário Eventos. Depois que a barra for fechada, ela será exibida novamente somente quando você fizer login novamente no Unified Manager.
+
+
+
+== Área de visão geral
+
+* *Painel de disponibilidade*
++
+Exibe informações sobre a disponibilidade de clusters, agregados e SVMs monitorados pelo Unified Manager. Os objetos de armazenamento são categorizados como saudáveis, em risco ou têm incidentes. Por exemplo, o status de um cluster que não possui discos sobressalentes é exibido como em risco.
+
++
+Esse painel também exibe o número de objetos de armazenamento em cada uma das categorias. Clicar em qualquer um dos totais de objetos leva você à página desse objeto. Por exemplo, clicar no total do cluster leva você à página de inventário de integridade/clusters. Clicar nos números na parte superior de uma coluna leva você para a página de inventário de eventos.
+
+* *Painel de capacidade*
++
+Exibe informações sobre a capacidade de agregados e SVMs que são monitorados pelo Unified Manager. Os objetos de armazenamento são categorizados como saudáveis, em risco ou têm incidentes. Por exemplo, o status de um agregado cuja capacidade usada atingiu o valor limite total é exibido como em risco.
+
++
+Esse painel também exibe o número de objetos de armazenamento em cada uma das categorias.
+
+* *Painel de desempenho*
++
+Exibe informações sobre a performance de clusters, SVMs e volumes monitorados pelo Unified Manager. Com base nos incidentes relacionados ao desempenho que são gerados, os objetos de armazenamento são categorizados como íntegros, em risco ou com incidentes. Por exemplo, o status de um volume cujo tempo de resposta de e/S para sua carga de trabalho atingiu o valor limite máximo é exibido como se houvesse incidentes.
+
++
+Esse painel também exibe o número total de clusters, SVMs e volumes monitorados pelo Unified Manager. Clicar em qualquer um dos totais de objetos leva você à página desse objeto. Por exemplo, clicar no total do cluster leva você para a página de inventário de desempenho/cluster.
+
+* *Painel de proteção*
++
+Exibe informações sobre relacionamentos de proteção monitorados pelo Unified Manager. As relações de proteção são categorizadas como saudável, Aviso ou erro. Por exemplo, uma relação que tenha uma duração de atraso que exceda o limite de aviso de atraso é exibida como Aviso.
+
++
+Esse painel também exibe o número total de objetos de armazenamento em cada uma das categorias de proteção. Clicar nos links para as categorias Status de Lag, Cofre assíncrono, espelho assíncrono ou síncrono leva você a uma lista filtrada desses objetos na página relacionamentos de proteção/volume.
+
+

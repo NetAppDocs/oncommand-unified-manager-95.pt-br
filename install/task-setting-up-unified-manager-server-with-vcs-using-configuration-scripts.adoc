@@ -1,0 +1,75 @@
+---
+permalink: install/task-setting-up-unified-manager-server-with-vcs-using-configuration-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode configurar o Unified Manager com o Veritas Cluster Server (VCS) usando scripts de configuração.' 
+---
+= Configurando o Unified Manager com VCS usando scripts de configuração
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar o Unified Manager com o Veritas Cluster Server (VCS) usando scripts de configuração.
+
+
+
+== Antes de começar
+
+* O Unified Manager deve ser instalado em ambos os nós na configuração VCS.
+* O módulo XML:: Libxml deve ser empacotado com Perl para scripts VCS funcionarem.
+* Você precisa ter criado um LUN compartilhado com tamanho suficiente para acomodar os dados de origem do Unified Manager.
+* Você deve ter especificado o caminho de montagem absoluto para o script funcionar.
++
+O script não funcionará se você criar uma pasta dentro do caminho de montagem.
+
+* Você deve ter baixado o `ha_setup.pl` script em `/opt/netapp/ocum/scripts`.
+
+
+
+
+== Sobre esta tarefa
+
+Na configuração VCS, o nó para o qual a interface IP virtual e o ponto de montagem estão ativos é o primeiro nó. O outro nó é o segundo nó.
+
+
+
+== Passos
+
+. Faça login no primeiro nó do cluster.
++
+Você precisa ter interrompido todos os serviços do Unified Manager no segundo nó na configuração de alta disponibilidade.
+
+. Adicione o diretório de instalação do VCS `/opt/VRTSvcs/bin` à variável ambiental PATH.
+. Se você estiver configurando uma configuração do Unified Manager existente, crie um backup do Unified Manager e gere o pacote de suporte.
+. Execute `ha_setup.pl` o script: `perl ha_setup.pl --first -t vcs -g group_name -e eth_name -i cluster_ip -m net_mask -n fully_qualified_cluster_name -f mount_path -v volume_group -d disk_group -l install_dir -u user_name -p password`
++
+`perl \ha_setup.pl --first -t vcs -g umgroup -e eth0 -i 10.11.12.13 -m 255.255.255.0 -n cluster.eng.company.com -f /mnt/ocumdb -v ocumdb_SdHv -d ocumdb_SdDg -l /opt/netapp/ -u admin -p wx17yz`
+
+. Use o console da Web do Veritas Operation Manager ou o VCS Cluster Manager para verificar se um grupo de failover foi criado e se os serviços de servidor do Unified Manager, ponto de montagem, IP virtual, placa de interface de rede (NIC) e grupo de volume são adicionados ao grupo de cluster.
+. Mova manualmente o grupo de serviços do Unified Manager para o nó secundário e verifique se o failover de cluster está funcionando.
+. Verifique se o VCS mudou para o segundo nó do cluster.
++
+Você deve verificar se a montagem de dados, IP virtual, grupo de volumes e NIC estão on-line no segundo nó do cluster.
+
+. Pare o Unified Manager usando o Veritas Operation Manager.
+. Execute o `perl ha_setup.pl --join -t vcs -f``mount_path` comando no segundo nó do cluster para que os dados do servidor Unified Manager apontem para o LUN.
+. Verifique se os serviços de servidor do Unified Manager estão sendo iniciados corretamente no segundo nó do cluster.
+. Regenere o certificado do Unified Manager após executar os scripts de configuração para obter o endereço IP global.
++
+.. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *certificado HTTPS* no menu *Configuração*.
+.. Clique em *Regenerate HTTPS Certificate*.
+
+
++
+O certificado regenerado fornece apenas o endereço IP do cluster, não o nome de domínio totalmente qualificado (FQDN). Você deve usar o endereço IP global para configurar o Unified Manager para alta disponibilidade.
+
+. Acesse a IU do Unified Manager usando o seguinte: `\https://<FQDN of Global IP>`
+
+
+
+
+== Depois de terminar
+
+Você deve criar um local de backup compartilhado depois que a alta disponibilidade for configurada. O local compartilhado é necessário para conter os backups criados antes e depois do failover. Ambos os nós na configuração de alta disponibilidade devem ser capazes de acessar o local compartilhado.

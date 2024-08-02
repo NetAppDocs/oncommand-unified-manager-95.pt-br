@@ -1,0 +1,26 @@
+---
+permalink: online-help/task-editing-a-customized-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode fazer alterações adicionais em um relatório já personalizado e salvar o relatório. Você não pode alterar o nome do relatório depois de salvá-lo. 
+---
+= Editar um relatório personalizado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode fazer alterações adicionais em um relatório já personalizado e salvar o relatório. Você não pode alterar o nome do relatório depois de salvá-lo.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *relatórios* e, em seguida, clique em *Executar relatório* para o relatório que pretende editar.
++
+É apresentada a página de detalhes do relatório.
+
+. Modifique o relatório conforme necessário e clique em *ações* > *Salvar relatório personalizado*.
+. Na caixa de diálogo *Salvar relatório personalizado*, insira uma breve descrição sobre as alterações feitas no relatório personalizado e clique em *Salvar*.
+

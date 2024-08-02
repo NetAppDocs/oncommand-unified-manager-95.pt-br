@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-user-access.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode criar funções e atribuir recursos para controlar o acesso do usuário a objetos de cluster selecionados. É possível identificar usuários que têm os recursos necessários para acessar objetos selecionados em um cluster. Somente esses usuários têm acesso para gerenciar os objetos do cluster. 
+---
+= Gerenciando o acesso do usuário
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar funções e atribuir recursos para controlar o acesso do usuário a objetos de cluster selecionados. É possível identificar usuários que têm os recursos necessários para acessar objetos selecionados em um cluster. Somente esses usuários têm acesso para gerenciar os objetos do cluster.

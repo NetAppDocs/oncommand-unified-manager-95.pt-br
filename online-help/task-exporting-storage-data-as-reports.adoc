@@ -1,0 +1,83 @@
+---
+permalink: online-help/task-exporting-storage-data-as-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode exportar dados para um arquivo de valores (.csv) separados por vírgulas e usar os dados exportados para criar relatórios. Por exemplo, se houver 10 eventos críticos que não foram resolvidos, você pode exportar os dados da página de inventário Eventos para criar um relatório e, em seguida, tomar as medidas apropriadas.' 
+---
+= Exportar dados para arquivos CSV para relatórios
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exportar dados para um (`.csv`arquivo de valores separados por vírgulas ) e usar os dados exportados para criar relatórios. Por exemplo, se houver 10 eventos críticos que não foram resolvidos, você pode exportar os dados da página de inventário Eventos para criar um relatório e, em seguida, tomar as medidas apropriadas.
+
+
+
+== Antes de começar
+
+Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+
+
+
+== Sobre esta tarefa
+
+Você pode exportar dados para um `.csv` arquivo das páginas de inventário de integridade e desempenho e da página de inventário de eventos.
+
+A funcionalidade de exportação não é suportada para os constituintes de um Infinite volume - não é possível exportar detalhes dos constituintes para um `.csv` ficheiro.
+
+
+
+== Passos
+
+. Execute uma das seguintes ações:
++
+|===
+| Se você quiser exportar... | Faça isso... 
+
+
+ a| 
+Detalhes do evento
+ a| 
+Clique em *Eventos*.
+
+
+
+ a| 
+Detalhes do inventário de objetos de armazenamento
+ a| 
+Clique em *Saúde* ou *desempenho* no menu de navegação à esquerda e selecione um objeto de armazenamento.
+
+
+
+ a| 
+Detalhes do histórico de proteção e capacidade de armazenamento
+ a| 
+Clique em *Saúde* > *agregados* ou *Saúde* > *volumes* e selecione um único agregado ou volume.
+
+
+
+ a| 
+O Qtree ou NFS exporta informações para um SVM
+ a| 
+Clique em *Saúde* > *SVMs*, selecione uma única SVM e, em seguida, selecione a guia *Qtrees* ou *NFS Exports*.
+
+
+
+ a| 
+Os 10 melhores detalhes de desempenho do objeto de storage
+ a| 
+Clique em *Performance* > *clusters*, selecione um cluster e escolha a guia *Top Performers*. Em seguida, selecione um objeto de armazenamento e contador de desempenho.
+
+|===
+. Clique no botão *Exportar*.
+. Clique em *Exportar para CSV* para confirmar a solicitação de exportação.
++
+Na guia principais executores e na página de detalhes do SVMs, você pode optar por baixar um relatório das estatísticas para o único cluster que você está visualizando ou para todos os clusters no data center.
+
++
+O ficheiro é transferido.
+
+. Abra o `.csv` arquivo no aplicativo apropriado.
+

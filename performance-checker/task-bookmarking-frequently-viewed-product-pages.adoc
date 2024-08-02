@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/task-bookmarking-frequently-viewed-product-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode marcar páginas de produtos acessadas com frequência na IU do Unified Manager. Isso permite que você retorne rapidamente a essas páginas. Quando você visualiza a página mais tarde, ela exibe os dados mais recentes. 
+---
+= Bookmarking páginas de produtos frequentemente visualizadas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode marcar páginas de produtos acessadas com frequência na IU do Unified Manager. Isso permite que você retorne rapidamente a essas páginas. Quando você visualiza a página mais tarde, ela exibe os dados mais recentes.
+
+
+
+== Sobre esta tarefa
+
+Você também pode copiar o link (URL) para a página do produto atual para que você possa colá-lo em um e-mail, ou outro aplicativo, para compartilhá-lo com outras pessoas.
+
+
+
+== Passos
+
+. Crie um marcador usando qualquer etapa necessária para marcar uma página no seu navegador.
++
+O link para a página é salvo com detalhes sobre a página, mas você pode querer personalizar o texto do marcador para identificar a página: Por exemplo, "'Unified Manager | Node: Node-01" ou "'Unified Manager | evento de limite definido pelo usuário: IOPS volume1".
+
+

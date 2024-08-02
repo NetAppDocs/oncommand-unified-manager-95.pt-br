@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-create-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar a caixa de diálogo criar regra para criar novas regras para sua política de dados. Por exemplo, quando você deseja especificar o posicionamento do conteúdo de um determinado tipo de arquivo, você pode usar a caixa de diálogo criar regra para criar a regra para sua política de dados. 
+---
+= Caixa de diálogo criar regra
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar a caixa de diálogo criar regra para criar novas regras para sua política de dados. Por exemplo, quando você deseja especificar o posicionamento do conteúdo de um determinado tipo de arquivo, você pode usar a caixa de diálogo criar regra para criar a regra para sua política de dados.
+
+
+
+== Nome da regra
+
+Especifica o nome da nova regra.
+
+
+
+== Área de modelos
+
+Exibe a lista de modelos de regras. Você pode selecionar um modelo de regra apropriado na lista para criar uma regra para a política de dados.
+
+
+
+== Critérios de correspondência
+
+Apresenta uma lista de condições relacionadas com o modelo de regra selecionado. A lista de condições muda com base no modelo de regra selecionado. Por exemplo, se você selecionar "'colocar todos os arquivos com os nomes de proprietário especificados em uma classe de armazenamento adequada'", *Lista de proprietários que...* será exibida em critérios correspondentes.
+
+* *Adicionar*
++
+Permite adicionar uma nova propriedade de regra com base no modelo de regra selecionado. Por exemplo, se você selecionou o modelo de regra "'coloque todos os arquivos com os nomes de proprietário especificados em uma classe de armazenamento adequada'", o botão *Adicionar* permite adicionar o nome do proprietário.
+
+* *Excluir*
++
+Permite eliminar uma propriedade de regra selecionada.
+
+
+
+
+
+== Colocação de conteúdo
+
+Permite selecionar uma classe de armazenamento apropriada para sua regra na lista.
+
+
+
+== Botões de comando
+
+* *Criar*
++
+Cria uma nova regra para a política de dados e fecha a caixa de diálogo criar regra.
+
+* *Cancelar*
++
+Cancela as alterações recentes feitas à regra e fecha a caixa de diálogo criar regra.
+
+

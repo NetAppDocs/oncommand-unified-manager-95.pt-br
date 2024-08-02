@@ -1,0 +1,18 @@
+---
+permalink: install/concept-upgrading-unified-manager-on-rhel-or-centos.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode atualizar o Unified Manager quando uma nova versão do software estiver disponível. 
+---
+= Atualização do Unified Manager no Red Hat Enterprise Linux ou CentOS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode atualizar o Unified Manager quando uma nova versão do software estiver disponível.
+
+As versões de patch do software Unified Manager, quando fornecidas pelo NetApp, são instaladas usando o mesmo procedimento que as novas versões.
+
+Se o Unified Manager estiver emparelhado com uma instância do OnCommand Workflow Automation e houver novas versões de software disponíveis para ambos os produtos, será necessário desconetar os dois produtos e configurar uma nova conexão do Workflow Automation após a realização das atualizações. Se você estiver executando uma atualização para apenas um dos produtos, deverá fazer login no Workflow Automation após a atualização e verificar se ele ainda está adquirindo dados do Unified Manager.

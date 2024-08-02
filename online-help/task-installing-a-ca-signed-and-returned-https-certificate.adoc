@@ -1,0 +1,59 @@
+---
+permalink: online-help/task-installing-a-ca-signed-and-returned-https-certificate.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode fazer o upload e instalar um certificado de segurança depois que uma Autoridade de certificação o tiver assinado e retornado. O arquivo que você carregar e instalar deve ser uma versão assinada do certificado autoassinado existente. Um certificado assinado pela CA ajuda a evitar ataques man-in-the-middle e fornece melhor proteção de segurança do que um certificado autoassinado. 
+---
+= Instalar um certificado de segurança HTTPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode fazer o upload e instalar um certificado de segurança depois que uma Autoridade de certificação o tiver assinado e retornado. O arquivo que você carregar e instalar deve ser uma versão assinada do certificado autoassinado existente. Um certificado assinado pela CA ajuda a evitar ataques man-in-the-middle e fornece melhor proteção de segurança do que um certificado autoassinado.
+
+
+
+== Antes de começar
+
+Você deve ter concluído as seguintes ações:
+
+* Fez o download do arquivo de solicitação de assinatura de certificado e o assinou por uma Autoridade de Certificação
+* Salva a cadeia de certificados no formato PEM
+* Incluídos todos os certificados na cadeia, desde o certificado do servidor Unified Manager até o certificado de assinatura raiz, incluindo quaisquer certificados intermediários presentes
+
+
+Tem de ter a função de Administrador do OnCommand.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *certificado HTTPS* no menu *Configuração*.
+. Clique em *Instalar certificado HTTPS*.
+. Na caixa de diálogo exibida, clique em *escolha arquivo...* para localizar o arquivo a ser carregado.
+. Selecione o arquivo e clique em *Instalar* para instalar o arquivo.
+
+
+
+
+== Exemplo de cadeia de certificados
+
+O exemplo a seguir mostra como o arquivo de cadeia de certificados pode aparecer:
+
+[listing]
+----
+-----BEGIN CERTIFICATE-----
+<*Server certificate*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#1 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#2 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Root signing certificate*>
+-----END CERTIFICATE-----
+----

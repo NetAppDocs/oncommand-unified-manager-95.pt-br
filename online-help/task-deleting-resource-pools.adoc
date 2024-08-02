@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-deleting-resource-pools.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode excluir pools de recursos quando eles não forem mais necessários. Por exemplo, você pode querer redistribuir os agregados de membros de um pool de recursos para vários outros pools de recursos, tornando o pool de recursos original obsoleto. 
+---
+= Excluindo pools de recursos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir pools de recursos quando eles não forem mais necessários. Por exemplo, você pode querer redistribuir os agregados de membros de um pool de recursos para vários outros pools de recursos, tornando o pool de recursos original obsoleto.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+O botão *Delete* é ativado somente quando pelo menos um pool de recursos estiver selecionado.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *proteção* > *pools de recursos*.
+. Selecione o pool de recursos que deseja excluir.
+. Clique em *Excluir*.
++
+O pool de recursos é removido da lista de pool de recursos e seus agregados são removidos da lista de membros.
+
+

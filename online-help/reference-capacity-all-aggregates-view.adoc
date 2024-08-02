@@ -1,0 +1,164 @@
+---
+permalink: online-help/reference-capacity-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: A página integridade/capacidade de agregados e utilização permite visualizar informações sobre a capacidade e a utilização de agregados em todos os clusters. Essas informações permitem entender possíveis riscos de capacidade e também visualizar a capacidade configurada, usada e não utilizada dos agregados. 
+---
+= Página de integridade/agrega capacidade e utilização
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página integridade/capacidade de agregados e utilização permite visualizar informações sobre a capacidade e a utilização de agregados em todos os clusters. Essas informações permitem entender possíveis riscos de capacidade e também visualizar a capacidade configurada, usada e não utilizada dos agregados.
+
+Use o botão *Export* para exportar os detalhes de todos os agregados monitorados para um (`.csv`arquivo de valores separados por vírgulas ).
+
+* *Cluster*
++
+O nome do cluster.
+
+* *Par HA*
++
+O valor de par de HA obtido pela formação de dois nós.
+
+* *Agregado*
++
+O nome agregado.
+
+* *Capacidade total de dados*
++
+A capacidade total de dados (usada mais disponível).
+
+* * Capacidade de dados usados*
++
+A capacidade de dados utilizada.
+
+* *Dados usados %*
++
+A capacidade de dados utilizada como percentagem.
+
+* *Capacidade de dados disponível*
++
+A capacidade de dados disponível.
+
+* *Dados disponíveis %*
++
+A capacidade de dados disponível como porcentagem.
+
+* *Taxa diária de crescimento %*
++
+A taxa de crescimento que ocorre a cada 24 horas no agregado.
+
+* *Dias completos*
++
+O número estimado de dias restantes antes do agregado atingir a capacidade total.
+
+* *Limite máximo de espaço %*
++
+A porcentagem em que um agregado é considerado cheio.
+
+* *Espaço quase limite máximo %*
++
+A porcentagem em que um agregado é considerado quase cheio.
+
+* *Limiar de taxa de crescimento*
++
+A taxa de crescimento do agregado que é considerada normal antes do sistema gerar um evento anormal da taxa de crescimento agregado.
+
+* *Limiar de sensibilidade da taxa de crescimento*
++
+O fator que é aplicado ao desvio padrão da taxa de crescimento de um agregado. Se a taxa de crescimento exceder o desvio padrão fatorado, um evento anormal da taxa de crescimento agregado é gerado.
+
+* *Dias até o limite máximo*
++
+O número de dias restantes antes do agregado atingir a capacidade total.
+
+* *Capacidade total de reserva de instantâneo*
++
+A capacidade total de reserva de snapshot do agregado.
+
+* *Reserva de snapshot capacidade utilizada*
++
+A quantidade de espaço usada pelas cópias snapshot da reserva do snapshot.
+
+* *Reserva Snapshot utilizada %*
++
+A quantidade de espaço usada pelas cópias Snapshot da reserva do snapshot como porcentagem.
+
+* *Reserva de snapshot com capacidade disponível*
++
+A quantidade de espaço disponível para cópias Snapshot.
+
+* *Reserva de snapshot disponível %*
++
+A quantidade de espaço disponível para cópias Snapshot como porcentagem.
+
+* *Cópias Snapshot reservam limite total %*
++
+A porcentagem em que um agregado consumiu todo o espaço reservado para cópias Snapshot.
+
+* * Capacidade supercomprometida %*
++
+O comprometimento agregado em excesso como porcentagem.
+
+* *Limite de excesso de compromisso %*
++
+A porcentagem em que um agregado é considerado supercomprometido.
+
+* *Limite de quase comprometimento excessivo %*
++
+A porcentagem em que um agregado é considerado quase supercomprometido.
+
+* *Tipo agregado*
++
+O tipo de agregado:
+
++
+** HDD
+** Híbrida
++
+Combina HDDs e SSDs, mas o Flash Pool não foi ativado.
+
+** Híbrido (Flash Pool)
++
+Combina HDDs e SSDs e o Flash Pool foi ativado.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSDs e uma camada de nuvem
+
+** VMDisk (SDS)
++
+Discos virtuais dentro de uma máquina virtual
+
+** VMDisk (FabricPool)
++
+Combina discos virtuais e uma camada de nuvem
+
+** LUN (FlexArray) para discos padrão e discos SSD, esta coluna fica em branco quando o sistema de armazenamento monitorado está executando uma versão do ONTAP anterior a 8,3.
+
+
+* *Tipo RAID*
++
+O tipo de configuração RAID.
+
+* *Estado agregado*
++
+O estado atual do agregado.
+
+* *Tipo SnapLock*
++
+Se o agregado é um agregado SnapLock ou não SnapLock.
+
+* *Espaço de camada de nuvem usado*
++
+A quantidade de capacidade de dados que está sendo usada atualmente na camada de nuvem.
+
+* *Nível de nuvem*
++
+O nome do armazenamento de objetos da camada de nuvem quando ele foi criado pelo ONTAP.
+
+

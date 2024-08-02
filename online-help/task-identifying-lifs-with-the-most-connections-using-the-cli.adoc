@@ -1,0 +1,99 @@
+---
+permalink: online-help/task-identifying-lifs-with-the-most-connections-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode querer migrar um LIF de dados se ele exibir uma carga pesada ou taxa de transferência. Para decidir se deseja migrar um LIF, você pode exibir a carga em LIFs, o número de conexões na porta, a taxa de transferência e os ciclos de CPU no nó. 
+---
+= Identificando LIFs com a maioria das conexões usando a CLI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode querer migrar um LIF de dados se ele exibir uma carga pesada ou taxa de transferência. Para decidir se deseja migrar um LIF, você pode exibir a carga em LIFs, o número de conexões na porta, a taxa de transferência e os ciclos de CPU no nó.
+
+
+
+== Passos
+
+. Acesse a CLI como administrador de cluster.
+. Defina o nível de privilégio como avançado digitando o seguinte comando: `set -privilege advanced`
++
+Para obter detalhes sobre como usar a CLI no modo avançado, consulte _Referência de administração do sistema_.
+
+. Para localizar o peso de cada LIF, digite o seguinte comando: `network interface lif-weights show`
++
+Um LIF ocupado é aquele que tem o menor peso.
+
+. Para localizar as conexões ativas em um nó, digite o seguinte comando: `network connections active show-clients`
++
+Observe a maior contagem de clientes por nó.
+
++
+[listing]
+----
+cluster1::> network connections active show-clients
+Node    Client IP Address     Count
+------  -----------------     ------
+node1   192.0.2.253               12
+        192.0.2.252                9
+        192.0.2.251               12
+
+node2   192.0.2.250               12
+        192.0.2.252                9
+        192.0.2.253                9
+
+node3   customer.example.com       2
+        customer.example.net       2
+        customer.example.org       2
+----
+. Para localizar as conexões ativas por LIF em um nó e SVM, digite o seguinte comando: `network connections active show-lifs`
++
+Observe a maior contagem de clientes por LIF.
+
++
+[listing]
+----
+cluster1::> network connections active show-lifs
+Node      Vserver Name  Interface Name  Count
+--------  ------------  --------------- ------
+node1
+          vs1           clus1              30
+
+node2
+          vs2           clus1              30
+
+node3
+          vs3           lif1                2
+          vs4           clus1              30
+----
+. Verifique os LIFs que estão compartilhando a mesma porta inicial e nó inicial para identificar os LIFs com a maioria das conexões.
+. Para escolher a melhor porta de dados, digite o seguinte: `statistics show -object port`
++
+O comando statistics fornece informações de throughput e largura de banda para portas Ethernet. Cada linha fornece um contador separado de informações exclusivas. Valor é o valor para o tipo de objeto desde que o contador foi limpo pela última vez (desde que o ONTAP foi iniciado pela última vez).
+
++
+[listing]
+----
+cluster1::> statistics show -object port
+Object: port
+Instance: e0a
+Start-time: 10/11/2013 13:51:41
+End-time: 10/11/2013 13:51:41
+Node: node1
+
+    Counter                                           Value
+    -------------------------------------------------------
+    recv-data                                            0B
+    recv-packets                                         0
+    recv-mcasts                                          0
+    recv-errors                                          0
+    recv-dropped                                         0
+    sent-data                                            0B
+    sent-packets                                         0
+    sent-mcasts                                          0
+    sent-errors                                          0
+    collisions                                           0
+----
+

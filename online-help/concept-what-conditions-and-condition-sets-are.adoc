@@ -1,0 +1,36 @@
+---
+permalink: online-help/concept-what-conditions-and-condition-sets-are.html 
+sidebar: sidebar 
+keywords:  
+summary: As condições são um conjunto de critérios de correspondência com base nas propriedades da regra, como nome do arquivo, caminho do diretório e proprietário, que definem uma regra. Uma coleção de tais condições é conhecida como um conjunto de condições. Você pode usar os conjuntos de condições e condições somente para regras personalizadas para determinar onde colocar o conteúdo que está gravado no seu Infinite volume. 
+---
+= Que condições e conjuntos de condições são
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+_Conditions_ são um conjunto de critérios de correspondência com base nas propriedades da regra, como o nome do arquivo, caminho do diretório e proprietário, que definem uma regra. Uma coleção de tais condições é conhecida como um _conjunto de condições_. Você pode usar os conjuntos de condições e condições somente para regras personalizadas para determinar onde colocar o conteúdo que está gravado no seu Infinite volume.
+
+
+
+== Condições
+
+Para uma regra personalizada, você pode especificar condições com base nas propriedades da regra, como nome do arquivo, caminho do diretório ou proprietário, ou uma combinação de todas as propriedades da regra. A lógica é semelhante a um Booleano E operação. Por exemplo, usando condições, você pode criar uma regra personalizada para colocar arquivos com `.mp3` extensões e arquivos de propriedade do John no caminho do diretório começando com `/NS/`.
+
+
+
+== Conjuntos de condições
+
+A lógica utilizada para conjuntos de condições é semelhante a uma operação booleana OU booleana. Por exemplo, usando conjuntos de condições e condições, você pode criar uma regra personalizada complexa que corresponda a uma das seguintes condições:
+
+* condição-1
++
+Todos os arquivos de propriedade de Mary e são colocados em `/NS/Eng/`
+
+* condição-2
++
+Todos os arquivos que têm nomes que terminam com ``.pdf``e pertencem a Maria
+
+

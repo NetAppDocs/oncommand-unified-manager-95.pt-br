@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode personalizar as programações do relatório Status da transferência de volume (Histórico) para exibir os detalhes do volume com base em diferentes programações. Você pode exibir, modificar ou excluir programações de relatórios existentes e adicionar novas programações para seus relatórios.' 
+---
+= Personalizar as programações do relatório Status da transferência de volume (Histórico)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar as programações do relatório Status da transferência de volume (Histórico) para exibir os detalhes do volume com base em diferentes programações. Você pode exibir, modificar ou excluir programações de relatórios existentes e adicionar novas programações para seus relatórios.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Na página de relatório *Status da transferência de volume (Histórico)*, clique em *Gerenciar agendas de relatórios*.
+. Na caixa de diálogo *Gerenciar agendas de relatórios*, insira detalhes específicos, como nome da programação do destinatário, endereço de e-mail, formato do relatório, frequência e relatórios.
+. Selecione *Inventário* como Categoria Relatório.
+. Clique em *Salvar e fechar*.
++
+O relatório Status da transferência de volume (Histórico) é enviado automaticamente por e-mail para um ou mais destinatários, de acordo com a programação.
+
+

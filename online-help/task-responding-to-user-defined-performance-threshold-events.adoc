@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-responding-to-user-defined-performance-threshold-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode usar o Unified Manager para investigar eventos de desempenho causados por um contador de desempenho que atravessa um aviso definido pelo usuário ou um limite crítico. Você também pode usar o Unified Manager para verificar a integridade do componente do cluster para ver se eventos recentes de integridade detetados no componente contribuíram para o evento de desempenho. 
+---
+= Resposta a eventos de limite de desempenho definidos pelo usuário
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar o Unified Manager para investigar eventos de desempenho causados por um contador de desempenho que atravessa um aviso definido pelo usuário ou um limite crítico. Você também pode usar o Unified Manager para verificar a integridade do componente do cluster para ver se eventos recentes de integridade detetados no componente contribuíram para o evento de desempenho.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Deve haver eventos de desempenho novos ou obsoletos.
+
+
+
+
+== Passos
+
+. Exiba a página de detalhes do *evento* para exibir informações sobre o evento.
+. Revise a *Descrição*, que descreve a violação de limite que causou o evento.
++
+Por exemplo, a mensagem "'valor de latência de 456 ms/op acionou um evento DE AVISO baseado na configuração de limite de 400 ms/op" indica que ocorreu um evento de aviso de latência para o objeto.
+
+. Passe o cursor sobre o nome da política para exibir detalhes sobre a política de limite que acionou o evento.
++
+Isso inclui o nome da política, o contador de desempenho sendo avaliado, o valor do contador que deve ser violado para ser considerado um evento crítico ou de aviso e a duração pela qual o contador deve exceder o valor.
+
+. Anote o *Event Trigger Time* para que você possa investigar se outros eventos podem ter ocorrido ao mesmo tempo que poderiam ter contribuído para este evento.
+. Siga uma das opções abaixo para investigar mais o evento, para determinar se você precisa executar alguma ação para resolver o problema de desempenho:
++
+|===
+| Opção | Possíveis ações de investigação 
+
+
+ a| 
+Clique no nome do objeto fonte para exibir a página Explorer para esse objeto.
+ a| 
+Esta página permite exibir os detalhes do objeto e comparar esse objeto com outros objetos de armazenamento semelhantes para ver se outros objetos de armazenamento têm um problema de desempenho ao mesmo tempo. Por exemplo, para ver se outros volumes no mesmo agregado também estão tendo um problema de desempenho.
+
+
+
+ a| 
+Clique no nome do cluster para exibir a página Resumo do cluster.
+ a| 
+Esta página permite exibir os detalhes do cluster no qual esse objeto reside para ver se outros problemas de desempenho ocorreram ao mesmo tempo.
+
+|===
+

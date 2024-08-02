@@ -1,0 +1,45 @@
+---
+permalink: health-checker/task-adding-users.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode adicionar usuários locais ou usuários de banco de dados usando a página Gerenciamento/usuários. Você também pode adicionar usuários remotos ou grupos que pertencem a um servidor de autenticação. Você pode atribuir funções a esses usuários e, com base no Privileges das funções, os usuários podem gerenciar os objetos de storage e dados com o Unified Manager, ou exibir os dados em um banco de dados. 
+---
+= Adicionando usuários
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode adicionar usuários locais ou usuários de banco de dados usando a página Gerenciamento/usuários. Você também pode adicionar usuários remotos ou grupos que pertencem a um servidor de autenticação. Você pode atribuir funções a esses usuários e, com base no Privileges das funções, os usuários podem gerenciar os objetos de storage e dados com o Unified Manager, ou exibir os dados em um banco de dados.
+
+
+
+== Antes de começar
+
+* Tem de ter a função de Administrador do OnCommand.
+* Para adicionar um utilizador ou grupo remoto, tem de ter ativado a autenticação remota e configurado o servidor de autenticação.
+* Se você planeja configurar a autenticação SAML para que um provedor de identidade (IDP) autentique usuários acessando a interface gráfica, certifique-se de que esses usuários sejam definidos como usuários "remode".
++
+O acesso à IU não é permitido para usuários do tipo "local" ou "Manutenção" quando a autenticação SAML está ativada.
+
+
+
+
+
+== Sobre esta tarefa
+
+Se você adicionar um grupo do Windows ative Directory, todos os membros diretos e subgrupos aninhados poderão se autenticar no Unified Manager, a menos que os subgrupos aninhados estejam desativados. Se você adicionar um grupo do OpenLDAP ou de outros serviços de autenticação, somente os membros diretos desse grupo poderão se autenticar no Unified Manager.
+
+
+
+== Passos
+
+. Na barra de ferramentas, clique em *image:../media/clusterpage-settings-icon.gif[""]* e, em seguida, clique em *Users* (usuários) no menu Left Management (Gerenciamento à esquerda).
+. Na página *Gerenciamento/usuários*, clique em *Adicionar*.
+. Na caixa de diálogo *Adicionar usuário*, selecione o tipo de usuário que deseja adicionar e insira as informações necessárias.
++
+Ao inserir as informações de usuário necessárias, você deve especificar um endereço de e-mail exclusivo para esse usuário. Você deve evitar especificar endereços de e-mail compartilhados por vários usuários.
+
+. Clique em *Add*.
+

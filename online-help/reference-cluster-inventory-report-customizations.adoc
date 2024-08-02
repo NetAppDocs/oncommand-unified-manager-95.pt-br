@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-cluster-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode personalizar relatórios de inventário para monitorar a falta de recursos nos componentes dos clusters. Por exemplo, você pode personalizar relatórios para monitorar informações como clusters que estão se aproximando do limite de contagem de SVM, nós que estão executando versões mais antigas do ONTAP e nós que estão atingindo o limite máximo de disco. 
+---
+= Personalizações do Relatório de inventário de cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar relatórios de inventário para monitorar a falta de recursos nos componentes dos clusters. Por exemplo, você pode personalizar relatórios para monitorar informações como clusters que estão se aproximando do limite de contagem de SVM, nós que estão executando versões mais antigas do ONTAP e nós que estão atingindo o limite máximo de disco.

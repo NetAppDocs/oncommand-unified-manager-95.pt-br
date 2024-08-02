@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-svm-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode criar relatórios de inventário do SVM para analisar informações de volume e visualizar a integridade geral e a disponibilidade de storage. Por exemplo, você pode criar relatórios para exibir SVMs atingindo a contagem máxima de volume e analisar SVMs paradas. 
+---
+= Personalizações do relatório de inventário do SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar relatórios de inventário do SVM para analisar informações de volume e visualizar a integridade geral e a disponibilidade de storage. Por exemplo, você pode criar relatórios para exibir SVMs atingindo a contagem máxima de volume e analisar SVMs paradas.

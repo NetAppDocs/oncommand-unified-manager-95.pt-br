@@ -1,0 +1,38 @@
+---
+permalink: health-checker/task-configuring-global-qtree-health-threshold-values.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode configurar os valores de limite de integridade global para todos os qtrees para rastrear qualquer violação de limite. Eventos apropriados são gerados para violações de limites de integridade e você pode tomar medidas preventivas com base nesses eventos. Você pode configurar os valores globais com base nas configurações de práticas recomendadas para limites que se aplicam a todos os qtrees monitorados. 
+---
+= Configurando valores de limite de integridade de qtree global
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar os valores de limite de integridade global para todos os qtrees para rastrear qualquer violação de limite. Eventos apropriados são gerados para violações de limites de integridade e você pode tomar medidas preventivas com base nesses eventos. Você pode configurar os valores globais com base nas configurações de práticas recomendadas para limites que se aplicam a todos os qtrees monitorados.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+As opções de limite têm valores padrão para melhor monitoramento, no entanto, você pode alterar os valores de acordo com os requisitos do seu ambiente.
+
+Os eventos são gerados para uma qtree somente quando uma cota Qtree ou uma cota padrão tiver sido definida na qtree. Os eventos não são gerados se o espaço definido em uma cota de usuário ou cota de grupo tiver excedido o limite.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Configuração* > *limites de integridade*.
+. Na página *limiares de Configuração/Saúde*, clique em *Qtrees*.
+. Configure os valores de limite de capacidade apropriados.
+. Clique em *Salvar*.
+

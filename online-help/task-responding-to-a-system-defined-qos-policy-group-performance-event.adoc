@@ -1,0 +1,63 @@
+---
+permalink: online-help/task-responding-to-a-system-defined-qos-policy-group-performance-event.html 
+sidebar: sidebar 
+keywords:  
+summary: 'O Unified Manager gera eventos de aviso de política de QoS quando a taxa de transferência de workload (IOPS, IOPS/TB ou Mbps) excedeu a configuração definida de política de QoS ONTAP e a latência de workload está sendo afetada. Esses eventos definidos pelo sistema oferecem a oportunidade de corrigir possíveis problemas de desempenho antes que muitos workloads sejam afetados pela latência.' 
+---
+= Resposta a eventos de desempenho do grupo de políticas de QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager gera eventos de aviso de política de QoS quando a taxa de transferência de workload (IOPS, IOPS/TB ou Mbps) excedeu a configuração definida de política de QoS ONTAP e a latência de workload está sendo afetada. Esses eventos definidos pelo sistema oferecem a oportunidade de corrigir possíveis problemas de desempenho antes que muitos workloads sejam afetados pela latência.
+
+
+
+== Antes de começar
+
+* Você deve ter a função Operador, Administrador OnCommand ou Administrador de armazenamento.
+* Deve haver eventos de desempenho novos, reconhecidos ou obsoletos.
+
+
+
+
+== Sobre esta tarefa
+
+O Unified Manager gera eventos de aviso para violações de política de QoS quando a taxa de transferência de workload excedeu a configuração de política de QoS definida durante cada período de coleta de performance da hora anterior. A taxa de transferência do workload pode exceder o limite de QoS por apenas um curto período de tempo durante cada período de coleta, mas o Unified Manager exibe somente a taxa de transferência "'média'" durante o período de coleta no gráfico. Por esse motivo, você pode receber eventos de QoS enquanto a taxa de transferência de uma carga de trabalho pode não ter cruzado o limite de política mostrado no gráfico.
+
+Você pode usar o Gerenciador do sistema ou os comandos ONTAP para gerenciar grupos de políticas, incluindo as seguintes tarefas:
+
+* Criando um novo grupo de políticas para a carga de trabalho
+* Adição ou remoção de cargas de trabalho em um grupo de políticas
+* Movimentação de uma carga de trabalho entre grupos de políticas
+* Alterar o limite de taxa de transferência de um grupo de políticas
+* Movendo um workload para um agregado ou nó diferente
+
+
+
+
+== Passos
+
+. Exiba a página de detalhes do *evento* para exibir informações sobre o evento.
+. Revise a *Descrição*, que descreve a violação de limite que causou o evento.
++
+Por exemplo, a mensagem "'valor de IOPS de 1.352 IOPS no vol1_NFS1 disparou um evento DE AVISO para identificar possíveis problemas de desempenho para o workload'" indica que um evento de IOPS máximo de QoS ocorreu no volume vol1_NFS1.
+
+. Consulte a seção *informações do evento* para ver mais detalhes sobre quando o evento ocorreu e por quanto tempo o evento esteve ativo.
++
+Além disso, para volumes ou LUNs que compartilham a taxa de transferência de uma política de QoS, você pode ver os nomes dos três principais workloads que consomem a maior parte do IOPS ou Mbps.
+
+. Na seção *Diagnóstico do sistema*, revise os dois gráficos: Um para IOPS médio total ou Mbps (dependendo do evento) e outro para latência. Quando organizado dessa maneira, você pode ver quais componentes do cluster estão mais afetando a latência quando o workload chegou ao limite máximo de QoS.
++
+Para um evento de política de QoS compartilhada, os três principais workloads são mostrados no gráfico de taxa de transferência. Se mais de três workloads estiverem compartilhando a política de QoS, workloads adicionais serão adicionados em uma categoria "outras cargas de trabalho". Além disso, o gráfico de latência mostra a latência média em todos os workloads que fazem parte da política de QoS.
+
++
+Observe que, para eventos de política de QoS adaptável, os gráficos IOPS e Mbps mostram valores de IOPS ou Mbps convertidos pelo ONTAP da diretiva de limite de IOPS/TB atribuída com base no tamanho do volume.
+
+. Na seção *ações sugeridas*, revise as sugestões e determine quais ações você deve executar para evitar um aumento na latência da carga de trabalho.
++
+Se necessário, clique no botão *Ajuda* para ver mais detalhes sobre as ações sugeridas que você pode executar para tentar resolver o evento de desempenho.
+
+

@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-rate-report-to-view-volume-transfers-grouped-by-day.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Você pode personalizar o relatório taxa de transferência de volume (Histórico) para exibir os detalhes da transferência de volume que são classificados por dia.' 
+---
+= Personalizar o relatório de taxa de transferência de volume (Histórico) para visualizar as transferências de volume agrupadas por dia
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode personalizar o relatório de taxa de transferência de volume (Histórico) para exibir os detalhes da transferência de volume classificados por dia.
+
+
+
+== Sobre esta tarefa
+
+Você também pode executar esta tarefa indo para a página relatórios e clicando em *Executar Relatório* para o relatório apropriado.
+
+
+
+== Passos
+
+. Remover agrupamento por cluster:
++
+.. Selecione a coluna que pretende desagrupar.
+.. Clique no image:../media/click-to-see-menu.gif[""] ícone.
+.. Selecione *Group* > *Delete Inner Group*.
+
+
+. Para ver as transferências de volume para um dia específico, clique na coluna *dia*.
+

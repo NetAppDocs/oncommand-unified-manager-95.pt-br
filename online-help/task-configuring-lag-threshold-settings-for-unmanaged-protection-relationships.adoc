@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: Você pode editar as configurações de aviso de atraso padrão global e limite de integridade de erro para relacionamentos de proteção não gerenciados para que os eventos sejam gerados em intervalos adequados às suas necessidades. 
+---
+= Editar as configurações de limite de integridade de atraso para relacionamentos de proteção não gerenciados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar as configurações de aviso de atraso padrão global e limite de integridade de erro para relacionamentos de proteção não gerenciados para que os eventos sejam gerados em intervalos adequados às suas necessidades.
+
+
+
+== Antes de começar
+
+Você deve ter a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Sobre esta tarefa
+
+O tempo de atraso não deve ser superior ao intervalo de programação de transferência definido. Por exemplo, se o agendamento de transferência for de hora em hora, o tempo de atraso não deve ser superior a uma hora. O limite de atraso especifica uma porcentagem que o tempo de atraso não deve exceder. Usando o exemplo de uma hora, se o limite de atraso for definido como 150%, você receberá um evento quando o tempo de atraso for superior a 1,5 horas.
+
+As configurações descritas nesta tarefa são aplicadas globalmente a todos os relacionamentos de proteção não gerenciados. As configurações não podem ser especificadas e aplicadas exclusivamente a uma relação de proteção não gerenciada.
+
+
+
+== Passos
+
+. No painel de navegação esquerdo, clique em *Configuração* > *limites de integridade*.
+. Na página *limiares de Configuração/Saúde*, clique em *relacionamentos*.
+. Aumente ou diminua a percentagem de tempo de atraso de aviso ou erro padrão global, conforme necessário.
+. Clique em *Salvar*.
+

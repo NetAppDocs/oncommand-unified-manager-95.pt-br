@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-event-setup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: A página Configuração/Gerenciar eventos exibe a lista de eventos desativados e fornece informações como o tipo de objeto associado e a gravidade do evento. Você também pode executar tarefas como desabilitar ou habilitar eventos globalmente. 
+---
+= Página Configuração/Gerenciar eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página Configuração/Gerenciar eventos exibe a lista de eventos desativados e fornece informações como o tipo de objeto associado e a gravidade do evento. Você também pode executar tarefas como desabilitar ou habilitar eventos globalmente.
+
+Você pode acessar esta página somente se tiver a função Administrador do OnCommand ou Administrador do armazenamento.
+
+
+
+== Botões de comando
+
+Os botões de comando permitem executar as seguintes tarefas para eventos selecionados:
+
+* *Desativar*
++
+Inicia a caixa de diálogo Desativar eventos, que pode ser utilizada para desativar eventos.
+
+* *Ativar*
++
+Ativa eventos selecionados que você escolheu para desativar anteriormente.
+
+* *Subscribe to EMS Events*
++
+Inicia a caixa de diálogo assinar eventos EMS, que permite que você se inscreva para receber eventos específicos do sistema de gerenciamento de eventos (EMS) dos clusters que você está monitorando. O EMS recolhe informações sobre eventos que ocorrem no cluster. Quando uma notificação é recebida para um evento EMS subscrito, um evento do Unified Manager é gerado com a gravidade apropriada.
+
+* *Configurações de retenção de eventos*
++
+Inicia a caixa de diálogo Configurações de retenção de eventos, que permite especificar o período de retenção após o qual as informações, os eventos resolvidos e obsoletos são removidos do servidor de gerenciamento. O valor de retenção padrão é de 180 dias.
+
+
+
+
+
+== Vista de lista
+
+O modo de exibição Lista exibe informações (em formato tabular) sobre eventos desativados. Você pode usar os filtros de coluna para personalizar os dados exibidos.
+
+* *Evento*
++
+Exibe o nome do evento que está desativado.
+
+* *Gravidade*
++
+Exibe a gravidade do evento. A gravidade pode ser Crítica, erro, Aviso ou Informação.
+
+* *Tipo de fonte*
++
+Exibe o tipo de origem para o qual o evento é gerado.
+
+
